@@ -1,12 +1,12 @@
 {
   "zh": {
     "ai-cli": [
-      "Claude Code v2.1.105 发布，Issue获1718👍关注",
-      "OpenCode 24h 50 Issues+50 PRs，活跃度爆棚",
-      "GitHub Copilot CLI v1.0.25 发布但24h无新PR",
-      "Gemini CLI 推双轨版本 Nightly+Stable",
-      "Kimi Code CLI v1.33.0 小步快跑迭代中",
-      "认证/权限系统成全行业共同痛点"
+      "Claude Code v2.1.105 sob pressão comunitária",
+      "Trustworthy Agents: framework de governança corporativa",
+      "MCP connectors: Snowflake/Databricks para Claude",
+      "Claude Code: /buddy removido sem aviso prévio",
+      "Max quotas: esgotamento em 1,5h causa revolta",
+      "Claudraband: camada augmentation contra limitações"
     ],
     "ai-agents": [
       "OpenClaw v2026.4.14-beta.1：Telegram论坛话题名称学习",
@@ -71,6 +71,14 @@
       "Claude Code持久记忆方案claude-mem实测",
       "本地AI代理实现按模型计费成本追踪",
       "LangChain vs LangGraph框架对比开始收敛"
+    ],
+    "ai-weekly": [
+      "Anthropic lança Managed Agents com brain-hands decoupling",
+      "Claude for Healthcare: HIPAA-ready para setor médico",
+      "Hermes Agent: +48k stars, fenômeno do trimestre",
+      "Hermes Agent: pico +11.289 stars em 14/04",
+      "Claude Code: cache TTL reduzida de 1h para 5min",
+      "Comunidade cria alternativas (Claudraband) para Claude Code"
     ]
   },
   "en": {
@@ -145,6 +153,14 @@
       "RAG vs GraphRAG: simpler is often better",
       "Cost tracking for LLM usage emerging",
       "Multi-agent orchestration hits production"
+    ],
+    "ai-weekly": [
+      "Anthropic released 244-page system card for Claude Mythos with offensive cybersecurity capabilities",
+      "NousResearch's Hermes Agent framework surged to 37,000+ stars, dominating weekly trends",
+      "Anthropic launched Managed Agents with 'brain-hands decoupling' for enterprise infrastructure",
+      "Claude Code faced backlash over cache TTL cut (1h→5min) and Pro Max quota exhaustion",
+      "OpenAI shipped Codex v0.120.0 stable with first Rust-based architecture and Realtime V2",
+      "Anthropic open-sourced Project Glasswing security framework for AI-era infrastructure"
     ]
   }
 }
