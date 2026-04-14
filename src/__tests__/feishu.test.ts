@@ -15,7 +15,7 @@ describe("buildFeishuMessage", () => {
     }
   });
 
-  it("builds a daily message with zh + en reports", () => {
+  it("builds a daily message with pt + en reports", () => {
     const msg = buildFeishuMessage(
       "2026-03-09",
       ["ai-cli", "ai-cli-en", "ai-agents", "ai-agents-en"],
@@ -24,31 +24,31 @@ describe("buildFeishuMessage", () => {
     expect(msg).toContain("agents-radar");
     expect(msg).toContain("2026-03-09");
     expect(msg).toContain("📡");
-    expect(msg).toContain(`[AI CLI 工具](${BASE_URL}/#2026-03-09/ai-cli)`);
+    expect(msg).toContain(`[Ferramentas AI CLI](${BASE_URL}/#2026-03-09/ai-cli)`);
     expect(msg).toContain(`[AI CLI Tools](${BASE_URL}/#2026-03-09/ai-cli-en)`);
   });
 
   it("shows weekly icon and suffix for weekly reports", () => {
     const msg = buildFeishuMessage("2026-03-09", ["ai-weekly", "ai-weekly-en"], BASE_URL);
     expect(msg).toContain("📅");
-    expect(msg).toContain("周报");
+    expect(msg).toContain("semanal");
   });
 
   it("shows monthly icon and suffix for monthly reports", () => {
     const msg = buildFeishuMessage("2026-03-09", ["ai-monthly", "ai-monthly-en"], BASE_URL);
     expect(msg).toContain("📆");
-    expect(msg).toContain("月报");
+    expect(msg).toContain("mensal");
   });
 
   it("monthly takes priority over weekly", () => {
     const msg = buildFeishuMessage("2026-03-09", ["ai-weekly", "ai-monthly"], BASE_URL);
     expect(msg).toContain("📆");
-    expect(msg).toContain("月报");
+    expect(msg).toContain("mensal");
   });
 
-  it("renders zh-only reports without en link", () => {
+  it("renders base-lang-only reports without en link", () => {
     const msg = buildFeishuMessage("2026-03-09", ["ai-hn"], BASE_URL);
-    expect(msg).toContain("HN 社区动态");
+    expect(msg).toContain("Comunidade HN");
     expect(msg).not.toContain("HN Community");
   });
 
@@ -64,7 +64,7 @@ describe("buildFeishuMessage", () => {
     expect(msg).not.toContain("<a href=");
     expect(msg).not.toContain("<b>");
     expect(msg).toContain("**agents-radar");
-    expect(msg).toContain(`[AI CLI 工具](`);
+    expect(msg).toContain(`[Ferramentas AI CLI](`);
   });
 
   it("includes highlights when provided", () => {
@@ -90,7 +90,7 @@ describe("buildFeishuMessage", () => {
 
   it("works without highlights", () => {
     const msg = buildFeishuMessage("2026-03-09", ["ai-cli", "ai-cli-en"], BASE_URL, null);
-    expect(msg).toContain("AI CLI 工具");
+    expect(msg).toContain("Ferramentas AI CLI");
     expect(msg).not.toContain("◦");
   });
 });

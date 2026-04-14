@@ -36,7 +36,14 @@ export function formatItem(item: GitHubItem, lang: Lang = "zh"): string {
           url: "URL",
           summary: "Summary",
         }
-      : { author: "作者", created: "创建", updated: "更新", comments: "评论", url: "链接", summary: "摘要" };
+      : {
+          author: "Autor",
+          created: "Criado",
+          updated: "Atualizado",
+          comments: "Comentários",
+          url: "Link",
+          summary: "Resumo",
+        };
   // Extract "owner/repo" from html_url to avoid full GitHub URLs that trigger cross-references
   const repoSlug = item.html_url.replace(/^https:\/\/github\.com\//, "").replace(/\/(issues|pull)\/\d+$/, "");
   const itemKind = item.html_url.includes("/pull/") ? "PR" : "Issue";
@@ -67,7 +74,9 @@ export function sampleNote(total: number, sampled: number, lang: Lang = "zh"): s
       ? `(Total: ${total} items; showing top ${sampled} by comment count)`
       : `(Total: ${total} items)`;
   }
-  return total > sampled ? `（共 ${total} 条，以下展示评论数最多的 ${sampled} 条）` : `（共 ${total} 条）`;
+  return total > sampled
+    ? `(Total: ${total}; abaixo, os ${sampled} itens com mais comentários)`
+    : `(Total: ${total})`;
 }
 
 // ---------------------------------------------------------------------------
@@ -86,13 +95,14 @@ export function buildCliPrompt(
   const sampledPrs = topN(prs, CLI_PR_LIMIT);
 
   const issuesText =
-    sampledIssues.map((i) => formatItem(i, lang)).join("\n") || (lang === "en" ? "None" : "无");
-  const prsText = sampledPrs.map((p) => formatItem(p, lang)).join("\n") || (lang === "en" ? "None" : "无");
+    sampledIssues.map((i) => formatItem(i, lang)).join("\n") || (lang === "en" ? "None" : "Nenhum");
+  const prsText =
+    sampledPrs.map((p) => formatItem(p, lang)).join("\n") || (lang === "en" ? "None" : "Nenhum");
   const releasesText = releases.length
     ? releases.map((r) => `- ${r.tag_name}: ${r.name}\n  ${(r.body ?? "").slice(0, 300)}`).join("\n")
     : lang === "en"
       ? "None"
-      : "无";
+      : "Nenhum";
 
   const issueNote = sampleNote(issues.length, sampledIssues.length, lang);
   const prNote = sampleNote(prs.length, sampledPrs.length, lang);
@@ -126,31 +136,31 @@ Style: concise and professional, suited for technical developers. Include GitHub
 `;
   }
 
-  return `你是一位专注于 AI 开发工具的技术分析师。请根据以下 GitHub 数据，生成 ${dateStr} 的 ${cfg.name} 社区动态日报。
+  return `Você é um analista técnico focado em ferramentas de desenvolvimento com IA. Com base nos dados do GitHub abaixo, gere o relatório diário da comunidade de ${cfg.name} para ${dateStr}.
 
-# 数据来源: github.com/${cfg.repo}
+# Fonte de dados: github.com/${cfg.repo}
 
-## 最新 Releases（过去24小时）
+## Releases mais recentes (últimas 24h)
 ${releasesText}
 
-## 最新 Issues（过去24小时内更新）${issueNote}
+## Issues mais recentes (atualizadas nas últimas 24h) ${issueNote}
 ${issuesText}
 
-## 最新 Pull Requests（过去24小时内更新）${prNote}
+## Pull requests mais recentes (atualizadas nas últimas 24h) ${prNote}
 ${prsText}
 
 ---
 
-请生成一份结构清晰的中文日报，包含以下部分：
+Gere um relatório estruturado em português com estas seções:
 
-1. **今日速览** - 用2-3句话概括今天最重要的动态
-2. **版本发布** - 如有新版本，总结更新内容；无则省略
-3. **社区热点 Issues** - 挑选 10 个最值得关注的 Issue，说明为什么重要、社区反应如何
-4. **重要 PR 进展** - 挑选 10 个重要的 PR，说明功能或修复内容
-5. **功能需求趋势** - 从所有 Issues 中提炼出社区最关注的功能方向（如 IDE 集成、性能、新模型支持等）
-6. **开发者关注点** - 总结开发者反馈中的痛点或高频需求
+1. **Destaques do dia** - Resuma em 2-3 frases as mudanças mais importantes de hoje
+2. **Lançamentos** - Se houver novas versões, resuma as mudanças; omita se não houver
+3. **Issues em evidência** - Escolha 10 issues relevantes, explique por que importam e como a comunidade reagiu
+4. **Progresso de PRs importantes** - Escolha 10 PRs importantes e descreva os recursos ou correções
+5. **Tendências de pedidos de features** - Extraia das issues as direções mais pedidas pela comunidade
+6. **Pontos de atenção para desenvolvedores** - Resuma dores recorrentes e demandas frequentes
 
-语言要求：简洁专业，适合技术开发者阅读。每个条目附上 GitHub 链接。
+Estilo: português claro e profissional, voltado para desenvolvedores. Inclua links do GitHub em cada item.
 `;
 }
 
@@ -173,7 +183,7 @@ export function buildPeerPrompt(
   const sampledIssues = topN(issues, issueLimit);
   const sampledPrs = topN(prs, prLimit);
 
-  const noneStr = lang === "en" ? "None" : "无";
+  const noneStr = lang === "en" ? "None" : "Nenhum";
   const issuesText = sampledIssues.map((i) => formatItem(i, lang)).join("\n") || noneStr;
   const prsText = sampledPrs.map((p) => formatItem(p, lang)).join("\n") || noneStr;
   const releasesText = releases.length
@@ -222,36 +232,36 @@ Style: objective, data-driven, highlighting project health. Include GitHub links
 `;
   }
 
-  return `你是一位 AI 智能体与个人 AI 助手领域开源项目分析师。请根据以下来自 ${cfg.name} (github.com/${cfg.repo}) 的 GitHub 数据，生成 ${dateStr} 的项目动态日报。
+  return `Você é um analista de projetos open source focado em agentes de IA e assistentes pessoais. Com base nos dados do GitHub de ${cfg.name} (github.com/${cfg.repo}), gere o relatório do projeto para ${dateStr}.
 
-# 数据概览
-- 过去24小时 Issues 更新：${totalIssues} 条（新开/活跃: ${openIssues}，已关闭: ${closedIssues}）
-- 过去24小时 PR 更新：${totalPrs} 条（待合并: ${openPrs}，已合并/关闭: ${mergedPrs}）
-- 新版本发布：${releases.length} 个
+# Visão geral dos dados
+- Issues atualizadas nas últimas 24h: ${totalIssues} (abertas/ativas: ${openIssues}, fechadas: ${closedIssues})
+- PRs atualizadas nas últimas 24h: ${totalPrs} (abertas: ${openPrs}, merged/fechadas: ${mergedPrs})
+- Novas releases: ${releases.length}
 
-## 最新 Releases
+## Releases mais recentes
 ${releasesText}
 
-## 最新 Issues ${issueSampleNote}
+## Issues mais recentes ${issueSampleNote}
 ${issuesText}
 
-## 最新 Pull Requests ${prSampleNote}
+## Pull requests mais recentes ${prSampleNote}
 ${prsText}
 
 ---
 
-请生成一份结构清晰的 ${cfg.name} 项目日报，包含以下部分：
+Gere um relatório estruturado do projeto ${cfg.name} com estas seções:
 
-1. **今日速览** - 用3-5句话概括项目今日整体状态，包括活跃度评估
-2. **版本发布** - 如有新版本，详细说明更新内容、破坏性变更、迁移注意事项；无则省略
-3. **项目进展** - 今日合并/关闭的重要 PR，说明推进了哪些功能或修复，项目整体向前迈进了多少
-4. **社区热点** - 今日讨论最活跃、评论最多、反应最多的 Issues/PRs（附链接），分析背后的诉求
-5. **Bug 与稳定性** - 今日报告的 Bug、崩溃、回归问题，按严重程度排列，标注是否已有 fix PR
-6. **功能请求与路线图信号** - 用户提出的新功能需求，结合已有 PR 判断哪些可能被纳入下一版本
-7. **用户反馈摘要** - 从 Issues 评论中提炼真实用户痛点、使用场景、满意/不满意的地方
-8. **待处理积压** - 长期未响应的重要 Issue 或 PR，提醒维护者关注
+1. **Panorama do dia** - Resuma em 3-5 frases o estado geral do projeto hoje, incluindo nível de atividade
+2. **Lançamentos** - Se houver novas versões, detalhe mudanças, breaking changes e notas de migração
+3. **Progresso do projeto** - PRs importantes merged/fechadas hoje e que avanço elas trouxeram
+4. **Temas quentes da comunidade** - Issues/PRs com mais comentários e reações, com análise das demandas
+5. **Bugs e estabilidade** - Problemas, crashes e regressões reportados hoje, por severidade
+6. **Pedidos de features e sinais de roadmap** - Novas demandas e o que pode entrar na próxima versão
+7. **Resumo de feedback dos usuários** - Dores reais, cenários de uso e satisfação/insatisfação
+8. **Backlog que merece atenção** - Issues ou PRs importantes sem resposta há muito tempo
 
-语言要求：客观专业，数据驱动，突出项目健康度。每个条目附上 GitHub 链接。
+Estilo: objetivo, profissional e orientado a dados, destacando a saúde do projeto. Inclua links do GitHub em cada item.
 `;
 }
 
@@ -261,12 +271,13 @@ export function buildPeersComparisonPrompt(
   dateStr: string,
   lang: Lang = "zh",
 ): string {
-  const noActivityStr = lang === "en" ? "No activity in the last 24 hours." : "过去24小时无活动。";
+  const noActivityStr =
+    lang === "en" ? "No activity in the last 24 hours." : "Sem atividade nas últimas 24 horas.";
 
   const openclawSection =
     lang === "en"
-      ? `## OpenClaw (core reference, github.com/${openclawDigest.config.repo})\n${openclawDigest.summary}`
-      : `## OpenClaw（核心参照，github.com/${openclawDigest.config.repo}）\n${openclawDigest.summary}`;
+      ? `## ${openclawDigest.config.name} (primary reference, github.com/${openclawDigest.config.repo})\n${openclawDigest.summary}`
+      : `## ${openclawDigest.config.name} (referência principal, github.com/${openclawDigest.config.repo})\n${openclawDigest.summary}`;
 
   const peerSections = peerDigests
     .map((d) => {
@@ -291,7 +302,7 @@ Generate a cross-project comparison report in English with these sections:
 
 1. **Ecosystem Overview** - 3-5 sentences on the overall personal AI assistant / agent open-source landscape
 2. **Activity Comparison** - Table comparing Issues count, PR count, Release status, and health score for each project
-3. **OpenClaw's Position** - Advantages vs peers, technical approach differences, community size comparison
+3. **Primary Project Positioning** - Advantages vs peers, technical approach differences, community size comparison
 4. **Shared Technical Focus Areas** - Requirements emerging across multiple projects (note which projects, specific needs)
 5. **Differentiation Analysis** - Key differences in feature focus, target users, technical architecture
 6. **Community Momentum & Maturity** - Activity tiers, which are rapidly iterating, which are stabilizing
@@ -301,7 +312,7 @@ Style: concise and professional, data-backed, suited for technical decision-make
 `;
   }
 
-  return `你是一位专注于 AI 智能体与个人 AI 助手开源生态的资深技术分析师。以下是 ${dateStr} 各开源项目的社区动态摘要。
+  return `Você é um analista sênior do ecossistema open source de agentes de IA e assistentes pessoais. Abaixo estão os resumos de atividade da comunidade de cada projeto em ${dateStr}.
 
 ${openclawSection}
 
@@ -311,17 +322,17 @@ ${peerSections}
 
 ---
 
-请基于上述各项目的动态，生成一份横向对比分析报告，包含以下部分：
+Com base nos resumos acima, gere um relatório comparativo com estas seções:
 
-1. **生态全景** - 用3-5句话概括个人 AI 助手/自主智能体开源生态整体态势
-2. **各项目活跃度对比** - 以表格形式汇总各项目今日的 Issues 数、PR 数、Release 情况及健康度评估
-3. **OpenClaw 在生态中的定位** - 与同类相比的优势、技术路线差异、社区规模对比
-4. **共同关注的技术方向** - 多项目共同涌现的需求（注明涉及哪些项目、具体诉求）
-5. **差异化定位分析** - 功能侧重、目标用户、技术架构的关键差异
-6. **社区热度与成熟度** - 活跃度分层，哪些处于快速迭代阶段，哪些在质量巩固阶段
-7. **值得关注的趋势信号** - 从社区反馈中提炼行业趋势，对 AI 智能体开发者的参考价值
+1. **Visão geral do ecossistema** - Resuma em 3-5 frases o panorama geral do ecossistema
+2. **Comparação de atividade** - Tabela com issues, PRs, releases e avaliação de saúde
+3. **Posicionamento do projeto principal** - Vantagens frente aos pares, diferenças técnicas e tamanho da comunidade
+4. **Focos técnicos compartilhados** - Necessidades que surgem em vários projetos
+5. **Análise de diferenciação** - Diferenças de foco, público-alvo e arquitetura
+6. **Tração e maturidade da comunidade** - Quem está iterando rápido e quem está consolidando qualidade
+7. **Sinais de tendência** - Tendências de mercado extraídas do feedback da comunidade
 
-语言要求：简洁专业，有数据支撑，适合技术决策者和开发者阅读。
+Estilo: conciso, profissional e apoiado por dados, útil para decisores técnicos e desenvolvedores.
 `;
 }
 
@@ -334,7 +345,7 @@ export function buildSkillsPrompt(
   const topPrs = topN(prs, 20);
   const topIssues = topN(issues, 15);
 
-  const noneStr = lang === "en" ? "None" : "无";
+  const noneStr = lang === "en" ? "None" : "Nenhum";
   const prsText = topPrs.map((p) => formatItem(p, lang)).join("\n") || noneStr;
   const issuesText = topIssues.map((i) => formatItem(i, lang)).join("\n") || noneStr;
 
@@ -363,32 +374,33 @@ Style: concise and professional, include GitHub links for each item.
 `;
   }
 
-  return `你是一位专注于 Claude Code 生态的技术分析师。以下是来自 github.com/anthropics/skills（Claude Code Skills 官方仓库）的数据，请分析社区最关注的 Skills 动态（数据截止 ${dateStr}）。
+  return `Você é um analista técnico focado no ecossistema do Claude Code. Os dados abaixo vêm de github.com/anthropics/skills, o repositório oficial de Claude Code Skills. Analise as Skills com maior atenção da comunidade até ${dateStr}.
 
-## 仓库说明
-anthropics/skills 是 Claude Code 官方 Skills 集合仓库，每个 PR 通常对应一个新增或改进的 Skill。社区通过 Issues 提出新 Skill 需求或反馈问题，PR 则代表实际提交的 Skill。
+## Contexto do repositório
+anthropics/skills é a coleção oficial de Skills do Claude Code. Cada PR normalmente representa uma Skill nova ou aprimorada. A comunidade usa Issues para pedir novas Skills e reportar problemas; os PRs representam submissões reais.
 
-## 热门 Pull Requests（按评论数排序，共 ${prs.length} 条，展示前 ${topPrs.length} 条）
+## Pull requests em destaque (ordenadas por comentários, ${prs.length} no total, mostrando as ${topPrs.length} principais)
 ${prsText}
 
-## 社区 Issues（按评论数排序，共 ${issues.length} 条，展示前 ${topIssues.length} 条）
+## Issues da comunidade (ordenadas por comentários, ${issues.length} no total, mostrando as ${topIssues.length} principais)
 ${issuesText}
 
 ---
 
-请生成一份 Claude Code Skills 社区热点报告，包含以下部分：
+Gere um relatório de destaques da comunidade Claude Code Skills com estas seções:
 
-1. **热门 Skills 排行** - 列出评论/关注度最高的 5~8 个 Skills（PR），说明每个 Skill 的功能、社区讨论热点及当前状态（open/merged/draft）
-2. **社区需求趋势** - 从 Issues 中提炼社区最期待的新 Skill 方向（如工作流自动化、代码审查、测试生成、文档等）
-3. **高潜力待合并 Skills** - 评论活跃但尚未合并的 PR，这些 Skills 可能近期落地
-4. **Skills 生态洞察** - 一句话总结：当前社区在 Skills 层面最集中的诉求是什么
+1. **Ranking das Skills mais quentes** - Liste as 5-8 Skills com mais discussão e explique a função, os pontos quentes e o estado atual
+2. **Tendências de demanda da comunidade** - Extraia das Issues as direções de Skills mais esperadas
+3. **Skills promissoras ainda pendentes** - PRs com comentários ativos que ainda não foram merged
+4. **Insight sobre o ecossistema de Skills** - Uma frase resumindo a principal demanda atual da comunidade
 
-语言要求：简洁专业，每个条目附上 GitHub 链接。
+Estilo: conciso e profissional, com links do GitHub em cada item.
 `;
 }
 
 export function buildComparisonPrompt(digests: RepoDigest[], dateStr: string, lang: Lang = "zh"): string {
-  const noActivityStr = lang === "en" ? "No activity in the last 24 hours." : "过去24小时无活动。";
+  const noActivityStr =
+    lang === "en" ? "No activity in the last 24 hours." : "Sem atividade nas últimas 24 horas.";
 
   const sections = digests
     .map((d) => {
@@ -418,21 +430,21 @@ Style: concise and professional, data-backed, suited for technical decision-make
 `;
   }
 
-  return `你是一位专注于 AI 开发工具生态的资深技术分析师。以下是 ${dateStr} 各主流 AI CLI 工具的社区动态摘要：
+  return `Você é um analista sênior do ecossistema de ferramentas de desenvolvimento com IA. Abaixo estão os resumos de atividade da comunidade de cada ferramenta AI CLI em ${dateStr}:
 
 ${sections}
 
 ---
 
-请基于上述各工具的动态，生成一份横向对比分析报告，包含以下部分：
+Com base nesses resumos, gere um relatório comparativo com estas seções:
 
-1. **生态全景** - 用3-5句话概括当前 AI CLI 工具整体发展态势
-2. **各工具活跃度对比** - 以表格形式汇总各工具今日的 Issues 数、PR 数、Release 情况
-3. **共同关注的功能方向** - 多个工具社区都在关注的需求（说明哪些工具、具体诉求）
-4. **差异化定位分析** - 各工具在功能侧重、目标用户、技术路线上的差异
-5. **社区热度与成熟度** - 哪些工具社区更活跃，哪些处于快速迭代阶段
-6. **值得关注的趋势信号** - 从社区反馈中提炼出的行业趋势，对开发者有何参考价值
+1. **Panorama do ecossistema** - Resuma em 3-5 frases o estado geral das ferramentas AI CLI
+2. **Comparação de atividade** - Tabela com issues, PRs e releases por ferramenta
+3. **Direções de features compartilhadas** - Demandas recorrentes em várias comunidades
+4. **Análise de diferenciação** - Diferenças de foco, público-alvo e abordagem técnica
+5. **Tração e maturidade da comunidade** - Quais comunidades estão mais ativas e quais iteram mais rápido
+6. **Sinais de tendência** - Tendências do setor extraídas do feedback das comunidades
 
-语言要求：简洁专业，有数据支撑，适合技术决策者和开发者阅读。
+Estilo: conciso, profissional e apoiado por dados, útil para decisores técnicos e desenvolvedores.
 `;
 }

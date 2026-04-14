@@ -43,7 +43,7 @@ function readDailyDigest(date: string): string | null {
     if (fs.existsSync(p)) {
       const content = fs.readFileSync(p, "utf-8");
       const truncated = content.slice(0, MAX_CHARS_PER_REPORT);
-      parts.push(truncated.length < content.length ? truncated + "\n...[摘要截断]" : truncated);
+      parts.push(truncated.length < content.length ? truncated + "\n...[resumo truncado]" : truncated);
     }
   }
   return parts.length > 0 ? parts.join("\n\n") : null;
@@ -54,7 +54,7 @@ function readWeeklyDigest(date: string): string | null {
   const p = path.join(DIGESTS_DIR, date, "ai-weekly.md");
   if (!fs.existsSync(p)) return null;
   const content = fs.readFileSync(p, "utf-8");
-  return content.slice(0, 3000) + (content.length > 3000 ? "\n...[截断]" : "");
+  return content.slice(0, 3000) + (content.length > 3000 ? "\n...[truncado]" : "");
 }
 
 /** Format a date as ISO week string, e.g. "2026-W10". */
@@ -154,8 +154,8 @@ export async function runWeeklyRollup(): Promise<void> {
     `[weekly] Found ${Object.keys(dailyDigests).length} daily digests: ${Object.keys(dailyDigests).join(", ")}`,
   );
 
-  // Generate ZH and EN in parallel
-  console.log("[weekly] Calling LLM for ZH and EN weekly reports in parallel...");
+  // Generate base language and EN in parallel
+  console.log("[weekly] Calling LLM for PT and EN weekly reports in parallel...");
   const [zhSummary, enSummary] = await Promise.all([
     callLlm(buildWeeklyPrompt(dailyDigests, weekStr, "zh"), LLM_TOKENS_ROLLUP),
     callLlm(buildWeeklyPrompt(dailyDigests, weekStr, "en"), LLM_TOKENS_ROLLUP),
@@ -166,7 +166,7 @@ export async function runWeeklyRollup(): Promise<void> {
 
   const zhContent =
     `# ${WEEKLY_REPORT.title.zh} ${weekStr}\n\n` +
-    `> ${WEEKLY_REPORT.coverage.zh}: ${last7[last7.length - 1]} ~ ${last7[0]} | 生成时间: ${utcStr} UTC\n\n` +
+    `> ${WEEKLY_REPORT.coverage.zh}: ${last7[last7.length - 1]} ~ ${last7[0]} | Gerado em: ${utcStr} UTC\n\n` +
     `---\n\n` +
     zhSummary +
     footer;
@@ -219,7 +219,7 @@ export async function runMonthlyRollup(): Promise<void> {
   if (weeklyDates.length >= 2) {
     // Use weekly reports
     sourceLabel = {
-      zh: `${weeklyDates.length} 份周报`,
+      zh: `${weeklyDates.length} relatórios semanais`,
       en: `${weeklyDates.length} weekly reports`,
     };
     sourceDigests = {};
@@ -231,7 +231,7 @@ export async function runMonthlyRollup(): Promise<void> {
     // Sample daily reports: every 4th day, max 10
     const sampled = monthDates.filter((_, i) => i % 4 === 0).slice(0, 10);
     sourceLabel = {
-      zh: `${sampled.length} 份日报（每4日采样）`,
+      zh: `${sampled.length} relatórios diários (amostragem a cada 4 dias)`,
       en: `${sampled.length} daily reports (sampled every 4 days)`,
     };
     sourceDigests = {};
@@ -248,8 +248,8 @@ export async function runMonthlyRollup(): Promise<void> {
 
   console.log(`[monthly] Source: ${sourceLabel.zh}`);
 
-  // Generate ZH and EN in parallel
-  console.log("[monthly] Calling LLM for ZH and EN monthly reports in parallel...");
+  // Generate base language and EN in parallel
+  console.log("[monthly] Calling LLM for PT and EN monthly reports in parallel...");
   const [zhSummary, enSummary] = await Promise.all([
     callLlm(buildMonthlyPrompt(sourceDigests, monthStr, "zh"), LLM_TOKENS_ROLLUP),
     callLlm(buildMonthlyPrompt(sourceDigests, monthStr, "en"), LLM_TOKENS_ROLLUP),
@@ -260,7 +260,7 @@ export async function runMonthlyRollup(): Promise<void> {
 
   const zhContent =
     `# ${MONTHLY_REPORT.title.zh} ${monthStr}\n\n` +
-    `> 数据来源: ${sourceLabel.zh} | 生成时间: ${utcStr} UTC\n\n` +
+    `> Fonte: ${sourceLabel.zh} | Gerado em: ${utcStr} UTC\n\n` +
     `---\n\n` +
     zhSummary +
     footer;

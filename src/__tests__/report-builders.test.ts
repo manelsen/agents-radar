@@ -23,7 +23,7 @@ function makeDigest(overrides: Partial<RepoDigest> = {}): RepoDigest {
 // ---------------------------------------------------------------------------
 
 describe("buildCliReportContent", () => {
-  it("includes title, meta, and all sections (zh)", () => {
+  it("includes title, meta, and all sections (base lang)", () => {
     const digests = [
       makeDigest({ config: { id: "claude-code", repo: "anthropics/claude-code", name: "Claude Code" } }),
       makeDigest({ config: { id: "codex", repo: "openai/codex", name: "OpenAI Codex" } }),
@@ -39,11 +39,11 @@ describe("buildCliReportContent", () => {
       "zh",
     );
 
-    expect(result).toContain("# AI CLI 工具社区动态日报 2026-03-09");
-    expect(result).toContain("覆盖工具: 2 个");
+    expect(result).toContain("# Relatório diário da comunidade de ferramentas AI CLI 2026-03-09");
+    expect(result).toContain("Ferramentas cobertas: 2");
     expect(result).toContain("[Claude Code](https://github.com/anthropics/claude-code)");
     expect(result).toContain("[Claude Code Skills](https://github.com/anthropics/skills)");
-    expect(result).toContain("横向对比");
+    expect(result).toContain("Comparação entre ferramentas");
     expect(result).toContain("Comparison content");
     expect(result).toContain("Skills summary");
     expect(result).toContain("footer");
@@ -95,8 +95,8 @@ describe("buildCliReportContent", () => {
 // ---------------------------------------------------------------------------
 
 describe("buildOpenclawReportContent", () => {
-  it("includes all sections (zh)", () => {
-    const openclaw = { id: "openclaw", repo: "openclaw/openclaw", name: "OpenClaw" };
+  it("includes all sections (base lang)", () => {
+    const openclaw = { id: "nullclaw", repo: "nullclaw/nullclaw", name: "NullClaw" };
     const peers = [{ id: "peer1", repo: "org/peer1", name: "Peer1" }];
     const peerDigests = [makeDigest({ config: peers[0] })];
     const fetchedOpenclaw = {
@@ -119,19 +119,19 @@ describe("buildOpenclawReportContent", () => {
       "zh",
     );
 
-    expect(result).toContain("# OpenClaw 生态日报 2026-03-09");
+    expect(result).toContain("# Resumo diário do ecossistema de agentes de IA 2026-03-09");
     expect(result).toContain("Issues: 1");
-    expect(result).toContain("覆盖项目: 2 个");
-    expect(result).toContain("[OpenClaw](https://github.com/openclaw/openclaw)");
+    expect(result).toContain("Projetos cobertos: 2");
+    expect(result).toContain("[NullClaw](https://github.com/nullclaw/nullclaw)");
     expect(result).toContain("[Peer1](https://github.com/org/peer1)");
-    expect(result).toContain("OpenClaw 项目深度报告");
-    expect(result).toContain("横向生态对比");
-    expect(result).toContain("同赛道项目详细报告");
+    expect(result).toContain("Análise aprofundada do projeto principal");
+    expect(result).toContain("Comparação entre projetos do ecossistema");
+    expect(result).toContain("Relatórios detalhados dos projetos relacionados");
     expect(result).toContain("footer");
   });
 
   it("renders in English", () => {
-    const openclaw = { id: "openclaw", repo: "openclaw/openclaw", name: "OpenClaw" };
+    const openclaw = { id: "nullclaw", repo: "nullclaw/nullclaw", name: "NullClaw" };
     const result = buildOpenclawReportContent(
       { cfg: openclaw, issues: [], prs: [], releases: [] },
       [],
@@ -144,8 +144,8 @@ describe("buildOpenclawReportContent", () => {
       [],
       "en",
     );
-    expect(result).toContain("# OpenClaw Ecosystem Digest 2026-03-09");
-    expect(result).toContain("OpenClaw Deep Dive");
+    expect(result).toContain("# AI Agents Ecosystem Digest 2026-03-09");
+    expect(result).toContain("Primary Project Deep Dive");
     expect(result).toContain("Cross-Ecosystem Comparison");
   });
 });

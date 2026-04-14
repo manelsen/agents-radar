@@ -49,7 +49,7 @@ export function buildFeishuMessage(
   const isMonthly = baseReports.includes("ai-monthly");
 
   const icon = isMonthly ? "📆" : isWeekly ? "📅" : "📡";
-  const suffix = isMonthly ? " 月报" : isWeekly ? " 周报" : "";
+  const suffix = isMonthly ? " mensal" : isWeekly ? " semanal" : "";
   const lines: string[] = [`${icon} **agents-radar${suffix} · ${date}**`];
 
   const ordered = [
@@ -121,7 +121,7 @@ async function main(): Promise<void> {
   const isMonthly = reports.some((r) => r === "ai-monthly");
   const isWeekly = reports.some((r) => r === "ai-weekly");
   const icon = isMonthly ? "📆" : isWeekly ? "📅" : "📡";
-  const suffix = isMonthly ? " 月报" : isWeekly ? " 周报" : "";
+  const suffix = isMonthly ? " mensal" : isWeekly ? " semanal" : "";
   const title = `${icon} agents-radar${suffix} · ${date}`;
 
   const content = buildFeishuMessage(date, reports, undefined, highlights);

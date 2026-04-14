@@ -38,17 +38,17 @@ cli_repos:
 
 skills_repo: anthropics/skills
 
-# ── OpenClaw (primary focus project) ─────────────────────────────────────────
+# ── Primary focus project ────────────────────────────────────────────────────
 # Tracked with a dedicated deep-dive report. Set paginated: true for high-volume repos.
 
 openclaw:
-  id: openclaw
-  repo: openclaw/openclaw
-  name: OpenClaw
+  id: nullclaw
+  repo: nullclaw/nullclaw
+  name: NullClaw
   paginated: true
 
-# ── OpenClaw peer projects ────────────────────────────────────────────────────
-# Tracked alongside OpenClaw for cross-ecosystem comparison.
+# ── Peer projects ────────────────────────────────────────────────────────────
+# Tracked alongside the primary project for cross-ecosystem comparison.
 
 openclaw_peers:
   - id: nanobot
@@ -62,30 +62,12 @@ openclaw_peers:
     repo: sipeed/picoclaw
     name: PicoClaw
     paginated: true
-  - id: nanoclaw
-    repo: qwibitai/nanoclaw
-    name: NanoClaw
-  - id: nullclaw
-    repo: nullclaw/nullclaw
-    name: NullClaw
   - id: ironclaw
     repo: nearai/ironclaw
     name: IronClaw
-  - id: lobsterai
-    repo: netease-youdao/LobsterAI
-    name: LobsterAI
-  - id: tinyclaw
-    repo: TinyAGI/tinyagi
-    name: TinyClaw
-  - id: moltis
-    repo: moltis-org/moltis
-    name: Moltis
   - id: copaw
     repo: agentscope-ai/CoPaw
     name: CoPaw
-  - id: zeptoclaw
-    repo: qhkm/zeptoclaw
-    name: ZeptoClaw
   - id: zeroclaw
     repo: zeroclaw-labs/zeroclaw
     name: ZeroClaw

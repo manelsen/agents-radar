@@ -50,9 +50,9 @@ const DEFAULT_CLI_REPOS: RepoConfig[] = [
 const DEFAULT_SKILLS_REPO = "anthropics/skills";
 
 const DEFAULT_OPENCLAW: RepoConfig = {
-  id: "openclaw",
-  repo: "openclaw/openclaw",
-  name: "OpenClaw",
+  id: "nullclaw",
+  repo: "nullclaw/nullclaw",
+  name: "NullClaw",
   paginated: true,
 };
 
@@ -60,15 +60,8 @@ const DEFAULT_OPENCLAW_PEERS: RepoConfig[] = [
   { id: "nanobot", repo: "HKUDS/nanobot", name: "NanoBot", paginated: true },
   { id: "hermes-agent", repo: "nousresearch/hermes-agent", name: "Hermes Agent" },
   { id: "picoclaw", repo: "sipeed/picoclaw", name: "PicoClaw", paginated: true },
-  { id: "nanoclaw", repo: "qwibitai/nanoclaw", name: "NanoClaw" },
-  { id: "nullclaw", repo: "nullclaw/nullclaw", name: "NullClaw" },
   { id: "ironclaw", repo: "nearai/ironclaw", name: "IronClaw" },
-  { id: "lobsterai", repo: "netease-youdao/LobsterAI", name: "LobsterAI" },
-  { id: "tinyclaw", repo: "TinyAGI/tinyclaw", name: "TinyClaw" },
   { id: "copaw", repo: "agentscope-ai/CoPaw", name: "CoPaw" },
-  { id: "moltis", repo: "moltis-org/moltis", name: "Moltis" },
-  { id: "zeptoclaw", repo: "qhkm/zeptoclaw", name: "ZeptoClaw" },
-  { id: "easyclaw", repo: "gaoyangz77/easyclaw", name: "EasyClaw" },
   { id: "zeroclaw", repo: "zeroclaw-labs/zeroclaw", name: "ZeroClaw" },
 ];
 

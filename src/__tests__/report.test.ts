@@ -120,12 +120,12 @@ describe("autoGenFooter", () => {
     expect(autoGenFooter()).toBe("");
   });
 
-  it("returns Chinese footer when DIGEST_REPO is set", () => {
+  it("returns Portuguese footer when DIGEST_REPO is set", () => {
     process.env["DIGEST_REPO"] = "user/repo";
     const result = autoGenFooter("zh");
     expect(result).toContain("agents-radar");
     expect(result).toContain("github.com/user/repo");
-    expect(result).toContain("自动生成");
+    expect(result).toContain("gerado automaticamente");
   });
 
   it("returns English footer when lang is en", () => {

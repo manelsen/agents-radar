@@ -28,15 +28,15 @@ function makeItem(overrides: Partial<GitHubItem> = {}): GitHubItem {
 // ---------------------------------------------------------------------------
 
 describe("formatItem", () => {
-  it("formats a basic item in Chinese (default)", () => {
+  it("formats a basic item in Portuguese by default", () => {
     const result = formatItem(makeItem());
     expect(result).toContain("#1 [OPEN]");
     expect(result).toContain("Test issue");
-    expect(result).toContain("作者: alice");
-    expect(result).toContain("评论: 5");
+    expect(result).toContain("Autor: alice");
+    expect(result).toContain("Comentários: 5");
     expect(result).toContain("👍: 3");
-    expect(result).toContain("链接: org/repo Issue #1");
-    expect(result).toContain("摘要: Some body text");
+    expect(result).toContain("Link: org/repo Issue #1");
+    expect(result).toContain("Resumo: Some body text");
   });
 
   it("formats an item in English", () => {
@@ -73,7 +73,7 @@ describe("formatItem", () => {
 
   it("handles null body gracefully", () => {
     const result = formatItem(makeItem({ body: null }));
-    expect(result).toContain("摘要: ");
+    expect(result).toContain("Resumo: ");
   });
 
   it("handles missing reactions gracefully", () => {
@@ -133,14 +133,14 @@ describe("topN", () => {
 // ---------------------------------------------------------------------------
 
 describe("sampleNote", () => {
-  it("shows sampled note in Chinese when total > sampled", () => {
+  it("shows sampled note in Portuguese when total > sampled", () => {
     const result = sampleNote(100, 30);
-    expect(result).toBe("（共 100 条，以下展示评论数最多的 30 条）");
+    expect(result).toBe("(Total: 100; abaixo, os 30 itens com mais comentários)");
   });
 
-  it("shows total-only note in Chinese when total <= sampled", () => {
-    expect(sampleNote(10, 10)).toBe("（共 10 条）");
-    expect(sampleNote(5, 10)).toBe("（共 5 条）");
+  it("shows total-only note in Portuguese when total <= sampled", () => {
+    expect(sampleNote(10, 10)).toBe("(Total: 10)");
+    expect(sampleNote(5, 10)).toBe("(Total: 5)");
   });
 
   it("shows sampled note in English when total > sampled", () => {

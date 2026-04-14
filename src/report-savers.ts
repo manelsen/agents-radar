@@ -8,28 +8,25 @@ import {
   WEB_REPORT,
   TRENDING_REPORT,
   HN_REPORT,
-  PH_REPORT,
   ARXIV_REPORT,
-  HF_REPORT,
+  SCIENCE_REPORT,
   COMMUNITY_REPORT,
   ISSUE_LABELS,
 } from "./i18n.ts";
 import {
   buildWebReportPrompt,
   buildHnPrompt,
-  buildPhPrompt,
   buildArxivPrompt,
-  buildHfPrompt,
+  buildScienceDailyPrompt,
   buildCommunityPrompt,
 } from "./prompts-data.ts";
 import { callLlm, saveFile, LLM_TOKENS_WEB } from "./report.ts";
 import { createGitHubIssue } from "./github.ts";
 import { saveWebState, type WebFetchResult, type WebState } from "./web.ts";
 import type { HnData } from "./hn.ts";
-import type { PhData } from "./ph.ts";
 import type { TrendingData } from "./trending.ts";
 import type { ArxivData } from "./arxiv.ts";
-import type { HfData } from "./hf.ts";
+import type { ScienceDailyData } from "./science-daily.ts";
 import type { DevtoData } from "./devto.ts";
 import type { LobstersData } from "./lobsters.ts";
 
@@ -71,8 +68,8 @@ export async function saveWebReport(
             `- Anthropic: [anthropic.com](https://www.anthropic.com) — ${anthropicNew} new articles (sitemap total: ${anthropicTotal})\n` +
             `- OpenAI: [openai.com](https://openai.com) — ${openaiNew} new articles (sitemap total: ${openaiTotal})\n\n`
           : `${WEB_REPORT.sourcesHeader[lang]}\n` +
-            `- Anthropic: [anthropic.com](https://www.anthropic.com) — 新增 ${anthropicNew} 篇（sitemap 共 ${anthropicTotal} 条）\n` +
-            `- OpenAI: [openai.com](https://openai.com) — 新增 ${openaiNew} 篇（sitemap 共 ${openaiTotal} 条）\n\n`;
+            `- Anthropic: [anthropic.com](https://www.anthropic.com) — ${anthropicNew} novos artigos (total no sitemap: ${anthropicTotal})\n` +
+            `- OpenAI: [openai.com](https://openai.com) — ${openaiNew} novos artigos (total no sitemap: ${openaiTotal})\n\n`;
 
       const webContent = webTitle + webMeta + webSources + `---\n\n` + webSummary + footer;
 
@@ -119,7 +116,7 @@ export async function saveTrendingReport(
   const fileName = lang === "en" ? "ai-trending-en.md" : "ai-trending.md";
   const header =
     `# ${TRENDING_REPORT.title[lang]} ${dateStr}\n\n` +
-    `> ${TRENDING_REPORT.sources[lang]} | ${lang === "en" ? "Generated" : "生成时间"}: ${utcStr} UTC\n\n---\n\n`;
+    `> ${TRENDING_REPORT.sources[lang]} | ${lang === "en" ? "Generated" : "Gerado em"}: ${utcStr} UTC\n\n---\n\n`;
 
   const trendingContent = header + trendingSummary + footer;
 
@@ -161,8 +158,8 @@ export async function saveHnReport(
           `${hnData.stories.length} stories | Generated: ${utcStr} UTC\n\n` +
           `---\n\n`
         : `# ${HN_REPORT.title[lang]} ${dateStr}\n\n` +
-          `> 数据来源: [Hacker News](https://news.ycombinator.com/) | ` +
-          `共 ${hnData.stories.length} 条 | 生成时间: ${utcStr} UTC\n\n` +
+          `> Fonte: [Hacker News](https://news.ycombinator.com/) | ` +
+          `${hnData.stories.length} itens | Gerado em: ${utcStr} UTC\n\n` +
           `---\n\n`;
 
     const hnContent = header + hnSummary + footer;
@@ -181,49 +178,49 @@ export async function saveHnReport(
 }
 
 // ---------------------------------------------------------------------------
-// Product Hunt
+// ScienceDaily
 // ---------------------------------------------------------------------------
 
-export async function savePhReport(
-  phData: PhData,
+export async function saveScienceDailyReport(
+  scienceData: ScienceDailyData,
   utcStr: string,
   dateStr: string,
   digestRepo: string,
   footer: string,
   lang: Lang = "zh",
 ): Promise<void> {
-  if (!phData.fetchSuccess) {
-    console.log(`  [ph/${lang}] No data available, skipping report.`);
+  if (!scienceData.fetchSuccess) {
+    console.log(`  [science/${lang}] No data available, skipping report.`);
     return;
   }
 
-  console.log(`  [ph/${lang}] Calling LLM for Product Hunt report...`);
+  console.log(`  [science/${lang}] Calling LLM for ScienceDaily report...`);
   try {
-    const phSummary = await callLlm(buildPhPrompt(phData, dateStr, lang));
-    const fileName = lang === "en" ? "ai-ph-en.md" : "ai-ph.md";
+    const summary = await callLlm(buildScienceDailyPrompt(scienceData, dateStr, lang));
+    const fileName = lang === "en" ? "ai-science-en.md" : "ai-science.md";
     const header =
       lang === "en"
-        ? `# ${PH_REPORT.title[lang]} ${dateStr}\n\n` +
-          `> Source: [Product Hunt](https://www.producthunt.com/) | ` +
-          `${phData.products.length} products | Generated: ${utcStr} UTC\n\n` +
+        ? `# ${SCIENCE_REPORT.title[lang]} ${dateStr}\n\n` +
+          `> Source: [ScienceDaily](https://www.sciencedaily.com/news/computers_math/artificial_intelligence/) | ` +
+          `${scienceData.stories.length} stories | Generated: ${utcStr} UTC\n\n` +
           `---\n\n`
-        : `# ${PH_REPORT.title[lang]} ${dateStr}\n\n` +
-          `> 数据来源: [Product Hunt](https://www.producthunt.com/) | ` +
-          `共 ${phData.products.length} 个产品 | 生成时间: ${utcStr} UTC\n\n` +
+        : `# ${SCIENCE_REPORT.title[lang]} ${dateStr}\n\n` +
+          `> Fonte: [ScienceDaily](https://www.sciencedaily.com/news/computers_math/artificial_intelligence/) | ` +
+          `${scienceData.stories.length} histórias | Gerado em: ${utcStr} UTC\n\n` +
           `---\n\n`;
 
-    const phContent = header + phSummary + footer;
+    const content = header + summary + footer;
 
-    console.log(`  Saved ${saveFile(phContent, dateStr, fileName)}`);
+    console.log(`  Saved ${saveFile(content, dateStr, fileName)}`);
 
     if (digestRepo) {
-      const phTitle = PH_REPORT.issueTitle(dateStr, lang);
-      const phLabel = ISSUE_LABELS.ph[lang];
-      const phUrl = await createGitHubIssue(phTitle, phContent, phLabel);
-      console.log(`  Created PH issue (${lang}): ${phUrl}`);
+      const title = SCIENCE_REPORT.issueTitle(dateStr, lang);
+      const label = ISSUE_LABELS.science[lang];
+      const url = await createGitHubIssue(title, content, label);
+      console.log(`  Created ScienceDaily issue (${lang}): ${url}`);
     }
   } catch (err) {
-    console.error(`  [ph/${lang}] Report generation failed: ${err}`);
+    console.error(`  [science/${lang}] Report generation failed: ${err}`);
   }
 }
 
@@ -255,8 +252,8 @@ export async function saveArxivReport(
           `${arxivData.papers.length} papers | Generated: ${utcStr} UTC\n\n` +
           `---\n\n`
         : `# ${ARXIV_REPORT.title[lang]} ${dateStr}\n\n` +
-          `> 数据来源: [ArXiv](https://arxiv.org/) (cs.AI, cs.CL, cs.LG) | ` +
-          `共 ${arxivData.papers.length} 篇论文 | 生成时间: ${utcStr} UTC\n\n` +
+          `> Fonte: [ArXiv](https://arxiv.org/) (cs.AI, cs.CL, cs.LG) | ` +
+          `${arxivData.papers.length} artigos | Gerado em: ${utcStr} UTC\n\n` +
           `---\n\n`;
 
     const content = header + summary + footer;
@@ -271,53 +268,6 @@ export async function saveArxivReport(
     }
   } catch (err) {
     console.error(`  [arxiv/${lang}] Report generation failed: ${err}`);
-  }
-}
-
-// ---------------------------------------------------------------------------
-// Hugging Face report
-// ---------------------------------------------------------------------------
-
-export async function saveHfReport(
-  hfData: HfData,
-  utcStr: string,
-  dateStr: string,
-  digestRepo: string,
-  footer: string,
-  lang: Lang = "zh",
-): Promise<void> {
-  if (!hfData.fetchSuccess) {
-    console.log(`  [hf/${lang}] No data available, skipping report.`);
-    return;
-  }
-
-  console.log(`  [hf/${lang}] Calling LLM for Hugging Face report...`);
-  try {
-    const summary = await callLlm(buildHfPrompt(hfData, dateStr, lang));
-    const fileName = lang === "en" ? "ai-hf-en.md" : "ai-hf.md";
-    const header =
-      lang === "en"
-        ? `# ${HF_REPORT.title[lang]} ${dateStr}\n\n` +
-          `> Source: [Hugging Face Hub](https://huggingface.co/) | ` +
-          `${hfData.models.length} models | Generated: ${utcStr} UTC\n\n` +
-          `---\n\n`
-        : `# ${HF_REPORT.title[lang]} ${dateStr}\n\n` +
-          `> 数据来源: [Hugging Face Hub](https://huggingface.co/) | ` +
-          `共 ${hfData.models.length} 个模型 | 生成时间: ${utcStr} UTC\n\n` +
-          `---\n\n`;
-
-    const content = header + summary + footer;
-
-    console.log(`  Saved ${saveFile(content, dateStr, fileName)}`);
-
-    if (digestRepo) {
-      const title = HF_REPORT.issueTitle(dateStr, lang);
-      const label = ISSUE_LABELS.hf[lang];
-      const url = await createGitHubIssue(title, content, label);
-      console.log(`  Created HF issue (${lang}): ${url}`);
-    }
-  } catch (err) {
-    console.error(`  [hf/${lang}] Report generation failed: ${err}`);
   }
 }
 
@@ -352,7 +302,7 @@ export async function saveCommunityReport(
           `> Sources: [Dev.to](https://dev.to/) (${devtoCount} articles) + [Lobste.rs](https://lobste.rs/) (${lobstersCount} stories) | Generated: ${utcStr} UTC\n\n` +
           `---\n\n`
         : `# ${COMMUNITY_REPORT.title[lang]} ${dateStr}\n\n` +
-          `> 数据来源: [Dev.to](https://dev.to/) (${devtoCount} 篇) + [Lobste.rs](https://lobste.rs/) (${lobstersCount} 条) | 生成时间: ${utcStr} UTC\n\n` +
+          `> Fonte: [Dev.to](https://dev.to/) (${devtoCount} artigos) + [Lobste.rs](https://lobste.rs/) (${lobstersCount} itens) | Gerado em: ${utcStr} UTC\n\n` +
           `---\n\n`;
 
     const content = header + summary + footer;

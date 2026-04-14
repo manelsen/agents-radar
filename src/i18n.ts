@@ -1,113 +1,101 @@
 /**
- * Centralized i18n strings for bilingual (zh/en) report generation.
+ * Centralized i18n strings for bilingual (base-lang/en) report generation.
+ * Internally the base language key remains `zh` to avoid a wider refactor,
+ * but the actual user-facing language is now Portuguese.
  */
 
 export type Lang = "zh" | "en";
 
 /** Get a bilingual string by language key. */
-function t(zh: string, en: string): Record<Lang, string> {
-  return { zh, en };
+function t(base: string, en: string): Record<Lang, string> {
+  return { zh: base, en };
 }
 
-// ---------------------------------------------------------------------------
-// Status & error messages (used in index.ts, rollup.ts)
-// ---------------------------------------------------------------------------
-
 export const MSG = {
-  noActivity: t("过去24小时无活动。", "No activity in the last 24 hours."),
-  summaryFailed: t("⚠️ 摘要生成失败。", "⚠️ Summary generation failed."),
-  skillsFailed: t("⚠️ Skills 摘要生成失败。", "⚠️ Skills summary generation failed."),
+  noActivity: t("Sem atividade nas últimas 24 horas.", "No activity in the last 24 hours."),
+  summaryFailed: t("⚠️ Falha ao gerar o resumo.", "⚠️ Summary generation failed."),
+  skillsFailed: t("⚠️ Falha ao gerar o resumo de Skills.", "⚠️ Skills summary generation failed."),
   trendingNoData: t(
-    "⚠️ 今日趋势数据获取失败，无法生成报告。",
+    "⚠️ Falha ao buscar os dados de tendências de hoje; não foi possível gerar o relatório.",
     "⚠️ Trending data unavailable, unable to generate report.",
   ),
-  trendingFailed: t("⚠️ 趋势报告生成失败。", "⚠️ Trending report generation failed."),
+  trendingFailed: t("⚠️ Falha ao gerar o relatório de tendências.", "⚠️ Trending report generation failed."),
 } as const;
 
-// ---------------------------------------------------------------------------
-// Report headers & labels (used in report-builders.ts, index.ts, rollup.ts)
-// ---------------------------------------------------------------------------
-
 export const CLI_REPORT = {
-  title: t("AI CLI 工具社区动态日报", "AI CLI Tools Community Digest"),
+  title: t("Relatório diário da comunidade de ferramentas AI CLI", "AI CLI Tools Community Digest"),
   meta: (utcStr: string, count: number, lang: Lang) =>
     lang === "en"
       ? `> Generated: ${utcStr} UTC | Tools covered: ${count}\n\n`
-      : `> 生成时间: ${utcStr} UTC | 覆盖工具: ${count} 个\n\n`,
-  skillsHeading: t("Claude Code Skills 社区热点", "Claude Code Skills Highlights"),
-  skillsSource: t("数据来源", "Source"),
-  comparison: t("横向对比", "Cross-Tool Comparison"),
-  detail: t("各工具详细报告", "Per-Tool Reports"),
+      : `> Gerado em: ${utcStr} UTC | Ferramentas cobertas: ${count}\n\n`,
+  skillsHeading: t("Destaques da comunidade Claude Code Skills", "Claude Code Skills Highlights"),
+  skillsSource: t("Fonte", "Source"),
+  comparison: t("Comparação entre ferramentas", "Cross-Tool Comparison"),
+  detail: t("Relatórios detalhados por ferramenta", "Per-Tool Reports"),
 } as const;
 
 export const OPENCLAW_REPORT = {
-  title: t("OpenClaw 生态日报", "OpenClaw Ecosystem Digest"),
-  deepDive: t("OpenClaw 项目深度报告", "OpenClaw Deep Dive"),
-  comparison: t("横向生态对比", "Cross-Ecosystem Comparison"),
-  peers: t("同赛道项目详细报告", "Peer Project Reports"),
+  title: t("Resumo diário do ecossistema de agentes de IA", "AI Agents Ecosystem Digest"),
+  deepDive: t("Análise aprofundada do projeto principal", "Primary Project Deep Dive"),
+  comparison: t("Comparação entre projetos do ecossistema", "Cross-Ecosystem Comparison"),
+  peers: t("Relatórios detalhados dos projetos relacionados", "Peer Project Reports"),
 } as const;
 
 export const WEB_REPORT = {
-  title: t("AI 官方内容追踪报告", "Official AI Content Report"),
-  firstCrawl: t("首次全量", "First full crawl"),
-  todayUpdate: t("今日更新", "Today's update"),
+  title: t("Relatório de conteúdo oficial de IA", "Official AI Content Report"),
+  firstCrawl: t("Primeira varredura completa", "First full crawl"),
+  todayUpdate: t("Atualização de hoje", "Today's update"),
   newContent: (count: number, lang: Lang) =>
-    lang === "en" ? `New content: ${count} articles` : `新增内容: ${count} 篇`,
+    lang === "en" ? `New content: ${count} articles` : `Novo conteúdo: ${count} artigos`,
   generated: (utcStr: string, lang: Lang) =>
-    lang === "en" ? `Generated: ${utcStr} UTC` : `生成时间: ${utcStr} UTC`,
-  sourcesHeader: t("数据来源:", "Sources:"),
+    lang === "en" ? `Generated: ${utcStr} UTC` : `Gerado em: ${utcStr} UTC`,
+  sourcesHeader: t("Fontes:", "Sources:"),
   issueTitle: (dateStr: string, isFirstRun: boolean, lang: Lang) =>
     lang === "en"
       ? `🌐 Official AI Content Report ${dateStr}${isFirstRun ? " (First Crawl)" : ""}`
-      : `🌐 AI 官方内容追踪报告 ${dateStr}${isFirstRun ? "（首次全量）" : ""}`,
+      : `🌐 Relatório de conteúdo oficial de IA ${dateStr}${isFirstRun ? " (primeira varredura)" : ""}`,
 } as const;
 
 export const TRENDING_REPORT = {
-  title: t("AI 开源趋势日报", "AI Open Source Trends"),
-  sources: t("数据来源: GitHub Trending + GitHub Search API", "Sources: GitHub Trending + GitHub Search API"),
+  title: t("Relatório diário de tendências open source em IA", "AI Open Source Trends"),
+  sources: t("Fontes: GitHub Trending + GitHub Search API", "Sources: GitHub Trending + GitHub Search API"),
   issueTitle: (dateStr: string, lang: Lang) =>
-    lang === "en" ? `📈 AI Open Source Trends ${dateStr}` : `📈 AI 开源趋势日报 ${dateStr}`,
+    lang === "en" ? `📈 AI Open Source Trends ${dateStr}` : `📈 Tendências open source em IA ${dateStr}`,
 } as const;
 
 export const HN_REPORT = {
-  title: t("Hacker News AI 社区动态日报", "Hacker News AI Community Digest"),
+  title: t("Resumo diário da comunidade de IA no Hacker News", "Hacker News AI Community Digest"),
   issueTitle: (dateStr: string, lang: Lang) =>
-    lang === "en" ? `📰 Hacker News AI Digest ${dateStr}` : `📰 Hacker News AI 社区动态日报 ${dateStr}`,
-} as const;
-
-export const PH_REPORT = {
-  title: t("Product Hunt AI 产品日报", "Product Hunt AI Products Digest"),
-  issueTitle: (dateStr: string, lang: Lang) =>
-    lang === "en" ? `🚀 Product Hunt AI Digest ${dateStr}` : `🚀 Product Hunt AI 产品日报 ${dateStr}`,
+    lang === "en" ? `📰 Hacker News AI Digest ${dateStr}` : `📰 Resumo de IA no Hacker News ${dateStr}`,
 } as const;
 
 export const ARXIV_REPORT = {
-  title: t("ArXiv AI 研究日报", "ArXiv AI Research Digest"),
+  title: t("Resumo diário de pesquisa em IA no ArXiv", "ArXiv AI Research Digest"),
   issueTitle: (dateStr: string, lang: Lang) =>
-    lang === "en" ? `📚 ArXiv AI Research Digest ${dateStr}` : `📚 ArXiv AI 研究日报 ${dateStr}`,
+    lang === "en" ? `📚 ArXiv AI Research Digest ${dateStr}` : `📚 Pesquisa em IA no ArXiv ${dateStr}`,
 } as const;
 
-export const HF_REPORT = {
-  title: t("Hugging Face 热门模型日报", "Hugging Face Trending Models Digest"),
+export const SCIENCE_REPORT = {
+  title: t("Resumo diário de IA no ScienceDaily", "ScienceDaily AI Research Digest"),
   issueTitle: (dateStr: string, lang: Lang) =>
-    lang === "en" ? `🤗 Hugging Face Trending Models ${dateStr}` : `🤗 Hugging Face 热门模型日报 ${dateStr}`,
+    lang === "en" ? `🧪 ScienceDaily AI Digest ${dateStr}` : `🧪 IA no ScienceDaily ${dateStr}`,
 } as const;
 
 export const COMMUNITY_REPORT = {
-  title: t("技术社区 AI 动态日报", "Tech Community AI Digest"),
+  title: t("Resumo diário de IA nas comunidades técnicas", "Tech Community AI Digest"),
   issueTitle: (dateStr: string, lang: Lang) =>
-    lang === "en" ? `💬 Tech Community AI Digest ${dateStr}` : `💬 技术社区 AI 动态日报 ${dateStr}`,
+    lang === "en" ? `💬 Tech Community AI Digest ${dateStr}` : `💬 Comunidades técnicas de IA ${dateStr}`,
 } as const;
 
 export const WEEKLY_REPORT = {
-  title: t("AI 工具生态周报", "AI Tools Ecosystem Weekly Report"),
-  coverage: t("覆盖日期", "Coverage"),
-  issueTitle: (weekStr: string) => `📅 AI 工具生态周报 ${weekStr}`,
+  title: t("Relatório semanal do ecossistema de ferramentas de IA", "AI Tools Ecosystem Weekly Report"),
+  coverage: t("Cobertura", "Coverage"),
+  issueTitle: (weekStr: string) => `📅 Relatório semanal do ecossistema de ferramentas de IA ${weekStr}`,
 } as const;
 
 export const MONTHLY_REPORT = {
-  title: t("AI 工具生态月报", "AI Tools Ecosystem Monthly Report"),
-  issueTitle: (monthStr: string) => `📆 AI 工具生态月报 ${monthStr}`,
+  title: t("Relatório mensal do ecossistema de ferramentas de IA", "AI Tools Ecosystem Monthly Report"),
+  issueTitle: (monthStr: string) => `📆 Relatório mensal do ecossistema de ferramentas de IA ${monthStr}`,
 } as const;
 
 export const ISSUE_LABELS = {
@@ -116,69 +104,53 @@ export const ISSUE_LABELS = {
   web: t("web", "web-en"),
   trending: t("trending", "trending-en"),
   hn: t("hn", "hn-en"),
-  ph: t("ph", "ph-en"),
   arxiv: t("arxiv", "arxiv-en"),
-  hf: t("hf", "hf-en"),
+  science: t("science", "science-en"),
   community: t("community", "community-en"),
 } as const;
 
 export const CLI_ISSUE_TITLE = (dateStr: string, lang: Lang) =>
-  lang === "en" ? `📊 AI CLI Tools Digest ${dateStr}` : `📊 AI CLI 工具社区动态日报 ${dateStr}`;
+  lang === "en" ? `📊 AI CLI Tools Digest ${dateStr}` : `📊 Ferramentas AI CLI ${dateStr}`;
 
 export const OPENCLAW_ISSUE_TITLE = (dateStr: string, lang: Lang) =>
-  lang === "en" ? `🦞 OpenClaw Ecosystem Digest ${dateStr}` : `🦞 OpenClaw 生态日报 ${dateStr}`;
-
-// ---------------------------------------------------------------------------
-// Footer (used in report.ts)
-// ---------------------------------------------------------------------------
+  lang === "en" ? `🦞 AI Agents Ecosystem Digest ${dateStr}` : `🦞 Ecossistema de agentes de IA ${dateStr}`;
 
 export const FOOTER = {
-  autoGen: t("本日报由", "This digest is auto-generated by"),
+  autoGen: t("Este resumo é gerado automaticamente por", "This digest is auto-generated by"),
 } as const;
 
-// ---------------------------------------------------------------------------
-// Telegram notification labels (used in notify.ts)
-// ---------------------------------------------------------------------------
-
-// ---------------------------------------------------------------------------
-// Report labels for manifest/RSS (used in generate-manifest.ts)
-// ---------------------------------------------------------------------------
-
 export const REPORT_LABELS: Record<string, string> = {
-  "ai-cli": "AI CLI 工具社区动态日报",
+  "ai-cli": "Relatório diário da comunidade AI CLI",
   "ai-cli-en": "AI CLI Tools Digest",
-  "ai-agents": "AI Agents 生态日报",
+  "ai-agents": "Relatório diário do ecossistema de agentes de IA",
   "ai-agents-en": "AI Agents Ecosystem Digest",
-  "ai-web": "AI 官方内容追踪报告",
+  "ai-web": "Relatório de conteúdo oficial de IA",
   "ai-web-en": "Official AI Content Report",
-  "ai-trending": "AI 开源趋势日报",
+  "ai-trending": "Tendências open source em IA",
   "ai-trending-en": "AI Open Source Trends",
-  "ai-hn": "Hacker News AI 社区动态日报",
+  "ai-hn": "Resumo de IA no Hacker News",
   "ai-hn-en": "Hacker News AI Community Digest",
-  "ai-ph": "Product Hunt AI 产品日报",
-  "ai-ph-en": "Product Hunt AI Products Digest",
-  "ai-arxiv": "ArXiv AI 研究日报",
+  "ai-arxiv": "Pesquisa em IA no ArXiv",
   "ai-arxiv-en": "ArXiv AI Research Digest",
-  "ai-hf": "Hugging Face 热门模型日报",
-  "ai-hf-en": "Hugging Face Trending Models Digest",
-  "ai-community": "技术社区 AI 动态日报",
+  "ai-science": "IA no ScienceDaily",
+  "ai-science-en": "ScienceDaily AI Research Digest",
+  "ai-community": "Comunidades técnicas de IA",
   "ai-community-en": "Tech Community AI Digest",
-  "ai-weekly": "AI 工具生态周报",
+  "ai-weekly": "Relatório semanal de ferramentas de IA",
   "ai-weekly-en": "AI Tools Weekly Digest",
-  "ai-monthly": "AI 工具生态月报",
+  "ai-monthly": "Relatório mensal de ferramentas de IA",
   "ai-monthly-en": "AI Tools Monthly Digest",
 };
 
 export const NOTIFY_LABELS: Record<string, Record<Lang, string>> = {
-  "ai-cli": t("AI CLI 工具", "AI CLI Tools"),
-  "ai-agents": t("AI Agents 生态", "AI Agents Ecosystem"),
-  "ai-web": t("官网动态", "Official Updates"),
-  "ai-trending": t("GitHub 趋势", "GitHub Trends"),
-  "ai-hn": t("HN 社区动态", "HN Community"),
-  "ai-ph": t("Product Hunt", "Product Hunt"),
-  "ai-arxiv": t("ArXiv 研究", "ArXiv Research"),
-  "ai-hf": t("HF 模型", "HF Models"),
-  "ai-community": t("技术社区", "Tech Community"),
-  "ai-weekly": t("AI 工具生态周报", "AI Tools Weekly"),
-  "ai-monthly": t("AI 工具生态月报", "AI Tools Monthly"),
+  "ai-cli": t("Ferramentas AI CLI", "AI CLI Tools"),
+  "ai-agents": t("Ecossistema de agentes de IA", "AI Agents Ecosystem"),
+  "ai-web": t("Atualizações oficiais", "Official Updates"),
+  "ai-trending": t("Tendências do GitHub", "GitHub Trends"),
+  "ai-hn": t("Comunidade HN", "HN Community"),
+  "ai-arxiv": t("Pesquisa no ArXiv", "ArXiv Research"),
+  "ai-science": t("ScienceDaily", "ScienceDaily"),
+  "ai-community": t("Comunidade técnica", "Tech Community"),
+  "ai-weekly": t("Relatório semanal de IA", "AI Tools Weekly"),
+  "ai-monthly": t("Relatório mensal de IA", "AI Tools Monthly"),
 };

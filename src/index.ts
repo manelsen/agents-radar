@@ -34,17 +34,15 @@ import {
   saveWebReport,
   saveTrendingReport,
   saveHnReport,
-  savePhReport,
   saveArxivReport,
-  saveHfReport,
+  saveScienceDailyReport,
   saveCommunityReport,
 } from "./report-savers.ts";
 import { loadWebState, fetchSiteContent, type WebFetchResult, type WebState } from "./web.ts";
 import { fetchTrendingData, type TrendingData } from "./trending.ts";
 import { fetchHnData, type HnData } from "./hn.ts";
-import { fetchPhData, type PhData } from "./ph.ts";
 import { fetchArxivData, type ArxivData } from "./arxiv.ts";
-import { fetchHfData, type HfData } from "./hf.ts";
+import { fetchScienceDailyData, type ScienceDailyData } from "./science-daily.ts";
 import { fetchDevtoData, type DevtoData } from "./devto.ts";
 import { fetchLobstersData, type LobstersData } from "./lobsters.ts";
 import { loadConfig } from "./config.ts";
@@ -85,15 +83,14 @@ async function fetchAllData(
   webResults: WebFetchResult[];
   trendingData: TrendingData;
   hnData: HnData;
-  phData: PhData;
   arxivData: ArxivData;
-  hfData: HfData;
+  scienceData: ScienceDailyData;
   devtoData: DevtoData;
   lobstersData: LobstersData;
 }> {
   const allConfigs = [...CLI_REPOS, OPENCLAW, ...OPENCLAW_PEERS];
   console.log(
-    `  Tracking: ${allConfigs.map((r) => r.id).join(", ")}, claude-code-skills, web, hn, ph, arxiv, hf, devto, lobsters`,
+    `  Tracking: ${allConfigs.map((r) => r.id).join(", ")}, claude-code-skills, web, hn, arxiv, science, devto, lobsters`,
   );
 
   const [
@@ -102,9 +99,8 @@ async function fetchAllData(
     webResults,
     trendingData,
     hnData,
-    phData,
     arxivData,
-    hfData,
+    scienceData,
     devtoData,
     lobstersData,
   ] = await Promise.all([
@@ -160,9 +156,8 @@ async function fetchAllData(
       }),
     ),
     fetchHnData().catch((): HnData => ({ stories: [], fetchSuccess: false })),
-    fetchPhData().catch((): PhData => ({ products: [], fetchSuccess: false })),
     fetchArxivData().catch((): ArxivData => ({ papers: [], fetchSuccess: false })),
-    fetchHfData().catch((): HfData => ({ models: [], fetchSuccess: false })),
+    fetchScienceDailyData().catch((): ScienceDailyData => ({ stories: [], fetchSuccess: false })),
     fetchDevtoData().catch((): DevtoData => ({ articles: [], fetchSuccess: false })),
     fetchLobstersData().catch((): LobstersData => ({ stories: [], fetchSuccess: false })),
   ]);
@@ -173,9 +168,8 @@ async function fetchAllData(
     webResults,
     trendingData,
     hnData,
-    phData,
     arxivData,
-    hfData,
+    scienceData,
     devtoData,
     lobstersData,
   };
@@ -306,9 +300,8 @@ async function main(): Promise<void> {
     webResults,
     trendingData,
     hnData,
-    phData,
     arxivData,
-    hfData,
+    scienceData,
     devtoData,
     lobstersData,
   } = await fetchAllData(since, webState);
@@ -318,15 +311,15 @@ async function main(): Promise<void> {
   const fetchedOpenclaw = fetched.find((f) => f.cfg.id === OPENCLAW.id)!;
   const fetchedPeers = fetched.filter((f) => peerIds.has(f.cfg.id));
 
-  // 2. Generate per-repo LLM summaries in parallel (zh + en simultaneously)
-  console.log("  Generating summaries in ZH and EN in parallel...");
+  // 2. Generate per-repo LLM summaries in parallel (base lang + en simultaneously)
+  console.log("  Generating summaries in PT and EN in parallel...");
   const [zhSummaries, enSummaries] = await Promise.all([
     generateSummaries(fetchedCli, fetchedOpenclaw, skillsData, fetchedPeers, trendingData, dateStr, "zh"),
     generateSummaries(fetchedCli, fetchedOpenclaw, skillsData, fetchedPeers, trendingData, dateStr, "en"),
   ]);
 
-  // 3. Generate cross-repo comparisons in parallel (zh + en)
-  console.log("  Calling LLM for comparative analyses (ZH + EN)...");
+  // 3. Generate cross-repo comparisons in parallel (base lang + en)
+  console.log("  Calling LLM for comparative analyses (PT + EN)...");
   const summariesByLang = { zh: zhSummaries, en: enSummaries };
 
   const makeOpenclawDigest = (lang: Lang): RepoDigest => ({
@@ -409,12 +402,10 @@ async function main(): Promise<void> {
     ),
     saveHnReport(hnData, utcStr, dateStr, digestRepo, autoGenFooter("zh"), "zh"),
     saveHnReport(hnData, utcStr, dateStr, digestRepo, autoGenFooter("en"), "en"),
-    savePhReport(phData, utcStr, dateStr, digestRepo, autoGenFooter("zh"), "zh"),
-    savePhReport(phData, utcStr, dateStr, digestRepo, autoGenFooter("en"), "en"),
     saveArxivReport(arxivData, utcStr, dateStr, digestRepo, autoGenFooter("zh"), "zh"),
     saveArxivReport(arxivData, utcStr, dateStr, digestRepo, autoGenFooter("en"), "en"),
-    saveHfReport(hfData, utcStr, dateStr, digestRepo, autoGenFooter("zh"), "zh"),
-    saveHfReport(hfData, utcStr, dateStr, digestRepo, autoGenFooter("en"), "en"),
+    saveScienceDailyReport(scienceData, utcStr, dateStr, digestRepo, autoGenFooter("zh"), "zh"),
+    saveScienceDailyReport(scienceData, utcStr, dateStr, digestRepo, autoGenFooter("en"), "en"),
     saveCommunityReport(devtoData, lobstersData, utcStr, dateStr, digestRepo, autoGenFooter("zh"), "zh"),
     saveCommunityReport(devtoData, lobstersData, utcStr, dateStr, digestRepo, autoGenFooter("en"), "en"),
   ]);
@@ -431,9 +422,8 @@ async function main(): Promise<void> {
     ["ai-trending", "ai-trending.md", "ai-trending-en.md"],
     ["ai-web", "ai-web.md", "ai-web-en.md"],
     ["ai-hn", "ai-hn.md", "ai-hn-en.md"],
-    ["ai-ph", "ai-ph.md", "ai-ph-en.md"],
     ["ai-arxiv", "ai-arxiv.md", "ai-arxiv-en.md"],
-    ["ai-hf", "ai-hf.md", "ai-hf-en.md"],
+    ["ai-science", "ai-science.md", "ai-science-en.md"],
     ["ai-community", "ai-community.md", "ai-community-en.md"],
   ] as const) {
     const zh = readReport(zhFile);

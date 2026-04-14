@@ -64,18 +64,18 @@ describe("issue title functions", () => {
   });
 
   it("OPENCLAW_ISSUE_TITLE produces zh and en titles", () => {
-    expect(OPENCLAW_ISSUE_TITLE("2026-03-12", "zh")).toContain("OpenClaw");
-    expect(OPENCLAW_ISSUE_TITLE("2026-03-12", "en")).toContain("OpenClaw Ecosystem Digest");
+    expect(OPENCLAW_ISSUE_TITLE("2026-03-12", "zh")).toContain("Ecossistema de agentes de IA");
+    expect(OPENCLAW_ISSUE_TITLE("2026-03-12", "en")).toContain("AI Agents Ecosystem Digest");
   });
 
   it("WEB_REPORT.issueTitle includes first crawl flag", () => {
-    expect(WEB_REPORT.issueTitle("2026-03-12", true, "zh")).toContain("首次全量");
-    expect(WEB_REPORT.issueTitle("2026-03-12", false, "zh")).not.toContain("首次全量");
+    expect(WEB_REPORT.issueTitle("2026-03-12", true, "zh")).toContain("primeira varredura");
+    expect(WEB_REPORT.issueTitle("2026-03-12", false, "zh")).not.toContain("primeira varredura");
     expect(WEB_REPORT.issueTitle("2026-03-12", true, "en")).toContain("First Crawl");
   });
 
   it("TRENDING_REPORT.issueTitle produces zh and en", () => {
-    expect(TRENDING_REPORT.issueTitle("2026-03-12", "zh")).toContain("开源趋势");
+    expect(TRENDING_REPORT.issueTitle("2026-03-12", "zh")).toContain("Tendências");
     expect(TRENDING_REPORT.issueTitle("2026-03-12", "en")).toContain("Open Source Trends");
   });
 
@@ -101,7 +101,7 @@ describe("dynamic content helpers", () => {
   it("CLI_REPORT.meta produces zh and en metadata", () => {
     const zh = CLI_REPORT.meta("12:00", 5, "zh");
     expect(zh).toContain("12:00");
-    expect(zh).toContain("5 个");
+    expect(zh).toContain("5");
 
     const en = CLI_REPORT.meta("12:00", 5, "en");
     expect(en).toContain("12:00");
@@ -109,7 +109,7 @@ describe("dynamic content helpers", () => {
   });
 
   it("WEB_REPORT.newContent formats count", () => {
-    expect(WEB_REPORT.newContent(10, "zh")).toContain("10 篇");
+    expect(WEB_REPORT.newContent(10, "zh")).toContain("10 artigos");
     expect(WEB_REPORT.newContent(10, "en")).toContain("10 articles");
   });
 
@@ -139,7 +139,18 @@ describe("ISSUE_LABELS", () => {
 
 describe("NOTIFY_LABELS", () => {
   it("covers all report types", () => {
-    const expected = ["ai-cli", "ai-agents", "ai-web", "ai-trending", "ai-hn", "ai-weekly", "ai-monthly"];
+    const expected = [
+      "ai-cli",
+      "ai-agents",
+      "ai-web",
+      "ai-trending",
+      "ai-hn",
+      "ai-arxiv",
+      "ai-science",
+      "ai-community",
+      "ai-weekly",
+      "ai-monthly",
+    ];
     for (const key of expected) {
       expect(NOTIFY_LABELS[key]).toBeDefined();
       expect(NOTIFY_LABELS[key]!.zh).toBeTruthy();

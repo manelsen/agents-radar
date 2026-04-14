@@ -37,7 +37,7 @@ describe("loadConfig", () => {
     const config = loadConfig("/nonexistent/config.yml");
     expect(config.cliRepos.length).toBeGreaterThan(0);
     expect(config.skillsRepo).toBe("anthropics/skills");
-    expect(config.openclaw.id).toBe("openclaw");
+    expect(config.openclaw.id).toBe("nullclaw");
     expect(config.openclawPeers.length).toBeGreaterThan(0);
   });
 
@@ -88,6 +88,6 @@ openclaw:
     vi.spyOn(fs, "existsSync").mockReturnValue(true);
     vi.spyOn(fs, "readFileSync").mockReturnValue("openclaw:\n  id: partial\n");
     const config = loadConfig("test.yml");
-    expect(config.openclaw.id).toBe("openclaw"); // default
+    expect(config.openclaw.id).toBe("nullclaw"); // default
   });
 });

@@ -57,7 +57,7 @@ export function buildMessage(
   const isMonthly = baseReports.includes("ai-monthly");
 
   const icon = isMonthly ? "📆" : isWeekly ? "📅" : "📡";
-  const suffix = isMonthly ? " 月报" : isWeekly ? " 周报" : "";
+  const suffix = isMonthly ? " mensal" : isWeekly ? " semanal" : "";
   const lines: string[] = [`${icon} <b>agents-radar${suffix} · ${date}</b>`];
 
   // Daily reports first, then rollups

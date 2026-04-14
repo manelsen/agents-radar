@@ -19,12 +19,10 @@ const REPORT_FILES = [
   "ai-trending-en",
   "ai-hn",
   "ai-hn-en",
-  "ai-ph",
-  "ai-ph-en",
   "ai-arxiv",
   "ai-arxiv-en",
-  "ai-hf",
-  "ai-hf-en",
+  "ai-science",
+  "ai-science-en",
   "ai-community",
   "ai-community-en",
   "ai-weekly",
@@ -157,8 +155,8 @@ async function main(): Promise<void> {
     `  <channel>\n` +
     `    <title>agents-radar</title>\n` +
     `    <link>${SITE_URL}</link>\n` +
-    `    <description>AI 开源生态每日简报 · Daily AI ecosystem digest</description>\n` +
-    `    <language>zh-CN</language>\n` +
+    `    <description>Resumo diário do ecossistema open source de IA · Daily AI ecosystem digest</description>\n` +
+    `    <language>pt-BR</language>\n` +
     `    <atom:link href="${SITE_URL}/feed.xml" rel="self" type="application/rss+xml"/>\n` +
     `    <lastBuildDate>${buildDate}</lastBuildDate>\n` +
     itemsXml +
