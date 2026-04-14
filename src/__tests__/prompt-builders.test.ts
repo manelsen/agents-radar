@@ -175,6 +175,7 @@ describe("buildSkillsPrompt", () => {
 
 describe("buildTrendingPrompt", () => {
   it("includes trending repos", () => {
+    const formattedStars = (5000).toLocaleString();
     const data: TrendingData = {
       trendingRepos: [
         {
@@ -193,7 +194,7 @@ describe("buildTrendingPrompt", () => {
     const result = buildTrendingPrompt(data, "2026-03-09");
     expect(result).toContain("org/repo");
     expect(result).toContain("Python");
-    expect(result).toContain("5,000");
+    expect(result).toContain(formattedStars);
     expect(result).toContain("+100 today");
   });
 
@@ -204,6 +205,7 @@ describe("buildTrendingPrompt", () => {
   });
 
   it("includes search repos with topic tag", () => {
+    const formattedStars = (1000).toLocaleString();
     const data: TrendingData = {
       trendingRepos: [],
       searchRepos: [
@@ -221,7 +223,7 @@ describe("buildTrendingPrompt", () => {
     };
     const result = buildTrendingPrompt(data, "2026-03-09");
     expect(result).toContain("[topic:ai-agent]");
-    expect(result).toContain("1,000");
+    expect(result).toContain(formattedStars);
   });
 });
 

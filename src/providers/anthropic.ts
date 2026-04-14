@@ -27,8 +27,11 @@ export class AnthropicProvider implements LlmProvider {
       max_tokens: maxTokens,
       messages: [{ role: "user", content: prompt }],
     });
-    const block = message.content[0];
-    if (block?.type !== "text") throw new Error("Unexpected response type from Anthropic");
+    const block = message.content.find((item) => item?.type === "text");
+    if (!block) {
+      const types = message.content.map((item) => item?.type ?? "unknown").join(", ");
+      throw new Error(`Unexpected response type from Anthropic: ${types || "empty content"}`);
+    }
     return block.text;
   }
 }
