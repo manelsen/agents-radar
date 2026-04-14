@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-14T02:57:21.020Z",
+  "generated": "2026-04-14T12:54:24.100Z",
   "dates": [
     {
       "date": "2026-04-14",
@@ -14,12 +14,8 @@
         "ai-trending-en",
         "ai-hn",
         "ai-hn-en",
-        "ai-ph",
-        "ai-ph-en",
         "ai-arxiv",
         "ai-arxiv-en",
-        "ai-hf",
-        "ai-hf-en",
         "ai-community",
         "ai-community-en",
         "ai-weekly",
@@ -37,10 +33,6 @@
         "ai-trending-en",
         "ai-hn",
         "ai-hn-en",
-        "ai-ph",
-        "ai-ph-en",
-        "ai-hf",
-        "ai-hf-en",
         "ai-community",
         "ai-community-en",
         "ai-weekly",
@@ -58,10 +50,6 @@
         "ai-trending-en",
         "ai-hn",
         "ai-hn-en",
-        "ai-ph",
-        "ai-ph-en",
-        "ai-hf",
-        "ai-hf-en",
         "ai-community",
         "ai-community-en"
       ]
@@ -79,12 +67,8 @@
         "ai-trending-en",
         "ai-hn",
         "ai-hn-en",
-        "ai-ph",
-        "ai-ph-en",
         "ai-arxiv",
         "ai-arxiv-en",
-        "ai-hf",
-        "ai-hf-en",
         "ai-community",
         "ai-community-en"
       ]
@@ -102,12 +86,8 @@
         "ai-trending-en",
         "ai-hn",
         "ai-hn-en",
-        "ai-ph",
-        "ai-ph-en",
         "ai-arxiv",
         "ai-arxiv-en",
-        "ai-hf",
-        "ai-hf-en",
         "ai-community",
         "ai-community-en"
       ]
@@ -125,12 +105,8 @@
         "ai-trending-en",
         "ai-hn",
         "ai-hn-en",
-        "ai-ph",
-        "ai-ph-en",
         "ai-arxiv",
         "ai-arxiv-en",
-        "ai-hf",
-        "ai-hf-en",
         "ai-community",
         "ai-community-en"
       ]
@@ -146,12 +122,8 @@
         "ai-trending-en",
         "ai-hn",
         "ai-hn-en",
-        "ai-ph",
-        "ai-ph-en",
         "ai-arxiv",
         "ai-arxiv-en",
-        "ai-hf",
-        "ai-hf-en",
         "ai-community",
         "ai-community-en"
       ]
@@ -169,10 +141,6 @@
         "ai-trending-en",
         "ai-hn",
         "ai-hn-en",
-        "ai-ph",
-        "ai-ph-en",
-        "ai-hf",
-        "ai-hf-en",
         "ai-community",
         "ai-community-en"
       ]
@@ -188,10 +156,6 @@
         "ai-trending-en",
         "ai-hn",
         "ai-hn-en",
-        "ai-ph",
-        "ai-ph-en",
-        "ai-hf",
-        "ai-hf-en",
         "ai-community",
         "ai-community-en",
         "ai-weekly",
@@ -209,10 +173,6 @@
         "ai-trending-en",
         "ai-hn",
         "ai-hn-en",
-        "ai-ph",
-        "ai-ph-en",
-        "ai-hf",
-        "ai-hf-en",
         "ai-community",
         "ai-community-en"
       ]
@@ -230,12 +190,8 @@
         "ai-trending-en",
         "ai-hn",
         "ai-hn-en",
-        "ai-ph",
-        "ai-ph-en",
         "ai-arxiv",
         "ai-arxiv-en",
-        "ai-hf",
-        "ai-hf-en",
         "ai-community",
         "ai-community-en"
       ]
@@ -253,12 +209,8 @@
         "ai-trending-en",
         "ai-hn",
         "ai-hn-en",
-        "ai-ph",
-        "ai-ph-en",
         "ai-arxiv",
         "ai-arxiv-en",
-        "ai-hf",
-        "ai-hf-en",
         "ai-community",
         "ai-community-en"
       ]
@@ -273,9 +225,7 @@
         "ai-trending",
         "ai-trending-en",
         "ai-hn",
-        "ai-hn-en",
-        "ai-ph",
-        "ai-ph-en"
+        "ai-hn-en"
       ]
     },
     {
@@ -291,8 +241,6 @@
         "ai-trending-en",
         "ai-hn",
         "ai-hn-en",
-        "ai-ph",
-        "ai-ph-en",
         "ai-monthly",
         "ai-monthly-en"
       ]
@@ -307,9 +255,7 @@
         "ai-trending",
         "ai-trending-en",
         "ai-hn",
-        "ai-hn-en",
-        "ai-ph",
-        "ai-ph-en"
+        "ai-hn-en"
       ]
     },
     {
