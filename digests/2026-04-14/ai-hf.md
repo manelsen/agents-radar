@@ -1,79 +1,85 @@
 # Hugging Face 热门模型日报 2026-04-14
 
-> 数据来源: [Hugging Face Hub](https://huggingface.co/) | 共 30 个模型 | 生成时间: 2026-04-14 00:16 UTC
+> 数据来源: [Hugging Face Hub](https://huggingface.co/) | 共 30 个模型 | 生成时间: 2026-04-14 02:37 UTC
 
 ---
 
-# Hugging Face 热门模型日报 | 2026-04-14
+# Hugging Face 热门模型日报
+
+## 2026-04-14
 
 ---
 
-## 今日速览
+### 今日速览
 
-Google **Gemma 4** 系列全面霸榜，官方 31B、26B 及 E4B/E2B 多模态变体占据下载量前列，社区 GGUF 和 uncensored 衍生版本密集涌现。中国模型力量显著：**Qwen 3.5** 蒸馏版与 **GLM 5.1** 获高赞，MiniMax、百度、腾讯、智谱均有上榜。语音与视频生成领域出现新玩家：**OmniVoice** 零样本语音克隆下载超 46 万，Netflix 发布 **void-model** 进军视频修复。1-bit 量化与 NVFP4 格式成为边缘部署新热点。
-
----
-
-## 热门模型
-
-### 🧠 语言模型（LLM、对话模型、指令微调）
-
-| 模型 | 作者 | 点赞 | 下载 | 一句话说明 |
-|:---|:---|---:|---:|:---|
-| **[zai-org/GLM-5.1](https://huggingface.co/zai-org/GLM-5.1)** | zai-org | 1,145 | 35,906 | 智谱最新 MoE+DSA 架构对话模型，以高效稀疏激活跻身高赞榜首。 |
-| **[MiniMaxAI/MiniMax-M2.7](https://huggingface.co/MiniMaxAI/MiniMax-M2.7)** | MiniMaxAI | 634 | 18,279 | MiniMax 新一代文本生成模型，MoE 架构代表国产大模型持续迭代。 |
-| **[prism-ml/Bonsai-8B-gguf](https://huggingface.co/prism-ml/Bonsai-8B-gguf)** | prism-ml | 580 | 76,787 | 极端 1-bit 量化 LLM，以极小体积挑战边缘部署可行性，引发技术社区热议。 |
-
-### 🎨 多模态与生成（图像、视频、音频、文本到X）
-
-| 模型 | 作者 | 点赞 | 下载 | 一句话说明 |
-|:---|:---|---:|---:|:---|
-| **[google/gemma-4-31B-it](https://huggingface.co/google/gemma-4-31B-it)** | google | 1,838 | 2,439,350 | Gemma 4 旗舰多模态模型，单周下载破 240 万，稳居生态流量核心。 |
-| **[Jackrong/Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled](https://huggingface.co/Jackrong/Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled)** | Jackrong | 2,620 | 585,351 | 本周点赞冠军，将 Claude 4.6 Opus 推理能力蒸馏至 Qwen 3.5，社区热度极高。 |
-| **[openbmb/VoxCPM2](https://huggingface.co/openbmb/VoxCPM2)** | openbmb | 816 | 9,301 | 清华 OpenBMB 新一代多语言 TTS，语音合成质量与可控性双提升。 |
-| **[k2-fsa/OmniVoice](https://huggingface.co/k2-fsa/OmniVoice)** | k2-fsa | 542 | 460,224 | 零样本多语言语音克隆模型，下载量与实用价值兼具的语音赛道黑马。 |
-| **[netflix/void-model](https://huggingface.co/netflix/void-model)** | netflix | 793 | 0 | Netflix 首款开源视频修复模型，专注对象移除与视频补全，影视工业意义显著。 |
-| **[google/gemma-4-E4B-it](https://huggingface.co/google/gemma-4-E4B-it)** | google | 629 | 1,394,523 | "任意模态到任意模态"原生架构，Google 下一代统一多模态基座。 |
-| **[black-forest-labs/FLUX.2-small-decoder](https://huggingface.co/black-forest-labs/FLUX.2-small-decoder)** | black-forest-labs | 86 | 7,135 | FLUX 系列轻量图像解码器，图像编辑与生成工作流的新组件。 |
-| **[ACE-Step/acestep-v15-xl-turbo](https://huggingface.co/ACE-Step/acestep-v15-xl-turbo)** | ACE-Step | 95 | 3,253 | 音乐/音频生成加速版模型，文本到音频赛道的小众高潜选手。 |
-
-### 🔧 专用模型（代码、数学、医疗、嵌入）
-
-| 模型 | 作者 | 点赞 | 下载 | 一句话说明 |
-|:---|:---|---:|---:|:---|
-| **[baidu/Qianfan-OCR](https://huggingface.co/baidu/Qianfan-OCR)** | baidu | 1,143 | 56,563 | 百度千帆视觉语言 OCR 模型，文档理解与企业场景落地能力突出。 |
-| **[tencent/HY-Embodied-0.5](https://huggingface.co/tencent/HY-Embodied-0.5)** | tencent | 167 | 642 | 腾讯混元具身智能小模型，机器人视觉-语言-动作协同的早期探索。 |
-
-### 📦 微调与量化（社区微调、GGUF、AWQ）
-
-| 模型 | 作者 | 点赞 | 下载 | 一句话说明 |
-|:---|:---|---:|---:|:---|
-| **[dealignai/Gemma-4-31B-JANG_4M-CRACK](https://huggingface.co/dealignai/Gemma-4-31B-JANG_4M-CRACK)** | dealignai | 1,014 | 107,378 | Gemma 4 31B 去限制化 MLX 微调版，高赞反映社区对" uncensored "多模态的强烈需求。 |
-| **[unsloth/gemma-4-26B-A4B-it-GGUF](https://huggingface.co/unsloth/gemma-4-26B-A4B-it-GGUF)** | unsloth | 456 | 1,803,416 | Unsloth 官方 GGUF 量化版，下载量逼近原版，成为本地部署首选。 |
-| **[HauhauCS/Qwen3.5-9B-Uncensored-HauhauCS-Aggressive](https://huggingface.co/HauhauCS/Qwen3.5-9B-Uncensored-HauhauCS-Aggressive)** | HauhauCS | 1,118 | 905,234 | Qwen 3.5 9B 激进去限制 GGUF，以极高下载量验证小体积+无审查的市场缺口。 |
-| **[nvidia/Gemma-4-31B-IT-NVFP4](https://huggingface.co/nvidia/Gemma-4-31B-IT-NVFP4)** | nvidia | 371 | 757,154 | NVIDIA 官方 NVFP4 精度优化版，为 RTX 50 系显卡提供原生高效推理。 |
-| **[LilaRest/gemma-4-31B-it-NVFP4-turbo](https://huggingface.co/LilaRest/gemma-4-31B-it-NVFP4-turbo)** | LilaRest | 193 | 28,829 | 社区 NVFP4 加速衍生版，与 NVIDIA 官方形成互补的实验性优化。 |
+Gemma-4 家族持续爆发，本周在趋势榜上占据 10+ 个位置，涵盖 31B/26B/E4B/E2B 多规格及 safetensors/GGUF/MLX 多格式；Qwen3.5 成为社区二创首选，Jackrong 的 Claude-4.6 蒸馏版本以 2,620 点赞领跑全榜；开源量化生态（GGUF/AWQ）热度不减，unsloth 横扫多系列量化版本；值得关注的是 baidu/Qianfan-OCR 以 1,143 点赞意外进入前十，反映 OCR 场景需求旺盛。
 
 ---
 
-## 生态信号
+### 热门模型
 
-**Gemma 4** 已构成绝对核心生态：Google 官方释放 31B、26B、E4B、E2B 四档模型，覆盖纯文本、图文对话与原生 any-to-any，单周总下载量突破 **600 万**。Unsloth、HauhauCS、Jiunsong 等社区力量围绕 Gemma 4 和 Qwen 3.5 快速产出 GGUF、MLX、NVFP4 及 uncensored 变体，显示开源权重模型的"二次创作"生态极度活跃。与此同时，**1-bit（Bonsai-8B）与 NVFP4 量化**成为新焦点，边缘部署与消费级 GPU 推理的技术竞赛加剧。闭源侧则以蒸馏形式渗透——Claude 4.6 Opus 推理能力被蒸馏至开源 Qwen，模糊了开源/闭源边界。
+#### 🧠 语言模型
 
----
+**1. Jackrong/Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled**
+[链接](https://huggingface.co/Jackrong/Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled)
+作者: Jackrong | 点赞: 2,620 | 下载: 585,351
 
-## 值得探索
-
-1. **[Jackrong/Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled](https://huggingface.co/Jackrong/Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled)**  
-   本周点赞冠军（2,620）。若你关注长思维链、数学或代码推理，这是目前开源社区中"闭源能力开源化"最激进的尝试之一，值得作为推理模型基准测试对象。
-
-2. **[k2-fsa/OmniVoice](https://huggingface.co/k2-fsa/OmniVoice)**  
-   下载量 46 万+的零样本语音克隆模型，支持多语言且无需微调。对播客、游戏配音、本地化内容生产极具即开即用价值。
-
-3. **[prism-ml/Bonsai-8B-gguf](https://huggingface.co/prism-ml/Bonsai-8B-gguf)**  
-   1-bit 量化的极端实验，8B 参数模型体积被压缩至前所未有的水平。若你研究端侧 LLM 的可用性边界，这是不可多得的测试样本。
+将 Claude-4.6-Opus 的推理能力蒸馏至 Qwen3.5-27B，是当前最受欢迎的推理蒸馏模型，在保持大参数优势的同时显著压缩成本。
 
 ---
 
+**2. zai-org/GLM-5.1**
+[链接](https://huggingface.co/zai-org/GLM-5.1)
+作者: zai-org | 点赞: 1,148 | 下载: 35,906
+
+智谱开源的新一代 MoE 大语言模型，采用 GLM-MoE-DSA 架构，在文本生成任务上表现强劲，吸引大量开发者关注。
+
 ---
-*本日报由 [agents-radar](https://github.com/duanyytop/agents-radar) 自动生成。*
+
+**3. MiniMaxAI/MiniMax-M2.7**
+[链接](https://huggingface.co/MiniMaxAI/MiniMax-M2.7)
+作者: MiniMaxAI | 点赞: 644 | 下载: 18,279
+
+MiniMax 的最新旗舰模型，采用创新 MoE 架构，专为高效文本生成优化，海外社区关注度快速攀升。
+
+---
+
+**4. Jackrong/Qwopus3.5-27B-v3-GGUF**
+[链接](https://huggingface.co/Jackrong/Qwopus3.5-27B-v3-GGUF)
+作者: Jackrong | 点赞: 294 | 下载: 126,509
+
+Qwen3.5-27B 的 GGUF 量化版本，保留推理增强能力，适合本地部署，推动开源模型普及。
+
+---
+
+#### 🎨 多模态与生成
+
+**1. google/gemma-4-31B-it**
+[链接](https://huggingface.co/google/gemma-4-31B-it)
+作者: google | 点赞: 1,841 | 下载: 2,439,350
+
+Google Gemma-4 系列的旗舰多模态模型，支持 image-text-to-text，是本周期下载量最高的模型。
+
+---
+
+**2. netflix/void-model**
+[链接](https://huggingface.co/netflix/void-model)
+作者: netflix | 点赞: 795 | 下载: 0
+
+Netflix 开源的 CogVideoX 视频修复模型，支持 video-inpainting 与 object-removal，代表大厂对生成式视频编辑的探索。
+
+---
+
+**3. baidu/Qianfan-OCR**
+[链接](https://huggingface.co/baidu/Qianfan-OCR)
+作者: baidu | 点赞: 1,143 | 下载: 56,563
+
+基于 InternVL Chat 的 OCR 模型，意外获得高关注度，反映文档理解与 OCR 场景的强烈需求。
+
+---
+
+**4. openbmb/VoxCPM2**
+[链接](https://huggingface.co/openbmb/Vox
+
+---
+*本日报由 [agents-radar](https://github.com/manelsen/agents-radar) 自动生成。*
