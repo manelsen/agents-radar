@@ -1,166 +1,134 @@
 {
   "zh": {
     "ai-cli": [
-      "Claude Code v2.1.105 sob pressão comunitária",
-      "Trustworthy Agents: framework de governança corporativa",
-      "MCP connectors: Snowflake/Databricks para Claude",
-      "Claude Code: /buddy removido sem aviso prévio",
-      "Max quotas: esgotamento em 1,5h causa revolta",
-      "Claudraband: camada augmentation contra limitações"
+      "Claude Code v2.1.105 e v2.1.107 lançados",
+      "Plugins emergem como diferenciador-chave",
+      "Windows: 5 de 8 ferramentas com problemas",
+      "OpenCode investe pesado em extensibilidade",
+      "Gemini CLI com 2 issues críticas",
+      "Consumo de tokens: desafio comum"
     ],
     "ai-agents": [
-      "OpenClaw v2026.4.14-beta.1：Telegram论坛话题名称学习",
-      "安全修复：markdown-it替换marked.js防XSS攻击",
-      "24h内500条Issues和500条PRs同步爆发",
-      "340个PR待合并，迭代高速但积压严重",
-      "Telegram语音转录问题持续未解决",
-      "Volcengine模型兼容性仍有回归问题"
+      "NullClaw: 4 PRs de manutenção abertos",
+      "PR #814 corrige bug de lifetime em providers",
+      "PR #813: refresh agora suporta índices modernos",
+      "Zero releases nas últimas 24h",
+      "Foco em estabilidade e experiência",
+      "3 PRs de bugfix + 1 feature (cron)"
     ],
     "ai-trending": [
-      "NousResearch/hermes-agent单日+11,289 stars登顶",
-      "Claude生态工具链爆发：记忆/最佳实践/框架",
-      "Kronos金融大模型+ai-hedge-fund同日登榜",
-      "金融AI成垂直领域新热点",
-      "ollama/ollama获168,871 stars本地推理首选",
-      "AutoGPT稳坐183,402 stars自主Agent标杆"
+      "hermes-agent +8.282★ hoje",
+      "CLAUDE.md Karpathy +9.230★",
+      "claude-mem +2.979★ para sessões",
+      "Kronos: foundation model financeiro",
+      "voicebox: síntese voice open source",
+      "20 projetos em Agentes/Workflows"
     ],
     "ai-web": [
-      "Anthropic发布《Building Effective AI Agents》工程博客",
-      "首次严格区分workflows与agents架构",
-      "Anthropic倡导简单可组合，反对复杂框架",
-      "Claude定位企业级AI基础设施默认层",
-      "OpenAI今日官网零新增内容",
-      "MCP协议推广进入加速期"
+      "Anthropic: blog Building Effective AI Agents",
+      "Dicotomia workflows vs agents definida",
+      "Simplicidade > frameworks complexos",
+      "OpenAI em silêncio hoje (0 posts)",
+      "MCP Protocol em expansão ativa",
+      "Claude como infraestrutura enterprise"
     ],
     "ai-hn": [
-      "英国AI安全研究所评估Claude Mythos网络能力",
-      "N-Day-Bench：LLM发现真实代码库N-Day漏洞能力",
-      "印度史诗角色探索工具获113分/24评论",
-      "Show HN：Markdown实现AI持续学习轻量方案",
-      "Claude Code禁用遥测导致缓存TTL失效bug",
-      "社区对AI加速工程师职业耗竭表示担忧"
-    ],
-    "ai-ph": [
-      "Gemini交互式模拟385票领跑全场",
-      "Ray：终端个人CFO工具获282票",
-      "Codex Compressor：API成本直降35.6%",
-      "Nicelydone MCP：设计上下文工具链",
-      "Eleven Labs切入版权分润市场",
-      "AI向个人CFO/投资仪表盘等终端场景渗透"
+      "Can Claude Fly a Plane? 89 pts",
+      "N-Day-Bench: benchmark de segurança LLM",
+      "Multi-Agentic = problema distribuído",
+      "Controvérsia regressão Claude/Sonnet",
+      "Ataques à segurança de Sam Altman",
+      "Lucy Syndrome: LLMs ignoram correções"
     ],
     "ai-arxiv": [
-      "扩散语言模型dLLM幻觉问题首获系统研究",
-      "IceCache：长序列LLM KV-cache内存优化突破",
-      "Agent² RL-Bench：LLM自主设计RL后训练流程",
-      "LLM应内置显式同理心机制新论点",
-      "指令数据选择新方法：答案分歧引导ADG",
-      "LLM不确定性量化UQL误差来源系统厘清"
+      "RL em simuladores resolve Física Olimpíada",
+      "Looped Reasoning: análise mecânica",
+      "Segurança em agentes tool-augmented",
+      "Interpretabilidade para conteúdo prejudicial",
+      "Raciocínio estruturado em alta",
+      "Aplicações em saúde, física, ciências sociais"
     ],
-    "ai-hf": [
-      "Jackrong/Qwen3.5-27B-Claude-4.6蒸馏获2,620点赞",
-      "gemma-4-31B-it单模型2,439,350下载量创新高",
-      "GLM-5.1：智谱新一代MoE模型开源",
-      "Netflix开源CogVideoX视频修复模型void",
-      "baidu/Qianfan-OCR意外获1,143点赞",
-      "Gemma-4家族本周占据趋势榜10+位置"
+    "ai-science": [
+      "Superátomos gigantes para computação quântica",
+      "Chip UC San Diego reduz energia em GPUs",
+      "Informação quântica protegida e distribuída",
+      "Eficiência piezoelétrica para data centers",
+      "Arquiteturas quânticas emergentes",
+      "Infraestrutura computacional avançada"
     ],
     "ai-community": [
-      "500次实验揭示Agent记忆瓶颈在绑定非召回",
-      "7分钟！Telegram+OpenClaw零成本搭建AI Agent",
-      "Memory Pointer模式解决上下文窗口溢出",
-      "Claude Code持久记忆方案claude-mem实测",
-      "本地AI代理实现按模型计费成本追踪",
-      "LangChain vs LangGraph框架对比开始收敛"
-    ],
-    "ai-weekly": [
-      "Anthropic lança Managed Agents com brain-hands decoupling",
-      "Claude for Healthcare: HIPAA-ready para setor médico",
-      "Hermes Agent: +48k stars, fenômeno do trimestre",
-      "Hermes Agent: pico +11.289 stars em 14/04",
-      "Claude Code: cache TTL reduzida de 1h para 5min",
-      "Comunidade cria alternativas (Claudraband) para Claude Code"
+      "Robô falante com Gemini Live+Reachy",
+      "MCP C#: Roslyn elimina alucinações",
+      "MCP em escala: 92% menos tokens",
+      "LiteLLM hack: gateway alternativo",
+      "Tutoriais RAG e inferência local",
+      "Arquiteturas multi-agente em alta"
     ]
   },
   "en": {
     "ai-cli": [
-      "Claude Code v2.1.105 ships with 10 hot issues",
-      "OpenAI Codex 0.121.0-alpha.4/6 released",
-      "Gemini CLI v0.39.0-nightly drops",
-      "399 comments on Claude model regression bug",
-      "530 comments debate Codex rate limits",
-      "Enterprise auth reliability remains critical gap"
+      "Claude Code v2.1.105 & v2.1.107 released (2 new releases)",
+      "OpenAI Codex issues hit 534 comments (high engagement)",
+      "Claude Code issue #38335: 575 comments (top hot issue)",
+      "MCP standardization emerging as ecosystem trend",
+      "Auth/token management: dominant cross-tool pain point",
+      "OpenCode rivals Copilot with open-source alternative"
     ],
     "ai-agents": [
-      "OpenClaw ships 500 issues and 500 PRs",
-      "v2026.4.14-beta.1 release merges today",
-      "OAuth token refresh race conditions spike",
-      "Telegram/WhatsApp audio regression active",
-      "Discord slash-commands breaking in v4.11",
-      "9 PRs merged, 6 issues closed today"
+      "NullClaw: 4 PRs updated, 2 new bug reports today",
+      "PR #783 adds cron subagent with JSON output & security",
+      "NullClaw PR #815 fixes web search provider setup",
+      "hermes-agent surges +8,282 stars (agentic paradigm)",
+      "ZeroClaw joins ecosystem as new agent project",
+      "IronClaw debuts from nearai platform"
     ],
     "ai-trending": [
-      "Hermes-Agent gains 11,289 stars in 24h",
-      "Claude Code ecosystem projects surge",
-      "Kronos financial AI foundation model drops",
-      "langgenius/dify hits 137,627 stars",
-      "ollama/ollama reaches 168,871 stars",
-      "Voicebox voice synthesis trending"
+      "ollama hits 168,943 stars (local LLM leader)",
+      "vllm reaches 76,541 stars for inference",
+      "langchain holds 133,524 stars for agent building",
+      "voicebox trending for open-source voice synthesis",
+      "Claude Code ecosystem tools surge on GitHub",
+      "RAG vs GraphRAG debate continues in community"
     ],
     "ai-web": [
-      "Anthropic republishes agent building guide",
+      "Anthropic republishes \"Building Effective AI Agents\"",
       "OpenAI posts zero new articles today",
-      "Workflows vs agents: Anthropic's new split",
-      "Agent patterns guide updated Apr 13",
-      "Anthropic surfaces Dec 2024 guide now",
-      "Enterprise agent mental model clarified"
+      "Anthropic clarifies workflows vs agents distinction",
+      "Framework-agnostic agent patterns promoted",
+      "Enterprise AI adoption guided by Anthropic",
+      "Agentic AI guidance surfacing amid market interest"
     ],
     "ai-hn": [
-      "Claude.ai suffers major outage (127 pts)",
-      "Register: 'Claude is getting worse' (19 pts)",
-      "UK AISI evaluates Claude Mythos cyber risk",
-      "Banks warn of AI-boosted hacks (6 pts)",
-      "'Human cost of 10x' breaks senior engineers",
-      "OpenAI strategy memos leak to The Verge"
-    ],
-    "ai-ph": [
-      "Interactive Simulations in Gemini (385 votes)",
-      "Ray: open-source terminal CFO (282 votes)",
-      "Edgee Codex Compressor cuts costs 35.6%",
-      "Eleven Labs Music Marketplace launches",
-      "Domain-specific AI tools dominate today",
-      "Google Gemini leads Product Hunt launches"
+      "N-Day-Bench tests LLM vulnerability detection",
+      "Claude quality decline divides community",
+      "\"Lucy Syndrome\" explains LLM correction failures",
+      "Sonnet 4.6 faces quality regression scrutiny",
+      "Security concerns rise for Anthropic Mythos model",
+      "Multi-agent architecture debates intensify"
     ],
     "ai-arxiv": [
-      "RL post-training for LLM agents matures",
-      "IceCache: memory-efficient KV-cache",
-      "Hallucination patterns in Diffusion LLMs",
-      "CodeQuant: MoE quantization strategy",
-      "Counterfactual reasoning reliability study",
-      "Small medical LLMs need consistency framework"
+      "LangFlow: continuous diffusion rivals discrete",
+      "Looped reasoning models analyzed mechanistically",
+      "General365 benchmark tests diverse LLM reasoning",
+      "Safety frameworks emerge for AI agent traces",
+      "Prompt injection defense papers trending",
+      "Chinese AI text detection benchmark published"
     ],
-    "ai-hf": [
-      "Gemma 4 dominates top-30 trending list",
-      "Jackrong/Qwen3.5-27B leads with 2,620 likes",
-      "Baidu Qianfan-OCR hits 1,143 likes",
-      "Unsloth quantizations span major models",
-      "GLM-5.1 from zai-org trending at 1,148",
-      "MiniMax-M2.7 hits 644 likes on HF"
+    "ai-science": [
+      "\"Giant superatoms\" could solve quantum stability",
+      "New chip slashes data center GPU energy waste",
+      "Chalmers University quantum breakthrough",
+      "UC San Diego piezoelectric GPU efficiency gains",
+      "Quantum-ready architectures gaining traction",
+      "Energy-efficient AI accelerators in focus"
     ],
     "ai-community": [
-      "Agent memory binding > recall problem",
-      "Memory Pointer Pattern fixes overflow",
-      "OpenClaw + Telegram setup goes viral",
-      "RAG vs GraphRAG: simpler is often better",
-      "Cost tracking for LLM usage emerging",
-      "Multi-agent orchestration hits production"
-    ],
-    "ai-weekly": [
-      "Anthropic released 244-page system card for Claude Mythos with offensive cybersecurity capabilities",
-      "NousResearch's Hermes Agent framework surged to 37,000+ stars, dominating weekly trends",
-      "Anthropic launched Managed Agents with 'brain-hands decoupling' for enterprise infrastructure",
-      "Claude Code faced backlash over cache TTL cut (1h→5min) and Pro Max quota exhaustion",
-      "OpenAI shipped Codex v0.120.0 stable with first Rust-based architecture and Realtime V2",
-      "Anthropic open-sourced Project Glasswing security framework for AI-era infrastructure"
+      "MCP server for C# fixes NuGet hallucinations",
+      "Talking robot tutorial uses Gemini Live & Reachy",
+      "LiteLLM compromise sparks simpler gateway builds",
+      "Voice-controlled local AI agents emerging theme",
+      "Project Glasswing secures AI-era software",
+      "RAG vs GraphRAG: when complexity is necessary"
     ]
   }
 }
