@@ -6,7 +6,7 @@
     <description>AI 开源生态每日简报 · Daily AI ecosystem digest</description>
     <language>zh-CN</language>
     <atom:link href="https://duanyytop.github.io/agents-radar/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Tue, 14 Apr 2026 00:30:15 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 14 Apr 2026 02:53:46 +0000</lastBuildDate>
     <item>
       <title>AI CLI 工具社区动态日报 2026-04-14</title>
       <link>https://duanyytop.github.io/agents-radar/#2026-04-14/ai-cli</link>
@@ -12956,6 +12956,1051 @@ As a <strong>1-bit quantized 8B parameter model</strong>, Bonsai represents the 
 ]]></content:encoded>
     </item>
     <item>
+      <title>AI 工具生态周报 2026-04-14</title>
+      <link>https://duanyytop.github.io/agents-radar/#2026-04-14/ai-weekly</link>
+      <guid isPermaLink="true">https://duanyytop.github.io/agents-radar/#2026-04-14/ai-weekly</guid>
+      <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
+      <description>AI 工具生态周报 2026-W16 覆盖日期: 2026-04-08 ~ 2026-04-14 | 生成时间: 2026-04-14 02:50 UTC AI 工具生态周报 | 2026-W16（4月8日-14日） 本周要闻 4月14日 | OpenAI Codex 发布 rust-v0.121.0-alpha.4/6，IDE 性能修复与实时语音功能进入密集迭代阶段，但 VS Code 扩展 CPU 飙升问题（#15764/#16849/#15393）仍为最大舆情。 4月14日 | Anthropic 发布《Building Effective AI Agents》工程博客，系统阐述 workflow/agent 架构二分法，强调&amp;quot;简单可组合&amp;quot;原则，倡导回归 LLM 原生工具调用，暗示对 LangChain 等复杂框架的批判态度。 4月12日 | OpenAI Codex 发布 v0.120.0 正式版，Realtime V2 重大升级落地，同时 5 个 PR 密集构建对话式沙盒权限系统。 4月12日 | Anthropic 发布 Claude for Finan...</description>
+      <content:encoded><![CDATA[<h1>AI 工具生态周报 2026-W16</h1>
+<blockquote>
+<p>覆盖日期: 2026-04-08 ~ 2026-04-14 | 生成时间: 2026-04-14 02:50 UTC</p>
+</blockquote>
+<hr>
+<h1>AI 工具生态周报 | 2026-W16（4月8日-14日）</h1>
+<h2>本周要闻</h2>
+<p><strong>4月14日</strong> | OpenAI Codex 发布 rust-v0.121.0-alpha.4/6，IDE 性能修复与实时语音功能进入密集迭代阶段，但 VS Code 扩展 CPU 飙升问题（#15764/#16849/#15393）仍为最大舆情。</p>
+<p><strong>4月14日</strong> | Anthropic 发布《Building Effective AI Agents》工程博客，系统阐述 workflow/agent 架构二分法，强调&quot;简单可组合&quot;原则，倡导回归 LLM 原生工具调用，暗示对 LangChain 等复杂框架的批判态度。</p>
+<p><strong>4月12日</strong> | OpenAI Codex 发布 <strong>v0.120.0 正式版</strong>，Realtime V2 重大升级落地，同时 5 个 PR 密集构建对话式沙盒权限系统。</p>
+<p><strong>4月12日</strong> | Anthropic 发布 Claude for Financial Services 垂直解决方案，预置 MCP 连接器打通 Databricks/Snowflake，并公布 Trustworthy Agents 治理框架，正式进军企业级 Agent 市场。</p>
+<p><strong>4月11日</strong> | OpenClaw 社区提出 <strong>RFC: Native Agent Identity &amp; Trust Verification</strong>（79 评论），引入基于 ERC-8004/W3C DID/VC 的去中心化代理身份体系，属架构级提案。</p>
+<p><strong>4月10日</strong> | Anthropic 发布 Project Glasswing——AI 时代关键软件安全框架，以 814 分、355 评论登顶 HN 单日最热，标志着 AI 安全基础设施从&quot;研究&quot;走向&quot;开源产品&quot;。</p>
+<p><strong>4月9日</strong> | Anthropic 发布 Managed Agents 技术白皮书，首次提出&quot;脑手分离&quot;架构哲学，目标构建模型无关的 Agent 运行时层，战略野心直指 Agent 基础设施标准制定者。</p>
+<p><strong>4月8日</strong> | Anthropic 发布 Claude Mythos Preview 完整系统卡（500 分/359 评论），红队评估披露网络安全&quot;清算级&quot;能力，引发社区对模型安全叙事与商业动机的深度质疑。</p>
+<hr>
+<h2>CLI 工具进展</h2>
+<h3>第一梯队：头部竞争白热化</h3>
+<table>
+<thead>
+<tr>
+<th align="left">工具</th>
+<th align="left">本周版本</th>
+<th align="left">PR 产出</th>
+<th align="left">核心矛盾</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><strong>Claude Code</strong></td>
+<td align="left">v2.1.94 → v2.1.105</td>
+<td align="left">高密迭代</td>
+<td align="left"><code>/buddy</code> 移除引爆 506👍 请愿；Cache TTL 静默缩短至 5 分钟；Max 套餐计费危机持续</td>
+</tr>
+<tr>
+<td align="left"><strong>OpenAI Codex</strong></td>
+<td align="left">v0.119.0 → v0.121.0-alpha.6</td>
+<td align="left">高密迭代</td>
+<td align="left">Token 燃烧历史级争议（491 评论）；VS Code 扩展 CPU 飙升簇</td>
+</tr>
+<tr>
+<td align="left"><strong>Gemini CLI</strong></td>
+<td align="left">v0.37.0 → v0.39.0-nightly</td>
+<td align="left">高密迭代</td>
+<td align="left">离线启动阻塞成当日最热；YOLO 模式降级；MCP 服务端主动推送</td>
+</tr>
+</tbody></table>
+<h3>第二梯队：垂直分化加速</h3>
+<table>
+<thead>
+<tr>
+<th align="left">工具</th>
+<th align="left">本周亮点</th>
+<th align="left">差异化定位</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><strong>GitHub Copilot CLI</strong></td>
+<td align="left">v1.0.19 → v1.0.25</td>
+<td align="left"><code>copilot mcp</code> 命令正式落地，但计费黑洞危机（#2591）持续发酵，24h 内无新 PR</td>
+</tr>
+<tr>
+<td align="left"><strong>Kimi CLI</strong></td>
+<td align="left">v1.31.0 → v1.33.0</td>
+<td align="left">TypeScript 重写提案引发路线之争；Shell 交互四连 PR；认证系统密集修复</td>
+</tr>
+<tr>
+<td align="left"><strong>OpenCode</strong></td>
+<td align="left">v1.4.0 → v1.4.2</td>
+<td align="left">Effect 架构重构收尾；Copilot 计费异常成最大热点；Windows 技术债务集中暴露</td>
+</tr>
+<tr>
+<td align="left"><strong>Pi</strong></td>
+<td align="left">v0.66.0 → v0.67.1</td>
+<td align="left">TUI 渲染优化 + Kitty 协议支持；本地模型（Ollama/LM Studio）开箱即用；维护效率极高</td>
+</tr>
+<tr>
+<td align="left"><strong>Qwen Code</strong></td>
+<td align="left">v0.14.1 → v0.14.4</td>
+<td align="left">CJK 输入优化、无限循环检测多层防护；/chat 命名会话管理；中文开发者基数大</td>
+</tr>
+</tbody></table>
+<h3>全行业共性挑战</h3>
+<ol>
+<li><strong>成本控制与计费透明</strong>：Claude Max 配额崩溃（#38335，456+评论）、Codex Token 燃烧（#14593，491评论）、Copilot 计费异常（#2591），三个工具同期爆发计费信任危机</li>
+<li><strong>Windows 平台体验</strong>：Codex/Gemini CLI/OpenCode 均存在终端兼容性短板</li>
+<li><strong>MCP 协议治理</strong>：连接稳定性、权限 hook、资源订阅成为扩展生态核心议题</li>
+</ol>
+<hr>
+<h2>AI Agent 生态</h2>
+<h3>OpenClaw 本周高光</h3>
+<p><strong>版本节奏</strong>：v2026.4.8 → v2026.4.12 连续发布，质量修复与功能扩展并行：</p>
+<ul>
+<li><strong>v2026.4.12</strong>：插件加载可靠性、Memory/dreaming 稳定性、Feishu 配置简化</li>
+<li><strong>v2026.4.11-beta.1</strong>：Dreaming/Memory-Wiki 深度整合，ChatGPT 导入 ingestion</li>
+<li><strong>v2026.4.10</strong>：Codex 提供商正式落地，<code>openai/gpt-*</code> 与 <code>codex/gpt-*</code> 双轨并行</li>
+<li><strong>v2026.4.9</strong>：REM 回填通道重大升级，日记 commit/reset 流程</li>
+</ul>
+<p><strong>本周重要 PR</strong>：</p>
+<table>
+<thead>
+<tr>
+<th align="left">PR</th>
+<th align="left">核心贡献</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">#66223</td>
+<td align="left"><code>openclaw models auth clean</code> 命令，清理失效 auth profile</td>
+</tr>
+<tr>
+<td align="left">#62771</td>
+<td align="left">跨频道全局会话记忆（Slack/WhatsApp）</td>
+</tr>
+<tr>
+<td align="left">#64779</td>
+<td align="left">CLI 命令别名解析修复，解决 wiki 命令误拦截</td>
+</tr>
+<tr>
+<td align="left">#12296</td>
+<td align="left">会话转录本密钥脱敏</td>
+</tr>
+</tbody></table>
+<p><strong>持续痛点</strong>：</p>
+<ul>
+<li>npm 打包连续回归（v4.5→4.7→4.8），<code>@buape/carbon</code> 模块缺失导致大量安装失败</li>
+<li>待合并 PR 积压严重（300+ 条），合流效率待提升</li>
+<li>Linux/Windows 原生客户端缺口长期悬而未决（#75，75 评论）</li>
+</ul>
+<h3>Hermes Agent 生态爆发</h3>
+<p>NousResearch 的 <code>hermes-agent</code> 成为本周开源明星项目：</p>
+<ul>
+<li>4月10日：单日 +6,485 stars 登顶 Trending</li>
+<li>4月11日：单日 +7,671 stars 持续领跑</li>
+<li>定位：&quot;与你共同成长&quot;的 Agent 框架，标志社区对&quot;可成长型 Agent&quot;范式的高度期待</li>
+</ul>
+<h3>社区生态亮点</h3>
+<ul>
+<li><strong>Claude Code 衍生生态</strong>：<code>forrestchang/andrej-karpathy-skills</code>（+1,450 today）、<code>shanraisshan/claude-code-best-practice</code>（+1,251 today）、<code>coleam00/Archon</code>（首个开源 Agent Harness Builder）同步上榜</li>
+<li><strong>垂直应用分化</strong>：金融（Kronos）、教育（DeepTutor）、SEO（seomachine）、视频（RedditVideoMakerBot）多赛道涌现</li>
+</ul>
+<hr>
+<h2>开源趋势</h2>
+<h3>GitHub Trending 本周主题词</h3>
+<table>
+<thead>
+<tr>
+<th align="left">主题</th>
+<th align="left">代表项目</th>
+<th align="left">信号解读</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><strong>Agent 基础设施</strong></td>
+<td align="left">NousResearch/hermes-agent（+7,671 ⭐）</td>
+<td align="left">社区从&quot;对话工具&quot;向&quot;自主成长型 Agent&quot;跃迁</td>
+</tr>
+<tr>
+<td align="left"><strong>端侧 AI 部署</strong></td>
+<td align="left">google-ai-edge/gallery（+853）、LiteRT-LM（+501）</td>
+<td align="left">Google 双项目同日登榜，设备端 GenAI 工具链进入实用化</td>
+</tr>
+<tr>
+<td align="left"><strong>文档处理 RAG</strong></td>
+<td align="left">microsoft/markitdown（+3,086）、opendataloader-project/opendataloader-pdf（+1,306）</td>
+<td align="left">企业级文档 AI 预处理需求旺盛</td>
+</tr>
+<tr>
+<td align="left"><strong>Claude Code 生态</strong></td>
+<td align="left">skills、最佳实践、Archon、Claudraband 等多项目</td>
+<td align="left">Anthropic CLI 工具形成明显工具链集群效应</td>
+</tr>
+<tr>
+<td align="left"><strong>Superpowers 方法论</strong></td>
+<td align="left">obra/superpowers（+2,299）</td>
+<td align="left">Agentic 技能框架与标准化人机协作范式</td>
+</tr>
+</tbody></table>
+<h3>技术方向聚类</h3>
+<pre><code>本周开源生态呈现三大脉络：
+1. 上层应用层：垂直场景 AI 爆发（金融、教育、SEO、视频）
+2. 中间工具层：Agent 框架/技能系统快速迭代
+3. 底层基础设施：端侧推理引擎、文档处理、RAG 向量化
+</code></pre>
+<hr>
+<h2>HN 社区热议</h2>
+<h3>本周核心情绪：批判与反思</h3>
+<p>社区对 AI 产业的不信任情绪在本周集中爆发，表现为：</p>
+<table>
+<thead>
+<tr>
+<th align="left">事件</th>
+<th align="left">分数/评论</th>
+<th align="left">情绪标签</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">Stanford AI Index 报告（圈内人与大众脱节）</td>
+<td align="left">180 分 / 228 评论</td>
+<td align="left">🔴 焦虑</td>
+</tr>
+<tr>
+<td align="left">Anthropic Claude 质量下滑质疑</td>
+<td align="left">512 分 / 475 评论</td>
+<td align="left">🔴 愤怒</td>
+</tr>
+<tr>
+<td align="left">Vercel 插件读取用户提示词</td>
+<td align="left">252 分 / 101 评论</td>
+<td align="left">🔴 愤怒</td>
+</tr>
+<tr>
+<td align="left">2019 年 OpenAI &quot;危险&quot;拒发 GPT-2 旧闻</td>
+<td align="left">377 分 / 113 评论</td>
+<td align="left">🟡 讽刺</td>
+</tr>
+<tr>
+<td align="left">Anthropic Mythos 安全争议</td>
+<td align="left">500 分 / 359 评论</td>
+<td align="left">🟡 分化</td>
+</tr>
+</tbody></table>
+<h3>高热议题</h3>
+<ol>
+<li><strong>计费透明度</strong>：Claude Max 配额在 1.5 小时内耗尽（512 分/475 评论）成为本周最高讨论，付费用户集体控诉&quot;企业级定价、消费级稳定性&quot;</li>
+<li><strong>安全叙事疲劳</strong>：社区对 Anthropic &quot;危险模型&quot;话语产生明显脱敏，Gary Marcus 等研究者公开质疑 Mythos 炒作</li>
+<li><strong>Benchmark 操纵担忧</strong>：Berkeley RDI 团队揭露主流 Agent 基准可被轻易操纵，引发对评测体系可信度的深度反思</li>
+<li><strong>开源替代呼声</strong>：Claude Code 增强层（Claudraband）、开源 Managed Agents 替代方案涌现，显示社区对厂商锁定的抵触</li>
+</ol>
+<h3>社区情绪晴雨表</h3>
+<pre><code>整体基调：警惕 &gt; 乐观
+- 对 Anthropic：批评为主（质量、服务、定价），偶有认可（安全研究透明度）
+- 对 OpenAI：负面（静默、能源成本、监管博弈）为主
+- 对开源替代：积极、高期待
+- 对 AI 工具实用性：疲惫与反思（&quot;AI 写 12 分钟，我修 10 小时&quot;）
+</code></pre>
+<hr>
+<h2>官方动态</h2>
+<h3>Anthropic：高频输出，持续定义议题</h3>
+<p>本周发布 <strong>5 篇新内容</strong>（含增量收录），形成完整叙事矩阵：</p>
+<table>
+<thead>
+<tr>
+<th align="left">日期</th>
+<th align="left">内容</th>
+<th align="left">战略意图</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">4月14日</td>
+<td align="left">《Building Effective AI Agents》</td>
+<td align="left">定义 agent 架构标准，倡导&quot;简单可组合&quot;工程哲学</td>
+</tr>
+<tr>
+<td align="left">4月11日</td>
+<td align="left">Managed Agents（工程博客）</td>
+<td align="left">推出托管 Agent 服务，争夺企业级长周期任务自动化市场</td>
+</tr>
+<tr>
+<td align="left">4月11日</td>
+<td align="left">Claude for Financial Services</td>
+<td align="left">垂直行业渗透，HIPAA 就绪 + 预置 MCP 连接器</td>
+</tr>
+<tr>
+<td align="left">4月10日</td>
+<td align="left">Claude for Healthcare</td>
+<td align="left">HIPAA 就绪医疗方案，&quot;科研-临床&quot;双轨布局</td>
+</tr>
+<tr>
+<td align="left">4月10日</td>
+<td align="left">Trustworthy Agents in Practice</td>
+<td align="left">首次系统披露 Claude Code/Cowork 安全治理框架</td>
+</tr>
+<tr>
+<td align="left">4月9日</td>
+<td align="left">Labor Market Impacts</td>
+<td align="left">以&quot;observed exposure&quot;新指标介入 AI 经济政策话语场</td>
+</tr>
+<tr>
+<td align="left">4月9日</td>
+<td align="left">Emotion Concepts in LLM</td>
+<td align="left">情绪表征可解释性研究，推进 AI 安全&quot;心智模型&quot;层面</td>
+</tr>
+<tr>
+<td align="left">4月8日</td>
+<td align="left">Project Glasswing</td>
+<td align="left">开源 AI 时代关键软件安全框架（814 分 HN 最热）</td>
+</tr>
+</tbody></table>
+<p><strong>信号</strong>：Anthropic 正从&quot;模型提供商&quot;向&quot;Agent 基础设施标准制定者&quot;转型，通过协议层（MCP）+ 运行时层（Managed Agents）+ 安全层（Glasswing）+ 垂直行业（Healthcare/Financial）多维度构建竞争壁垒。</p>
+<h3>OpenAI：静默蓄力</h3>
+<p>本周官网 <strong>0 篇新增内容</strong>（仅 2 篇元数据更新），历史罕见。推测其正处于：</p>
+<ul>
+<li>重大发布前的信息管制</li>
+<li>资源集中于非公开渠道（GPT-5 或推理模型迭代）</li>
+</ul>
+<p><strong>社区信号</strong>：OpenAI 收购 Cirrus Labs（225 分/111 评论），持续吞并顶尖研究团队，人才整合动作频繁。</p>
+<hr>
+<h2>下周信号</h2>
+<h3>值得关注的趋势预判</h3>
+<p><strong>1. Claude Code 信任危机走向</strong>
+本周 <code>/buddy</code> 移除、Cache TTL 静默缩短、Max 配额崩溃三重叠加，社区反弹力度为近期最高。下周需关注 Anthropic 是否出台明确的计费透明政策，或引发大规模用户迁移。</p>
+<p><strong>2. OpenAI 是否结束静默</strong>
+连续多日官网无新增内容，结合 Cirrus Labs 收购动作，下周可能迎来重大发布（GPT-5 相关或推理模型迭代），若落空将进一步强化&quot;被 Anthropic 超越叙事领导力&quot;的判断。</p>
+<p><strong>3. OpenClaw 合流效率</strong>
+300+ PR 积压、npm 打包连续回归，版本质量与维护效率的矛盾正在积累。下周 v2026.4.13 是否能止血，或积压问题进一步恶化。</p>
+<p><strong>4. MCP 协议生态成熟度</strong>
+Codex/Gemini CLI/Kimi CLI/OpenCode 四工具同期密集建设 MCP 能力，下周有望看到跨工具 MCP 兼容性的关键进展或遗留问题。</p>
+<p><strong>5. Hermes Agent 后续</strong>
+NousResearch 项目单周吸星超 2 万，下周需关注其架构演进、贡献者生态健康度，以及是否有企业采用案例落地。</p>
+<p><strong>6. Windows 平台债务</strong>
+Codex/Gemini CLI/OpenCode 均存在 Windows 短板，随着 Qwen Code 快速迭代（v0.14.4），中国厂商的 Windows 体验优势可能开始分流第一梯队用户。</p>
+<hr>
+<p><em>报告周期：2026-04-08 至 2026-04-14 | 数据来源：GitHub、HN、Anthropic/OpenAI 官网 | 生成时间：2026-04-14</em></p>
+<hr>
+<p><em>本日报由 <a href="https://github.com/manelsen/agents-radar">agents-radar</a> 自动生成。</em></p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>AI Tools Weekly Digest 2026-04-14</title>
+      <link>https://duanyytop.github.io/agents-radar/#2026-04-14/ai-weekly-en</link>
+      <guid isPermaLink="true">https://duanyytop.github.io/agents-radar/#2026-04-14/ai-weekly-en</guid>
+      <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
+      <description>AI Tools Ecosystem Weekly Report 2026-W16 Coverage: 2026-04-08 ~ 2026-04-14 | Generated: 2026-04-14 02:50 UTC AI Tools Ecosystem Weekly Report 2026-W16 (April 8–14, 2026) 1. Week&amp;#39;s Top Stories April 8 | Anthropic Launches Project Glasswing &amp;amp; Claude Mythos Anthropic published its most ambitious security initiative to date with Project Glasswing, an open framework for securing critical software in the AI era, earning 814 HN points and 355 comments. Simultaneously, the company released the ...</description>
+      <content:encoded><![CDATA[<h1>AI Tools Ecosystem Weekly Report 2026-W16</h1>
+<blockquote>
+<p>Coverage: 2026-04-08 ~ 2026-04-14 | Generated: 2026-04-14 02:50 UTC</p>
+</blockquote>
+<hr>
+<h1>AI Tools Ecosystem Weekly Report</h1>
+<h2>2026-W16 (April 8–14, 2026)</h2>
+<hr>
+<h2>1. Week&#39;s Top Stories</h2>
+<h3>April 8 | Anthropic Launches Project Glasswing &amp; Claude Mythos</h3>
+<p>Anthropic published its most ambitious security initiative to date with <strong>Project Glasswing</strong>, an open framework for securing critical software in the AI era, earning 814 HN points and 355 comments. Simultaneously, the company released the <strong>Claude Mythos Preview System Card</strong> (500 points), revealing a model with near-untethered cybersecurity capabilities. The 244-page disclosure ignited debates about responsible transparency vs. capability exposure.</p>
+<h3>April 10 | Claude Code &quot;Bring Back Buddy&quot; Movement Erupts</h3>
+<p>Community backlash intensified over Anthropic&#39;s removal of the <code>/buddy</code> collaborative feature, spawning a 506-👍 petition and sustained outrage. The controversy compounded existing grievances over the <strong>March 6th Cache TTL downgrade</strong> (1h → 5min), with users documenting severe quota exhaustion—Pro Max 5x plans depleted in 1.5 hours despite moderate usage.</p>
+<h3>April 11 | Anthropic Ships Claude for Healthcare + Trustworthy Agents Framework</h3>
+<p>Anthropic released two strategic publications: <strong>Claude for Healthcare</strong> (HIPAA-ready vertical solution) and <strong>Trustworthy agents in practice</strong> (systematic security governance for Claude Code/Cowork). The engineering blog introduced the <strong>&quot;brain-hands decoupling&quot;</strong> architecture philosophy, positioning Anthropic as the definitional force in enterprise Agent infrastructure standards.</p>
+<h3>April 12 | OpenAI Codex Reaches v0.120.0 Stable + Realtime V2</h3>
+<p>OpenAI shipped its most significant Codex release, featuring <strong>Realtime V2</strong> as the default voice interaction mode and resolving multiple token consumption regressions. However, the <strong>token burning issue</strong> (#14593, 491 comments) remained unresolved, signaling ongoing tension between model capability and cost predictability.</p>
+<h3>April 13 | Stanford AI Index Report Sparks &quot;Disconnect&quot; Debate</h3>
+<p>The Stanford AI Index report highlighting the gap between AI insiders and public perception dominated HN (180 points, 228 comments), triggering widespread reflection on industry echo chambers and hype dynamics. Separately, <strong>OpenAI backed Illinois legislation</strong> limiting AI company liability (421 points, 308 comments), drawing sharp criticism from the developer community.</p>
+<h3>April 14 | OpenClaw v2026.4.12 Targets Plugin Security Architecture</h3>
+<p>OpenClaw published its most security-focused release, tightening plugin loading mechanisms with explicit manifest declarations and centralized trust boundaries. The update addressed OAuth token race conditions and memory/dreaming reliability, while noting a significant PR backlog (342 pending merges).</p>
+<h3>April 14 | WeChat Plugin Compatibility Crisis</h3>
+<p>OpenClaw&#39;s WeChat plugin (integrated via LobsterAI) suffered SDK breakage, affecting China&#39;s largest IM platform integration—a reminder of third-party plugin fragility in Agent ecosystems. The issue joined ongoing Linux/Windows desktop app demands (75 comments, 68 👍) as community priorities.</p>
+<hr>
+<h2>2. CLI Tools Progress</h2>
+<h3>Claude Code (Anthropic)</h3>
+<p><strong>This Week:</strong> v2.1.94 → v2.1.105 (7 releases)</p>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Active Issues</td>
+<td>~50+ daily</td>
+</tr>
+<tr>
+<td>Active PRs</td>
+<td>~10 daily</td>
+</tr>
+<tr>
+<td>Community Heat</td>
+<td>🔥🔥🔥 Critical</td>
+</tr>
+</tbody></table>
+<p><strong>Key Developments:</strong></p>
+<ul>
+<li><strong>Quality Crisis Deepens:</strong> Issues #42796 (model quality degradation, 395 comments) and #46829 (Cache TTL downgrade, 140👍) remained unresolved. Independent benchmarks showed Claude Opus 4.6 hallucination rates dropping from 83% to 68% on BridgeBench.</li>
+<li><strong>New Features:</strong> <code>/team-onboarding</code> command, Focus View mode, state bar auto-refresh, Bedrock Mantle support, default reasoning intensity increased.</li>
+<li><strong>Community Trust Erosion:</strong> The &quot;Bring Back Buddy&quot; petition (506👍) symbolized broader frustration with product decisions made without community input. Vercel plugin telemetry controversy added privacy concerns (252 HN points).</li>
+</ul>
+<h3>OpenAI Codex</h3>
+<p><strong>This Week:</strong> v0.119.0 → v0.121.0-alpha (15+ pre-releases)</p>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Active Issues</td>
+<td>~50+ daily</td>
+</tr>
+<tr>
+<td>Active PRs</td>
+<td>~10 daily</td>
+</tr>
+<tr>
+<td>Community Heat</td>
+<td>🔥🔥🔥 High</td>
+</tr>
+</tbody></table>
+<p><strong>Key Developments:</strong></p>
+<ul>
+<li><strong>Realtime V2 Launched:</strong> Voice interaction became the default, representing a major UX shift.</li>
+<li><strong>Token Cost Crisis:</strong> Issue #14593 (491 comments) on excessive token consumption remained unresolved. Single messages reportedly consuming 100% of quota allocation.</li>
+<li><strong>IDE Performance:</strong> VS Code extension CPU spikes (#15764, #16849) and TUI startup delays (#17039) showed regression patterns.</li>
+<li><strong>Security Additions:</strong> MCP OAuth, permission hooks, and live prefix compression landed in alpha builds.</li>
+</ul>
+<h3>Google Gemini CLI</h3>
+<p><strong>This Week:</strong> v0.37.0 → v0.39.0-nightly</p>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Active Issues</td>
+<td>~50 (highest Apr 13)</td>
+</tr>
+<tr>
+<td>Active PRs</td>
+<td>~10 daily</td>
+</tr>
+<tr>
+<td>Community Heat</td>
+<td>🔥🔥 Moderate-High</td>
+</tr>
+</tbody></table>
+<p><strong>Key Developments:</strong></p>
+<ul>
+<li><strong>MCP Server Push:</strong> Implemented server-initiated message push capabilities (#25209).</li>
+<li><strong>ContextManager Architecture:</strong> Major refactoring toward subagent-aware memory routing.</li>
+<li><strong>YOLO Mode:</strong> Introduced as a default-off alternative for aggressive web interaction.</li>
+<li><strong>Windows Compatibility:</strong> PTY detection and RipGrep offline blocking addressed.</li>
+</ul>
+<h3>GitHub Copilot CLI</h3>
+<p><strong>This Week:</strong> v1.0.19 → v1.0.25 (slow cadence)</p>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Active Issues</td>
+<td>~35-50</td>
+</tr>
+<tr>
+<td>Active PRs</td>
+<td><strong>0 (Apr 14)</strong></td>
+</tr>
+<tr>
+<td>Community Heat</td>
+<td>🔥🔥 Moderate</td>
+</tr>
+</tbody></table>
+<p><strong>Key Developments:</strong></p>
+<ul>
+<li><strong>Premium Billing Black Hole:</strong> Issue #2591 (25+ comments) on unexplained 3x billing anomalies remained unresolved for weeks. Issue #2626 on billing calculation errors newly filed.</li>
+<li><strong>MCP Registry 404:</strong> Enterprise MCP server registration failing, indicating maintenance gaps.</li>
+<li><strong>Zero PR Activity:</strong> April 14 saw no new community contributions—a red flag for project vitality.</li>
+<li><strong>Enterprise Permission Crisis:</strong> TLS proxy and organization token visibility issues persisted.</li>
+</ul>
+<h3>Kimi Code CLI (MoonshotAI)</h3>
+<p><strong>This Week:</strong> v1.31.0 → v1.33.0</p>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Active Issues</td>
+<td>~9-11</td>
+</tr>
+<tr>
+<td>Active PRs</td>
+<td>~10 daily</td>
+</tr>
+<tr>
+<td>Community Heat</td>
+<td>🔥🔥 Moderate</td>
+</tr>
+</tbody></table>
+<p><strong>Key Developments:</strong></p>
+<ul>
+<li><strong>Authentication System Overhaul:</strong> Four consecutive PRs (#1819-1822) addressed OAuth refresh token handling.</li>
+<li><strong>YOLO Web Integration:</strong> YOLO mode migrated into Web UI, enabling aggressive browsing automation.</li>
+<li><strong>TypeScript Rewrite Proposal:</strong> Architectural debate on Python→TypeScript migration created community divergence.</li>
+<li><strong>Windows MCP Fix:</strong> Long-standing Windows integration issue (#1850) finally merged.</li>
+</ul>
+<h3>OpenCode (Anomaly)</h3>
+<p><strong>This Week:</strong> v1.4.0 → v1.4.2</p>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Active Issues</td>
+<td>~10-50</td>
+</tr>
+<tr>
+<td>Active PRs</td>
+<td>~10-15 daily</td>
+</tr>
+<tr>
+<td>Community Heat</td>
+<td>🔥🔥 Moderate-High</td>
+</tr>
+</tbody></table>
+<p><strong>Key Developments:</strong></p>
+<ul>
+<li><strong>Effect Architecture Refactoring:</strong> Core destruction of three facade modules signals architectural ambition but短期 stability risks.</li>
+<li><strong>Copilot Billing Anomaly:</strong> Issue tracking OpenAI pricing discrepancies reached 215 comments.</li>
+<li><strong>Voice Mode + Kiro:</strong> In-development features targeting multimodal interaction.</li>
+<li><strong>Windows Technical Debt:</strong> Session loss, clipboard issues, and path handling accumulated.</li>
+</ul>
+<h3>Pi (badlogic)</h3>
+<p><strong>This Week:</strong> v0.66.0 → v0.67.1</p>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Active Issues</td>
+<td>~37 (Apr 9), ~21 (Apr 13)</td>
+</tr>
+<tr>
+<td>Active PRs</td>
+<td>~8-15 daily</td>
+</tr>
+<tr>
+<td>Community Heat</td>
+<td>🔥🔥 Moderate</td>
+</tr>
+</tbody></table>
+<p><strong>Key Developments:</strong></p>
+<ul>
+<li><strong>Maintenance Efficiency Champion:</strong> Closed 30+ Issues/PRs within single days, reflecting exceptional project stewardship.</li>
+<li><strong>Gemma 4 / Codex Model Support:</strong> Rapid adapter integration for new model releases.</li>
+<li><strong>TUI Rendering Optimizations:</strong> Kitty protocol support, flicker elimination.</li>
+<li><strong>Local Model First-Class:</strong> Ollama/LM Studio integration now out-of-the-box.</li>
+<li><strong>Anthropic Auth Optimization:</strong> Resolved credential refresh edge cases.</li>
+</ul>
+<h3>Qwen Code (Alibaba)</h3>
+<p><strong>This Week:</strong> v0.14.1 → v0.14.4 (nightly)</p>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Active Issues</td>
+<td>~15-47</td>
+</tr>
+<tr>
+<td>Active PRs</td>
+<td><strong>35-50 daily (highest ecosystem)</strong></td>
+</tr>
+<tr>
+<td>Community Heat</td>
+<td>🔥🔥🔥 High</td>
+</tr>
+</tbody></table>
+<p><strong>Key Developments:</strong></p>
+<ul>
+<li><strong>PR Output Dominance:</strong> Qwen Code produced more community contributions than any other tool this week—signaling either rapid development or fragmented attention.</li>
+<li><strong>VS Code Emergency Fixes:</strong> White screen issues pushed through as hotfixes.</li>
+<li><strong>Loop Detection:</strong> Multi-layer infinite loop protection systems implemented.</li>
+<li><strong>CJK Input Optimization:</strong> Targeted improvements for Chinese developer experience.</li>
+<li><strong>Agent Team Experimental:</strong> Subagent collaboration features under active development.</li>
+</ul>
+<hr>
+<h2>3. AI Agent Ecosystem</h2>
+<h3>OpenClaw (OpenClaw Collective)</h3>
+<p><strong>This Week:</strong> v2026.4.5 → v2026.4.12 (7 releases, including 2 emergency fixes)</p>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Issues</td>
+<td>500 daily (~410 new/active, ~90 closed)</td>
+</tr>
+<tr>
+<td>PRs</td>
+<td>500 daily (~342 pending, ~158 merged)</td>
+</tr>
+<tr>
+<td>Health</td>
+<td>⚠️ High Pressure</td>
+</tr>
+</tbody></table>
+<p><strong>Major Releases:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Version</th>
+<th>Date</th>
+<th>Focus</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>v2026.4.5</td>
+<td>Apr 7</td>
+<td>Initial regression source</td>
+</tr>
+<tr>
+<td>v2026.4.7</td>
+<td>Apr 8</td>
+<td><code>openclaw infer</code> CLI, Telegram breakage</td>
+</tr>
+<tr>
+<td>v2026.4.8</td>
+<td>Apr 8</td>
+<td>Emergency Telegram fix</td>
+</tr>
+<tr>
+<td>v2026.4.9</td>
+<td>Apr 9</td>
+<td>REM backfill lane, memory upgrades</td>
+</tr>
+<tr>
+<td>v2026.4.10</td>
+<td>Apr 10</td>
+<td>Codex provider officially landed</td>
+</tr>
+<tr>
+<td>v2026.4.11</td>
+<td>Apr 11</td>
+<td>Dreaming/Memory-Wiki ChatGPT import</td>
+</tr>
+<tr>
+<td>v2026.4.12</td>
+<td>Apr 12</td>
+<td>Plugin security tightening, Feishu UX</td>
+</tr>
+</tbody></table>
+<p><strong>Critical Issues This Week:</strong></p>
+<ul>
+<li><strong>OAuth Token Race Conditions:</strong> Security vulnerability in concurrent auth profile handling.</li>
+<li><strong>Browser CDP Connection:</strong> Regression affecting browser tool reliability.</li>
+<li><strong>Telegram Voice Transcription:</strong> Platform API changes breaking voice features.</li>
+<li><strong>WhatsApp Web Stability:</strong> &quot;Zombie connections&quot; requiring listener health checks.</li>
+<li><strong>npm Dependency Chain:</strong> <code>@buape/carbon</code> and <code>@larksuiteoapi/node-sdk</code> missing in packaged builds.</li>
+</ul>
+<p><strong>Notable PRs Merged:</strong></p>
+<ul>
+<li>Cross-channel global session memory (Slack/WhatsApp) — breaking down platform silos</li>
+<li>Gateway graceful shutdown with SIGKILL for zombie processes</li>
+<li>MS Teams feature parity (pinning, reactions, read markers)</li>
+<li>Feishu Chinese filename URL encoding fix</li>
+<li>Heartbeat empty config disabling (preventing $20/day waste)</li>
+</ul>
+<p><strong>Active RFCs:</strong></p>
+<ul>
+<li><strong>Native Agent Identity &amp; Trust Verification</strong> (#49971, 79 comments) — Decentralized identity based on ERC-8004/W3C DID/VC</li>
+</ul>
+<h3>Peer Projects Activity</h3>
+<ul>
+<li><strong>Hermes Agent (NousResearch):</strong> Exploded to 66,176 stars (+7,454 Apr 13, +6,485 Apr 10) — &quot;agents that grow with you&quot; paradigm</li>
+<li><strong>NanoBot (HKUDS):</strong> RAG-optimized chatbot framework</li>
+<li><strong>LobsterAI (NetEase Youdao):</strong> WeChat plugin ecosystem integration</li>
+<li><strong>PicoClaw (Sipeed):</strong> Hardware-optimized edge deployment</li>
+</ul>
+<hr>
+<h2>4. Open Source Trends</h2>
+<h3>Trending Categories This Week</h3>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Dominant Projects</th>
+<th>Signal</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>🤖 Agent Infrastructure</strong></td>
+<td>Hermes Agent,obra/superpowers, Archon</td>
+<td>🔥 Explosive</td>
+</tr>
+<tr>
+<td><strong>🔧 AI Dev Tools</strong></td>
+<td>Claude Code ecosystem, markitdown, forrestchang/karpathy-skills</td>
+<td>🔥 Sustained</td>
+</tr>
+<tr>
+<td><strong>🧠 Local/LLM Runners</strong></td>
+<td>Ollama, vLLM, LiteRT-LM (Google)</td>
+<td>📈 Growing</td>
+</tr>
+<tr>
+<td><strong>🔍 RAG/Knowledge</strong></td>
+<td>GitNexus, opendataloader-pdf, DeepTutor</td>
+<td>📊 Stable</td>
+</tr>
+<tr>
+<td><strong>📦 Vertical Applications</strong></td>
+<td>Kronos (finance), DeepTutor (edu), ai-hedge-fund</td>
+<td>🆕 Emerging</td>
+</tr>
+</tbody></table>
+<h3>Top Projects by Velocity</h3>
+<table>
+<thead>
+<tr>
+<th>Project</th>
+<th>Category</th>
+<th>Daily Stars</th>
+<th>Significance</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>NousResearch/hermes-agent</td>
+<td>Agent Framework</td>
+<td>+7,454 (Apr 13)</td>
+<td><strong>Peak velocity</strong> — &quot;growth-oriented agent&quot; paradigm</td>
+</tr>
+<tr>
+<td>obra/superpowers</td>
+<td>Agent Skills Framework</td>
+<td>+2,299 (Apr 9)</td>
+<td>Methodological frameworks gaining traction</td>
+</tr>
+<tr>
+<td>microsoft/markitdown</td>
+<td>Document Pipeline</td>
+<td>+3,086 (Apr 12)</td>
+<td>Enterprise RAG demand surge</td>
+</tr>
+<tr>
+<td>google-ai-edge/gallery</td>
+<td>Edge AI</td>
+<td>+853 (Apr 8)</td>
+<td><strong>Google enters edge AI tooling</strong></td>
+</tr>
+<tr>
+<td>google-ai-edge/LiteRT-LM</td>
+<td>Edge LLM Runtime</td>
+<td>+501 (Apr 8)</td>
+<td>Device-side inference standardization</td>
+</tr>
+<tr>
+<td>forrestchang/andrej-karpathy-skills</td>
+<td>Claude Code Optimization</td>
+<td>+1,450 (Apr 11)</td>
+<td>&quot;Expert knowledge as code&quot; pattern</td>
+</tr>
+<tr>
+<td>shiyu-coder/Kronos</td>
+<td>Finance LLM</td>
+<td>Featured</td>
+<td>Domain-specific model competition</td>
+</tr>
+<tr>
+<td>HKUDS/DeepTutor</td>
+<td>AI Education</td>
+<td>Featured</td>
+<td>Educational AI agent verticalization</td>
+</tr>
+</tbody></table>
+<h3>Key Technical Directions</h3>
+<ol>
+<li><strong>Agent Memory &amp; Persistence:</strong> Multiple projects targeting long-horizon agent reliability — Collabmem, Claude-mem, OpenClaw dreaming systems</li>
+<li><strong>Claude Code Ecosystem Building:</strong> Skills frameworks, best practices aggregators, and alternative harnesses forming around Anthropic&#39;s tooling</li>
+<li><strong>Edge AI Deployment:</strong> Google entering with Gallery + LiteRT-LM combo, challenging Ollama&#39;s local model dominance</li>
+<li><strong>Agent Benchmark Manipulation Concerns:</strong> Berkeley RDI exposed top AI agent benchmarks as gameable (175 HN points)</li>
+<li><strong>Deterministic AI Programming:</strong> Archon and similar tools aiming to make AI coding reproducible and testable</li>
+</ol>
+<hr>
+<h2>5. HN Community Highlights</h2>
+<h3>Top Discussions by Score</h3>
+<table>
+<thead>
+<tr>
+<th>Score</th>
+<th>Topic</th>
+<th>Date</th>
+<th>Theme</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>814</td>
+<td>Project Glasswing: Securing critical software for the AI era</td>
+<td>Apr 8</td>
+<td><strong>Security infrastructure</strong></td>
+</tr>
+<tr>
+<td>500</td>
+<td>Claude Mythos Preview System Card [PDF]</td>
+<td>Apr 8</td>
+<td><strong>Model safety disclosure</strong></td>
+</tr>
+<tr>
+<td>421</td>
+<td>OpenAI backs Illinois bill limiting AI liability</td>
+<td>Apr 11</td>
+<td><strong>Regulation &amp; accountability</strong></td>
+</tr>
+<tr>
+<td>377</td>
+<td>OpenAI says GPT-2 is too dangerous to release (2019 retrospective)</td>
+<td>Apr 9</td>
+<td><strong>Historical context on safety theater</strong></td>
+</tr>
+<tr>
+<td>252</td>
+<td>Vercel plugin on Claude Code wants to read your prompts</td>
+<td>Apr 10</td>
+<td><strong>Privacy &amp; telemetry</strong></td>
+</tr>
+<tr>
+<td>225</td>
+<td>Cirrus Labs joining OpenAI</td>
+<td>Apr 12</td>
+<td><strong>Talent consolidation</strong></td>
+</tr>
+<tr>
+<td>197</td>
+<td>Sam Altman residence attacked</td>
+<td>Apr 11</td>
+<td><strong>AI safety backlash</strong></td>
+</tr>
+<tr>
+<td>180</td>
+<td>Stanford AI Index: disconnect between insiders and public</td>
+<td>Apr 14</td>
+<td><strong>Industry self-reflection</strong></td>
+</tr>
+<tr>
+<td>175</td>
+<td>How We Broke Top AI Agent Benchmarks</td>
+<td>Apr 12</td>
+<td><strong>Evaluation integrity</strong></td>
+</tr>
+</tbody></table>
+<h3>Sentiment Analysis</h3>
+<p><strong>Predominant Tone: 🤔 Critical &amp; Skeptical</strong></p>
+<p>Key sentiment vectors:</p>
+<ol>
+<li><strong>Trust Erosion in AI Companies:</strong> Community increasingly questions Anthropic/OpenAI motives — &quot;safety theater&quot; accusations, comparison of Mythos to 2019 GPT-2 hype</li>
+<li><strong>Privacy Fatigue:</strong> Vercel plugin revelation (252 points) demonstrated low tolerance for silent telemetry</li>
+<li><strong>Benchmark Skepticism:</strong> Berkeley&#39;s benchmark manipulation expose resonated deeply — developers demanding better evaluation standards</li>
+<li><strong>Product Quality Concerns:</strong> Claude Code&#39;s recurring regressions and pricing opacity drew sustained criticism</li>
+<li><strong>Pragmatism Rising:</strong> &quot;Show HN&quot; projects focused on narrow, useful applications (Ithihāsas cultural explorer, Revdiff TUI reviewer) earned disproportionate appreciation</li>
+</ol>
+<h3>Engineering Discussions</h3>
+<ul>
+<li><strong>LLM Tool Use vs GUI Automation:</strong> Structural limitations of LLMs in touchscreen/GUI environments</li>
+<li><strong>1-bit LLMs:</strong> Bonsai 8B (1.15GB) generating interest in extreme quantization</li>
+<li><strong>Apple Silicon VM Limits:</strong> Continued developer frustration with virtualization constraints</li>
+<li><strong>Local AI Infrastructure:</strong> Multiple &quot;Bloomberg Terminal for LLM ops&quot; and memory system projects</li>
+</ul>
+<hr>
+<h2>6. Official Announcements</h2>
+<h3>Anthropic (anthropic.com)</h3>
+<p><strong>This Week: 8 new publications</strong></p>
+<table>
+<thead>
+<tr>
+<th>Date</th>
+<th>Content</th>
+<th>Type</th>
+<th>Key Message</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Apr 14</td>
+<td>Building Effective AI Agents</td>
+<td>Engineering</td>
+<td><strong>Workflows vs agents二分法</strong> — simple, composable patterns over complex frameworks</td>
+</tr>
+<tr>
+<td>Apr 11</td>
+<td>Scaling Managed Agents: Decoupling the brain from the hands</td>
+<td>Engineering</td>
+<td><strong>Agent infrastructure philosophy</strong> — stable interfaces over model implementation</td>
+</tr>
+<tr>
+<td>Apr 11</td>
+<td>Claude for Financial Services</td>
+<td>Product</td>
+<td><strong>Vertical expansion</strong> — HIPAA-ready, pre-built MCP connectors, compliance automation</td>
+</tr>
+<tr>
+<td>Apr 10</td>
+<td>Trustworthy agents in practice</td>
+<td>Research</td>
+<td><strong>Security governance framework</strong> for Claude Code/Cowork</td>
+</tr>
+<tr>
+<td>Apr 10</td>
+<td>Advancing Claude in healthcare and the life sciences</td>
+<td>Product</td>
+<td><strong>Healthcare dual-track</strong> — clinical + research platforms</td>
+</tr>
+<tr>
+<td>Apr 9</td>
+<td>Labor market impacts of AI: A new measure</td>
+<td>Research</td>
+<td><strong>&quot;Observed exposure&quot; metric</strong> — distinguishing automation vs augmentation</td>
+</tr>
+<tr>
+<td>Apr 9</td>
+<td>Emotion concepts and their function in LLMs</td>
+<td>Research</td>
+<td><strong>Interpretability breakthrough</strong> — causal emotional representations in Claude</td>
+</tr>
+<tr>
+<td>Apr 8</td>
+<td>Project Glasswing</td>
+<td>Security</td>
+<td><strong>Open security framework</strong> for AI-era critical infrastructure</td>
+</tr>
+</tbody></table>
+<p><strong>Strategic Narrative:</strong> Anthropic is executing a three-layer platform play:</p>
+<ol>
+<li><strong>Model layer:</strong> Claude Opus/Sonnet 4.5 as the intelligent core</li>
+<li><strong>Protocol layer:</strong> MCP as the data connector standard</li>
+<li><strong>Runtime layer:</strong> Managed Agents as the execution infrastructure</li>
+</ol>
+<h3>OpenAI (openai.com)</h3>
+<p><strong>This Week: ~2 metadata updates only</strong></p>
+<table>
+<thead>
+<tr>
+<th>Date</th>
+<th>Content (URL inference)</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Apr 10</td>
+<td>Next Phase Of Enterprise AI (?)</td>
+<td>Product</td>
+</tr>
+<tr>
+<td>Apr 10</td>
+<td>Children&#39;s Safety Framework (?)</td>
+<td>Policy</td>
+</tr>
+</tbody></table>
+<p><strong>Status: ⚠️ Information blackout</strong> — No substantive content published. Implications:</p>
+<ul>
+<li>Resource concentration on unreleased products (GPT-5, o3 successor)</li>
+<li>Strategic silence ahead of major announcements</li>
+<li>Competitive field being ceded to Anthropic&#39;s thought leadership</li>
+</ul>
+<hr>
+<h2>7. Next Week&#39;s Signals</h2>
+<h3>Immediate Watch Items</h3>
+<ol>
+<li><p><strong>OpenAI Counter-Announcement Expected</strong></p>
+<ul>
+<li>Anthropic&#39;s content dominance this week (8 vs 2 publications) signals urgency</li>
+<li>Watch for GPT-5 / o4-series / new Codex features announcement</li>
+<li>Cirrus Labs integration could yield technical outputs</li>
+</ul>
+</li>
+<li><p><strong>Claude Code Quality Crisis Resolution</strong></p>
+<ul>
+<li>Model degradation allegations (#42796, 395 comments) remain unresolved</li>
+<li>Anthropic must address trust erosion before May announcements</li>
+<li>Potential for emergency model update or public communication</li>
+</ul>
+</li>
+<li><p><strong>OpenClaw PR Backlog Crisis</strong></p>
+<ul>
+<li>342 pending PRs at week&#39;s end indicates maintenance overload</li>
+<li>Watch for quality control failures or contributor burnout</li>
+<li>v2026.4.13 likely to focus on stability over features</li>
+</ul>
+</li>
+<li><p><strong>Regulatory Developments</strong></p>
+<ul>
+<li>Illinois AI liability bill advancing — impacts all AI company product decisions</li>
+<li>EU AI Act implementation details expected</li>
+<li>Watch for Anthropic&#39;s Washington engagement strategy</li>
+</ul>
+</li>
+</ol>
+<h3>Medium-Term Trends to Monitor</h3>
+<table>
+<thead>
+<tr>
+<th>Trend</th>
+<th>Evidence</th>
+<th>Likely Direction</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Agent memory wars</strong></td>
+<td>OpenClaw dreaming, Collabmem, Claude-mem, Pi persistent sessions</td>
+<td>Consolidation toward 2-3 memory paradigms</td>
+</tr>
+<tr>
+<td><strong>Claude Code ecosystem fork</strong></td>
+<td>Community plugins, karpathy-skills, alternative harnesses</td>
+<td>Anthropic must embrace or compete with community</td>
+</tr>
+<tr>
+<td><strong>Edge AI acceleration</strong></td>
+<td>Google Gallery + LiteRT-LM launch</td>
+<td>Challenging Ollama&#39;s local model monopoly</td>
+</tr>
+<tr>
+<td><strong>CLI tool consolidation</strong></td>
+<td>Multiple tools addressing same pain points (billing, Windows, MCP)</td>
+<td>Market likely to consolidate in 12-18 months</td>
+</tr>
+<tr>
+<td><strong>Vertical AI specialization</strong></td>
+<td>Healthcare, Financial Services, Education launches</td>
+<td>Enterprise verticalization as growth vector</td>
+</tr>
+</tbody></table>
+<h3>Data Gaps &amp; Recommended Monitoring</h3>
+<ul>
+<li><strong>OpenAI Research Pipeline:</strong> No visibility into model development</li>
+<li><strong>GitHub Copilot CLI Vitality:</strong> Zero PR activity on Apr 14 is alarming</li>
+<li><strong>Kimi/Qwen English Documentation:</strong> Non-English primary sources limit analysis</li>
+<li><strong>Agent Benchmark Health:</strong> Berkeley exposé suggests systematic evaluation problems</li>
+</ul>
+<hr>
+<p><em>This digest is auto-generated by <a href="https://github.com/manelsen/agents-radar">agents-radar</a>.</em></p>
+]]></content:encoded>
+    </item>
+    <item>
       <title>AI CLI 工具社区动态日报 2026-04-13</title>
       <link>https://duanyytop.github.io/agents-radar/#2026-04-13/ai-cli</link>
       <guid isPermaLink="true">https://duanyytop.github.io/agents-radar/#2026-04-13/ai-cli</guid>
@@ -25760,235 +26805,6 @@ Vision routing (#8610) ──→ 成本优化成为工程优先级
 </tr>
 </tbody></table>
 <hr>
-<hr>
-<p><em>This digest is auto-generated by <a href="https://github.com/duanyytop/agents-radar">agents-radar</a>.</em></p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>技术社区 AI 动态日报 2026-04-13</title>
-      <link>https://duanyytop.github.io/agents-radar/#2026-04-13/ai-community</link>
-      <guid isPermaLink="true">https://duanyytop.github.io/agents-radar/#2026-04-13/ai-community</guid>
-      <pubDate>Mon, 13 Apr 2026 00:00:00 +0000</pubDate>
-      <description>技术社区 AI 动态日报 2026-04-13 数据来源: Dev.to (30 篇) + Lobste.rs (4 条) | 生成时间: 2026-04-13 00:13 UTC 技术社区 AI 动态日报 | 2026-04-13 今日速览 今日技术社区围绕 MCP（Model Context Protocol）生态爆发 展开热烈讨论，金融行业首个 MCP Server 落地引发关注。开发者正从&amp;quot;AI 能做什么&amp;quot;转向&amp;quot;如何安全、可观测地部署 AI Agent&amp;quot;，本地 LLM 部署与 Agent 基础设施成为实操热点。同时，AI 代码助手的实际效能争议持续发酵，社区开始追问工具背后的真实生产力数据。 Dev.to 精选 文章 互动数据 核心价值 Banks Got Their First MCP Server. Here&amp;#39;s What Nymbus Actually Built. 👍 20 · 💬 0 金融行业 MCP 落地的首个案例，为垂直领域 AI 集成提供架构参考 Salesmotion&amp;#39;s MCP Server Tur...</description>
-      <content:encoded><![CDATA[<h1>技术社区 AI 动态日报 2026-04-13</h1>
-<blockquote>
-<p>数据来源: <a href="https://dev.to/">Dev.to</a> (30 篇) + <a href="https://lobste.rs/">Lobste.rs</a> (4 条) | 生成时间: 2026-04-13 00:13 UTC</p>
-</blockquote>
-<hr>
-<h1>技术社区 AI 动态日报 | 2026-04-13</h1>
-<hr>
-<h2>今日速览</h2>
-<p>今日技术社区围绕 <strong>MCP（Model Context Protocol）生态爆发</strong> 展开热烈讨论，金融行业首个 MCP Server 落地引发关注。开发者正从&quot;AI 能做什么&quot;转向&quot;如何安全、可观测地部署 AI Agent&quot;，本地 LLM 部署与 Agent 基础设施成为实操热点。同时，AI 代码助手的实际效能争议持续发酵，社区开始追问工具背后的真实生产力数据。</p>
-<hr>
-<h2>Dev.to 精选</h2>
-<table>
-<thead>
-<tr>
-<th align="left">文章</th>
-<th align="left">互动数据</th>
-<th align="left">核心价值</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><strong><a href="https://dev.to/om_shree_0709/banks-got-their-first-mcp-server-heres-what-nymbus-actually-built-40l3">Banks Got Their First MCP Server. Here&#39;s What Nymbus Actually Built.</a></strong></td>
-<td align="left">👍 20 · 💬 0</td>
-<td align="left">金融行业 MCP 落地的首个案例，为垂直领域 AI 集成提供架构参考</td>
-</tr>
-<tr>
-<td align="left"><strong><a href="https://dev.to/om_shree_0709/salesmotions-mcp-server-turns-your-ai-assistant-into-a-live-pipeline-analyst-1f5h">Salesmotion&#39;s MCP Server Turns Your AI Assistant into a Live Pipeline Analyst</a></strong></td>
-<td align="left">👍 20 · 💬 0</td>
-<td align="left">展示 MCP 如何将 AI 从聊天工具转化为实时业务分析系统</td>
-</tr>
-<tr>
-<td align="left"><strong><a href="https://dev.to/practiceoverflow/the-inference-reckoning-from-training-buildout-to-monetization-ggf">The Inference Reckoning: From Training Buildout to Monetization</a></strong></td>
-<td align="left">👍 5 · 💬 0</td>
-<td align="left">深度剖析推理成本 50 倍暴跌背后的商业模式重构</td>
-</tr>
-<tr>
-<td align="left"><strong><a href="https://dev.to/practiceoverflow/agent-native-data-infrastructure-3ej1">Agent Native Data Infrastructure</a></strong></td>
-<td align="left">👍 5 · 💬 1</td>
-<td align="left">Databricks 80% 新查询由 Agent 生成的数据架构演进启示</td>
-</tr>
-<tr>
-<td align="left"><strong><a href="https://dev.to/dhananjay_lakkawar/surviving-viral-growth-graceful-ai-degradation-on-aws-21fg">Surviving Viral Growth: Graceful AI Degradation on AWS</a></strong></td>
-<td align="left">👍 4 · 💬 0</td>
-<td align="left">AI 服务流量洪峰下的优雅降级工程实践</td>
-</tr>
-<tr>
-<td align="left"><strong><a href="https://dev.to/sattyamjjain/i-audited-13-ai-agent-platforms-for-security-misconfigurations-heres-the-open-source-scanner-i-2am8">I Audited 13 AI Agent Platforms for Security Misconfigurations</a></strong></td>
-<td align="left">👍 1 · 💬 0</td>
-<td align="left">附开源扫描器，Agent 安全审计的实操指南</td>
-</tr>
-<tr>
-<td align="left"><strong><a href="https://dev.to/rain9/are-we-really-faster-after-ai-started-writing-our-code-59f4">Are We Really Faster After AI Started Writing Our Code?</a></strong></td>
-<td align="left">👍 6 · 💬 0</td>
-<td align="left">直击 AI 编程工具效能测量的核心争议</td>
-</tr>
-</tbody></table>
-<hr>
-<h2>Lobste.rs 精选</h2>
-<table>
-<thead>
-<tr>
-<th align="left">内容</th>
-<th align="left">互动数据</th>
-<th align="left">阅读理由</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><strong><a href="https://lobste.rs/s/bzcjrl/how_is_your_org_company_measuring_impact">How is your org/company measuring the impact of AI adoption?</a></strong> <a href="https://lobste.rs/s/bzcjrl/how_is_your_org_company_measuring_impact">讨论</a></td>
-<td align="left">⭐ 10 · 💬 2</td>
-<td align="left">社区罕见聚焦 AI 投资回报率的可量化方法论，评论区含一线实践</td>
-</tr>
-<tr>
-<td align="left"><strong><a href="https://www.anthropic.com/glasswing">Project Glasswing: Securing critical software for the AI era</a></strong> <a href="https://lobste.rs/s/pgkwml/project_glasswing_securing_critical">讨论</a></td>
-<td align="left">⭐ 6 · 💬 0</td>
-<td align="left">Anthropic 官方发布的关键软件安全项目，AI 供应链安全的前沿探索</td>
-</tr>
-<tr>
-<td align="left"><strong><a href="https://www.robinsloan.com/winter-garden/where-is-it-like/">Where is it like to be a language model?</a></strong> <a href="https://lobste.rs/s/iumxay/where_is_it_like_be_language_model">讨论</a></td>
-<td align="left">⭐ 3 · 💬 1</td>
-<td align="left">从现象学视角审视 LLM 的&quot;体验&quot;，技术与哲学的交叉思考</td>
-</tr>
-<tr>
-<td align="left"><strong><a href="https://rodneybrooks.com/predictions-scorecard-2026-january-01/">Predictions Scorecard, 2026 January 01</a></strong> <a href="https://lobste.rs/s/1jkplq/predictions_scorecard_2026_january_01">讨论</a></td>
-<td align="left">⭐ 1 · 💬 0</td>
-<td align="left">MIT 教授 Rodney Brooks 的年度 AI 预测复盘，校准技术乐观主义</td>
-</tr>
-</tbody></table>
-<hr>
-<h2>社区脉搏</h2>
-<p><strong>MCP 协议正从概念验证走向垂直行业落地</strong>，金融、销售领域的专用 Server 密集出现，标志着 AI 集成进入&quot;行业适配&quot;阶段。双平台共同关注 <strong>AI 效能的可测量性</strong>——Dev.to 质疑代码生成速度，Lobste.rs 追问组织层面的 ROI 评估，反映开发者从&quot;尝鲜&quot;转向&quot;问责&quot;的心态转变。</p>
-<p><strong>新兴模式</strong>：&quot;Specification-First Agentic Development&quot;等方法论涌现，开发者开始体系化对抗 AI 上下文丢失问题；<strong>Agent 可观测性</strong>（observability）与安全审计工具开源，补足生产环境的关键基建缺口。</p>
-<hr>
-<h2>值得精读</h2>
-<ol>
-<li><p><strong><a href="https://dev.to/practiceoverflow/the-inference-reckoning-from-training-buildout-to-monetization-ggf">The Inference Reckoning: From Training Buildout to Monetization</a></strong><br>推理成本坍塌正在重塑整个 AI 商业版图，本文是理解 2026 年模型经济必读。</p>
-</li>
-<li><p><strong><a href="https://dev.to/practiceoverflow/agent-native-data-infrastructure-3ej1">Agent Native Data Infrastructure</a></strong><br>当 Agent 成为数据库的主要用户，数据架构、查询模式、权限模型均需重新设计。</p>
-</li>
-<li><p><strong><a href="https://lobste.rs/s/bzcjrl/how_is_your_org_company_measuring_impact">How is your org/company measuring the impact of AI adoption?</a></strong><br>评论区汇聚真实企业的度量实践，超越营销话术的务实讨论。</p>
-</li>
-</ol>
-<hr>
-<hr>
-<p><em>本日报由 <a href="https://github.com/duanyytop/agents-radar">agents-radar</a> 自动生成。</em></p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>Tech Community AI Digest 2026-04-13</title>
-      <link>https://duanyytop.github.io/agents-radar/#2026-04-13/ai-community-en</link>
-      <guid isPermaLink="true">https://duanyytop.github.io/agents-radar/#2026-04-13/ai-community-en</guid>
-      <pubDate>Mon, 13 Apr 2026 00:00:00 +0000</pubDate>
-      <description>Tech Community AI Digest 2026-04-13 Sources: Dev.to (30 articles) + Lobste.rs (4 stories) | Generated: 2026-04-13 00:13 UTC Tech Community AI Digest — April 13, 2026 1. Today&amp;#39;s Highlights MCP (Model Context Protocol) servers are dominating Dev.to discussions, with banking and sales automation use cases showing how enterprises are finally deploying AI agents in production. The community is grappling with a fundamental tension: AI coding tools are everywhere, but developers are questioning whe...</description>
-      <content:encoded><![CDATA[<h1>Tech Community AI Digest 2026-04-13</h1>
-<blockquote>
-<p>Sources: <a href="https://dev.to/">Dev.to</a> (30 articles) + <a href="https://lobste.rs/">Lobste.rs</a> (4 stories) | Generated: 2026-04-13 00:13 UTC</p>
-</blockquote>
-<hr>
-<h1>Tech Community AI Digest — April 13, 2026</h1>
-<hr>
-<h2>1. Today&#39;s Highlights</h2>
-<p>MCP (Model Context Protocol) servers are dominating Dev.to discussions, with banking and sales automation use cases showing how enterprises are finally deploying AI agents in production. The community is grappling with a fundamental tension: AI coding tools are everywhere, but developers are questioning whether they&#39;re actually shipping faster. Meanwhile, local LLM setups and privacy-focused AI architectures are gaining serious traction as alternatives to API-dependent workflows. Security concerns around AI agents have escalated dramatically—one developer found 30 MCP-related CVEs in 60 days. The Lobste.rs crowd is taking a more philosophical and skeptical angle, questioning how organizations measure AI ROI and what it&#39;s actually &quot;like&quot; to be a language model.</p>
-<hr>
-<h2>2. Dev.to Highlights</h2>
-<table>
-<thead>
-<tr>
-<th>Title</th>
-<th>Engagement</th>
-<th>Key Takeaway</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong><a href="https://dev.to/om_shree_0709/banks-got-their-first-mcp-server-heres-what-nymbus-actually-built-40l3">Banks Got Their First MCP Server. Here&#39;s What Nymbus Actually Built.</a></strong></td>
-<td>20 reactions, 0 comments</td>
-<td>Financial services are adopting MCP servers to bridge legacy systems with AI agents—watch this space for regulated industry patterns.</td>
-</tr>
-<tr>
-<td><strong><a href="https://dev.to/om_shree_0709/salesmotions-mcp-server-turns-your-ai-assistant-into-a-live-pipeline-analyst-1f5h">Salesmotion&#39;s MCP Server Turns Your AI Assistant into a Live Pipeline Analyst</a></strong></td>
-<td>20 reactions, 0 comments</td>
-<td>CRM-integrated MCP servers demonstrate how vertical-specific AI agents are becoming actually useful rather than demo-ware.</td>
-</tr>
-<tr>
-<td><strong><a href="https://dev.to/practiceoverflow/the-inference-reckoning-from-training-buildout-to-monetization-ggf">The Inference Reckoning: From Training Buildout to Monetization</a></strong></td>
-<td>5 reactions, 0 comments</td>
-<td>Token prices collapsed 50x since 2023—this piece explains why inference economics are reshaping AI business models.</td>
-</tr>
-<tr>
-<td><strong><a href="https://dev.to/practiceoverflow/agent-native-data-infrastructure-3ej1">Agent Native Data Infrastructure</a></strong></td>
-<td>5 reactions, 1 comment</td>
-<td>Databricks reports 80% of new tables are agent-created: databases aren&#39;t changing, but who&#39;s using them fundamentally is.</td>
-</tr>
-<tr>
-<td><strong><a href="https://dev.to/rain9/are-we-really-faster-after-ai-started-writing-our-code-59f4">Are We Really Faster After AI Started Writing Our Code?</a></strong></td>
-<td>6 reactions, 0 comments</td>
-<td>The question every team should be asking—this surfaces the productivity measurement problem plaguing AI adoption.</td>
-</tr>
-<tr>
-<td><strong><a href="https://dev.to/sattyamjjain/i-audited-13-ai-agent-platforms-for-security-misconfigurations-heres-the-open-source-scanner-i-2am8">I Audited 13 AI Agent Platforms for Security Misconfigurations — Here&#39;s the Open-Source Scanner I Built</a></strong></td>
-<td>1 reaction, 0 comments</td>
-<td><code>enableAllProjectMcpServers: true</code> is leaking source code—essential security reading for anyone shipping agents.</td>
-</tr>
-<tr>
-<td><strong><a href="https://dev.to/dhananjay_lakkawar/surviving-viral-growth-graceful-ai-degradation-on-aws-21fg">Surviving Viral Growth: Graceful AI Degradation on AWS</a></strong></td>
-<td>4 reactions, 0 comments</td>
-<td>Practical patterns for when your AI feature hits the front page of HN and you need to stay up without going broke.</td>
-</tr>
-<tr>
-<td><strong><a href="https://dev.to/syedahmershah/build-your-own-private-copilot-in-10-minutes-ollama-continue-and-deepseek-v3-4cog">Build Your Own &quot;Private Copilot&quot; in 10 Minutes: Ollama, Continue, and DeepSeek-V3</a></strong></td>
-<td>5 reactions, 0 comments</td>
-<td>Drop-in replacement for $20/month Copilot using local models—complete setup guide for the privacy-conscious.</td>
-</tr>
-</tbody></table>
-<hr>
-<h2>3. Lobste.rs Highlights</h2>
-<table>
-<thead>
-<tr>
-<th>Title</th>
-<th>Engagement</th>
-<th>Why Read</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong><a href="https://lobste.rs/s/bzcjrl/how_is_your_org_company_measuring_impact">How is your org/company measuring the impact of AI adoption?</a></strong> (<a href="https://lobste.rs/s/bzcjrl/how_is_your_org_company_measuring_impact">Discussion</a>)</td>
-<td>10 points, 2 comments</td>
-<td>Rare practitioner-focused thread on the measurement problem—most orgs are flying blind on AI ROI.</td>
-</tr>
-<tr>
-<td><strong><a href="https://www.anthropic.com/glasswing">Project Glasswing: Securing critical software for the AI era</a></strong> (<a href="https://lobste.rs/s/pgkwml/project_glasswing_securing_critical">Discussion</a>)</td>
-<td>6 points, 0 comments</td>
-<td>Anthropic&#39;s formal verification initiative for AI-generated code—signals where safety-critical AI is heading.</td>
-</tr>
-<tr>
-<td><strong><a href="https://www.robinsloan.com/winter-garden/where-is-it-like/">Where is it like to be a language model?</a></strong> (<a href="https://lobste.rs/s/iumxay/where_is_it_like_be_language_model">Discussion</a>)</td>
-<td>3 points, 1 comment</td>
-<td>Robin Sloan&#39;s characteristically thoughtful meditation on AI phenomenology—refreshingly non-technical.</td>
-</tr>
-<tr>
-<td><strong><a href="https://rodneybrooks.com/predictions-scorecard-2026-january-01/">Predictions Scorecard, 2026 January 01</a></strong> (<a href="https://lobste.rs/s/1jkplq/predictions_scorecard_2026_january_01">Discussion</a>)</td>
-<td>1 point, 0 comments</td>
-<td>Rodney Brooks grading his own AI predictions—essential antidote to hype cycles from a robotics legend.</td>
-</tr>
-</tbody></table>
-<hr>
-<h2>4. Community Pulse</h2>
-<p><strong>MCP is the new API.</strong> Dev.to&#39;s coverage of Model Context Protocol servers—from banking to sales to security auditing—suggests this open standard for AI tool integration has crossed into mainstream adoption. Developers are building with it, breaking it, and securing it in real time.</p>
-<p><strong>The productivity paradox is real.</strong> Multiple articles question whether AI coding tools actually accelerate delivery, with teams struggling to measure impact beyond &quot;lines generated.&quot; Lobste.rs directly asks how orgs are measuring ROI, implying most aren&#39;t doing it well.</p>
-<p><strong>Local-first AI is having a moment.</strong> Tutorials for Ollama-based setups, browser-side ONNX inference, and &quot;private copilots&quot; reflect growing developer discomfort with cloud API dependencies—driven by cost, latency, and privacy concerns.</p>
-<p><strong>Agent infrastructure is maturing fast.</strong> Observability layers, graceful degradation patterns, and memory systems for learning from repeated issues show the community moving past &quot;hello world&quot; agents toward production-ready architectures.</p>
-<p><strong>Security debt is accumulating.</strong> The 30 MCP CVEs finding, combined with deepfake fraud hitting $1.1B, suggests AI attack surfaces are expanding faster than defenses.</p>
-<hr>
-<h2>5. Worth Reading in Depth</h2>
-<ol>
-<li><p><strong><a href="https://dev.to/practiceoverflow/the-inference-reckoning-from-training-buildout-to-monetization-ggf">The Inference Reckoning</a></strong> — Essential for understanding how collapsing inference costs are reshaping AI economics and who will survive the margin squeeze.</p>
-</li>
-<li><p><strong><a href="https://dev.to/sattyamjjain/i-audited-13-ai-agent-platforms-for-security-misconfigurations-heres-the-open-source-scanner-i-2am8">I Audited 13 AI Agent Platforms for Security Misconfigurations</a></strong> — Actionable security research with open-source tooling; likely to become reference material for AI agent security reviews.</p>
-</li>
-<li><p><strong><a href="https://www.robinsloan.com/winter-garden/where-is-it-like/">Where is it like to be a language model?</a></strong> — The rare piece that transcends implementation details to ask what we&#39;re actually building, written by one of the most thoughtful technologists working today.</p>
-</li>
-</ol>
 <hr>
 <p><em>This digest is auto-generated by <a href="https://github.com/duanyytop/agents-radar">agents-radar</a>.</em></p>
 ]]></content:encoded>
