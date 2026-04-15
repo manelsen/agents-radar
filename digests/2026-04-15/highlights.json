@@ -1,0 +1,53 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code lidera com 2.2K+ engajamento",
+      "OpenAI Codex libera 3 alphas",
+      "OAuth: problema comum entre CLIs",
+      "Gemini CLI e Kimi CLI em regressão",
+      "Feature requests: vi-mode e métricas",
+      "Extensibilidade via plugins é tendência"
+    ],
+    "ai-agents": [
+      "NullClaw: 8 issues e 2 PRs ativos",
+      "PR #783: motor de cron com DB scheduler",
+      "Hermes-agent dispara em estrelas",
+      "ZeroClaw Labs emerge como novo player",
+      "Shell Linux e HTTP requests em fricção",
+      "Telegram/WeChat auth em desenvolvimento"
+    ],
+    "ai-trending": [
+      "Hermes-agent: +8.3K estrelas",
+      "ollama/ollama: 169K estrelas",
+      "Voicebox: síntese vocal open source",
+      "Kronos: foundation models para finanças",
+      "firecrawl: 109K estrelas para scraping",
+      "claude-code-best-practice: +2.5K estrelas"
+    ],
+    "ai-web": [
+      "Anthropic: pesquisa Automated Alignment",
+      "Vas Narasimhan no board da Anthropic",
+      "OpenAI: artigo sobre cyber defense",
+      "LLMs supervisionando modelos avançados",
+      "Novartis CEO fortalece setor saúde",
+      "334 artigos no sitemap da Anthropic"
+    ],
+    "ai-hn": [
+      "Claude Code domina HN com 536 pontos",
+      "Usuários reportam degradação do Claude",
+      "Sonnet 4.6: regressão de qualidade",
+      "Tesouro dos EUA quer acesso ao Mythos",
+      "Apple ameaça remover Grok por deepfakes",
+      "Tentativa de assassinato contra Sam Altman"
+    ],
+    "ai-science": [
+      "Chalmers: superátomos para computação quântica",
+      "UC San Diego: chip reduz energia em data centers",
+      "Qubits protegidos contra decoerência",
+      "Eficiência energética para GPUs",
+      "Pesquisa quântica para IA escalável",
+      "Protótipos demonstram conversão eficiente"
+    ]
+  },
+  "en": {}
+}
