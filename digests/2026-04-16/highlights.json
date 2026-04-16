@@ -1,0 +1,134 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code lidera com 741👍 após remoção do /buddy",
+      "Gemini CLI enfrenta erros 403 generalizados",
+      "Qwen Code descontinua tier gratuito abruptamente",
+      "OpenCode e Pi: alta cadência de manutenção (19-29 PRs)",
+      "OpenAI Codex foca em infraestrutura de plataforma",
+      "GitHub Copilot CLI sem dados - possível estagnação"
+    ],
+    "ai-agents": [
+      "NullClaw: 8 issues e 8 PRs em 24h",
+      "NullClaw migra para Zig 0.16 (#823)",
+      "NullClaw PR #369: Suporte Signal com 4 testes",
+      "NullClaw corrige segurança no gateway",
+      "NullClaw: nenhum release - preparatório",
+      "jmylchreest lidera contribuições hoje"
+    ],
+    "ai-trending": [
+      "GenericAgent reduz consumo de tokens em 6x",
+      "voicebox: síntese de voz open source",
+      "obra/superpowers: metodologia agentic",
+      "4 repos Claude Code dominam trending",
+      "87 de 92 projetos classificados como IA",
+      "RAG/Knowledge: 24 projetos - categoria forte"
+    ],
+    "ai-web": [
+      "Anthropic lança Agent Skills como padrão aberto",
+      "Agent Skills: portabilidade cross-platform",
+      "OpenAI sinaliza nova evolução no Agents SDK",
+      "Anthropic: 335 artigos no sitemap",
+      "OpenAI: 767 artigos no sitemap",
+      "Especialização de agentes em foco estratégico"
+    ],
+    "ai-hn": [
+      "Comunidade questiona degradação do Claude",
+      "Gas Town: acusação de desvio de créditos",
+      "Suchir Balaji: morte de denunciante da OpenAI",
+      "Jeeves: TUI para gerenciar sessões de agentes",
+      "Agents SDK da OpenAI evolui para nova geração",
+      "Debate ético sobre práticas de treinamento"
+    ],
+    "ai-arxiv": [
+      "2604.14001: Modelos de difusão para reconhecimento de voz",
+      "2604.13977: Guia para dados de pré-treinamento sintético",
+      "2604.13991: Predição conformal para factuality",
+      "HINTBench e GeoAgentBench: novos benchmarks",
+      "MAny: mitigação de esquecimento catastrófico",
+      "DiPO: otimização de política para exploração"
+    ],
+    "ai-science": [
+      "Harvard: aleatoriedade evita impasses em enxames",
+      "Chalmers: superátomos gigantes para computação quântica",
+      "UC San Diego: chip reduz desperdício energético",
+      "Foco em eficiência energética e escalabilidade",
+      "Gargalos físicos impulsionam investimentos",
+      "Ajustes simples geram ganhos substanciais"
+    ],
+    "ai-community": [
+      "Gemini 3.1 TTS gera burburinho",
+      "AI Gateways: necessidade prática em produção",
+      "RAG: hot topic para otimização e crítica",
+      "Vibe coding: paradoxo de produtividade",
+      "IA reduz persistência de desenvolvedores",
+      "Dev.to: 30 artigos sobre IA hoje"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code & Codex lead CLI ecosystem with 50+ issues each",
+      "Gemini CLI bets big on voice mode and accessibility features",
+      "Kimi Code CLI surges with 33 issues/PRs in 24 hours",
+      "Qwen Code accelerates with rapid nightly build cadence",
+      "MCP becomes de facto CLI extensibility standard across 5 tools",
+      "Copilot CLI enters stabilization with minimal PR activity"
+    ],
+    "ai-agents": [
+      "NullClaw: 8 issues and 8 PRs updated, 3 merged in 24h",
+      "NullClaw PR #369: Signal Note to Self now supported",
+      "NullClaw PR #377: sandbox-validated path env vars added",
+      "NullClaw Zig 0.16 migration PR #823 under active review",
+      "Healthy activity across 7 agent projects, 16 total updates",
+      "MCP integration driving cross-tool extensibility adoption"
+    ],
+    "ai-trending": [
+      "AutoGPT: 183.5k stars, pioneering autonomous agent framework",
+      "Ollama: 169.1k stars, local LLM deployment for Kimi-K2.5, Qwen",
+      "Anthropic & OpenAI release competing agent tooling articles",
+      "Claude Code memory plugins, game studios trending on GitHub",
+      "GenericAgent: self-evolving agent framework goes viral",
+      "Voice synthesis and AI finance apps emerge as new verticals"
+    ],
+    "ai-web": [
+      "Anthropic releases Agent Skills framework for agent portability",
+      "Agent Skills: composable open standard for agent capabilities",
+      "OpenAI evolves Agents SDK amid agent infrastructure race",
+      "Both Anthropic and OpenAI post agent content same day",
+      "Skills enable procedural knowledge packaging for agents",
+      "Cross-platform agent portability gains strategic focus"
+    ],
+    "ai-hn": [
+      "Anthropic removes pinned model versions, sparks controversy",
+      "HN users debate: Is Claude getting worse? Community divided",
+      "Tier adaptive routing boosts small LLMs by 10 accuracy points",
+      "AI whistleblower's death draws community attention on HN",
+      "Copilot rate-limiting behavior irks developers",
+      "Community skeptical of big AI labs' recent decisions"
+    ],
+    "ai-arxiv": [
+      "New synthetic data study: 1 trillion tokens analyzed",
+      "Adaptive conformal prediction improves LLM factuality",
+      "HINTBench: new benchmark for agent safety evaluation",
+      "Catastrophic forgetting exposed in reasoning language models",
+      "DiPO: disentangled exploration-exploitation for planning",
+      "Reward design for physical reasoning in multi-step tasks"
+    ],
+    "ai-science": [
+      "Harvard: randomness prevents robot swarm gridlock",
+      "Chalmers proposes quantum architecture using giant superatoms",
+      "UC San Diego chip design cuts data center energy waste",
+      "Piezoelectric power conversion targets GPU efficiency",
+      "Swarm robotics breakthrough: wiggle effect scales deployments",
+      "Quantum protection framework addresses stability challenges"
+    ],
+    "ai-community": [
+      "Gemini 3.1 TTS: precise audio control via prompting",
+      "AI gateway architecture: fix LLM debugging in 3 days",
+      "Tier adaptive routing closes small vs large LLM gap",
+      "Vibe coding requires intentional architecture planning",
+      "RAG in healthcare: developers demand critical evaluation",
+      "Harness engineering emerges as formal discipline"
+    ]
+  }
+}
