@@ -9,9 +9,8 @@
  */
 
 import fs from "node:fs";
-import path from "node:path";
 import { NOTIFY_LABELS } from "./i18n.ts";
-import type { Highlights } from "./notify.ts";
+import { loadHighlights, type Highlights } from "./highlights.ts";
 
 const PAGES_URL_DEFAULT = "https://duanyytop.github.io/agents-radar";
 
@@ -109,13 +108,10 @@ async function main(): Promise<void> {
   const { date, reports } = latest;
 
   let highlights: Highlights | null = null;
-  const highlightsPath = path.join("digests", date, "highlights.json");
-  if (fs.existsSync(highlightsPath)) {
-    try {
-      highlights = JSON.parse(fs.readFileSync(highlightsPath, "utf-8")) as Highlights;
-    } catch {
-      console.log("[feishu] Failed to parse highlights.json — sending without highlights.");
-    }
+  try {
+    highlights = loadHighlights(date);
+  } catch {
+    console.log("[feishu] Failed to load highlights — sending without highlights.");
   }
 
   const isMonthly = reports.some((r) => r === "ai-monthly");

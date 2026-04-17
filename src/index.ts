@@ -28,6 +28,7 @@ import {
   buildSkillsPrompt,
 } from "./prompts.ts";
 import { buildTrendingPrompt, buildHighlightsPrompt, type ReportHighlights } from "./prompts-data.ts";
+import { getHighlightsFilename } from "./highlights.ts";
 import { callLlm, saveFile, autoGenFooter, LLM_TOKENS_TRENDING } from "./report.ts";
 import { buildCliReportContent, buildOpenclawReportContent } from "./report-builders.ts";
 import {
@@ -455,7 +456,11 @@ async function main(): Promise<void> {
     console.error(`  [highlights] Generation failed: ${err}`);
   }
 
-  const highlightsPath = saveFile(JSON.stringify(highlights, null, 2), dateStr, "highlights.json");
+  const highlightsPath = saveFile(
+    JSON.stringify(highlights, null, 2),
+    dateStr,
+    getHighlightsFilename("daily"),
+  );
   console.log(`  Saved ${highlightsPath}`);
 
   // 6. Create GitHub issues for CLI + OpenClaw (zh + en)

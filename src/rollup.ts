@@ -12,6 +12,7 @@ import {
   buildHighlightsPrompt,
   type ReportHighlights,
 } from "./prompts-data.ts";
+import { getHighlightsFilename, loadHighlights } from "./highlights.ts";
 import { createGitHubIssue } from "./github.ts";
 import { toCstDateStr, toUtcStr } from "./date.ts";
 import { type Lang, WEEKLY_REPORT, MONTHLY_REPORT } from "./i18n.ts";
@@ -81,15 +82,7 @@ async function generateRollupHighlights(
   console.log(`  [${reportId}] Generating highlights for Telegram...`);
 
   // Read existing highlights (e.g. from daily digest) so we merge instead of overwrite
-  const existingPath = path.join(DIGESTS_DIR, dateStr, "highlights.json");
-  let existing: Record<Lang, ReportHighlights> = { zh: {}, en: {} };
-  if (fs.existsSync(existingPath)) {
-    try {
-      existing = JSON.parse(fs.readFileSync(existingPath, "utf-8"));
-    } catch {
-      // ignore parse errors — start fresh
-    }
-  }
+  const existing = loadHighlights(dateStr, DIGESTS_DIR) ?? { zh: {}, en: {} };
 
   const highlights: Record<Lang, ReportHighlights> = {
     zh: { ...existing.zh },
@@ -118,7 +111,8 @@ async function generateRollupHighlights(
   } catch (err) {
     console.error(`  [${reportId}] Highlights generation failed: ${err}`);
   }
-  const p = saveFile(JSON.stringify(highlights, null, 2), dateStr, "highlights.json");
+  const scope = reportId.replace(/^ai-/, "");
+  const p = saveFile(JSON.stringify(highlights, null, 2), dateStr, getHighlightsFilename(scope));
   console.log(`  Saved ${p}`);
 }
 

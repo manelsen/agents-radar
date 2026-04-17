@@ -15,6 +15,7 @@ import path from "node:path";
 import { callLlm } from "../src/report.ts";
 import { buildHighlightsPrompt, type ReportHighlights } from "../src/prompts-data.ts";
 import { buildMessage } from "../src/notify.ts";
+import { getHighlightsFilename } from "../src/highlights.ts";
 import type { Lang } from "../src/i18n.ts";
 
 const DATE = process.argv[2] && !process.argv[2].startsWith("-") ? process.argv[2] : null;
@@ -82,7 +83,7 @@ async function main() {
       .trim(),
   );
 
-  const outPath = path.join(digestsDir, dateStr, "highlights.json");
+  const outPath = path.join(digestsDir, dateStr, getHighlightsFilename("daily"));
   fs.writeFileSync(outPath, JSON.stringify(highlights, null, 2) + "\n");
   console.log(`  Saved ${outPath}`);
   console.log(`  ZH keys: ${Object.keys(highlights.zh).join(", ")}`);
