@@ -1,0 +1,126 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code lidera com 2 releases",
+      "Gemini CLI iteração rápida",
+      "Copilot CLI hotfixes estáveis",
+      "Suporte a modelos locais em alta",
+      "Autenticação ainda desafia indústria",
+      "OpenCode foca interoperabilidade"
+    ],
+    "ai-agents": [
+      "NullClaw: 27 eventos em 24h",
+      "Migração para Zig 0.16 (PR #823)",
+      "11 PRs merged/fechados",
+      "Correção segurança Linux sandbox",
+      "Nenhum release publicado",
+      "Foco em estabilização pós-release"
+    ],
+    "ai-web": [
+      "Anthropic lança Claude Opus 4.7",
+      "Segmentação cibersegurança clara",
+      "OpenAI announceia GPT Rosalind",
+      "5 novos artigos oficiais hoje",
+      "336 artigos Anthropic no total",
+      "771 artigos OpenAI no total"
+    ],
+    "ai-hn": [
+      "Claude Opus 4.7: 1482 pts",
+      "OpenAI expande Codex geral",
+      "Qwen3.6-35B supera Opus local",
+      "MacMind ferramentas em alta",
+      "Críticas ao AI slop crescem",
+      "GPT-Rosalind p/ ciências vida"
+    ],
+    "ai-arxiv": [
+      "Compressão sequências embedding",
+      "IUQ: incerteza em geração longa",
+      "LARQL: consultar pesos neurais",
+      "Decodificação especulativa nova",
+      "Agentes autônomos em mobilidade",
+      "Unlearning e detox em LLMs"
+    ],
+    "ai-science": [
+      "Harvard: aleatoriedade em enxames",
+      "Chalmers: superátomos quânticos",
+      "UC San Diego: chip piezoelétrico",
+      "Gridlock evitado com balanços",
+      "Qubits mais estáveis possível",
+      "Data centers mais eficientes"
+    ],
+    "ai-community": [
+      "IA não substitui engenharia",
+      "Gemini + Telegram tutorial",
+      "LARQL: pesos como grafo",
+      "TESSERA: observação terrestre",
+      "Origens da GPU em debate",
+      "Documentação como asset code"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "OpenAI Codex released 2 alpha versions v0.122.0",
+      "Gemini CLI: 10 PRs including P1 optimizations",
+      "OpenCode: 20-30+ PRs merged per cycle",
+      "Auth/token management reliability is major theme",
+      "Memory stability challenges persist in agent workflows",
+      "Multi-agent coordination emerging as differentiator"
+    ],
+    "ai-agents": [
+      "NullClaw: 12 issues closed via PRs in 24h",
+      "11 PRs merged including security hardening",
+      "Security fix: require runnable Linux sandboxes",
+      "Web hardening: pairing token expiration added",
+      "Zig 0.16 migration completed in project",
+      "Dev version string flagged as UX issue #821"
+    ],
+    "ai-trending": [
+      "CLAUDE.md tuning file hits +7,959 stars",
+      "claude-mem memory plugin: +1,897 stars",
+      "GenericAgent: self-evolution with 6× token savings",
+      "voicebox: consumer AI audio tool +880 stars",
+      "Vercel open-agents template +738 stars today",
+      "OpenAI agents-python SDK launched today"
+    ],
+    "ai-web": [
+      "Claude Opus 4.7 released as general availability",
+      "Anthropic dual-track: Mythos Preview vs deployed",
+      "Opus 4.7 less capable than frontier Mythos",
+      "Opus 4.7 focused on software engineering",
+      "OpenAI teases new Codex product variant",
+      "GPT named 'Rosalind' spotted in metadata"
+    ],
+    "ai-hn": [
+      "Claude Opus 4.7 dominates with 1,482 points",
+      "Qwen3.6-35B-A3B rivals Opus on specific task",
+      "Codex expanding beyond code to general tasks",
+      "Neural network implemented in 1989 HyperCard",
+      "Community debates AI slop concerns",
+      "Sentiment shifting on AI and data centers"
+    ],
+    "ai-arxiv": [
+      "IUQ: new uncertainty quantification for LLMs",
+      "MCQ evaluation scaled to 100 options",
+      "Mobile agent benchmarks introduced",
+      "Token compression and speculative decoding focus",
+      "Healthcare AI: clinical risk prediction papers",
+      "Mechanistic interpretability for safety research"
+    ],
+    "ai-science": [
+      "Harvard: randomness prevents robot swarm gridlock",
+      "Chalmers: giant superatoms for quantum computing",
+      "UCSD: piezoelectric chip boosts GPU efficiency",
+      "Robot swarm stochasticity breakthrough",
+      "Quantum-state engineering via superatoms",
+      "Energy-efficient power conversion for GPUs"
+    ],
+    "ai-community": [
+      "OpenClaw Challenge: $1,200 prize pool",
+      "AI amplifies thinking, not a crutch for weak devs",
+      "Claude Code dominates developer workflows",
+      "MCP ecosystem gaining serious attention",
+      "Voice Telegram bot tutorial with Gemini API",
+      "Token counting complexity in multi-LLM systems"
+    ]
+  }
+}
