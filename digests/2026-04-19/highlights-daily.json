@@ -1,0 +1,102 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Gemini CLI: 37 PRs/24h, atividade comunitária intensa",
+      "Qwen Code v0.14.5-nightly com ~50 PRs abertos",
+      "OpenAI Codex rust-v0.122.0-alpha.10 em evolução",
+      "Claude Code v2.1.110 foca em estabilidade",
+      "Proliferação de issues críticas em billing e auth",
+      "Ecossistema CLI fragmentado mas em maturação"
+    ],
+    "ai-agents": [
+      "NullClaw: 12 PRs abertos, mantenedor manelsen lidera",
+      "NullClaw: 0 releases e 0 PRs merged em 24h",
+      "PR #844: hints de progresso para A2A stream",
+      "PR #843: fix em config save durante onboard",
+      "7 projects covered: NullClaw, NanoBot, Hermes",
+      "Ferramentas e skills em refinamento intensivo"
+    ],
+    "ai-trending": [
+      "openai-agents-python +470★, entrada formal da OpenAI",
+      "EvoMap/evolver +1.131★: motor de auto-evolução genômica",
+      "BasedHardware/omi +609★: agente visão+áudio+ação",
+      "DeepGEMM +31★: otimizações FP8 da DeepSeek",
+      "Claude Code skills: 3 repos com +1.000★ combinados",
+      "Agentes multi-modelo lideram tendências open source"
+    ],
+    "ai-hn": [
+      "Claude Opus 4.7 domina discussões no HN",
+      "Opus escreveu exploit Chrome por US$ 2.283",
+      "Ceticismo cresce sobre \"nerfing\" do modelo anterior",
+      "Comparativo GPT-5.4, Opus 4.6, GLM-5.1 no HN",
+      "Mudanças no system prompt entre Opus 4.6 e 4.7",
+      "Críticas ao design e práticas comerciais da Anthropic"
+    ],
+    "ai-science": [
+      "Neurônios artificiais flexíveis: interface cérebro-máquina",
+      "IA+computação quântica melhora previsão de sistemas caóticos",
+      "Harvard: aleatoriedade evita impasses em enxames robóticos",
+      "Superátomos gigantes: nova arquitetura para qubits",
+      "Northwestern avança em neuropróteses com neurônios impressos",
+      "Previsão de clima e medicina com menos memória"
+    ],
+    "ai-community": [
+      "Cortes de 45-55% em tokens com Defluffer",
+      "Dev.to debate código gerado por IA e qualidade",
+      "Alertas sobre testes que enganam métricas de cobertura",
+      "Vulnerabilidades críticas no Claude Code no Lobste.rs",
+      "Anthropic lança Design Studio para Claude",
+      "Reflexão: quando confiar no próprio julgamento vs IA"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "OpenAI Goal Mode lands with 5 merged PRs",
+      "Pi CLI merges 16 PRs in 24 hours",
+      "Claude Code: 10 hot issues on token limits",
+      "Gemini CLI faces 10 auth-related issues",
+      "macOS Intel support added to OpenAI Codex",
+      "Cross-tool 401 errors signal API complexity"
+    ],
+    "ai-agents": [
+      "NullClaw: 19 updates, 12 open PRs today",
+      "A2A protocol gains forward progress hints",
+      "KeyWriteFailed now shows actionable errors",
+      "--workspace flag added to agent gateway",
+      "No PRs merged—review cycles in progress",
+      "NullClaw skill management PRs advancing"
+    ],
+    "ai-trending": [
+      "OpenAI agents-python hits 470+ stars",
+      "DeepSeek releases new DeepGEMM FP8 kernels",
+      "omi monitors screens/convos at 609 stars",
+      "vllm reaches 77,228 stars for inference",
+      "ollama hits 169,368 stars for local LLMs",
+      "Genome-based agent self-evolution debuts"
+    ],
+    "ai-hn": [
+      "Claude Opus 4.7 sparks top HN discussions",
+      "Claude Opus wrote Chrome exploit for $2,283",
+      "OpenAI executives depart amid turbulence",
+      "Fake Claude sites distributing malware surge",
+      "Claude Design reflections: 222 HN points",
+      "Satirical AI resistance movement on HN"
+    ],
+    "ai-science": [
+      "Bio-hybrid neurons talk to living brain cells",
+      "Quantum AI boosts chaotic system predictions",
+      "Swarm robots use randomness to avoid jams",
+      "Giant superatoms stabilize quantum computing",
+      "Northwestern prints artificial neurons",
+      "Harvard finds wiggle prevents robot gridlock"
+    ],
+    "ai-community": [
+      "55% chatbot cost cut via architecture shift",
+      "Claude Design studio challenges Figma",
+      "Neurodivergent devs embrace AI as tool",
+      "Security: command injection in Claude Code",
+      "Earth Day sparks green computing focus",
+      "I stopped taking generic AI advice—dev reflection"
+    ]
+  }
+}
