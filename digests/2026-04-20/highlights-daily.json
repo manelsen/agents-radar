@@ -1,0 +1,53 @@
+{
+  "zh": {
+    "ai-cli": [
+      "OpenCode: 2-3 releases por semana",
+      "Qwen Code: erro 401 afeta ~10 issues",
+      "OpenCode: regressão de sandbox corrigida",
+      "Codex: vazamentos de memória persistem",
+      "Mercado converge para observabilidade de custos",
+      "Gemini CLI: 50 issues, 32 PRs em 24h"
+    ],
+    "ai-agents": [
+      "NullClaw: 10 novos PRs em 24h",
+      "NullClaw: foco em inbound_router",
+      "NullClaw: integração Tailscale em destaque",
+      "NullClaw: versão 2026.3.5 com bug de caminhos",
+      "NullClaw: preparação para novo release",
+      "NullClaw: 6 issues ativas sem merge"
+    ],
+    "ai-trending": [
+      "auto-gpt lidera categoria Agentes",
+      "browser-use ganha tração em automação",
+      "ollama e vllm em alta em Infraestrutura",
+      "nanobot aparece em trending",
+      "transformers: 78 projetos de IA filtrados",
+      "RAGflow e mem0: foco em memória"
+    ],
+    "ai-hn": [
+      "Simon Willison: prompt Claude Opus 4.7",
+      "UE proíbe escaneamento Gemini fotos",
+      "Uber: US$ 3,4 bi em IA sem lucro",
+      "Ceticismo crescente sobre ROI de IA",
+      "Claude 4.7 remove sampling parameters",
+      "Privacidade e regulação em debate"
+    ],
+    "ai-science": [
+      "Neurônios artificiais comunicam cérebros",
+      "Quantum AI previne caos com precisão",
+      "Superátomos gigantes para computação quântica",
+      "Robôs usam aleatoriedade para evitar gridlock",
+      "IA quântica: menos memória, mais precisão",
+      "Pesquisa alerta sobre antropomorfização da IA"
+    ],
+    "ai-community": [
+      "Defluffer reduz tokens em 45%",
+      "Claude Design: Anthropic no tooling",
+      "Claude Code: 47% do contexto em memória",
+      "API keys: parar de hardcodar em agentes",
+      "Dev.to: Earth Day Challenge com IA",
+      "Lobste.rs: consultar pesos como grafos"
+    ]
+  },
+  "en": {}
+}
