@@ -21,7 +21,7 @@ A GitHub Actions workflow that runs every morning at 08:00 CST. It aggregates AI
 
 ## Web UI
 
-**[https://duanyytop.github.io/agents-radar](https://duanyytop.github.io/agents-radar)**
+**[https://manelsen.github.io/agents-radar](https://manelsen.github.io/agents-radar)**
 
 Browse all historical digests in a clean, dark-themed interface — no login required. Reports are rendered from the Markdown files in this repo via GitHub Pages.
 
@@ -44,13 +44,13 @@ Subscribe to get daily digest notifications pushed directly to your preferred pl
 
 ## RSS Feed
 
-**[https://duanyytop.github.io/agents-radar/feed.xml](https://duanyytop.github.io/agents-radar/feed.xml)**
+**[https://manelsen.github.io/agents-radar/feed.xml](https://manelsen.github.io/agents-radar/feed.xml)**
 
 Subscribe in any RSS reader (Feedly, Reeder, NewsBlur, etc.) to receive new digests automatically. The feed includes the latest 30 reports across all report types, updated daily alongside `manifest.json`.
 
 ## MCP Server
 
-**`https://agents-radar-mcp.duanyytop.workers.dev`**
+**`https://agents-radar-mcp.manelsen.workers.dev`**
 
 A hosted [Model Context Protocol](https://modelcontextprotocol.io) server that exposes agents-radar data as tools. Any MCP-compatible client (Claude Desktop, OpenClaw, etc.) can query the latest AI ecosystem reports directly.
 
@@ -69,7 +69,7 @@ A hosted [Model Context Protocol](https://modelcontextprotocol.io) server that e
 {
   "mcpServers": {
     "agents-radar": {
-      "url": "https://agents-radar-mcp.duanyytop.workers.dev"
+      "url": "https://agents-radar-mcp.manelsen.workers.dev"
     }
   }
 }
@@ -83,7 +83,7 @@ Restart Claude Desktop after saving. You can then ask Claude things like:
 **OpenClaw setup** — run the following command:
 
 ```bash
-openclaw mcp add --transport http agents-radar https://agents-radar-mcp.duanyytop.workers.dev
+openclaw mcp add --transport http agents-radar https://agents-radar-mcp.manelsen.workers.dev
 ```
 
 Or add it manually to `~/.openclaw/openclaw.json`:
@@ -93,7 +93,7 @@ Or add it manually to `~/.openclaw/openclaw.json`:
   "mcpServers": {
     "agents-radar": {
       "type": "http",
-      "url": "https://agents-radar-mcp.duanyytop.workers.dev"
+      "url": "https://agents-radar-mcp.manelsen.workers.dev"
     }
   }
 }
@@ -432,4 +432,4 @@ To change the schedule, edit the cron expressions in the corresponding workflow 
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=duanyytop/agents-radar&type=Date)](https://star-history.com/#duanyytop/agents-radar&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=manelsen/agents-radar&type=Date)](https://star-history.com/#manelsen/agents-radar&Date)

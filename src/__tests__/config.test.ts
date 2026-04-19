@@ -35,33 +35,9 @@ describe("loadConfig", () => {
   it("returns defaults when config file does not exist", () => {
     vi.spyOn(fs, "existsSync").mockReturnValue(false);
     const config = loadConfig("/nonexistent/config.yml");
-    expect(config.cliRepos.length).toBeGreaterThan(0);
     expect(config.skillsRepo).toBe("anthropics/skills");
-    expect(config.openclaw.id).toBe("nullclaw");
-    expect(config.openclawPeers.length).toBeGreaterThan(0);
-  });
-
-  it("loads cli_repos from valid YAML", () => {
-    vi.spyOn(fs, "existsSync").mockReturnValue(true);
-    vi.spyOn(fs, "readFileSync").mockReturnValue(`
-cli_repos:
-  - id: custom
-    repo: org/custom
-    name: Custom Tool
-skills_repo: custom/skills
-`);
-    const config = loadConfig("test.yml");
-    expect(config.cliRepos).toHaveLength(1);
-    expect(config.cliRepos[0]!.id).toBe("custom");
-    expect(config.skillsRepo).toBe("custom/skills");
-  });
-
-  it("falls back to defaults for empty cli_repos", () => {
-    vi.spyOn(fs, "existsSync").mockReturnValue(true);
-    vi.spyOn(fs, "readFileSync").mockReturnValue("cli_repos: []");
-    const config = loadConfig("test.yml");
-    expect(config.cliRepos.length).toBeGreaterThan(0);
-    expect(config.cliRepos[0]!.id).toBe("claude-code");
+    expect(config.agents.id).toBe("nullclaw");
+    expect(config.agentsPeers.length).toBeGreaterThan(0);
   });
 
   it("falls back to defaults for empty skills_repo", () => {
@@ -71,23 +47,23 @@ skills_repo: custom/skills
     expect(config.skillsRepo).toBe("anthropics/skills");
   });
 
-  it("parses openclaw from YAML", () => {
+  it("parses agents from YAML", () => {
     vi.spyOn(fs, "existsSync").mockReturnValue(true);
     vi.spyOn(fs, "readFileSync").mockReturnValue(`
-openclaw:
+agents:
   id: myclaw
   repo: org/myclaw
   name: MyClaw
   paginated: true
 `);
     const config = loadConfig("test.yml");
-    expect(config.openclaw).toEqual({ id: "myclaw", repo: "org/myclaw", name: "MyClaw", paginated: true });
+    expect(config.agents).toEqual({ id: "myclaw", repo: "org/myclaw", name: "MyClaw", paginated: true });
   });
 
-  it("falls back to default openclaw when incomplete", () => {
+  it("falls back to default agents when incomplete", () => {
     vi.spyOn(fs, "existsSync").mockReturnValue(true);
-    vi.spyOn(fs, "readFileSync").mockReturnValue("openclaw:\n  id: partial\n");
+    vi.spyOn(fs, "readFileSync").mockReturnValue("agents:\n  id: partial\n");
     const config = loadConfig("test.yml");
-    expect(config.openclaw.id).toBe("nullclaw"); // default
+    expect(config.agents.id).toBe("nullclaw"); // default
   });
 });

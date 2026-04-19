@@ -21,7 +21,7 @@
 
 ## Web UI
 
-**[https://duanyytop.github.io/agents-radar](https://duanyytop.github.io/agents-radar)**
+**[https://manelsen.github.io/agents-radar](https://manelsen.github.io/agents-radar)**
 
 在线浏览所有历史简报，深色主题，无需登录。报告直接由本仓库的 Markdown 文件通过 GitHub Pages 渲染。每份报告支持中文 / 英文切换。
 
@@ -44,13 +44,13 @@
 
 ## RSS 订阅
 
-**[https://duanyytop.github.io/agents-radar/feed.xml](https://duanyytop.github.io/agents-radar/feed.xml)**
+**[https://manelsen.github.io/agents-radar/feed.xml](https://manelsen.github.io/agents-radar/feed.xml)**
 
 在任意 RSS 阅读器（Feedly、Reeder、NewsBlur 等）中订阅，每日自动推送新简报。Feed 包含最新 30 条报告（覆盖所有报告类型），与 `manifest.json` 同步更新。
 
 ## MCP Server
 
-**`https://agents-radar-mcp.duanyytop.workers.dev`**
+**`https://agents-radar-mcp.manelsen.workers.dev`**
 
 基于 [Model Context Protocol](https://modelcontextprotocol.io) 的托管服务，将 agents-radar 数据暴露为工具接口。任何支持 MCP 的客户端（Claude Desktop、OpenClaw 等）均可直接查询最新 AI 生态报告。
 
@@ -69,7 +69,7 @@
 {
   "mcpServers": {
     "agents-radar": {
-      "url": "https://agents-radar-mcp.duanyytop.workers.dev"
+      "url": "https://agents-radar-mcp.manelsen.workers.dev"
     }
   }
 }
@@ -83,7 +83,7 @@
 **OpenClaw 接入** — 执行以下命令：
 
 ```bash
-openclaw mcp add --transport http agents-radar https://agents-radar-mcp.duanyytop.workers.dev
+openclaw mcp add --transport http agents-radar https://agents-radar-mcp.manelsen.workers.dev
 ```
 
 或手动编辑 `~/.openclaw/openclaw.json`：
@@ -93,7 +93,7 @@ openclaw mcp add --transport http agents-radar https://agents-radar-mcp.duanyyto
   "mcpServers": {
     "agents-radar": {
       "type": "http",
-      "url": "https://agents-radar-mcp.duanyytop.workers.dev"
+      "url": "https://agents-radar-mcp.manelsen.workers.dev"
     }
   }
 }
@@ -404,4 +404,4 @@ OpenAI 内容精选            (research / release / company / safety / ...)
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=duanyytop/agents-radar&type=Date)](https://star-history.com/#duanyytop/agents-radar&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=manelsen/agents-radar&type=Date)](https://star-history.com/#manelsen/agents-radar&Date)

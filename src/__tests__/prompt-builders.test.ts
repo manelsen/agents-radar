@@ -1,13 +1,6 @@
 import { describe, it, expect } from "vitest";
+import { buildPeerPrompt, buildPeersComparisonPrompt, buildSkillsPrompt } from "../prompts.ts";
 import {
-  buildCliPrompt,
-  buildPeerPrompt,
-  buildComparisonPrompt,
-  buildPeersComparisonPrompt,
-  buildSkillsPrompt,
-} from "../prompts.ts";
-import {
-  buildTrendingPrompt,
   buildWebReportPrompt,
   buildWeeklyPrompt,
   buildMonthlyPrompt,
@@ -15,7 +8,6 @@ import {
 } from "../prompts-data.ts";
 import type { RepoConfig, GitHubItem, GitHubRelease } from "../github.ts";
 import type { RepoDigest } from "../prompts.ts";
-import type { TrendingData } from "../trending.ts";
 import type { HnData } from "../hn.ts";
 import type { WebFetchResult } from "../web.ts";
 
@@ -54,40 +46,6 @@ function makeDigest(overrides: Partial<RepoDigest> = {}): RepoDigest {
 }
 
 // ---------------------------------------------------------------------------
-// buildCliPrompt
-// ---------------------------------------------------------------------------
-
-describe("buildCliPrompt", () => {
-  it("generates Portuguese prompt by default", () => {
-    const result = buildCliPrompt(cfg, [makeItem()], [makeItem()], [release], "2026-03-09");
-    expect(result).toContain("analista técnico");
-    expect(result).toContain("TestTool");
-    expect(result).toContain("2026-03-09");
-    expect(result).toContain("org/test");
-    expect(result).toContain("v1.0.0");
-  });
-
-  it("generates English prompt", () => {
-    const result = buildCliPrompt(cfg, [makeItem()], [], [], "2026-03-09", "en");
-    expect(result).toContain("technical analyst");
-    expect(result).toContain("TestTool");
-    expect(result).toContain("Hot Issues");
-  });
-
-  it("shows Nenhum when no data", () => {
-    const result = buildCliPrompt(cfg, [], [], [], "2026-03-09");
-    expect(result).toContain("Nenhum");
-  });
-
-  it("includes sample notes when items exceed limit", () => {
-    const items = Array.from({ length: 50 }, (_, i) => makeItem({ number: i, comments: i }));
-    const result = buildCliPrompt(cfg, items, [], [], "2026-03-09");
-    expect(result).toContain("Total: 50");
-    expect(result).toContain("30 itens");
-  });
-});
-
-// ---------------------------------------------------------------------------
 // buildPeerPrompt
 // ---------------------------------------------------------------------------
 
@@ -104,30 +62,6 @@ describe("buildPeerPrompt", () => {
     const result = buildPeerPrompt(cfg, [], [], [], "2026-03-09", 30, 20, "en");
     expect(result).toContain("Data Overview");
     expect(result).toContain("None");
-  });
-});
-
-// ---------------------------------------------------------------------------
-// buildComparisonPrompt
-// ---------------------------------------------------------------------------
-
-describe("buildComparisonPrompt", () => {
-  it("includes all digest summaries when they have data", () => {
-    const digests = [
-      makeDigest({ config: { ...cfg, name: "Tool A" }, summary: "Summary A", issues: [makeItem()] }),
-      makeDigest({ config: { ...cfg, name: "Tool B" }, summary: "Summary B", prs: [makeItem()] }),
-    ];
-    const result = buildComparisonPrompt(digests, "2026-03-09");
-    expect(result).toContain("Tool A");
-    expect(result).toContain("Summary A");
-    expect(result).toContain("Tool B");
-    expect(result).toContain("Summary B");
-  });
-
-  it("shows no-activity for empty digests", () => {
-    const digests = [makeDigest({ summary: "Summary" })]; // no issues/prs/releases
-    const result = buildComparisonPrompt(digests, "2026-03-09");
-    expect(result).toContain("Sem atividade nas últimas 24 horas");
   });
 });
 
@@ -166,64 +100,6 @@ describe("buildSkillsPrompt", () => {
     const result = buildSkillsPrompt([], [], "2026-03-09", "en");
     expect(result).toContain("Claude Code ecosystem");
     expect(result).toContain("None");
-  });
-});
-
-// ---------------------------------------------------------------------------
-// buildTrendingPrompt
-// ---------------------------------------------------------------------------
-
-describe("buildTrendingPrompt", () => {
-  it("includes trending repos", () => {
-    const formattedStars = (5000).toLocaleString();
-    const data: TrendingData = {
-      trendingRepos: [
-        {
-          fullName: "org/repo",
-          description: "desc",
-          language: "Python",
-          todayStars: 100,
-          totalStars: 5000,
-          forks: 200,
-          url: "https://github.com/org/repo",
-        },
-      ],
-      searchRepos: [],
-      trendingFetchSuccess: true,
-    };
-    const result = buildTrendingPrompt(data, "2026-03-09");
-    expect(result).toContain("org/repo");
-    expect(result).toContain("Python");
-    expect(result).toContain(formattedStars);
-    expect(result).toContain("+100 today");
-  });
-
-  it("shows fetch failure message when trending fails", () => {
-    const data: TrendingData = { trendingRepos: [], searchRepos: [], trendingFetchSuccess: false };
-    const result = buildTrendingPrompt(data, "2026-03-09");
-    expect(result).toContain("Não foi possível buscar");
-  });
-
-  it("includes search repos with topic tag", () => {
-    const formattedStars = (1000).toLocaleString();
-    const data: TrendingData = {
-      trendingRepos: [],
-      searchRepos: [
-        {
-          fullName: "ai/agent",
-          description: "An AI agent",
-          language: "TypeScript",
-          stargazersCount: 1000,
-          pushedAt: "2026-03-08",
-          url: "https://github.com/ai/agent",
-          searchQuery: "ai-agent",
-        },
-      ],
-      trendingFetchSuccess: false,
-    };
-    const result = buildTrendingPrompt(data, "2026-03-09");
-    expect(result).toContain("[topic:ai-agent]");
-    expect(result).toContain(formattedStars);
   });
 });
 

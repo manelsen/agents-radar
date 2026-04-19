@@ -14,7 +14,9 @@ import { NOTIFY_LABELS } from "./i18n.ts";
 import { loadHighlights, type Highlights } from "./highlights.ts";
 export type { Highlights } from "./highlights.ts";
 
-const PAGES_URL_DEFAULT = "https://duanyytop.github.io/agents-radar";
+const PAGES_URL_DEFAULT =
+  process.env["PAGES_URL"] ||
+  `https://${process.env["DIGEST_REPO"]?.split("/")[0] ?? "manelsen"}.github.io/agents-radar`;
 
 function escapeHtml(s: string): string {
   return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
