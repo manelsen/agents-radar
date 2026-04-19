@@ -5,11 +5,17 @@ import {
   buildWeeklyPrompt,
   buildMonthlyPrompt,
   buildHnPrompt,
+  buildRoboticsPrompt,
+  buildHackingPrompt,
+  buildMemoryPrompt,
+  build3dPrintingPrompt,
+  buildSolarEnergyPrompt,
 } from "../prompts-data.ts";
 import type { RepoConfig, GitHubItem, GitHubRelease } from "../github.ts";
 import type { RepoDigest } from "../prompts.ts";
 import type { HnData } from "../hn.ts";
 import type { WebFetchResult } from "../web.ts";
+import type { ScienceDailyData } from "../science-daily.ts";
 
 // ---------------------------------------------------------------------------
 // Fixtures
@@ -231,5 +237,206 @@ describe("buildHnPrompt", () => {
     expect(result).toContain("Score: 10");
     expect(result).toContain("Comments: 2");
     expect(result).toContain("Hacker News");
+  });
+});
+
+// ---------------------------------------------------------------------------
+// buildRoboticsPrompt
+// ---------------------------------------------------------------------------
+
+describe("buildRoboticsPrompt", () => {
+  it("includes robotics context in PT-BR", () => {
+    const data: ScienceDailyData = {
+      stories: [
+        {
+          title: "Robots learn to walk",
+          url: "https://www.sciencedaily.com/releases/2026/04/test.htm",
+          description: "New research on robot locomotion.",
+          publishedAt: "2026-04-19T10:00:00Z",
+        },
+      ],
+      fetchSuccess: true,
+    };
+    const result = buildRoboticsPrompt(data, "2026-04-19");
+    expect(result).toContain("Robótica");
+    expect(result).toContain("Robots learn to walk");
+    expect(result).toContain("1");
+  });
+
+  it("generates English variant", () => {
+    const data: ScienceDailyData = {
+      stories: [
+        {
+          title: "Test Story",
+          url: "https://www.sciencedaily.com/releases/2026/04/test.htm",
+          description: "Test.",
+          publishedAt: "2026-04-19T10:00:00Z",
+        },
+      ],
+      fetchSuccess: true,
+    };
+    const result = buildRoboticsPrompt(data, "2026-04-19", "en");
+    expect(result).toContain("robotics");
+    expect(result).toContain("Robotics");
+  });
+});
+
+// ---------------------------------------------------------------------------
+// buildHackingPrompt
+// ---------------------------------------------------------------------------
+
+describe("buildHackingPrompt", () => {
+  it("includes hacking context in PT-BR", () => {
+    const data: ScienceDailyData = {
+      stories: [
+        {
+          title: "New vulnerability found",
+          url: "https://www.sciencedaily.com/releases/2026/04/test.htm",
+          description: "Cybersecurity research.",
+          publishedAt: "2026-04-19T10:00:00Z",
+        },
+      ],
+      fetchSuccess: true,
+    };
+    const result = buildHackingPrompt(data, "2026-04-19");
+    expect(result).toContain("ciberseguran");
+    expect(result).toContain("New vulnerability found");
+    expect(result).toContain("1");
+  });
+
+  it("generates English variant", () => {
+    const data: ScienceDailyData = {
+      stories: [
+        {
+          title: "Test Story",
+          url: "https://www.sciencedaily.com/releases/2026/04/test.htm",
+          description: "Test.",
+          publishedAt: "2026-04-19T10:00:00Z",
+        },
+      ],
+      fetchSuccess: true,
+    };
+    const result = buildHackingPrompt(data, "2026-04-19", "en");
+    expect(result).toContain("cybersecurity");
+  });
+});
+
+// ---------------------------------------------------------------------------
+// buildMemoryPrompt
+// ---------------------------------------------------------------------------
+
+describe("buildMemoryPrompt", () => {
+  it("includes memory context in PT-BR", () => {
+    const data: ScienceDailyData = {
+      stories: [
+        {
+          title: "Brain plasticity study",
+          url: "https://www.sciencedaily.com/releases/2026/04/test.htm",
+          description: "Neuroscience findings.",
+          publishedAt: "2026-04-19T10:00:00Z",
+        },
+      ],
+      fetchSuccess: true,
+    };
+    const result = buildMemoryPrompt(data, "2026-04-19");
+    expect(result).toContain("neuroci");
+    expect(result).toContain("Brain plasticity study");
+    expect(result).toContain("1");
+  });
+
+  it("generates English variant", () => {
+    const data: ScienceDailyData = {
+      stories: [
+        {
+          title: "Test Story",
+          url: "https://www.sciencedaily.com/releases/2026/04/test.htm",
+          description: "Test.",
+          publishedAt: "2026-04-19T10:00:00Z",
+        },
+      ],
+      fetchSuccess: true,
+    };
+    const result = buildMemoryPrompt(data, "2026-04-19", "en");
+    expect(result).toContain("neuroscience");
+  });
+});
+
+// ---------------------------------------------------------------------------
+// build3dPrintingPrompt
+// ---------------------------------------------------------------------------
+
+describe("build3dPrintingPrompt", () => {
+  it("includes 3d printing context in PT-BR", () => {
+    const data: ScienceDailyData = {
+      stories: [
+        {
+          title: "New bioprinting technique",
+          url: "https://www.sciencedaily.com/releases/2026/04/test.htm",
+          description: "Manufacturing breakthrough.",
+          publishedAt: "2026-04-19T10:00:00Z",
+        },
+      ],
+      fetchSuccess: true,
+    };
+    const result = build3dPrintingPrompt(data, "2026-04-19");
+    expect(result).toContain("manufatura");
+    expect(result).toContain("New bioprinting technique");
+    expect(result).toContain("1");
+  });
+
+  it("generates English variant", () => {
+    const data: ScienceDailyData = {
+      stories: [
+        {
+          title: "Test Story",
+          url: "https://www.sciencedaily.com/releases/2026/04/test.htm",
+          description: "Test.",
+          publishedAt: "2026-04-19T10:00:00Z",
+        },
+      ],
+      fetchSuccess: true,
+    };
+    const result = build3dPrintingPrompt(data, "2026-04-19", "en");
+    expect(result).toContain("manufacturing");
+  });
+});
+
+// ---------------------------------------------------------------------------
+// buildSolarEnergyPrompt
+// ---------------------------------------------------------------------------
+
+describe("buildSolarEnergyPrompt", () => {
+  it("includes solar energy context in PT-BR", () => {
+    const data: ScienceDailyData = {
+      stories: [
+        {
+          title: "Perovskite solar cell record",
+          url: "https://www.sciencedaily.com/releases/2026/04/test.htm",
+          description: "Energy efficiency milestone.",
+          publishedAt: "2026-04-19T10:00:00Z",
+        },
+      ],
+      fetchSuccess: true,
+    };
+    const result = buildSolarEnergyPrompt(data, "2026-04-19");
+    expect(result).toContain("energia");
+    expect(result).toContain("Perovskite solar cell record");
+    expect(result).toContain("1");
+  });
+
+  it("generates English variant", () => {
+    const data: ScienceDailyData = {
+      stories: [
+        {
+          title: "Test Story",
+          url: "https://www.sciencedaily.com/releases/2026/04/test.htm",
+          description: "Test.",
+          publishedAt: "2026-04-19T10:00:00Z",
+        },
+      ],
+      fetchSuccess: true,
+    };
+    const result = buildSolarEnergyPrompt(data, "2026-04-19", "en");
+    expect(result).toContain("energy");
   });
 });

@@ -29,11 +29,29 @@ import { buildHighlightsPrompt, type ReportHighlights } from "./prompts-data.ts"
 import { getHighlightsFilename } from "./highlights.ts";
 import { callLlm, saveFile, autoGenFooter } from "./report.ts";
 import { buildAgentsReportContent } from "./report-builders.ts";
-import { saveWebReport, saveHnReport, saveArxivReport, saveScienceDailyReport } from "./report-savers.ts";
+import {
+  saveWebReport,
+  saveHnReport,
+  saveArxivReport,
+  saveScienceDailyReport,
+  saveRoboticsReport,
+  saveHackingReport,
+  saveMemoryReport,
+  save3dPrintingReport,
+  saveSolarEnergyReport,
+} from "./report-savers.ts";
 import { loadWebState, fetchSiteContent, type WebFetchResult, type WebState } from "./web.ts";
 import { fetchHnData, type HnData } from "./hn.ts";
 import { fetchArxivData, type ArxivData } from "./arxiv.ts";
-import { fetchScienceDailyData, type ScienceDailyData } from "./science-daily.ts";
+import {
+  fetchScienceDailyData,
+  fetchRoboticsData,
+  fetchHackingData,
+  fetchMemoryData,
+  fetch3dPrintingData,
+  fetchSolarEnergyData,
+  type ScienceDailyData,
+} from "./science-daily.ts";
 import { loadConfig } from "./config.ts";
 import { toCstDateStr, toUtcStr } from "./date.ts";
 import { MSG, ISSUE_LABELS, AGENTS_ISSUE_TITLE } from "./i18n.ts";
@@ -68,13 +86,30 @@ async function fetchAllData(
   hnData: HnData;
   arxivData: ArxivData;
   scienceData: ScienceDailyData;
+  roboticsData: ScienceDailyData;
+  hackingData: ScienceDailyData;
+  memoryData: ScienceDailyData;
+  data3dPrinting: ScienceDailyData;
+  solarData: ScienceDailyData;
 }> {
   const allConfigs = [AGENTS, ...AGENTS_PEERS];
   console.log(
-    `  Tracking: ${allConfigs.map((r) => r.id).join(", ")}, claude-code-skills, web, hn, arxiv, science`,
+    `  Tracking: ${allConfigs.map((r) => r.id).join(", ")}, claude-code-skills, web, hn, arxiv, science, robotics, hacking, memory, 3dprinting, solar`,
   );
 
-  const [fetched, skillsData, webResults, hnData, arxivData, scienceData] = await Promise.all([
+  const [
+    fetched,
+    skillsData,
+    webResults,
+    hnData,
+    arxivData,
+    scienceData,
+    roboticsData,
+    hackingData,
+    memoryData,
+    data3dPrinting,
+    solarData,
+  ] = await Promise.all([
     Promise.all(
       allConfigs.map(async (cfg) => {
         try {
@@ -122,6 +157,11 @@ async function fetchAllData(
     fetchHnData().catch((): HnData => ({ stories: [], fetchSuccess: false })),
     fetchArxivData().catch((): ArxivData => ({ papers: [], fetchSuccess: false })),
     fetchScienceDailyData().catch((): ScienceDailyData => ({ stories: [], fetchSuccess: false })),
+    fetchRoboticsData().catch((): ScienceDailyData => ({ stories: [], fetchSuccess: false })),
+    fetchHackingData().catch((): ScienceDailyData => ({ stories: [], fetchSuccess: false })),
+    fetchMemoryData().catch((): ScienceDailyData => ({ stories: [], fetchSuccess: false })),
+    fetch3dPrintingData().catch((): ScienceDailyData => ({ stories: [], fetchSuccess: false })),
+    fetchSolarEnergyData().catch((): ScienceDailyData => ({ stories: [], fetchSuccess: false })),
   ]);
 
   return {
@@ -131,6 +171,11 @@ async function fetchAllData(
     hnData,
     arxivData,
     scienceData,
+    roboticsData,
+    hackingData,
+    memoryData,
+    data3dPrinting,
+    solarData,
   };
 }
 
@@ -225,10 +270,19 @@ async function main(): Promise<void> {
 
   // 1. Fetch all data in parallel
   const webState = loadWebState();
-  const { fetched, skillsData, webResults, hnData, arxivData, scienceData } = await fetchAllData(
-    since,
-    webState,
-  );
+  const {
+    fetched,
+    skillsData,
+    webResults,
+    hnData,
+    arxivData,
+    scienceData,
+    roboticsData,
+    hackingData,
+    memoryData,
+    data3dPrinting,
+    solarData,
+  } = await fetchAllData(since, webState);
 
   const peerIds = new Set(AGENTS_PEERS.map((p) => p.id));
   const fetchedAgents = fetched.find((f) => f.cfg.id === AGENTS.id)!;
@@ -277,6 +331,11 @@ async function main(): Promise<void> {
     saveHnReport(hnData, utcStr, dateStr, digestRepo, ft),
     saveArxivReport(arxivData, utcStr, dateStr, digestRepo, ft),
     saveScienceDailyReport(scienceData, utcStr, dateStr, digestRepo, ft),
+    saveRoboticsReport(roboticsData, utcStr, dateStr, digestRepo, ft),
+    saveHackingReport(hackingData, utcStr, dateStr, digestRepo, ft),
+    saveMemoryReport(memoryData, utcStr, dateStr, digestRepo, ft),
+    save3dPrintingReport(data3dPrinting, utcStr, dateStr, digestRepo, ft),
+    saveSolarEnergyReport(solarData, utcStr, dateStr, digestRepo, ft),
   ]);
 
   // 5. Generate highlights for Telegram notification
@@ -291,6 +350,11 @@ async function main(): Promise<void> {
     ["ai-hn", "ai-hn.md"],
     ["ai-arxiv", "ai-arxiv.md"],
     ["ai-science", "ai-science.md"],
+    ["ai-robotics", "ai-robotics.md"],
+    ["ai-hacking", "ai-hacking.md"],
+    ["ai-memory", "ai-memory.md"],
+    ["ai-3dprinting", "ai-3dprinting.md"],
+    ["ai-solar", "ai-solar.md"],
   ] as const) {
     const content = readReport(file);
     if (content) zhReports[id] = content;

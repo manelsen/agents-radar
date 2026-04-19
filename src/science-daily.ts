@@ -1,5 +1,5 @@
 /**
- * ScienceDaily AI stories fetched from the official RSS feed.
+ * ScienceDaily stories fetched from official RSS feeds.
  */
 
 export interface ScienceDailyStory {
@@ -14,7 +14,12 @@ export interface ScienceDailyData {
   fetchSuccess: boolean;
 }
 
-const FEED_URL = "https://www.sciencedaily.com/rss/computers_math/artificial_intelligence.xml";
+const AI_FEED_URL = "https://www.sciencedaily.com/rss/computers_math/artificial_intelligence.xml";
+const ROBOTICS_FEED_URL = "https://www.sciencedaily.com/rss/computers_math/robotics.xml";
+const HACKING_FEED_URL = "https://www.sciencedaily.com/rss/computers_math/hacking.xml";
+const MEMORY_FEED_URL = "https://www.sciencedaily.com/rss/mind_brain/memory.xml";
+const PRINTING_FEED_URL = "https://www.sciencedaily.com/rss/matter_energy/3-d_printing.xml";
+const SOLAR_FEED_URL = "https://www.sciencedaily.com/rss/matter_energy/solar_energy.xml";
 const MAX_STORIES = 20;
 const LOOKBACK_MS = 7 * 24 * 60 * 60 * 1000;
 
@@ -41,14 +46,14 @@ function extractTag(xml: string, tag: string): string {
   return m ? m[1]!.trim() : "";
 }
 
-export async function fetchScienceDailyData(): Promise<ScienceDailyData> {
+async function fetchScienceDailyFeed(feedUrl: string, logTag: string): Promise<ScienceDailyData> {
   try {
-    const resp = await fetch(FEED_URL, {
+    const resp = await fetch(feedUrl, {
       headers: { "User-Agent": "agents-radar/1.0" },
     });
 
     if (!resp.ok) {
-      console.error(`  [science] HTTP ${resp.status}`);
+      console.error(`  [${logTag}] HTTP ${resp.status}`);
       return { stories: [], fetchSuccess: false };
     }
 
@@ -76,10 +81,34 @@ export async function fetchScienceDailyData(): Promise<ScienceDailyData> {
       .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime())
       .slice(0, MAX_STORIES);
 
-    console.log(`  [science] ${stories.length} stories`);
+    console.log(`  [${logTag}] ${stories.length} stories`);
     return { stories, fetchSuccess: stories.length > 0 };
   } catch (err) {
-    console.error(`  [science] fetch failed: ${err}`);
+    console.error(`  [${logTag}] fetch failed: ${err}`);
     return { stories: [], fetchSuccess: false };
   }
+}
+
+export async function fetchScienceDailyData(): Promise<ScienceDailyData> {
+  return fetchScienceDailyFeed(AI_FEED_URL, "science");
+}
+
+export async function fetchRoboticsData(): Promise<ScienceDailyData> {
+  return fetchScienceDailyFeed(ROBOTICS_FEED_URL, "robotics");
+}
+
+export async function fetchHackingData(): Promise<ScienceDailyData> {
+  return fetchScienceDailyFeed(HACKING_FEED_URL, "hacking");
+}
+
+export async function fetchMemoryData(): Promise<ScienceDailyData> {
+  return fetchScienceDailyFeed(MEMORY_FEED_URL, "memory");
+}
+
+export async function fetch3dPrintingData(): Promise<ScienceDailyData> {
+  return fetchScienceDailyFeed(PRINTING_FEED_URL, "3dprinting");
+}
+
+export async function fetchSolarEnergyData(): Promise<ScienceDailyData> {
+  return fetchScienceDailyFeed(SOLAR_FEED_URL, "solar");
 }

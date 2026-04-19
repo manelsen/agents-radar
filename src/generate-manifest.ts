@@ -16,6 +16,11 @@ const REPORT_FILES = [
   "ai-hn",
   "ai-arxiv",
   "ai-science",
+  "ai-robotics",
+  "ai-hacking",
+  "ai-memory",
+  "ai-3dprinting",
+  "ai-solar",
   "ai-weekly",
   "ai-monthly",
 ] as const;

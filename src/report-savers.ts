@@ -3,12 +3,29 @@
  * Extracted from index.ts for separation of concerns.
  */
 
-import { type Lang, WEB_REPORT, HN_REPORT, ARXIV_REPORT, SCIENCE_REPORT, ISSUE_LABELS } from "./i18n.ts";
+import {
+  type Lang,
+  WEB_REPORT,
+  HN_REPORT,
+  ARXIV_REPORT,
+  SCIENCE_REPORT,
+  ROBOTICS_REPORT,
+  HACKING_REPORT,
+  MEMORY_REPORT,
+  PRINT3D_REPORT,
+  SOLAR_REPORT,
+  ISSUE_LABELS,
+} from "./i18n.ts";
 import {
   buildWebReportPrompt,
   buildHnPrompt,
   buildArxivPrompt,
   buildScienceDailyPrompt,
+  buildRoboticsPrompt,
+  buildHackingPrompt,
+  buildMemoryPrompt,
+  build3dPrintingPrompt,
+  buildSolarEnergyPrompt,
 } from "./prompts-data.ts";
 import { callLlm, saveFile, LLM_TOKENS_WEB } from "./report.ts";
 import { createGitHubIssue } from "./github.ts";
@@ -158,6 +175,216 @@ export async function saveScienceDailyReport(
     }
   } catch (err) {
     console.error(`  [science] Report generation failed: ${err}`);
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Robotics report
+// ---------------------------------------------------------------------------
+
+export async function saveRoboticsReport(
+  data: ScienceDailyData,
+  utcStr: string,
+  dateStr: string,
+  digestRepo: string,
+  footer: string,
+  lang: Lang = "zh",
+): Promise<void> {
+  if (!data.fetchSuccess) {
+    console.log("  [robotics] No data available, skipping report.");
+    return;
+  }
+
+  console.log("  [robotics] Calling LLM for Robotics report...");
+  try {
+    const summary = await callLlm(buildRoboticsPrompt(data, dateStr, lang));
+    const fileName = "ai-robotics.md";
+    const header =
+      `# ${ROBOTICS_REPORT.title[lang]} ${dateStr}\n\n` +
+      `> Fonte: [ScienceDaily](https://www.sciencedaily.com/news/computers_math/robotics/) | ` +
+      `${data.stories.length} histórias | Gerado em: ${utcStr} UTC\n\n` +
+      `---\n\n`;
+
+    const content = header + summary + footer;
+
+    console.log(`  Saved ${saveFile(content, dateStr, fileName)}`);
+
+    if (digestRepo) {
+      const title = ROBOTICS_REPORT.issueTitle(dateStr, lang);
+      const label = ISSUE_LABELS.robotics[lang];
+      const url = await createGitHubIssue(title, content, label);
+      console.log(`  Created Robotics issue: ${url}`);
+    }
+  } catch (err) {
+    console.error(`  [robotics] Report generation failed: ${err}`);
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Hacking report
+// ---------------------------------------------------------------------------
+
+export async function saveHackingReport(
+  data: ScienceDailyData,
+  utcStr: string,
+  dateStr: string,
+  digestRepo: string,
+  footer: string,
+  lang: Lang = "zh",
+): Promise<void> {
+  if (!data.fetchSuccess) {
+    console.log("  [hacking] No data available, skipping report.");
+    return;
+  }
+
+  console.log("  [hacking] Calling LLM for Hacking report...");
+  try {
+    const summary = await callLlm(buildHackingPrompt(data, dateStr, lang));
+    const fileName = "ai-hacking.md";
+    const header =
+      `# ${HACKING_REPORT.title[lang]} ${dateStr}\n\n` +
+      `> Fonte: [ScienceDaily](https://www.sciencedaily.com/news/computers_math/hacking/) | ` +
+      `${data.stories.length} histórias | Gerado em: ${utcStr} UTC\n\n` +
+      `---\n\n`;
+
+    const content = header + summary + footer;
+
+    console.log(`  Saved ${saveFile(content, dateStr, fileName)}`);
+
+    if (digestRepo) {
+      const title = HACKING_REPORT.issueTitle(dateStr, lang);
+      const label = ISSUE_LABELS.hacking[lang];
+      const url = await createGitHubIssue(title, content, label);
+      console.log(`  Created Hacking issue: ${url}`);
+    }
+  } catch (err) {
+    console.error(`  [hacking] Report generation failed: ${err}`);
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Memory report
+// ---------------------------------------------------------------------------
+
+export async function saveMemoryReport(
+  data: ScienceDailyData,
+  utcStr: string,
+  dateStr: string,
+  digestRepo: string,
+  footer: string,
+  lang: Lang = "zh",
+): Promise<void> {
+  if (!data.fetchSuccess) {
+    console.log("  [memory] No data available, skipping report.");
+    return;
+  }
+
+  console.log("  [memory] Calling LLM for Memory report...");
+  try {
+    const summary = await callLlm(buildMemoryPrompt(data, dateStr, lang));
+    const fileName = "ai-memory.md";
+    const header =
+      `# ${MEMORY_REPORT.title[lang]} ${dateStr}\n\n` +
+      `> Fonte: [ScienceDaily](https://www.sciencedaily.com/news/mind_brain/memory/) | ` +
+      `${data.stories.length} histórias | Gerado em: ${utcStr} UTC\n\n` +
+      `---\n\n`;
+
+    const content = header + summary + footer;
+
+    console.log(`  Saved ${saveFile(content, dateStr, fileName)}`);
+
+    if (digestRepo) {
+      const title = MEMORY_REPORT.issueTitle(dateStr, lang);
+      const label = ISSUE_LABELS.memory[lang];
+      const url = await createGitHubIssue(title, content, label);
+      console.log(`  Created Memory issue: ${url}`);
+    }
+  } catch (err) {
+    console.error(`  [memory] Report generation failed: ${err}`);
+  }
+}
+
+// ---------------------------------------------------------------------------
+// 3D Printing report
+// ---------------------------------------------------------------------------
+
+export async function save3dPrintingReport(
+  data: ScienceDailyData,
+  utcStr: string,
+  dateStr: string,
+  digestRepo: string,
+  footer: string,
+  lang: Lang = "zh",
+): Promise<void> {
+  if (!data.fetchSuccess) {
+    console.log("  [3dprinting] No data available, skipping report.");
+    return;
+  }
+
+  console.log("  [3dprinting] Calling LLM for 3D Printing report...");
+  try {
+    const summary = await callLlm(build3dPrintingPrompt(data, dateStr, lang));
+    const fileName = "ai-3dprinting.md";
+    const header =
+      `# ${PRINT3D_REPORT.title[lang]} ${dateStr}\n\n` +
+      `> Fonte: [ScienceDaily](https://www.sciencedaily.com/news/matter_energy/3-d_printing/) | ` +
+      `${data.stories.length} histórias | Gerado em: ${utcStr} UTC\n\n` +
+      `---\n\n`;
+
+    const content = header + summary + footer;
+
+    console.log(`  Saved ${saveFile(content, dateStr, fileName)}`);
+
+    if (digestRepo) {
+      const title = PRINT3D_REPORT.issueTitle(dateStr, lang);
+      const label = ISSUE_LABELS["3dprinting"][lang];
+      const url = await createGitHubIssue(title, content, label);
+      console.log(`  Created 3D Printing issue: ${url}`);
+    }
+  } catch (err) {
+    console.error(`  [3dprinting] Report generation failed: ${err}`);
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Solar Energy report
+// ---------------------------------------------------------------------------
+
+export async function saveSolarEnergyReport(
+  data: ScienceDailyData,
+  utcStr: string,
+  dateStr: string,
+  digestRepo: string,
+  footer: string,
+  lang: Lang = "zh",
+): Promise<void> {
+  if (!data.fetchSuccess) {
+    console.log("  [solar] No data available, skipping report.");
+    return;
+  }
+
+  console.log("  [solar] Calling LLM for Solar Energy report...");
+  try {
+    const summary = await callLlm(buildSolarEnergyPrompt(data, dateStr, lang));
+    const fileName = "ai-solar.md";
+    const header =
+      `# ${SOLAR_REPORT.title[lang]} ${dateStr}\n\n` +
+      `> Fonte: [ScienceDaily](https://www.sciencedaily.com/news/matter_energy/solar_energy/) | ` +
+      `${data.stories.length} histórias | Gerado em: ${utcStr} UTC\n\n` +
+      `---\n\n`;
+
+    const content = header + summary + footer;
+
+    console.log(`  Saved ${saveFile(content, dateStr, fileName)}`);
+
+    if (digestRepo) {
+      const title = SOLAR_REPORT.issueTitle(dateStr, lang);
+      const label = ISSUE_LABELS.solar[lang];
+      const url = await createGitHubIssue(title, content, label);
+      console.log(`  Created Solar Energy issue: ${url}`);
+    }
+  } catch (err) {
+    console.error(`  [solar] Report generation failed: ${err}`);
   }
 }
 

@@ -21,7 +21,17 @@ const DIGESTS_DIR = "digests";
 const MAX_CHARS_PER_REPORT = 2500;
 
 // Source report types to read for rollups (in priority order)
-const ROLLUP_SOURCES = ["ai-agents", "ai-hn", "ai-web"];
+const ROLLUP_SOURCES = [
+  "ai-agents",
+  "ai-hn",
+  "ai-web",
+  "ai-science",
+  "ai-robotics",
+  "ai-hacking",
+  "ai-memory",
+  "ai-3dprinting",
+  "ai-solar",
+];
 
 // ---------------------------------------------------------------------------
 // Helpers

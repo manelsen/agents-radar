@@ -57,6 +57,44 @@ export const SCIENCE_REPORT = {
     lang === "en" ? `🧪 ScienceDaily AI Digest ${dateStr}` : `🧪 IA no ScienceDaily ${dateStr}`,
 } as const;
 
+export const ROBOTICS_REPORT = {
+  title: t("Resumo diário de Robótica no ScienceDaily", "ScienceDaily Robotics Research Digest"),
+  issueTitle: (dateStr: string, lang: Lang) =>
+    lang === "en" ? `🤖 ScienceDaily Robotics Digest ${dateStr}` : `🤖 Robótica no ScienceDaily ${dateStr}`,
+} as const;
+
+export const HACKING_REPORT = {
+  title: t("Resumo diário de Cibersegurança no ScienceDaily", "ScienceDaily Cybersecurity Research Digest"),
+  issueTitle: (dateStr: string, lang: Lang) =>
+    lang === "en"
+      ? `🔒 ScienceDaily Cybersecurity Digest ${dateStr}`
+      : `🔒 Cibersegurança no ScienceDaily ${dateStr}`,
+} as const;
+
+export const MEMORY_REPORT = {
+  title: t("Resumo diário de Neurociência no ScienceDaily", "ScienceDaily Neuroscience Research Digest"),
+  issueTitle: (dateStr: string, lang: Lang) =>
+    lang === "en"
+      ? `🧠 ScienceDaily Memory Digest ${dateStr}`
+      : `🧠 Memória e Neurociência no ScienceDaily ${dateStr}`,
+} as const;
+
+export const PRINT3D_REPORT = {
+  title: t("Resumo diário de Impressão 3D no ScienceDaily", "ScienceDaily 3D Printing Research Digest"),
+  issueTitle: (dateStr: string, lang: Lang) =>
+    lang === "en"
+      ? `🖨️ ScienceDaily 3D Printing Digest ${dateStr}`
+      : `🖨️ Impressão 3D no ScienceDaily ${dateStr}`,
+} as const;
+
+export const SOLAR_REPORT = {
+  title: t("Resumo diário de Energia Solar no ScienceDaily", "ScienceDaily Solar Energy Research Digest"),
+  issueTitle: (dateStr: string, lang: Lang) =>
+    lang === "en"
+      ? `☀️ ScienceDaily Solar Energy Digest ${dateStr}`
+      : `☀️ Energia Solar no ScienceDaily ${dateStr}`,
+} as const;
+
 export const WEEKLY_REPORT = {
   title: t("Relatório semanal do ecossistema de ferramentas de IA", "AI Tools Ecosystem Weekly Report"),
   coverage: t("Cobertura", "Coverage"),
@@ -80,6 +118,11 @@ export const ISSUE_LABELS = {
   hn: t("hn", "hn"),
   arxiv: t("arxiv", "arxiv"),
   science: t("science", "science"),
+  robotics: t("robotics", "robotics"),
+  hacking: t("hacking", "hacking"),
+  memory: t("memory", "memory"),
+  "3dprinting": t("3dprinting", "3dprinting"),
+  solar: t("solar", "solar"),
 } as const;
 
 export const AGENTS_ISSUE_TITLE = (dateStr: string, lang: Lang = "zh") =>
@@ -95,6 +138,11 @@ export const REPORT_LABELS: Record<string, string> = {
   "ai-hn": "Resumo de IA no Hacker News",
   "ai-arxiv": "Pesquisa em IA no ArXiv",
   "ai-science": "IA no ScienceDaily",
+  "ai-robotics": "Robótica no ScienceDaily",
+  "ai-hacking": "Cibersegurança no ScienceDaily",
+  "ai-memory": "Memória e Neurociência no ScienceDaily",
+  "ai-3dprinting": "Impressão 3D no ScienceDaily",
+  "ai-solar": "Energia Solar no ScienceDaily",
   "ai-weekly": "Relatório semanal de ferramentas de IA",
   "ai-monthly": "Relatório mensal de ferramentas de IA",
 };
@@ -105,6 +153,11 @@ export const NOTIFY_LABELS: Record<string, Record<Lang, string>> = {
   "ai-hn": t("Comunidade HN", "HN Community"),
   "ai-arxiv": t("Pesquisa no ArXiv", "ArXiv Research"),
   "ai-science": t("ScienceDaily", "ScienceDaily"),
+  "ai-robotics": t("Robótica", "Robotics"),
+  "ai-hacking": t("Cibersegurança", "Cybersecurity"),
+  "ai-memory": t("Memória", "Memory"),
+  "ai-3dprinting": t("Impressão 3D", "3D Printing"),
+  "ai-solar": t("Energia Solar", "Solar Energy"),
   "ai-weekly": t("Relatório semanal de IA", "AI Tools Weekly"),
   "ai-monthly": t("Relatório mensal de IA", "AI Tools Monthly"),
 };

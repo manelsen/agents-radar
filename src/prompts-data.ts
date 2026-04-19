@@ -507,3 +507,233 @@ Gere um resumo estruturado do ScienceDaily sobre IA em português:
 
 Estilo: português conciso e profissional, preservando todos os links originais.`;
 }
+
+export function buildRoboticsPrompt(data: ScienceDailyData, dateStr: string, lang: Lang = "zh"): string {
+  const storiesText = data.stories
+    .map((s, i) =>
+      lang === "en"
+        ? `${i + 1}. **${s.title}**\n   Link: ${s.url}\n   Published: ${s.publishedAt.slice(0, 10)}\n   Summary: ${s.description}`
+        : `${i + 1}. **${s.title}**\n   Link: ${s.url}\n   Publicado: ${s.publishedAt.slice(0, 10)}\n   Resumo: ${s.description}`,
+    )
+    .join("\n\n");
+
+  if (lang === "en") {
+    return `You are a robotics research analyst. The following are recent ScienceDaily stories from the Robotics RSS feed as of ${dateStr} (${data.stories.length} stories total):
+
+---
+
+${storiesText}
+
+---
+
+Generate a structured ScienceDaily Robotics digest in English:
+
+1. **Today's Highlights** — 3-5 sentences on the most important research/news items
+2. **Key Stories** — Select the most relevant stories, grouping related topics when useful
+3. **Research Signal** — 100-200 words on what these stories suggest about current robotics research directions
+4. **Worth Reading** — 2-3 stories most worth deeper reading, with brief reasoning
+
+Style: English, concise and professional, preserving all original links.`;
+  }
+
+  return `Você é um analista de pesquisa em robótica. Abaixo estão as histórias recentes do feed RSS de Robotics do ScienceDaily até ${dateStr} (${data.stories.length} no total):
+
+---
+
+${storiesText}
+
+---
+
+Gere um resumo estruturado do ScienceDaily sobre Robótica em português:
+
+1. **Destaques do dia** — 3-5 frases sobre as notícias e pesquisas mais importantes
+2. **Principais histórias** — Selecione as histórias mais relevantes e agrupe temas relacionados quando fizer sentido
+3. **Sinal de pesquisa** — 100-200 palavras sobre o que essas histórias sugerem a respeito das direções atuais da pesquisa em robótica
+4. **Vale ler** — 2-3 histórias que mais merecem leitura aprofundada, com breve justificativa
+
+Estilo: português conciso e profissional, preservando todos os links originais.`;
+}
+
+export function buildHackingPrompt(data: ScienceDailyData, dateStr: string, lang: Lang = "zh"): string {
+  const storiesText = data.stories
+    .map((s, i) =>
+      lang === "en"
+        ? `${i + 1}. **${s.title}**\n   Link: ${s.url}\n   Published: ${s.publishedAt.slice(0, 10)}\n   Summary: ${s.description}`
+        : `${i + 1}. **${s.title}**\n   Link: ${s.url}\n   Publicado: ${s.publishedAt.slice(0, 10)}\n   Resumo: ${s.description}`,
+    )
+    .join("\n\n");
+
+  if (lang === "en") {
+    return `You are a cybersecurity research analyst. The following are recent ScienceDaily stories from the Hacking RSS feed as of ${dateStr} (${data.stories.length} stories total):
+
+---
+
+${storiesText}
+
+---
+
+Generate a structured ScienceDaily Cybersecurity digest in English:
+
+1. **Today's Highlights** — 3-5 sentences on the most important research/news items
+2. **Key Stories** — Select the most relevant stories, grouping related topics when useful
+3. **Research Signal** — 100-200 words on what these stories suggest about current cybersecurity research directions
+4. **Worth Reading** — 2-3 stories most worth deeper reading, with brief reasoning
+
+Style: English, concise and professional, preserving all original links.`;
+  }
+
+  return `Você é um analista de pesquisa em cibersegurança. Abaixo estão as histórias recentes do feed RSS de Hacking do ScienceDaily até ${dateStr} (${data.stories.length} no total):
+
+---
+
+${storiesText}
+
+---
+
+Gere um resumo estruturado do ScienceDaily sobre Cibersegurança em português:
+
+1. **Destaques do dia** — 3-5 frases sobre as notícias e pesquisas mais importantes
+2. **Principais histórias** — Selecione as histórias mais relevantes e agrupe temas relacionados quando fizer sentido
+3. **Sinal de pesquisa** — 100-200 palavras sobre o que essas histórias sugerem a respeito das direções atuais da pesquisa em cibersegurança
+4. **Vale ler** — 2-3 histórias que mais merecem leitura aprofundada, com breve justificativa
+
+Estilo: português conciso e profissional, preservando todos os links originais.`;
+}
+
+export function buildMemoryPrompt(data: ScienceDailyData, dateStr: string, lang: Lang = "zh"): string {
+  const storiesText = data.stories
+    .map((s, i) =>
+      lang === "en"
+        ? `${i + 1}. **${s.title}**\n   Link: ${s.url}\n   Published: ${s.publishedAt.slice(0, 10)}\n   Summary: ${s.description}`
+        : `${i + 1}. **${s.title}**\n   Link: ${s.url}\n   Publicado: ${s.publishedAt.slice(0, 10)}\n   Resumo: ${s.description}`,
+    )
+    .join("\n\n");
+
+  if (lang === "en") {
+    return `You are a neuroscience research analyst specializing in memory. The following are recent ScienceDaily stories from the Memory RSS feed as of ${dateStr} (${data.stories.length} stories total):
+
+---
+
+${storiesText}
+
+---
+
+Generate a structured ScienceDaily Memory & Neuroscience digest in English:
+
+1. **Today's Highlights** — 3-5 sentences on the most important research/news items
+2. **Key Stories** — Select the most relevant stories, grouping related topics when useful
+3. **Research Signal** — 100-200 words on what these stories suggest about current memory and neuroscience research directions
+4. **Worth Reading** — 2-3 stories most worth deeper reading, with brief reasoning
+
+Style: English, concise and professional, preserving all original links.`;
+  }
+
+  return `Você é um analista de pesquisa em neurociência especializado em memória. Abaixo estão as histórias recentes do feed RSS de Memory do ScienceDaily até ${dateStr} (${data.stories.length} no total):
+
+---
+
+${storiesText}
+
+---
+
+Gere um resumo estruturado do ScienceDaily sobre Memória e Neurociência em português:
+
+1. **Destaques do dia** — 3-5 frases sobre as notícias e pesquisas mais importantes
+2. **Principais histórias** — Selecione as histórias mais relevantes e agrupe temas relacionados quando fizer sentido
+3. **Sinal de pesquisa** — 100-200 palavras sobre o que essas histórias sugerem a respeito das direções atuais da pesquisa em neurociência e memória
+4. **Vale ler** — 2-3 histórias que mais merecem leitura aprofundada, com breve justificativa
+
+Estilo: português conciso e profissional, preservando todos os links originais.`;
+}
+
+export function build3dPrintingPrompt(data: ScienceDailyData, dateStr: string, lang: Lang = "zh"): string {
+  const storiesText = data.stories
+    .map((s, i) =>
+      lang === "en"
+        ? `${i + 1}. **${s.title}**\n   Link: ${s.url}\n   Published: ${s.publishedAt.slice(0, 10)}\n   Summary: ${s.description}`
+        : `${i + 1}. **${s.title}**\n   Link: ${s.url}\n   Publicado: ${s.publishedAt.slice(0, 10)}\n   Resumo: ${s.description}`,
+    )
+    .join("\n\n");
+
+  if (lang === "en") {
+    return `You are a manufacturing technology research analyst. The following are recent ScienceDaily stories from the 3-D Printing RSS feed as of ${dateStr} (${data.stories.length} stories total):
+
+---
+
+${storiesText}
+
+---
+
+Generate a structured ScienceDaily 3D Printing digest in English:
+
+1. **Today's Highlights** — 3-5 sentences on the most important research/news items
+2. **Key Stories** — Select the most relevant stories, grouping related topics when useful
+3. **Research Signal** — 100-200 words on what these stories suggest about current 3D printing and manufacturing research directions
+4. **Worth Reading** — 2-3 stories most worth deeper reading, with brief reasoning
+
+Style: English, concise and professional, preserving all original links.`;
+  }
+
+  return `Você é um analista de pesquisa em tecnologia de manufatura. Abaixo estão as histórias recentes do feed RSS de 3-D Printing do ScienceDaily até ${dateStr} (${data.stories.length} no total):
+
+---
+
+${storiesText}
+
+---
+
+Gere um resumo estruturado do ScienceDaily sobre Impressão 3D em português:
+
+1. **Destaques do dia** — 3-5 frases sobre as notícias e pesquisas mais importantes
+2. **Principais histórias** — Selecione as histórias mais relevantes e agrupe temas relacionados quando fizer sentido
+3. **Sinal de pesquisa** — 100-200 palavras sobre o que essas histórias sugerem a respeito das direções atuais da pesquisa em impressão 3D e manufatura
+4. **Vale ler** — 2-3 histórias que mais merecem leitura aprofundada, com breve justificativa
+
+Estilo: português conciso e profissional, preservando todos os links originais.`;
+}
+
+export function buildSolarEnergyPrompt(data: ScienceDailyData, dateStr: string, lang: Lang = "zh"): string {
+  const storiesText = data.stories
+    .map((s, i) =>
+      lang === "en"
+        ? `${i + 1}. **${s.title}**\n   Link: ${s.url}\n   Published: ${s.publishedAt.slice(0, 10)}\n   Summary: ${s.description}`
+        : `${i + 1}. **${s.title}**\n   Link: ${s.url}\n   Publicado: ${s.publishedAt.slice(0, 10)}\n   Resumo: ${s.description}`,
+    )
+    .join("\n\n");
+
+  if (lang === "en") {
+    return `You are a renewable energy research analyst. The following are recent ScienceDaily stories from the Solar Energy RSS feed as of ${dateStr} (${data.stories.length} stories total):
+
+---
+
+${storiesText}
+
+---
+
+Generate a structured ScienceDaily Solar Energy digest in English:
+
+1. **Today's Highlights** — 3-5 sentences on the most important research/news items
+2. **Key Stories** — Select the most relevant stories, grouping related topics when useful
+3. **Research Signal** — 100-200 words on what these stories suggest about current solar energy and renewable tech research directions
+4. **Worth Reading** — 2-3 stories most worth deeper reading, with brief reasoning
+
+Style: English, concise and professional, preserving all original links.`;
+  }
+
+  return `Você é um analista de pesquisa em energia renovável. Abaixo estão as histórias recentes do feed RSS de Solar Energy do ScienceDaily até ${dateStr} (${data.stories.length} no total):
+
+---
+
+${storiesText}
+
+---
+
+Gere um resumo estruturado do ScienceDaily sobre Energia Solar em português:
+
+1. **Destaques do dia** — 3-5 frases sobre as notícias e pesquisas mais importantes
+2. **Principais histórias** — Selecione as histórias mais relevantes e agrupe temas relacionados quando fizer sentido
+3. **Sinal de pesquisa** — 100-200 palavras sobre o que essas histórias sugerem a respeito das direções atuais da pesquisa em energia solar e renováveis
+4. **Vale ler** — 2-3 histórias que mais merecem leitura aprofundada, com breve justificativa
+
+Estilo: português conciso e profissional, preservando todos os links originais.`;
+}

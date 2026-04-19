@@ -201,8 +201,12 @@ const LABEL_COLORS: Record<string, string> = {
   monthly: "0d9488",
   web: "6366f1",
   arxiv: "b31b1b",
+  robotics: "4a90d9",
+  hacking: "333333",
+  memory: "9370db",
+  "3dprinting": "ff8c00",
+  solar: "ffd700",
 };
-
 /**
  * Break GitHub URLs in issue body to prevent cross-repository references.
  * Inserts a zero-width space in "github.com" so GitHub's auto-linker

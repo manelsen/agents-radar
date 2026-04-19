@@ -6,6 +6,11 @@ import {
   HN_REPORT,
   ARXIV_REPORT,
   SCIENCE_REPORT,
+  ROBOTICS_REPORT,
+  HACKING_REPORT,
+  MEMORY_REPORT,
+  PRINT3D_REPORT,
+  SOLAR_REPORT,
   WEEKLY_REPORT,
   MONTHLY_REPORT,
   ISSUE_LABELS,
@@ -32,6 +37,11 @@ describe("bilingual string maps", () => {
     { name: "HN_REPORT.title", obj: HN_REPORT.title },
     { name: "ARXIV_REPORT.title", obj: ARXIV_REPORT.title },
     { name: "SCIENCE_REPORT.title", obj: SCIENCE_REPORT.title },
+    { name: "ROBOTICS_REPORT.title", obj: ROBOTICS_REPORT.title },
+    { name: "HACKING_REPORT.title", obj: HACKING_REPORT.title },
+    { name: "MEMORY_REPORT.title", obj: MEMORY_REPORT.title },
+    { name: "PRINT3D_REPORT.title", obj: PRINT3D_REPORT.title },
+    { name: "SOLAR_REPORT.title", obj: SOLAR_REPORT.title },
     { name: "WEEKLY_REPORT.title", obj: WEEKLY_REPORT.title },
     { name: "MONTHLY_REPORT.title", obj: MONTHLY_REPORT.title },
     { name: "FOOTER.autoGen", obj: FOOTER.autoGen },
@@ -104,7 +114,20 @@ describe("dynamic content helpers", () => {
 describe("ISSUE_LABELS", () => {
   it("maps report types to label names", () => {
     const keys = Object.keys(ISSUE_LABELS);
-    expect(keys).toEqual(expect.arrayContaining(["agents", "web", "hn", "arxiv", "science"]));
+    expect(keys).toEqual(
+      expect.arrayContaining([
+        "agents",
+        "web",
+        "hn",
+        "arxiv",
+        "science",
+        "robotics",
+        "hacking",
+        "memory",
+        "3dprinting",
+        "solar",
+      ]),
+    );
     expect(keys).not.toContain("cli");
     expect(keys).not.toContain("openclaw");
     expect(keys).not.toContain("trending");
@@ -120,7 +143,20 @@ describe("ISSUE_LABELS", () => {
 
 describe("NOTIFY_LABELS", () => {
   it("covers all report types", () => {
-    const expected = ["ai-agents", "ai-web", "ai-hn", "ai-arxiv", "ai-science", "ai-weekly", "ai-monthly"];
+    const expected = [
+      "ai-agents",
+      "ai-web",
+      "ai-hn",
+      "ai-arxiv",
+      "ai-science",
+      "ai-robotics",
+      "ai-hacking",
+      "ai-memory",
+      "ai-3dprinting",
+      "ai-solar",
+      "ai-weekly",
+      "ai-monthly",
+    ];
     for (const key of expected) {
       expect(NOTIFY_LABELS[key]).toBeDefined();
       expect(NOTIFY_LABELS[key]!.zh).toBeTruthy();
