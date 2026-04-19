@@ -1,7 +1,7 @@
 /**
- * Centralized i18n strings for bilingual (base-lang/en) report generation.
- * Internally the base language key remains `zh` to avoid a wider refactor,
- * but the actual user-facing language is now Portuguese.
+ * Centralized i18n strings for report generation.
+ * Base language is Portuguese (zh key).
+ * EN values retained for prompt builder API compatibility.
  */
 
 export type Lang = "zh" | "en";
@@ -15,26 +15,9 @@ export const MSG = {
   noActivity: t("Sem atividade nas últimas 24 horas.", "No activity in the last 24 hours."),
   summaryFailed: t("⚠️ Falha ao gerar o resumo.", "⚠️ Summary generation failed."),
   skillsFailed: t("⚠️ Falha ao gerar o resumo de Skills.", "⚠️ Skills summary generation failed."),
-  trendingNoData: t(
-    "⚠️ Falha ao buscar os dados de tendências de hoje; não foi possível gerar o relatório.",
-    "⚠️ Trending data unavailable, unable to generate report.",
-  ),
-  trendingFailed: t("⚠️ Falha ao gerar o relatório de tendências.", "⚠️ Trending report generation failed."),
 } as const;
 
-export const CLI_REPORT = {
-  title: t("Relatório diário da comunidade de ferramentas AI CLI", "AI CLI Tools Community Digest"),
-  meta: (utcStr: string, count: number, lang: Lang) =>
-    lang === "en"
-      ? `> Generated: ${utcStr} UTC | Tools covered: ${count}\n\n`
-      : `> Gerado em: ${utcStr} UTC | Ferramentas cobertas: ${count}\n\n`,
-  skillsHeading: t("Destaques da comunidade Claude Code Skills", "Claude Code Skills Highlights"),
-  skillsSource: t("Fonte", "Source"),
-  comparison: t("Comparação entre ferramentas", "Cross-Tool Comparison"),
-  detail: t("Relatórios detalhados por ferramenta", "Per-Tool Reports"),
-} as const;
-
-export const OPENCLAW_REPORT = {
+export const AGENTS_REPORT = {
   title: t("Resumo diário do ecossistema de agentes de IA", "AI Agents Ecosystem Digest"),
   deepDive: t("Análise aprofundada do projeto principal", "Primary Project Deep Dive"),
   comparison: t("Comparação entre projetos do ecossistema", "Cross-Ecosystem Comparison"),
@@ -56,13 +39,6 @@ export const WEB_REPORT = {
       : `🌐 Relatório de conteúdo oficial de IA ${dateStr}${isFirstRun ? " (primeira varredura)" : ""}`,
 } as const;
 
-export const TRENDING_REPORT = {
-  title: t("Relatório diário de tendências open source em IA", "AI Open Source Trends"),
-  sources: t("Fontes: GitHub Trending + GitHub Search API", "Sources: GitHub Trending + GitHub Search API"),
-  issueTitle: (dateStr: string, lang: Lang) =>
-    lang === "en" ? `📈 AI Open Source Trends ${dateStr}` : `📈 Tendências open source em IA ${dateStr}`,
-} as const;
-
 export const HN_REPORT = {
   title: t("Resumo diário da comunidade de IA no Hacker News", "Hacker News AI Community Digest"),
   issueTitle: (dateStr: string, lang: Lang) =>
@@ -81,38 +57,75 @@ export const SCIENCE_REPORT = {
     lang === "en" ? `🧪 ScienceDaily AI Digest ${dateStr}` : `🧪 IA no ScienceDaily ${dateStr}`,
 } as const;
 
-export const COMMUNITY_REPORT = {
-  title: t("Resumo diário de IA nas comunidades técnicas", "Tech Community AI Digest"),
+export const ROBOTICS_REPORT = {
+  title: t("Resumo diário de Robótica no ScienceDaily", "ScienceDaily Robotics Research Digest"),
   issueTitle: (dateStr: string, lang: Lang) =>
-    lang === "en" ? `💬 Tech Community AI Digest ${dateStr}` : `💬 Comunidades técnicas de IA ${dateStr}`,
+    lang === "en" ? `🤖 ScienceDaily Robotics Digest ${dateStr}` : `🤖 Robótica no ScienceDaily ${dateStr}`,
+} as const;
+
+export const HACKING_REPORT = {
+  title: t("Resumo diário de Cibersegurança no ScienceDaily", "ScienceDaily Cybersecurity Research Digest"),
+  issueTitle: (dateStr: string, lang: Lang) =>
+    lang === "en"
+      ? `🔒 ScienceDaily Cybersecurity Digest ${dateStr}`
+      : `🔒 Cibersegurança no ScienceDaily ${dateStr}`,
+} as const;
+
+export const MEMORY_REPORT = {
+  title: t("Resumo diário de Neurociência no ScienceDaily", "ScienceDaily Neuroscience Research Digest"),
+  issueTitle: (dateStr: string, lang: Lang) =>
+    lang === "en"
+      ? `🧠 ScienceDaily Memory Digest ${dateStr}`
+      : `🧠 Memória e Neurociência no ScienceDaily ${dateStr}`,
+} as const;
+
+export const PRINT3D_REPORT = {
+  title: t("Resumo diário de Impressão 3D no ScienceDaily", "ScienceDaily 3D Printing Research Digest"),
+  issueTitle: (dateStr: string, lang: Lang) =>
+    lang === "en"
+      ? `🖨️ ScienceDaily 3D Printing Digest ${dateStr}`
+      : `🖨️ Impressão 3D no ScienceDaily ${dateStr}`,
+} as const;
+
+export const SOLAR_REPORT = {
+  title: t("Resumo diário de Energia Solar no ScienceDaily", "ScienceDaily Solar Energy Research Digest"),
+  issueTitle: (dateStr: string, lang: Lang) =>
+    lang === "en"
+      ? `☀️ ScienceDaily Solar Energy Digest ${dateStr}`
+      : `☀️ Energia Solar no ScienceDaily ${dateStr}`,
 } as const;
 
 export const WEEKLY_REPORT = {
   title: t("Relatório semanal do ecossistema de ferramentas de IA", "AI Tools Ecosystem Weekly Report"),
   coverage: t("Cobertura", "Coverage"),
-  issueTitle: (weekStr: string) => `📅 Relatório semanal do ecossistema de ferramentas de IA ${weekStr}`,
+  issueTitle: (weekStr: string, lang: Lang) =>
+    lang === "en"
+      ? `📅 AI Tools Ecosystem Weekly Report ${weekStr}`
+      : `📅 Relatório semanal do ecossistema de ferramentas de IA ${weekStr}`,
 } as const;
 
 export const MONTHLY_REPORT = {
   title: t("Relatório mensal do ecossistema de ferramentas de IA", "AI Tools Ecosystem Monthly Report"),
-  issueTitle: (monthStr: string) => `📆 Relatório mensal do ecossistema de ferramentas de IA ${monthStr}`,
+  issueTitle: (monthStr: string, lang: Lang) =>
+    lang === "en"
+      ? `📆 AI Tools Ecosystem Monthly Report ${monthStr}`
+      : `📆 Relatório mensal do ecossistema de ferramentas de IA ${monthStr}`,
 } as const;
 
 export const ISSUE_LABELS = {
-  cli: t("digest", "digest-en"),
-  openclaw: t("openclaw", "openclaw-en"),
-  web: t("web", "web-en"),
-  trending: t("trending", "trending-en"),
-  hn: t("hn", "hn-en"),
-  arxiv: t("arxiv", "arxiv-en"),
-  science: t("science", "science-en"),
-  community: t("community", "community-en"),
+  agents: t("agents", "agents"),
+  web: t("web", "web"),
+  hn: t("hn", "hn"),
+  arxiv: t("arxiv", "arxiv"),
+  science: t("science", "science"),
+  robotics: t("robotics", "robotics"),
+  hacking: t("hacking", "hacking"),
+  memory: t("memory", "memory"),
+  "3dprinting": t("3dprinting", "3dprinting"),
+  solar: t("solar", "solar"),
 } as const;
 
-export const CLI_ISSUE_TITLE = (dateStr: string, lang: Lang) =>
-  lang === "en" ? `📊 AI CLI Tools Digest ${dateStr}` : `📊 Ferramentas AI CLI ${dateStr}`;
-
-export const OPENCLAW_ISSUE_TITLE = (dateStr: string, lang: Lang) =>
+export const AGENTS_ISSUE_TITLE = (dateStr: string, lang: Lang = "zh") =>
   lang === "en" ? `🦞 AI Agents Ecosystem Digest ${dateStr}` : `🦞 Ecossistema de agentes de IA ${dateStr}`;
 
 export const FOOTER = {
@@ -120,37 +133,31 @@ export const FOOTER = {
 } as const;
 
 export const REPORT_LABELS: Record<string, string> = {
-  "ai-cli": "Relatório diário da comunidade AI CLI",
-  "ai-cli-en": "AI CLI Tools Digest",
   "ai-agents": "Relatório diário do ecossistema de agentes de IA",
-  "ai-agents-en": "AI Agents Ecosystem Digest",
   "ai-web": "Relatório de conteúdo oficial de IA",
-  "ai-web-en": "Official AI Content Report",
-  "ai-trending": "Tendências open source em IA",
-  "ai-trending-en": "AI Open Source Trends",
   "ai-hn": "Resumo de IA no Hacker News",
-  "ai-hn-en": "Hacker News AI Community Digest",
   "ai-arxiv": "Pesquisa em IA no ArXiv",
-  "ai-arxiv-en": "ArXiv AI Research Digest",
   "ai-science": "IA no ScienceDaily",
-  "ai-science-en": "ScienceDaily AI Research Digest",
-  "ai-community": "Comunidades técnicas de IA",
-  "ai-community-en": "Tech Community AI Digest",
+  "ai-robotics": "Robótica no ScienceDaily",
+  "ai-hacking": "Cibersegurança no ScienceDaily",
+  "ai-memory": "Memória e Neurociência no ScienceDaily",
+  "ai-3dprinting": "Impressão 3D no ScienceDaily",
+  "ai-solar": "Energia Solar no ScienceDaily",
   "ai-weekly": "Relatório semanal de ferramentas de IA",
-  "ai-weekly-en": "AI Tools Weekly Digest",
   "ai-monthly": "Relatório mensal de ferramentas de IA",
-  "ai-monthly-en": "AI Tools Monthly Digest",
 };
 
 export const NOTIFY_LABELS: Record<string, Record<Lang, string>> = {
-  "ai-cli": t("Ferramentas AI CLI", "AI CLI Tools"),
   "ai-agents": t("Ecossistema de agentes de IA", "AI Agents Ecosystem"),
   "ai-web": t("Atualizações oficiais", "Official Updates"),
-  "ai-trending": t("Tendências do GitHub", "GitHub Trends"),
   "ai-hn": t("Comunidade HN", "HN Community"),
   "ai-arxiv": t("Pesquisa no ArXiv", "ArXiv Research"),
   "ai-science": t("ScienceDaily", "ScienceDaily"),
-  "ai-community": t("Comunidade técnica", "Tech Community"),
+  "ai-robotics": t("Robótica", "Robotics"),
+  "ai-hacking": t("Cibersegurança", "Cybersecurity"),
+  "ai-memory": t("Memória", "Memory"),
+  "ai-3dprinting": t("Impressão 3D", "3D Printing"),
+  "ai-solar": t("Energia Solar", "Solar Energy"),
   "ai-weekly": t("Relatório semanal de IA", "AI Tools Weekly"),
   "ai-monthly": t("Relatório mensal de IA", "AI Tools Monthly"),
 };

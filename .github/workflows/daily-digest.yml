@@ -76,11 +76,11 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID || '@agents_radar' }}
-          PAGES_URL: https://duanyytop.github.io/agents-radar
+          PAGES_URL: ${{ vars.PAGES_URL || format('https://{0}.github.io/agents-radar', github.repository_owner) }}
         run: pnpm notify
 
       - name: Send Feishu notification
         env:
           FEISHU_WEBHOOK_URL: ${{ secrets.FEISHU_WEBHOOK_URL }}
-          PAGES_URL: https://duanyytop.github.io/agents-radar
+          PAGES_URL: ${{ vars.PAGES_URL || format('https://{0}.github.io/agents-radar', github.repository_owner) }}
         run: pnpm notify:feishu

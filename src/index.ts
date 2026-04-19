@@ -1,5 +1,5 @@
 /**
- * agents-radar: daily digest for AI CLI tools and OpenClaw.
+ * agents-radar: daily digest for AI agent tools.
  *
  * Env vars:
  *   LLM_PROVIDER        - "anthropic" | "openai" | "github-copilot" | "openrouter" (default: anthropic)
@@ -21,45 +21,46 @@ import {
 } from "./github.ts";
 import {
   type RepoDigest,
-  buildCliPrompt,
   buildPeerPrompt,
-  buildComparisonPrompt,
   buildPeersComparisonPrompt,
   buildSkillsPrompt,
 } from "./prompts.ts";
-import { buildTrendingPrompt, buildHighlightsPrompt, type ReportHighlights } from "./prompts-data.ts";
+import { buildHighlightsPrompt, type ReportHighlights } from "./prompts-data.ts";
 import { getHighlightsFilename } from "./highlights.ts";
-import { callLlm, saveFile, autoGenFooter, LLM_TOKENS_TRENDING } from "./report.ts";
-import { buildCliReportContent, buildOpenclawReportContent } from "./report-builders.ts";
+import { callLlm, saveFile, autoGenFooter } from "./report.ts";
+import { buildAgentsReportContent } from "./report-builders.ts";
 import {
   saveWebReport,
-  saveTrendingReport,
   saveHnReport,
   saveArxivReport,
   saveScienceDailyReport,
-  saveCommunityReport,
+  saveRoboticsReport,
+  saveHackingReport,
+  saveMemoryReport,
+  save3dPrintingReport,
+  saveSolarEnergyReport,
 } from "./report-savers.ts";
 import { loadWebState, fetchSiteContent, type WebFetchResult, type WebState } from "./web.ts";
-import { fetchTrendingData, type TrendingData } from "./trending.ts";
 import { fetchHnData, type HnData } from "./hn.ts";
 import { fetchArxivData, type ArxivData } from "./arxiv.ts";
-import { fetchScienceDailyData, type ScienceDailyData } from "./science-daily.ts";
-import { fetchDevtoData, type DevtoData } from "./devto.ts";
-import { fetchLobstersData, type LobstersData } from "./lobsters.ts";
+import {
+  fetchScienceDailyData,
+  fetchRoboticsData,
+  fetchHackingData,
+  fetchMemoryData,
+  fetch3dPrintingData,
+  fetchSolarEnergyData,
+  type ScienceDailyData,
+} from "./science-daily.ts";
 import { loadConfig } from "./config.ts";
 import { toCstDateStr, toUtcStr } from "./date.ts";
-import { type Lang, MSG, ISSUE_LABELS, CLI_ISSUE_TITLE, OPENCLAW_ISSUE_TITLE } from "./i18n.ts";
+import { MSG, ISSUE_LABELS, AGENTS_ISSUE_TITLE } from "./i18n.ts";
 
 // ---------------------------------------------------------------------------
 // Repo config — loaded from config.yml, falls back to built-in defaults
 // ---------------------------------------------------------------------------
 
-const {
-  cliRepos: CLI_REPOS,
-  skillsRepo: CLAUDE_SKILLS_REPO,
-  openclaw: OPENCLAW,
-  openclawPeers: OPENCLAW_PEERS,
-} = loadConfig();
+const { skillsRepo: CLAUDE_SKILLS_REPO, agents: AGENTS, agentsPeers: AGENTS_PEERS } = loadConfig();
 
 // ---------------------------------------------------------------------------
 // Helpers
@@ -82,28 +83,32 @@ async function fetchAllData(
   fetched: RepoFetch[];
   skillsData: { prs: GitHubItem[]; issues: GitHubItem[] };
   webResults: WebFetchResult[];
-  trendingData: TrendingData;
   hnData: HnData;
   arxivData: ArxivData;
   scienceData: ScienceDailyData;
-  devtoData: DevtoData;
-  lobstersData: LobstersData;
+  roboticsData: ScienceDailyData;
+  hackingData: ScienceDailyData;
+  memoryData: ScienceDailyData;
+  data3dPrinting: ScienceDailyData;
+  solarData: ScienceDailyData;
 }> {
-  const allConfigs = [...CLI_REPOS, OPENCLAW, ...OPENCLAW_PEERS];
+  const allConfigs = [AGENTS, ...AGENTS_PEERS];
   console.log(
-    `  Tracking: ${allConfigs.map((r) => r.id).join(", ")}, claude-code-skills, web, hn, arxiv, science, devto, lobsters`,
+    `  Tracking: ${allConfigs.map((r) => r.id).join(", ")}, claude-code-skills, web, hn, arxiv, science, robotics, hacking, memory, 3dprinting, solar`,
   );
 
   const [
     fetched,
     skillsData,
     webResults,
-    trendingData,
     hnData,
     arxivData,
     scienceData,
-    devtoData,
-    lobstersData,
+    roboticsData,
+    hackingData,
+    memoryData,
+    data3dPrinting,
+    solarData,
   ] = await Promise.all([
     Promise.all(
       allConfigs.map(async (cfg) => {
@@ -149,30 +154,28 @@ async function fetchAllData(
         return { site: "openai", siteName: "OpenAI", isFirstRun: false, newItems: [], totalDiscovered: 0 };
       }),
     ]),
-    fetchTrendingData().catch(
-      (): TrendingData => ({
-        trendingRepos: [],
-        searchRepos: [],
-        trendingFetchSuccess: false,
-      }),
-    ),
     fetchHnData().catch((): HnData => ({ stories: [], fetchSuccess: false })),
     fetchArxivData().catch((): ArxivData => ({ papers: [], fetchSuccess: false })),
     fetchScienceDailyData().catch((): ScienceDailyData => ({ stories: [], fetchSuccess: false })),
-    fetchDevtoData().catch((): DevtoData => ({ articles: [], fetchSuccess: false })),
-    fetchLobstersData().catch((): LobstersData => ({ stories: [], fetchSuccess: false })),
+    fetchRoboticsData().catch((): ScienceDailyData => ({ stories: [], fetchSuccess: false })),
+    fetchHackingData().catch((): ScienceDailyData => ({ stories: [], fetchSuccess: false })),
+    fetchMemoryData().catch((): ScienceDailyData => ({ stories: [], fetchSuccess: false })),
+    fetch3dPrintingData().catch((): ScienceDailyData => ({ stories: [], fetchSuccess: false })),
+    fetchSolarEnergyData().catch((): ScienceDailyData => ({ stories: [], fetchSuccess: false })),
   ]);
 
   return {
     fetched,
     skillsData,
     webResults,
-    trendingData,
     hnData,
     arxivData,
     scienceData,
-    devtoData,
-    lobstersData,
+    roboticsData,
+    hackingData,
+    memoryData,
+    data3dPrinting,
+    solarData,
   };
 }
 
@@ -207,74 +210,46 @@ async function summarizeRepo(
 }
 
 async function generateSummaries(
-  fetchedCli: RepoFetch[],
-  fetchedOpenclaw: RepoFetch,
+  fetchedAgents: RepoFetch,
   skillsData: { prs: GitHubItem[]; issues: GitHubItem[] },
   fetchedPeers: RepoFetch[],
-  trendingData: TrendingData,
   dateStr: string,
-  lang: Lang = "zh",
 ): Promise<{
-  cliDigests: RepoDigest[];
-  openclawSummary: string;
+  agentsSummary: string;
   skillsSummary: string;
   peerDigests: RepoDigest[];
-  trendingSummary: string;
 }> {
-  const noActivity = MSG.noActivity[lang];
-  const fail = MSG.summaryFailed[lang];
+  const noActivity = MSG.noActivity.zh;
+  const fail = MSG.summaryFailed.zh;
 
-  const [cliDigests, openclawSummary, skillsSummary, peerDigests, trendingSummary] = await Promise.all([
-    Promise.all(
-      fetchedCli.map((f) =>
-        summarizeRepo(f, buildCliPrompt(f.cfg, f.issues, f.prs, f.releases, dateStr, lang), noActivity, fail),
-      ),
-    ),
+  const [agentsSummary, skillsSummary, peerDigests] = await Promise.all([
     summarizeRepo(
-      fetchedOpenclaw,
+      fetchedAgents,
       buildPeerPrompt(
-        fetchedOpenclaw.cfg,
-        fetchedOpenclaw.issues,
-        fetchedOpenclaw.prs,
-        fetchedOpenclaw.releases,
+        fetchedAgents.cfg,
+        fetchedAgents.issues,
+        fetchedAgents.prs,
+        fetchedAgents.releases,
         dateStr,
         50,
         30,
-        lang,
       ),
       noActivity,
       fail,
     ).then((d) => d.summary),
     summarize(
       "claude-code-skills",
-      buildSkillsPrompt(skillsData.prs, skillsData.issues, dateStr, lang),
-      MSG.skillsFailed[lang],
+      buildSkillsPrompt(skillsData.prs, skillsData.issues, dateStr),
+      MSG.skillsFailed.zh,
     ),
     Promise.all(
       fetchedPeers.map((f) =>
-        summarizeRepo(
-          f,
-          buildPeerPrompt(f.cfg, f.issues, f.prs, f.releases, dateStr, undefined, undefined, lang),
-          noActivity,
-          fail,
-        ),
+        summarizeRepo(f, buildPeerPrompt(f.cfg, f.issues, f.prs, f.releases, dateStr), noActivity, fail),
       ),
     ),
-    (async () => {
-      const hasData = trendingData.trendingRepos.length > 0 || trendingData.searchRepos.length > 0;
-      if (!hasData) {
-        return MSG.trendingNoData[lang];
-      }
-      return summarize(
-        "trending",
-        buildTrendingPrompt(trendingData, dateStr, lang),
-        MSG.trendingFailed[lang],
-        LLM_TOKENS_TRENDING,
-      );
-    })(),
   ]);
 
-  return { cliDigests, openclawSummary, skillsSummary, peerDigests, trendingSummary };
+  return { agentsSummary, skillsSummary, peerDigests };
 }
 
 // ---------------------------------------------------------------------------
@@ -299,116 +274,68 @@ async function main(): Promise<void> {
     fetched,
     skillsData,
     webResults,
-    trendingData,
     hnData,
     arxivData,
     scienceData,
-    devtoData,
-    lobstersData,
+    roboticsData,
+    hackingData,
+    memoryData,
+    data3dPrinting,
+    solarData,
   } = await fetchAllData(since, webState);
 
-  const peerIds = new Set(OPENCLAW_PEERS.map((p) => p.id));
-  const fetchedCli = fetched.filter((f) => f.cfg.id !== OPENCLAW.id && !peerIds.has(f.cfg.id));
-  const fetchedOpenclaw = fetched.find((f) => f.cfg.id === OPENCLAW.id)!;
+  const peerIds = new Set(AGENTS_PEERS.map((p) => p.id));
+  const fetchedAgents = fetched.find((f) => f.cfg.id === AGENTS.id)!;
   const fetchedPeers = fetched.filter((f) => peerIds.has(f.cfg.id));
 
-  // 2. Generate per-repo LLM summaries in parallel (base lang + en simultaneously)
-  console.log("  Generating summaries in PT and EN in parallel...");
-  const [zhSummaries, enSummaries] = await Promise.all([
-    generateSummaries(fetchedCli, fetchedOpenclaw, skillsData, fetchedPeers, trendingData, dateStr, "zh"),
-    generateSummaries(fetchedCli, fetchedOpenclaw, skillsData, fetchedPeers, trendingData, dateStr, "en"),
-  ]);
+  // 2. Generate per-repo LLM summaries
+  console.log("  Generating summaries...");
+  const summaries = await generateSummaries(fetchedAgents, skillsData, fetchedPeers, dateStr);
 
-  // 3. Generate cross-repo comparisons in parallel (base lang + en)
-  console.log("  Calling LLM for comparative analyses (PT + EN)...");
-  const summariesByLang = { zh: zhSummaries, en: enSummaries };
+  // 3. Generate cross-repo comparison
+  console.log("  Calling LLM for comparative analysis...");
+  const agentsDigest: RepoDigest = {
+    config: AGENTS,
+    issues: fetchedAgents.issues,
+    prs: fetchedAgents.prs,
+    releases: fetchedAgents.releases,
+    summary: summaries.agentsSummary,
+  };
 
-  const makeOpenclawDigest = (lang: Lang): RepoDigest => ({
-    config: OPENCLAW,
-    issues: fetchedOpenclaw.issues,
-    prs: fetchedOpenclaw.prs,
-    releases: fetchedOpenclaw.releases,
-    summary: summariesByLang[lang].openclawSummary,
-  });
+  const peersComparison = await callLlm(
+    buildPeersComparisonPrompt(agentsDigest, summaries.peerDigests, dateStr),
+  );
 
-  const [zhComparison, zhPeersComparison, enComparison, enPeersComparison] = await Promise.all([
-    callLlm(buildComparisonPrompt(zhSummaries.cliDigests, dateStr, "zh")),
-    callLlm(buildPeersComparisonPrompt(makeOpenclawDigest("zh"), zhSummaries.peerDigests, dateStr, "zh")),
-    callLlm(buildComparisonPrompt(enSummaries.cliDigests, dateStr, "en")),
-    callLlm(buildPeersComparisonPrompt(makeOpenclawDigest("en"), enSummaries.peerDigests, dateStr, "en")),
-  ]);
+  // 4. Build + save reports
+  const ft = autoGenFooter();
 
-  const comparisonByLang = { zh: zhComparison, en: enComparison };
-  const peersComparisonByLang = { zh: zhPeersComparison, en: enPeersComparison };
+  const agentsContent = buildAgentsReportContent(
+    fetchedAgents,
+    summaries.peerDigests,
+    summaries.agentsSummary,
+    peersComparison,
+    utcStr,
+    dateStr,
+    ft,
+    AGENTS,
+    AGENTS_PEERS,
+  );
 
-  // 4. Build + save all reports (zh + en)
-  const cliContent: Record<Lang, string> = {} as Record<Lang, string>;
-  const openclawContent: Record<Lang, string> = {} as Record<Lang, string>;
+  console.log(`  Saved ${saveFile(agentsContent, dateStr, "ai-agents.md")}`);
 
-  for (const lang of ["zh", "en"] as const) {
-    const s = summariesByLang[lang];
-    const ft = autoGenFooter(lang);
-    const suffix = lang === "en" ? "-en" : "";
+  // Web report
+  await saveWebReport(webResults, webState, utcStr, dateStr, digestRepo, ft);
 
-    cliContent[lang] = buildCliReportContent(
-      s.cliDigests,
-      s.skillsSummary,
-      comparisonByLang[lang],
-      utcStr,
-      dateStr,
-      ft,
-      CLAUDE_SKILLS_REPO,
-      lang,
-    );
-    openclawContent[lang] = buildOpenclawReportContent(
-      fetchedOpenclaw,
-      s.peerDigests,
-      s.openclawSummary,
-      peersComparisonByLang[lang],
-      utcStr,
-      dateStr,
-      ft,
-      OPENCLAW,
-      OPENCLAW_PEERS,
-      lang,
-    );
-
-    console.log(`  Saved ${saveFile(cliContent[lang], dateStr, `ai-cli${suffix}.md`)}`);
-    console.log(`  Saved ${saveFile(openclawContent[lang], dateStr, `ai-agents${suffix}.md`)}`);
-  }
-
-  // Web report: zh saves state, en skips state save
-  for (const lang of ["zh", "en"] as const) {
-    await saveWebReport(webResults, webState, utcStr, dateStr, digestRepo, autoGenFooter(lang), lang);
-  }
-
+  // External data reports
   await Promise.all([
-    saveTrendingReport(
-      trendingData,
-      zhSummaries.trendingSummary,
-      utcStr,
-      dateStr,
-      digestRepo,
-      autoGenFooter("zh"),
-      "zh",
-    ),
-    saveTrendingReport(
-      trendingData,
-      enSummaries.trendingSummary,
-      utcStr,
-      dateStr,
-      digestRepo,
-      autoGenFooter("en"),
-      "en",
-    ),
-    saveHnReport(hnData, utcStr, dateStr, digestRepo, autoGenFooter("zh"), "zh"),
-    saveHnReport(hnData, utcStr, dateStr, digestRepo, autoGenFooter("en"), "en"),
-    saveArxivReport(arxivData, utcStr, dateStr, digestRepo, autoGenFooter("zh"), "zh"),
-    saveArxivReport(arxivData, utcStr, dateStr, digestRepo, autoGenFooter("en"), "en"),
-    saveScienceDailyReport(scienceData, utcStr, dateStr, digestRepo, autoGenFooter("zh"), "zh"),
-    saveScienceDailyReport(scienceData, utcStr, dateStr, digestRepo, autoGenFooter("en"), "en"),
-    saveCommunityReport(devtoData, lobstersData, utcStr, dateStr, digestRepo, autoGenFooter("zh"), "zh"),
-    saveCommunityReport(devtoData, lobstersData, utcStr, dateStr, digestRepo, autoGenFooter("en"), "en"),
+    saveHnReport(hnData, utcStr, dateStr, digestRepo, ft),
+    saveArxivReport(arxivData, utcStr, dateStr, digestRepo, ft),
+    saveScienceDailyReport(scienceData, utcStr, dateStr, digestRepo, ft),
+    saveRoboticsReport(roboticsData, utcStr, dateStr, digestRepo, ft),
+    saveHackingReport(hackingData, utcStr, dateStr, digestRepo, ft),
+    saveMemoryReport(memoryData, utcStr, dateStr, digestRepo, ft),
+    save3dPrintingReport(data3dPrinting, utcStr, dateStr, digestRepo, ft),
+    saveSolarEnergyReport(solarData, utcStr, dateStr, digestRepo, ft),
   ]);
 
   // 5. Generate highlights for Telegram notification
@@ -417,41 +344,33 @@ async function main(): Promise<void> {
     return fs.existsSync(p) ? fs.readFileSync(p, "utf-8") : undefined;
   };
 
-  const zhReports: Record<string, string> = { "ai-cli": cliContent.zh, "ai-agents": openclawContent.zh };
-  const enReports: Record<string, string> = { "ai-cli": cliContent.en, "ai-agents": openclawContent.en };
-  for (const [id, zhFile, enFile] of [
-    ["ai-trending", "ai-trending.md", "ai-trending-en.md"],
-    ["ai-web", "ai-web.md", "ai-web-en.md"],
-    ["ai-hn", "ai-hn.md", "ai-hn-en.md"],
-    ["ai-arxiv", "ai-arxiv.md", "ai-arxiv-en.md"],
-    ["ai-science", "ai-science.md", "ai-science-en.md"],
-    ["ai-community", "ai-community.md", "ai-community-en.md"],
+  const zhReports: Record<string, string> = { "ai-agents": agentsContent };
+  for (const [id, file] of [
+    ["ai-web", "ai-web.md"],
+    ["ai-hn", "ai-hn.md"],
+    ["ai-arxiv", "ai-arxiv.md"],
+    ["ai-science", "ai-science.md"],
+    ["ai-robotics", "ai-robotics.md"],
+    ["ai-hacking", "ai-hacking.md"],
+    ["ai-memory", "ai-memory.md"],
+    ["ai-3dprinting", "ai-3dprinting.md"],
+    ["ai-solar", "ai-solar.md"],
   ] as const) {
-    const zh = readReport(zhFile);
-    const en = readReport(enFile);
-    if (zh) zhReports[id] = zh;
-    if (en) enReports[id] = en;
+    const content = readReport(file);
+    if (content) zhReports[id] = content;
   }
 
   console.log("  Generating highlights for Telegram...");
-  const highlights: Record<Lang, ReportHighlights> = { zh: {}, en: {} };
+  const highlights: ReportHighlights = {};
   try {
-    const [zhRaw, enRaw] = await Promise.all([
-      callLlm(buildHighlightsPrompt(zhReports, "zh"), 2048),
-      callLlm(buildHighlightsPrompt(enReports, "en"), 2048),
-    ]);
-    highlights.zh = JSON.parse(
-      zhRaw
+    const raw = await callLlm(buildHighlightsPrompt(zhReports), 2048);
+    const parsed = JSON.parse(
+      raw
         .replace(/```json?\n?/g, "")
         .replace(/```/g, "")
         .trim(),
     );
-    highlights.en = JSON.parse(
-      enRaw
-        .replace(/```json?\n?/g, "")
-        .replace(/```/g, "")
-        .trim(),
-    );
+    Object.assign(highlights, parsed);
   } catch (err) {
     console.error(`  [highlights] Generation failed: ${err}`);
   }
@@ -463,23 +382,14 @@ async function main(): Promise<void> {
   );
   console.log(`  Saved ${highlightsPath}`);
 
-  // 6. Create GitHub issues for CLI + OpenClaw (zh + en)
+  // 6. Create GitHub issue for Agents report
   if (digestRepo) {
-    for (const lang of ["zh", "en"] as const) {
-      const cliUrl = await createGitHubIssue(
-        CLI_ISSUE_TITLE(dateStr, lang),
-        cliContent[lang],
-        ISSUE_LABELS.cli[lang],
-      );
-      console.log(`  Created CLI issue (${lang}): ${cliUrl}`);
-
-      const ocUrl = await createGitHubIssue(
-        OPENCLAW_ISSUE_TITLE(dateStr, lang),
-        openclawContent[lang],
-        ISSUE_LABELS.openclaw[lang],
-      );
-      console.log(`  Created OpenClaw issue (${lang}): ${ocUrl}`);
-    }
+    const agentsUrl = await createGitHubIssue(
+      AGENTS_ISSUE_TITLE(dateStr),
+      agentsContent,
+      ISSUE_LABELS.agents.zh,
+    );
+    console.log(`  Created Agents issue: ${agentsUrl}`);
   }
 
   console.log("Done!");

@@ -60,9 +60,6 @@ export function formatItem(item: GitHubItem, lang: Lang = "zh"): string {
 // Sampling helpers (shared)
 // ---------------------------------------------------------------------------
 
-const CLI_ISSUE_LIMIT = 30;
-const CLI_PR_LIMIT = 20;
-
 /** Sort by comment count desc, take top N. */
 export function topN(items: GitHubItem[], n: number): GitHubItem[] {
   return [...items].sort((a, b) => b.comments - a.comments).slice(0, n);
@@ -82,87 +79,6 @@ export function sampleNote(total: number, sampled: number, lang: Lang = "zh"): s
 // ---------------------------------------------------------------------------
 // Prompts
 // ---------------------------------------------------------------------------
-
-export function buildCliPrompt(
-  cfg: RepoConfig,
-  issues: GitHubItem[],
-  prs: GitHubItem[],
-  releases: GitHubRelease[],
-  dateStr: string,
-  lang: Lang = "zh",
-): string {
-  const sampledIssues = topN(issues, CLI_ISSUE_LIMIT);
-  const sampledPrs = topN(prs, CLI_PR_LIMIT);
-
-  const issuesText =
-    sampledIssues.map((i) => formatItem(i, lang)).join("\n") || (lang === "en" ? "None" : "Nenhum");
-  const prsText =
-    sampledPrs.map((p) => formatItem(p, lang)).join("\n") || (lang === "en" ? "None" : "Nenhum");
-  const releasesText = releases.length
-    ? releases.map((r) => `- ${r.tag_name}: ${r.name}\n  ${(r.body ?? "").slice(0, 300)}`).join("\n")
-    : lang === "en"
-      ? "None"
-      : "Nenhum";
-
-  const issueNote = sampleNote(issues.length, sampledIssues.length, lang);
-  const prNote = sampleNote(prs.length, sampledPrs.length, lang);
-
-  if (lang === "en") {
-    return `You are a technical analyst focused on AI developer tools. Based on the following GitHub data, generate the ${cfg.name} community digest for ${dateStr}.
-
-# Data source: github.com/${cfg.repo}
-
-## Latest Releases (last 24h)
-${releasesText}
-
-## Latest Issues (updated in last 24h)${issueNote}
-${issuesText}
-
-## Latest Pull Requests (updated in last 24h)${prNote}
-${prsText}
-
----
-
-Generate a structured English digest with the following sections:
-
-1. **Today's Highlights** - 2-3 sentences summarizing the most important updates
-2. **Releases** - If new versions exist, summarize changes; omit if none
-3. **Hot Issues** - Pick 10 noteworthy Issues, explain why they matter and community reaction
-4. **Key PR Progress** - Pick 10 important PRs, describe features or fixes
-5. **Feature Request Trends** - Distill the most-requested feature directions from all Issues
-6. **Developer Pain Points** - Summarize recurring developer frustrations or high-frequency requests
-
-Style: concise and professional, suited for technical developers. Include GitHub links for each item.
-`;
-  }
-
-  return `Você é um analista técnico focado em ferramentas de desenvolvimento com IA. Com base nos dados do GitHub abaixo, gere o relatório diário da comunidade de ${cfg.name} para ${dateStr}.
-
-# Fonte de dados: github.com/${cfg.repo}
-
-## Releases mais recentes (últimas 24h)
-${releasesText}
-
-## Issues mais recentes (atualizadas nas últimas 24h) ${issueNote}
-${issuesText}
-
-## Pull requests mais recentes (atualizadas nas últimas 24h) ${prNote}
-${prsText}
-
----
-
-Gere um relatório estruturado em português com estas seções:
-
-1. **Destaques do dia** - Resuma em 2-3 frases as mudanças mais importantes de hoje
-2. **Lançamentos** - Se houver novas versões, resuma as mudanças; omita se não houver
-3. **Issues em evidência** - Escolha 10 issues relevantes, explique por que importam e como a comunidade reagiu
-4. **Progresso de PRs importantes** - Escolha 10 PRs importantes e descreva os recursos ou correções
-5. **Tendências de pedidos de features** - Extraia das issues as direções mais pedidas pela comunidade
-6. **Pontos de atenção para desenvolvedores** - Resuma dores recorrentes e demandas frequentes
-
-Estilo: português claro e profissional, voltado para desenvolvedores. Inclua links do GitHub em cada item.
-`;
-}
 
 const PEER_ISSUE_LIMIT = 30;
 const PEER_PR_LIMIT = 20;
@@ -395,56 +311,5 @@ Gere um relatório de destaques da comunidade Claude Code Skills com estas seç�
 4. **Insight sobre o ecossistema de Skills** - Uma frase resumindo a principal demanda atual da comunidade
 
 Estilo: conciso e profissional, com links do GitHub em cada item.
-`;
-}
-
-export function buildComparisonPrompt(digests: RepoDigest[], dateStr: string, lang: Lang = "zh"): string {
-  const noActivityStr =
-    lang === "en" ? "No activity in the last 24 hours." : "Sem atividade nas últimas 24 horas.";
-
-  const sections = digests
-    .map((d) => {
-      const hasData = d.issues.length || d.prs.length || d.releases.length;
-      if (!hasData) return `## ${d.config.name} (github.com/${d.config.repo})\n${noActivityStr}`;
-      return `## ${d.config.name} (github.com/${d.config.repo})\n${d.summary}`;
-    })
-    .join("\n\n---\n\n");
-
-  if (lang === "en") {
-    return `You are a senior technical analyst of the AI developer tools ecosystem. The following are ${dateStr} community digest summaries for each major AI CLI tool:
-
-${sections}
-
----
-
-Generate a cross-tool comparison report in English with these sections:
-
-1. **Ecosystem Overview** - 3-5 sentences on the overall AI CLI tools development landscape
-2. **Activity Comparison** - Table comparing Issues count, PR count, Release status for each tool today
-3. **Shared Feature Directions** - Requirements appearing across multiple tool communities (note which tools, specific needs)
-4. **Differentiation Analysis** - Differences in feature focus, target users, and technical approach
-5. **Community Momentum & Maturity** - Which tools have more active communities, which are rapidly iterating
-6. **Trend Signals** - Industry trends from community feedback, reference value for developers
-
-Style: concise and professional, data-backed, suited for technical decision-makers and developers.
-`;
-  }
-
-  return `Você é um analista sênior do ecossistema de ferramentas de desenvolvimento com IA. Abaixo estão os resumos de atividade da comunidade de cada ferramenta AI CLI em ${dateStr}:
-
-${sections}
-
----
-
-Com base nesses resumos, gere um relatório comparativo com estas seções:
-
-1. **Panorama do ecossistema** - Resuma em 3-5 frases o estado geral das ferramentas AI CLI
-2. **Comparação de atividade** - Tabela com issues, PRs e releases por ferramenta
-3. **Direções de features compartilhadas** - Demandas recorrentes em várias comunidades
-4. **Análise de diferenciação** - Diferenças de foco, público-alvo e abordagem técnica
-5. **Tração e maturidade da comunidade** - Quais comunidades estão mais ativas e quais iteram mais rápido
-6. **Sinais de tendência** - Tendências do setor extraídas do feedback das comunidades
-
-Estilo: conciso, profissional e apoiado por dados, útil para decisores técnicos e desenvolvedores.
 `;
 }

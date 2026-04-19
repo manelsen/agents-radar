@@ -20,43 +20,30 @@ interface RawRepoEntry {
 }
 
 interface RawConfig {
-  cli_repos?: RawRepoEntry[];
   skills_repo?: string;
-  openclaw?: RawRepoEntry;
-  openclaw_peers?: RawRepoEntry[];
+  agents?: RawRepoEntry;
+  agents_peers?: RawRepoEntry[];
 }
 
 export interface RadarConfig {
-  cliRepos: RepoConfig[];
   skillsRepo: string;
-  openclaw: RepoConfig;
-  openclawPeers: RepoConfig[];
+  agents: RepoConfig;
+  agentsPeers: RepoConfig[];
 }
 
 // ---------------------------------------------------------------------------
 // Defaults (mirrors the original hard-coded values)
 // ---------------------------------------------------------------------------
-
-const DEFAULT_CLI_REPOS: RepoConfig[] = [
-  { id: "claude-code", repo: "anthropics/claude-code", name: "Claude Code" },
-  { id: "codex", repo: "openai/codex", name: "OpenAI Codex" },
-  { id: "gemini-cli", repo: "google-gemini/gemini-cli", name: "Gemini CLI" },
-  { id: "copilot-cli", repo: "github/copilot-cli", name: "GitHub Copilot CLI" },
-  { id: "kimi-cli", repo: "MoonshotAI/kimi-cli", name: "Kimi Code CLI" },
-  { id: "opencode", repo: "anomalyco/opencode", name: "OpenCode" },
-  { id: "qwen-code", repo: "QwenLM/qwen-code", name: "Qwen Code" },
-];
-
 const DEFAULT_SKILLS_REPO = "anthropics/skills";
 
-const DEFAULT_OPENCLAW: RepoConfig = {
+const DEFAULT_AGENTS: RepoConfig = {
   id: "nullclaw",
   repo: "nullclaw/nullclaw",
   name: "NullClaw",
   paginated: true,
 };
 
-const DEFAULT_OPENCLAW_PEERS: RepoConfig[] = [
+const DEFAULT_AGENTS_PEERS: RepoConfig[] = [
   { id: "nanobot", repo: "HKUDS/nanobot", name: "NanoBot", paginated: true },
   { id: "hermes-agent", repo: "nousresearch/hermes-agent", name: "Hermes Agent" },
   { id: "picoclaw", repo: "sipeed/picoclaw", name: "PicoClaw", paginated: true },
@@ -79,36 +66,25 @@ export function loadConfig(configPath = "config.yml"): RadarConfig {
   if (!fs.existsSync(resolved)) {
     console.log(`[config] ${configPath} not found — using built-in defaults.`);
     return {
-      cliRepos: DEFAULT_CLI_REPOS,
       skillsRepo: DEFAULT_SKILLS_REPO,
-      openclaw: DEFAULT_OPENCLAW,
-      openclawPeers: DEFAULT_OPENCLAW_PEERS,
+      agents: DEFAULT_AGENTS,
+      agentsPeers: DEFAULT_AGENTS_PEERS,
     };
   }
 
   const raw = yaml.load(fs.readFileSync(resolved, "utf-8")) as RawConfig;
-
-  const cliRepos =
-    Array.isArray(raw?.cli_repos) && raw.cli_repos.length > 0
-      ? raw.cli_repos.map(toRepoConfig)
-      : DEFAULT_CLI_REPOS;
-
   const skillsRepo =
     typeof raw?.skills_repo === "string" && raw.skills_repo.trim()
       ? raw.skills_repo.trim()
       : DEFAULT_SKILLS_REPO;
 
-  const openclaw = raw?.openclaw?.id && raw.openclaw.repo ? toRepoConfig(raw.openclaw) : DEFAULT_OPENCLAW;
+  const agents = raw?.agents?.id && raw.agents.repo ? toRepoConfig(raw.agents) : DEFAULT_AGENTS;
 
-  const openclawPeers =
-    Array.isArray(raw?.openclaw_peers) && raw.openclaw_peers.length > 0
-      ? raw.openclaw_peers.map(toRepoConfig)
-      : DEFAULT_OPENCLAW_PEERS;
+  const agentsPeers =
+    Array.isArray(raw?.agents_peers) && raw.agents_peers.length > 0
+      ? raw.agents_peers.map(toRepoConfig)
+      : DEFAULT_AGENTS_PEERS;
 
-  console.log(
-    `[config] Loaded from ${configPath}: ` +
-      `${cliRepos.length} CLI repos, ${openclawPeers.length} OpenClaw peers`,
-  );
-
-  return { cliRepos, skillsRepo, openclaw, openclawPeers };
+  console.log(`[config] Loaded from ${configPath}: ${agentsPeers.length} agent peers`);
+  return { skillsRepo, agents, agentsPeers };
 }

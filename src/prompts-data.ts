@@ -1,151 +1,15 @@
 /**
- * LLM prompt builders for data-source reports (trending, web, HN)
+ * LLM prompt builders for data-source reports (web, HN, arxiv, science-daily)
  * and rollup reports (weekly, monthly).
  *
  * Separated from prompts.ts to keep each module focused.
  */
 
 import type { WebFetchResult } from "./web.ts";
-import type { TrendingData } from "./trending.ts";
 import type { HnData } from "./hn.ts";
 import type { ArxivData } from "./arxiv.ts";
 import type { ScienceDailyData } from "./science-daily.ts";
-import type { DevtoData } from "./devto.ts";
-import type { LobstersData } from "./lobsters.ts";
 import type { Lang } from "./i18n.ts";
-export function buildTrendingPrompt(data: TrendingData, dateStr: string, lang: Lang = "zh"): string {
-  const trendingSection =
-    data.trendingFetchSuccess && data.trendingRepos.length > 0
-      ? data.trendingRepos
-          .map(
-            (r) =>
-              `- [${r.fullName}](${r.url})` +
-              (r.language ? ` [${r.language}]` : "") +
-              ` ⭐${r.totalStars.toLocaleString()}` +
-              (r.todayStars > 0 ? ` (+${r.todayStars} today)` : "") +
-              (r.forks > 0 ? ` 🍴${r.forks.toLocaleString()}` : "") +
-              (r.description ? `\n  ${r.description}` : ""),
-          )
-          .join("\n")
-      : lang === "en"
-        ? "(Unable to fetch today's GitHub Trending list)"
-        : "(Não foi possível buscar a lista de trending do GitHub de hoje)";
-
-  const searchSection =
-    data.searchRepos.length > 0
-      ? data.searchRepos
-          .map(
-            (r) =>
-              `- [${r.fullName}](${r.url})` +
-              (r.language ? ` [${r.language}]` : "") +
-              ` ⭐${r.stargazersCount.toLocaleString()}` +
-              ` [topic:${r.searchQuery}]` +
-              (r.description ? `\n  ${r.description}` : ""),
-          )
-          .join("\n")
-      : lang === "en"
-        ? "(No search results)"
-        : "(Sem resultados de busca)";
-
-  if (lang === "en") {
-    return `You are a technical analyst focused on the AI open-source ecosystem. The following is ${dateStr} GitHub AI-related trending repository data. Please filter for AI relevance, categorize, and analyze trends.
-
-## Data Sources
-- **Trending List** (github.com/trending, today's stars most reliable): Real-time hot list with today's new stars
-- **Topic Search** (GitHub Search API, topic tags): AI-related projects active in last 7 days, grouped by topic
-
----
-
-## GitHub Today's Trending (${data.trendingRepos.length} repositories)
-${trendingSection}
-
----
-
-## AI Topic Search Results (${data.searchRepos.length} repositories, deduplicated)
-${searchSection}
-
----
-
-Generate a structured AI Open Source Trends Report in English:
-
-**Step 1 (Filter)**: From the above data, select projects clearly related to AI/ML (exclude unrelated general tools, frontend frameworks, games, etc.). Skip non-AI trending repos.
-
-**Step 2 (Categorize)**: Group filtered projects into these categories (a project can belong to multiple; pick the primary one):
-- 🔧 AI Infrastructure (frameworks, SDKs, inference engines, dev tools, CLI)
-- 🤖 AI Agents / Workflows (agent frameworks, automation, multi-agent systems)
-- 📦 AI Applications (specific apps, vertical solutions)
-- 🧠 LLMs / Training (model weights, training frameworks, fine-tuning tools)
-- 🔍 RAG / Knowledge (vector databases, retrieval-augmented generation, knowledge management)
-
-**Step 3 (Output Report)** with these sections:
-
-1. **Today's Highlights** — 3-5 sentences on the most noteworthy AI open-source developments today
-
-2. **Top Projects by Category** — For each category, list 3-8 representative projects, each with:
-   - Project name (with link)
-   - Stars data (total + today's new, if available)
-   - One sentence: what it is and why it's worth attention today
-
-3. **Trend Signal Analysis** — 200-300 words, distill from today's hot list:
-   - Which type of AI tool is getting explosive community attention?
-   - Any new tech stacks or directions appearing for the first time?
-   - Connection to recent LLM releases / industry events
-
-4. **Community Hot Spots** — Bullet list of 3-5 specific projects or directions worth developer focus, with brief reasoning
-
-Style: English, professional and concise, must include GitHub links for every project.
-`;
-  }
-
-  return `Você é um analista técnico focado no ecossistema open source de IA. Abaixo estão os dados de repositórios em alta relacionados a IA no GitHub em ${dateStr}. Filtre por relevância em IA, categorize e analise as tendências.
-
-## Fontes de dados
-- **Lista Trending** (github.com/trending, estrelas do dia mais confiáveis): ranking em tempo real com novas estrelas de hoje
-- **Busca por tópico** (GitHub Search API, tags de tópico): projetos de IA ativos nos últimos 7 dias, agrupados por tema
-
----
-
-## GitHub Trending de hoje (${data.trendingRepos.length} repositórios)
-${trendingSection}
-
----
-
-## Resultados da busca por tópicos de IA (${data.searchRepos.length} repositórios, sem duplicatas)
-${searchSection}
-
----
-
-Gere um relatório estruturado de tendências open source em IA com estas etapas:
-
-**Etapa 1 (Filtrar)**: selecione apenas projetos claramente relacionados a IA/ML. Ignore ferramentas genéricas, frameworks frontend, jogos etc.
-
-**Etapa 2 (Categorizar)**: agrupe os projetos filtrados nestas categorias:
-- 🔧 Infraestrutura de IA (frameworks, SDKs, motores de inferência, ferramentas de desenvolvimento, CLI)
-- 🤖 Agentes / Workflows de IA
-- 📦 Aplicações de IA
-- 🧠 LLMs / Treinamento
-- 🔍 RAG / Conhecimento
-
-**Etapa 3 (Relatório)**, com as seções:
-
-1. **Destaques do dia** — 3-5 frases com os movimentos mais relevantes
-
-2. **Projetos em destaque por categoria** — Para cada categoria, liste 3-8 projetos representativos com:
-   - Nome do projeto (com link)
-   - Estrelas (total + novas hoje, se disponível)
-   - Uma frase explicando o que é e por que merece atenção hoje
-
-3. **Análise de sinais de tendência** — 200-300 palavras explicando:
-   - Que tipo de ferramenta de IA está recebendo atenção explosiva?
-   - Há novas stacks ou direções aparecendo pela primeira vez?
-   - Qual a relação com lançamentos recentes de modelos e eventos do setor?
-
-4. **Pontos quentes da comunidade** — Liste 3-5 projetos ou direções que merecem atenção dos desenvolvedores
-
-Estilo: português profissional e conciso, com links do GitHub para cada projeto.
-`;
-}
-
 export function buildWebReportPrompt(results: WebFetchResult[], dateStr: string, lang: Lang = "zh"): string {
   const isAnyFirstRun = results.some((r) => r.isFirstRun);
 
@@ -644,131 +508,232 @@ Gere um resumo estruturado do ScienceDaily sobre IA em português:
 Estilo: português conciso e profissional, preservando todos os links originais.`;
 }
 
-// ---------------------------------------------------------------------------
-// Community prompt (Dev.to + Lobste.rs combined)
-// ---------------------------------------------------------------------------
-
-export function buildCommunityPrompt(
-  devto: DevtoData,
-  lobsters: LobstersData,
-  dateStr: string,
-  lang: Lang = "zh",
-): string {
-  const devtoText =
-    devto.articles.length > 0
-      ? devto.articles
-          .map((a, i) =>
-            lang === "en"
-              ? `${i + 1}. **${a.title}**\n` +
-                `   Link: ${a.url}\n` +
-                `   Author: ${a.user} | Reactions: ${a.positiveReactionsCount} | Comments: ${a.commentsCount} | Reading: ${a.readingTimeMinutes} min\n` +
-                `   Tags: ${a.tags.join(", ")}\n` +
-                `   ${a.description}`
-              : `${i + 1}. **${a.title}**\n` +
-                `   Link: ${a.url}\n` +
-                `   Autor: ${a.user} | Reações: ${a.positiveReactionsCount} | Comentários: ${a.commentsCount} | Leitura: ${a.readingTimeMinutes} min\n` +
-                `   Tags: ${a.tags.join(", ")}\n` +
-                `   ${a.description}`,
-          )
-          .join("\n\n")
-      : lang === "en"
-        ? "(No Dev.to articles available)"
-        : "(Sem artigos do Dev.to)";
-
-  const lobstersText =
-    lobsters.stories.length > 0
-      ? lobsters.stories
-          .map((s, i) =>
-            lang === "en"
-              ? `${i + 1}. **${s.title}**\n` +
-                `   Link: ${s.url}\n` +
-                `   Discussion: ${s.commentsUrl}\n` +
-                `   Score: ${s.score} | Comments: ${s.commentCount} | Author: ${s.author} | Tags: ${s.tags.join(", ")}`
-              : `${i + 1}. **${s.title}**\n` +
-                `   Link: ${s.url}\n` +
-                `   Discussão: ${s.commentsUrl}\n` +
-                `   Pontuação: ${s.score} | Comentários: ${s.commentCount} | Autor: ${s.author} | Tags: ${s.tags.join(", ")}`,
-          )
-          .join("\n\n")
-      : lang === "en"
-        ? "(No Lobste.rs stories available)"
-        : "(Sem conteúdo do Lobste.rs)";
+export function buildRoboticsPrompt(data: ScienceDailyData, dateStr: string, lang: Lang = "zh"): string {
+  const storiesText = data.stories
+    .map((s, i) =>
+      lang === "en"
+        ? `${i + 1}. **${s.title}**\n   Link: ${s.url}\n   Published: ${s.publishedAt.slice(0, 10)}\n   Summary: ${s.description}`
+        : `${i + 1}. **${s.title}**\n   Link: ${s.url}\n   Publicado: ${s.publishedAt.slice(0, 10)}\n   Resumo: ${s.description}`,
+    )
+    .join("\n\n");
 
   if (lang === "en") {
-    return `You are a tech community analyst. The following are AI-related content from Dev.to and Lobste.rs as of ${dateStr}:
-
-## Dev.to Articles (${devto.articles.length} articles)
-
-${devtoText}
+    return `You are a robotics research analyst. The following are recent ScienceDaily stories from the Robotics RSS feed as of ${dateStr} (${data.stories.length} stories total):
 
 ---
 
-## Lobste.rs Stories (${lobsters.stories.length} stories)
-
-${lobstersText}
+${storiesText}
 
 ---
 
-Generate a structured Tech Community AI Digest in English:
+Generate a structured ScienceDaily Robotics digest in English:
 
-1. **Today's Highlights** — 3-5 sentences on the most discussed AI topics across these communities today
+1. **Today's Highlights** — 3-5 sentences on the most important research/news items
+2. **Key Stories** — Select the most relevant stories, grouping related topics when useful
+3. **Research Signal** — 100-200 words on what these stories suggest about current robotics research directions
+4. **Worth Reading** — 2-3 stories most worth deeper reading, with brief reasoning
 
-2. **Dev.to Highlights** — Select 5-10 most valuable articles:
-   - Title (with link)
-   - Reactions and comments
-   - One sentence: key takeaway for developers
-
-3. **Lobste.rs Highlights** — Select 3-8 most notable stories:
-   - Title (with link + discussion link)
-   - Score and comments
-   - One sentence: why it's worth reading
-
-4. **Community Pulse** — 100-200 words on what these communities are talking about:
-   - Common themes across both platforms
-   - Practical concerns developers have about AI tools
-   - Emerging tutorials, patterns, or best practices
-
-5. **Worth Reading** — 2-3 articles/stories most worth reading in depth
-
-Style: English, concise and developer-friendly, preserve all original links.
-`;
+Style: English, concise and professional, preserving all original links.`;
   }
 
-  return `Você é um analista de comunidades técnicas. Abaixo está o conteúdo relacionado a IA em ${dateStr} no Dev.to e no Lobste.rs:
-
-## Artigos do Dev.to (${devto.articles.length})
-
-${devtoText}
+  return `Você é um analista de pesquisa em robótica. Abaixo estão as histórias recentes do feed RSS de Robotics do ScienceDaily até ${dateStr} (${data.stories.length} no total):
 
 ---
 
-## Histórias do Lobste.rs (${lobsters.stories.length})
-
-${lobstersText}
+${storiesText}
 
 ---
 
-Gere um resumo estruturado da comunidade técnica de IA em português:
+Gere um resumo estruturado do ScienceDaily sobre Robótica em português:
 
-1. **Destaques do dia** — 3-5 frases sobre os temas de IA mais discutidos hoje
+1. **Destaques do dia** — 3-5 frases sobre as notícias e pesquisas mais importantes
+2. **Principais histórias** — Selecione as histórias mais relevantes e agrupe temas relacionados quando fizer sentido
+3. **Sinal de pesquisa** — 100-200 palavras sobre o que essas histórias sugerem a respeito das direções atuais da pesquisa em robótica
+4. **Vale ler** — 2-3 histórias que mais merecem leitura aprofundada, com breve justificativa
 
-2. **Destaques do Dev.to** — Selecione 5-10 artigos valiosos:
-   - Título (com link)
-   - Reações e comentários
-   - Uma frase sobre o valor prático para desenvolvedores
+Estilo: português conciso e profissional, preservando todos os links originais.`;
+}
 
-3. **Destaques do Lobste.rs** — Selecione 3-8 histórias relevantes:
-   - Título (com link + link da discussão)
-   - Pontuação e comentários
-   - Uma frase explicando por que vale a leitura
+export function buildHackingPrompt(data: ScienceDailyData, dateStr: string, lang: Lang = "zh"): string {
+  const storiesText = data.stories
+    .map((s, i) =>
+      lang === "en"
+        ? `${i + 1}. **${s.title}**\n   Link: ${s.url}\n   Published: ${s.publishedAt.slice(0, 10)}\n   Summary: ${s.description}`
+        : `${i + 1}. **${s.title}**\n   Link: ${s.url}\n   Publicado: ${s.publishedAt.slice(0, 10)}\n   Resumo: ${s.description}`,
+    )
+    .join("\n\n");
 
-4. **Pulso da comunidade** — 100-200 palavras analisando:
-   - Temas comuns às duas plataformas
-   - Preocupações práticas dos desenvolvedores com ferramentas de IA
-   - Tutoriais, padrões e boas práticas emergentes
+  if (lang === "en") {
+    return `You are a cybersecurity research analyst. The following are recent ScienceDaily stories from the Hacking RSS feed as of ${dateStr} (${data.stories.length} stories total):
 
-5. **Vale ler a fundo** — 2-3 conteúdos que mais valem leitura aprofundada
+---
 
-Estilo: português conciso e amigável para desenvolvedores, preservando todos os links originais.
-`;
+${storiesText}
+
+---
+
+Generate a structured ScienceDaily Cybersecurity digest in English:
+
+1. **Today's Highlights** — 3-5 sentences on the most important research/news items
+2. **Key Stories** — Select the most relevant stories, grouping related topics when useful
+3. **Research Signal** — 100-200 words on what these stories suggest about current cybersecurity research directions
+4. **Worth Reading** — 2-3 stories most worth deeper reading, with brief reasoning
+
+Style: English, concise and professional, preserving all original links.`;
+  }
+
+  return `Você é um analista de pesquisa em cibersegurança. Abaixo estão as histórias recentes do feed RSS de Hacking do ScienceDaily até ${dateStr} (${data.stories.length} no total):
+
+---
+
+${storiesText}
+
+---
+
+Gere um resumo estruturado do ScienceDaily sobre Cibersegurança em português:
+
+1. **Destaques do dia** — 3-5 frases sobre as notícias e pesquisas mais importantes
+2. **Principais histórias** — Selecione as histórias mais relevantes e agrupe temas relacionados quando fizer sentido
+3. **Sinal de pesquisa** — 100-200 palavras sobre o que essas histórias sugerem a respeito das direções atuais da pesquisa em cibersegurança
+4. **Vale ler** — 2-3 histórias que mais merecem leitura aprofundada, com breve justificativa
+
+Estilo: português conciso e profissional, preservando todos os links originais.`;
+}
+
+export function buildMemoryPrompt(data: ScienceDailyData, dateStr: string, lang: Lang = "zh"): string {
+  const storiesText = data.stories
+    .map((s, i) =>
+      lang === "en"
+        ? `${i + 1}. **${s.title}**\n   Link: ${s.url}\n   Published: ${s.publishedAt.slice(0, 10)}\n   Summary: ${s.description}`
+        : `${i + 1}. **${s.title}**\n   Link: ${s.url}\n   Publicado: ${s.publishedAt.slice(0, 10)}\n   Resumo: ${s.description}`,
+    )
+    .join("\n\n");
+
+  if (lang === "en") {
+    return `You are a neuroscience research analyst specializing in memory. The following are recent ScienceDaily stories from the Memory RSS feed as of ${dateStr} (${data.stories.length} stories total):
+
+---
+
+${storiesText}
+
+---
+
+Generate a structured ScienceDaily Memory & Neuroscience digest in English:
+
+1. **Today's Highlights** — 3-5 sentences on the most important research/news items
+2. **Key Stories** — Select the most relevant stories, grouping related topics when useful
+3. **Research Signal** — 100-200 words on what these stories suggest about current memory and neuroscience research directions
+4. **Worth Reading** — 2-3 stories most worth deeper reading, with brief reasoning
+
+Style: English, concise and professional, preserving all original links.`;
+  }
+
+  return `Você é um analista de pesquisa em neurociência especializado em memória. Abaixo estão as histórias recentes do feed RSS de Memory do ScienceDaily até ${dateStr} (${data.stories.length} no total):
+
+---
+
+${storiesText}
+
+---
+
+Gere um resumo estruturado do ScienceDaily sobre Memória e Neurociência em português:
+
+1. **Destaques do dia** — 3-5 frases sobre as notícias e pesquisas mais importantes
+2. **Principais histórias** — Selecione as histórias mais relevantes e agrupe temas relacionados quando fizer sentido
+3. **Sinal de pesquisa** — 100-200 palavras sobre o que essas histórias sugerem a respeito das direções atuais da pesquisa em neurociência e memória
+4. **Vale ler** — 2-3 histórias que mais merecem leitura aprofundada, com breve justificativa
+
+Estilo: português conciso e profissional, preservando todos os links originais.`;
+}
+
+export function build3dPrintingPrompt(data: ScienceDailyData, dateStr: string, lang: Lang = "zh"): string {
+  const storiesText = data.stories
+    .map((s, i) =>
+      lang === "en"
+        ? `${i + 1}. **${s.title}**\n   Link: ${s.url}\n   Published: ${s.publishedAt.slice(0, 10)}\n   Summary: ${s.description}`
+        : `${i + 1}. **${s.title}**\n   Link: ${s.url}\n   Publicado: ${s.publishedAt.slice(0, 10)}\n   Resumo: ${s.description}`,
+    )
+    .join("\n\n");
+
+  if (lang === "en") {
+    return `You are a manufacturing technology research analyst. The following are recent ScienceDaily stories from the 3-D Printing RSS feed as of ${dateStr} (${data.stories.length} stories total):
+
+---
+
+${storiesText}
+
+---
+
+Generate a structured ScienceDaily 3D Printing digest in English:
+
+1. **Today's Highlights** — 3-5 sentences on the most important research/news items
+2. **Key Stories** — Select the most relevant stories, grouping related topics when useful
+3. **Research Signal** — 100-200 words on what these stories suggest about current 3D printing and manufacturing research directions
+4. **Worth Reading** — 2-3 stories most worth deeper reading, with brief reasoning
+
+Style: English, concise and professional, preserving all original links.`;
+  }
+
+  return `Você é um analista de pesquisa em tecnologia de manufatura. Abaixo estão as histórias recentes do feed RSS de 3-D Printing do ScienceDaily até ${dateStr} (${data.stories.length} no total):
+
+---
+
+${storiesText}
+
+---
+
+Gere um resumo estruturado do ScienceDaily sobre Impressão 3D em português:
+
+1. **Destaques do dia** — 3-5 frases sobre as notícias e pesquisas mais importantes
+2. **Principais histórias** — Selecione as histórias mais relevantes e agrupe temas relacionados quando fizer sentido
+3. **Sinal de pesquisa** — 100-200 palavras sobre o que essas histórias sugerem a respeito das direções atuais da pesquisa em impressão 3D e manufatura
+4. **Vale ler** — 2-3 histórias que mais merecem leitura aprofundada, com breve justificativa
+
+Estilo: português conciso e profissional, preservando todos os links originais.`;
+}
+
+export function buildSolarEnergyPrompt(data: ScienceDailyData, dateStr: string, lang: Lang = "zh"): string {
+  const storiesText = data.stories
+    .map((s, i) =>
+      lang === "en"
+        ? `${i + 1}. **${s.title}**\n   Link: ${s.url}\n   Published: ${s.publishedAt.slice(0, 10)}\n   Summary: ${s.description}`
+        : `${i + 1}. **${s.title}**\n   Link: ${s.url}\n   Publicado: ${s.publishedAt.slice(0, 10)}\n   Resumo: ${s.description}`,
+    )
+    .join("\n\n");
+
+  if (lang === "en") {
+    return `You are a renewable energy research analyst. The following are recent ScienceDaily stories from the Solar Energy RSS feed as of ${dateStr} (${data.stories.length} stories total):
+
+---
+
+${storiesText}
+
+---
+
+Generate a structured ScienceDaily Solar Energy digest in English:
+
+1. **Today's Highlights** — 3-5 sentences on the most important research/news items
+2. **Key Stories** — Select the most relevant stories, grouping related topics when useful
+3. **Research Signal** — 100-200 words on what these stories suggest about current solar energy and renewable tech research directions
+4. **Worth Reading** — 2-3 stories most worth deeper reading, with brief reasoning
+
+Style: English, concise and professional, preserving all original links.`;
+  }
+
+  return `Você é um analista de pesquisa em energia renovável. Abaixo estão as histórias recentes do feed RSS de Solar Energy do ScienceDaily até ${dateStr} (${data.stories.length} no total):
+
+---
+
+${storiesText}
+
+---
+
+Gere um resumo estruturado do ScienceDaily sobre Energia Solar em português:
+
+1. **Destaques do dia** — 3-5 frases sobre as notícias e pesquisas mais importantes
+2. **Principais histórias** — Selecione as histórias mais relevantes e agrupe temas relacionados quando fizer sentido
+3. **Sinal de pesquisa** — 100-200 palavras sobre o que essas histórias sugerem a respeito das direções atuais da pesquisa em energia solar e renováveis
+4. **Vale ler** — 2-3 histórias que mais merecem leitura aprofundada, com breve justificativa
+
+Estilo: português conciso e profissional, preservando todos os links originais.`;
 }

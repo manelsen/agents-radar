@@ -194,24 +194,19 @@ const TRUNCATION_NOTICE =
 
 /** GitHub label colors by label name. Default: "0075ca". */
 const LABEL_COLORS: Record<string, string> = {
-  openclaw: "e11d48",
-  trending: "f9a825",
+  agents: "e11d48",
   hn: "ff6600",
   science: "0f766e",
   weekly: "7c3aed",
   monthly: "0d9488",
-  "digest-en": "1d76db",
-  "openclaw-en": "f472b6",
-  "web-en": "6366f1",
-  "trending-en": "fbbf24",
-  "hn-en": "fb923c",
-  "science-en": "14b8a6",
+  web: "6366f1",
   arxiv: "b31b1b",
-  "arxiv-en": "d44a4a",
-  community: "2563eb",
-  "community-en": "60a5fa",
+  robotics: "4a90d9",
+  hacking: "333333",
+  memory: "9370db",
+  "3dprinting": "ff8c00",
+  solar: "ffd700",
 };
-
 /**
  * Break GitHub URLs in issue body to prevent cross-repository references.
  * Inserts a zero-width space in "github.com" so GitHub's auto-linker
