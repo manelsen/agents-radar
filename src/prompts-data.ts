@@ -737,3 +737,417 @@ Gere um resumo estruturado do ScienceDaily sobre Energia Solar em português:
 
 Estilo: português conciso e profissional, preservando todos os links originais.`;
 }
+
+export function buildLivingWellPrompt(data: ScienceDailyData, dateStr: string, lang: Lang = "zh"): string {
+  const storiesText = data.stories
+    .map((s, i) =>
+      lang === "en"
+        ? `${i + 1}. **${s.title}**\n   Link: ${s.url}\n   Published: ${s.publishedAt.slice(0, 10)}\n   Summary: ${s.description}`
+        : `${i + 1}. **${s.title}**\n   Link: ${s.url}\n   Publicado: ${s.publishedAt.slice(0, 10)}\n   Resumo: ${s.description}`,
+    )
+    .join("\n\n");
+
+  if (lang === "en") {
+    return `You are a health and wellness research analyst. The following are recent ScienceDaily stories from the Living Well RSS feed as of ${dateStr} (${data.stories.length} stories total):
+
+---
+
+${storiesText}
+
+---
+
+Generate a structured ScienceDaily Living Well digest in English:
+
+1. **Today's Highlights** — 3-5 sentences on the most important research/news items
+2. **Key Stories** — Select the most relevant stories, grouping related topics when useful
+3. **Research Signal** — 100-200 words on what these stories suggest about current wellness and health living research directions
+4. **Worth Reading** — 2-3 stories most worth deeper reading, with brief reasoning
+
+Style: English, concise and professional, preserving all original links.`;
+  }
+
+  return `Você é um analista de pesquisa em saúde e bem-estar. Abaixo estão as histórias recentes do feed RSS de Bem-Estar do ScienceDaily até ${dateStr} (${data.stories.length} no total):
+
+---
+
+${storiesText}
+
+---
+
+Gere um resumo estruturado do ScienceDaily sobre Bem-Estar em português:
+
+1. **Destaques do dia** — 3-5 frases sobre as notícias e pesquisas mais importantes
+2. **Principais histórias** — Selecione as histórias mais relevantes e agrupe temas relacionados quando fizer sentido
+3. **Sinal de pesquisa** — 100-200 palavras sobre o que essas histórias sugerem a respeito das direções atuais da pesquisa em bem-estar e vida saudável
+4. **Vale ler** — 2-3 histórias que mais merecem leitura aprofundada, com breve justificativa
+
+Estilo: português conciso e profissional, preservando todos os links originais.`;
+}
+
+export function buildMentalHealthPrompt(data: ScienceDailyData, dateStr: string, lang: Lang = "zh"): string {
+  const storiesText = data.stories
+    .map((s, i) =>
+      lang === "en"
+        ? `${i + 1}. **${s.title}**\n   Link: ${s.url}\n   Published: ${s.publishedAt.slice(0, 10)}\n   Summary: ${s.description}`
+        : `${i + 1}. **${s.title}**\n   Link: ${s.url}\n   Publicado: ${s.publishedAt.slice(0, 10)}\n   Resumo: ${s.description}`,
+    )
+    .join("\n\n");
+
+  if (lang === "en") {
+    return `You are a mental health research analyst. The following are recent ScienceDaily stories from the Mental Health RSS feed as of ${dateStr} (${data.stories.length} stories total):
+
+---
+
+${storiesText}
+
+---
+
+Generate a structured ScienceDaily Mental Health digest in English:
+
+1. **Today's Highlights** — 3-5 sentences on the most important research/news items
+2. **Key Stories** — Select the most relevant stories, grouping related topics when useful
+3. **Research Signal** — 100-200 words on what these stories suggest about current mental health research directions
+4. **Worth Reading** — 2-3 stories most worth deeper reading, with brief reasoning
+
+Style: English, concise and professional, preserving all original links.`;
+  }
+
+  return `Você é um analista de pesquisa em saúde mental. Abaixo estão as histórias recentes do feed RSS de Saúde Mental do ScienceDaily até ${dateStr} (${data.stories.length} no total):
+
+---
+
+${storiesText}
+
+---
+
+Gere um resumo estruturado do ScienceDaily sobre Saúde Mental em português:
+
+1. **Destaques do dia** — 3-5 frases sobre as notícias e pesquisas mais importantes
+2. **Principais histórias** — Selecione as histórias mais relevantes e agrupe temas relacionados quando fizer sentido
+3. **Sinal de pesquisa** — 100-200 palavras sobre o que essas histórias sugerem a respeito das direções atuais da pesquisa em saúde mental
+4. **Vale ler** — 2-3 histórias que mais merecem leitura aprofundada, com breve justificativa
+
+Estilo: português conciso e profissional, preservando todos os links originais.`;
+}
+
+export function buildEducationPrompt(data: ScienceDailyData, dateStr: string, lang: Lang = "zh"): string {
+  const storiesText = data.stories
+    .map((s, i) =>
+      lang === "en"
+        ? `${i + 1}. **${s.title}**\n   Link: ${s.url}\n   Published: ${s.publishedAt.slice(0, 10)}\n   Summary: ${s.description}`
+        : `${i + 1}. **${s.title}**\n   Link: ${s.url}\n   Publicado: ${s.publishedAt.slice(0, 10)}\n   Resumo: ${s.description}`,
+    )
+    .join("\n\n");
+
+  if (lang === "en") {
+    return `You are an education research analyst. The following are recent ScienceDaily stories from the Education RSS feed as of ${dateStr} (${data.stories.length} stories total):
+
+---
+
+${storiesText}
+
+---
+
+Generate a structured ScienceDaily Education digest in English:
+
+1. **Today's Highlights** — 3-5 sentences on the most important research/news items
+2. **Key Stories** — Select the most relevant stories, grouping related topics when useful
+3. **Research Signal** — 100-200 words on what these stories suggest about current education and learning research directions
+4. **Worth Reading** — 2-3 stories most worth deeper reading, with brief reasoning
+
+Style: English, concise and professional, preserving all original links.`;
+  }
+
+  return `Você é um analista de pesquisa em educação. Abaixo estão as histórias recentes do feed RSS de Educação do ScienceDaily até ${dateStr} (${data.stories.length} no total):
+
+---
+
+${storiesText}
+
+---
+
+Gere um resumo estruturado do ScienceDaily sobre Educação em português:
+
+1. **Destaques do dia** — 3-5 frases sobre as notícias e pesquisas mais importantes
+2. **Principais histórias** — Selecione as histórias mais relevantes e agrupe temas relacionados quando fizer sentido
+3. **Sinal de pesquisa** — 100-200 palavras sobre o que essas histórias sugerem a respeito das direções atuais da pesquisa em educação e aprendizagem
+4. **Vale ler** — 2-3 histórias que mais merecem leitura aprofundada, com breve justificativa
+
+Estilo: português conciso e profissional, preservando todos os links originais.`;
+}
+
+export function buildEngineeringPrompt(data: ScienceDailyData, dateStr: string, lang: Lang = "zh"): string {
+  const storiesText = data.stories
+    .map((s, i) =>
+      lang === "en"
+        ? `${i + 1}. **${s.title}**\n   Link: ${s.url}\n   Published: ${s.publishedAt.slice(0, 10)}\n   Summary: ${s.description}`
+        : `${i + 1}. **${s.title}**\n   Link: ${s.url}\n   Publicado: ${s.publishedAt.slice(0, 10)}\n   Resumo: ${s.description}`,
+    )
+    .join("\n\n");
+
+  if (lang === "en") {
+    return `You are an engineering research analyst. The following are recent ScienceDaily stories from the Engineering RSS feed as of ${dateStr} (${data.stories.length} stories total):
+
+---
+
+${storiesText}
+
+---
+
+Generate a structured ScienceDaily Engineering digest in English:
+
+1. **Today's Highlights** — 3-5 sentences on the most important research/news items
+2. **Key Stories** — Select the most relevant stories, grouping related topics when useful
+3. **Research Signal** — 100-200 words on what these stories suggest about current engineering research directions
+4. **Worth Reading** — 2-3 stories most worth deeper reading, with brief reasoning
+
+Style: English, concise and professional, preserving all original links.`;
+  }
+
+  return `Você é um analista de pesquisa em engenharia. Abaixo estão as histórias recentes do feed RSS de Engenharia do ScienceDaily até ${dateStr} (${data.stories.length} no total):
+
+---
+
+${storiesText}
+
+---
+
+Gere um resumo estruturado do ScienceDaily sobre Engenharia em português:
+
+1. **Destaques do dia** — 3-5 frases sobre as notícias e pesquisas mais importantes
+2. **Principais histórias** — Selecione as histórias mais relevantes e agrupe temas relacionados quando fizer sentido
+3. **Sinal de pesquisa** — 100-200 palavras sobre o que essas histórias sugerem a respeito das direções atuais da pesquisa em engenharia
+4. **Vale ler** — 2-3 histórias que mais merecem leitura aprofundada, com breve justificativa
+
+Estilo: português conciso e profissional, preservando todos os links originais.`;
+}
+
+export function buildAgriculturePrompt(data: ScienceDailyData, dateStr: string, lang: Lang = "zh"): string {
+  const storiesText = data.stories
+    .map((s, i) =>
+      lang === "en"
+        ? `${i + 1}. **${s.title}**\n   Link: ${s.url}\n   Published: ${s.publishedAt.slice(0, 10)}\n   Summary: ${s.description}`
+        : `${i + 1}. **${s.title}**\n   Link: ${s.url}\n   Publicado: ${s.publishedAt.slice(0, 10)}\n   Resumo: ${s.description}`,
+    )
+    .join("\n\n");
+
+  if (lang === "en") {
+    return `You are an agricultural research analyst. The following are recent ScienceDaily stories from the Agriculture & Food RSS feed as of ${dateStr} (${data.stories.length} stories total):
+
+---
+
+${storiesText}
+
+---
+
+Generate a structured ScienceDaily Agriculture & Food digest in English:
+
+1. **Today's Highlights** — 3-5 sentences on the most important research/news items
+2. **Key Stories** — Select the most relevant stories, grouping related topics when useful
+3. **Research Signal** — 100-200 words on what these stories suggest about current agriculture and food science research directions
+4. **Worth Reading** — 2-3 stories most worth deeper reading, with brief reasoning
+
+Style: English, concise and professional, preserving all original links.`;
+  }
+
+  return `Você é um analista de pesquisa em agricultura. Abaixo estão as histórias recentes do feed RSS de Agricultura e Alimentação do ScienceDaily até ${dateStr} (${data.stories.length} no total):
+
+---
+
+${storiesText}
+
+---
+
+Gere um resumo estruturado do ScienceDaily sobre Agricultura e Alimentação em português:
+
+1. **Destaques do dia** — 3-5 frases sobre as notícias e pesquisas mais importantes
+2. **Principais histórias** — Selecione as histórias mais relevantes e agrupe temas relacionados quando fizer sentido
+3. **Sinal de pesquisa** — 100-200 palavras sobre o que essas histórias sugerem a respeito das direções atuais da pesquisa em agricultura e ciência dos alimentos
+4. **Vale ler** — 2-3 histórias que mais merecem leitura aprofundada, com breve justificativa
+
+Estilo: português conciso e profissional, preservando todos os links originais.`;
+}
+
+export function buildEnvironmentalPrompt(data: ScienceDailyData, dateStr: string, lang: Lang = "zh"): string {
+  const storiesText = data.stories
+    .map((s, i) =>
+      lang === "en"
+        ? `${i + 1}. **${s.title}**\n   Link: ${s.url}\n   Published: ${s.publishedAt.slice(0, 10)}\n   Summary: ${s.description}`
+        : `${i + 1}. **${s.title}**\n   Link: ${s.url}\n   Publicado: ${s.publishedAt.slice(0, 10)}\n   Resumo: ${s.description}`,
+    )
+    .join("\n\n");
+
+  if (lang === "en") {
+    return `You are an environmental science research analyst. The following are recent ScienceDaily stories from the Environmental Science RSS feed as of ${dateStr} (${data.stories.length} stories total):
+
+---
+
+${storiesText}
+
+---
+
+Generate a structured ScienceDaily Environmental Science digest in English:
+
+1. **Today's Highlights** — 3-5 sentences on the most important research/news items
+2. **Key Stories** — Select the most relevant stories, grouping related topics when useful
+3. **Research Signal** — 100-200 words on what these stories suggest about current environmental science research directions
+4. **Worth Reading** — 2-3 stories most worth deeper reading, with brief reasoning
+
+Style: English, concise and professional, preserving all original links.`;
+  }
+
+  return `Você é um analista de pesquisa em ciências ambientais. Abaixo estão as histórias recentes do feed RSS de Ciências Ambientais do ScienceDaily até ${dateStr} (${data.stories.length} no total):
+
+---
+
+${storiesText}
+
+---
+
+Gere um resumo estruturado do ScienceDaily sobre Ciências Ambientais em português:
+
+1. **Destaques do dia** — 3-5 frases sobre as notícias e pesquisas mais importantes
+2. **Principais histórias** — Selecione as histórias mais relevantes e agrupe temas relacionados quando fizer sentido
+3. **Sinal de pesquisa** — 100-200 palavras sobre o que essas histórias sugerem a respeito das direções atuais da pesquisa em ciências ambientais
+4. **Vale ler** — 2-3 histórias que mais merecem leitura aprofundada, com breve justificativa
+
+Estilo: português conciso e profissional, preservando todos os links originais.`;
+}
+
+export function buildArchaeologyPrompt(data: ScienceDailyData, dateStr: string, lang: Lang = "zh"): string {
+  const storiesText = data.stories
+    .map((s, i) =>
+      lang === "en"
+        ? `${i + 1}. **${s.title}**\n   Link: ${s.url}\n   Published: ${s.publishedAt.slice(0, 10)}\n   Summary: ${s.description}`
+        : `${i + 1}. **${s.title}**\n   Link: ${s.url}\n   Publicado: ${s.publishedAt.slice(0, 10)}\n   Resumo: ${s.description}`,
+    )
+    .join("\n\n");
+
+  if (lang === "en") {
+    return `You are an archaeology research analyst. The following are recent ScienceDaily stories from the Archaeology RSS feed as of ${dateStr} (${data.stories.length} stories total):
+
+---
+
+${storiesText}
+
+---
+
+Generate a structured ScienceDaily Archaeology digest in English:
+
+1. **Today's Highlights** — 3-5 sentences on the most important research/news items
+2. **Key Stories** — Select the most relevant stories, grouping related topics when useful
+3. **Research Signal** — 100-200 words on what these stories suggest about current archaeology research directions
+4. **Worth Reading** — 2-3 stories most worth deeper reading, with brief reasoning
+
+Style: English, concise and professional, preserving all original links.`;
+  }
+
+  return `Você é um analista de pesquisa em arqueologia. Abaixo estão as histórias recentes do feed RSS de Arqueologia do ScienceDaily até ${dateStr} (${data.stories.length} no total):
+
+---
+
+${storiesText}
+
+---
+
+Gere um resumo estruturado do ScienceDaily sobre Arqueologia em português:
+
+1. **Destaques do dia** — 3-5 frases sobre as notícias e pesquisas mais importantes
+2. **Principais histórias** — Selecione as histórias mais relevantes e agrupe temas relacionados quando fizer sentido
+3. **Sinal de pesquisa** — 100-200 palavras sobre o que essas histórias sugerem a respeito das direções atuais da pesquisa em arqueologia
+4. **Vale ler** — 2-3 histórias que mais merecem leitura aprofundada, com breve justificativa
+
+Estilo: português conciso e profissional, preservando todos os links originais.`;
+}
+
+export function buildSocialPrompt(data: ScienceDailyData, dateStr: string, lang: Lang = "zh"): string {
+  const storiesText = data.stories
+    .map((s, i) =>
+      lang === "en"
+        ? `${i + 1}. **${s.title}**\n   Link: ${s.url}\n   Published: ${s.publishedAt.slice(0, 10)}\n   Summary: ${s.description}`
+        : `${i + 1}. **${s.title}**\n   Link: ${s.url}\n   Publicado: ${s.publishedAt.slice(0, 10)}\n   Resumo: ${s.description}`,
+    )
+    .join("\n\n");
+
+  if (lang === "en") {
+    return `You are a social science research analyst. The following are recent ScienceDaily stories from the Social Issues RSS feed as of ${dateStr} (${data.stories.length} stories total):
+
+---
+
+${storiesText}
+
+---
+
+Generate a structured ScienceDaily Social Issues digest in English:
+
+1. **Today's Highlights** — 3-5 sentences on the most important research/news items
+2. **Key Stories** — Select the most relevant stories, grouping related topics when useful
+3. **Research Signal** — 100-200 words on what these stories suggest about current social science research directions
+4. **Worth Reading** — 2-3 stories most worth deeper reading, with brief reasoning
+
+Style: English, concise and professional, preserving all original links.`;
+  }
+
+  return `Você é um analista de pesquisa em ciências sociais. Abaixo estão as histórias recentes do feed RSS de Questões Sociais do ScienceDaily até ${dateStr} (${data.stories.length} no total):
+
+---
+
+${storiesText}
+
+---
+
+Gere um resumo estruturado do ScienceDaily sobre Questões Sociais em português:
+
+1. **Destaques do dia** — 3-5 frases sobre as notícias e pesquisas mais importantes
+2. **Principais histórias** — Selecione as histórias mais relevantes e agrupe temas relacionados quando fizer sentido
+3. **Sinal de pesquisa** — 100-200 palavras sobre o que essas histórias sugerem a respeito das direções atuais da pesquisa em ciências sociais
+4. **Vale ler** — 2-3 histórias que mais merecem leitura aprofundada, com breve justificativa
+
+Estilo: português conciso e profissional, preservando todos os links originais.`;
+}
+
+export function buildOffbeatPrompt(data: ScienceDailyData, dateStr: string, lang: Lang = "zh"): string {
+  const storiesText = data.stories
+    .map((s, i) =>
+      lang === "en"
+        ? `${i + 1}. **${s.title}**\n   Link: ${s.url}\n   Published: ${s.publishedAt.slice(0, 10)}\n   Summary: ${s.description}`
+        : `${i + 1}. **${s.title}**\n   Link: ${s.url}\n   Publicado: ${s.publishedAt.slice(0, 10)}\n   Resumo: ${s.description}`,
+    )
+    .join("\n\n");
+
+  if (lang === "en") {
+    return `You are a science news editor specializing in unusual and offbeat discoveries. The following are recent ScienceDaily stories from the Strange & Offbeat RSS feed as of ${dateStr} (${data.stories.length} stories total):
+
+---
+
+${storiesText}
+
+---
+
+Generate a structured ScienceDaily Strange & Offbeat digest in English:
+
+1. **Today's Highlights** — 3-5 sentences on the most important research/news items
+2. **Key Stories** — Select the most relevant stories, grouping related topics when useful
+3. **Research Signal** — 100-200 words on what these stories suggest about what these unusual discoveries reveal about the frontiers of science
+4. **Worth Reading** — 2-3 stories most worth deeper reading, with brief reasoning
+
+Style: English, concise and professional, preserving all original links.`;
+  }
+
+  return `Você é um editor de ciências especializado em descobertas incomuns e curiosas. Abaixo estão as histórias recentes do feed RSS de Curiosidades e Fatos Incomuns do ScienceDaily até ${dateStr} (${data.stories.length} no total):
+
+---
+
+${storiesText}
+
+---
+
+Gere um resumo estruturado do ScienceDaily sobre Curiosidades e Fatos Incomuns em português:
+
+1. **Destaques do dia** — 3-5 frases sobre as notícias e pesquisas mais importantes
+2. **Principais histórias** — Selecione as histórias mais relevantes e agrupe temas relacionados quando fizer sentido
+3. **Sinal de pesquisa** — 100-200 palavras sobre o que essas histórias sugerem a respeito do que essas descobertas incomuns revelam sobre as fronteiras da ciência
+4. **Vale ler** — 2-3 histórias que mais merecem leitura aprofundada, com breve justificativa
+
+Estilo: português conciso e profissional, preservando todos os links originais.`;
+}

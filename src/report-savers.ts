@@ -14,6 +14,15 @@ import {
   MEMORY_REPORT,
   PRINT3D_REPORT,
   SOLAR_REPORT,
+  LIVING_WELL_REPORT,
+  MENTAL_HEALTH_REPORT,
+  EDUCATION_REPORT,
+  ENGINEERING_REPORT,
+  AGRICULTURE_REPORT,
+  ENVIRONMENTAL_REPORT,
+  ARCHAEOLOGY_REPORT,
+  SOCIAL_REPORT,
+  OFFBEAT_REPORT,
   ISSUE_LABELS,
 } from "./i18n.ts";
 import {
@@ -26,6 +35,15 @@ import {
   buildMemoryPrompt,
   build3dPrintingPrompt,
   buildSolarEnergyPrompt,
+  buildLivingWellPrompt,
+  buildMentalHealthPrompt,
+  buildEducationPrompt,
+  buildEngineeringPrompt,
+  buildAgriculturePrompt,
+  buildEnvironmentalPrompt,
+  buildArchaeologyPrompt,
+  buildSocialPrompt,
+  buildOffbeatPrompt,
 } from "./prompts-data.ts";
 import { callLlm, saveFile, LLM_TOKENS_WEB } from "./report.ts";
 import { createGitHubIssue } from "./github.ts";
@@ -385,6 +403,384 @@ export async function saveSolarEnergyReport(
     }
   } catch (err) {
     console.error(`  [solar] Report generation failed: ${err}`);
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Living Well report
+// ---------------------------------------------------------------------------
+
+export async function saveLivingWellReport(
+  data: ScienceDailyData,
+  utcStr: string,
+  dateStr: string,
+  digestRepo: string,
+  footer: string,
+  lang: Lang = "zh",
+): Promise<void> {
+  if (!data.fetchSuccess) {
+    console.log("  [livingwell] No data available, skipping report.");
+    return;
+  }
+
+  console.log("  [livingwell] Calling LLM for Living Well report...");
+  try {
+    const summary = await callLlm(buildLivingWellPrompt(data, dateStr, lang));
+    const fileName = "ai-livingwell.md";
+    const header =
+      `# ${LIVING_WELL_REPORT.title[lang]} ${dateStr}\n\n` +
+      `> Fonte: [ScienceDaily](https://www.sciencedaily.com/news/living_well/) | ` +
+      `${data.stories.length} histórias | Gerado em: ${utcStr} UTC\n\n` +
+      `---\n\n`;
+
+    const content = header + summary + footer;
+
+    console.log(`  Saved ${saveFile(content, dateStr, fileName)}`);
+
+    if (digestRepo) {
+      const title = LIVING_WELL_REPORT.issueTitle(dateStr, lang);
+      const label = ISSUE_LABELS.livingwell[lang];
+      const url = await createGitHubIssue(title, content, label);
+      console.log(`  Created Living Well issue: ${url}`);
+    }
+  } catch (err) {
+    console.error(`  [livingwell] Report generation failed: ${err}`);
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Mental Health report
+// ---------------------------------------------------------------------------
+
+export async function saveMentalHealthReport(
+  data: ScienceDailyData,
+  utcStr: string,
+  dateStr: string,
+  digestRepo: string,
+  footer: string,
+  lang: Lang = "zh",
+): Promise<void> {
+  if (!data.fetchSuccess) {
+    console.log("  [mentalhealth] No data available, skipping report.");
+    return;
+  }
+
+  console.log("  [mentalhealth] Calling LLM for Mental Health report...");
+  try {
+    const summary = await callLlm(buildMentalHealthPrompt(data, dateStr, lang));
+    const fileName = "ai-mentalhealth.md";
+    const header =
+      `# ${MENTAL_HEALTH_REPORT.title[lang]} ${dateStr}\n\n` +
+      `> Fonte: [ScienceDaily](https://www.sciencedaily.com/news/mind_brain/mental_health/) | ` +
+      `${data.stories.length} histórias | Gerado em: ${utcStr} UTC\n\n` +
+      `---\n\n`;
+
+    const content = header + summary + footer;
+
+    console.log(`  Saved ${saveFile(content, dateStr, fileName)}`);
+
+    if (digestRepo) {
+      const title = MENTAL_HEALTH_REPORT.issueTitle(dateStr, lang);
+      const label = ISSUE_LABELS.mentalhealth[lang];
+      const url = await createGitHubIssue(title, content, label);
+      console.log(`  Created Mental Health issue: ${url}`);
+    }
+  } catch (err) {
+    console.error(`  [mentalhealth] Report generation failed: ${err}`);
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Education report
+// ---------------------------------------------------------------------------
+
+export async function saveEducationReport(
+  data: ScienceDailyData,
+  utcStr: string,
+  dateStr: string,
+  digestRepo: string,
+  footer: string,
+  lang: Lang = "zh",
+): Promise<void> {
+  if (!data.fetchSuccess) {
+    console.log("  [education] No data available, skipping report.");
+    return;
+  }
+
+  console.log("  [education] Calling LLM for Education report...");
+  try {
+    const summary = await callLlm(buildEducationPrompt(data, dateStr, lang));
+    const fileName = "ai-education.md";
+    const header =
+      `# ${EDUCATION_REPORT.title[lang]} ${dateStr}\n\n` +
+      `> Fonte: [ScienceDaily](https://www.sciencedaily.com/news/education_learning/) | ` +
+      `${data.stories.length} histórias | Gerado em: ${utcStr} UTC\n\n` +
+      `---\n\n`;
+
+    const content = header + summary + footer;
+
+    console.log(`  Saved ${saveFile(content, dateStr, fileName)}`);
+
+    if (digestRepo) {
+      const title = EDUCATION_REPORT.issueTitle(dateStr, lang);
+      const label = ISSUE_LABELS.education[lang];
+      const url = await createGitHubIssue(title, content, label);
+      console.log(`  Created Education issue: ${url}`);
+    }
+  } catch (err) {
+    console.error(`  [education] Report generation failed: ${err}`);
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Engineering report
+// ---------------------------------------------------------------------------
+
+export async function saveEngineeringReport(
+  data: ScienceDailyData,
+  utcStr: string,
+  dateStr: string,
+  digestRepo: string,
+  footer: string,
+  lang: Lang = "zh",
+): Promise<void> {
+  if (!data.fetchSuccess) {
+    console.log("  [engineering] No data available, skipping report.");
+    return;
+  }
+
+  console.log("  [engineering] Calling LLM for Engineering report...");
+  try {
+    const summary = await callLlm(buildEngineeringPrompt(data, dateStr, lang));
+    const fileName = "ai-engineering.md";
+    const header =
+      `# ${ENGINEERING_REPORT.title[lang]} ${dateStr}\n\n` +
+      `> Fonte: [ScienceDaily](https://www.sciencedaily.com/news/matter_energy/engineering/) | ` +
+      `${data.stories.length} histórias | Gerado em: ${utcStr} UTC\n\n` +
+      `---\n\n`;
+
+    const content = header + summary + footer;
+
+    console.log(`  Saved ${saveFile(content, dateStr, fileName)}`);
+
+    if (digestRepo) {
+      const title = ENGINEERING_REPORT.issueTitle(dateStr, lang);
+      const label = ISSUE_LABELS.engineering[lang];
+      const url = await createGitHubIssue(title, content, label);
+      console.log(`  Created Engineering issue: ${url}`);
+    }
+  } catch (err) {
+    console.error(`  [engineering] Report generation failed: ${err}`);
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Agriculture report
+// ---------------------------------------------------------------------------
+
+export async function saveAgricultureReport(
+  data: ScienceDailyData,
+  utcStr: string,
+  dateStr: string,
+  digestRepo: string,
+  footer: string,
+  lang: Lang = "zh",
+): Promise<void> {
+  if (!data.fetchSuccess) {
+    console.log("  [agriculture] No data available, skipping report.");
+    return;
+  }
+
+  console.log("  [agriculture] Calling LLM for Agriculture report...");
+  try {
+    const summary = await callLlm(buildAgriculturePrompt(data, dateStr, lang));
+    const fileName = "ai-agriculture.md";
+    const header =
+      `# ${AGRICULTURE_REPORT.title[lang]} ${dateStr}\n\n` +
+      `> Fonte: [ScienceDaily](https://www.sciencedaily.com/news/plants_animals/agriculture_and_food/) | ` +
+      `${data.stories.length} histórias | Gerado em: ${utcStr} UTC\n\n` +
+      `---\n\n`;
+
+    const content = header + summary + footer;
+
+    console.log(`  Saved ${saveFile(content, dateStr, fileName)}`);
+
+    if (digestRepo) {
+      const title = AGRICULTURE_REPORT.issueTitle(dateStr, lang);
+      const label = ISSUE_LABELS.agriculture[lang];
+      const url = await createGitHubIssue(title, content, label);
+      console.log(`  Created Agriculture issue: ${url}`);
+    }
+  } catch (err) {
+    console.error(`  [agriculture] Report generation failed: ${err}`);
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Environmental report
+// ---------------------------------------------------------------------------
+
+export async function saveEnvironmentalReport(
+  data: ScienceDailyData,
+  utcStr: string,
+  dateStr: string,
+  digestRepo: string,
+  footer: string,
+  lang: Lang = "zh",
+): Promise<void> {
+  if (!data.fetchSuccess) {
+    console.log("  [environmental] No data available, skipping report.");
+    return;
+  }
+
+  console.log("  [environmental] Calling LLM for Environmental report...");
+  try {
+    const summary = await callLlm(buildEnvironmentalPrompt(data, dateStr, lang));
+    const fileName = "ai-environmental.md";
+    const header =
+      `# ${ENVIRONMENTAL_REPORT.title[lang]} ${dateStr}\n\n` +
+      `> Fonte: [ScienceDaily](https://www.sciencedaily.com/news/earth_climate/environmental_science/) | ` +
+      `${data.stories.length} histórias | Gerado em: ${utcStr} UTC\n\n` +
+      `---\n\n`;
+
+    const content = header + summary + footer;
+
+    console.log(`  Saved ${saveFile(content, dateStr, fileName)}`);
+
+    if (digestRepo) {
+      const title = ENVIRONMENTAL_REPORT.issueTitle(dateStr, lang);
+      const label = ISSUE_LABELS.environmental[lang];
+      const url = await createGitHubIssue(title, content, label);
+      console.log(`  Created Environmental issue: ${url}`);
+    }
+  } catch (err) {
+    console.error(`  [environmental] Report generation failed: ${err}`);
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Archaeology report
+// ---------------------------------------------------------------------------
+
+export async function saveArchaeologyReport(
+  data: ScienceDailyData,
+  utcStr: string,
+  dateStr: string,
+  digestRepo: string,
+  footer: string,
+  lang: Lang = "zh",
+): Promise<void> {
+  if (!data.fetchSuccess) {
+    console.log("  [archaeology] No data available, skipping report.");
+    return;
+  }
+
+  console.log("  [archaeology] Calling LLM for Archaeology report...");
+  try {
+    const summary = await callLlm(buildArchaeologyPrompt(data, dateStr, lang));
+    const fileName = "ai-archaeology.md";
+    const header =
+      `# ${ARCHAEOLOGY_REPORT.title[lang]} ${dateStr}\n\n` +
+      `> Fonte: [ScienceDaily](https://www.sciencedaily.com/news/fossils_ruins/archaeology/) | ` +
+      `${data.stories.length} histórias | Gerado em: ${utcStr} UTC\n\n` +
+      `---\n\n`;
+
+    const content = header + summary + footer;
+
+    console.log(`  Saved ${saveFile(content, dateStr, fileName)}`);
+
+    if (digestRepo) {
+      const title = ARCHAEOLOGY_REPORT.issueTitle(dateStr, lang);
+      const label = ISSUE_LABELS.archaeology[lang];
+      const url = await createGitHubIssue(title, content, label);
+      console.log(`  Created Archaeology issue: ${url}`);
+    }
+  } catch (err) {
+    console.error(`  [archaeology] Report generation failed: ${err}`);
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Social report
+// ---------------------------------------------------------------------------
+
+export async function saveSocialReport(
+  data: ScienceDailyData,
+  utcStr: string,
+  dateStr: string,
+  digestRepo: string,
+  footer: string,
+  lang: Lang = "zh",
+): Promise<void> {
+  if (!data.fetchSuccess) {
+    console.log("  [social] No data available, skipping report.");
+    return;
+  }
+
+  console.log("  [social] Calling LLM for Social report...");
+  try {
+    const summary = await callLlm(buildSocialPrompt(data, dateStr, lang));
+    const fileName = "ai-social.md";
+    const header =
+      `# ${SOCIAL_REPORT.title[lang]} ${dateStr}\n\n` +
+      `> Fonte: [ScienceDaily](https://www.sciencedaily.com/news/science_society/social_issues/) | ` +
+      `${data.stories.length} histórias | Gerado em: ${utcStr} UTC\n\n` +
+      `---\n\n`;
+
+    const content = header + summary + footer;
+
+    console.log(`  Saved ${saveFile(content, dateStr, fileName)}`);
+
+    if (digestRepo) {
+      const title = SOCIAL_REPORT.issueTitle(dateStr, lang);
+      const label = ISSUE_LABELS.social[lang];
+      const url = await createGitHubIssue(title, content, label);
+      console.log(`  Created Social issue: ${url}`);
+    }
+  } catch (err) {
+    console.error(`  [social] Report generation failed: ${err}`);
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Offbeat report
+// ---------------------------------------------------------------------------
+
+export async function saveOffbeatReport(
+  data: ScienceDailyData,
+  utcStr: string,
+  dateStr: string,
+  digestRepo: string,
+  footer: string,
+  lang: Lang = "zh",
+): Promise<void> {
+  if (!data.fetchSuccess) {
+    console.log("  [offbeat] No data available, skipping report.");
+    return;
+  }
+
+  console.log("  [offbeat] Calling LLM for Offbeat report...");
+  try {
+    const summary = await callLlm(buildOffbeatPrompt(data, dateStr, lang));
+    const fileName = "ai-offbeat.md";
+    const header =
+      `# ${OFFBEAT_REPORT.title[lang]} ${dateStr}\n\n` +
+      `> Fonte: [ScienceDaily](https://www.sciencedaily.com/news/strange_offbeat/) | ` +
+      `${data.stories.length} histórias | Gerado em: ${utcStr} UTC\n\n` +
+      `---\n\n`;
+
+    const content = header + summary + footer;
+
+    console.log(`  Saved ${saveFile(content, dateStr, fileName)}`);
+
+    if (digestRepo) {
+      const title = OFFBEAT_REPORT.issueTitle(dateStr, lang);
+      const label = ISSUE_LABELS.offbeat[lang];
+      const url = await createGitHubIssue(title, content, label);
+      console.log(`  Created Offbeat issue: ${url}`);
+    }
+  } catch (err) {
+    console.error(`  [offbeat] Report generation failed: ${err}`);
   }
 }
 
