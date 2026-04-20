@@ -20,6 +20,15 @@ const HACKING_FEED_URL = "https://www.sciencedaily.com/rss/computers_math/hackin
 const MEMORY_FEED_URL = "https://www.sciencedaily.com/rss/mind_brain/memory.xml";
 const PRINTING_FEED_URL = "https://www.sciencedaily.com/rss/matter_energy/3-d_printing.xml";
 const SOLAR_FEED_URL = "https://www.sciencedaily.com/rss/matter_energy/solar_energy.xml";
+const LIVING_WELL_FEED_URL = "https://www.sciencedaily.com/rss/living_well.xml";
+const MENTAL_HEALTH_FEED_URL = "https://www.sciencedaily.com/rss/mind_brain/mental_health.xml";
+const EDUCATION_FEED_URL = "https://www.sciencedaily.com/rss/education_learning.xml";
+const ENGINEERING_FEED_URL = "https://www.sciencedaily.com/rss/matter_energy/engineering.xml";
+const AGRICULTURE_FEED_URL = "https://www.sciencedaily.com/rss/plants_animals/agriculture_and_food.xml";
+const ENVIRONMENTAL_FEED_URL = "https://www.sciencedaily.com/rss/earth_climate/environmental_science.xml";
+const ARCHAEOLOGY_FEED_URL = "https://www.sciencedaily.com/rss/fossils_ruins/archaeology.xml";
+const SOCIAL_FEED_URL = "https://www.sciencedaily.com/rss/science_society/social_issues.xml";
+const OFFBEAT_FEED_URL = "https://www.sciencedaily.com/rss/strange_offbeat.xml";
 const MAX_STORIES = 20;
 const LOOKBACK_MS = 7 * 24 * 60 * 60 * 1000;
 
@@ -111,4 +120,40 @@ export async function fetch3dPrintingData(): Promise<ScienceDailyData> {
 
 export async function fetchSolarEnergyData(): Promise<ScienceDailyData> {
   return fetchScienceDailyFeed(SOLAR_FEED_URL, "solar");
+}
+
+export async function fetchLivingWellData(): Promise<ScienceDailyData> {
+  return fetchScienceDailyFeed(LIVING_WELL_FEED_URL, "livingwell");
+}
+
+export async function fetchMentalHealthData(): Promise<ScienceDailyData> {
+  return fetchScienceDailyFeed(MENTAL_HEALTH_FEED_URL, "mentalhealth");
+}
+
+export async function fetchEducationData(): Promise<ScienceDailyData> {
+  return fetchScienceDailyFeed(EDUCATION_FEED_URL, "education");
+}
+
+export async function fetchEngineeringData(): Promise<ScienceDailyData> {
+  return fetchScienceDailyFeed(ENGINEERING_FEED_URL, "engineering");
+}
+
+export async function fetchAgricultureData(): Promise<ScienceDailyData> {
+  return fetchScienceDailyFeed(AGRICULTURE_FEED_URL, "agriculture");
+}
+
+export async function fetchEnvironmentalData(): Promise<ScienceDailyData> {
+  return fetchScienceDailyFeed(ENVIRONMENTAL_FEED_URL, "environmental");
+}
+
+export async function fetchArchaeologyData(): Promise<ScienceDailyData> {
+  return fetchScienceDailyFeed(ARCHAEOLOGY_FEED_URL, "archaeology");
+}
+
+export async function fetchSocialData(): Promise<ScienceDailyData> {
+  return fetchScienceDailyFeed(SOCIAL_FEED_URL, "social");
+}
+
+export async function fetchOffbeatData(): Promise<ScienceDailyData> {
+  return fetchScienceDailyFeed(OFFBEAT_FEED_URL, "offbeat");
 }

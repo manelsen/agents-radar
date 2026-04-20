@@ -10,6 +10,15 @@ import {
   buildMemoryPrompt,
   build3dPrintingPrompt,
   buildSolarEnergyPrompt,
+  buildLivingWellPrompt,
+  buildMentalHealthPrompt,
+  buildEducationPrompt,
+  buildEngineeringPrompt,
+  buildAgriculturePrompt,
+  buildEnvironmentalPrompt,
+  buildArchaeologyPrompt,
+  buildSocialPrompt,
+  buildOffbeatPrompt,
 } from "../prompts-data.ts";
 import type { RepoConfig, GitHubItem, GitHubRelease } from "../github.ts";
 import type { RepoDigest } from "../prompts.ts";
@@ -438,5 +447,320 @@ describe("buildSolarEnergyPrompt", () => {
     };
     const result = buildSolarEnergyPrompt(data, "2026-04-19", "en");
     expect(result).toContain("energy");
+  });
+});
+
+describe("buildLivingWellPrompt", () => {
+  it("includes living well context in PT-BR", () => {
+    const data: ScienceDailyData = {
+      stories: [
+        {
+          title: "Walking more lowers disease risk",
+          url: "https://www.sciencedaily.com/releases/2026/04/test.htm",
+          description: "Daily walking study.",
+          publishedAt: "2026-04-19T10:00:00Z",
+        },
+      ],
+      fetchSuccess: true,
+    };
+    const result = buildLivingWellPrompt(data, "2026-04-19");
+    expect(result).toContain("bem-estar");
+    expect(result).toContain("Walking more lowers disease risk");
+  });
+
+  it("generates English variant", () => {
+    const data: ScienceDailyData = {
+      stories: [
+        {
+          title: "Test Story",
+          url: "https://www.sciencedaily.com/releases/2026/04/test.htm",
+          description: "Test.",
+          publishedAt: "2026-04-19T10:00:00Z",
+        },
+      ],
+      fetchSuccess: true,
+    };
+    const result = buildLivingWellPrompt(data, "2026-04-19", "en");
+    expect(result).toContain("wellness");
+  });
+});
+
+describe("buildMentalHealthPrompt", () => {
+  it("includes mental health context in PT-BR", () => {
+    const data: ScienceDailyData = {
+      stories: [
+        {
+          title: "New therapy for anxiety",
+          url: "https://www.sciencedaily.com/releases/2026/04/test.htm",
+          description: "CBT breakthrough.",
+          publishedAt: "2026-04-19T10:00:00Z",
+        },
+      ],
+      fetchSuccess: true,
+    };
+    const result = buildMentalHealthPrompt(data, "2026-04-19");
+    expect(result).toContain("saúde mental");
+    expect(result).toContain("New therapy for anxiety");
+  });
+
+  it("generates English variant", () => {
+    const data: ScienceDailyData = {
+      stories: [
+        {
+          title: "Test Story",
+          url: "https://www.sciencedaily.com/releases/2026/04/test.htm",
+          description: "Test.",
+          publishedAt: "2026-04-19T10:00:00Z",
+        },
+      ],
+      fetchSuccess: true,
+    };
+    const result = buildMentalHealthPrompt(data, "2026-04-19", "en");
+    expect(result).toContain("mental health");
+  });
+});
+
+describe("buildEducationPrompt", () => {
+  it("includes education context in PT-BR", () => {
+    const data: ScienceDailyData = {
+      stories: [
+        {
+          title: "AI tutoring improves outcomes",
+          url: "https://www.sciencedaily.com/releases/2026/04/test.htm",
+          description: "Study on AI in education.",
+          publishedAt: "2026-04-19T10:00:00Z",
+        },
+      ],
+      fetchSuccess: true,
+    };
+    const result = buildEducationPrompt(data, "2026-04-19");
+    expect(result).toContain("educação");
+    expect(result).toContain("AI tutoring improves outcomes");
+  });
+
+  it("generates English variant", () => {
+    const data: ScienceDailyData = {
+      stories: [
+        {
+          title: "Test Story",
+          url: "https://www.sciencedaily.com/releases/2026/04/test.htm",
+          description: "Test.",
+          publishedAt: "2026-04-19T10:00:00Z",
+        },
+      ],
+      fetchSuccess: true,
+    };
+    const result = buildEducationPrompt(data, "2026-04-19", "en");
+    expect(result).toContain("education");
+  });
+});
+
+describe("buildEngineeringPrompt", () => {
+  it("includes engineering context in PT-BR", () => {
+    const data: ScienceDailyData = {
+      stories: [
+        {
+          title: "New bridge design technique",
+          url: "https://www.sciencedaily.com/releases/2026/04/test.htm",
+          description: "Civil engineering advance.",
+          publishedAt: "2026-04-19T10:00:00Z",
+        },
+      ],
+      fetchSuccess: true,
+    };
+    const result = buildEngineeringPrompt(data, "2026-04-19");
+    expect(result).toContain("engenharia");
+    expect(result).toContain("New bridge design technique");
+  });
+
+  it("generates English variant", () => {
+    const data: ScienceDailyData = {
+      stories: [
+        {
+          title: "Test Story",
+          url: "https://www.sciencedaily.com/releases/2026/04/test.htm",
+          description: "Test.",
+          publishedAt: "2026-04-19T10:00:00Z",
+        },
+      ],
+      fetchSuccess: true,
+    };
+    const result = buildEngineeringPrompt(data, "2026-04-19", "en");
+    expect(result).toContain("engineering");
+  });
+});
+
+describe("buildAgriculturePrompt", () => {
+  it("includes agriculture context in PT-BR", () => {
+    const data: ScienceDailyData = {
+      stories: [
+        {
+          title: "Drought-resistant crop developed",
+          url: "https://www.sciencedaily.com/releases/2026/04/test.htm",
+          description: "GM crop milestone.",
+          publishedAt: "2026-04-19T10:00:00Z",
+        },
+      ],
+      fetchSuccess: true,
+    };
+    const result = buildAgriculturePrompt(data, "2026-04-19");
+    expect(result).toContain("agricultura");
+    expect(result).toContain("Drought-resistant crop developed");
+  });
+
+  it("generates English variant", () => {
+    const data: ScienceDailyData = {
+      stories: [
+        {
+          title: "Test Story",
+          url: "https://www.sciencedaily.com/releases/2026/04/test.htm",
+          description: "Test.",
+          publishedAt: "2026-04-19T10:00:00Z",
+        },
+      ],
+      fetchSuccess: true,
+    };
+    const result = buildAgriculturePrompt(data, "2026-04-19", "en");
+    expect(result).toContain("agriculture");
+  });
+});
+
+describe("buildEnvironmentalPrompt", () => {
+  it("includes environmental context in PT-BR", () => {
+    const data: ScienceDailyData = {
+      stories: [
+        {
+          title: "Ocean cleanup breakthrough",
+          url: "https://www.sciencedaily.com/releases/2026/04/test.htm",
+          description: "New filtering technique.",
+          publishedAt: "2026-04-19T10:00:00Z",
+        },
+      ],
+      fetchSuccess: true,
+    };
+    const result = buildEnvironmentalPrompt(data, "2026-04-19");
+    expect(result).toContain("ambientais");
+    expect(result).toContain("Ocean cleanup breakthrough");
+  });
+
+  it("generates English variant", () => {
+    const data: ScienceDailyData = {
+      stories: [
+        {
+          title: "Test Story",
+          url: "https://www.sciencedaily.com/releases/2026/04/test.htm",
+          description: "Test.",
+          publishedAt: "2026-04-19T10:00:00Z",
+        },
+      ],
+      fetchSuccess: true,
+    };
+    const result = buildEnvironmentalPrompt(data, "2026-04-19", "en");
+    expect(result).toContain("environmental");
+  });
+});
+
+describe("buildArchaeologyPrompt", () => {
+  it("includes archaeology context in PT-BR", () => {
+    const data: ScienceDailyData = {
+      stories: [
+        {
+          title: "Lost Roman city discovered",
+          url: "https://www.sciencedaily.com/releases/2026/04/test.htm",
+          description: "Excavation findings.",
+          publishedAt: "2026-04-19T10:00:00Z",
+        },
+      ],
+      fetchSuccess: true,
+    };
+    const result = buildArchaeologyPrompt(data, "2026-04-19");
+    expect(result).toContain("arqueologia");
+    expect(result).toContain("Lost Roman city discovered");
+  });
+
+  it("generates English variant", () => {
+    const data: ScienceDailyData = {
+      stories: [
+        {
+          title: "Test Story",
+          url: "https://www.sciencedaily.com/releases/2026/04/test.htm",
+          description: "Test.",
+          publishedAt: "2026-04-19T10:00:00Z",
+        },
+      ],
+      fetchSuccess: true,
+    };
+    const result = buildArchaeologyPrompt(data, "2026-04-19", "en");
+    expect(result).toContain("archaeology");
+  });
+});
+
+describe("buildSocialPrompt", () => {
+  it("includes social context in PT-BR", () => {
+    const data: ScienceDailyData = {
+      stories: [
+        {
+          title: "Income inequality study results",
+          url: "https://www.sciencedaily.com/releases/2026/04/test.htm",
+          description: "Economic research.",
+          publishedAt: "2026-04-19T10:00:00Z",
+        },
+      ],
+      fetchSuccess: true,
+    };
+    const result = buildSocialPrompt(data, "2026-04-19");
+    expect(result).toContain("sociais");
+    expect(result).toContain("Income inequality study results");
+  });
+
+  it("generates English variant", () => {
+    const data: ScienceDailyData = {
+      stories: [
+        {
+          title: "Test Story",
+          url: "https://www.sciencedaily.com/releases/2026/04/test.htm",
+          description: "Test.",
+          publishedAt: "2026-04-19T10:00:00Z",
+        },
+      ],
+      fetchSuccess: true,
+    };
+    const result = buildSocialPrompt(data, "2026-04-19", "en");
+    expect(result).toContain("social");
+  });
+});
+
+describe("buildOffbeatPrompt", () => {
+  it("includes offbeat context in PT-BR", () => {
+    const data: ScienceDailyData = {
+      stories: [
+        {
+          title: "Quantum systems remember and forget",
+          url: "https://www.sciencedaily.com/releases/2026/04/test.htm",
+          description: "Quantum weirdness.",
+          publishedAt: "2026-04-19T10:00:00Z",
+        },
+      ],
+      fetchSuccess: true,
+    };
+    const result = buildOffbeatPrompt(data, "2026-04-19");
+    expect(result).toContain("incomuns");
+    expect(result).toContain("Quantum systems remember and forget");
+  });
+
+  it("generates English variant", () => {
+    const data: ScienceDailyData = {
+      stories: [
+        {
+          title: "Test Story",
+          url: "https://www.sciencedaily.com/releases/2026/04/test.htm",
+          description: "Test.",
+          publishedAt: "2026-04-19T10:00:00Z",
+        },
+      ],
+      fetchSuccess: true,
+    };
+    const result = buildOffbeatPrompt(data, "2026-04-19", "en");
+    expect(result).toContain("offbeat");
   });
 });

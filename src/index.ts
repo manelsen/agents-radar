@@ -39,6 +39,15 @@ import {
   saveMemoryReport,
   save3dPrintingReport,
   saveSolarEnergyReport,
+  saveLivingWellReport,
+  saveMentalHealthReport,
+  saveEducationReport,
+  saveEngineeringReport,
+  saveAgricultureReport,
+  saveEnvironmentalReport,
+  saveArchaeologyReport,
+  saveSocialReport,
+  saveOffbeatReport,
 } from "./report-savers.ts";
 import { loadWebState, fetchSiteContent, type WebFetchResult, type WebState } from "./web.ts";
 import { fetchHnData, type HnData } from "./hn.ts";
@@ -49,8 +58,17 @@ import {
   fetchHackingData,
   fetchMemoryData,
   fetch3dPrintingData,
-  fetchSolarEnergyData,
   type ScienceDailyData,
+  fetchSolarEnergyData,
+  fetchLivingWellData,
+  fetchMentalHealthData,
+  fetchEducationData,
+  fetchEngineeringData,
+  fetchAgricultureData,
+  fetchEnvironmentalData,
+  fetchArchaeologyData,
+  fetchSocialData,
+  fetchOffbeatData,
 } from "./science-daily.ts";
 import { loadConfig } from "./config.ts";
 import { toCstDateStr, toUtcStr } from "./date.ts";
@@ -91,10 +109,19 @@ async function fetchAllData(
   memoryData: ScienceDailyData;
   data3dPrinting: ScienceDailyData;
   solarData: ScienceDailyData;
+  livingwellData: ScienceDailyData;
+  mentalhealthData: ScienceDailyData;
+  educationData: ScienceDailyData;
+  engineeringData: ScienceDailyData;
+  agricultureData: ScienceDailyData;
+  environmentalData: ScienceDailyData;
+  archaeologyData: ScienceDailyData;
+  socialData: ScienceDailyData;
+  offbeatData: ScienceDailyData;
 }> {
   const allConfigs = [AGENTS, ...AGENTS_PEERS];
   console.log(
-    `  Tracking: ${allConfigs.map((r) => r.id).join(", ")}, claude-code-skills, web, hn, arxiv, science, robotics, hacking, memory, 3dprinting, solar`,
+    `  Tracking: ${allConfigs.map((r) => r.id).join(", ")}, claude-code-skills, web, hn, arxiv, science, robotics, hacking, memory, 3dprinting, solar, livingwell, mentalhealth, education, engineering, agriculture, environmental, archaeology, social, offbeat`,
   );
 
   const [
@@ -109,6 +136,15 @@ async function fetchAllData(
     memoryData,
     data3dPrinting,
     solarData,
+    livingwellData,
+    mentalhealthData,
+    educationData,
+    engineeringData,
+    agricultureData,
+    environmentalData,
+    archaeologyData,
+    socialData,
+    offbeatData,
   ] = await Promise.all([
     Promise.all(
       allConfigs.map(async (cfg) => {
@@ -162,6 +198,15 @@ async function fetchAllData(
     fetchMemoryData().catch((): ScienceDailyData => ({ stories: [], fetchSuccess: false })),
     fetch3dPrintingData().catch((): ScienceDailyData => ({ stories: [], fetchSuccess: false })),
     fetchSolarEnergyData().catch((): ScienceDailyData => ({ stories: [], fetchSuccess: false })),
+    fetchLivingWellData().catch((): ScienceDailyData => ({ stories: [], fetchSuccess: false })),
+    fetchMentalHealthData().catch((): ScienceDailyData => ({ stories: [], fetchSuccess: false })),
+    fetchEducationData().catch((): ScienceDailyData => ({ stories: [], fetchSuccess: false })),
+    fetchEngineeringData().catch((): ScienceDailyData => ({ stories: [], fetchSuccess: false })),
+    fetchAgricultureData().catch((): ScienceDailyData => ({ stories: [], fetchSuccess: false })),
+    fetchEnvironmentalData().catch((): ScienceDailyData => ({ stories: [], fetchSuccess: false })),
+    fetchArchaeologyData().catch((): ScienceDailyData => ({ stories: [], fetchSuccess: false })),
+    fetchSocialData().catch((): ScienceDailyData => ({ stories: [], fetchSuccess: false })),
+    fetchOffbeatData().catch((): ScienceDailyData => ({ stories: [], fetchSuccess: false })),
   ]);
 
   return {
@@ -176,6 +221,15 @@ async function fetchAllData(
     memoryData,
     data3dPrinting,
     solarData,
+    livingwellData,
+    mentalhealthData,
+    educationData,
+    engineeringData,
+    agricultureData,
+    environmentalData,
+    archaeologyData,
+    socialData,
+    offbeatData,
   };
 }
 
@@ -282,6 +336,15 @@ async function main(): Promise<void> {
     memoryData,
     data3dPrinting,
     solarData,
+    livingwellData,
+    mentalhealthData,
+    educationData,
+    engineeringData,
+    agricultureData,
+    environmentalData,
+    archaeologyData,
+    socialData,
+    offbeatData,
   } = await fetchAllData(since, webState);
 
   const peerIds = new Set(AGENTS_PEERS.map((p) => p.id));
@@ -336,6 +399,15 @@ async function main(): Promise<void> {
     saveMemoryReport(memoryData, utcStr, dateStr, digestRepo, ft),
     save3dPrintingReport(data3dPrinting, utcStr, dateStr, digestRepo, ft),
     saveSolarEnergyReport(solarData, utcStr, dateStr, digestRepo, ft),
+    saveLivingWellReport(livingwellData, utcStr, dateStr, digestRepo, ft),
+    saveMentalHealthReport(mentalhealthData, utcStr, dateStr, digestRepo, ft),
+    saveEducationReport(educationData, utcStr, dateStr, digestRepo, ft),
+    saveEngineeringReport(engineeringData, utcStr, dateStr, digestRepo, ft),
+    saveAgricultureReport(agricultureData, utcStr, dateStr, digestRepo, ft),
+    saveEnvironmentalReport(environmentalData, utcStr, dateStr, digestRepo, ft),
+    saveArchaeologyReport(archaeologyData, utcStr, dateStr, digestRepo, ft),
+    saveSocialReport(socialData, utcStr, dateStr, digestRepo, ft),
+    saveOffbeatReport(offbeatData, utcStr, dateStr, digestRepo, ft),
   ]);
 
   // 5. Generate highlights for Telegram notification
@@ -355,6 +427,15 @@ async function main(): Promise<void> {
     ["ai-memory", "ai-memory.md"],
     ["ai-3dprinting", "ai-3dprinting.md"],
     ["ai-solar", "ai-solar.md"],
+    ["ai-livingwell", "ai-livingwell.md"],
+    ["ai-mentalhealth", "ai-mentalhealth.md"],
+    ["ai-education", "ai-education.md"],
+    ["ai-engineering", "ai-engineering.md"],
+    ["ai-agriculture", "ai-agriculture.md"],
+    ["ai-environmental", "ai-environmental.md"],
+    ["ai-archaeology", "ai-archaeology.md"],
+    ["ai-social", "ai-social.md"],
+    ["ai-offbeat", "ai-offbeat.md"],
   ] as const) {
     const content = readReport(file);
     if (content) zhReports[id] = content;

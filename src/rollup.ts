@@ -31,6 +31,15 @@ const ROLLUP_SOURCES = [
   "ai-memory",
   "ai-3dprinting",
   "ai-solar",
+  "ai-livingwell",
+  "ai-mentalhealth",
+  "ai-education",
+  "ai-engineering",
+  "ai-agriculture",
+  "ai-environmental",
+  "ai-archaeology",
+  "ai-social",
+  "ai-offbeat",
 ];
 
 // ---------------------------------------------------------------------------

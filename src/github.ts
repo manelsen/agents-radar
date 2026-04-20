@@ -206,6 +206,15 @@ const LABEL_COLORS: Record<string, string> = {
   memory: "9370db",
   "3dprinting": "ff8c00",
   solar: "ffd700",
+  livingwell: "2ecc71",
+  mentalhealth: "27ae60",
+  education: "8e44ad",
+  engineering: "95a5a6",
+  agriculture: "16a085",
+  environmental: "1abc9c",
+  archaeology: "d35400",
+  social: "2c3e50",
+  offbeat: "8e44ad",
 };
 /**
  * Break GitHub URLs in issue body to prevent cross-repository references.
