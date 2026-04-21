@@ -1,0 +1,114 @@
+{
+  "ai-cli": [
+    "NullClaw gateway backoff fix",
+    "Zig 0.16 compat issue open",
+    "Tailscale integration #826",
+    "Hermes Agent launch",
+    "NanoBot HKUDS project",
+    "ZeroClaw open source"
+  ],
+  "ai-web": [
+    "Anthropic AWS $100B deal",
+    "5 GW Trainium compute",
+    "ChatGPT Images 2.0",
+    "Claude partnership expansion",
+    "OpenAI Codex global",
+    "338 Anthropic articles"
+  ],
+  "ai-hn": [
+    "ChatGPT Images 2.0 116pts",
+    "Haiku 4.5 supera Opus 4.7",
+    "GoModel gateway 136pts",
+    "Anthropic Amazon $100B",
+    "AI monetization debates",
+    "AI tools interest"
+  ],
+  "ai-arxiv": [
+    "MathNet benchmark olymp",
+    "GSQ quantization 2-3 bits",
+    "BLF Bayes system",
+    "LPSR error correction",
+    "PINNs physics neural",
+    "Multimodal reasoning"
+  ],
+  "ai-science": [
+    "AI personas infiltration risk",
+    "Journalists AI caution",
+    "Artificial neurons brain",
+    "Quantum AI chaos prediction",
+    "Robot swarm randomness",
+    "Melanoma AI detection"
+  ],
+  "ai-robotics": [
+    "Artificial brain neurons",
+    "Quantum AI prediction",
+    "Robot swarm efficiency",
+    "Swedish melanoma AI study",
+    "Brain machine interface",
+    "AI capabilities advances"
+  ],
+  "ai-hacking": [
+    "Orbitronics electrons control",
+    "Graphene frictionless flow",
+    "Quantum AI prediction",
+    "Post-silicon computing",
+    "Intrusion detection AI",
+    "Side-channel resistance"
+  ],
+  "ai-livingwell": [
+    "Olive oil cognitive boost",
+    "10000 steps 40% less mortality",
+    "Vitamin B7 cancer target",
+    "Fruit veg lung cancer risk",
+    "Cognitive enrichment Alzheimer",
+    "Cell death protein aging"
+  ],
+  "ai-engineering": [
+    "Dolomite lab growth solved",
+    "200 year mineral puzzle",
+    "Crystal growth breakthrough",
+    "Electron beam technique",
+    "Nanotech materials",
+    "High-tech materials manufacturing"
+  ],
+  "ai-agriculture": [
+    "95% termite mortality pinene",
+    "California bee Varroa resist",
+    "Caffeine ant learning 38%",
+    "Bioattractant pest control",
+    "Natural pesticide design",
+    "Genetic pollinator resistance"
+  ],
+  "ai-environmental": [
+    "Greenland glacier melted 7k",
+    "3100 surge glaciers risk",
+    "Ocean microbes methane",
+    "River delta sinking",
+    "Sponges microplastic fibers",
+    "Ozone layer chemicals"
+  ],
+  "ai-archaeology": [
+    "Deinosuchus skeleton reveal",
+    "550M year sponge fossil",
+    "Dinosaur croc ate dinos",
+    "Soft body evolution mystery",
+    "Cretaceous predator recon",
+    "Prehistoric ecosystem insights"
+  ],
+  "ai-social": [
+    "Humans geo-force planet",
+    "Anthropocene positive change",
+    "AI journalism caution",
+    "Collective cooperation power",
+    "Media AI representation",
+    "Transparent AI policy"
+  ],
+  "ai-offbeat": [
+    "Electric tree glow storm",
+    "Acid kills superbugs",
+    "Vitamin B7 cancer target",
+    "Nanotyrannus distinct T.rex",
+    "Zombie liver cells cure",
+    "Deinosuchus skeleton reveal"
+  ]
+}
