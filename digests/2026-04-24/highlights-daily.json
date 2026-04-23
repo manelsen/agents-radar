@@ -1,0 +1,114 @@
+{
+  "ai-agents": [
+    "NullClaw: 9 issues, 1 PR em aberto",
+    "7 projetos cobrados: NanoBot, Hermes",
+    "ZeroClaw, IronClaw, PicoClaw em destaque",
+    "PR #863: tabela colorida para CLI",
+    "Problemas recorrentes com Matrix/Telegram",
+    "Nenhuma release publicada hoje"
+  ],
+  "ai-web": [
+    "Anthropic: postmortem do Claude Code",
+    "3 incidentes causaram queda de qualidade",
+    "OpenAI sinaliza lançamento do GPT-5.5",
+    "System Card e Bug Bounty para GPT-5.5",
+    "ChatGPT foca em profissionais de saúde",
+    "6 novos artigos da OpenAI publicados"
+  ],
+  "ai-hn": [
+    "GPT-5.5 domina: 730 pts, 350 comentários",
+    "Postmortem Anthropic gera debate intenso",
+    "Críticas à metodologia de avaliação",
+    "Anthropic:估值 bilionário em especulação",
+    "OpenAI: ferramenta de máscara PII",
+    "Escepticismo saudável na comunidade"
+  ],
+  "ai-arxiv": [
+    "SpeechParaLing-Bench: novo benchmark",
+    "OMIBench: raciocínio com múltiplas imagens",
+    "LLMs desenvolvem representações numéricas idênt",
+    "MGDA-Decoupled: otimização multi-objetivo",
+    "COMPASS: fine-tuning multilíngue contínuo",
+    "SWE-chat: dados reais de agentes de código"
+  ],
+  "ai-science": [
+    "Enxames de IA ameaçam democracia",
+    "Neurônios artificiais se comunicam com cérebro",
+    "IA quântica prevê caos com mais precisão",
+    "Neuroengenharia: avanço em interfaces cerebrais",
+    "Estudo questiona linguagem antropomórfica",
+    "Deepfakes e fake news como alertas antecipados"
+  ],
+  "ai-robotics": [
+    "Chip neuromórfico corta energia em 70%",
+    "IA descobre física em plasmas com 99% precisão",
+    "Neurônios artificiais comunicam com cérebro",
+    "Computação quântica melhora previsão de caos",
+    "Robôs autônomos mais eficientes com hAFnO",
+    "Descoberta de novas leis físicas por IA"
+  ],
+  "ai-hacking": [
+    "Orbitrônica: controle de elétrons sem magnetos",
+    "Fônons quirais abrem nova fronteira",
+    "Quantum AI supera modelos convencionais",
+    "Processamento de dados via momento orbital",
+    "Criptografia pode exigir rethink completo",
+    "Detecção antecipada de ataques sofisticados"
+  ],
+  "ai-livingwell": [
+    "SuperAgers: memória de 50 anos aos 80",
+    "Proteína de morte celular acelera envelhecimento",
+    "Ozempic: reset intestinal mantém perda de peso",
+    "Azeite de oliva melhora cognição",
+    "Exercício físico é pilar da longevidade",
+    "Gordura hepática: nova terapia com vitamina B7"
+  ],
+  "ai-engineering": [
+    "IA descobre física em plasmas a 99%",
+    "Dolomita finalmente cresce em laboratório",
+    "Erro de 150 anos em cristalografia corrigido",
+    "Simulação e pulsos de elétrons usados",
+    "Descoberta de padrões em matéria complexa",
+    "Nova era de descobertas com IA generativa"
+  ],
+  "ai-agriculture": [
+    "Cupins: 95% mortalidade com pineno natural",
+    "Abelhas híbridas resistem ao ácaro Varroa",
+    "Formigas dopadas com cafeína buscam 38% mais rápido",
+    "Pineno substitui fumigação tóxica",
+    "Melhoria genética em polinizadores",
+    "Semioquímicos substituem agrotóxicos"
+  ],
+  "ai-environmental": [
+    "Deltas fluviais afundamglobalmente",
+    "Groenlândia derreteu completamente há 7.000 anos",
+    "3.100 glaciares em risco de inundação",
+    "Extração de água causa Subsidência",
+    "Célula de combustível gera energia de microrganismos",
+    "Sedimentos reduzidos agravam situação"
+  ],
+  "ai-archaeology": [
+    "Réptil de 289 Ma respira com costelas",
+    "DNA revela substituição populacional em Paris",
+    "Neandertais mantinham redes genéticas amplas",
+    "Peste primitiva identificada em túmulo",
+    "Evolução do sistema respiratório terrestre",
+    "Conexões Europa-Cáucaso em neandertais"
+  ],
+  "ai-social": [
+    "Humanidade cria nova força da natureza",
+    "Antropoceno como força coletiva",
+    "Jornalistas cautelosos com termos de IA",
+    "Mídia evita atribuições excessivamente humanas",
+    "Ação coordenada pode ser motor positivo",
+    "Governança ambiental em debate"
+  ],
+  "ai-offbeat": [
+    "IA descobre física no quarto estado da matéria",
+    "Toro: erro de matemática de 150 anos corrigido",
+    "Descargas elétricas vistas em árvores na natureza",
+    "DNA de Doggerland: florestas sob o North Sea",
+    "Glaciares ocultos desafiam modelagem climática",
+    "Topologia global difere da local"
+  ]
+}
