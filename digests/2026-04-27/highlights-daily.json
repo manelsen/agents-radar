@@ -1,0 +1,90 @@
+{
+  "ai-agents": [
+    "NullClaw bug: gateway 100% CPU no WSL2",
+    "7 projetos de agentes IA cobertos",
+    "Último release NullClaw: 2026.4.17",
+    "Zero atividade de PR em 24h",
+    "Issue #870: busy loop no gateway",
+    "Comunidade reporta instabilidade no NullClaw"
+  ],
+  "ai-hn": [
+    "OpenAI questiona validade do SWE-bench",
+    "Anthropic tem erro em argumento sobre SWE-bench",
+    "Debate: Claude Opus 4.7 foi nerfeito?",
+    "181 pontos sobre métricas de codificação",
+    "Custos de IA superando trabalho humano",
+    "Musk vs Altman: disputa judicial continua"
+  ],
+  "ai-science": [
+    "Personas de IA infiltram comunidades online",
+    "Coordenação de Personas cria falso consenso",
+    "Impacto em eleições globais em massa",
+    "Adaptação automática de mensagens",
+    "Redes já detectadas em eleições",
+    "Foco muda para dinâmica de grupo"
+  ],
+  "ai-robotics": [
+    "IA descobre física em plasma empoeirado",
+    "99% precisão em forças não recíprocas",
+    "Chips de háfnio: -70% energia IA",
+    "Neuromórfico: processa e armazena junto",
+    "Robôs mais autônomos e duradouros",
+    "Redes neurais + rastreamento 3D"
+  ],
+  "ai-hacking": [
+    "Tornados ópticos com cristais líquidos",
+    "Avanço para comunicação quântica",
+    "Torons geram feixes estáveis",
+    "Potencial para QKD e criptografia",
+    "Pós-quântica: transição acelerada",
+    "Feixes com propriedades controladas"
+  ],
+  "ai-livingwell": [
+    "EPA do peixe pode prejudicar cérebro",
+    "SuperAgers: memória 50 anos mais jovem",
+    "Grafeno elimina bactérias resistentes",
+    "Bactéria linked à depressão",
+    "Vírus oculto no intestino e câncer",
+    "Reset intestinal após Ozempic"
+  ],
+  "ai-engineering": [
+    "Partícula exótica explica origem da massa",
+    "Dolomita crescida após 2 séculos",
+    "IA descobre física no 4º estado",
+    "Tornados ópticos:晶 líquido",
+    "Física de partículas: nova evidência",
+    "Comunicações quânticas avançadas"
+  ],
+  "ai-agriculture": [
+    "Verme do mezcal identificado via DNA",
+    "Pineno mata 95% dos cupins",
+    "Abelhas híbridas resistem ao Varroa",
+    "Abelhas: baixa carga de Varroa",
+    "Abordagem natural sem fumigação",
+    "Híbridas da Califórnia: resistente"
+  ],
+  "ai-environmental": [
+    "Golfo do Panamá: falha no upwelling",
+    "Deltas afundam mais rápido que mar sobe",
+    "África mais próxima de fragmentação",
+    "Microplásticos: 20x mais de terra",
+    "Cogumelo ostra dourado nos EUA",
+    "Resfriamento sem gases de estufa"
+  ],
+  "ai-archaeology": [
+    "Fósseis 11-16 Ma na Austrália",
+    "Réptil de 289 Ma respira terrestre",
+    "Cefalópodes de 20m no Cretáceo",
+    "Serpente com membros posteriores",
+    "DNA antigo reescreve Europa",
+    "Peste de Justiniano: cova coletiva"
+  ],
+  "ai-social": [
+    "Peste de Justiniano: cova coletiva",
+    "Centenas de vítimas em dias",
+    "Pandemias forçaram concentração",
+    "Colapsos comunitários documentados",
+    "Jordânia: 1.500 anos de história",
+    "Lições para epidemias atuais"
+  ]
+}
