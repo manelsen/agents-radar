@@ -6,7 +6,294 @@
     <description>Resumo diário do ecossistema open source de IA · Daily AI ecosystem digest</description>
     <language>pt-BR</language>
     <atom:link href="https://manelsen.github.io/agents-radar/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Sun, 26 Apr 2026 20:38:39 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 27 Apr 2026 20:57:25 +0000</lastBuildDate>
+    <item>
+      <title>Relatório semanal de ferramentas de IA 2026-04-28</title>
+      <link>https://manelsen.github.io/agents-radar/#2026-04-28/ai-weekly</link>
+      <guid isPermaLink="true">https://manelsen.github.io/agents-radar/#2026-04-28/ai-weekly</guid>
+      <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
+      <description>Relatório semanal do ecossistema de ferramentas de IA 2026-W18 Cobertura: 2026-04-21 ~ 2026-04-27 | Gerado em: 2026-04-27 20:56 UTC Recapitulação Semanal do Ecossistema de Ferramentas de IA Período: 2026-W18 (21–27 de abril) | Analista: Open Source Intelligence 1. Principais Histórias da Semana A semana de 21 a 27 de abril de 2026 foi marcada por três developments que redefinem o cenário competitivo da IA. Parceria Anthropic-Amazon de US$ 100 bilhões — O anúncio de expansão massiva da colaboraçã...</description>
+      <content:encoded><![CDATA[<h1>Relatório semanal do ecossistema de ferramentas de IA 2026-W18</h1>
+<blockquote>
+<p>Cobertura: 2026-04-21 ~ 2026-04-27 | Gerado em: 2026-04-27 20:56 UTC</p>
+</blockquote>
+<hr>
+<h1>Recapitulação Semanal do Ecossistema de Ferramentas de IA</h1>
+<p><strong>Período:</strong> 2026-W18 (21–27 de abril) | <strong>Analista:</strong> Open Source Intelligence</p>
+<hr>
+<h2>1. Principais Histórias da Semana</h2>
+<p>A semana de 21 a 27 de abril de 2026 foi marcada por três developments que redefinem o cenário competitivo da IA.</p>
+<p><strong>Parceria Anthropic-Amazon de US$ 100 bilhões</strong> — O anúncio de expansão massiva da colaboração, prevendo até 5 GW de capacidade computacional ao longo de uma década, posiciona a Anthropic como fornecedora de infraestrutura crítica para mercados regulados, especialmente no Japão através da parceria com a NEC. O Project Rainier emerge como um dos maiores clusters de compute do mundo.</p>
+<p><strong>GPT-5.5 na API</strong> — A OpenAI lançou sua nova família de modelos com documentação completa, gerando intenso escrutínio técnico sobre benchmarks. A comunidade HN reportou scores ausentes no ARC-AGI-3, reacendendo debates sobre metodologias de avaliação.</p>
+<p><strong>Enxames de IA como ameaça democrática</strong> — Pesquisadores alertaram que personas autônomas de IA já infiltram comunidades online, criando falsa sensação de consenso em escala massiva. Sinais apareceram em eleições recentes, elevando urgência regulatória.</p>
+<hr>
+<h2>2. Progresso das Ferramentas CLI</h2>
+<h3>NullClaw (projeto principal monitorado)</h3>
+<p>O ecossistema NullClaw demonstrou <strong>momentum de desenvolvimento consistente</strong> ao longo da semana:</p>
+<table>
+<thead>
+<tr>
+<th>Dia</th>
+<th>Issues</th>
+<th>PRs</th>
+<th>Destaque</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>21/04</td>
+<td>2</td>
+<td>4</td>
+<td>Refatoração de concorrência (PR #855) — modelo serial → concorrência limitada</td>
+</tr>
+<tr>
+<td>22/04</td>
+<td>2</td>
+<td>2</td>
+<td>Fixes críticos: backoff no accept-loop (#853) e compat Zig 0.16 (#858)</td>
+</tr>
+<tr>
+<td>23/04</td>
+<td>7</td>
+<td>0</td>
+<td>Documentação Tailscale (#826) com 13 comentários</td>
+</tr>
+<tr>
+<td>24/04</td>
+<td>9</td>
+<td>1</td>
+<td>Tabela colorida para capabilities CLI (#863)</td>
+</tr>
+<tr>
+<td>25/04</td>
+<td>4</td>
+<td>11</td>
+<td>11 PRs do mesmo autor (manelsen) — maior volume da semana</td>
+</tr>
+<tr>
+<td>26/04</td>
+<td>4</td>
+<td>1</td>
+<td>Merge do PR web_search, bug accept4 evolui para #870</td>
+</tr>
+<tr>
+<td>27/04</td>
+<td>1</td>
+<td>0</td>
+<td>Issue de CPU 100% no WSL2 — baixa atividade</td>
+</tr>
+</tbody></table>
+<p><strong>Arquitetura destaque:</strong> A refatoração do modelo de concorrência (PR #855) representa mudança arquitetural significativa, migrando de processamento serial para preempção de sessões ocupadas — essencial para gateways com múltiplos canais (Telegram, Matrix, WhatsApp).</p>
+<p><strong>Bugs críticos resolvidos:</strong></p>
+<ul>
+<li><code>accept4</code> busy loop consumindo 100% CPU em Raspberry Pi 5 e WSL2</li>
+<li>Compatibilidade com migração Zig 0.16 (hang em <code>/health</code> e <code>/ready</code>)</li>
+<li>Robustez em hardware sem RTC (PogoPlug V4)</li>
+</ul>
+<hr>
+<h2>3. Ecossistema de Agentes de IA</h2>
+<p>O ecossistema monitored apresenta <strong>consolidação de padrões</strong> e <strong>expansão de capabilities</strong>:</p>
+<h3>Tendências observadas</h3>
+<p><strong>Memory layers open source</strong> — Três posts de alto engajamento (214+, 157+ pontos HN) demonstram demanda clara por persistência de estado em agentes. Ferramentas como &quot;A Karpathy-style LLM wiki your agents maintain&quot; e camadas de memória para replicar Claude/ChatGPT attracted atenção significativa.</p>
+<p><strong>A2A (Agent-to-Agent) protocol</strong> — Progresso hint forwarding em streams (PR #844 no NullClaw) indica amadurecimento de comunicação entre agentes.</p>
+<p><strong>Agent Skills RFC 0.2.0</strong> — Suporte a validação SHA256 para skills (PR #831) sinaliza movimento toward padronização de extensibilidade.</p>
+<h3>Novos entrantes observados (HN)</h3>
+<table>
+<thead>
+<tr>
+<th>Ferramenta</th>
+<th>Descrição</th>
+<th>Engajamento</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>VT Code</td>
+<td>TUI coding agent multi-provider</td>
+<td>Inicial</td>
+</tr>
+<tr>
+<td>Broccoli</td>
+<td>One-shot coding agent on cloud</td>
+<td>31 pts</td>
+</tr>
+<tr>
+<td>GoModel</td>
+<td>AI Gateway open-source em Go</td>
+<td>136 pts, 51 comments</td>
+</tr>
+<tr>
+<td>Daemons</td>
+<td>Cleanup pós-execução de agentes</td>
+<td>43 pts</td>
+</tr>
+<tr>
+<td>CrabTrap</td>
+<td>Proxy HTTP LLM-as-a-judge</td>
+<td>Inicial</td>
+</tr>
+</tbody></table>
+<p><strong>Sinal:</strong> A comunidade open source está convergindo para ferramentas de <strong>observabilidade e infraestrutura</strong> (gateways, memory layers, cleanup) mais do que novos frameworks de agent.</p>
+<hr>
+<h2>4. Tendências Open Source</h2>
+<h3>Hardware neuromórfico</h3>
+<p>Chip baseado em óxido de háfnio demonstrou <strong>redução de 70% no consumo energético</strong> de sistemas de IA. A capacidade de processar e armazenar informação simultaneamente, como neurônios biológicos, viabiliza robôs mais autônomos em campo.</p>
+<h3>IA descobrindo física</h3>
+<p>Redes neurais specially designed revelaram padrões ocultos em plasmas empoeirados (&quot;quarto estado da matéria&quot;) com <strong>mais de 99% de precisão</strong>, identificando forças não recíprocas que desafiavam modelos convencionais.</p>
+<h3>Cristalografia</h3>
+<p>Após dois séculos, scientists finally grew dolomita em laboratório através de simulações precisas e pulsos de feixe de elétrons — demonstrando convergência entre simulação computacional e engenharia de materiais.</p>
+<h3>Controle biológico de pragas</h3>
+<p>Pineno (composto natural de pinho) elevou eficácia de iscas contra cupins de 70% para <strong>95%</strong>, sem fumigação tóxica. Cafeína demonstrou melhorar memória de formigas argentinas invasoras em 38%, indicando potencial para iscas mais eficazes.</p>
+<hr>
+<h2>5. Debates da Comunidade HN</h2>
+<h3>Controversías de alto impacto</h3>
+<p><strong>Claude Code removido silenciosamente do plano Pro</strong> (600+ comentários)
+— Usuários questionaram transparência da Anthropic sobre mudanças no modelo. A empresa respondeu com postmortem detalhado确认indo três incidentes separados ao longo de março: redução do reasoning effort default, clear de pensamentos em sessões idle, e mudanças no Claude Agent SDK.</p>
+<p><strong>Mythos e vulnerabilidades no Firefox</strong> (271 zero-days encontrados)
+— A capacidade de detecção de vulnerabilidades do modelo levantou questões sobre uso responsável e acesso não autorizado.</p>
+<p><strong>SWE-bench Verified saturado?</strong>
+— A OpenAI questionou a validade do benchmark, gerando intenso debate sobre métricas de capacidade de codificação e possível viés em avaliações.</p>
+<h3>Temas recorrentes</h3>
+<table>
+<thead>
+<tr>
+<th>Tema</th>
+<th>Sentimento</th>
+<th>Volume</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Precificação de modelos</td>
+<td>Frustração crescente</td>
+<td>Alto</td>
+</tr>
+<tr>
+<td>Fadiga de interação com LLMs</td>
+<td>Preocupação subterránea</td>
+<td>Moderado</td>
+</tr>
+<tr>
+<td>Ética da Anthropic (banimentos, Mythos)</td>
+<td>Polarizado</td>
+<td>Alto</td>
+</tr>
+<tr>
+<td>Alternativas open source a Claude/ChatGPT</td>
+<td>Otimismo cauteloso</td>
+<td>Moderado</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>6. Atualizações Oficiais</h2>
+<h3>Anthropic / Claude</h3>
+<table>
+<thead>
+<tr>
+<th>Data</th>
+<th>Conteúdo</th>
+<th>Relevância</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>20/04</td>
+<td>Expansão Amazon (5GW, $100B)</td>
+<td>Infraestrutura massiva</td>
+</tr>
+<tr>
+<td>21/04</td>
+<td>Claude Opus 4.7 + safeguards cibersegurança</td>
+<td>Modelo + segurança</td>
+</tr>
+<tr>
+<td>23/04</td>
+<td>Postmortem Claude Code quality</td>
+<td>Transparência</td>
+</tr>
+<tr>
+<td>24/04</td>
+<td>Election safeguards update</td>
+<td>Responsabilidade</td>
+</tr>
+<tr>
+<td>25/04</td>
+<td>Pesquisa 81K usuários sobre economia da IA</td>
+<td>Dados primários</td>
+</tr>
+<tr>
+<td>25/04</td>
+<td>Post sobre ruído em benchmarks de agentes</td>
+<td>Metodologia</td>
+</tr>
+</tbody></table>
+<p><strong>Estratégia visível:</strong> Posicionamento como parceira de confiança para infraestrutura crítica e mercados regulados, com comunicação proativa sobre riscos (eleições, benchmarks).</p>
+<h3>OpenAI</h3>
+<table>
+<thead>
+<tr>
+<th>Data</th>
+<th>Conteúdo</th>
+<th>Relevância</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>21-24/04</td>
+<td>GPT-5.5 na API + GPT-5.5 Bio Bug Bounty</td>
+<td>Modelo principal</td>
+</tr>
+<tr>
+<td>22/04</td>
+<td>ChatGPT Images 2.0</td>
+<td>Multimodalidade</td>
+</tr>
+<tr>
+<td>22/04</td>
+<td>Workspace Agents</td>
+<td>Automação enterprise</td>
+</tr>
+<tr>
+<td>22/04</td>
+<td>Codex global expansion</td>
+<td>Mercado internacional</td>
+</tr>
+<tr>
+<td>24/04</td>
+<td>Ferramenta de máscara PII</td>
+<td>Privacidade</td>
+</tr>
+</tbody></table>
+<p><strong>Observação:</strong> Ausência de conteúdo substantivo em 23 e 25/04 indica possível preparação de anúncio maior.</p>
+<hr>
+<h2>7. Sinais para a Próxima Semana</h2>
+<h3>Fortes</h3>
+<ol>
+<li><p><strong>Infraestrutura como diferencial competitivo</strong> — A parceria Anthropic-Amazon estabelece novo paradigma de escala. Espera-se que a OpenAI responda com anúncios de capacidade similar.</p>
+</li>
+<li><p><strong>Agent memory layers amadurecendo</strong> — Com múltiplos projetos open source atingindo alta votação, a persistência de estado em agentes está tornando-se feature esperado, não diferencial.</p>
+</li>
+<li><p><strong>Convergência neuromórfica</strong> — Chip de 70% menor consumo energy demonstra viabilidade comercial. Próxima fronteira: integração com robótica móvel.</p>
+</li>
+</ol>
+<h3>Moderados</h3>
+<ol start="4">
+<li><p><strong>Debate sobre benchmarks intensificará</strong> — A contestação do SWE-bench Verified pela OpenAI sinaliza preparação para novos standards de avaliação mais robustos.</p>
+</li>
+<li><p><strong>Enxames de IA em eleições</strong> — Com ano eleitoral (EUA), aumentam pressões regulatórias e demandas por detecção de personas automatizadas.</p>
+</li>
+<li><p><strong>NullClaw em fase de consolidação</strong> — Volume alto de PRs sugere release iminente (provável versão 2026.5.x), consolidando melhorias de estabilidade e concorrência.</p>
+</li>
+</ol>
+<h3>A monitorar</h3>
+<ol start="7">
+<li><p><strong>Segurança do Mythos</strong> — Acesso não autorizado e vulnerabilidades encontradas podem gerar comunicados de segurança ou mudanças de política.</p>
+</li>
+<li><p><strong>Precificação GPT-5.5</strong> — Detalhes de pricing influencerão adoção enterprise nas próximas semanas.</p>
+</li>
+</ol>
+<hr>
+<p><strong>Metodologia:</strong> Síntese de 56 resumos diários (8 categorias × 7 dias), cobrindo 7 projetos de agentes, 30+ posts HN/dia, e atualizações oficiais de Anthropic e OpenAI.</p>
+<p><em>Gerado em: 2026-04-27 20:33 UTC</em></p>
+<hr>
+<p><em>Este resumo é gerado automaticamente por <a href="https://github.com/manelsen/agents-radar">agents-radar</a>.</em></p>
+]]></content:encoded>
+    </item>
     <item>
       <title>Relatório diário do ecossistema de agentes de IA 2026-04-27</title>
       <link>https://manelsen.github.io/agents-radar/#2026-04-27/ai-agents</link>
@@ -10849,40 +11136,6 @@ Pesquisa revela que redatores de notícias são mais cautelosos do que o esperad
 <li><p><strong>“AI just discovered new physics in the fourth state of matter”</strong> – 2026‑04‑23<br><em>Justificativa</em>: Ilustra o poder da IA de extrair leis físicas desconhecidas; a abordagem pode ser adaptada para modelar interações de partículas em ambientes robóticos complexos (por exemplo, nuvens de poeira ou plasmas em reatores).<br>Link: <a href="https://www.sciencedaily.com/releases/2026/04/260422044635.htm">https://www.sciencedaily.com/releases/2026/04/260422044635.htm</a></p>
 </li>
 </ol>
-<hr>
-<p><em>Este resumo é gerado automaticamente por <a href="https://github.com/manelsen/agents-radar">agents-radar</a>.</em></p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>Cibersegurança no ScienceDaily 2026-04-25</title>
-      <link>https://manelsen.github.io/agents-radar/#2026-04-25/ai-hacking</link>
-      <guid isPermaLink="true">https://manelsen.github.io/agents-radar/#2026-04-25/ai-hacking</guid>
-      <pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate>
-      <description>Resumo diário de Cibersegurança no ScienceDaily 2026-04-25 Fonte: ScienceDaily | 2 histórias | Gerado em: 2026-04-24 20:41 UTC Resumo ScienceDaily — Cibersegurança 1. Destaques do dia A revolução na computação pode estar mais próxima do que se imagina. Cientistas descobriram que &amp;quot;fônons quirais&amp;quot; — vibrações atômicas minúsculas — podem transferir movimento diretamente aos elétrons, abrindo caminho para a &amp;quot;orbitrônica&amp;quot;, onde dados seriam processados pela órbita dos elétrons em ...</description>
-      <content:encoded><![CDATA[<h1>Resumo diário de Cibersegurança no ScienceDaily 2026-04-25</h1>
-<blockquote>
-<p>Fonte: <a href="https://www.sciencedaily.com/news/computers_math/hacking/">ScienceDaily</a> | 2 histórias | Gerado em: 2026-04-24 20:41 UTC</p>
-</blockquote>
-<hr>
-<h1>Resumo ScienceDaily — Cibersegurança</h1>
-<h2>1. Destaques do dia</h2>
-<p>A revolução na computação pode estar mais próxima do que se imagina. Cientistas descobriram que &quot;fônons quirais&quot; — vibrações atômicas minúsculas — podem transferir movimento diretamente aos elétrons, abrindo caminho para a &quot;orbitrônica&quot;, onde dados seriam processados pela órbita dos elétrons em vez de carga ou spin. Paralelamente, a combinação de computação quântica com inteligência artificial demonstrou capacidade surpreendente de prever sistemas caóticos complexos, superando modelos tradicionais com muito menos memória. Ambos os avanços indicam uma mudança paradigmática na forma como processamos informação — com implicações diretas para a segurança digital do futuro.</p>
-<h2>2. Principais histórias</h2>
-<p><strong>Computação pós-semiconductor e segurança</strong>
-A pesquisa sobre orbitrônica representa uma ruptura fundamental com a eletrônica tradicional. Sem necessidade de magnetos, baterias ou eletricidade convencional para controlar elétrons, surgem tanto oportunidades quanto vulnerabilidades unprecedented. Sistemas baseados em orbitrônica poderiam ser intrinsecamente resistentes a certos tipos de ataques eletromagnéticos, mas também apresentariam superfícies de ataque inteiramente novas.</p>
-<p><strong>Inteligência artificial quântica</strong>
-A fusão de computação quântica com IA para previsão de caos tem aplicação direta em cibersegurança: detecção de anomalias em redes, modelagem de comportamento de ameaças e previsão de ataques antes que ocorram. A eficiência memória superior é particularmente relevante para sistemas de segurança em tempo real.</p>
-<h2>3. Sinal de pesquisa</h2>
-<p>Essas pesquisas sinalizam duas tendências críticas para a cibersegurança das próximas décadas. Primeiro, a computação além do silício — especificamente a orbitrônica — poderá tornar obsoletos muitos mecanismos de segurança baseados em propriedades eletromagnéticas tradicionais, exigindo novos paradigmas de proteção. Segundo, a IA quântica para previsão de caos indica que a capacidade de antecipar ameaças digitais avançará significativamente, potencialmente equilibrando a balança entre atacantes e defensores. Contudo, essas mesmas tecnologias representam riscos: sistemas quânticos poderiam quebrar criptografia atual, e a complexidade dos novos hardwares criará falhas de segurança ainda desconhecidas. A comunidade de cibersegurança deve começar agora a desenvolver defesas &quot;quantum-safe&quot; e compreender as vulnerabilidades da orbitrônica.</p>
-<h2>4. Vale ler</h2>
-<ol>
-<li><p><strong><a href="https://www.sciencedaily.com/releases/2026/04/260417224455.htm">Quantum AI just got shockingly good at predicting chaos</a></strong> — Essencial para entender como a previsão de ameaças pode ser transformada pela computação quântica; implica diretamente em sistemas de detecção de intrusão e resposta automática.</p>
-</li>
-<li><p><strong><a href="https://www.sciencedaily.com/releases/2026/04/260417224509.htm">Scientists just found a way to control electrons without magnets</a></strong> — Fundamental para antecipar mudanças no paradigma de segurança; processadores baseados em orbitrônica exigirão redesign completo de estratégias de proteção de hardware.</p>
-</li>
-</ol>
-<hr>
-<p><em>Resumo gerado em 2026-04-25 | Fontes: ScienceDaily</em></p>
 <hr>
 <p><em>Este resumo é gerado automaticamente por <a href="https://github.com/manelsen/agents-radar">agents-radar</a>.</em></p>
 ]]></content:encoded>
