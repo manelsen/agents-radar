@@ -21,7 +21,7 @@ A GitHub Actions workflow that runs every morning at 08:00 CST. It aggregates AI
 
 ## Web UI
 
-**[https://duanyytop.github.io/agents-radar](https://duanyytop.github.io/agents-radar)**
+**[https://manelsen.github.io/agents-radar](https://manelsen.github.io/agents-radar)**
 
 Browse all historical digests in a clean, dark-themed interface — no login required. Reports are rendered from the Markdown files in this repo via GitHub Pages.
 
@@ -34,7 +34,7 @@ Subscribe to get daily digest notifications pushed directly to your preferred pl
 <table>
   <tr>
     <td align="center"><b><a href="https://t.me/agents_radar">Join Telegram Channel</a></b></td>
-    <td align="center"><b><a href="https://applink.feishu.cn/client/chat/chatter/add_by_link?link_token=478g7865-04a8-4fab-a7f8-23af85ba927b">Join Feishu Group</a></b></td>
+    <td align="center"><b><a href="https://applink.feishu.cn/client/chat/chatter/add_by_link?link_token=a00hcab4-86de-4a3f-b599-e46146a69b98">Join Feishu Group</a></b></td>
   </tr>
   <tr>
     <td><img src="assets/telegram.jpg" width="300" alt="Telegram notification"></td>
@@ -44,13 +44,13 @@ Subscribe to get daily digest notifications pushed directly to your preferred pl
 
 ## RSS Feed
 
-**[https://duanyytop.github.io/agents-radar/feed.xml](https://duanyytop.github.io/agents-radar/feed.xml)**
+**[https://manelsen.github.io/agents-radar/feed.xml](https://manelsen.github.io/agents-radar/feed.xml)**
 
 Subscribe in any RSS reader (Feedly, Reeder, NewsBlur, etc.) to receive new digests automatically. The feed includes the latest 30 reports across all report types, updated daily alongside `manifest.json`.
 
 ## MCP Server
 
-**`https://agents-radar-mcp.duanyytop.workers.dev`**
+**`https://agents-radar-mcp.manelsen.workers.dev`**
 
 A hosted [Model Context Protocol](https://modelcontextprotocol.io) server that exposes agents-radar data as tools. Any MCP-compatible client (Claude Desktop, OpenClaw, etc.) can query the latest AI ecosystem reports directly.
 
@@ -69,7 +69,7 @@ A hosted [Model Context Protocol](https://modelcontextprotocol.io) server that e
 {
   "mcpServers": {
     "agents-radar": {
-      "url": "https://agents-radar-mcp.duanyytop.workers.dev"
+      "url": "https://agents-radar-mcp.manelsen.workers.dev"
     }
   }
 }
@@ -83,7 +83,7 @@ Restart Claude Desktop after saving. You can then ask Claude things like:
 **OpenClaw setup** — run the following command:
 
 ```bash
-openclaw mcp add --transport http agents-radar https://agents-radar-mcp.duanyytop.workers.dev
+openclaw mcp add --transport http agents-radar https://agents-radar-mcp.manelsen.workers.dev
 ```
 
 Or add it manually to `~/.openclaw/openclaw.json`:
@@ -93,7 +93,7 @@ Or add it manually to `~/.openclaw/openclaw.json`:
   "mcpServers": {
     "agents-radar": {
       "type": "http",
-      "url": "https://agents-radar-mcp.duanyytop.workers.dev"
+      "url": "https://agents-radar-mcp.manelsen.workers.dev"
     }
   }
 }
@@ -432,4 +432,37 @@ To change the schedule, edit the cron expressions in the corresponding workflow 
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=duanyytop/agents-radar&type=Date)](https://star-history.com/#duanyytop/agents-radar&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=manelsen/agents-radar&type=Date)](https://star-history.com/#manelsen/agents-radar&Date)
+
+## NullClaw: Arquitetura de Concorrência e Refatoração
+
+A refatoração da arquitetura de concorrência em NullClaw (PR #855) representa uma mudança significativa no modelo de processamento, migrando de um modelo serial para uma abordagem de preempção de sessões ocupadas. Essa alteração é fundamental para gateways que lidam com múltiplos canais de comunicação, como Telegram, Matrix e WhatsApp, onde a capacidade de processar múltiplas sessões simultaneamente é essencial para a escalabilidade e a performance.
+
+A refatoração foi implementada com uma abordagem de concorrência limitada, permitindo que o sistema processe múltiplas sessões sem comprometer a estabilidade ou a segurança. A nova arquitetura introduz um mecanismo de preempção que interrompe sessões que estão em loop ou consumindo recursos de forma ineficiente, garantindo que o sistema mantenha uma carga de trabalho equilibrada.
+
+```typescript
+// Exemplo de código que demonstra a nova abordagem de concorrência
+class SessionManager {
+  private sessions: Map<string, Session> = new Map();
+  private concurrencyLimit = 10;
+
+  public async handleSession(sessionId: string): Promise<void> {
+    if (this.sessions.size >= this.concurrencyLimit) {
+      throw new Error('Concurrent session limit reached');
+    }
+
+    const session = new Session(sessionId);
+    this.sessions.set(sessionId, session);
+
+    try {
+      await session.process();
+    } finally {
+      this.sessions.delete(sessionId);
+    }
+  }
+}
+```
+
+Essa abordagem de concorrência limitada é especialmente útil em ambientes com recursos limitados, como dispositivos IoT ou dispositivos de hardware sem RTC (PogoPlug V4), onde a eficiência do uso de recursos é crítica. A nova arquitetura também resolveu problemas críticos como o loop de `accept4` que consumia 100% da CPU em Raspberry Pi 5 e WSL2, garantindo que o sistema mantenha uma performance estável mesmo sob carga.
+
+A refatoração da arquitetura de concorrência em NullClaw não apenas melhora a escalabilidade e a performance do sistema, mas também abre caminho para futuras melhorias, como suporte a múltiplos canais de comunicação e integração com novos protocolos de rede. Essa evolução é um exemplo claro do momentum de desenvolvimento consistente que o ecossistema NullClaw tem demonstrado ao longo da semana.
