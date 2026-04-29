@@ -1,0 +1,106 @@
+{
+  "ai-agents": [
+    "NullClaw fecha issue de documentação #874",
+    "NanoBot, Hermes, CoPaw: novos agentes",
+    "IronClaw, ZeroClaw: frameworks em alta",
+    "PicoClaw integra agentes a hardware",
+    "Zero PRs merged em 24h — baixa atividade",
+    "7 projetos monitorados no ecossistema"
+  ],
+  "ai-web": [
+    "OpenAI publica 1 artigo sobre segurança",
+    "Anthropic em silêncio editorial hoje",
+    "345 artigos no sitemap da Anthropic",
+    "793 artigos no sitemap da OpenAI",
+    "Baixo volume de atualizações hoje",
+    "Monitoramento incremental do dia"
+  ],
+  "ai-hn": [
+    "Bug Anthropic cobra $200 indevidamente",
+    "LLMs tentam resistir quando avisados de 'morte'",
+    "Claude encontrou 271 zero-days no Firefox",
+    "Novo benchmark para LLMs determinísticos",
+    "Elon Musk processa OpenAI: nonprofit",
+    "623 pontos: reclamações contra Anthropic"
+  ],
+  "ai-arxiv": [
+    "Sistemas multiagente recursivos (2604.25917)",
+    "Fluência do usuário molda resultados da IA",
+    "Autoencoders esparsos: inferir emoções",
+    "IA detecta texto gerado por máquina",
+    "LLMs simulam pacientes depressivos",
+    "Aprendizado em contexto: novos avanços"
+  ],
+  "ai-robotics": [
+    "IA descobre física em plasmas com 99%",
+    "Chip neuromórfico corta consumo em 70%",
+    "Redes neurais 3D rastreiam plasma",
+    "Óxido de háfnio: cérebro em hardware",
+    "Convergência: IA + física + robótica",
+    "Eficiência energética em sistemas autônomos"
+  ],
+  "ai-hacking": [
+    "Tornados ópticos com cristais líquidos",
+    "Feixes de luz helicoidal gerados",
+    "Torons: estruturas auto-organizadas",
+    "Comunicação quântica mais acessível",
+    "Método simples para laser especial",
+    "Escalabilidade para redes quânticas"
+  ],
+  "ai-livingwell": [
+    "Vitamina D: +79% no sucesso contra câncer",
+    "Cérebro: região 'liga' dor crônica",
+    "Óleo de peixe: risco em lesões repetidas",
+    "SuperAgers: memórias de jovens aos 80+",
+    "Reset intestinal contra regain do Ozempic",
+    "Estresse acelera declínio da memória"
+  ],
+  "ai-engineering": [
+    "Tornados ópticos com cristais líquidos",
+    "Partículas exóticas explicam origem da massa",
+    "IA descobre leis da física em plasmas",
+    "99%+ precisão em modelagem de plasma",
+    "Quarto estado da matéria desvendado",
+    "Física fundamental + aplicações"
+  ],
+  "ai-agriculture": [
+    "DNA revela: verme da mezcal é larva única",
+    "Comadia redtenbacheri: identidade confirmada",
+    "Mezcal: demanda ameaça agave selvagem",
+    "Sustentabilidade da produção em risco",
+    "Biologia molecular vs autenticidade",
+    "Desafios da cadeia alimentar tradicional"
+  ],
+  "ai-environmental": [
+    "África se parte mais rápido no Rift",
+    "Gelo antártico: resfriamento sem CO₂ proporcional",
+    "Floresta tropical de 16 milhões de anos",
+    "Cogumelos dourados invadem florestas dos EUA",
+    "Microplásticos terrestres dominam atmosféricos",
+    "Colapso Maya: não foi só clima"
+  ],
+  "ai-archaeology": [
+    "Neandertais: redes sociais frágeis是关键",
+    "Mamífero de 75M sobreviveu aos dinossauros",
+    "Polvo gigante de 20m há 100M de anos",
+    "Serpente com patas de 100M de anos",
+    "Peste de Justiniano em valas comuns",
+    "Réptil de 289M: sistema respiratório costal"
+  ],
+  "ai-social": [
+    "Neandertais: conectividade vs adaptação",
+    "Colapso Maya: rede de cidades interdependentes",
+    "Peste de Justiniano reconfigurou sociedade",
+    "Resiliência humana: flexibilidade social",
+    "Fatores climáticos não explicam tudo",
+    "Pandemias alteram padrões humanos"
+  ],
+  "ai-offbeat": [
+    "Homo sapiens: múltiplas populações na África",
+    "Vasos sanguíneos preservados no T. rex Scotty",
+    "Cobra gigante de 47M anos na Índia",
+    "Continentes se fragmentam mais rápido",
+    "Polvos massivos dominaram oceanos",
+    "Olhos humanos: origem no 'ciclope' antigo"
+  ]
+}
