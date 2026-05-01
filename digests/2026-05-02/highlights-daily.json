@@ -1,0 +1,114 @@
+{
+  "ai-agents": [
+    "NullClaw: 23 PRs e 7 issues em 24h",
+    "Inbound router em Zig: PR #845",
+    "manelsen domina ~80% dos merges",
+    "7 projetos de agentes cobertos",
+    "Anti-spoofing e E2EE em progresso",
+    "Release soon após consolidação"
+  ],
+  "ai-web": [
+    "Anthropic: 4 novos artigos hoje",
+    "Claude for Creative Work: Adobe+50",
+    "Conectores: Ableton, Autodesk, Affinity",
+    "Integração em workflows profissionais",
+    "OpenAI: 0 novos artigos (total 795)",
+    "Anthropic sitemap: 347 artigos"
+  ],
+  "ai-hn": [
+    "Apple vaza arquivos Claude.md",
+    "Uber queima orçamento em Claude Code",
+    "DeepSeek V4: frontier a fraction do custo",
+    "Pu.sh: coding agent em 400 linhas",
+    "Debate: sustentabilidade da AI bubble",
+    "355 pontos no HN para vazamento Apple"
+  ],
+  "ai-arxiv": [
+    "Exploration Hacking: LLMs resistem a RL",
+    "Estudo: repetição > diversidade em alemán",
+    "Constraint Adherence em multi-turn LLMs",
+    "DriftBench: avaliar fidelidade a constraints",
+    "Fault detection em transformers",
+    "Model merging eficiente publicado"
+  ],
+  "ai-science": [
+    "Centaur: memoriza padrões, não pensa",
+    "Modelo alega 160 tarefas cognitivas",
+    "Debate: reconhecimento vs compreensão",
+    "Métricas insuficientes para cognição",
+    "IA ainda opera por interpolação",
+    "Testes diagnósticos necessários"
+  ],
+  "ai-robotics": [
+    "Centaur: memorização, não pensamento",
+    "Robótica cognitiva questiona limites",
+    "Métricas rigorosas para IA geral",
+    "Generalização genuína é o desafio",
+    "Memorização vs raciocínio real",
+    "Próxima geração precisa demonstrar compreensão"
+  ],
+  "ai-hacking": [
+    "Teleportação quântica: 270m de fóton",
+    "Quadsqueezing em Oxford: controle quântico",
+    "Optical tornado: criptografia quântica",
+    "Redes quânticas metropolitanas viáveis",
+    "Cristais líquidos para estados de luz",
+    "Internet quântica cada vez mais próxima"
+  ],
+  "ai-livingwell": [
+    "5 min/dia de movimentos: ganha força",
+    "DNA bloqueia PCSK9: LDL -50%",
+    "Comer após 21h agride o intestino",
+    "Interruptor cerebral para dor crónica",
+    "Aeróbica: melhor para artrite no joelho",
+    "Exercício lento vence treino intenso"
+  ],
+  "ai-engineering": [
+    "Optical tornado com cristais líquidos",
+    "Partícula exótica desafia massa",
+    "Fotónica simplificada para quântico",
+    "Estados exóticos: sensores de precisão",
+    "Materiais auto-organizados em foco",
+    "Física nuclear e engenharia convergem"
+  ],
+  "ai-agriculture": [
+    "Aranha Pink Floyd contra pragas urbanas",
+    "DNA do mezcal: larva de traça",
+    "Pikelinia floydmuraria descoberta",
+    "Autenticidade de insetos questionada",
+    "Controle biológico com aranhas",
+    "DNA barcoding para rastreabilidade"
+  ],
+  "ai-environmental": [
+    "Doze Apóstolos: tectonismo, não erosão",
+    "Placa Juan de Fuca se fragmenta",
+    "África mais próxima de se romper",
+    "Rifte de Turkana em afinamento",
+    "Ressurgência some no Golfo do Panamá",
+    "Colapso maia: não foi só seca"
+  ],
+  "ai-archaeology": [
+    "6 minas da Idade do Bronze na Espanha",
+    "Neanderthais: redes sociais frágeis",
+    "Mamífero mexicano pós-dinossauros",
+    "Polvos gigantes dominaram oceanos",
+    "Rotas comerciais transcontinentais",
+    "Conectividade social na extinção"
+  ],
+  "ai-social": [
+    "Neanderthais: conectividade social fraca",
+    "Redes sociais: chave da sobrevivência",
+    "Maia: clima estável no colapso",
+    "Dissolução em rede das civilizações",
+    "Menos clima, mais estrutura social",
+    "Abandonar modelos monocausais"
+  ],
+  "ai-offbeat": [
+    "Fóssil de 275 milhões de anos vivo?",
+    "Serpente gigante Vasuki na Índia",
+    "Vasos de T. rex preservados",
+    "Origem dos olhos: ciclos antigos",
+    "DNA reescreve origem humana",
+    "Neandertais: conectividade fraca"
+  ]
+}
