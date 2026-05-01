@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-01T20:51:26.091Z",
+  "generated": "2026-05-01T20:54:54.905Z",
   "dates": [
     {
       "date": "2026-05-02",
@@ -17,7 +17,8 @@
         "ai-environmental",
         "ai-archaeology",
         "ai-social",
-        "ai-offbeat"
+        "ai-offbeat",
+        "ai-monthly"
       ]
     },
     {
