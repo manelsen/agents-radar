@@ -1,0 +1,90 @@
+{
+  "ai-agents": [
+    "NullClaw: 39 PRs merged em 24h",
+    "Zig 0.16: CPU spin corrigido",
+    "API REST Admin implementada",
+    "7 projetos no ecossistema",
+    "Próxima release 0.16.x em vista",
+    "Suporte a grafo de conhecimento"
+  ],
+  "ai-hn": [
+    "Agent-desktop: 91 estrelas no HN",
+    "Mljar Studio: IA local para dados",
+    "PDF forms com IA: 23 comentários",
+    "Debate: IA vs mercado de trabalho",
+    "Anthropic: valuation bilionário",
+    "Críticas à qualidade de LLMs"
+  ],
+  "ai-science": [
+    "Centaur: memoriza padrões, não pensa",
+    "Crise de métricas em IA cognitiva",
+    "Neuro-simbólica como novo rumo",
+    "Causalidade: próximo fronteira",
+    "Testes cognitivos mais rigorosos",
+    "Compreensão vs engenharia de superfície"
+  ],
+  "ai-robotics": [
+    "Centaur: superfície sem profundidade",
+    "Avaliação rigorosa exige rigor",
+    "Memorização ≠ compreensão",
+    "Abstração necessária pararobôs",
+    "Adaptabilidade é ключова",
+    "Qualidade sobre velocidade"
+  ],
+  "ai-hacking": [
+    "Oxford: quadsqueezing quântico",
+    "Fóton teletransportado 270m",
+    "Internet quântica mais próxima",
+    "Qubits estáveis via quadsqueezing",
+    "Redes quânticas distribuídas",
+    "Segurança digital do futuro"
+  ],
+  "ai-livingwell": [
+    "Contração abdominal: limpeza cerebral",
+    "DNA bloqueia PCSK9: -50% LDL",
+    "Cérebro: interruptor da dor crônica",
+    "Óleo de peixe: risco após TCEs",
+    "Músculos: treino lento é melhor",
+    "Variedade de exercícios: +anos"
+  ],
+  "ai-agriculture": [
+    "Pikelinia floydmuraria: aranha antiviral",
+    "Caça presas 6x seu tamanho",
+    "DNA revela: verme da mezcal",
+    "Mezcal: sustentabilidade em risco",
+    "Controle biológico urbano",
+    "Biodiversidade como solução"
+  ],
+  "ai-environmental": [
+    "Aranha Pink Floyd contra mosquitos",
+    "Doze Apóstolos: arquivo climático",
+    "Placa Juan de Fuca se fragmenta",
+    "Neandertais: redes sociais frágeis",
+    "Mayas: colapso socioeconômico",
+    "Afloramento ausente no Panamá"
+  ],
+  "ai-archaeology": [
+    "Mandíbula 275Ma no Brasil",
+    "Minas Bronze na Espanha",
+    "Neandertais: fragilidade social",
+    "Mamífero 75Ma na Baja Califórnia",
+    "Cimolodon: chave da sobrevivência",
+    "Redes comerciais pré-históricas"
+  ],
+  "ai-social": [
+    "Neandertais: redes frágeis",
+    "Mayas: colapso em cascata",
+    "Conexão social como survie",
+    "Clima estável não garante rien",
+    "Interdependência sistêmica",
+    "Resiliência adaptativa"
+  ],
+  "ai-offbeat": [
+    "Vasuki indicus: cobra 15m na Índia",
+    "T. rex: vasos preservados",
+    "Vulcão mecânico do séc. XVIII",
+    "Olhos: origem revelada",
+    "Sonhos: moldados por pandemia",
+    "Contração abdominal: limpeza"
+  ]
+}
