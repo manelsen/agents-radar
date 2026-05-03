@@ -1,0 +1,106 @@
+{
+  "ai-cli": [
+    "Kimi K2.6 supera Claude e GPT-5.5",
+    "OpenAI o1 acerta 67% em triagem médica",
+    "Meta abandona código aberto: debate",
+    "LLMs não são abstração de alto nível",
+    "Desinformação sobre IA chinesa no HN",
+    "Universidades usaram IA sem consentimento"
+  ],
+  "ai-agents": [
+    "NullClaw: web_search issue #871 aberto",
+    "7 projetos de agentes IA cobertos",
+    "2 issues ativas em NullClaw",
+    "Nenhum PR merged em 24h",
+    "Linux sandbox em reavaliação",
+    "Fase de consolidação no NullClaw"
+  ],
+  "ai-science": [
+    "Centaur não pensa, só memoriza",
+    "Pesquisadores questionam modelo Centaur",
+    "Performance ≠ compreensão em IA",
+    "Métricas rigorosas para IA genuína",
+    "Debate: teoria unificada vs modular",
+    "IA imita mas não entende tarefas"
+  ],
+  "ai-robotics": [
+    "Chip memória com miniaturização extrema",
+    "RAVEN confirma 100+ exoplanetas",
+    "Centaur: IA memoriza padrões",
+    "Robôs móveis com mais autonomia",
+    "IA analisa dados de missão TESS",
+    "Sensores robóticos mais eficientes"
+  ],
+  "ai-hacking": [
+    "Quadsqueezing: controle quântico 4ª ordem",
+    "Fóton teletransportado por 270 metros",
+    "Oxford: quântica para criptografia",
+    "Estados quânticos ultralow noise",
+    "Redes quânticas QKD mais próximas",
+    "Informação quântica entre dispositivos"
+  ],
+  "ai-livingwell": [
+    "Café muda flora intestinal e humor",
+    "Terapia genética corta LDL em 50%",
+    "Exercício variado estende lifespan",
+    "Movimento abdominal ativa limpeza cerebral",
+    "Estresse internalizado acelera declínio",
+    "Exercícios excêntricos: 5 min/dia basta"
+  ],
+  "ai-mentalhealth": [
+    "Infra-sons afetam humor e cortisol",
+    "Corpo sente vibrações sem perceber",
+    "Estudo: exposição subclínica a vibrações",
+    "Porões podem causar mal-estar físico",
+    "Cortisol elevado sem consciência",
+    "Ambiente físico impacta saúde mental"
+  ],
+  "ai-engineering": [
+    "Físicos acham falha sutil no tempo",
+    "Colapso espontâneo borra precisão temporal",
+    "Limite fundamental para relógios atômicos",
+    "Quântica e gravidade: nova via",
+    "Metrologia quântica usa decoerência",
+    "Informação quântica para codificação segura"
+  ],
+  "ai-agriculture": [
+    "Nova aranha Pink Floyd descoberta",
+    "Pikelinia floydmuraria caça formigas 6x",
+    "Controle biológico de pragas urbanas",
+    "Teias perto de luzes artificiais",
+    "Possível rota trans-pacífica",
+    "Biodiversidade urbana como praga natural"
+  ],
+  "ai-environmental": [
+    "Aranha Pink Floyd em paredes brasileiras",
+    "Doze Apóstolos: origem tectônica revelada",
+    "Placa Juan de Fuca se fragmenta",
+    "Neandertais: conectividade social na extinção",
+    "Colapso Maya: rede complexa de cidades",
+    "Cápsulas temporais geológicas descobertas"
+  ],
+  "ai-archaeology": [
+    "Animal mandíbula torcida de 275 Ma",
+    "Tanyka amnicola: linhagem inesperada",
+    "Neandertais: redes sociais na extinção",
+    "Minas Bronze na Espanha: 6 identificadas",
+    "Mamífero 75 Ma sobreviveu K-Pg",
+    "Metais escandinavos: origem espanhola"
+  ],
+  "ai-social": [
+    "Conectividade social salvou civilizações",
+    "Neandertais: redes vs Homo sapiens",
+    "Maia: colapso por rede de cidades",
+    "Fator social determinante na extinção",
+    "Clima não foi causa única do colapso",
+    "Paradigma conectivista emerge"
+  ],
+  "ai-offbeat": [
+    "Rede oculta organiza o olfato",
+    "Cobra gigante de até 15 metros",
+    "Inseto rosa vira verde em 11 dias",
+    "Órgãos congelados sem rachaduras",
+    "Malária moldou evolução humana",
+    "Cannabis esconde compostos medicinais"
+  ]
+}
