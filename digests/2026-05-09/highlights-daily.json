@@ -1,0 +1,130 @@
+{
+  "ai-agents": [
+    "NullClaw: nightly builds em breve",
+    "ACP stdio adapter nativo no NullClaw",
+    "7 projetos de agentes IA cobertos",
+    "DonPrus lidera CI/CD no NullClaw",
+    "Issue #820 resolvida com docs Zig",
+    "NullClaw: 5 PRs e 1 issue em 24h"
+  ],
+  "ai-web": [
+    "Anthropic open-source Petri v3",
+    "Claude 4.5: pontuação perfeita em alinhamento",
+    "OpenAI: segurança em código via Codex",
+    "OpenAI: proteção a jovens região EMEA",
+    "Anthropic avança em safety training",
+    "4 novos artigos oficiais de IA hoje"
+  ],
+  "ai-hn": [
+    "Git for AI Agents: 78 pts no HN",
+    "Vulnerabilidades no Claude Code e Ollama",
+    "Mythos: debate sobre riscos sistêmicos",
+    "Teaching Claude Why: raciocínio causal",
+    "Oxen Model Report May 2026",
+    "LLMs saturam reports comparativos"
+  ],
+  "ai-arxiv": [
+    "ActCam: câmera zero-shot em vídeo",
+    "MoE desafia arquitetura por camada",
+    "RAO: otimização recursiva de agentes",
+    "SkillOS: curadoria de habilidades",
+    "Attention sinks: superneurônios explicados",
+    "Verifiers para problemas matemáticos"
+  ],
+  "ai-science": [
+    "Synthegy: química em linguagem natural",
+    "NLP para design molecular acessível",
+    "IA explica rotas de síntese química",
+    "Agentes multimodais raciocinam domínios",
+    "Modelos viram ferramentas científicas",
+    "IA avalia viabilidade de sínteses"
+  ],
+  "ai-robotics": [
+    "Camadas mollifier estabilizam inferência",
+    "Memória ultradensa: menor consumo",
+    "RAVEN confirma 100+ exoplanetas",
+    "JPL: propulsor de vapor de lítio",
+    "IA para感知 e planejamento robótico",
+    "TESS: aprendizado profundo espacial"
+  ],
+  "ai-hacking": [
+    "Cristal temporal conectado a dispositivo",
+    "Matéria exótica sob campos variáveis",
+    "Controle quântico temporal avançado",
+    "Criptografia quântica mais próxima",
+    "Oscilador mecânico controla time crystal",
+    "Decoerência reduzida em estados quânticos"
+  ],
+  "ai-memory": [
+    "Milhões de sinapses silenciosas no adulto",
+    "30% dos contactos sinápticos dormentes",
+    "Plasticidade no cérebro adulto confirmada",
+    "Reservatório oculto para aprendizagem",
+    "MIT: sinapses ativam com novas memórias",
+    "Neuroplasticidade desafia paradigmas"
+  ],
+  "ai-livingwell": [
+    "Ovos reduzem 27% risco de Alzheimer",
+    "Arginina reduz placas amiloides",
+    "GLP-1: benefícios mentais documentados",
+    "Exame de sangue detecta depressão cedo",
+    "Movimento limpa o cérebro",
+    "Café altera flora intestinal"
+  ],
+  "ai-mentalhealth": [
+    "Infrassom eleva cortisol sem percepção",
+    "Edifícios antigos causam estresse oculto",
+    "Vibrações de baixa frequência nocivas",
+    "Fatoriais ambientais na saúde mental",
+    "Sensações inexplicáveis em porões",
+    "Estresse crônico por exposição subliminar"
+  ],
+  "ai-engineering": [
+    "NASA: propulsor de lítio para Marte",
+    "Temperaturas acima da lava fundida",
+    "MIT desvenda estrutura de relaxores",
+    "Materiais 3D para ultrassom e sonar",
+    "Gravidade limita precisão temporal",
+    "Colapso quântico impõe fronteira fundamental"
+  ],
+  "ai-agriculture": [
+    "Anfíbio gigante de 240M anos na Austrália",
+    "Carvalhos sincronizam brotação contra lagartas",
+    "Gene doméstico melhora morango",
+    "Sem trade-offs em qualidade e produtividade",
+    "Fenologia substitui defensivos químicos",
+    "Arenaerpeton supinatus preservado"
+  ],
+  "ai-environmental": [
+    "Recifes: compostos farmacêuticos inexplorados",
+    "Minas abandonadas viram geotérmica",
+    "Plástico convertido em hidrogênio solar",
+    "NASA capta tempestade ártica rara",
+    "Economia circular em comunidades canadenses",
+    "Microrganismos coralinos biotecnologia"
+  ],
+  "ai-archaeology": [
+    "Anfíbio de 240M anos na Austrália",
+    "Tablets 4000 anos: rituais e cerveja",
+    "Possível lista régia ligada a Gilgamesh",
+    "Preservação rara de pele e tecido",
+    "Mesopotâmia: bureaucracy e magia",
+    "Fósseis em paredes de jardim"
+  ],
+  "ai-social": [
+    "Chapéus: poder e resistência na Inglaterra",
+    "Ozempic: estigma duplo sobre usuários",
+    "Julgamento social independente de fatos",
+    "Acessórios carregam significados profundos",
+    "Medicamentos para peso criticados",
+    "Identidade marcada por símbolos"
+  ],
+  "ai-offbeat": [
+    "Código genético reescreve regras universais",
+    "DNA prediz sucesso melhor que família",
+    "Galáxia sem rotação desafia teorias",
+    "Malária fragmentou populações africanas",
+    "QI preditor forte de educação e renda",
+    "Mistérios genéticos ainda aguardam"
+  ]
+}
