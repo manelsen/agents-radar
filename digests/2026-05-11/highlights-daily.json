@@ -1,0 +1,122 @@
+{
+  "ai-agents": [
+    "NullClaw corrige bug crítico de DNS",
+    "3 PRs abertas para security hardening",
+    "7 projetos de agentes IA cobertos",
+    "IronClaw: agente de IA da Near AI",
+    "ZeroClaw Labs expande ecossistema",
+    "CoPaw: novo framework Agentscope"
+  ],
+  "ai-hn": [
+    "LLMorphism: humanos como LLMs?",
+    "IA local deveria ser padrão",
+    "Claude Code: skills para pesquisa",
+    "Anthropic vale bilhões",
+    "Hedge funds temem disrupção por IA",
+    "65 pts: paper sobre auto-percepção"
+  ],
+  "ai-science": [
+    "Synthegy: química em linguagem natural",
+    "Moléculas desenhadas por descrição",
+    "IA vira agente de raciocínio ativo",
+    "Síntese molecular explicável por IA",
+    "Fim das ferramentas complexas para químicos",
+    "IA multimodal na ciência química"
+  ],
+  "ai-robotics": [
+    "Mollifier layers: equações inversas",
+    "Penn University: IA para matemática",
+    "Reduz ruído em dados robóticos",
+    "Percepção mais estável para robôs",
+    "Navegação sob incerteza",
+    "ML + métodos matemáticos formais"
+  ],
+  "ai-hacking": [
+    "Criptografia quântica a 120km",
+    "6h de QKD sem ajuste manual",
+    "Pontos quânticos: fótons únicos",
+    "Cristais temporais controlados",
+    "Estados quânticos contra erros",
+    "Qubits mais robustos com matéria exótica"
+  ],
+  "ai-memory": [
+    "30% das sinapses são silenciosas",
+    "MIT descobre sinapses dormentes",
+    "Cérebro adulto tem reserva plástica",
+    "Plasticidade não declina com idade",
+    "Sinapses inativas formam memórias",
+    "Recrutamento de conexões dormentes"
+  ],
+  "ai-solar": [
+    "QKD a 120km para energia",
+    "6h de量子chaves sem ajuste",
+    "Fibra óptica para comunicação quântica",
+    "Redes inteligentes protegidas",
+    "Smart grids com segurança quântica",
+    "Energia renovável + criptografia"
+  ],
+  "ai-livingwell": [
+    "Gene de rato-toupeira estende vida",
+    "Ovos reduzem Alzheimer em 27%",
+    "Arginina reduz proteínas tóxicas",
+    "Novo remédio contra obesidade",
+    "Biotina mascara sinais de câncer",
+    "Microbioma jovem reverte envelhecimento"
+  ],
+  "ai-mentalhealth": [
+    "Estriado 10% maior em psicopatas",
+    "Cérebro revela traços psicopáticos",
+    "Estriado: recompensa e impulsividade",
+    "Busca de emoções fortes",
+    "Neuroimagem + comportamento",
+    "Medicina personalizada em saúde mental"
+  ],
+  "ai-engineering": [
+    "Aço ultra-resistente para H2 verde",
+    "NASA testa propulsor eletromagnético",
+    "Estrutura 3D de relaxores revelada",
+    "Lacunas atômicas em materiais 2D",
+    "Propulsão a vapor de lítio",
+    "Miniaturização de chips ameaçada"
+  ],
+  "ai-agriculture": [
+    "Bistrifluron mata 95% dos cupins",
+    "Carvalho atrasa brotação 3 dias",
+    "Gene housekeeping melhora morango",
+    "Sem有害化学品 para humanos",
+    "Lagartas privadas de alimento",
+    "Fruta mais cor, aroma e nutrientes"
+  ],
+  "ai-environmental": [
+    "Corrente oceânica enfraquece",
+    "Erupção Tonga destruiu metano",
+    "Aço para hidrogênio do mar",
+    "Plásticos viram H2 com luz solar",
+    "Melt glacial subestima elevação",
+    "Cloro reativo das nuvens vulcânicas"
+  ],
+  "ai-archaeology": [
+    "Homo juluensis: ferramentas 146k anos",
+    " Anfíbio gigante de 240 milhões anos",
+    "Tabuletas de 4.000 anos decifradas",
+    "China: criatividade no gelo",
+    "Pedra sofisticada em era glacial",
+    "Magia e recibos na Mesopotâmia"
+  ],
+  "ai-social": [
+    "GLP-1: estigma de caminho fácil",
+    "Chapéus marcavam poder na Inggris",
+    "Corpo ainda julgado moralmente",
+    "Ozempic e Wegovy estigmatizados",
+    "Acessórios = posição social",
+    "Estigma persiste por séculos"
+  ],
+  "ai-offbeat": [
+    "Rato-toupeira gene prolonga vida",
+    "Galáxia sem rotação no Webb",
+    "30% das sinapses são silenciosas",
+    "Microbioma jovem reverte fígado",
+    "Estriado maior em psicopatas",
+    "Descobertas que desafiam ciência"
+  ]
+}
