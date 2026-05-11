@@ -1,0 +1,122 @@
+{
+  "ai-cli": [
+    "OpenAI publica 4 novos artigos sobre deployment",
+    "Anthropic sem publicações novas hoje",
+    "Offensive Network: novo player em segurança IA",
+    "OpenAI expande para soluções enterprise",
+    "Discussão: Python ainda é necessário com IA?",
+    "LLM fine-tuning por menos de um café"
+  ],
+  "ai-agents": [
+    "NullClaw: 7 PRs e 2 issues em 24h",
+    "#906: fix em shell sandbox initialization",
+    "#905: correção do gateway Discord no Android",
+    "Projeto em foco: NullClaw prioriza estabilidade",
+    "7 projetos monitorados: NanoBot, Hermes, CoPaw",
+    "Regressão no provider siliconflow v2026.5.x"
+  ],
+  "ai-hn": [
+    "OpenAI Deployment Company lidera discussões",
+    "IA pode substituir codificação manual em Python?",
+    "LLM post-training por menos de $1",
+    "Ferramentas semantic layer mantidas por agentes",
+    "Comunidade alerta para custos de API em LLMs",
+    "Segurança em agentes de IA gera preocupação"
+  ],
+  "ai-science": [
+    "Synthegy: design molecular em linguagem natural",
+    "Sistema integra PLN com química computacional",
+    "Elimina necessidade de expertise técnica avançada",
+    "Algoritmos raciocinam sobre síntese química",
+    "Design molecular acessível a químicos comuns",
+    "Convergência NLP e domínios científicos"
+  ],
+  "ai-robotics": [
+    "Penn: camadas mollifier estabilizam equações inversas",
+    "Método reduz sensibilidade a ruído em robôs",
+    "Inferência causal em tempo real possível",
+    "Pesquisa promete acelerar descobertas em genética",
+    "Aplicável a navegação e percepção de robôs",
+    "Custo computacional significativamente reduzido"
+  ],
+  "ai-hacking": [
+    "Criptografia quântica: 120km via fibra óptica",
+    "Pontos quânticos mantêm 6h de operação",
+    "Cristal temporal controlado sem energia externa",
+    "Matéria exótica resiste a erros quânticos",
+    "Avanço para qubits mais robustos",
+    "Queda no custo de computação quântica"
+  ],
+  "ai-memory": [
+    "MIT: 30% das sinapses são silenciosas",
+    "Descoberta revoluciona plasticidade cerebral",
+    "Sinapses podem ser ativadas para aprendizado",
+    "Reservatório de conexões inativas no adulto",
+    "Desafia paradigmas de consolidação de memória",
+    "Novas possibilidades terapêuticas"
+  ],
+  "ai-livingwell": [
+    "Ozempic: perda >15% do peso em idosos +65",
+    "Droga Cavalo de Troia com efeitos reduzidos",
+    "Gene de longevidade transferido de rato-toupeira",
+    "Ultra processedados: risco cardiovascular alto",
+    "Ovos reduzem risco de Alzheimer em 27%",
+    "8.500 passos diários contra efeito iô-iô"
+  ],
+  "ai-mentalhealth": [
+    "Psicopatas têm estriado 10% maior",
+    "Estudo com 120 participantes via RM",
+    "Estriado ligado a busca de emoções e impulsividade",
+    "Base neurobiológica para comportamentos de risco",
+    "Neuroimagem revela marcadores de psicopatia",
+    "Avanço em compreensão de transtornos"
+  ],
+  "ai-engineering": [
+    "Nanopartículas de Na em dois lugares simultaneamente",
+    "Uni. Viena: interferência quântica em objeto macro",
+    "Super aço para hidrogênio verde a partir do mar",
+    "Lacuna atômica oculta trava miniaturização de chips",
+    "NASA: propulsor a vapor de lítio para Marte",
+    "Materiais 2D revelam problema para futuros chips"
+  ],
+  "ai-agriculture": [
+    "Bistrifluron elimina 95% das térmitas",
+    "Gene de morango melhora cor e aroma",
+    "Carvalho atrasa brotação para starve lagartas",
+    "Fóssil Arenaerpeton: 240 milhões de anos",
+    "Paleontologia: esqueleto quase completo",
+    "Estratégia fenológica reduz dano foliar 50%"
+  ],
+  "ai-environmental": [
+    "Corrente do Atlântico está enfraquecendo",
+    "Antártida derrete mais rápido que o esperado",
+    "Vulcão submarino destrói metano naturalmente",
+    "Cidade canadense usa minas como geotérmica",
+    "Super aço viabiliza hidrogênio verde",
+    "Microrganismos de recifes: novos medicamentos"
+  ],
+  "ai-archaeology": [
+    "Homo juluensis: ferramentas avançadas há 146 mil anos",
+    "Tabletes de 4.000 anos: magia e rituais",
+    "Arenaerpeton supinatus: fóssil de 240 milhões",
+    "Esqueleto quase completo com traços de pele",
+    "Lista régia pode referenciar Gilgamesh",
+    "Planejamento complexo no Paleolítico"
+  ],
+  "ai-social": [
+    "Usuários de Ozempic enfrentam estigma social",
+    "Perda de peso farmacológica é julgada mais",
+    "Chapéus: marcadores históricos de poder",
+    "Double standards em aparência física",
+    "Acesso a medicamentos gera condenação moral",
+    "Normas sociais afetam dignidade individual"
+  ],
+  "ai-offbeat": [
+    "Dante previu asteroides séculos antes",
+    "Gene de longevidade transferido para camundongos",
+    "Galáxia massiva não gira, surpresa cósmica",
+    "Técnica musical aumenta resistência 20%",
+    "TRPV4: freio molecular identificado",
+    "Genes SP podem regenerar membros humanos"
+  ]
+}
