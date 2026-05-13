@@ -1,0 +1,130 @@
+{
+  "ai-agents": [
+    "NullClaw #783: cron subagent com JSON output",
+    "IronClaw: novo framework agent by Near AI",
+    "ZeroClaw Labs: 1 PR mergeado em 24h",
+    "Hermes Agent: release 2.3 com tool-calling",
+    "NanoBot HKUDS: 340 stars no GitHub",
+    "CoPaw: multi-agent orchestration em Python"
+  ],
+  "ai-web": [
+    "Anthropic lança Claude for Small Business",
+    "Integrações: QuickBooks, HubSpot, Canva",
+    "OpenAI: Building Codex Windows Sandbox",
+    "Sitemap Anthropic: 355 artigos (novo)",
+    "Sitemap OpenAI: 815 artigos (novo)",
+    "Claude para PMEs: 44% do PIB dos EUA"
+  ],
+  "ai-hn": [
+    "OpenAI vs Musk: Altman acusado de mentir",
+    "Ars Technica: julgamento com 79 pontos",
+    "Anthropic negocia funding a $950Bi",
+    "Meta bloqueia conta de IA no Threads",
+    "Claude Code: mudanças em planos e limites",
+    "Discussão: 33 comentários sobre Altman"
+  ],
+  "ai-arxiv": [
+    "Pion: optimizer espectro-preservante (v1)",
+    "TextSeal: watermarking com dupla chave",
+    "MEME benchmark: memória de longo prazo",
+    "Geometric Factual Recall: novo account",
+    "LongMemEval-V2: 50 agentes testados",
+    "Auto-destilação on-policy: alternativa GRPO"
+  ],
+  "ai-science": [
+    "Algoritmo quântico simula quasicristais",
+    "IA detecta demência por \"ums\" e pausas",
+    "Simulação ultrarrápida em segundos",
+    "Design de qubits para computação quântica",
+    "Screening não invasivo via fala",
+    "Materiais topológicos acelerados"
+  ],
+  "ai-robotics": [
+    "JUPITER: simulação completa de 50 qubits",
+    "Recorde mundial com supercomputador EU",
+    "\"Hms\" como preditores de declínio cognitivo",
+    "IA e computação quântica convergindo",
+    "Sistemas autônomos mais inteligentes",
+    "Interação humano-máquina avançada"
+  ],
+  "ai-hacking": [
+    "JUPITER: 50 qubits, novo recorde mundial",
+    "Algoritmo quântico resolve problema impossível",
+    "Estados quânticos W detectados no Japão",
+    "QKD: chaves inquebráveis por 120 km",
+    "Seis horas de QKD sem ajuste manual",
+    "Criptografia quântica: fibra óptica 120km"
+  ],
+  "ai-solar": [
+    "Estados quânticos W: detecção breakthrough",
+    "QKD por fibra óptica a 120 km",
+    "Pontos quânticos: dual-use solar e quântico",
+    "Redes elétricas inteligentes mais seguras",
+    "Comunicação quântica estável por 6h",
+    "Células solares de próxima geração"
+  ],
+  "ai-livingwell": [
+    "4 semanas de dieta reverte idade biológica",
+    "Ozempic: perda >15% peso em 65+",
+    "Café reduz risco de demência em 35%",
+    "Ovos cortam risco de Alzheimer em 27%",
+    "Gene de rata-toupeira estende vida",
+    "Baduanjin tão eficaz quanto caminhada"
+  ],
+  "ai-mentalhealth": [
+    "Psicopatas: estriado 10% maior",
+    "Estudo com 120 participantes via MRI",
+    "Estriado: recompensa e tomada de decisão",
+    "Busca por sensações: traço neurobiológico",
+    "Biomarcadores para diagnóstico futuro",
+    "Impulsividade ligada à estrutura cerebral"
+  ],
+  "ai-engineering": [
+    "Partículas metálicas em estados quânticos",
+    "Aço ultra-resistente para hidrogênio verde",
+    "Lacuna atômica compromete chips 2D",
+    "Lei de Moore: limite físico alcançado",
+    "Liga de Hong Kong: substitui titânio",
+    "Quântico em escala macroscópica"
+  ],
+  "ai-agriculture": [
+    "Cactos: evolução acelerada nas flores",
+    "Bistrifluron elimina 95% dos cupins",
+    "Fumigação segura sem toxicidade humana",
+    "Fur seals: recuperação cardíaca tardia",
+    "750 espécies de cactos estudadas",
+    "Evolução em desertos: contradição Darwin"
+  ],
+  "ai-environmental": [
+    "Corrente do Atlântico enfraquecendo",
+    "Antártida derretendo por canais ocultos",
+    "Siliconebase: poluição maior que PFAS",
+    "Vila canadense: geotermia em minas",
+    "Toba: resiliência, não extinção",
+    "Modelos climáticos subestimam derretimento"
+  ],
+  "ai-archaeology": [
+    "Humanos na Grã-Bretanha há 15.200 anos",
+    "Bicharracosaurus: dinossauro gigante argentino",
+    "Microfósseis de 540 milhões de anos",
+    "Toba: resiliência há 74.000 anos",
+    "Homo juluensis: ferramentas na China",
+    "Retorno antecipado pós-glaciação"
+  ],
+  "ai-social": [
+    "Monge medieval previu cometa de Halley",
+    "Chapéus: marcadores de poder na Inglaterra",
+    "Eilmer de Malmesbury: 989 d.C.",
+    "Resiliência pós-Toba na África e Ásia",
+    "700 anos antes de Edmond Halley",
+    "Símbolos materiais e hierarquia social"
+  ],
+  "ai-offbeat": [
+    "Monge identificou Halley 700 anos antes",
+    "Cactos: flores impulsionam evolução",
+    "Bicharracosaurus: dinossauro único",
+    "Gene de rata-toupeira estende vida",
+    "Dante descreveu impacto de asteroide",
+    "\"Santo graal\" da regeneração encontrado"
+  ]
+}
