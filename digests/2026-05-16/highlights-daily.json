@@ -1,0 +1,130 @@
+{
+  "ai-agents": [
+    "NullClaw: bug de autenticação no scheduler",
+    "NanoBot, Hermes Agent, PicoClaw listados",
+    "IronClaw, CoPaw, ZeroClaw em destaque",
+    "7 projetos de agentes de IA cobertos",
+    "Zero PRs merged em 24 horas",
+    "Zero releases registradas recentemente"
+  ],
+  "ai-web": [
+    "Anthropic publica 3 novos artigos",
+    "OpenAI com apenas 1 artigo",
+    "Claude 4+: 0% de desalinhamento",
+    "Teaching Claude why: alinhamento",
+    "Anthropic foca em alinhamento de modelos",
+    "Parceria Anthropic com PwC em expansão"
+  ],
+  "ai-hn": [
+    "Claude Code em codebases grandes (224 pts)",
+    "Debate: perigoso ou caro? (145 pts)",
+    "Cenários de liderança IA para 2028",
+    "ChatGPT integra com Plaid bancário",
+    "Anthropic domina discussões no HN",
+    "30 itens de IA no Hacker News"
+  ],
+  "ai-arxiv": [
+    "MeMo: Memória como Modelo",
+    "Ataque via outliers em LLM quantizado",
+    "MetaBackdoor em positional encoding",
+    "Agentes multimodais embodied",
+    "Speculative decoding para eficiência",
+    "50 artigos de IA no ArXiv hoje"
+  ],
+  "ai-science": [
+    "NASA: chip espacial para IA autônoma",
+    "Algoritmo quântico resolve problema impossível",
+    "Falas do dia-a-dia predizem demência",
+    "NASA testa chip para sondas lunares",
+    "Processador endurecido 100x mais rápido",
+    "NASA avança IA para espaço profundo"
+  ],
+  "ai-robotics": [
+    "NASA: chip para sondas pensarem sozinhas",
+    "Padrões de fala indicam demência cedo",
+    "JUPITER simula 50 qubits (recorde)",
+    "IA autônoma em missões espaciais",
+    "Chip endurecido contra radiação",
+    "Supercomputador JUPITER bate recorde"
+  ],
+  "ai-hacking": [
+    "JUPITER simula 50 qubits (recorde)",
+    "Algoritmo resolve problemas impossíveis",
+    "Estados quânticos W detectados",
+    "Chaves quânticas a 120 km sem ajuste",
+    "Criptografia quântica inquebrável",
+    "Avanços quânticos desafiam segurança"
+  ],
+  "ai-solar": [
+    "Estados W quânticos detectados",
+    "Chaves quânticas viajam 120 km",
+    "Sistema quântico opera 6h contínuo",
+    "Criptografia quântica inquebrável",
+    "Pesquisa quântica amadurece rápido",
+    "Fibra óptica para comunicação segura"
+  ],
+  "ai-livingwell": [
+    "Ozempic: perda de 15% em idosos",
+    "8.500 passos mantêm peso perdido",
+    "Dieta 4 semanas reverte idade biológica",
+    "Gene de rato-toupeira-nu estende vida",
+    "Declínio físico começa aos 35 anos",
+    "Exercício melhora desempenho aos 50+"
+  ],
+  "ai-mentalhealth": [
+    "Cannabis arriscada em +65 anos",
+    "Circuito serotonina agrava tinnitus",
+    "Estriado 10% maior em psicopatas",
+    "Neurobiologia vs comportamento",
+    "Antidepressivos podem piorar zumbido",
+    "Riscos subestimados de cannabis em idosos"
+  ],
+  "ai-engineering": [
+    "Metal em dois lugares ao mesmo tempo",
+    "Super aço para hidrogênio verde",
+    "Gap atômico em chips de próxima geração",
+    "Nanopartículas de Na interferem",
+    "Materiais 2D com falhas ocultas",
+    "Universidade de Vienne: física quântica"
+  ],
+  "ai-agriculture": [
+    "Padrões Voronoi em folhas de planta",
+    "Velocidade da flor impulsa especiação",
+    "Bistrifluron elimina 95% de cupins",
+    "Focam: recuperação cardíaca adiada",
+    "Cactos revelam evolução acelerada",
+    "Controle biológico sem toxicidade"
+  ],
+  "ai-environmental": [
+    "AMOC enfraquece há 20 anos",
+    "Canais ocultos derretem Antártida",
+    "CO2 resfria estratosfera (paradoxal)",
+    "Vulcão Tonga destruiu metano",
+    "Derretimento subglacial acelerado",
+    "Mudanças climáticas mais rápidas"
+  ],
+  "ai-archaeology": [
+    "Terceiro ancestral no Japão: Emishi",
+    "Humanos voltaram à Grã-Bretanha cedo",
+    "Homo juluensis: ferramentas há 146k anos",
+    "Resiliência à erupção do Toba",
+    "DNA reescreve história japonesa",
+    "Migração humana redescoberta"
+  ],
+  "ai-social": [
+    "Monge medieval viu cometa antes",
+    "Humanos sobreviveram ao Toba",
+    "Resiliência reescreve narrativa",
+    "Epistemologia: quem descobre primeiro?",
+    "Toba: 74 mil anos de adaptação",
+    "Conhecimento medieval ignorado"
+  ],
+  "ai-offbeat": [
+    "Camundongos ganham gene de longevidade",
+    "Voronoi em folhas de Pilea peperomioides",
+    "Colágeno de dinossauro de 66 milhões",
+    "Titantossauro tailandês de 27 toneladas",
+    "Vestígios de supernova em gelo antártico",
+    "Composto similar a alucinógeno sem efeitos"
+  ]
+}
