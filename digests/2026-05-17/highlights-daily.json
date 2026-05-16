@@ -1,0 +1,114 @@
+{
+  "ai-agents": [
+    "ZeroClaw: 50 issues + 50 PRs em 24h",
+    "Hermes Agent v0.14.0 com 808 commits",
+    "CoPaw com bugs críticos não triados",
+    "Multi-canal: WeChat, Telegram, Signal",
+    "ZeroClaw: 11 PRs merged + 3 bugs P1",
+    "IronClaw foca em arquitetura de próxima geração"
+  ],
+  "ai-hn": [
+    "DeepSeek-V4-Flash revive steering vectors (153 pts)",
+    "Anthropic recusou acesso da China ao Mythos",
+    "AlphaGo: rebuild ensina sobre self-play e RL",
+    "Show HN: novos projetos de vibe-coding",
+    "Debate: IA e impacto no mercado de trabalho",
+    "152+ comentários sobre empregos e IA"
+  ],
+  "ai-science": [
+    "NASA: processador espacial 100x mais rápido",
+    "IA detecta demência por padrões de fala",
+    "Algoritmo quântico simula quasicristais",
+    "Espaço: naves autônomas com IA",
+    "Chips rad-hardened para missões reais",
+    "IA e física quântica em convergência"
+  ],
+  "ai-robotics": [
+    "NASA: chip de IA para naves autônomas",
+    "JUPITER simula computador quântico 50 qubits",
+    "IA prevê demência por pausas e hesitações",
+    "Exoscale: simulação robótica de alta fidelidade",
+    "Computação quântica habilita robótica",
+    "Autonomia espacial para missões a Marte"
+  ],
+  "ai-hacking": [
+    "QKD: chaves quânticas a 120km de fibra",
+    "JUPITER: simulação completa de 50 qubits",
+    "Detecção instantânea de estados quânticos W",
+    "Teleporte quântico: avanço na preparação",
+    "Pontos quânticos: emissão de fótons sob-demanda",
+    "Comunicação quântica por mais de 6h estável"
+  ],
+  "ai-solar": [
+    "QKD de longa distância: 120km sem ajustes",
+    "Estados W: detecção instantânea revoluciona QKD",
+    "Pontos quânticos para criptografia quântica",
+    "Fibra óptica: taxa de chave segura elevada",
+    "Redes quânticas de longa distância viáveis",
+    "Energia renovável + comunicação ultra-segura"
+  ],
+  "ai-livingwell": [
+    "Colina: déficit associado à ansiedade",
+    "30 min de exercício intenso por semana basta",
+    "Multivitamínico retarda envelhecimento em 4 meses",
+    "Ozempic: resultados expressivos em +65 anos",
+    "Estudo de 47 anos: declínio físico aos 35",
+    "Microbioma jovem reverte envelhecimento hepático"
+  ],
+  "ai-mentalhealth": [
+    "Colina reduzida na corteza pré-frontal: ansiedade",
+    "Serotonina pode agravar zumbido",
+    "Cannabis: 5 riscos para adultos acima de 65",
+    "Estriado 10% maior em pessoas com traços psicopatas",
+    "Stanford alerta sobre cannabis moderno",
+    "Neurotransmissor conectado ao zumbido"
+  ],
+  "ai-engineering": [
+    "Metal existe em dois lugares simultaneamente",
+    "Novo aço inoxidável ultra-resistente criado",
+    "Lacunas atômicas ameaçam chips next-gen",
+    "HKU desenvolve aço resistente à corrosão",
+    "Experimento quântico record de interferência",
+    "Objetos macroscópicos seguem mecânica quântica"
+  ],
+  "ai-agriculture": [
+    "Planta dinheiro-chinês tem padrão Voronoi",
+    "750 espécies de cactos: evolução rápida",
+    "Flores ditam evolução dos cactos",
+    "Evolução de cactos contradiz Darwin",
+    "Padrão Voronoi em folhas de planta asiática",
+    "Morfologia das flores: chave evolutiva"
+  ],
+  "ai-environmental": [
+    "CO₂ arrefece a estratosfera, não aquece",
+    "Oceano Austral está a 'suar' mais humidade",
+    "Circulação do Atlântico enfraquece há 20 anos",
+    "Canais subglaciais aceleram fusão do gelo",
+    "Poluentes siliconeados superam PFAS",
+    "Columbia: nova dinâmica climática revelada"
+  ],
+  "ai-archaeology": [
+    "Homo e Australopithecus coexistiram na Etiópia",
+    "DNA japonês: terceiro componente ancestral",
+    "Emishi: ancestralidade ignorada revelada",
+    "Humanos voltaram à Grã-Bretanha 15.200 anos atrás",
+    "Microfósseis de 540 milhões de anos no Brasil",
+    "Supervulcão Toba: humanos sobreviveram e evoluíram"
+  ],
+  "ai-social": [
+    "Monge medieval pode ter previsto cometa de Halley",
+    "Erupção de Toba: resiliência humana surpreendente",
+    "Cometa de Halley: 700 anos antes de Halley",
+    "Supervulcão Toba há 74.000 anos: estratégia",
+    "História reescrita por evidências interdisciplinares",
+    "Papel de atores menos reconhecidos na ciência"
+  ],
+  "ai-offbeat": [
+    "Homo e Australopithecus: coexistência na Etiópia",
+    "Vitamina B2 protege tumores, multivitamínico rejuvenesce",
+    "Tempestade solar de 1200 d.C. em anéis de árvores",
+    "Terceiro componente ancestral nos japoneses",
+    "Cactos estão evoluindo mais rápido que o esperado",
+    "Dinossauro de 20m na América do Sul identificado"
+  ]
+}
