@@ -1,0 +1,122 @@
+{
+  "ai-agents": [
+    "7 projetos de agentes cobertos",
+    "PR #920: fix DNS no Windows",
+    "NullClaw: 2 discussões abertas",
+    "ZeroClaw Labs lançado",
+    "Hermes Agent em destaque",
+    "Nenhum release nas últimas 24h"
+  ],
+  "ai-web": [
+    "Anthropic adquire Stainless",
+    "Alex Rattray lidera equipe",
+    "SDKs gerados automaticamente",
+    "OpenAI faz parceria com Dell",
+    "2 novos artigos oficiais",
+    "Foco em agentes: \"systems they can reach\""
+  ],
+  "ai-hn": [
+    "Musk perde ação contra OpenAI",
+    "Anthropic compra Stainless",
+    "Custos operacionais de LLMs",
+    "KV sharing em arquiteturas",
+    "Cache refresh: vale a pena?",
+    "InsForge: Heroku open-source"
+  ],
+  "ai-science": [
+    "NASA testa chip espacial com IA",
+    "Algoritmo quântico resolve quasicristais",
+    "Padrões de fala prevêem demência",
+    "Nave espacial autônoma com IA",
+    "Computação 100x mais rápida no espaço",
+    "Detecção precoce de declínio cognitivo"
+  ],
+  "ai-robotics": [
+    "IA revela caos magnético em motores",
+    "NASA: processador para espaço profundo",
+    "Motor elétrico mais eficiente com IA",
+    "Espaçaconaves autônomas para Marte",
+    "Veículos elétricos ganham autonomia",
+    "Análise de fala para saúde cerebral"
+  ],
+  "ai-hacking": [
+    "IA mapeia campos magnéticos",
+    "Detecção de estados quânticos W",
+    "Algoritmo quântico resolve impossível",
+    "Vulnerabilidades side-channel em motores",
+    "Avanço em teletransporte quântico",
+    "IA + física de materiais + segurança"
+  ],
+  "ai-solar": [
+    "Luz solar gera fótons entrelaçados",
+    "Ghost imaging com sol natural",
+    "Fibra óptica para cristal especial",
+    "Estados W quânticos detectados",
+    "Energia solar + informação quântica",
+    "Imageamento quântico avançado"
+  ],
+  "ai-livingwell": [
+    "Probiótico do kimchi elimina microplásticos",
+    "2-3 xícaras de café reduz demência 35%",
+    "Nanopartícula reverte Alzheimer em ratos",
+    "4 semanas de dieta rejuvenesce",
+    "30 min de exercício por semana basta",
+    "Multivitamínico retarda envelhecimento"
+  ],
+  "ai-mentalhealth": [
+    "Colina baixa ligada à ansiedade",
+    "Cannabis moderno risco para +65 anos",
+    "Serotonina pode piorar zumbido",
+    "Córtex pré-frontal envolvido",
+    "Dependência em idosos cresce",
+    "Antidepressivos: efeito colateral inesperado"
+  ],
+  "ai-engineering": [
+    "IA modela física de motores",
+    "Padrões magnéticos caóticos revelados",
+    "Eficiência em veículos elétricos",
+    "Japão lidera pesquisa",
+    "Perda energética identificada",
+    "Motores do futuro com IA"
+  ],
+  "ai-agriculture": [
+    "Planta extinta redescoberta na Austrália",
+    "Padrão Voronoi em folhas de Pilea",
+    "Evolução rápida em flores de cactos",
+    "Ciência cidadã com iNaturalist",
+    "750 espécies de cactos estudadas",
+    "Arquitetura foliar otimizada"
+  ],
+  "ai-environmental": [
+    "80% dos rios perderam oxigênio",
+    "Oceano Austral intensifica regulação",
+    "CO₂ acelera resfriamento estratosférico",
+    "Metilsiloxanos: novos poluentes",
+    "Tethys Ocean e montanhas da Ásia",
+    "Tempestade solar medieval em 1200 CE"
+  ],
+  "ai-archaeology": [
+    "Terceiro ancestral dos japoneses",
+    "Homo e Australopithecus coexistiram",
+    "Humanos voltaram à Grã-Bretanha 15.200 anos",
+    "Evolução humana: árvore ramificada",
+    "Dominância manual: bipedalismo + cérebro",
+    "Toba: humanidade sobreviveu à supererupção"
+  ],
+  "ai-social": [
+    "Monge medieval descobriu cometa antes",
+    "Humanidade sobreviveu à Toba",
+    "Revisão de narrativas científicas",
+    "Resiliência humana documentada",
+    "Halley: crédito contestado",
+    "Eventos catastróficos e adaptação"
+  ],
+  "ai-offbeat": [
+    "Moléculas orgânicas em osso de dinossauro",
+    "Vitamina B2 ajuda células cancerosas",
+    "Metabolismo: efeito sanfona contestado",
+    "Crânio de estegossauro na Espanha",
+    "Duas espécies humanas coexistiram",
+    "Evolução: de linha reta para árvore"
+  ]
+}
