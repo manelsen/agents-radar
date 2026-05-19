@@ -1,0 +1,106 @@
+{
+  "ai-agents": [
+    "NullClaw: 7 merges e 12 PRs em 24h",
+    "PR#920: corrige DNS no Windows",
+    "Issue Android/Termux aguarda triagem",
+    "PR#881 pode exigir ajustes em API",
+    "NullClaw, NanoBot, Hermes Agent em alta",
+    "Hackathon gera contribuições ativas"
+  ],
+  "ai-web": [
+    "Anthropic compra a Stainless (SDKs)",
+    "KPMG adota Claude (276 mil func.)",
+    "Parceria com Digital Gateway",
+    "OpenAI: Content Provenance pages",
+    "OpenAI lança página Deployco",
+    "Nova era de infraestrutura de agentes"
+  ],
+  "ai-hn": [
+    "Karpathy deixa Tesla e vai para Anthropic",
+    "Forge: 8B sobe 53%→99% em tarefas",
+    "OpenAI adota marca d'água SynthID",
+    "KV Sharing: nova arch de atenção",
+    "IPOs da Anthropic geram debate",
+    "Top HN: guardrails para LLMs"
+  ],
+  "ai-arxiv": [
+    "DashAttention: atenção adaptável",
+    "Tabela: destilação de TFMs para CPU",
+    "Unificação de modelos multimodais",
+    "Confabulações: lei de escalamento",
+    "Benchmarks para agentes LLM",
+    "50 novos artigos cs.AI/cs.CL/cs.LG"
+  ],
+  "ai-science": [
+    "Partículas luz-matéria: IA 100x mais rápida",
+    "NASA testa chip espacial 100x superior",
+    "Algoritmo quântico desafia supercomputadores",
+    "Fala detecta demência com precisão",
+    "Penn State revoluciona computação óptica",
+    "Novo paradigma: IA com menos energia"
+  ],
+  "ai-robotics": [
+    "Robôs verdes: luz no lugar de eletricidade",
+    "IA revela perdas magnéticas em motores",
+    "Nasa chip permite autonomia no espaço",
+    "Diagnóstico de demência por fala",
+    "Fotônica + IA para eficiência robô",
+    "Veículos elétricos mais eficientes"
+  ],
+  "ai-solar": [
+    "Solar alimenta imageamento quântico",
+    "Fótons correlacionados só com Sol",
+    "Detecção estados W: teleporte avança",
+    "Sol substitui lasers em experimentos",
+    "Energia renovável + tecnologia quântica",
+    "Futuro: dispositivos quânticos solares"
+  ],
+  "ai-livingwell": [
+    "Proteína freia inflamação do envelhecimento",
+    "Mediterrânea reduz diabetes em 31%",
+    "Memória restaurada em camundongos",
+    "Ozempic traz benefícios além do peso",
+    "Mito do dano metabólico debunkado",
+    "30 min de exercício por semana basta"
+  ],
+  "ai-mentalhealth": [
+    "Déficit de colina na ansiedade identificado",
+    "Cannabis: 5 riscos subestimados em idosos",
+    "Serotonina pode piorar zumbido (tinnitus)",
+    "ISRS: novos efeitos colaterais revelados",
+    "Córtex pré-frontal tem padrão químico na ansiedade",
+    "Estudos de 15-16/05: neurobiologia avançada"
+  ],
+  "ai-engineering": [
+    "IA japones modela caos magnético",
+    "Motores elétricos mais eficientes",
+    "Machine learning + física de materiais",
+    "Padrões invisíveis agora visíveis",
+    "Próxima geração de veículos elétricos",
+    "Diagnóstico multiescala de motores"
+  ],
+  "ai-agriculture": [
+    "Ptilotus senarius redescoberto após 60 anos",
+    "Citizen science encontra planta rara",
+    "Formato floral impulsiona especiação",
+    "Desertos: rápida evolução de cactos",
+    "Ciência cidadã + conservacionismo",
+    "Morfologia floral como motor evolutivo"
+  ],
+  "ai-environmental": [
+    "Oceano Tethys formou montanhas da Ásia",
+    "80% dos rios perdem oxigênio em 40 anos",
+    "CO₂ esfria a estratosfera (zona Goldilocks)",
+    "Evento solar extremo de 800 anos atrás",
+    "Poluentes siliconeados em todo o ar",
+    "Oceano Austral está 'sudando' mais"
+  ],
+  "ai-archaeology": [
+    "Fósseis etíopes reescrevem evolução humana",
+    "Australopithecus desconhecido na Etiópia",
+    "Manuscrito de 1.200 anos encontrado em Roma",
+    "Japão: terceira ancestralidade Emishi",
+    "Direitismo evoluiu em dois grandes saltos",
+    "Enterros Bronze revelam rituais e alimentos"
+  ]
+}
