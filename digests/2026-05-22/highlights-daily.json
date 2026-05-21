@@ -1,0 +1,114 @@
+{
+  "ai-cli": [
+    "OpenAI IPO e acordos Anthropic-SpaceX",
+    "Runtime: agentes de código isolados",
+    "Agent.email: cadastro via curl",
+    "Multi-Stream LLMs: paralelização",
+    "DeepSeek replica Claude Code",
+    "Debate: esgotamento por IA"
+  ],
+  "ai-agents": [
+    "NullClaw: cron subagent engine",
+    "ZeroClaw: projeto novo no radar",
+    "Hermes Agent: nousresearch",
+    "IronClaw: integração Near AI",
+    "CoPaw: framework Agentscope",
+    "2 PRs em progresso no NullClaw"
+  ],
+  "ai-arxiv": [
+    "RLVR: trajetórias rank-1 em LLMs",
+    "DelTA: credit assignment por token",
+    "torchtune: pós-treinamento nativo",
+    "Reasoners com attractors",
+    "Benchmarking rigoroso de agentes",
+    "Datasets para pesquisa profunda"
+  ],
+  "ai-science": [
+    "Partículas luz-matéria para IA",
+    "Chip espacial rad-hardened NASA",
+    "Eficiência energética em motores",
+    "Processamento autônomo em missões",
+    "Fotônica substitui eletrônica",
+    "Edge computing para IA"
+  ],
+  "ai-robotics": [
+    "Computação fotônica para IA",
+    "IA revela caos magnético em motores",
+    "Chip espacial com IA da NASA",
+    "Eficiência em veículos elétricos",
+    "Rad-hardened para 深宇宙",
+    "Processamento local autônomo"
+  ],
+  "ai-hacking": [
+    "IA analisa padrões magnéticos",
+    "Manutenção preditiva por ML",
+    "Segurança de sistemas cyber-físicos",
+    "Monitoramento de anomalias",
+    "Identificação de sabotagens",
+    "Detecção em tempo real"
+  ],
+  "ai-solar": [
+    "Ghost imaging com luz solar",
+    "Fótons quânticos correlacionados",
+    "Luz natural para física quântica",
+    "Aplicações outdoors quânticas",
+    "Desafio a ambientes controlados",
+    "Imagem via correlações quânticas"
+  ],
+  "ai-livingwell": [
+    "Ozempic reduz risco cardíaco",
+    "Enzima IDOL: alvo contra Alzheimer",
+    "Dieta mediterrânea reduz diabetes 31%",
+    "Nanotecnologia reverte Alzheimer em camundongos",
+    "Uvas alteram expressão gênica da pele",
+    "Perda de peso com GLP-1"
+  ],
+  "ai-mentalhealth": [
+    "Colina baixa ligada à ansiedade",
+    "Cannabis: riscos em idosos",
+    "Serotonina piora tinnitus",
+    "5 riscos do uso de cannabis em idosos",
+    "Região pré-frontal afetada",
+    "Neurobiologia da ansiedade"
+  ],
+  "ai-engineering": [
+    "IA visualiza campos magnéticos",
+    "Motores elétricos mais eficientes",
+    "Perdas magnéticas em materiais",
+    "Simulação física por ML",
+    "Digital twin para motores",
+    "Otimização de veículos elétricos"
+  ],
+  "ai-agriculture": [
+    "Planta extinta há 60 anos redescoberta",
+    "Ptilotus senarius reencontrado",
+    "Ciência cidadã via iNaturalist",
+    "Amador identificou espécie rara",
+    "iNaturalist revoluciona botânica",
+    "Descoberta botânica por foto"
+  ],
+  "ai-environmental": [
+    "80% dos rios perderam oxigênio",
+    "Tsunami no Mediterrâneo inevitável",
+    "Hidrogênio natural no Canadá",
+    "Mudanças climáticas em rios tropicais",
+    "Antigo Oceano Tétis na Ásia",
+    "Descoberta de hidrogênio branco"
+  ],
+  "ai-archaeology": [
+    "Fóssil na Etiópia reescreve evolução",
+    "Múltiplas espécies humanas coexistiram",
+    "Criança de 11 mil anos na Grã-Bretanha",
+    "Florestas tropicais habitadas há 150 mil anos",
+    "Bronze Age Europe: túmulos raros",
+    "Evolução do armor em répteis"
+  ],
+  "ai-offbeat": [
+    "Répteis: armoramento independente",
+    "Armor reconquistado em lagartos Australianos",
+    "Estegossauro mais completo da Europa",
+    "Nagatitan: último titanossauro da Tailândia",
+    "Uvas alteram expressão gênica da pele",
+    "Vitamina B2: escudo celular"
+  ]
+}
