@@ -1,0 +1,138 @@
+{
+  "ai-agents": [
+    "NullClaw: 2 PRs abertas em revisão ativa",
+    "NanoBot e Hermes Agent em destaque",
+    "IronClaw e ZeroClaw ganham atenção",
+    "7 projetos cobertos no ecossistema",
+    "PR #891: correção de erros curl",
+    "Manutenção ativa sem novos releases"
+  ],
+  "ai-web": [
+    "Anthropic: +10 mil vulnerabilidades achadas",
+    "Project Glasswing: paradigma em segurança",
+    "Claude Mythos Preview identifica falhas críticas",
+    "Microsoft cancela licenças do Claude Code",
+    "OpenAI atualiza conteúdo sem detalhes",
+    "Mudança de paradigma: encontrar→corrigir"
+  ],
+  "ai-hn": [
+    "Microsoft cancela licenças Claude Code",
+    "Project Glasswing: 114 pts, 72 comentários",
+    "Discussão sobre lucratividade da Anthropic",
+    "IDEs para era dos agentes em alta",
+    "Conjunto de ferramentas para LLMs",
+    "Sentimento misto: curiosidade e ceticismo"
+  ],
+  "ai-arxiv": [
+    "Agentes auto-evolutivos reescrevem código",
+    "Tokenização via relaxações convexas",
+    "7 categorias de viés político identificadas",
+    "SFT e RL: framework de estados unificado",
+    "Conhecimento temporal afetado por shuffle",
+    "IEEE: detecção de anomalias em sistemas CPS"
+  ],
+  "ai-science": [
+    "Partículas luz-matéria para IA",
+    "Computação fotônica substitui eletrônica",
+    "Penn State: eficiência energética 10x",
+    "Polaritons aceleram processamento",
+    "Redução drástica de consumo energético",
+    "Alternativa à arquitetura von Neumann"
+  ],
+  "ai-robotics": [
+    "Física+IA em motores elétricos",
+    "Padrões magnéticos caóticos identificados",
+    "Photonics para robótica mobile",
+    "Eficiência energética em VE",
+    "Manutenção preditiva com ML",
+    "Convergência photonics+IA+engenharia"
+  ],
+  "ai-hacking": [
+    "IA em sistemas industriais OT/ICS",
+    "Modelagem física para motores",
+    "Digital twins em sistemas críticos",
+    "Detecção de anomalias em SCADA",
+    "Aplicação além da cibersegurança",
+    "Sistemas cyber-físicos com ML"
+  ],
+  "ai-memory": [
+    "Mitos afastam aprendizado de idiomas",
+    "Memórias escolares estressantes",
+    "Comunicação > perfeição gramatical",
+    "Ferramentas digitais transformam ensino",
+    "Plasticidade cognitiva em adultos",
+    "Barreiras perceptuaisvs.real"
+  ],
+  "ai-solar": [
+    "Fótons correlacionados do sol",
+    "Ghost imaging quântico solar",
+    "Qualidade comparável a laser",
+    "Energia renovável para quântica",
+    "Imagem de rosto fantasma reconstruída",
+    "Menos controle que lasers tradicionais"
+  ],
+  "ai-livingwell": [
+    "PAHs cancerígenos em alimentos",
+    "6-7oz carne não piora diabetes",
+    "Dieta mediterrânea reduz 31% diabetes",
+    "Uvas alteram geneticamente a pele",
+    "Melancia: benefícios cardíacos",
+    "Ozempic reduz risco cardíaco/AVC"
+  ],
+  "ai-mentalhealth": [
+    "Colina baixa ligada à ansiedade",
+    "Córtex préfrontal afetado",
+    "Primeiro marcador químico cerebral",
+    "Tratamentos nutricionais possíveis",
+    "Regulação emocional comprometida",
+    "Deficiência de nutriente identificável"
+  ],
+  "ai-education": [
+    "5 mitos sobre aprendizado de idiomas",
+    "Adultos podem aprender novas línguas",
+    "Comunicação mais importante que gramática",
+    "Apps e streaming auxiliam aprendizado",
+    "Comunidades online motivam",
+    "De correção para competência"
+  ],
+  "ai-engineering": [
+    "Vidro poroso captura CO2",
+    "Sódio e lítio facilitam moldagem",
+    "Armazenamento de hidrogênio",
+    "IA modela motores elétricos",
+    "Perdas de energia identificadas",
+    "Materiais de alto desempenho"
+  ],
+  "ai-agriculture": [
+    "Planta extinta há 60 anos redescoberta",
+    "Ptilotus senarius encontrado na Austrália",
+    "Ciência cidadã via iNaturalist",
+    "Botânico confirma espécie rara",
+    "Conservação de flora endêmica",
+    "Democratização da documentação"
+  ],
+  "ai-environmental": [
+    "Auroras vermelhas no Japão",
+    "Altitudes espaciais surpreendentes",
+    "Raios 100x mais fortes em Júpiter",
+    "Hidrogênio natural em Ontario",
+    "Tsunamis no Mediterrâneo em 10min",
+    "Declínio dramático do oxigênio"
+  ],
+  "ai-archaeology": [
+    "Menina 3 anos: mais antigo UK",
+    "11.000 anos de idade confirmada",
+    "150.000 anos em florestas tropicais",
+    "Homo e Australopithecus coexistiram",
+    "Manuscrito 1.200 anos encontrado em Roma",
+    "Répteis desenvolveram armadura independentemente"
+  ],
+  "ai-offbeat": [
+    "Wormholes: pontes de tempo",
+    "Paradoxo de Einstein revisitado",
+    "Big G medido há 10 anos no NIST",
+    "Células zumbis em reavaliação",
+    "Doenças começam décadas antes",
+    "Estegosauro de 150 mi de anos na Espanha"
+  ]
+}
