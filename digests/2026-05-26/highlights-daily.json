@@ -1,0 +1,106 @@
+{
+  "ai-agents": [
+    "NullClaw: 1 issue + 2 PRs em análise",
+    "Busybox atualizado para 1.38 no Docker",
+    "7 projetos de agentes IA cobertos",
+    "Hermes Agent por nousresearch",
+    "NanoBot por HKUDS",
+    "ZeroClaw por zeroclaw-labs"
+  ],
+  "ai-web": [
+    "Anthropic no Vaticano com Chris Olah",
+    "Encíclica papal 'Magnifica humanitas'",
+    "Chris Olah reconhece incentivos conflitantes",
+    "IA e dignidade humana em debate",
+    "OpenAI sem novos artigos",
+    "Anthropic: 363 artigos no sitemap"
+  ],
+  "ai-hn": [
+    "Anthropic libera Mythos-class públicas",
+    "Chris Olah: IA deve ser guiada fora de Big Tech",
+    "Gemini sob críticas por enshittification",
+    "58 pontos e 79 comentários no HN",
+    "Governança e guardrails em debate",
+    "Agentes com memória persistente em alta"
+  ],
+  "ai-science": [
+    "Penn: partícula luz-matéria acelera IA",
+    "Computação fotônica substitui eletrônicos",
+    "Redução de energia em data centers",
+    "Novos chips ópticos para redes neurais",
+    "Eficiência superior a transistores",
+    "Futuro da computação fotônica em larga escala"
+  ],
+  "ai-robotics": [
+    "WiFi identifica pessoas com 100% precisão",
+    "Penn: partícula luz-matéria para robôs",
+    "Mapeamento corporal por IA revela efeitos da obesidade",
+    "Farmacovigilência via 400 mil posts Reddit",
+    "Finnish researchers: IA biggest professional challenge",
+    "Robôs mais eficientes com computação fotônica"
+  ],
+  "ai-hacking": [
+    "Spin atômico invertido com laser terahertz",
+    "Cristal quântico observado em tempo real",
+    "Spintrônica avança com controle de momentum",
+    "QKD e criptografia quântica em perspectiva",
+    "Rotação reversível desafia modelos anteriores",
+    "Geradores de números aleatórios quânticos"
+  ],
+  "ai-memory": [
+    "Idiomas: barreiras são comportamentais",
+    "Plasticidade cerebral no aprendizado",
+    "Democratização por ferramentas digitais",
+    "Mitos sobre 'dom para idiomas' questionados",
+    "Conexão social na aquisição linguística",
+    "Neuroplasticidade: fatores socioeconômicos"
+  ],
+  "ai-livingwell": [
+    "Cientistas explicam platô de perda do Ozempic",
+    "Suco de beterraba reduz pressão em idosos",
+    "GLP-1 reduz risco de infarto e AVC",
+    "IA em 400 mil posts: efeitos colaterais do Ozempic",
+    "Mitoligação neuronal para dor crônica",
+    "Irregularidades menstruais: efeito colateral oculto"
+  ],
+  "ai-education": [
+    "Foco em comunicação sobre gramática",
+    "5 mitos sobre aprendizado de idiomas",
+    "Apps e comunidades online democratizam",
+    "Ansiedade é principal obstáculo",
+    "Imersão cultural supera perfeição gramatical",
+    "Digital tools transform language learning"
+  ],
+  "ai-engineering": [
+    "WiFi identifica pessoas com quase 100% precisão",
+    "Vidros porosos capturam CO2 e hidrogênio",
+    "Sais de sódio e lítio em vidro microporoso",
+    "Armazenamento de gases para energia limpa",
+    "RF sensing com redes WiFi existentes",
+    "Advanced materials para manufatura"
+  ],
+  "ai-environmental": [
+    "Lítio extraído de salmoras subterrâneas",
+    "Hydrogen naturelle abundante no Canadá",
+    "Mar subindo: causa totalmente explicada",
+    "UNESCO alerta para tsunamis no Mediterrâneo",
+    "Extração sustentável de baterias EV",
+    "150 fontes de hidrogênio branco identificadas"
+  ],
+  "ai-archaeology": [
+    "Humanos em florestas tropicais há 150 mil anos",
+    "Ferramentas de madeira de 430 mil anos na Grécia",
+    "Peixe antártico de 380 milhões de anos",
+    "Inseto de 100 mi anos com garras de caranguejo",
+    "Criança de 3 anos: restos mais antigos do norte",
+    "Mosassauro de 43 pés descoberto no Texas"
+  ],
+  "ai-offbeat": [
+    "Novo polvo azul a 2000m nas Galápagos",
+    "Vitamina D2 pode reduzir D3 no corpo",
+    "Bananas diminuem absorção de flavanóis",
+    "Uvas alteram geneticamente proteção da pele",
+    "Crateras de asteroides na Coreia: vida oxigênio",
+    "Peixe pré-histórico revela saída da água"
+  ]
+}
