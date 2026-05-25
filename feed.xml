@@ -6,7 +6,279 @@
     <description>Resumo diário do ecossistema open source de IA · Daily AI ecosystem digest</description>
     <language>pt-BR</language>
     <atom:link href="https://manelsen.github.io/agents-radar/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Sun, 24 May 2026 20:53:42 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 25 May 2026 21:01:04 +0000</lastBuildDate>
+    <item>
+      <title>Relatório semanal de ferramentas de IA 2026-05-26</title>
+      <link>https://manelsen.github.io/agents-radar/#2026-05-26/ai-weekly</link>
+      <guid isPermaLink="true">https://manelsen.github.io/agents-radar/#2026-05-26/ai-weekly</guid>
+      <pubDate>Tue, 26 May 2026 00:00:00 +0000</pubDate>
+      <description>Relatório semanal do ecossistema de ferramentas de IA 2026-W22 Cobertura: 2026-05-19 ~ 2026-05-25 | Gerado em: 2026-05-25 21:00 UTC Recapitulação Semanal do Ecossistema de Ferramentas de IA 2026-W22 (19–25 de maio de 2026) 1. Principais Histórias da Semana 🔬 Marco científico: IA resolve conjectura matemática aberta Um modelo da OpenAI demonstrou capacidade de disprovar uma conjectura central em geometria discreta — gerando intenso debate sobre o valor de provas computacionais versus provas huma...</description>
+      <content:encoded><![CDATA[<h1>Relatório semanal do ecossistema de ferramentas de IA 2026-W22</h1>
+<blockquote>
+<p>Cobertura: 2026-05-19 ~ 2026-05-25 | Gerado em: 2026-05-25 21:00 UTC</p>
+</blockquote>
+<hr>
+<h1>Recapitulação Semanal do Ecossistema de Ferramentas de IA</h1>
+<h2>2026-W22 (19–25 de maio de 2026)</h2>
+<hr>
+<h2>1. Principais Histórias da Semana</h2>
+<p><strong>🔬 Marco científico: IA resolve conjectura matemática aberta</strong>
+Um modelo da OpenAI demonstrou capacidade de disprovar uma conjectura central em geometria discreta — gerando intenso debate sobre o valor de provas computacionais versus provas humanas (439 pts, 280 comentários no HN). Este feito representa um divisor de águas na percepção da IA como ferramenta de pesquisa matemática genuína.</p>
+<p><strong>⚡ Hardware quântico e fotônico acelera IA</strong>
+Pesquisadores da Penn State desenvolveram partículas híbridas luz-matéria (polaritons) capazes de executar operações de IA com eficiência energética sem precedentes. A NASA também colocou à prova um processador espacial rad-hardened com desempenho 100x superior para naves autônomas.</p>
+<p><strong>🔒 Project Glasswing: 10.000 vulnerabilidades detectadas</strong>
+A Anthropic revelou que seu modelo Mythos Preview identificou mais de 10.000 vulnerabilidades de alta/crítica severidade em software crítico em apenas um mês de operação. O gargalo shiftou de &quot;encontrar falhas&quot; para &quot;verificar e corrigir&quot; essa avalanche.</p>
+<p><strong>🤝 Anthropic adquire Stainless</strong>
+A aquisição da Stainless (geradora de SDKs oficiais) reforça a estratégia de verticalização da Anthropic no ecossistema de ferramentas para desenvolvedores, com foco explícito em conectividade de agentes.</p>
+<hr>
+<h2>2. Progresso das Ferramentas CLI</h2>
+<h3>NullClaw (destaque do ecossistema)</h3>
+<table>
+<thead>
+<tr>
+<th>Métrica</th>
+<th>Valor</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>PRs atualizados (semana)</td>
+<td>~40</td>
+</tr>
+<tr>
+<td>PRs merged</td>
+<td>~15</td>
+</tr>
+<tr>
+<td>Issues abertas</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Releases</td>
+<td>0</td>
+</tr>
+</tbody></table>
+<p><strong>Principais avanços:</strong></p>
+<ul>
+<li><strong>#881 refactor(http):</strong> Remoção de subprocessos curl em runtime, substituindo por wrappers nativos <code>std.http</code> do Zig — melhoria significativa de performance e simplicidade</li>
+<li><strong>#920 fix(net):</strong> Correção crítica de resolução DNS no Windows (<code>getAddressList()</code> retornava <code>UnknownHostName</code>)</li>
+<li><strong>#910 fix(discord/websocket):</strong> Estabilidade do gateway com watchdog, backoff e leak de TLS corrigido</li>
+<li><strong>#783 feat(cron):</strong> Engine de subagente com scheduler DB-backed, suporte a skill/agent/shell jobs e timezone</li>
+</ul>
+<p><strong>Estado:</strong> O projeto está em fase de consolidação antes de uma próxima release. A comunidade demonstra engajamento consistente com múltiplos contribuidores ativos (vernonstinebaker, ncode, yanggf8, PierreLeGuen).</p>
+<hr>
+<h2>3. Ecossistema de Agentes de IA</h2>
+<h3>Projetos monitorados</h3>
+<table>
+<thead>
+<tr>
+<th>Projeto</th>
+<th>Atividade</th>
+<th>Destaque</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>NullClaw</strong></td>
+<td>Alta</td>
+<td>Refatoração HTTP, cron engine, estabilidade Discord</td>
+</tr>
+<tr>
+<td><strong>NanoBot</strong></td>
+<td>Moderada</td>
+<td>Sem updates significativos</td>
+</tr>
+<tr>
+<td><strong>Hermes Agent</strong></td>
+<td>Moderada</td>
+<td>Sem updates significativos</td>
+</tr>
+<tr>
+<td><strong>PicoClaw</strong></td>
+<td>Baixa</td>
+<td>Sem updates significativos</td>
+</tr>
+<tr>
+<td><strong>IronClaw</strong></td>
+<td>Moderada</td>
+<td>Sem updates significativos</td>
+</tr>
+<tr>
+<td><strong>CoPaw</strong></td>
+<td>Moderada</td>
+<td>Sem updates significativos</td>
+</tr>
+<tr>
+<td><strong>ZeroClaw</strong></td>
+<td>Baixa</td>
+<td>Sem updates significativos</td>
+</tr>
+</tbody></table>
+<p><strong>Tendência:</strong> O ecossistema &quot;Claw&quot; (NullClaw, PicoClaw, IronClaw, ZeroClaw) continua sendo o segmento mais ativo, com NullClaw liderando em volume de contribuições.</p>
+<p><strong>Novos entrantes no HN:</strong></p>
+<ul>
+<li><strong>Superset (YC P26):</strong> &quot;IDE for the agents era&quot; — plataforma de coding agents isolados</li>
+<li><strong>Agent.email:</strong> Automação de email via CLI com verificação OTP humana</li>
+<li><strong>InsForge:</strong> &quot;Heroku para coding agents&quot; open-source</li>
+</ul>
+<hr>
+<h2>4. Tendências Open Source</h2>
+<h3>Frameworks e ferramentas em destaque</h3>
+<ol>
+<li><p><strong>Guardrails para modelos pequenos:</strong> Forge demonstrou improvement de 53% para 99% em tarefas agenticais usando guardrails em modelos de 8B parâmetros</p>
+</li>
+<li><p><strong>OTel (Observabilidade):</strong> Beacon emerged como camada open-source para visibilidade de agentes IA locais</p>
+</li>
+<li><p><strong>RAG e conhecimento:</strong> Crescente refinamento de sistemas de retrieval augmentation</p>
+</li>
+<li><p><strong>Multi-Agent LLMs:</strong> Domain-camouflaged injection attacks em sistemas multi-agente geraram alerta de segurança</p>
+</li>
+<li><p><strong>KV Sharing e Compressed Attention:</strong> Técnicas de otimização de arquiteturas LLM ganhando tração</p>
+</li>
+</ol>
+<p><strong>Destaque negativo:</strong> Vulnerabilidade RCE reproduzida no Claude Code — padrão de bug encontrado em ferramentas similares indica superfície de ataque comum em coding agents.</p>
+<hr>
+<h2>5. Debates da Comunidade HN</h2>
+<h3>Temas mais comentados</h3>
+<table>
+<thead>
+<tr>
+<th>Discussão</th>
+<th>Pontos</th>
+<th>Tema</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>IA disprova conjectura matemática</td>
+<td>439</td>
+<td>Pesquisa fundamental</td>
+</tr>
+<tr>
+<td>Karpathy → Anthropic</td>
+<td>~200</td>
+<td>Dinâmica competitiva</td>
+</tr>
+<tr>
+<td>Anthropic adquire Stainless</td>
+<td>~180</td>
+<td>Estratégia corporativa</td>
+</tr>
+<tr>
+<td>Microsoft cancela licenças Claude Code</td>
+<td>~129</td>
+<td>Dependência de vendors</td>
+</tr>
+<tr>
+<td>Claude não é seu arquiteto</td>
+<td>156</td>
+<td>Limitações de agentes</td>
+</tr>
+<tr>
+<td>Fragilidade de agentes em código backend</td>
+<td>132</td>
+<td>Confiabilidade em produção</td>
+</tr>
+</tbody></table>
+<h3>Sentimento predominante</h3>
+<ul>
+<li><strong>Otimismo cauteloso:</strong> Capacidades impressionantes coexistindo com preocupações sobre custos, segurança e concentração de mercado</li>
+<li><strong>Esgotamento de desenvolvedores</strong> assistidos por IA emerge como tema crescente</li>
+<li><strong>Preocupação com dependência</strong> de infraestrutura específica (Microsoft cancelando licenças do Claude Code)</li>
+</ul>
+<hr>
+<h2>6. Atualizações Oficiais</h2>
+<h3>Anthropic</h3>
+<table>
+<thead>
+<tr>
+<th>Conteúdo</th>
+<th>Data</th>
+<th>Importância</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Project Glasswing</strong></td>
+<td>22/05</td>
+<td>★★★★★</td>
+</tr>
+<tr>
+<td><strong>Natural Language Autoencoders</strong></td>
+<td>20/05</td>
+<td>★★★★</td>
+</tr>
+<tr>
+<td><strong>Teaching Claude why</strong></td>
+<td>20/05</td>
+<td>★★★★</td>
+</tr>
+<tr>
+<td><strong>Aquisição da Stainless</strong></td>
+<td>18/05</td>
+<td>★★★★★</td>
+</tr>
+<tr>
+<td><strong>Parceria KPMG</strong></td>
+<td>19/05</td>
+<td>★★★★</td>
+</tr>
+</tbody></table>
+<p><strong>Análise:</strong> A Anthropic demonstrou semana agressiva de comunicação, com foco em interpretabilidade (NLA), alinhamento e expansão corporativa.</p>
+<h3>OpenAI</h3>
+<table>
+<thead>
+<tr>
+<th>Conteúdo</th>
+<th>Data</th>
+<th>Importância</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Modelo resolve conjectura matemática</strong></td>
+<td>21/05</td>
+<td>★★★★★</td>
+</tr>
+<tr>
+<td><strong>Advancing Content Provenance</strong></td>
+<td>19/05</td>
+<td>★★★</td>
+</tr>
+<tr>
+<td><strong>Deployco</strong></td>
+<td>19/05</td>
+<td>★★★</td>
+</tr>
+<tr>
+<td><strong>Rumores de IPO</strong></td>
+<td>Múltiplos dias</td>
+<td>★★★★</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>7. Sinais para a Próxima Semana</h2>
+<h3>⬆️ Tendências em alta</h3>
+<ol>
+<li><strong>Interpretabilidade de modelos:</strong> Natural Language Autoencoders da Anthropic marcam passo significativo — &quot;ler pensamentos&quot; de LLMs em texto legível</li>
+<li><strong>Segurança de agentes:</strong> Project Glasswing evidencia que o problema de segurança shiftou de detecção para triagem/correção</li>
+<li><strong>Eficiência computacional:</strong> Computação fotônica amadurece como alternativa viável a transistores eletrônicos</li>
+<li><strong>Aquisições estratégicas:</strong> Verticalização de Big Tech em ferramentas para desenvolvedores tende a se acelerar</li>
+</ol>
+<h3>⬇️ Riscos identificados</h3>
+<ol>
+<li><strong>Vulnerabilidades em coding agents:</strong> Padrões RCE recorrentes exigem auditoria de ferramentas em produção</li>
+<li><strong>Concentração de mercado:</strong> Dependência de vendors específicos (Microsoft cancelando licenças) expõe fragilidade</li>
+<li><strong>Custo operacional:</strong> Discussões sobre tokenomics e cache efficiency indicam pressão de custos em escala</li>
+</ol>
+<h3>🔮 Previsões para W23</h3>
+<ul>
+<li><strong>NullClaw:</strong> Possível release tag após merge do PR #881 (refactor HTTP)</li>
+<li><strong>Anthropic:</strong> Novos anúncios de interpretabilidade ou alinhamento</li>
+<li><strong>HN:</strong> Rumores de IPO continuarão dominando, com possível reação a resultados financeiros</li>
+<li><strong>Mercado:</strong> Novos players em &quot;IDE para agentes&quot; devem surgir com funcionalidades diferenciadas</li>
+</ul>
+<hr>
+<p><em>Relatório gerado em 2026-05-26 | Fontes: agents-radar, Hacker News, ScienceDaily, sites oficiais</em></p>
+<hr>
+<p><em>Este resumo é gerado automaticamente por <a href="https://github.com/manelsen/agents-radar">agents-radar</a>.</em></p>
+]]></content:encoded>
+    </item>
     <item>
       <title>Relatório diário do ecossistema de agentes de IA 2026-05-25</title>
       <link>https://manelsen.github.io/agents-radar/#2026-05-25/ai-agents</link>
@@ -9515,146 +9787,6 @@ Variável de ambiente <code>NO_PROXY</code> não funciona corretamente na v1.1.8
 <p><strong>Conclusão:</strong> ZeroClaw demonstra saúde vigorosa com alta atividade de comunidade e desenvolvimento focado. A prioridade imediata deve ser a resolução dos 4 bugs S1 (WhatsApp, Telegram, Slack, MCP) e o avanço do stack de integração TUI. O RFC de governança, se aceito, pode reduzir a pendência de issues não atribuídas que atualmente satura o board.</p>
 </details>
 
-<hr>
-<p><em>Este resumo é gerado automaticamente por <a href="https://github.com/manelsen/agents-radar">agents-radar</a>.</em></p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>Relatório de conteúdo oficial de IA 2026-05-23</title>
-      <link>https://manelsen.github.io/agents-radar/#2026-05-23/ai-web</link>
-      <guid isPermaLink="true">https://manelsen.github.io/agents-radar/#2026-05-23/ai-web</guid>
-      <pubDate>Sat, 23 May 2026 00:00:00 +0000</pubDate>
-      <description>Relatório de conteúdo oficial de IA 2026-05-23 Atualização de hoje | Novo conteúdo: 2 artigos | Gerado em: 2026-05-22 21:05 UTC Fontes: Anthropic: anthropic.com — 1 novos artigos (total no sitemap: 362) OpenAI: openai.com — 1 novos artigos (total no sitemap: 824) Relatório de Acompanhamento de Conteúdo Oficial de IA Data de coleta: 2026-05-23Fontes: Anthropic (claude.com / anthropic.com) · OpenAI (openai.com)Tipo: Atualização incremental 1. Destaques do Dia A Anthropic publicou hoje uma atualiza...</description>
-      <content:encoded><![CDATA[<h1>Relatório de conteúdo oficial de IA 2026-05-23</h1>
-<blockquote>
-<p>Atualização de hoje | Novo conteúdo: 2 artigos | Gerado em: 2026-05-22 21:05 UTC</p>
-</blockquote>
-<p>Fontes:</p>
-<ul>
-<li>Anthropic: <a href="https://www.anthropic.com">anthropic.com</a> — 1 novos artigos (total no sitemap: 362)</li>
-<li>OpenAI: <a href="https://openai.com">openai.com</a> — 1 novos artigos (total no sitemap: 824)</li>
-</ul>
-<hr>
-<h1>Relatório de Acompanhamento de Conteúdo Oficial de IA</h1>
-<p><strong>Data de coleta:</strong> 2026-05-23<br><strong>Fontes:</strong> Anthropic (claude.com / anthropic.com) · OpenAI (openai.com)<br><strong>Tipo:</strong> Atualização incremental</p>
-<hr>
-<h2>1. Destaques do Dia</h2>
-<p>A Anthropic publicou hoje uma atualização substancial sobre o <strong>Project Glasswing</strong>, revelando que o modelo Claude Mythos Preview já identificou mais de <strong>dez mil vulnerabilidades</strong> de alta ou crítica severidade em software criticamente importante. A descoberta mais significativa não está nos números encontrados, mas na mudança de paradigma: o gargalo da segurança cibernética passou de &quot;encontrar vulnerabilidades&quot; para &quot;verificar, divulgar e corrigir&quot; essa avalanche massiva de falhas — algo que a empresa classifica explicitamente como um desafio crítico para o setor. A OpenAI também atualizou conteúdo, porém os dados disponíveis se limitam a metadados, impossibilitando análise substantiva.</p>
-<hr>
-<h2>2. Destaques da Anthropic / Claude</h2>
-<h3>🔬 Pesquisa</h3>
-<h4>Project Glasswing: Uma atualização inicial</h4>
-<p>📅 Publicação: 2026-05-22<br>🔗 <a href="https://www.anthropic.com/research/glasswing-initial-update">anthropic.com/research/glasswing-initial-update</a></p>
-<p><strong>O que foi anunciado:</strong></p>
-<ul>
-<li><strong>Escala sem precedentes:</strong> Em aproximadamente um mês de operação, o Glasswing e seus ~50 parceiros utilizaram o Claude Mythos Preview para detectar <strong>mais de 10.000 vulnerabilidades</strong> classificadas como alta ou crítica severidade nos softwares mais sistemicamente importantes do mundo.</li>
-<li><strong>Mudança de paradigma na segurança:</strong> A Anthropic observa que o progresso em segurança de software &quot;usava ser limitado por quão rapidamente podíamos encontrar novas vulnerabilidades. Agora é limitado por quão rapidamente podemos verificar, divulgar e corrigir os grandes números de vulnerabilidades encontradas por IA.&quot;</li>
-<li><strong>Convenção de divulgação em xeque:</strong> A publicação discute a convenção estabelecida do setor de divulgar novas vulnerabilidades <strong>90 dias após a descoberta</strong> (ou ~45 dias após a disponibilização do patch). A velocidade agora gerada por IA coloca pressão sobre esse modelo.</li>
-</ul>
-<p><strong>Análise do trecho:</strong>
-O trecho cortado indica que o artigo continua discutindo como a empresa está abordando a apresentação dos resultados do Mythos Preview, sugerindo cautela na exposição pública enquanto se aguarda a resolução das vulnerabilidades pelos fornecedores. Isso sinaliza uma estratégia de comunicação responsável para evitar alarme desnecessário enquanto a correção está em curso.</p>
-<hr>
-<h2>3. Destaques da OpenAI</h2>
-<h3>📊 Business</h3>
-<h4>Gartner 2026 Agentic Coding Leader <em>(título inferido da URL)</em></h4>
-<p>📅 Publicação: 2026-05-22<br>🔗 <a href="https://openai.com/business/learn/gartner-2026-agentic-coding-leader/">openai.com/business/learn/gartner-2026-agentic-coding-leader/</a></p>
-<p>⚠️ <strong>Aviso:</strong> Os dados disponíveis são exclusivamente metadados. O corpo do artigo não foi coletado. Não é possível extrair resumo, posicionamentos ou detalhes estratégicos com confiança. A classificação como &quot;business&quot; e o título inferido sugerem uma certificação ou posicionamento de mercado relacionado a ferramentas de codificação agêntica, mas isso constitui <strong>especulação</strong>, não análise.</p>
-<hr>
-<h2>4. Leitura de Sinais Estratégicos</h2>
-<h3>🔍 Prioridades Técnicas</h3>
-<table>
-<thead>
-<tr>
-<th>Sinal</th>
-<th>Interpretação</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>Foco em defesa, não apenas capacidade</strong></td>
-<td>A Anthropic está investindo pesadamente na narrativa de que modelos de IA crescentemente capazes representam uma ameaça à segurança — e que a solução passa por eles mesmos. O Glasswing é um movimento de &quot;segurança positiva&quot; que repositiona a IA como salvaguarda.</td>
-</tr>
-<tr>
-<td><strong>A velocidade de detecção superou a velocidade de resposta humana</strong></td>
-<td>Isso representa uma inversão fundamental: durante décadas, o problema era encontrar falhas; agora o problema é processá-las. Isso cria demanda por novos fluxos de trabalho automatizados de triagem, priorização e correção.</td>
-</tr>
-<tr>
-<td><strong>Mythos como classe de modelo</strong></td>
-<td>A menção de &quot;Mythos-class models&quot; no futuro indica que a Anthropic está desenvolvendo uma família de modelos especializadas em análise de código e segurança, potencialmente distinta dos modelos de chat convencionais.</td>
-</tr>
-</tbody></table>
-<h3>⚔️ Dinâmica Competitiva</h3>
-<ul>
-<li><strong>Anthropic vs. Microsoft/GitHub:</strong> O Glasswing posiciona a Anthropic como parceira da indústria de segurança, potencialmente competindo com ferramentas como GitHub Advanced Security e CodeQL da Semmle — mas com capacidades de IA generativa superiores.</li>
-<li><strong>Pressão sobre a OpenAI:</strong> A atualização da OpenAI (certificação Gartner) parece reativa à aceleração competitiva. A menção de &quot;Agentic Coding&quot; indica que a OpenAI reconhece a codificação agêntica como um campo de batalha estratégico.</li>
-</ul>
-<h3>👥 Impacto para Desenvolvedores e Empresas</h3>
-<ul>
-<li><strong>Para desenvolvedores:</strong> A comunidade open-source será beneficiada por varreduras de segurança massivas, mas enfrentará um backlog de vulnerabilidades a corrigir. A qualidade das correções geradas por IA será um fator determinante de adoção.</li>
-<li><strong>Para empresas:</strong> A convenção de 90 dias para divulgação pode se tornar insustentável. Organizações precisarão investir em pipelines de resposta acelerados e em ferramentas de gestão de vulnerabilidades baseadas em IA.</li>
-</ul>
-<hr>
-<h2>5. Detalhes que Merecem Atenção</h2>
-<table>
-<thead>
-<tr>
-<th>Detalhe</th>
-<th>Sinal Implícito</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>&quot;Antes que modelos de IA crescentemente capazes possam ser usados contra ele&quot;</strong></td>
-<td>Linguagem deliberadamente provocativa que posiciona a ameaça como iminente e auto-referente — a própria capacidade da Anthropic é o catalisador.</td>
-</tr>
-<tr>
-<td><strong>&quot;~50 parceiros&quot;</strong></td>
-<td>Parcerias industriais em escala, não iniciativa solo. A Anthropic está construindo um ecossistema de confiança, provavelmente incluindo empresas de infraestrutura crítica e governos.</td>
-</tr>
-<tr>
-<td><strong>&quot;Mythos-class models&quot;</strong></td>
-<td>O sufixo &quot;Preview&quot; sugere que modelos Mythos ainda não estão disponíveis publicamente. A decisão de quando liberar esses modelos será estratégica — provavelmente vinculada à capacidade de processamento das correções pelo setor.</td>
-</tr>
-<tr>
-<td><strong>&quot;Discuss our approach to discussing findings&quot;</strong></td>
-<td>A Anthropic está deliberando sobre como comunicar vulnerabilidades sem causar pânico ou exploração. Isso sinaliza que a empresa está assumindo um papel quase-regulatório na indústria de segurança.</td>
-</tr>
-<tr>
-<td><strong>Timing: 22 de maio de 2026</strong></td>
-<td>A atualização foi publicada na quinta-feira pré-feriado nos EUA, sugerindo uma janela de baixa atenção midiática — talvez para testar recepção do mercado antes de um anúncio maior.</td>
-</tr>
-</tbody></table>
-<hr>
-<h2>Resumo Executivo</h2>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>Anthropic</th>
-<th>OpenAI</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>Volume</strong></td>
-<td>1 publicação de alto impacto</td>
-<td>1 publicação (metadados apenas)</td>
-</tr>
-<tr>
-<td><strong>Tom</strong></td>
-<td>Proativo, defensivo, ecossistêmico</td>
-<td>Não analisável</td>
-</tr>
-<tr>
-<td><strong>Foco</strong></td>
-<td>Segurança como produto e narrativa</td>
-<td>Posicionamento de mercado (Gartner)</td>
-</tr>
-<tr>
-<td><strong>Ação recomendada</strong></td>
-<td>Monitorar release de Mythos; preparar equipes de segurança para adoção de ferramentas de análise IA-first</td>
-<td>Aguardar publicação integral para avaliação</td>
-</tr>
-</tbody></table>
-<hr>
-<p><em>Este relatório foi gerado com base em conteúdo coletado em 2026-05-23. Reconsulta recomendada em 24-48h para capturar artigo integral da OpenAI e possíveis follow-ups da Anthropic.</em></p>
 <hr>
 <p><em>Este resumo é gerado automaticamente por <a href="https://github.com/manelsen/agents-radar">agents-radar</a>.</em></p>
 ]]></content:encoded>
