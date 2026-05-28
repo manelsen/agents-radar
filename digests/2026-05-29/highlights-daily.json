@@ -1,0 +1,106 @@
+{
+  "ai-agents": [
+    "NullClaw corrige bugs críticos no Telegram (#869, #901)",
+    "PR #922 adiciona provedores NEAR AI Cloud e Atlas",
+    "NullClaw avança em segurança e compatibilidade POSIX",
+    "6 PRs merged no ecossistema de agentes NullClaw",
+    "NanoBot, Hermes Agent e mais 5 projetos em destaque",
+    "IronClaw e CoPaw expandem ferramentas para agentes"
+  ],
+  "ai-web": [
+    "Anthropic capta US$ 65 bi em Série H histórica",
+    "Claude Opus 4.8 lançado com avanços em julgamento",
+    "Claude Design: plataforma de prototipagem visual",
+    "Anthropic abre escritório em Milão para ética de IA",
+    "OpenAI publica metadados do Frontier Governance",
+    "365 artigos no sitemap Anthropic + OpenAI"
+  ],
+  "ai-hn": [
+    "Claude Opus 4.8 domina HN com 1020 pontos",
+    "810 comentários sobre o lançamento do Claude 4.8",
+    "Discussão sobre impacto da IA no mercado de trabalho",
+    "Artigo 'Various LLM Smells' gera 79 pontos",
+    "Inferência LLM em tempo real em GPUs padrão",
+    "Mudança de posição de Altman e Amodei divide opinião"
+  ],
+  "ai-arxiv": [
+    "PEFT-Arena: dilema estabilidade-plasticidade em fine-tuning",
+    "VLMs não melhoram alinhamento humano na leitura natural",
+    "Estudo pioneiro sobre partículas discursivas em malaio",
+    "Novo framework para quantificação de incerteza",
+    "Avanços em agentes autônomos com memória dinâmica",
+    "Métodos zeroth-order para fine-tuning eficiente"
+  ],
+  "ai-robotics": [
+    "Chip espectrométrico miniaturizado com IA da UC Davis",
+    "Identificação de pessoas via sinais WiFi convencionais",
+    "Deteccão de efeitos colaterais do Ozempic por IA",
+    "IA mapeia impactos da obesidade em dados biomédicos",
+    "Sensores miniaturizados para robôs de inspeção",
+    "Sensores quânticos com potencial para segurança"
+  ],
+  "ai-memory": [
+    "Especialista refute 5 mitos do aprendizado de idiomas",
+    "Comunicação e cultura mais relevantes que gramática",
+    "Apps e comunidades online transformam curva de aprendizado",
+    "Prazer e prática consistente retêm memória",
+    "Memória autobiográfica molda crenças limitantes",
+    "Contexto social potencializa retenção de longo prazo"
+  ],
+  "ai-livingwell": [
+    "Anticorpo contra proteína GPNMB freia Parkinson",
+    "Spray nasal reverte envelhecimento cerebral em roedores",
+    "Proteína Menin no hipotálamo reverte sinais de aging",
+    "Vitamina K supercarregada ajuda cérebro a se regenerar",
+    "Inibidores de cPLA2 reduzem inflamação em Alzheimer",
+    "GLP-1: pesquisadores desvendam por que atingem platô"
+  ],
+  "ai-education": [
+    "成年人 evitam idiomas por memórias estressantes",
+    "5 mitos bloqueiam aprendizado: gramática, perfeição, etc.",
+    "Comunicação e cultura superam busca por perfeição",
+    "Apps e séries transformam aprendizado em social",
+    "Abordagens contemporâneas priorizam interação",
+    "Ansiedade linguística é barreira maior que capacidade"
+  ],
+  "ai-engineering": [
+    "Pianistas influenciam cor tonal via toque a 1000 fps",
+    "Chip espectroscópico miniaturizado com IA executa análises",
+    "Identificação via WiFi funciona mesmo sem dispositivos",
+    "Vidro poroso com sódio/lítio armazena CO2 e hidrogênio",
+    "Sensores de silício inteligentes em escala milimétrica",
+    "Método limpo extrai lítio para baterias"
+  ],
+  "ai-agriculture": [
+    "Cemitério em Ithaca abriga 5,5 milhões de abelhas",
+    "Mega-população subterrânea vive há mais de 100 anos",
+    "Abelhas polinizam pomares de maçã da região",
+    "Solo arenoso não perturbado sustenta colônia massiva",
+    "Hábitats urbanos escondidos garantem segurança alimentar",
+    "Políticas de conservação precisam proteger solo arenoso"
+  ],
+  "ai-environmental": [
+    "Humanidade já vive além dos limites sustentáveis",
+    "Estudo de 200 anos confirma excesso planetário",
+    "Aquecimento das águas acelera elevação do mar",
+    "Oscilações orbitais provocam mudanças climáticas drásticas",
+    "Extração de lítio mais rápida e limpa desenvolvida",
+    "Depósitos globais de terras raras mapeados para transição"
+  ],
+  "ai-archaeology": [
+    "Peixe antártico de 380 mi de anos revela transição aquática",
+    "Inseto em âmbar de 100 mi de anos tem garras únicas",
+    "Ferramentas de madeira de 430 mil anos na Grécia",
+    "Crânio analisado com imageologia neutrônica avançada",
+    "Convergência evolutiva com crustáceos em invertebrado",
+    "Evolução aquático-terrestre começou na superfície da água"
+  ],
+  "ai-offbeat": [
+    "Crocodilos perdidos das Seychelles resolvidos por DNA",
+    "Tentilhões escoceses atingem dobro do peso continental",
+    "Piano centenário: toque altera timbre das notas",
+    "Cemitério em NY esconde 5,5 milhões de abelhas",
+    "Spray nasal reverte envelhecimento cerebral em 2 doses",
+    "Polvo azul do tamanho de bola de golf identificado"
+  ]
+}
