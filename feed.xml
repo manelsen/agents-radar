@@ -6,7 +6,215 @@
     <description>Resumo diário do ecossistema open source de IA · Daily AI ecosystem digest</description>
     <language>pt-BR</language>
     <atom:link href="https://manelsen.github.io/agents-radar/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Sun, 31 May 2026 20:57:54 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 01 Jun 2026 22:32:07 +0000</lastBuildDate>
+    <item>
+      <title>Relatório semanal de ferramentas de IA 2026-06-02</title>
+      <link>https://manelsen.github.io/agents-radar/#2026-06-02/ai-weekly</link>
+      <guid isPermaLink="true">https://manelsen.github.io/agents-radar/#2026-06-02/ai-weekly</guid>
+      <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
+      <description>Relatório semanal do ecossistema de ferramentas de IA 2026-W23 Cobertura: 2026-05-26 ~ 2026-06-01 | Gerado em: 2026-06-01 22:31 UTC Relatório Semanal — Ecossistema de Ferramentas de IA Período: 26 de maio a 1 de junho de 2026 (Semana W23-2026) 1. Principais Histórias da Semana A semana foi marcada por dois marcos que redefinem o cenário competitivo de IA: Anthropic consolida liderança em valuation. A empresa levantó $65 bilhões em Série H, avaliada em $965 bilhões post-money — a maior captação p...</description>
+      <content:encoded><![CDATA[<h1>Relatório semanal do ecossistema de ferramentas de IA 2026-W23</h1>
+<blockquote>
+<p>Cobertura: 2026-05-26 ~ 2026-06-01 | Gerado em: 2026-06-01 22:31 UTC</p>
+</blockquote>
+<hr>
+<h1>Relatório Semanal — Ecossistema de Ferramentas de IA</h1>
+<p><strong>Período:</strong> 26 de maio a 1 de junho de 2026 (Semana W23-2026)</p>
+<hr>
+<h2>1. Principais Histórias da Semana</h2>
+<p>A semana foi marcada por dois marcos que redefinem o cenário competitivo de IA:</p>
+<p><strong>Anthropic consolida liderança em valuation.</strong> A empresa levantó $65 bilhões em Série H, avaliada em $965 bilhões post-money — a maior captação privada já registrada no setor. No mesmo período, lançou o <strong>Claude Opus 4.8</strong>, que dominou o Hacker News com 1.020 pontos e 810 comentários, demonstrando appetite massivo por modelos premium.</p>
+<p><strong>Computação fotônica para IA.</strong> Pesquisadores da University of Pennsylvania desenvolveram partículas híbrido luz-matéria capazes de acelerar processamento neural com menor consumo energético que transistores eletrônicos tradicionais. Este breakthrough sinaliza potencial mudança de paradigma em hardware de IA.</p>
+<p><strong>Regulação e ética ganham institucionalidade.</strong> Chris Olah (co-fundador da Anthropic) falou no Vaticano durante lançamento da encíclica &quot;Magnifica Humanitas&quot; sobre IA e dignidade humana, sinalizando aproximação entre Big Tech e autoridades morais globais.</p>
+<hr>
+<h2>2. Progresso das Ferramentas CLI</h2>
+<h3>Claude Code amadurece autonomia</h3>
+<p>A Anthropic publicou detalhes técnicos do <strong>Claude Code Auto Mode</strong>, mecanismo que automatiza decisões de permissão usando classificadores treinados. Dado que 93% dos prompts de permissão são aprovados na prática, o sistema busca capturar esse padrão com judgement de modelo, reduzindo intervenção humana sem comprometer segurança.</p>
+<p>Um guia não-oficial sobre configurações ocultas do Claude Code gerou 321 pontos no HN (63 comentários), indicando demanda reprimida por documentação avançada de tooling.</p>
+<h3>NullClaw mantém ritmo de releases</h3>
+<p>O projeto fechou a semana com atividade intensa:</p>
+<table>
+<thead>
+<tr>
+<th>Dia</th>
+<th>PRs</th>
+<th>Issues</th>
+<th>Releases</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>26/05</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>27/05</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>28/05</td>
+<td>3</td>
+<td>3</td>
+<td>0</td>
+</tr>
+<tr>
+<td>29/05</td>
+<td>6</td>
+<td>2</td>
+<td>0</td>
+</tr>
+<tr>
+<td>30/05</td>
+<td>12</td>
+<td>3</td>
+<td><strong>v2026.5.29</strong></td>
+</tr>
+<tr>
+<td>31/05</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>01/06</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+</tr>
+</tbody></table>
+<p><strong>Destaques de PRs da semana:</strong></p>
+<ul>
+<li><strong>#878</strong> — Correção POSIX crítica: substituição de <code>std.Io.sleep()</code> cooperativo por <code>nanosleep</code> nativo em <code>thread.sleep()</code></li>
+<li><strong>#891/#892</strong> — Fix de DNS no Windows com testes de regressão</li>
+<li><strong>#907</strong> — Fortalecimento de segurança em webhooks e cron jobs</li>
+<li><strong>#924</strong> — Tolerância a valores numéricos em <code>allow-from</code> lists do Telegram</li>
+<li><strong>#933</strong> — Adição de métodos de gateway para mídia</li>
+<li><strong>#935</strong> — Compatibilidade Nix com Zig 0.16.0</li>
+</ul>
+<h3>Tooling emergente no HN</h3>
+<p>Três ferramentas llamaram atenção da comunidade:</p>
+<ul>
+<li><strong>AISlop</strong> (71 pts) — CLI para detectar code smells em código gerado por IA</li>
+<li><strong>OpenGem</strong> — Gateway LLM usando contas Google para balanceamento gratuito</li>
+<li><strong>DEMON</strong> — Motor de difusão musical em tempo real com GPU local (25Hz)</li>
+</ul>
+<hr>
+<h2>3. Ecossistema de Agentes de IA</h2>
+<h3>Memória persistente como próxima fronteira</h3>
+<p>Debates no HN evidenciaram que o protocolo MCP (Model Context Protocol) não resolve limitações de memória em agentes. Startups apostam em soluções de memória persistente como diferenciador competitivo para agentes de longa duração.</p>
+<h3>Containment em escala de produção</h3>
+<p>A Anthropic publicou artigo detalhando como gerencia risco em agentes IA em produção. A postura mudou: acesso que há 12 meses seria &quot;rejeitado de imediato&quot; hoje é considerado &quot;rotineiro&quot; — desde que produtos possam ser tornados seguros. O custo de <em>não</em> deployar agentes agora supera riscos de deployment para a maioria dos casos de uso.</p>
+<h3>Agentes de codificação</h3>
+<p>O benchmark <strong>DeepSWE</strong> surgiu como alternativa a排行榜 contaminados, buscando avaliar agentes de codificação de longa duração sem data leakage. Paralelamente,的研究 descobriu que sistemas multi-agente podem descobrir e reproduzir vulnerabilidades automaticamente (arxiv:2605.21779).</p>
+<hr>
+<h2>4. Tendências Open Source</h2>
+<h3>Modelos e frameworks</h3>
+<ul>
+<li><strong>Liquid AI MoE 8B</strong> — Modelo mixture-of-experts treinado em 38T tokens, demonstrando eficiência de compute competitiva</li>
+<li><strong>Mythos-class models</strong> — Anthropic anunciou liberação pública, expandindo portfólio open-weight</li>
+</ul>
+<h3>Infraestrutura</h3>
+<ul>
+<li><strong>OpenRouter</strong> levantó $113M para infraestrutura de roteamento de modelos</li>
+<li>Cresce interesse em inferência em tempo real em GPUs padrão (3k tokens/s por request)</li>
+</ul>
+<h3>Segurança em código OSS</h3>
+<p>Descoberta de instruções ocultas para agentes de IA em repositórios open source gerou debate sobre integridade de supply chain de código.</p>
+<hr>
+<h2>5. Debates da Comunidade HN</h2>
+<h3>Temas mais engajados (por pontos)</h3>
+<table>
+<thead>
+<tr>
+<th>Discussão</th>
+<th>Pontos</th>
+<th>Comentários</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Claude Opus 4.8</td>
+<td>1.020</td>
+<td>810</td>
+</tr>
+<tr>
+<td>Anthropic/OpenAI product-market fit</td>
+<td>491</td>
+<td>588</td>
+</tr>
+<tr>
+<td>Claude Code configurações ocultas</td>
+<td>321</td>
+<td>63</td>
+</tr>
+<tr>
+<td>LLM memory consolidation &quot;sono&quot;</td>
+<td>162</td>
+<td>122</td>
+</tr>
+<tr>
+<td>Liquid AI MoE 8B</td>
+<td>108</td>
+<td>30</td>
+</tr>
+<tr>
+<td>Chris Olah no Vaticano</td>
+<td>58</td>
+<td>79</td>
+</tr>
+</tbody></table>
+<h3>Narrativas recorrentes</h3>
+<ol>
+<li><strong>Sustentabilidade de custos</strong> — Discussões sobre empresas gastando $500M/mês em Claude sem controles; ferramentas open source para otimizar contas de API</li>
+<li><strong>Quality regression</strong> — Usuários reportam deterioração perceptível na qualidade do Gemini, alimentando debate sobre &quot;enshittification&quot;</li>
+<li><strong>Impacto no emprego</strong> — Sam Altman e Dario Amodei reavaliaram posições; comunidade manté skepticism cauteloso</li>
+<li><strong>Criptografia pós-quântica</strong> — Avanços em física quântica (rotações atômicas, temperatura ambiente) reacendem urgência de transição para padrões quantum-safe</li>
+</ol>
+<hr>
+<h2>6. Atualizações Oficiais</h2>
+<h3>Anthropic</h3>
+<ul>
+<li><strong>Claude Opus 4.8</strong> — Melhorias em codificação, agentic capabilities, raciocínio e tarefas práticas</li>
+<li><strong>Claude Design</strong> — Plataforma de prototipagem visual com Opus 4.7</li>
+<li><strong>Controle de esforço</strong> — Usuários podem calibrar profundidade vs. velocidade de análise</li>
+<li><strong>Dynamic workflows</strong> — Claude Code agora ataca problemas de grande escala com menor intervenção</li>
+<li><strong>Escritório em Milão</strong> — Expansão europeia coincidindo com debates regulatórios da UE</li>
+<li><strong>Mythos Preview</strong> — Modelo interno exposto acidentalmente, highlightando riscos de containment</li>
+</ul>
+<h3>OpenAI</h3>
+<ul>
+<li>Publicou metadados sobre &quot;Frontier Governance Framework&quot; e &quot;Trustworthy Third Party Evaluations Foundations&quot; — conteúdo substantivo não disponível para análise</li>
+<li>Silêncio relativo sugere foco em anúncios maiores ou quiet period estratégico</li>
+</ul>
+<hr>
+<h2>7. Sinais para a Próxima Semana</h2>
+<h3>Próximos marcos esperados</h3>
+<ol>
+<li><strong>Anthropic</strong> — Detalhes técnicos sobre Mythos-class models e possível atualização de pricing</li>
+<li><strong>NullClaw</strong> — Release combinando PRs abertas (#933, #934, #935) deve ocorrer em breve</li>
+<li><strong>Regulação EU AI Act</strong> — Implementação prática começa a gerar casos de compliance</li>
+</ol>
+<h3>Tendências a monitorar</h3>
+<ul>
+<li><strong>Agentes de codificação</strong> — Expectativa de novos releases de Claude Code e competitors após Opus 4.8</li>
+<li><strong>Computação fotônica</strong> — Primeiro chip商用 base de partículas luz-matéria pode ser anunciado</li>
+<li><strong>Custos de inferência</strong> — Pressão por otimização deve intensificar após revelação de spendings corporativos extremos</li>
+<li><strong>Segurança OSS</strong> — Maior escrutínio sobre supply chain e instruções ocultas em repositórios</li>
+</ul>
+<h3>Riscos identificados</h3>
+<ul>
+<li>Regressões de qualidade em modelos de produção (padrão Gemini observado)</li>
+<li>Latência em patches de segurança em projetos com baixa atividade (NullClaw tem PR #878 aberta há 28 dias)</li>
+<li>Fragmentação de soluções de memória para agentes (ausência de padrão claro além de MCP)</li>
+</ul>
+<hr>
+<p><em>Relatório gerado em 2026-06-01 | Fontes: Hacker News, GitHub, ScienceDaily, sites oficiais (Anthropic, OpenAI)</em></p>
+<hr>
+<p><em>Este resumo é gerado automaticamente por <a href="https://github.com/manelsen/agents-radar">agents-radar</a>.</em></p>
+]]></content:encoded>
+    </item>
     <item>
       <title>Relatório diário do ecossistema de agentes de IA 2026-06-01</title>
       <link>https://manelsen.github.io/agents-radar/#2026-06-01/ai-agents</link>
@@ -10762,49 +10970,6 @@ A identificação por WiFi exemplifica uma tendência crescente em engenharia de
 <li><p><strong><a href="https://www.sciencedaily.com/releases/2026/05/260522023127.htm">Ordinary WiFi can now identify people with near perfect accuracy</a></strong> — Questões éticas e de privacidade merecem atenção, mas a engenharia subjacente abre caminho para aplicações em saúde e automação residencial.</p>
 </li>
 </ol>
-<hr>
-<p><em>Este resumo é gerado automaticamente por <a href="https://github.com/manelsen/agents-radar">agents-radar</a>.</em></p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>Agricultura no ScienceDaily 2026-05-30</title>
-      <link>https://manelsen.github.io/agents-radar/#2026-05-30/ai-agriculture</link>
-      <guid isPermaLink="true">https://manelsen.github.io/agents-radar/#2026-05-30/ai-agriculture</guid>
-      <pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate>
-      <description>Resumo diário de Agricultura no ScienceDaily 2026-05-30 Fonte: ScienceDaily | 2 histórias | Gerado em: 2026-05-29 21:49 UTC Resumo ScienceDaily — Agricultura e Alimentação 29-30 de maio de 2026 1. Destaques do Dia Uma descoberta surpreendente em Ithaca, Nova York, revelou aproximadamente 5,5 milhões de abelhas subterrâneas em um cemitério, constituindo uma das maiores agregações já documentadas e destacando a importância crítica desses polinizadores para pomares de maçã e outras culturas. Parale...</description>
-      <content:encoded><![CDATA[<h1>Resumo diário de Agricultura no ScienceDaily 2026-05-30</h1>
-<blockquote>
-<p>Fonte: <a href="https://www.sciencedaily.com/news/plants_animals/agriculture_and_food/">ScienceDaily</a> | 2 histórias | Gerado em: 2026-05-29 21:49 UTC</p>
-</blockquote>
-<hr>
-<h1>Resumo ScienceDaily — Agricultura e Alimentação</h1>
-<p><strong>29-30 de maio de 2026</strong></p>
-<hr>
-<h2>1. Destaques do Dia</h2>
-<p>Uma descoberta surpreendente em Ithaca, Nova York, revelou aproximadamente 5,5 milhões de abelhas subterrâneas em um cemitério, constituindo uma das maiores agregações já documentadas e destacando a importância crítica desses polinizadores para pomares de maçã e outras culturas. Paralelamente, pesquisadores da Universidade de Michigan desafiaram um dos princípios fundamentais da biologia evolutiva, demonstrando que mutações genéticas benéficas são mais frequentes do que se supunha, embora não se espalhem facilmente pelas populações devido a mudanças constantes nas condições ambientais. Essas duas pesquisas, embora distintas em foco, convergem para a compreensão dos mecanismos biológicos que sustentam a produção agrícola.</p>
-<hr>
-<h2>2. Principais Histórias</h2>
-<h3>Polinização e Biodiversidade</h3>
-<ul>
-<li><strong>Abelhas subterrâneas em Ithaca</strong> — A maior agregação de abelhas selvagens já documentada nos EUA foi encontrada em solo arenoso de cemitério, comprovando a resiliência desses insetos e seu papel vital como polinizadores de culturas agrícolas. A população estimada de 5,5 milhões de abelhas共存 há mais de um século em área não perturbada.</li>
-</ul>
-<h3>Genética e Evolução Aplicadas à Agricultura</h3>
-<ul>
-<li><strong>Redefinição da evolução genética</strong> — O estudo da Universidade de Michigan questiona a premissa de neutralidade evolutiva, sugerindo que a seleção natural é mais dinâmica e que as condições ambientais em constante mudança impedem a fixação de mutações vantajosas nas populações.</li>
-</ul>
-<hr>
-<h2>3. Sinal de Pesquisa</h2>
-<p>As notícias indicam uma tendência crescente na pesquisa agrícola de explorar a interface entre ecologia, genética e práticas de manejo. A descoberta das abelhas sublinha a necessidade de preservar habitats naturais e semi-naturais — como áreas urbanas não cultivadas — como reservatórios de polinizadores essenciais. Enquanto isso, os avanços na compreensão da evolução genética podem revolucionar o melhoramento de plantas, sugerindo que programas de seleção deveriam considerar não apenas o potencial das mutações, mas também a instabilidade ambiental como fator limitante. Juntas, essas pesquisas apontam para um paradigma onde a resiliência dos sistemas agrícolas depende de abordagens holísticas, integrando conservação de biodiversidade e adaptação genética contínua.</p>
-<hr>
-<h2>4. Vale Ler</h2>
-<ol>
-<li><p><strong>&quot;A New York cemetery was hiding 5.5 million bees underground&quot;</strong><br>Relevância: Demonstra o potencial inexplorado de ecossistemas urbanos para a polinização agrícola e oferece um modelo de conservação passiva que pode ser replicado em outras regiões.</p>
-</li>
-<li><p><strong>&quot;Scientists say evolution may work differently than we thought&quot;</strong><br>Relevância: Os resultados questionam décadas de pressupostos em genética de populações e podem impactar diretamente estratégias de melhoramento vegetal e manejo de pragas.</p>
-</li>
-</ol>
-<hr>
-<p><em>Fontes: <a href="https://www.sciencedaily.com/releases/2026/05/260527023218.htm">ScienceDaily - Bees</a> | <a href="https://www.sciencedaily.com/releases/2026/05/260529030329.htm">ScienceDaily - Evolution</a></em></p>
 <hr>
 <p><em>Este resumo é gerado automaticamente por <a href="https://github.com/manelsen/agents-radar">agents-radar</a>.</em></p>
 ]]></content:encoded>
