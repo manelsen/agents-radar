@@ -1,0 +1,90 @@
+{
+  "ai-agents": [
+    "Bug no redator PII NullClaw",
+    "PR #945 corrige falsos positivos",
+    "7 projetos no ecossistema AI agents",
+    "ISO date/time: falso positivo",
+    "NullClaw: regressão em PII",
+    "Correção rejeita padrões de data"
+  ],
+  "ai-web": [
+    "Anthropic levanta US$ 65 bi Série H",
+    "Valuation Anthropic: US$ 965 bi",
+    "Claude Opus 4.8 lançado",
+    "Project Glasswing: 150+ orgs",
+    "OpenAI: 3 novos artigos Codex",
+    "Anthropic: S-1 submetido à SEC"
+  ],
+  "ai-hn": [
+    "Uber estoura orçamento em 4 meses",
+    "Anthropic IPO debate valuation",
+    "Glasswing em alta com 144 pts",
+    "GPT/Claude ignoram shutdown",
+    "Michael Burry alerta bolha IA",
+    "Codex: plugins por função"
+  ],
+  "ai-robotics": [
+    "Chip silício 3D estende Moore",
+    "Quântico Stanford opera sem frio",
+    "Thymus: biomarcador longevidade",
+    "Computação quântica acessível",
+    "Robôs com poder local crece",
+    "IA embarcada em robótica"
+  ],
+  "ai-hacking": [
+    "Nanopartículas Ag: quântico estável",
+    "Stanford: luz torsional quântico",
+    "Materiais quânticos democratizados",
+    "Criptografia quântica avançada",
+    "Sistemas sem cryogenia",
+    "Quântica a temperatura ambiente"
+  ],
+  "ai-solar": [
+    "Quântico Stanford: sem resfriamento",
+    "Eficiência quântica reduz数据中心",
+    "chips quânticosEconomia energética",
+    "Quantum sem frio = mais verde",
+    "Energia renovável + quântica",
+    "Desafios energéticos resolvidos"
+  ],
+  "ai-livingwell": [
+    "Thymus prediz longevidade",
+    "STING mantém neuroinflamação",
+    "GPNMB alimenta Parkinson",
+    "Ácido oleico acelera tumores",
+    "Ômega-3 reduz diabetes 50%",
+    "CBD inalado: Alzheimer"
+  ],
+  "ai-engineering": [
+    "Chip fotônico integrado",
+    "NASA X-59 quebra barreira som",
+    "Cristal dobra luz sem reflexão",
+    "Acústica: pianistas mudam timbre",
+    "Óptica quântica 2D convergência",
+    "Computação neuromórfica"
+  ],
+  "ai-agriculture": [
+    "Poluição N muda respiração solo",
+    "5,5 mi abelhas em cemitério Ithaca",
+    "Percevejo sacrifica visão para comer",
+    "Mutações benéficas mais frequentes",
+    "Carbono florestal afetado por N",
+    "Agregação subterrânea polinizadores"
+  ],
+  "ai-environmental": [
+    "Poluição N: ponto inflexão",
+    "Mapeamento aquífero Grand Canyon",
+    "Dessalinização solar sem salmoura",
+    "5,5M abelhas: serviço ecossistêmico",
+    "Antártida: inflexão há 1 mi anos",
+    "Esponjas liberam microplásticos"
+  ],
+  "ai-archaeology": [
+    "Mulheres expandiram agricultura",
+    "Migração Bell Beaker à Bretanha",
+    "Labrujasuchus: crocodilo bípede",
+    "Kank australis: raptor tipo garça",
+    "DNA antigo revela dinâmicas",
+    "Evolução comportamental mesozoica"
+  ]
+}
