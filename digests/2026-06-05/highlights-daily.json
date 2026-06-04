@@ -1,0 +1,106 @@
+{
+  "ai-agents": [
+    "7 projetos monitorados no ecossistema",
+    "SSRF validation em 3 projetos (NanoBot, Hermes, ZeroClaw)",
+    "Paradigma multi-agente em destaque",
+    "Zero releases formais em 24h",
+    "5 projetos com 50-78 PRs atualizados",
+    "Segurança como tema transversal"
+  ],
+  "ai-web": [
+    "OpenAI: 3 novos artigos hoje",
+    "Total Anthropic: 373 artigos rastreados",
+    "Total OpenAI: 837 artigos no sitemap",
+    "Tema principal: ChatGPT Memory Dreaming",
+    "Anthropic sem novos conteúdos hoje",
+    "Monitorar corrida em memória persistente"
+  ],
+  "ai-hn": [
+    "Anthropic lidera debates de segurança",
+    "Recursive self-improvement: 175 pts, 211 comentários",
+    "KVarN: backend nativo vLLM da Huawei",
+    "Boxes.dev: coding agents na nuvem",
+    "Cost.dev: agentes com consciência de custo",
+    "Timnit Gebru reacende debates éticos"
+  ],
+  "ai-arxiv": [
+    "STRIDE: atribuição de dados via recuperação esparsa",
+    "Self-Evaluation em LLMs base",
+    "Function Vectors para direcionar LLMs",
+    "Caliper: âncoras léxicas vs estrutura causal",
+    "Pesquisa forte em raciocínio e agentes",
+    "Benchmark multimodal para vídeo e áudio"
+  ],
+  "ai-robotics": [
+    "Timo saudávellinked à longevidade via IA",
+    "Chip de silício 3D estende Lei de Moore",
+    "Dispositivo quântico opera à temperatura ambiente",
+    "Luz torcida entrelaça fótons e elétrons",
+    "Perovskita produz hidrogênio com calor residual",
+    "Hardware quântico sem refrigeração extrema"
+  ],
+  "ai-hacking": [
+    "Efeito quântico pode eliminar baterias",
+    "Nova fase da matéria transforma tecnologia quântica",
+    "Luz torcida viabiliza computação quântica",
+    "Materiais estáveis à temperatura ambiente",
+    "Sensores IoT autoalimentados",
+    "Urgência para migração pós-quântica"
+  ],
+  "ai-solar": [
+    "Dispositivo quântico opera a temperatura ambiente",
+    "Luz torcida entrelaça fótons e elétrons",
+    "Fim da necessidade de refrigeração extrema",
+    "Impacto potencial em photovoltaicas",
+    "Convergência quântica-fotônica-solar",
+    "Sistemas quânticos menores e acessíveis"
+  ],
+  "ai-livingwell": [
+    "GLP-1 reduz risco de overdose em 600k veteranos",
+    "Ômega-3 melhora resistência à insulina",
+    "Autismo tem pelo menos 2 subtipos biológicos",
+    "CDB potentializa tratamento do Alzheimer",
+    "Semaglutida reduz dependência de substâncias",
+    "Ácido oleico acelera tumores pancreáticos"
+  ],
+  "ai-engineering": [
+    "EPFL integra laser de femtossegundos em chip",
+    "Chip fotônico com grau de liberdade valley",
+    "NASA X-59 realiza voo supersônico silencioso",
+    "Cristal com efeito de curvatura de luz sem precedentes",
+    "Fótonica integrada em escala de chip",
+    "Impacto em sensores e comunicações"
+  ],
+  "ai-agriculture": [
+    "Poluição por nitrogênio afeta respiração dos solos",
+    "Ked de veado sacrifica visão e asas ao parasitar",
+    "Mutações benéficas mais comuns do que se pensava",
+    "Limites críticos em estoque de carbono florestal",
+    "Economia energética extrema em parasitas",
+    "Seleção natural mais dinâmica que modelos clássicos"
+  ],
+  "ai-environmental": [
+    "Descoberta inverte teoria de turbulência de 80 anos",
+    "Super Tufão Sinlaku gera ondas gravitacionais",
+    "Manto de gelo antártico atingiu ponto de inflexão",
+    "Catalisador de perovskita produz hidrogênio residual",
+    "Esponjas de cozinha liberam microplásticos",
+    "Poluição por nitrogênio oculta pontos de inflexão"
+  ],
+  "ai-archaeology": [
+    "DNA antigo revela papel das mulheres na agricultura",
+    "Campo de mineração de 5.500 anos nos Pirenéus",
+    "Formiga extinta de 40 milhões de anos em âmbar",
+    "Crocodilo bípede do Triássico aspecto de dinossauro",
+    "Raptor patagónico com pescoço tipo garça",
+    "Vestígios de rituais funerários pré-históricos"
+  ],
+  "ai-offbeat": [
+    "Formiga fóssil de 40 Mi de anos na coleção de Goethe",
+    "James Webb detecta metano em cometa interestelar",
+    "Belugas têm sistema de acasalamento flexível",
+    "Semaglutida associada a fewer overdoses",
+    "Tecnologia 3D revela estruturas internas de âmbar",
+    "Cometa 3I/ATLAS libera voláteis por aquecimento solar"
+  ]
+}
