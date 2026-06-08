@@ -1,0 +1,90 @@
+{
+  "ai-agents": [
+    "Hermes Agent: 50 PRs em 24h — sprint intenso",
+    "ZeroClaw planeja OIDC e TOTP para segurança",
+    "NanoBot corrige SSRF e fortalece produção",
+    "IronClaw integra múltiplos canais enterprise",
+    "CoPaw foca em hardening e releases formais",
+    "NullClaw inativo — possível abandono ou pausa"
+  ],
+  "ai-web": [
+    "Anthropic: agentes precisam de camadas determinísticas",
+    "OpenAI: 3 publicações com conteúdo não verificável",
+    "Estudo: precisão em bio requer recuperação extra",
+    "Claud  demonst rou competência em recuperação de dados",
+    "NCBI Virus: dados não projetados para agentes",
+    "Anthropic alerta sobre limitações de IA em biologia"
+  ],
+  "ai-hn": [
+    "OpenAI confirma filing S-1 para IPO — maior evento desde fundação",
+    "Apple 3ª geração Foundation Models: foco em on-device",
+    "Anthropic Glasswing: nova arquitetura de segurança",
+    "LLMs: desconhecidos perigosos no centro dos modelos",
+    "Yale Review: risco de IPO sem entender riscos de IA",
+    "Lista Raschka: 2026 papers essenciais de LLM"
+  ],
+  "ai-science": [
+    "Estudo: comportamento não basta para medir consciência",
+    "Abelhas e ChatGPT: mecanismos internos merecem atenção",
+    "Pesquisa questiona critérios para consciência em IA",
+    "Consciência em insetos e máquinas futuras em debate",
+    "Sistemas com linguagem avançada não são conscientes",
+    "Foco em estados internos e processamento de informação"
+  ],
+  "ai-robotics": [
+    "Vacina universal anticovírus por IA passa 1º ensaio humano",
+    "IA generativa projetou candidatos vacinais eficazes",
+    "Estudo: consciência não se avalia só por comportamento",
+    "Abelhas e chatbots: mesma análise de consciência",
+    "Convergência IA-biologia-robotics em alta",
+    "Design de biomoléculas por IA amadureceu"
+  ],
+  "ai-hacking": [
+    "Estados quânticos topológicos em temperatura ambiente",
+    "Cobalto avança spintrônica para criptografia pós-quântica",
+    "Computação quântica comercial mais próxima",
+    "IA em vacinas demonstra padrões em grandes datasets",
+    "Efeito quântico pode eliminar baterias — impacto IoT",
+    "Transição para criptografia pós-quântica urgente"
+  ],
+  "ai-engineering": [
+    "Laser poderoso encolhido para chip após 20 anos",
+    "Chip fotônico acelera IA e computação quântica",
+    "Metamateriais de ouro ampliam fluxo de calor 4x",
+    "Nanometría controla propriedades de filmes metálicos",
+    "Computação quântica e IA impulsionadas por fotônica",
+    "Refrigeração de chips com metamateriais viável"
+  ],
+  "ai-agriculture": [
+    "Poluição por nitrogênio afeta respiração dos solos",
+    "Nitrogênio tem pontos de inflexão no carbono florestal",
+    "Deer ked perde visão após encontrar hospedeiro",
+    "Inseto sacrifica acuidade visual por energia extra",
+    "Estratégia adaptativa única de parasita hematófago",
+    "Poluentes atmosféricos impactam sustentabilidade agrícola"
+  ],
+  "ai-environmental": [
+    "Amebas de vida livre: ameaça subestimada com clima",
+    "Manguezais podem virar fontes de carbono com mar subindo",
+    "Perovskita converte calor residual em hidrogênio limpo",
+    "Super Tufão Sinlaku gera ondas de gravidade visíveis do espaço",
+    "Infraestrutura hídrica envelhecida espalha patógenos",
+    "Pontos de inflexão em ecossistemas críticos identificados"
+  ],
+  "ai-archaeology": [
+    "Marcas em dentes: não eram higiene, eram desgaste natural",
+    "Elmos da costa espanhola são medievais, não romanos",
+    "Goethe tinha insetos de 40 milhões de anos em âmbar",
+    "Gruta alpina revela campo de mineração milenar",
+    "Redes de comércio armamentista no Mediterrâneo expostas",
+    "Tecnologias de imagem revelam detalhes anatômicos únicos"
+  ],
+  "ai-offbeat": [
+    "Polvo usa espelhos como ferramenta — cognition surprising",
+    "James Webb detecta metano em cometa interestelar 3I/ATLAS",
+    "GLP-1 reduz risco de overdose em 600 mil veteranos",
+    "Medicamentos para emagrecer diminuem dependência química",
+    "Redemoinhos de fogo propostos para limpar petróleo",
+    "Sangue fossilizado em mosca que sacrifica visão revelado"
+  ]
+}
