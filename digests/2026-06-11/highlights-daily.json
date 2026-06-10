@@ -1,0 +1,95 @@
+{
+  "ai-agents": [
+    "NullClaw: 7 PRs em 24h",
+    "Fix rejeita padrões ISO falsos",
+    "ZeroClaw: novo projeto no radar",
+    "NanoBot: atualização HKUDS",
+    "IronClaw: Near AI contribui",
+    "CoPaw: Agentscope em alta"
+  ],
+  "ai-web": [
+    "Anthropic: agentes em biologia",
+    "Claude: 100% precisão com gget",
+    "NCBI Virus: agentes testados",
+    "Recuperação viral confiável",
+    "IA + ferramentas determinísticas",
+    "Estudo: lacunas em LLMs científicos"
+  ],
+  "ai-hn": [
+    "AWS Bedrock: dados com Anthropic",
+    "Anthropic: governo pode bloquear IA",
+    "Claude Desktop: VM 1.8 GB",
+    "Microsoft vs Anthropic",
+    "Mustafa Suleyman: acusação à Anthropic",
+    "Modelo 150M sem LLM para RAG"
+  ],
+  "ai-arxiv": [
+    "Alinhamento pós-treinamento",
+    "SFT: distribuição-alvo unificada",
+    "Feedback alignment em self-distillation",
+    "Teste-tempo: alocação de budgets",
+    "KV cache compression",
+    "Alinhamento cross-lingual: auditoria"
+  ],
+  "ai-science": [
+    "IA: 90% a quase falha em atenção",
+    "Consciência: chatbots e abelhas",
+    "Testes psicológicos expõem limitações",
+    "IA atual: sem consciência?",
+    "Processamento complexo falha",
+    "Debate: comportamento = consciência?"
+  ],
+  "ai-robotics": [
+    "Vacina universal: IA em ensayos",
+    "IA falha em testes de atenção",
+    "Fase 1 de ensayos concluída",
+    "Desempenho cai com complexidade",
+    "Biologia + computação convergem",
+    "Abelhas e chatbots: debate consciente"
+  ],
+  "ai-hacking": [
+    "Nenhum conteúdo de cibersegurança",
+    "Dados não relacionados disponíveis",
+    "Consulte outras fontes para hacking"
+  ],
+  "ai-livingwell": [
+    "Colágeno: benefícios confirmados",
+    "Glucosamina: 25% mais risco Alzheimer",
+    "Ultra processados: atenção afetada",
+    "FXR: nova rota coração-intestino",
+    "Polygonum multiflorum: queda cabelo",
+    "2100+ adultos estudados"
+  ],
+  "ai-engineering": [
+    "MIT: motor híbrido CubeSat",
+    "Metamateriais: 4x transferência calor",
+    "EPFL: laser femtossegundo em chip",
+    "Filmes metálicos: nanocontrole",
+    "Propulsão química + elétrica",
+    "NASA financia missão CubeSat"
+  ],
+  "ai-environmental": [
+    "Ozônio: 335 mil toneladas de TFA",
+    "Amebas: ameaça subestimada",
+    "Redemoinhos: 95% eficiência em óleo",
+    "TFA: forever chemical global",
+    "Mangueais: risco de morte",
+    "Mudanças climáticas: saúde pública"
+  ],
+  "ai-archaeology": [
+    "Stonehenge: Pedra Altar da Escócia",
+    "Goethe: formiga em âmbar 40M anos",
+    "43 capacetes: romanos vs medievais",
+    "Primatas: palitos em xeque",
+    "Reprodução assexuada: animais early",
+    "Imageamento 3D revela âmbar"
+  ],
+  "ai-offbeat": [
+    "Webb: metano em cometa interestelar",
+    "Octopuses usam espelhos como tools",
+    "Abelhas: possível consciência?",
+    "Chatbots: estados conscientes?",
+    "3I/ATLAS: química interestelar",
+    "Formiga de Goethe: 40M anos"
+  ]
+}
