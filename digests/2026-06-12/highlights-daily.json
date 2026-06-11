@@ -1,0 +1,98 @@
+{
+  "ai-agents": [
+    "NullClaw: bug crítico com Ollama",
+    "7 projetos em destaque hoje",
+    "NanoBot - HKUDS (novo)",
+    "Hermes Agent - NousResearch",
+    "PicoClaw - Sipeed (novo)",
+    "ZeroClaw Labs (estreia)"
+  ],
+  "ai-web": [
+    "Anthropic + DXC: Claude enterprise",
+    "$150M para Claude Corps",
+    "1.000 bolsistas/ano (AI social)",
+    "4 novos artigos: Anthropic+OpenAI",
+    "OpenAI: aquisições em Oracle Cloud",
+    "Claude padrão em infraestrutura crítica"
+  ],
+  "ai-hn": [
+    "Polêmica guardrails Claude Fable",
+    "OpenAI cogita corte drástico de preços",
+    "Claude Fable 5: resultados medíocres",
+    "LLMs usam armas táticas em 95% sim",
+    "Debate: open weights vs guardrails",
+    "6 artigos no top 10 HN hoje"
+  ],
+  "ai-arxiv": [
+    "Post-Training: dados obscurecem correlações",
+    "Impossibilidade de conhecimento latente",
+    "LLMs em exames médicos polacos: viés?",
+    "50 novos artigos em cs.AI, cs.CL, cs.LG",
+    "Roteamento eficiente de tokens visuais",
+    "Governança运行时 para agentes"
+  ],
+  "ai-science": [
+    "IA cai de 90% para ~0% em atenção",
+    "Consciência: abelhas vs chatbots",
+    "IA depende de contextos curtos",
+    "Debate: comportamento = consciência?",
+    "Limites cognitivos em modelos topo",
+    "Foco muda de métricas para qualidade"
+  ],
+  "ai-robotics": [
+    "Arroz inspira material adaptativo",
+    "IA pode ignorar física nova real",
+    "Teste de atenção expõe falha crítica",
+    "Transfer learning: risco de viés",
+    "Robôs soft com rigidez automática",
+    "Motor dual-mode para CubeSats"
+  ],
+  "ai-hacking": [
+    "Vacina universal IA: fase I OK",
+    "Estados quânticos topológicos em cobalto",
+    "Preparar criptografia para era pós-quântica",
+    "IA acelera contramedidas biológicas",
+    "Dados genômicos: proteção em risco",
+    "Hardware quântico à temperatura ambiente"
+  ],
+  "ai-livingwell": [
+    "Queda de fosfatidilcolina: causa reversível",
+    "Glucosamina: +25% risco Alzheimer",
+    "Ultra-processados roubam atenção",
+    "FXR: alvo contra placas arteriais",
+    "GLP-1: -30% risco cáncer de mama",
+    "Colágeno: benefícios modestos"
+  ],
+  "ai-engineering": [
+    "Fotossíntese artificial autoajustável",
+    "Material do arroz varia rigidez",
+    "Motor espacial dual-mode (NASA)",
+    "Metamateriais de ouro: +4x calor",
+    "Nanocamadas alteram eletrônica",
+    "Transfer learning acelera física"
+  ],
+  "ai-environmental": [
+    "Beads de tofu/queijo capturam CO2",
+    "Manguezais podem virar fontes de carbono",
+    "335.000t de TFA acumuladas globalmente",
+    "Amebas: ameaça subestimada à saúde",
+    "Fire whirl: 95% limpeza de óleo",
+    "Nanopartículas no surgimento da vida"
+  ],
+  "ai-archaeology": [
+    "Stonehenge: Altar Stone de 700km",
+    "43头盔 são medievais, não romanos",
+    "Desgaste dentário: não eram ferramentas",
+    "Reprodução assexuada: retardo evolutivo",
+    "Rede comercial armamentista mediterrânea",
+    "Organização social sofisticada no Neolítico"
+  ],
+  "ai-offbeat": [
+    "Reprodução assexuada bloqueou evolução",
+    "Espaço-tempo: físicos confundem?",
+    "Amebas ameaçam saúde pública",
+    "Polvos usam espelhos: 73% acerto",
+    "Abelhas podem ser conscientes",
+    "Planta chinesa trata queda de cabelo"
+  ]
+}
