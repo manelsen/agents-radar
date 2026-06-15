@@ -6,7 +6,263 @@
     <description>Resumo diário do ecossistema open source de IA · Daily AI ecosystem digest</description>
     <language>pt-BR</language>
     <atom:link href="https://manelsen.github.io/agents-radar/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Sun, 14 Jun 2026 21:09:47 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 15 Jun 2026 22:14:19 +0000</lastBuildDate>
+    <item>
+      <title>Relatório semanal de ferramentas de IA 2026-06-16</title>
+      <link>https://manelsen.github.io/agents-radar/#2026-06-16/ai-weekly</link>
+      <guid isPermaLink="true">https://manelsen.github.io/agents-radar/#2026-06-16/ai-weekly</guid>
+      <pubDate>Tue, 16 Jun 2026 00:00:00 +0000</pubDate>
+      <description>Relatório semanal do ecossistema de ferramentas de IA 2026-W25 Cobertura: 2026-06-09 ~ 2026-06-15 | Gerado em: 2026-06-15 22:13 UTC Recapitulação Semanal — Ecossistema de Ferramentas de IA (2026-W25) Período: 09 a 15 de junho de 2026 | Status: Relatório Consolidado 1. Principais Histórias da Semana 🏛️ Crise Geopolítica de IA: Suspensão do Claude Fable 5 e Mythos 5 O evento mais impactante da semana foi a diretiva do governo dos EUA ordenando a Anthropic a suspender o acesso internacional aos mo...</description>
+      <content:encoded><![CDATA[<h1>Relatório semanal do ecossistema de ferramentas de IA 2026-W25</h1>
+<blockquote>
+<p>Cobertura: 2026-06-09 ~ 2026-06-15 | Gerado em: 2026-06-15 22:13 UTC</p>
+</blockquote>
+<hr>
+<h1>Recapitulação Semanal — Ecossistema de Ferramentas de IA (2026-W25)</h1>
+<p><strong>Período:</strong> 09 a 15 de junho de 2026 | <strong>Status:</strong> Relatório Consolidado</p>
+<hr>
+<h2>1. Principais Histórias da Semana</h2>
+<h3>🏛️ Crise Geopolítica de IA: Suspensão do Claude Fable 5 e Mythos 5</h3>
+<p>O evento mais impactante da semana foi a <strong>diretiva do governo dos EUA ordenando a Anthropic a suspender o acesso internacional</strong> aos modelos Claude Fable 5 e Mythos 5 menos de 48 horas após o lançamento. A medida, vinculada a técnicas de jailbreak supostamente demonstradas por pesquisadores da Amazon, gerou o maior engajamento da semana no HN (3.031 pontos, 2.193 comentários). A Anthropic contestou a gravidade, afirmando que técnicas similares não requerem bypass em outros modelos públicos. Este episódio reacendeu debates sobre soberania tecnológica, censorship e os limites da apertura de modelos.</p>
+<h3>🔬 Lançamento do Claude Fable 5: Avanços e Controvérsias</h3>
+<p>O modelo foi lançado em 9 de junho como primeira instância de <strong>classe Mythos para uso geral</strong>, demonstrando liderança em benchmarks de complexidade crescente — engenharia de software, trabalho cognitivo, visão e pesquisa científica. Um sistema de safeguards adaptativo redireciona queries sensíveis (~5% das sessões) para Claude Opus 4.8. No entanto, análises independentes revelaram desempenho abaixo do esperado em benchmarks de codificação, contradizendo o hype inicial.</p>
+<h3>🇺🇸 Parcerias Enterprise: DXC e TCS</h3>
+<p>A Anthropic fechou alianças estratégicas com <strong>DXC Technology</strong> e <strong>Tata Consultancy Services</strong> para levar Claude a infraestrutura crítica (bancos, companhias aéreas, seguradoras, governo), treinando dezenas de milhares de engenheiros certificados. Paralelamente, o programa <strong>Claude Corps</strong> alocou $150 milhões para 1.000 bolsistas anuais em ONGs — estratégia de mitigação de disrupção econômica.</p>
+<h3>🛡️ Debate sobre Guardrails Invisíveis</h3>
+<p>A polêmica dos <strong>&quot;invisible guardrails&quot;</strong> do Claude dominou 12 de junho, com seis dos dez primeiros puestos do HN. A comunidade reagiu com indignação à tecnologia de filtragem que &quot;apaga&quot; capacidades sem aviso, gerando pedidos de desculpas da empresa e reversão parcial de política.</p>
+<hr>
+<h2>2. Progresso das Ferramentas CLI</h2>
+<h3>Tendência Geral: Estabilização com Foco em Segurança</h3>
+<p>A semana demonstrou maturidade crescente no ecossistema, com projetos priorizando <strong>hardening de produção</strong> sobre expansão de features.</p>
+<table>
+<thead>
+<tr>
+<th>Projeto</th>
+<th>Atividade (7 dias)</th>
+<th>Foco Principal</th>
+<th>Saúde</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>NullClaw</strong></td>
+<td>Baixa (2-4 PRs/dia)</td>
+<td>Bug fixes em delivery e redações</td>
+<td>🟡 Manutenção</td>
+</tr>
+<tr>
+<td><strong>NanoBot</strong></td>
+<td>Moderada (8-36 PRs/dia)</td>
+<td>Correções SSRF, providers</td>
+<td>🟢 Saudável</td>
+</tr>
+<tr>
+<td><strong>Hermes Agent</strong></td>
+<td>Alta (50 PRs/dia)</td>
+<td>Arquitetura complexa, canais múltiplos</td>
+<td>🟡 Pressionado</td>
+</tr>
+<tr>
+<td><strong>PicoClaw</strong></td>
+<td>Eficiente (~11 PRs/dia)</td>
+<td>Bugfixes, nightly releases</td>
+<td>🟢 Robusto</td>
+</tr>
+<tr>
+<td><strong>IronClaw</strong></td>
+<td>Muito alta (34-50 PRs/dia)</td>
+<td><strong>6 CVEs abertas</strong> — bypass shell approval</td>
+<td>🔴 Sob pressão</td>
+</tr>
+<tr>
+<td><strong>CoPaw</strong></td>
+<td>Dinâmica (6-48/dia)</td>
+<td>Estabilização</td>
+<td>🟢 Progresso</td>
+</tr>
+<tr>
+<td><strong>ZeroClaw</strong></td>
+<td>Crítica (50 PRs/dia)</td>
+<td><strong>11 bugs S0/S1</strong> — RFCs em andamento</td>
+<td>🔴 Crítico</td>
+</tr>
+</tbody></table>
+<h3>Destaques Técnicos</h3>
+<ul>
+<li><strong>NullClaw #954</strong>: Correção de use-after-free em cron jobs agent-type (Telegram/Mattermost)</li>
+<li><strong>NullClaw #947</strong>: Adição do provider <strong>Evolink</strong> (gateway multi-modelo: GPT-5, Gemini, DeepSeek, Doubao, MiniMax)</li>
+<li><strong>NullClaw #945</strong>: Guard contra falsificação de電話番号 por padrões ISO de data/hora</li>
+<li><strong>NanoBot</strong>: Correções SSRF em integrações locais via Ollama</li>
+<li><strong>ZeroClaw</strong>: Planejamento de OIDC e TOTP para autenticação enterprise</li>
+</ul>
+<h3>Recomendação para Desenvolvedores</h3>
+<blockquote>
+<p><strong>IronClaw e ZeroClaw exigem atenção imediata.</strong> Se você utiliza esses projetos em produção, monitore releases de segurança e considere contribuir para o backlog de CVEs.</p>
+</blockquote>
+<hr>
+<h2>3. Ecossistema de Agentes de IA</h2>
+<h3>Fragmentação vs. Consolidação</h3>
+<p>O ecossistema demonstra <strong>vitalidade assimétrica</strong>:</p>
+<ul>
+<li><strong>Projetos em consolidação arquitetural</strong>: ZeroClaw (RFCs), IronClaw (Reborn WebUI v2)</li>
+<li><strong>Projetos em estabilização</strong>: PicoClaw (bugfixes), NanoBot (validação robusta)</li>
+<li><strong>NullClaw</strong>: Inativo desde 15/06 — possível abandono ou reestruturação</li>
+</ul>
+<h3>Convergências Técnicas</h3>
+<p>Três padrões emergem como <strong>padrões de maturidade</strong>:</p>
+<ol>
+<li><strong>Multiplicação de canais</strong>: Telegram, Matrix, Discord, Slack, WhatsApp, SMS gateways</li>
+<li><strong>Expansão de providers</strong>: GLM-5.2, K2.7 Code, Kimi, Gemini, Arcee AI integrados</li>
+<li><strong>Segurança como requisito</strong>: Redações de PII, autenticação robusta, proteção contra bypass</li>
+</ol>
+<h3>Estudo de Caso: Agentes em Biologia</h3>
+<p>A Anthropic publicou pesquisa mostrando que <strong>nenhum modelo (incluindo Claude) alcança precisão consistente</strong> para navegação autônoma em infraestrutura de dados biológicos. A solução: camadas de recuperação determinística elevam acurácia a ~100%. Este achado é crítico para desenvolvedores de agentes domain-specific.</p>
+<hr>
+<h2>4. Tendências Open Source</h2>
+<h3>Destaques em Inovação</h3>
+<table>
+<thead>
+<tr>
+<th>Tendência</th>
+<th>Descrição</th>
+<th>Relevância</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Modelos leves para RAG</strong></td>
+<td>Modelos de 150M especializados em extração de evidências, sem LLM call</td>
+<td>Eficiência em pipelines de busca</td>
+</tr>
+<tr>
+<td><strong>Gateways multi-modelo</strong></td>
+<td>Provider unificado para GPT-5, Gemini, DeepSeek, Doubao</td>
+<td>Flexibilidade de deployment</td>
+</tr>
+<tr>
+<td><strong>Automação de browser como código</strong></td>
+<td>Ferramentas como Intuned para workflows repetitivos</td>
+<td>DevEx e CI/CD</td>
+</tr>
+<tr>
+<td><strong>Kolmogorov-Arnold Networks em FPGAs</strong></td>
+<td>Inferência ultrarrápida para edge</td>
+<td>IA em dispositivos</td>
+</tr>
+<tr>
+<td><strong>Firewalls para agentes</strong></td>
+<td>Projetos como Claw Patrol para proteção de pipelines</td>
+<td>Segurança em produção</td>
+</tr>
+</tbody></table>
+<h3>Sinais de Amadurecimento</h3>
+<ul>
+<li><strong>Komunitäten de segurança</strong> emergindo (CVEs sendo rastreadas publicamente)</li>
+<li><strong>RFCs formais</strong> para decisões arquiteturais (ZeroClaw)</li>
+<li><strong>Nightly releases</strong> com cadência previsível (PicoClaw)</li>
+<li><strong>Integração com infraestruturas enterprise</strong> (DXC, TCS)</li>
+</ul>
+<hr>
+<h2>5. Debates da Comunidade HN</h2>
+<h3>🔥 Temas Mais Quentes (por engajamento)</h3>
+<ol>
+<li><p><strong>Diretiva de exportação dos EUA à Anthropic</strong> — 3.031 pts, 2.193 comentários</p>
+<ul>
+<li><em>Debate:</em> Nacionalização de tecnologia, censorship, precedentes</li>
+</ul>
+</li>
+<li><p><strong>Claude Desktop spawna VM de 1.8 GB</strong> — 277 pts, 189 comentários</p>
+<ul>
+<li><em>Debate:</em> Eficiência de desktop apps de IA, desperdício de recursos</li>
+</ul>
+</li>
+<li><p><strong>Invisible guardrails do Claude</strong> — Múltiplos posts no top 10</p>
+<ul>
+<li><em>Debate:</em> Transparência, controle de modelos, &quot;caixas pretas&quot;</li>
+</ul>
+</li>
+<li><p><strong>IPO da OpenAI (S-1 confidencial)</strong> — Rumores em 09/06</p>
+<ul>
+<li><em>Debate:</em> Alinhamento de incentivos, sustentabilidade, bolhas</li>
+</ul>
+</li>
+<li><p><strong>AWS Bedrock exigindo compartilhamento de dados com Anthropic</strong> — 2º maior engajamento 11/06</p>
+<ul>
+<li><em>Debate:</em> Soberania de dados, dependência de nuvens comerciais</li>
+</ul>
+</li>
+</ol>
+<h3>Reflexões Técnicamente Relevantes</h3>
+<ul>
+<li><strong>&quot;LLMs use tactical nukes em 95% das simulações&quot;</strong> — Alinhamento e propensão à escalação</li>
+<li><strong>&quot;Trust Us Is Not a Control Surface&quot;</strong> — Argumento por open weights</li>
+<li><strong>Consciência em abelhas e ChatGPT</strong> — Métricas comportamentais vs. mecanismos internos</li>
+<li><strong>GLM 5.2 competindo com ofertas ocidentais</strong> — 1M de contexto, benchmarks positivos</li>
+</ul>
+<hr>
+<h2>6. Atualizações Oficiais</h2>
+<h3>Anthropic (3 novos artigos em 7 dias)</h3>
+<table>
+<thead>
+<tr>
+<th>Data</th>
+<th>Conteúdo</th>
+<th>Impacto</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>09-10/06</td>
+<td><strong>Claude Fable 5 e Mythos 5</strong> — Lançamento e suspensão</td>
+<td>🔴 Crítico</td>
+</tr>
+<tr>
+<td>10/06</td>
+<td><strong>Agentes em Biologia</strong> — Lacunas de precisão, soluções determinísticas</td>
+<td>🟠 Alto</td>
+</tr>
+<tr>
+<td>11/06</td>
+<td><strong>Parceria DXC</strong> — Certificação enterprise, infraestrutura crítica</td>
+<td>🟢 Estratégico</td>
+</tr>
+<tr>
+<td>12/06</td>
+<td><strong>Claude Corps</strong> — $150M, 1.000 bolsistas/ano</td>
+<td>🟢 Impacto social</td>
+</tr>
+<tr>
+<td>13/06</td>
+<td><strong>Parceria TCS</strong> — Soluções verticais (seguros, bancos, saúde)</td>
+<td>🟢 Enterprise</td>
+</tr>
+</tbody></table>
+<h3>OpenAI (0 novos artigos visíveis)</h3>
+<p>Ausência de conteúdo público contrasta com rumores de IPO, sugerindo <strong>comunicação estratégica diferenciada</strong> entre as empresas.</p>
+<hr>
+<h2>7. Sinais para a Próxima Semana</h2>
+<h3>📍 Eventos a Monitorar</h3>
+<ol>
+<li><strong>Resolução de CVEs no IronClaw</strong> — 6 vulnerabilidades simultâneas de bypass representam risco ativo</li>
+<li><strong>Impacto da diretiva de exportação</strong> — Reações de mercado e possíveis alternativas open source</li>
+<li><strong>Retorno do Claude Fable 5</strong> — Suspensão foi ordenada; acompanhar timeline de reativação</li>
+<li><strong>Nova onda de guardrails</strong> — Reversão parcial gera precedentes; comunidade aguarda transparência</li>
+<li><strong>Consolidação do ZeroClaw</strong> — 11 bugs S0/S1 exigem resposta coordenada ou risco de fork</li>
+</ol>
+<h3>🔮 Tendências a Antecipar</h3>
+<ul>
+<li><strong>Expansão de providers open-source</strong> (GLM, Qwen, Kimi) como alternativas a modelos ocidentais restritos</li>
+<li><strong>Foco em segurança de agentes</strong> — Bypass de shell approval e redações vazadas acelerarão frameworks de hardening</li>
+<li><strong>IA em domínios científicos</strong> — Agentes biológicos demonstram lacunas; esperar novas ferramentas de recuperação determinística</li>
+<li><strong>Regulação crescente</strong> — Pressão antitrust e controles de exportação redefinirão mapas de acesso</li>
+</ul>
+<h3>⚡ Ação Recomendada</h3>
+<blockquote>
+<p>Desenvolvedores utilizando IronClaw ou ZeroClaw em produção devem <strong>auditar immediately</strong> suas configurações de segurança e monitorar advisories de segurança. Para projetos em выбор провайдера, considerar a adição de providers alternativos (Evolink, GLM-5.2) para resiliência.</p>
+</blockquote>
+<hr>
+<p><em>Relatório gerado em 2026-06-15 | Fonte: agents-radar + HN + ScienceDaily + Anthropic/OpenAI</em></p>
+<hr>
+<p><em>Este resumo é gerado automaticamente por <a href="https://github.com/manelsen/agents-radar">agents-radar</a>.</em></p>
+]]></content:encoded>
+    </item>
     <item>
       <title>Relatório diário do ecossistema de agentes de IA 2026-06-15</title>
       <link>https://manelsen.github.io/agents-radar/#2026-06-15/ai-agents</link>
@@ -10587,62 +10843,6 @@ Autores: Harihara Muralidharan, Reema Baskar, Soo Hee Lee et al. | cs.AI
 </ol>
 <hr>
 <p><em>Resumo gerado em 2026-06-13 | Fonte: ScienceDaily AI Feed</em></p>
-<hr>
-<p><em>Este resumo é gerado automaticamente por <a href="https://github.com/manelsen/agents-radar">agents-radar</a>.</em></p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>Robótica no ScienceDaily 2026-06-13</title>
-      <link>https://manelsen.github.io/agents-radar/#2026-06-13/ai-robotics</link>
-      <guid isPermaLink="true">https://manelsen.github.io/agents-radar/#2026-06-13/ai-robotics</guid>
-      <pubDate>Sat, 13 Jun 2026 00:00:00 +0000</pubDate>
-      <description>Resumo diário de Robótica no ScienceDaily 2026-06-13 Fonte: ScienceDaily | 3 histórias | Gerado em: 2026-06-12 21:27 UTC Destaques do dia Uma equipe de pesquisadores identificou uma propriedade mecânica inusual no grão de arroz – o material enfraquece sob compressão rápida, mas mantém a resistência quando a carga é aplicada lentamente – e conseguiu replicar esse comportamento em um material sintético que altera sua rigidez de forma autônoma. A inovação abre perspectivas para robots suaves e equi...</description>
-      <content:encoded><![CDATA[<h1>Resumo diário de Robótica no ScienceDaily 2026-06-13</h1>
-<blockquote>
-<p>Fonte: <a href="https://www.sciencedaily.com/news/computers_math/robotics/">ScienceDaily</a> | 3 histórias | Gerado em: 2026-06-12 21:27 UTC</p>
-</blockquote>
-<hr>
-<p><strong>Destaques do dia</strong>  </p>
-<ul>
-<li>Uma equipe de pesquisadores identificou uma propriedade mecânica inusual no grão de arroz – o material enfraquece sob compressão rápida, mas mantém a resistência quando a carga é aplicada lentamente – e conseguiu replicar esse comportamento em um material sintético que altera sua rigidez de forma autônoma. A inovação abre perspectivas para robots suaves e equipamentos de proteção que respondem instantaneamente a impactos.  </li>
-<li>Um estudo sobre transferência de aprendizado em IA revelou que a técnica pode acelerar drasticamente a busca por novas leis físicas, reduzindo a necessidade de simulações custosas, mas também pode fazer a IA “prender” a padrões conhecidos e ignorar evidências de fenômenos genuinamente novos.  </li>
-<li>Pesquisadores submeteram modelos de IA de última geração a um teste clássico de atenção usado em psicologia e constataram que, embora consigam nomear cores em listas curtas com mais de 90 % de acerto, seu desempenho despenca para quase zero à medida que a complexidade e o comprimento das listas aumentam, evidenciando uma fragilidade cognitiva crítica.</li>
-</ul>
-<p><strong>Principais histórias</strong>  </p>
-<table>
-<thead>
-<tr>
-<th>Tema</th>
-<th>História</th>
-<th>Link</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>Materiais adaptativos para robótica</strong></td>
-<td>“Scientists discover a strange property in rice and turn it into a smart material” – Um material baseado na resposta do arroz à compressão rápida permite ajuste automático de rigidez, ideal para robots moles e proteção contra choques.</td>
-<td><a href="https://www.sciencedaily.com/releases/2026/06/260611024621.htm">https://www.sciencedaily.com/releases/2026/06/260611024621.htm</a></td>
-</tr>
-<tr>
-<td><strong>IA como ferramenta de descoberta e suas limitações</strong></td>
-<td>“AI could uncover new physics faster but there’s a surprising catch” – Transfer learning acelera a exploração de novos princípios físicos, mas pode aprisionar a IA em vieses, comprometendo a inovação.</td>
-<td><a href="https://www.sciencedaily.com/releases/2026/06/260611024557.htm">https://www.sciencedaily.com/releases/2026/06/260611024557.htm</a></td>
-</tr>
-<tr>
-<td><strong>Cognição e atenção em modelos de IA</strong></td>
-<td>“A classic brain test exposed AI&#39;s biggest weakness” – Testes de atenção revelam que, com o aumento da complexidade, a precisão dos modelos cai drasticamente, evidenciando a necessidade de robustez cognitiva em sistemas autônomos.</td>
-<td><a href="https://www.sciencedaily.com/releases/2026/06/260610003049.htm">https://www.sciencedaily.com/releases/2026/06/260610003049.htm</a></td>
-</tr>
-</tbody></table>
-<p><strong>Sinal de pesquisa</strong><br>As três notícias sinalizam uma convergência entre <strong>materiais bio‑inspirados</strong>, <strong>inteligência artificial</strong> e <strong>cognição computacional</strong> no cenário da robótica. O trabalho com o arroz mostra que a natureza ainda guarda respostas mecânicas que podem ser traduzidas em dispositivos de rigidez variável, um passo essencial para robots que interagem de forma segura com humanos e ambientes imprevisíveis. Simultaneamente, a aplicação de transferência de aprendizado na física indica que a IA está se tornando um catalisador para a modelagem de sistemas robóticos complexos, mas a dependência de padrões conhecidos pode limitar a capacidade de explorar comportamentos emergentes – um risco que precisa ser mitigado com estratégias de diversificação de dados e regularização. Por fim, a fragilidade evidenciada nos testes de atenção evidencia que, para robots autônomos operando em cenários dinâmicos, a capacidade de manter o foco e processar informações crescentes é um gargalo crítico. Juntas, essas tendências apontam para uma pesquisa que busca <strong>integrar materiais inteligentes, IA generativa e robustez cognitiva</strong> como pilares para a próxima geração de sistemas robóticos.  </p>
-<p><strong>Vale ler</strong>  </p>
-<ol>
-<li><p><strong>“Scientists discover a strange property in rice and turn it into a smart material”</strong> – A abordagem pioneira de copiar um fenômeno natural para criar um material com rigidez adaptativa tem potencial direto para aplicações em robótica suave e dispositivos de proteção.<br><a href="https://www.sciencedaily.com/releases/2026/06/260611024621.htm">https://www.sciencedaily.com/releases/2026/06/260611024621.htm</a>  </p>
-</li>
-<li><p><strong>“A classic brain test exposed AI&#39;s biggest weakness”</strong> – A análise detalhada do declínio de desempenho em tarefas de atenção oferece insights valiosos sobre como melhorar a robustez cognitiva de agentes autônomos baseados em IA.<br><a href="https://www.sciencedaily.com/releases/2026/06/260610003049.htm">https://www.sciencedaily.com/releases/2026/06/260610003049.htm</a>  </p>
-</li>
-<li><p><strong>“AI could uncover new physics faster but there’s a surprising catch”</strong> – Mesmo focando em física fundamental, o estudo alerta sobre os perigos de viés em transferência de aprendizado, uma lição diretamente aplicável ao uso de IA em simulações robóticas.<br><a href="https://www.sciencedaily.com/releases/2026/06/260611024557.htm">https://www.sciencedaily.com/releases/2026/06/260611024557.htm</a></p>
-</li>
-</ol>
 <hr>
 <p><em>Este resumo é gerado automaticamente por <a href="https://github.com/manelsen/agents-radar">agents-radar</a>.</em></p>
 ]]></content:encoded>
