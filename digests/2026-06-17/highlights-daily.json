@@ -1,0 +1,114 @@
+{
+  "ai-agents": [
+    "NullClaw: ChaCha20-Poly1305 token encryption",
+    "NullClaw: MS Teams JWT lowercase fix",
+    "NullClaw PR #783: cron subagent com histórico",
+    "ZeroClaw, NanoBot, Hermes: 7 projetos cobertos",
+    "NullClaw em fase de estabilização",
+    "3 PRs abertos, nenhum merged em 24h"
+  ],
+  "ai-web": [
+    "Anthropic: pesquisa Claude Code ~400k sessões",
+    "Anthropic-TCS: Claude em 56 países",
+    "Anthropic: 3 novos artigos (382 total)",
+    "OpenAI: 1 novo artigo (844 total)",
+    "Claude Code evolui para executor end-to-end",
+    "Reativação do comunicado de segurança IA"
+  ],
+  "ai-hn": [
+    "DeepSeek V4 Pro: 5% do custo do Claude",
+    "GLM-5.2: modelo para tarefas longas",
+    "OpenAI: perdas de $34 bilhões",
+    "Claude Code nativo no VS Code",
+    "Anthropic: conflitos regulatórios em destaque",
+    "DeepSeek e GLM como alternativas open-source"
+  ],
+  "ai-arxiv": [
+    "Value Axis: LLMs monitoram estratégia",
+    "ContextRL: RL contextualizado para agentes",
+    "KVEraser: otimização de KV cache",
+    "VLAs: front-end padrão para robótica",
+    "50 artigos de IA no ArXiv hoje",
+    "Interpretabilidade causal em destaque"
+  ],
+  "ai-science": [
+    "Chip cerebral opera próximo ao zero absoluto",
+    "IA cai de 90% para zero no teste Stroop",
+    "Transistores SiC como neurônios artificiais",
+    "Limitações de Transformers expostas",
+    "Hardware neuromórfico avança",
+    "Desempenho drástico em atenção sustentada"
+  ],
+  "ai-robotics": [
+    "Material inteligente inspirado no arroz",
+    "Robôs suaves mais seguros com rigidez adaptável",
+    "Testes revelam falhas de atenção em IA",
+    "Transferência de aprendizado em física",
+    "Desafios de IA em ambientes dinâmicos",
+    "Ciência de materiais converge com robótica"
+  ],
+  "ai-hacking": [
+    "Nota: conteúdo é sobre computação quântica",
+    "Chip quântico no zero absoluto (HKU)",
+    "Gato de Schrödinger em Oxford",
+    "Sincronização quântica unidirecional (RIKEN)",
+    "Relevância para criptografia pós-quântica",
+    "Não há notícias de cibersegurança"
+  ],
+  "ai-livingwell": [
+    "Semaglutida reduz fraturas em 15%",
+    "Cálcio e vitamina D: ineficazes para ossos",
+    "90-120 min/semana de força aumentam longevidade",
+    "Glucosamina acelera Alzheimer em 25%",
+    "Pré-diabetes revertido reduz risco cardíaco 58%",
+    "Cérebro melhora até os 90 anos"
+  ],
+  "ai-engineering": [
+    "MIT: motor espacial para CubeSats",
+    "Partículas-grampo criam materiais adaptáveis",
+    "Fotossíntese artificial dispensa baterias",
+    "Material do arroz: rigidez automática",
+    "Combustível único para химическая e elétrica",
+    "CubeSats podem alcançar Marte"
+  ],
+  "ai-agriculture": [
+    "Fungos: rede subterrânea de 110 quadrilhões km",
+    "Alface geneticamente editada sem pigmento vermelho",
+    "Abelhas têm rotas de voo personalizadas",
+    "Milípedes colonizaram terra há 460 milhões de anos",
+    "Edição genômica para perfil nutricional",
+    "Príons em cervos: transmissão entre espécies"
+  ],
+  "ai-environmental": [
+    "UV decompõe PFAS sem químicos",
+    "Onda de Kelvin: retorno do El Niño",
+    "Fungos transferem 4 bi toneladas CO₂/ano",
+    "Catalisador triplica produção de metanol",
+    "Microesferas de tofu capturam CO₂",
+    "Remediação de forever chemicals"
+  ],
+  "ai-archaeology": [
+    "Milípedes: 80 mi de anos antes dos vertebrados",
+    "Denisovanos: 3 linhagens com Near Oceanians",
+    "Crocodilo 'caçador de Lucy' identificado",
+    "Genes Neandertal: impacto na linguagem humana",
+    "Reprodução sexual: catalisador da biodiversidade",
+    "Australopithecus e crocodilo gigante coexistiram"
+  ],
+  "ai-social": [
+    "Avós: fator protetor para saúde mental",
+    "Americanos de meia-idade em crise de bem-estar",
+    "Sobrecarga informativa danifica saúde mental",
+    "Relações familiares como amortecedor social",
+    "Declínio cognitivo em gerações atuais",
+    "Estruturas sociais enfraquecidas nos EUA"
+  ],
+  "ai-offbeat": [
+    "Bandos de pássaros desafiam 3ª lei de Newton",
+    "Estrela pode criar mini-universo instead of buraco negro",
+    "Plasma estelar distorce sinais extraterrestres",
+    "Papagaios usam nomes próprios para identificar",
+    "Crocodilo gigante coexistiu com Lucy",
+    "Reprodução assexuada limitou evolução inicial"
+  ]
+}
