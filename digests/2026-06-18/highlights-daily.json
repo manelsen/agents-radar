@@ -1,0 +1,66 @@
+{
+  "ai-agents": [
+    "7 projetos de agentes de IA cobertos",
+    "PR #960 corrige teclas no CLI do NullClaw",
+    "NullClaw com bug crítico no scheduler",
+    "Baixa atividade em NullClaw nas últimas 24h",
+    "ZeroClaw Labs integra novo agente",
+    "NanoBot da HKUDS atualizado"
+  ],
+  "ai-arxiv": [
+    "Variable-Width Transformers: larguras adaptativas",
+    "VERITAS: auto-melhoria de agentes",
+    "EvolveNav: navegação zero-shot com memória",
+    "ZOPO: distilação por prompts sem gradientes",
+    "Anthropic Fable 5 & Opus 4.8: robustez adversarial",
+    "EU AI Act: benchmarks de raciocínio jurídico"
+  ],
+  "ai-science": [
+    "Chip cerebral SiC opera próximo ao zero absoluto",
+    "Transistores simulam neurônios energeticamente",
+    "Avanço para computação quântica e neuromórfica",
+    "Colaboração neurociência e física da matéria",
+    "Otimização de hardware em vez de novos materiais",
+    "Integração cognitiva em processadores especializados"
+  ],
+  "ai-robotics": [
+    "Material inteligente do arroz: rigidez adaptativa",
+    "Aplicação direta para robótica maleável",
+    "Transfer learning acelera descoberta de física",
+    "Risco: IA ignora evidências genuinamente novas",
+    "Equipamentos de proteção com resposta a impactos",
+    "Tendência: inspiração em elementos naturais"
+  ],
+  "ai-hacking": [
+    "Avanços quânticos impulsionam criptografia",
+    "Supercondutividade放宽 restrições de refrigeração",
+    "Oxford: estados gato de Schrödinger melhorados",
+    "RIKEN: sincronização quântica unidirecional",
+    "Maior estabilidade contra ruído e defeitos",
+    "Processadores quânticos mais resilientes"
+  ],
+  "ai-livingwell": [
+    "GLP-1 reduz fraturas ósseas em 15%",
+    "Ozempic reduz comportamento violento",
+    "Usuários de GLP-1 tornam-se menos ativos",
+    "Cérebro pode melhorar mesmo aos 90 anos",
+    "Olhos de crianças: sinal precoce de depressão",
+    "Dieta sem açúcar prejudica controle glicêmico"
+  ],
+  "ai-engineering": [
+    "Material 'staple-shaped' reconfigurável em segundos",
+    "Oxford: novo estado quântico gato de Schrödinger",
+    "Fotomossíntese artificial sem baterias",
+    "Arroz inspira material com rigidez adaptativa",
+    "Transfer learning: risco de perder sinais novos",
+    "Engenharia quântica e adaptativa em destaque"
+  ],
+  "ai-environmental": [
+    "Radiação UV destrói 'produtos químicos permanentes'",
+    "NASA confirma desenvolvimento de El Niño",
+    "Rede fúngica subterrânea: 110 quatrilhões de km",
+    "Catalisador triplica produção de metanol de CO₂",
+    "Geleiras do Alasca sensíveis ao aquecimento",
+    "4 bilhões de toneladas de CO₂ movidos anuais"
+  ]
+}
