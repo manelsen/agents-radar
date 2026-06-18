@@ -1,0 +1,114 @@
+{
+  "ai-agents": [
+    "NullClaw com 9 atualizações em 24h",
+    "PRs abertos para streaming SSE",
+    "Integração WeChat em desenvolvimento",
+    "NanoBot foca em agentes HKUDS",
+    "ZeroClaw avança em tools abertas",
+    "CoPaw expande Agentscope AI"
+  ],
+  "ai-web": [
+    "Claude Opus 4.7: robôs 20x mais rápidos",
+    "Anthropic abre escritório em Seul",
+    "BioMysteryBench: benchmark biológico",
+    "OpenAI atualiza ChatGPT Enterprise",
+    "GLP-1: proteção contra fraturas ósseas",
+    "3 novos artigos Anthropic (total: 400)"
+  ],
+  "ai-hn": [
+    "Noam Shazeer ingressa na OpenAI",
+    "GLM-5.2: LLM aberto mais potente",
+    "Trump restringe Anthropic (195 pts)",
+    "Ferramenta explora pesos de modelos",
+    "Project Fetch Fase 2 avança",
+    "GLP-1 reduz comportamento violento"
+  ],
+  "ai-arxiv": [
+    "DreamReasoner-8B: difusão para CoT",
+    "Distillation com rubricas para LLMs",
+    "Medical LLM Adaptation em francês",
+    "50 artigos cs.AI/CL/LG hoje",
+    "Difusão em bloco para raciocínio longo",
+    "Unlearning seletivo para alinhamento"
+  ],
+  "ai-science": [
+    "Chip neuromórfico no zero absoluto",
+    "Transistores SiC para neurônios artificiais",
+    "HK University: computação criogênica",
+    "Eficiência energética sem precedentes",
+    "Neuromorphic computing: novo paradigma",
+    "Silicon carbide transistors inovadores"
+  ],
+  "ai-hacking": [
+    "Supercondutividade: salto na Suécia",
+    "Chip cerebral quântico em HK",
+    "Sincronização quântica unidirecional",
+    "RIKEN: quantum robusto contra ruído",
+    "Gato de Schrödinger em Oxford",
+    "Hardware quântico mais resiliente"
+  ],
+  "ai-memory": [
+    "Atenção visual: marcador de depressão",
+    "Crianças: foco em rostos tristes",
+    "Risco genético: padrão atencional",
+    "Biomarcador comportamental precoce",
+    "Neurociência preventiva em destaque",
+    "Processamento emocional alterado"
+  ],
+  "ai-livingwell": [
+    "Aditivos: risco de hipertensão e AVC",
+    "Pré-diabetes: reversão corta 58% risco",
+    "GLP-1: Ozempic e Wegovy em destaque",
+    "Probióticos contra depressão em idosos",
+    "Suplementos cálcio+D: benefícios limitados",
+    "112 mil participantes no estudo"
+  ],
+  "ai-engineering": [
+    "Partículas grampo: material reconfigurável",
+    "Oxford: novo estado gato de Schrödinger",
+    "Estruturas recicláveis por vibração",
+    "Materiais inteligentes: aplicações médicas",
+    "Qubits mais resilientes em Oxford",
+    "Dureza ajustável em segundos"
+  ],
+  "ai-agriculture": [
+    "Abelhas australianas vulneráveis ao calor",
+    "CRISPR elimina pigmento vermelho da alface",
+    "CWD: príons em animais assintomáticos",
+    "Redes fúngicas: 110 quadrilhões km",
+    "Abelhas domesticam rotas de voo",
+    "Fungos movem 4 bi toneladas CO₂/ano"
+  ],
+  "ai-environmental": [
+    "Climate TRACE: 70% subcontagem emissions",
+    "NASA confirma sinais de El Niño",
+    "Glaciares: cada grau = 3 semanas derret",
+    "Destruição de PFAS sem químicos",
+    "CO₂: catálise triplica produção metanol",
+    "Ondas de Kelvin: água quente na costa"
+  ],
+  "ai-archaeology": [
+    "Peste na Sibéria há 5.500 anos",
+    "3 grupos Denisovanos no Pacífico",
+    "DNA Neandertal: origens da linguagem",
+    "Crocodilo gigante caçava Lucy",
+    "Genética antiga: história revelada",
+    "Pragas dizimaram caçadores-coletores"
+  ],
+  "ai-social": [
+    "Cérebro vs sobrecarga informativa",
+    "América: solidão na meia-idade",
+    "Avós protegem saúde mental jovem",
+    "Declínio cognitivo em adultos EUA",
+    "Estresse financeiro crônico nos EUA",
+    "Relações intergeracionais: resiliência"
+  ],
+  "ai-offbeat": [
+    "Roedores regeneram ossos e tendões",
+    "GLP-1 reduz impulsividade e violência",
+    "Universo pode registrar sua história",
+    "Aranha amazônica imita fungo",
+    "Papagaios usam nomes uns p/outros",
+    "Crocodilo de 3 mi anos perto de Lucy"
+  ]
+}
