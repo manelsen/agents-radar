@@ -1,0 +1,114 @@
+{
+  "ai-cli": [
+    "LLMs Are Complicated Now lidera com 149 pontos",
+    "John Jumper deixa Google DeepMind para Anthropic",
+    "GLM-5.2 vs Claude Opus 4.8: comparação técnica",
+    "Show HN: modelo que pentest em vez de recusar",
+    "SpaceX planeja datacenters de IA no espaço",
+    "Radicais de H quebram PFAS sem químicos"
+  ],
+  "ai-agents": [
+    "NullClaw v2026.5.29: issue Windows aberta",
+    "Zero PRs merged nas últimas 24h em NullClaw",
+    "7 projetos cobertos no ecossistema de agentes",
+    "Issue #952 resolvida: respostas Ollama completas",
+    "Issue #967 aberta: estabilidade no Windows",
+    "NanoBot, Hermes Agent e IronClaw em destaque"
+  ],
+  "ai-hn": [
+    "LLMs Are Complicated Now lidera com 149 pts",
+    "Anthropic domina discussões da comunidade",
+    "Show HN: modelo que pentest em vez de recusar",
+    "GLM-5.2 vs Claude Opus 4.8 comparado",
+    "China terá modelo Fable 5 antes de 2027",
+    "Persona.js: biblioteca UI para agentes"
+  ],
+  "ai-science": [
+    "SpaceX quer datacenters de IA no espaço",
+    "Energia solar em órbita como combustível",
+    "Desafios: radiação, debris e manutenção",
+    "Computação quântica avança com nitreto de B",
+    "Estados 'gato de Schrödinger' mais estáveis",
+    "Rede fúngica: 110 quintilhões de km subterrâneos"
+  ],
+  "ai-robotics": [
+    "Datacenters orbitais para treinar IA",
+    "Robôs autônomos para missões espaciais",
+    "Hardware tolerante a radiação em demanda",
+    "Edge computing em ambientes hostis",
+    "Manutenção robótica autônoma no espaço",
+    "Convergência: computação orbital e robótica"
+  ],
+  "ai-hacking": [
+    "Nitreto de B avança computação quântica",
+    "QKD: distribuição de chaves quânticas",
+    "SpaceX: proteção de hardware orbital",
+    "Estados 'gato de Schrödinger' mais resilientes",
+    "Entropia de Shannon resolve Wordle",
+    "Ameaça aos algoritmos criptográficos atuais"
+  ],
+  "ai-memory": [
+    "Sinal precoce de depressão nos olhos de crianças",
+    "Padrão atencional prediz risco familiar",
+    "Processamento emocional em crianças de risco",
+    "Atenção visual a expressões faciais",
+    "Biomarcadores comportamentais precoces",
+    "Estudos longitudinais em neurociência"
+  ],
+  "ai-livingwell": [
+    "GLP-1 reduz comportamento violento",
+    "Ozempic: 15% menos fraturas que outros",
+    "GLP-1 associados a menor atividade física",
+    "Cálcio e vitamina D: eficácia mínima em ossos",
+    "Flavonoides protegem saúde cardiovascular",
+    "Plastificantes afetam desenvolvimento infantil"
+  ],
+  "ai-engineering": [
+    "Partículas grampo criam materiais adaptativos",
+    "Estruturas alternam resistência e flexibilidade",
+    "Gato de Schrödinger com componentes quânticos",
+    "Oxford avança computação quântica fundamental",
+    "Materiais inteligentes e reconfiguráveis",
+    "Robótica e construção civil com novos materiais"
+  ],
+  "ai-agriculture": [
+    "DNA revela história genômica do morango",
+    "Abelhas australianas em risco com calor",
+    "Edição genética da alface: mais compostos",
+    "Rede fúngica: 110 quintilhões de km",
+    "Doença crônica dos veados se espalha",
+    "Genomas antigos reconstruídos"
+  ],
+  "ai-environmental": [
+    "Permafrost descongelando absorve CO₂",
+    "Climate TRACE: subestimativa de 70% em emissões",
+    "PFAS degradados por radicais de hidrogênio",
+    "El Niño retorna: ondas de Kelvin detectadas",
+    "Rede fúngica: superhighway de carbono",
+    "Catalisador triplica produção de metanol"
+  ],
+  "ai-archaeology": [
+    "Denisovans ainda moldam imunidade moderna",
+    "Peste já matava há 5.500 anos",
+    "Milípedes terrestres: 460 milhões de anos",
+    "Mistura com 3 grupos de Denisovans",
+    "Filogenética antecipa colonização do solo",
+    "DNA antigo revoluciona história humana"
+  ],
+  "ai-social": [
+    "Meia-idade: crise de solidão nos EUA",
+    "Cérebro sobrecarregado por más notícias",
+    "Estresse financeiro crônico em alta",
+    "Redes de apoio social enfraquecidas",
+    "Consumo equilibrado de informações",
+    "Declínio cognitivo em gerações atuais"
+  ],
+  "ai-offbeat": [
+    "Primatas evoluíram no Ártico, não nos trópicos",
+    "Mamíferos têm poderes regenerativos latentes",
+    "Pássaros 'violam' terceira lei de Newton",
+    "Estrelas podem criar miniuniversos",
+    "Polvo imita fungos parasitas",
+    "Papagaios usam nomes específicos"
+  ]
+}
