@@ -1,0 +1,107 @@
+{
+  "ai-cli": [],
+  "ai-agents": [
+    "NullClaw sem releases, 2 PRs abertas",
+    "PR #968 corrige persistência de Matrix",
+    "Cursor next_batch agora persiste em storage",
+    "Dependabot mantém deps Docker",
+    "ZeroClaw: novo projeto em destaque",
+    "7 projetos cobrem ecossistema de agentes"
+  ],
+  "ai-web": [
+    "Anthropic: codificação agentiva rende igual",
+    "Parceria Gates-Anthropic de US$ 200M",
+    "OpenAI atualiza índice Daybreak e Codex",
+    "Pesquisa: expertise humana amplia IA em 25%",
+    "Claude Code: 400 mil sessões analisadas",
+    "Anthropic: deploys benéficos em saúde e educação"
+  ],
+  "ai-hn": [
+    "GLM 5.2 vs Opus 4: debate intenso",
+    "Bug do Codex pode destruir SSDs",
+    "Claude Code: pensament genuíno ou fake?",
+    "Sakana AI lança Fugu, modelo de orquestração",
+    "Five Eyes alerta para risco de IA em meses",
+    "GLM 5.2: 458 pts, 308 comentários"
+  ],
+  "ai-science": [
+    "SpaceX quer data centers na órbita",
+    "Energia solar ilimitada no espaço",
+    "Desafios: radiação e detritos orbitais",
+    "IA demanda poder computacional sem precedentes",
+    "Infraestrutura além das limitações terrestres",
+    "Viabilidade comercial ainda incerta"
+  ],
+  "ai-robotics": [
+    "SpaceX propõe centros de dados orbitais",
+    "Robôs autônomos para manutenção espacial",
+    "Paineis solares flexíveis no espaço",
+    "Desafios: radiação e detritos",
+    "IA + robótica em infraestrutura espacial",
+    "Convergência de sistemas autônomos"
+  ],
+  "ai-hacking": [
+    "Técnica quântica avanza processadores",
+    "Estratégia Wordle vence 99% com entropia",
+    "Criptografia pós-quântica mais urgente",
+    "PFAS degradado por radicais de hidrogênio",
+    "Supercondutores em escala nanométrica",
+    "Ataques de canal lateral em risco"
+  ],
+  "ai-memory": [
+    "Crianças com risco genético veem tristeza",
+    "Processamento facial: biomarcador depressivo",
+    "Atenção ampliada para expressões negativas",
+    "Detecção precoce de risco depressivo",
+    "Intervenções preventivas em idades precoces",
+    "Foco em fatores genéticos e comportamentais"
+  ],
+  "ai-livingwell": [
+    "Ácido palmítico causa resistência à insulina",
+    "Ácido oleico (azeite) protege contra diabetes",
+    "Conservantes elevam risco de hipertensão",
+    "GLP-1 reduz comportamento violento",
+    "Probióticos para depressão em idosos",
+    "Compostos do cannabis aliviam dor"
+  ],
+  "ai-agriculture": [
+    "Shelterbelts reduzem aves em mais de 70%",
+    "Morangos: múltiplos eventos de fusão genômica",
+    "Abelhas australianas vulneráveis ao calor",
+    "CWD: prions em animais assintomáticos",
+    "Biodiversidade vs proteção de culturas",
+    "Genômica revela história evolutiva"
+  ],
+  "ai-environmental": [
+    "Degelo do permafrost absorve CO₂",
+    "Climate TRACE erra 70% das emissões",
+    "Radical UV degrada PFAS sem químicos",
+    "Shelterbelts fragmentam habitats de aves",
+    "Erros sistemáticos em 260 cidades dos EUA",
+    "Sequestro de carbono ignorado em projeções"
+  ],
+  "ai-archaeology": [
+    "Peste já matava há 5.500 anos",
+    "DNA antigo revela pragas em caçadores",
+    "40% dos indivíduos com cepas primitivas",
+    "Surtos familiares dizimaram jovens",
+    "Desafia teoria de pandemias urbanas",
+    "Peste antes das cidades e agricultura"
+  ],
+  "ai-social": [
+    "Cérebro não foi feito para tanta notícia",
+    "Sistema neural evoluiu para ameaças imediatas",
+    "Hábitos saudáveis de consumo informativo",
+    "Saúde mental no mundo digitalizado",
+    "Solução não é abandonar notícias",
+    "Diretrizes para consumo equilibrado"
+  ],
+  "ai-offbeat": [
+    "Borboleta amazônica retarda envelhecimento",
+    "Macacos regeneram ossos após amputação",
+    "Aranha imita fungo parasita",
+    "Universo pode gravar sua própria história",
+    "Ozempic reduz comportamento violento",
+    "Neurônios quebram DNA para formar cérebro"
+  ]
+}
