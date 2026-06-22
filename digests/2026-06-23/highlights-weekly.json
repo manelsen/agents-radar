@@ -1,0 +1,13 @@
+{
+  "zh": {
+    "ai-weekly": [
+      "Anthropic: Claude Code reduz debugging em 50%",
+      "SpaceX propõe data centers de IA em órbita",
+      "Oxford: estados quânticos macroscópicos gerados",
+      "Semaglutida reduz fraturas ósseas em 15%",
+      "NullClaw corrige bug crítico em streaming (#964)",
+      "NullClaw implementa navegação no REPL (#960)"
+    ]
+  },
+  "en": {}
+}
