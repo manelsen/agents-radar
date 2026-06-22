@@ -6,7 +6,209 @@
     <description>Resumo diário do ecossistema open source de IA · Daily AI ecosystem digest</description>
     <language>pt-BR</language>
     <atom:link href="https://manelsen.github.io/agents-radar/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Sun, 21 Jun 2026 21:14:57 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 22 Jun 2026 21:58:54 +0000</lastBuildDate>
+    <item>
+      <title>Relatório semanal de ferramentas de IA 2026-06-23</title>
+      <link>https://manelsen.github.io/agents-radar/#2026-06-23/ai-weekly</link>
+      <guid isPermaLink="true">https://manelsen.github.io/agents-radar/#2026-06-23/ai-weekly</guid>
+      <pubDate>Tue, 23 Jun 2026 00:00:00 +0000</pubDate>
+      <description>Relatório semanal do ecossistema de ferramentas de IA 2026-W26 Cobertura: 2026-06-16 ~ 2026-06-22 | Gerado em: 2026-06-22 21:57 UTC Relatório Semanal do Ecossistema de IA — 2026-W26 Período: 16–22 de junho de 2026 1. Principais Histórias da Semana 🔬 Anthropic domina os holofotes com pesquisa substancial. A empresa publicou dados de ~400.000 sessões do Claude Code, demonstrando que expertise humana amplifica a produtividade do agente: desenvolvedores mais experientes extraem mais trabalho por in...</description>
+      <content:encoded><![CDATA[<h1>Relatório semanal do ecossistema de ferramentas de IA 2026-W26</h1>
+<blockquote>
+<p>Cobertura: 2026-06-16 ~ 2026-06-22 | Gerado em: 2026-06-22 21:57 UTC</p>
+</blockquote>
+<hr>
+<h1>Relatório Semanal do Ecossistema de IA — 2026-W26</h1>
+<p><strong>Período:</strong> 16–22 de junho de 2026</p>
+<hr>
+<h2>1. Principais Histórias da Semana</h2>
+<p><strong>🔬 Anthropic domina os holofotes com pesquisa substancial.</strong> A empresa publicou dados de ~400.000 sessões do Claude Code, demonstrando que expertise humana amplifica a produtividade do agente: desenvolvedores mais experientes extraem mais trabalho por instrução, e o tempo em debugging caiu ~50% em 7 meses. O Project Fetch Fase 2 mostrou o Claude Opus 4.7 executando tarefas robóticas 20x mais rápido que humanos especializados.</p>
+<p><strong>🛰️ SpaceX propõe data centers de IA em órbita.</strong> A empresa planeja instalar infraestrutura computacional orbital alimentada por energia solar, contornando limitações terrestres de refrigeração e consumo energético. Especialistas alertam para desafios: radiação cósmica, manutenção remota e detritos orbitais.</p>
+<p><strong>⚛️ Computação quântica avança com estados &quot;gato de Schrödinger&quot; aprimorados.</strong> Físicos de Oxford geraram estados quânticos macroscópicos usando componentes genuinamente quânticos, melhorando tolerância a erros. Pesquisadores suecos alcançaram supercondutividade em temperaturas e campos magnéticos mais elevados.</p>
+<p><strong>💊 Medicamentos GLP-1 revelam efeitos além da perda de peso.</strong> Semaglutida (Ozempic/Wegovy) associada a 15% menos fraturas ósseas, possível redução de comportamento violento, e menor risco cardiovascular em diabéticos.</p>
+<hr>
+<h2>2. Progresso das Ferramentas CLI</h2>
+<p><strong>NullClaw mantém ritmo moderado de desenvolvimento.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Área</th>
+<th>Status</th>
+<th>Destaque</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Streaming</strong></td>
+<td>🟡 Em revisão</td>
+<td>PRs #964 e #965 corrigem bug crítico: <code>agent/root.zig</code> desabilitava tools durante streaming</td>
+</tr>
+<tr>
+<td><strong>CLI/UX</strong></td>
+<td>✅ Progresso</td>
+<td>PR #960 implementa suporte a teclas de seta, histórico e navegação no REPL</td>
+</tr>
+<tr>
+<td><strong>Autenticação</strong></td>
+<td>🔧 Em desenvolvimento</td>
+<td>PRs para MS Teams (JWT lowercase) e scheduler com tokens persistidos via ChaCha20-Poly1305</td>
+</tr>
+<tr>
+<td><strong>Mobile</strong></td>
+<td>🟡 Em revisão</td>
+<td>PR #966 resolve HTTP no Android/Termux via curl</td>
+</tr>
+<tr>
+<td><strong>Documentação</strong></td>
+<td>✅ Contribuições</td>
+<td>Adicionados guias para WeChat e Anthropic</td>
+</tr>
+</tbody></table>
+<p><strong>Situação atual:</strong> Release v2026.5.29 continua estável. Nenhuma release nova esta semana, indicando fase de estabilização antes de próxima versão.</p>
+<hr>
+<h2>3. Ecossistema de Agentes de IA</h2>
+<p><strong>Movimentações corporativas significativas:</strong></p>
+<ul>
+<li><strong>Noam Shazeer</strong> (ex-co-líder Gemini) ingressou na <strong>OpenAI</strong>, aquecendo debates sobre concentração de talentos nas big techs</li>
+<li><strong>John Jumper</strong> (Nobel de Química pelo AlphaFold) juntou-se à <strong>Anthropic</strong>, sinalizando foco em modelos científicos</li>
+<li><strong>Amazon desistiu</strong> de produção cinematográfica sobre Sam Altman após parceria com OpenAI</li>
+<li><strong>JPMorgan restringiu</strong> acesso à Anthropic para funcionários em Hong Kong</li>
+</ul>
+<p><strong>Novidades de produtos:</strong></p>
+<ul>
+<li><strong>GLM-5.2</strong> posicionado como &quot;LLM de texto open weights mais poderoso&quot;, gerando comparações com Claude</li>
+<li><strong>DeepSeek V4 Pro</strong> cotado em 5% do custo do Claude, atraindo interesse por alternativas de menor custo</li>
+<li><strong>Claude Corps</strong> lançado pela Anthropic — iniciativa de agentes colaborativos ainda sem detalhes públicos</li>
+<li><strong>BioMysteryBench</strong> — benchmark de bioinformática da Anthropic para avaliar capacidades científicas</li>
+</ul>
+<hr>
+<h2>4. Tendências Open Source</h2>
+<table>
+<thead>
+<tr>
+<th>Tendência</th>
+<th>Evidência</th>
+<th>Implicação</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Multi-agente orchestration</strong></td>
+<td>Maccha — framework para coordenar Claude Code, Antigravity, OpenCode</td>
+<td>Sistemas de agentes compostos amadurecendo</td>
+</tr>
+<tr>
+<td><strong>Router de LLMs</strong></td>
+<td>Wyolet Relay — roteamento open source de alta throughput</td>
+<td>Abstração de provedores para produção</td>
+</tr>
+<tr>
+<td><strong>Privacidade local</strong></td>
+<td>Ferramenta de redação de PII para APIs de IA</td>
+<td>Crescente demanda por soluções on-premise</td>
+</tr>
+<tr>
+<td><strong>Benchmarking independente</strong></td>
+<td>GLM-5.2 vs GPT-5.5 em taxas de alucinação</td>
+<td>Comunidade buscando transparência em avaliações</td>
+</tr>
+</tbody></table>
+<p><strong>Intersse crescente em modelos locais:</strong> Discussão no HN sobre substituição de Claude/GPT por modelos locais (Llama, Mistral, CodeLlama) para codificação diária — 259 comentários, indicando viabilidade prática.</p>
+<hr>
+<h2>5. Debates da Comunidade HN</h2>
+<p><strong>Maior engajamento da semana:</strong></p>
+<ol>
+<li><strong>&quot;LLMs Are Complicated Now&quot;</strong> — 149 pts, reflexões sobre complexidade operacional crescente</li>
+<li><strong>&quot;Claude Code scans your whole drive&quot;</strong> — controvérsia sobre privacidade de coding assistants</li>
+<li><strong>Regulamentação Anthropic/Trump</strong> — proibições e processos judiciais sobre controles de exportação</li>
+<li><strong>OpenAI com perdas de $34 bi</strong> — viabilidade financeira dos laboratórios tradicionais questionada</li>
+</ol>
+<p><strong>Temas recorrentes:</strong></p>
+<ul>
+<li>Ceticismo sobre concentração de poder em poucas empresas</li>
+<li>Preocupações com efeitos cognitivos do uso massivo de IA (degradação de habilidades documentada pela Nature)</li>
+<li>Busca por alternativas open-source economicamente viáveis</li>
+<li>Discussões sobre &quot;AI deskilling&quot; de desenvolvedores</li>
+</ul>
+<hr>
+<h2>6. Atualizações Oficiais</h2>
+<h3>Anthropic</h3>
+<table>
+<thead>
+<tr>
+<th>Publicação</th>
+<th>Data</th>
+<th>Conteúdo</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><em>Agentic coding and persistent returns to expertise</em></td>
+<td>16 jun</td>
+<td>Análise de 400k sessões Claude Code</td>
+</tr>
+<tr>
+<td><em>Emotion concepts in LLMs</em></td>
+<td>15 jun</td>
+<td>Representações internas de emoções no Claude</td>
+</tr>
+<tr>
+<td><em>BioMysteryBench</em></td>
+<td>18 jun</td>
+<td>Benchmark de bioinformática</td>
+</tr>
+<tr>
+<td><em>Project Fetch Fase 2</em></td>
+<td>19 jun</td>
+<td>Claude executa tarefas robóticas 20x mais rápido</td>
+</tr>
+<tr>
+<td>Expansão para Seul + MOU governo sul-coreano</td>
+<td>19 jun</td>
+<td>Alianças estratégicas em governança de IA</td>
+</tr>
+</tbody></table>
+<h3>OpenAI</h3>
+<p><strong>Sem atualizações substantivas</strong> — apenas metadados sobre &quot;Rede de Parceiros&quot; e funcionalidade de saúde no ChatGPT Enterprise.</p>
+<hr>
+<h2>7. Sinais para a Próxima Semana</h2>
+<table>
+<thead>
+<tr>
+<th>Sinal</th>
+<th>Confiança</th>
+<th>Direção</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Consolidação de mercado</strong> — aquisições de talentos entre big techs devem continuar</td>
+<td>Alta</td>
+<td>⚠️ Concentração</td>
+</tr>
+<tr>
+<td><strong>Release NullClaw</strong> — múltiplos PRs aguardam merge, possivelmente consolidados</td>
+<td>Alta</td>
+<td>📦 Funcionalidades</td>
+</tr>
+<tr>
+<td><strong>GLM-5.2 em produção</strong> — comparações independentes com modelos americanos intensificam</td>
+<td>Média</td>
+<td>🏆 Benchmark</td>
+</tr>
+<tr>
+<td><strong>Expansão geográfica Anthropic</strong> — Seul como hub Asia-Pacífico pode trazer features específicas</td>
+<td>Média</td>
+<td>🌍 Regulação</td>
+</tr>
+<tr>
+<td><strong>Críticas a custos de IA</strong> — pressão por alternativas open-source deve crescer</td>
+<td>Alta</td>
+<td>💰 Economia</td>
+</tr>
+</tbody></table>
+<hr>
+<p><strong>Nota:</strong> Os dados de ScienceDaily sobre neurociência (marcador de depressão infantil), arqueologia (peste em caçadores-coletores de 5.500 anos) e ciências ambientais (rede fúngica subterrânea de 110 quadrilhões de km) indicam convergência de IA com biotecnologia e sustentabilidade — áreas a observar para aplicações futuras de agentes de IA.</p>
+<hr>
+<p><em>Este resumo é gerado automaticamente por <a href="https://github.com/manelsen/agents-radar">agents-radar</a>.</em></p>
+]]></content:encoded>
+    </item>
     <item>
       <title>Relatório diário do ecossistema de agentes de IA 2026-06-22</title>
       <link>https://manelsen.github.io/agents-radar/#2026-06-22/ai-agents</link>
@@ -10364,147 +10566,6 @@ Comparado a semanas anteriores, há menos posts sobre &quot;modelos mais capazes
 <li><p><strong><a href="https://www.ft.com/content/1d37cc08-e0aa-45a4-a45d-4ad282529314">&#39;We created a monster&#39;: companies rein in AI usage as costs strain budgets</a></strong><br>Discussão: <a href="https://news.ycombinator.com/item?id=48602571">https://news.ycombinator.com/item?id=48602571</a><br><em>Por que ler:</em> Transição do hype para realidade econômica. Sinaliza mudança de paradigma nos investimentos enterprise em IA.</p>
 </li>
 </ol>
-<hr>
-<p><em>Este resumo é gerado automaticamente por <a href="https://github.com/manelsen/agents-radar">agents-radar</a>.</em></p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>Pesquisa em IA no ArXiv 2026-06-20</title>
-      <link>https://manelsen.github.io/agents-radar/#2026-06-20/ai-arxiv</link>
-      <guid isPermaLink="true">https://manelsen.github.io/agents-radar/#2026-06-20/ai-arxiv</guid>
-      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
-      <description>Resumo diário de pesquisa em IA no ArXiv 2026-06-20 Fonte: ArXiv (cs.AI, cs.CL, cs.LG) | 50 artigos | Gerado em: 2026-06-19 21:04 UTC Resumo de Pesquisa em IA — ArXiv (20 de junho de 2026) 1. Destaques do Dia Os artigos desta data revelam avanços significativos em três frentes principais: (1) segurança e verificação de agentes de IA, com novos frameworks para validação probabilística e análise de ataques adversários em sistemas agentic; (2) calibração e transparência de modelos, buscando entende...</description>
-      <content:encoded><![CDATA[<h1>Resumo diário de pesquisa em IA no ArXiv 2026-06-20</h1>
-<blockquote>
-<p>Fonte: <a href="https://arxiv.org/">ArXiv</a> (cs.AI, cs.CL, cs.LG) | 50 artigos | Gerado em: 2026-06-19 21:04 UTC</p>
-</blockquote>
-<hr>
-<h1>Resumo de Pesquisa em IA — ArXiv (20 de junho de 2026)</h1>
-<hr>
-<h2>1. Destaques do Dia</h2>
-<p>Os artigos desta data revelam avanços significativos em três frentes principais: (1) <strong>segurança e verificação de agentes de IA</strong>, com novos frameworks para validação probabilística e análise de ataques adversários em sistemas agentic; (2) <strong>calibração e transparência de modelos</strong>, buscando entender como modelos de linguagem (incluindo os baseados em difusão) tomam decisões e como alinhar suas saídas com preferências humanas; e (3) <strong>otimização de inference e serving</strong>, com propostas de compressão de KV cache em 4 bits e técnicas de recuperação de estado de execução para reduzir latência. O tema de <strong>viés em modelos multimodais</strong> também se destaca, com estudos mostrando como pistas visuais sutis influenciam julgamentos de MLLMs.</p>
-<hr>
-<h2>2. Artigos-Chave</h2>
-<h3>🧠 Modelos de Linguagem</h3>
-<p><strong>1. How Transparent is DiffusionGemma?</strong></p>
-<ul>
-<li><strong>Link:</strong> <a href="http://arxiv.org/abs/2606.20560v1">http://arxiv.org/abs/2606.20560v1</a></li>
-<li><strong>Autores:</strong> Joshua Engels, Callum McDougall, Bilal Chughtai et al.</li>
-<li><strong>Contribuição:</strong> Investigação sobre a transparência do raciocínio em modelos de difusão, questionando se a computação em espaço latente contínuo reduz a interpretabilidade das decisões do modelo. Essencial para entender limitações em debugging e mitigação de misuse.</li>
-</ul>
-<p><strong>2. Toward Calibrated Mixture-of-Experts Under Distribution Shift</strong></p>
-<ul>
-<li><strong>Link:</strong> <a href="http://arxiv.org/abs/2606.20544v1">http://arxiv.org/abs/2606.20544v1</a></li>
-<li><strong>Autores:</strong> Gina Wong, Drew Prinster, Suchi Saria et al.</li>
-<li><strong>Contribuição:</strong> Propõe melhorias na calibração de incerteza em modelos MoE sob mudanças de distribuição, alinhando probabilidades preditas com frequências empíricas. Relevante para aplicações críticas onde quantificação de incerteza é crucial.</li>
-</ul>
-<p><strong>3. StylisticBias: A Few Human Visual Cues Drive Most Social Biases in MLLMs</strong></p>
-<ul>
-<li><strong>Link:</strong> <a href="http://arxiv.org/abs/2606.20527v1">http://arxiv.org/abs/2606.20527v1</a></li>
-<li><strong>Autores:</strong> Shaghayegh Kolli, Timo Cavelius, Nafiseh Nikeghbal et al.</li>
-<li><strong>Contribuição:</strong> Demonstra que pistas visuais mínimas (como estilo de vestimenta) determinam grande parte dos vieses sociais em modelos multimodais, separando fatores confundidores em experimentos controlados. Alerta importante para deployment equitativo.</li>
-</ul>
-<p><strong>4. Your Mouse and Eyes Secretly Leak Your Preference: LLM Alignment using Implicit Feedback</strong></p>
-<ul>
-<li><strong>Link:</strong> <a href="http://arxiv.org/abs/2606.20482v1">http://arxiv.org/abs/2606.20482v1</a></li>
-<li><strong>Autores:</strong> Haw-Shiuan Chang, Jeffrey Gomez, Mehul Patwari et al.</li>
-<li><strong>Contribuição:</strong> Explora uso de feedback implícito (movimentos do mouse e rastreamento ocular) para alinhar LLMs, superando limitações de feedback explícito escasso. Abre caminho para alinhamento mais natural e escalável.</li>
-</ul>
-<hr>
-<h3>🤖 Agentes e Raciocínio</h3>
-<p><strong>5. LedgerAgent: Structured State for Policy-Adherent Tool-Calling Agents</strong></p>
-<ul>
-<li><strong>Link:</strong> <a href="http://arxiv.org/abs/2606.20529v1">http://arxiv.org/abs/2606.20529v1</a></li>
-<li><strong>Autores:</strong> Md Nayem Uddin, Amir Saeidi, Eduardo Blanco et al.</li>
-<li><strong>Contribuição:</strong> Framework para manutenção de estados de tarefa em agentes tool-calling, garantindo aderência a políticas de domínio em atendimento ao cliente. Resolve problema crítico de estado persistente em conversas multi-turn.</li>
-</ul>
-<p><strong>6. Contagion Networks: Evaluator Bias Propagation in Multi-Agent LLM Systems</strong></p>
-<ul>
-<li><strong>Link:</strong> <a href="http://arxiv.org/abs/2606.20493v1">http://arxiv.org/abs/2606.20493v1</a></li>
-<li><strong>Autores:</strong> Zewen Liu</li>
-<li><strong>Contribuição:</strong> Framework formal para medir como vieses de avaliadores se propagam através de redes de agentes LLM. Demonstra em experimentos controlados de 3 agentes como biases se &quot;contaminam&quot;. Essencial para sistemas avaliativos confiáveis.</li>
-</ul>
-<p><strong>7. LLM agent safety, multi-turn red-teaming, jailbreak benchmarks</strong></p>
-<ul>
-<li><strong>Link:</strong> <a href="http://arxiv.org/abs/2606.20408v1">http://arxiv.org/abs/2606.20408v1</a></li>
-<li><strong>Autores:</strong> Hanwool Lee, Dasol Choi, Bokyeong Kim et al.</li>
-<li><strong>Contribuição:</strong> Apresenta NRT-Bench, benchmark para red-teaming multi-turn de agentes LLM em sistemas críticos, caracterizando robustez sob pressão adversarial sustentada e adaptativa.</li>
-</ul>
-<p><strong>8. Sovereign Execution Brokers: Enforcing Certificate-Bound Authority in Agentic Control Planes</strong></p>
-<ul>
-<li><strong>Link:</strong> <a href="http://arxiv.org/abs/2606.20520v1">http://arxiv.org/abs/2606.20520v1</a></li>
-<li><strong>Autores:</strong> Jun He, Deying Yu</li>
-<li><strong>Contribuição:</strong> Proposta de mecanismo que vincula autoridade de execução a certificados, separando autoridade de identidades em workflows de agentes autônomos. Aborda gap crítico entre controle de acesso e certificação de ações.</li>
-</ul>
-<hr>
-<h3>🔧 Métodos e Frameworks</h3>
-<p><strong>9. Execution-State Capsules: Graph-Bound Execution-State Checkpoint and Restore</strong></p>
-<ul>
-<li><strong>Link:</strong> <a href="http://arxiv.org/abs/2606.20537v1">http://arxiv.org/abs/2606.20537v1</a></li>
-<li><strong>Autores:</strong> Liang Su</li>
-<li><strong>Contribuição:</strong> Técnica para checkpoint e restore de estado de execução em serving de agentes Physical-AI, gerenciando fragmentos de estado além de KV cache para latência ultra-baixa. Inova em regime oposto ao paged KV cache tradicional.</li>
-</ul>
-<p><strong>10. Multi-Task Bayesian In-Context Learning</strong></p>
-<ul>
-<li><strong>Link:</strong> <a href="http://arxiv.org/abs/2606.20538v1">http://arxiv.org/abs/2606.20538v1</a></li>
-<li><strong>Autores:</strong> Qingyang Zhu, Eric Karl Oermann, Kyunghyun Cho</li>
-<li><strong>Contribuição:</strong> Combina inferência Bayesiana com aprendizado in-context multi-tarefa, oferecendo framework principiado para quantificação de incerteza e generalização robusta sem necessidade de fine-tuning extensivo.</li>
-</ul>
-<p><strong>11. Fisher-Geometric Sharpness and the Implicit Bias of SGD toward Flat Minima</strong></p>
-<ul>
-<li><strong>Link:</strong> <a href="http://arxiv.org/abs/2606.20469v1">http://arxiv.org/abs/2606.20469v1</a></li>
-<li><strong>Autores:</strong> Md Sakir Ahmed, Kumaresh Sarmah, Hemen Dutta</li>
-<li><strong>Contribuição:</strong> Proposta de medida de flatness invariante a reparametrizações (Fisher-Geometric Sharpness) para entender viés implícito de SGD. Contribui para teoria de por que flat minima generalizam melhor.</li>
-</ul>
-<p><strong>12. Sparsity, Superposition, and Forgetting: A Mechanistic Study of Representation Retention</strong></p>
-<ul>
-<li><strong>Link:</strong> <a href="http://arxiv.org/abs/2606.20431v1">http://arxiv.org/abs/2606.20431v1</a></li>
-<li><strong>Autores:</strong> Jan Wasilewski, Jędrzej Kozal, Michał Woźniak et al.</li>
-<li><strong>Contribuição:</strong> Estudo mecanístico de forgetting em continual learning usando framework toy-world controlado, isolando papéis de sparsity e superposition em retenção de representações.</li>
-</ul>
-<hr>
-<h3>📊 Aplicações</h3>
-<p><strong>13. Scalable Training of Spatially Grounded 2D Vision-Language Models for Radiology</strong></p>
-<ul>
-<li><strong>Link:</strong> <a href="http://arxiv.org/abs/2606.20477v1">http://arxiv.org/abs/2606.20477v1</a></li>
-<li><strong>Autores:</strong> Yusuf Salcan, Simon Ging, Robin Schirrmeister et al.</li>
-<li><strong>Contribuição:</strong> Introduce RefRad2D, dataset bilíngue de 1.2M pares imagem-texto de radiologia (CT/MR) com groundamento espacial, permitindo treinar VLMs sem anotações manuais.</li>
-</ul>
-<p><strong>14. Calibration Without Comprehension: Diagnosing LLMs for Vulnerability Detection</strong></p>
-<ul>
-<li><strong>Link:</strong> <a href="http://arxiv.org/abs/2606.20502v1">http://arxiv.org/abs/2606.20502v1</a></li>
-<li><strong>Autores:</strong> Arastoo Zibaeirad, Marco Vieira</li>
-<li><strong>Contribuição:</strong> Framework CWE-Trace com 834 amostras curadas do kernel Linux para diagnosticar se LLMs realmente raciocinam sobre vulnerabilidades ou apenas pattern-match em dados contaminados.</li>
-</ul>
-<p><strong>15. HEPTv2: End-to-End Efficient Point Transformer for Charged Particle Reconstruction</strong></p>
-<ul>
-<li><strong>Link:</strong> <a href="http://arxiv.org/abs/2606.20437v1">http://arxiv.org/abs/2606.20437v1</a></li>
-<li><strong>Autores:</strong> Siqi Miao, Shitij Govil, Jack P. Rodgers et al.</li>
-<li><strong>Contribuição:</strong> Transformer de pontos otimizado para reconstrução de partículas carregadas no HL-LHC, enfrentando ambiguidade combinatorial extrema com eficiência computacional.</li>
-</ul>
-<p><strong>16. DataMagic: Transforming Tabular Data into Data Insight Video</strong></p>
-<ul>
-<li><strong>Link:</strong> <a href="http://arxiv.org/abs/2606.20388v1">http://arxiv.org/abs/2606.20388v1</a></li>
-<li><strong>Autores:</strong> Yupeng Xie, Chen Ma, Zhenyang Wang et al.</li>
-<li><strong>Contribuição:</strong> Sistema para gerar automaticamente vídeos de insight de dados integrando gráficos dinâmicos, narração e animações sincronizadas, automatizando produção de narrativas visuais.</li>
-</ul>
-<hr>
-<h2>3. Sinal de Tendência em Pesquisa</h2>
-<p>Observa-se convergência de esforços em <strong>sistemas de IA agentic seguros e verificáveis</strong>. Enquanto anteriormente a pesquisa focava em capacidades individuais de modelos, agora há ênfase crescente em como múltiplos agentes LLM interagem, propagam vieses e podem ser attackados — vide os artigos sobre Contagion Networks e análise de ataques a sistemas agentic.</p>
-<p>另一趋势是 <strong>quantificação de incerteza e calibração</strong> ganhando relevância além de métricas de acurácia. Com LLMs sendo deployed em contextos de alto risco, saber quando o modelo não sabe se torna tão importante quanto saber quando acerta.</p>
-<p>Também emerge a preocupação com <strong>transparência em modelos não-textuais</strong> (difusão, modelos multimodais), indicando que a comunidade reconhece que interpretabilidade não é problema apenas de transformers autoregressivos.</p>
-<hr>
-<h2>4. Vale Ler a Fundo</h2>
-<ol>
-<li><p><strong>Contagion Networks</strong> (<a href="http://arxiv.org/abs/2606.20493v1">http://arxiv.org/abs/2606.20493v1</a>) — Framework matematicamente rigoroso para um fenômeno emergente (propagação de viés em multi-agentes) com implicações diretas para design de sistemas avaliativos baseados em LLMs.</p>
-</li>
-<li><p><strong>StylisticBias</strong> (<a href="http://arxiv.org/abs/2606.20527v1">http://arxiv.org/abs/2606.20527v1</a>) — Demonstra empiricamente que vieses sociais em MLLMs são triggered por pistas visuais mínimas, com metodologia que pode servir de template para estudos de fairness em visão computacional.</p>
-</li>
-<li><p><strong>LedgerAgent</strong> (<a href="http://arxiv.org/abs/2606.20529v1">http://arxiv.org/abs/2606.20529v1</a>) — Resolve problema prático e negligenciado de manutenção de estado em agentes tool-calling com uma arquitetura de &quot;ledger&quot; estruturado, potencialmente útil para qualquer sistema de客服 automatizado.</p>
-</li>
-</ol>
-<hr>
-<p><em>Resumo gerado em 20 de junho de 2026 com base em 50 artigos de cs.AI, cs.CL e cs.LG.</em></p>
 <hr>
 <p><em>Este resumo é gerado automaticamente por <a href="https://github.com/manelsen/agents-radar">agents-radar</a>.</em></p>
 ]]></content:encoded>
