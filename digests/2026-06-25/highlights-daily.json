@@ -1,0 +1,122 @@
+{
+  "ai-cli": [
+    "Hermes Agent: 50 issues + 50 PRs em 24h",
+    "ZeroClaw: infraestrutura WASM enterprise",
+    "CoPaw: +50 atualizações em comunidade ativa",
+    "NanoBot: 44 PRs e 18 issues em 24h",
+    "Tendência: endurecimento de segurança MCP",
+    "Expansão multi-plataforma nos agentes"
+  ],
+  "ai-web": [
+    "Anthropic: classificador nuclear 96% preciso",
+    "OpenAI e Broadcom: chip Jalapeño de inferência",
+    "Anthropic: lobby regulatório via economia IA",
+    "Parceria DOE/NNSA para safeguards nucleares",
+    "Claude: sistema misuse em produção",
+    "OpenAI: verticalização além da NVIDIA"
+  ],
+  "ai-hn": [
+    "OpenAI/Broadcom: chip Jalapeño otimizado LLM",
+    "Mythos identificou vulnerabilidades classificadas",
+    "Benchmarks de memória IA com asteriscos",
+    "Score 141: discussão intensa no HN",
+    "Dúvidas sobre dependência NVIDIA",
+    "Interesse técnico em hardware customizado"
+  ],
+  "ai-arxiv": [
+    "InSight: framework aquisição de habilidades",
+    "LaGO: planejamento com LLMs",
+    "OrbitForge: text-to-3D generation",
+    "Grad Detect: detectar alucinações via gradientes",
+    "CineCap: captioning cinematográfico",
+    "BlockTrain: treinamento descentralizado"
+  ],
+  "ai-science": [
+    "SpaceX: data centers de IA em órbita",
+    "Energia solar contínua no espaço",
+    "Desafios: radiação e detritos orbitais",
+    "Microgravidade para cooling eficiente",
+    "Viabilidade econômica em debate",
+    "Infraestrutura além dos limites terrestres"
+  ],
+  "ai-robotics": [
+    "SpaceX propõe orbital AI facilities",
+    "Robótica autônoma para ambiente hostil",
+    "Manutenção preventiva em órbita",
+    "Braços manipuladores para construção",
+    "Sistemas térmicos adaptados ao vácuo",
+    "Nova fronteira: automação espacial"
+  ],
+  "ai-hacking": [
+    "Emissores quânticos controlados por torção",
+    "Criptografia pós-quântica em avanço",
+    "Banco de dados Climate TRACE com erros",
+    "Subestimativa de 70% em emissões veiculares",
+    "Teoria da informação em análise de ameaças",
+    "Novos vetores de vulnerabilidade orbital"
+  ],
+  "ai-memory": [
+    "Neurônios filtram distrações no cérebro",
+    "Desativação causa comportamento tipo TDAH",
+    "Audição clave para aprendizado de fala",
+    "Áreas motoras menos envolvidas que auditivas",
+    "Processamento sensorial na memória linguística",
+    "Modelo tradicional de reabilitação questionado"
+  ],
+  "ai-solar": [
+    "BESSY II: espectrômetro TES operacional",
+    "Detecção de fótons 1.000x mais sensível",
+    "Análise de materiais em escala atômica",
+    "Jumpstart para células solares próxima geração",
+    "Instrumentação crítica para design fotovoltaico",
+    "Avanço em caracterização de nanoestruturas"
+  ],
+  "ai-livingwell": [
+    "47% dos adultos 65+ melhoram com idade",
+    "Genética de famílias longevas identificada",
+    "Ácido palmítico aumenta risco de diabetes",
+    "Aditivos associados a hipertensão",
+    "Revolução GLP-1: começo de nova era",
+    "Cannabis sem psicoativos para dor crônica"
+  ],
+  "ai-engineering": [
+    "Cold Atom Lab: condensados em microgravidade",
+    "Bose-Einstein mantido em órbita por mais tempo",
+    "Sensores quânticos de alta precisão",
+    "Física quântica em condições extremas",
+    "Navegação inercial e ondas gravitacionais",
+    "Engenharia espacial como plataforma estratégica"
+  ],
+  "ai-agriculture": [
+    "Leopardo do Cabo isolado há 20 mil anos",
+    "H5N1: receptores no tecido mamário de vacas",
+    "Duas novas espécies de ave no Japão",
+    "Abelhas-rainha: berçários de cera especializados",
+    "Corredores de árvores: -70% aves de campo",
+    "Abelhas australianas vulneráveis a calor extremo"
+  ],
+  "ai-environmental": [
+    "Caverna NZ: ecossistema de 1 milhão de anos",
+    "Possível ancestral voador do kākāpō",
+    "Árvores de proteção: impacto negativo em aves",
+    "Permafrost pode absorver CO2 atmosférico",
+    "Climate TRACE: erros em 260 cidades",
+    "Subestimativa de emissões veiculares"
+  ],
+  "ai-archaeology": [
+    "Fogo em cavernas há 1,79 milhão de anos",
+    "Dinossauro de quatro asas na China",
+    "Peste circulava há 5.500 anos na Sibéria",
+    "Transporte de fogo antes da produção",
+    "Predadores e morte em massa de aves",
+    "Surtos em sociedades igualitárias"
+  ],
+  "ai-offbeat": [
+    "Neurônios quebram DNA para formar cérebro",
+    "Primatas podem ter evoluído no Ártico",
+    "Borboletas Heliconius: longevidade excepcional",
+    "Universo pode esconder consciências alienígenas",
+    "SETI investigou cometa interestelar 3I/ATLAS",
+    "Comunicação sofisticada entre espécies animais"
+  ]
+}
