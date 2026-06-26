@@ -1,0 +1,122 @@
+{
+  "ai-cli": [
+    "Anthropic lança 18 novos artigos sobre Claude",
+    "OpenAI menciona GPT 5.6 Sol em metadados",
+    "Claude Corps investe $150M em 1.000 fellows",
+    "Parceria Anthropic com DXC e TCS em setores regulados",
+    "Claude demonstra ganhos de 20x em tarefas robóticas",
+    "OpenAI publica estudo sobre transição para IA agentic"
+  ],
+  "ai-agents": [
+    "NullClaw: bug crítico em Android/Termux sem solução há 2 meses",
+    "7 projetos de agentes de IA cobertos no ecossistema",
+    "NullClaw sem releases há ~2 meses",
+    "HKUDS/nanobot entre projetos em destaque",
+    "nousresearch/hermes-agent em monitoramento",
+    "zeroclaw-labs/zeroclaw entre novos projetos"
+  ],
+  "ai-web": [
+    "Claude Corps: $150M para 1.000 fellows nos EUA",
+    "Anthropic expande parcerias com DXC e TCS",
+    "20 novos artigos oficiais de IA publicados",
+    "18 artigos novos da Anthropic no sitemap",
+    "OpenAI adiciona 2 artigos ao seu sitemap",
+    "Avanços em cibersegurança of ensiva no Claude"
+  ],
+  "ai-hn": [
+    "GPT-5.6 Sol domina HN com 616 pontos",
+    "Debate sobre IA controlada pelo Estado esquenta",
+    "356 comentários no post oficial do GPT-5.6 Sol",
+    "Estudo: transição para IA agentic em alta",
+    "Preocupação com acesso restrito a clientesApproved pelo governo",
+    "Ferramentas de routing inteligente em destaque"
+  ],
+  "ai-arxiv": [
+    "E-TTS: escalona compute em tempo de teste",
+    "RiVER: RL sem ground-truth para LLMs",
+    "Novos ataques de injeção de prompt em hiring",
+    "World models avançam para manipulação robótica",
+    "SAEs consolidam-se para interpretabilidade",
+    "Estudo sobre probabilidade e correção em LLMs"
+  ],
+  "ai-hacking": [
+    "h-BN twist controla emissores quânticos",
+    "Avanço quântico acelera ameaça a cifras clássicas",
+    "Detecção quântica mais estável e escalável",
+    "Materiais ópticos em escala atômica",
+    "Urgência para criptografia pós-quântica",
+    "Computadores quânticos mais próximos da realidade"
+  ],
+  "ai-memory": [
+    "Neurônios actúan como filtros de concentração",
+    "Desativação desses neurônios causa TDAH em camundongos",
+    "Reativação restaura foco nos animais",
+    "Fala depende mais de processamento auditivo",
+    "Áreas motoras têm papel menor na aprendizagem",
+    "Terapias para distúrbios de fala podem ser reformuladas"
+  ],
+  "ai-3dprinting": [
+    "Material sólido converte luz visível em UV",
+    "Cura de resinas fotossensíveis com luz solar",
+    "Purificação de ar mais limpa",
+    "Química impulsionada por energia solar",
+    "Manufatura aditiva mais sustentável",
+    "Redução da dependência de UV artificial"
+  ],
+  "ai-solar": [
+    "TES: 1000x mais sensível que detectores comuns",
+    "BESSY II opera primeiro TES europeu de raios-X",
+    "Análise de materiais atômicamente finos",
+    "Triagem acelerada de novos materiais fotovoltaicos",
+    "Perovskitas e tandem em foco",
+    "Validação in-operando de dispositivos solares"
+  ],
+  "ai-livingwell": [
+    "Frutose não satisfaz fome como glicose",
+    "Quase metade dos idosos melhora com idade",
+    "GAE: tratamento minimamente invasivo para joelho",
+    "Terpenos da cannabis oferecem analgesia",
+    "Ácido oleico do azeite protege função insulínica",
+    "Variantes genéticas raras em famílias de longa vida"
+  ],
+  "ai-engineering": [
+    "NASA atualiza Cold Atom Lab na ISS",
+    "Condensados de Bose-Einstein em microgravidade",
+    "Efeitos quânticos observados por mais tempo no espaço",
+    "Sensores quânticos de altíssima precisão",
+    "Navegação inercial gravitacional",
+    "Engenharia espacial como plataforma quântica"
+  ],
+  "ai-agriculture": [
+    "Mistério do H5N1 em vacas leiteiras resuelto",
+    "Receptores virais concentrados na glândula mamária",
+    "Rainhas de abelhas dependem de estrutura física",
+    "Berçários reais de cera controlam temperatura",
+    "Cortinas de vento reduzem aves em 70%",
+    "Impactos ecológicos de plantios de árvores"
+  ],
+  "ai-environmental": [
+    "Goldfish abandonados devastam ecossistemas de água doce",
+    "Plantio de árvores pode reduzir aves em 70%",
+    "Permafrost descongelando pode absorver CO₂",
+    "Intemperismo de rochas compensa emissões",
+    "Extinções em massa na Nova Zelândia há 1 milhão de anos",
+    "Vulcões e clima causaram extinções antes dos humanos"
+  ],
+  "ai-archaeology": [
+    "Microrganismos quimsintéticos em rochas profundas",
+    "Sardis reconhecida como Patrimônio Mundial UNESCO",
+    "Fogo controlado em Wonderwerk: 1,79 milhão de anos",
+    "Dinossauro emplumado na China interagiu com aves",
+    "Evidências de comportamentos sofisticados pré-fogo",
+    "Sete décadas de escavações em Sardis recompensadas"
+  ],
+  "ai-offbeat": [
+    "Goldfish de estimação viram pragas invasoras",
+    "Aranha recém-descoberta caça com mecanismo de ballista",
+    "Microrganismos podem ter chegado a Vênus por asteroides",
+    "Fogo em cavernas: 1,79 milhão de anos atrás",
+    "Placebos melhoram memória em idosos",
+    "Dinossauro de 4 asas pode ter caçado aves primitivas"
+  ]
+}
