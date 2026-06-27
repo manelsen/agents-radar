@@ -1,0 +1,106 @@
+{
+  "ai-cli": [
+    "Anthropic publica Economic Index jun/2026",
+    "Metodologia do Claude muda para agentic",
+    "DSpark: decodificação especulativa acelera LLMs",
+    "Ornith-1.0: LLMs open-source para coding",
+    "NASA atualiza Cold Atom Lab no espaço",
+    "Neurônios filtro atencional descobertos"
+  ],
+  "ai-agents": [
+    "NullClaw v2026.4.17 com bug #868",
+    "7 projetos agentic no ecossistema",
+    "Issue #868: build falha em Android/Termux",
+    "ZeroClaw, PicoClaw e IronClaw em foco",
+    "Baixa atividade: sem commits ou merges",
+    "Hermes Agent e NanoBot em destaque"
+  ],
+  "ai-web": [
+    "Anthropic publica Economic Index jun/2026",
+    "Shift para tarefas agentic em Claude",
+    "OpenAI sem novos artigos",
+    "3 mudanças metodológicas implementadas",
+    "Claude Code e Cowork predominam",
+    "Análise de padrões horários implementada"
+  ],
+  "ai-hn": [
+    "DSpark: speculative decoding (692 pts)",
+    "Mythos da Anthropic divide opiniões",
+    "Alibaba: 25 mil contas em Claude",
+    "Ornith-1.0: LLMs para coding agentic",
+    "OpenTag: Claude open-source no Slack",
+    "Apple executivos migram para OpenAI"
+  ],
+  "ai-memory": [
+    "Neurônios filtro atencional no cérebro",
+    "Desativação induz comportamento TDAH",
+    "Fala depende mais de audição que motricidade",
+    "Reformulação da terapia da fala",
+    "Estudo de filtro cerebral em ratos",
+    "Novos paradigmas de aprendizagem"
+  ],
+  "ai-3dprinting": [
+    "Material sólido converte luz solar em UV",
+    "Cura UV em impressão 3D solar",
+    "Purificação de ar mais limpa",
+    "Redução do consumo energético",
+    "Fotocatálise com luz natural",
+    "Manufatura aditiva sustentável"
+  ],
+  "ai-solar": [
+    "Detector TES no BESSY II operativo",
+    "Eficiência de detecção aumentada 1000x",
+    "Análise ultra-sensível de materiais",
+    "Células solares de próxima geração",
+    "Pesquisa europeia em nanoestruturas",
+    "Protocolos de medição padronizados"
+  ],
+  "ai-livingwell": [
+    "Quase 50% dos idosos melhoram com idade",
+    "Tipo de gordura afeta saúde metabólica",
+    "Células-tronco causam gordura abdominal",
+    "Deficiência B12 mimetiza envelhecimento",
+    "Osteopenia afeta milhões silenciosamente",
+    "Novos alvos terapêuticos genéticos"
+  ],
+  "ai-engineering": [
+    "NASA atualiza Cold Atom Lab na ISS",
+    "Matéria ultra-fria em microgravidade",
+    "Estudos de estados exóticos da matéria",
+    "Sensores quânticos de próxima geração",
+    "Avanços em óptica e vácuo",
+    "Engenharia quântica no espaço"
+  ],
+  "ai-agriculture": [
+    "H5N1 ataca glândulas mamárias bovinas",
+    "Nova ave descoberta no Japão",
+    "Leopardos sul-africanos com nanismo",
+    "Abelhas-rainha: operárias criam berçários",
+    "Reflorestamento reduz aves de campos",
+    "Genética molecular revela espécies ocultas"
+  ],
+  "ai-environmental": [
+    "Goldfish devastam ecossistemas de água doce",
+    "Cápsula do tempo de 1 milhão de anos",
+    "Kākāpō: ancestrais em NZ pré-humanos",
+    "Plantio de árvores reduz aves 70%",
+    "Espécies invasoras em foco",
+    "Extinções pré-humanas reveladas"
+  ],
+  "ai-archaeology": [
+    "Sardis vira Patrimônio UNESCO",
+    "Fogo usado há 1,79 milhão de anos",
+    "Microrganismos abissais no Marrocos",
+    "Jianchangmaensis: dinossauro de 4 asas",
+    "70 anos de escavações em Sardis",
+    "Predador das primeiras aves identificado"
+  ],
+  "ai-offbeat": [
+    "Goldfish devastam ecossistemas de água doce",
+    "Aranha usa catapulta para caçar",
+    "Microrganismos terrestre em Vênus",
+    "Neurônios quebram DNA no cérebro",
+    "Quase metade dos idosos melhora com idade",
+    "Dinosaur four-winged Jianchangmaensis"
+  ]
+}
