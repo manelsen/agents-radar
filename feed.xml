@@ -6,7 +6,230 @@
     <description>Resumo diário do ecossistema open source de IA · Daily AI ecosystem digest</description>
     <language>pt-BR</language>
     <atom:link href="https://manelsen.github.io/agents-radar/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Sun, 28 Jun 2026 21:01:44 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 29 Jun 2026 21:21:08 +0000</lastBuildDate>
+    <item>
+      <title>Relatório semanal de ferramentas de IA 2026-06-30</title>
+      <link>https://manelsen.github.io/agents-radar/#2026-06-30/ai-weekly</link>
+      <guid isPermaLink="true">https://manelsen.github.io/agents-radar/#2026-06-30/ai-weekly</guid>
+      <pubDate>Tue, 30 Jun 2026 00:00:00 +0000</pubDate>
+      <description>Relatório semanal do ecossistema de ferramentas de IA 2026-W27 Cobertura: 2026-06-23 ~ 2026-06-29 | Gerado em: 2026-06-29 21:19 UTC Recapitulação Semanal do Ecossistema de Ferramentas de IA Período: 23–29 de junho de 2026 (Semana 27) 1. Principais Histórias da Semana 🔴 Lançamento do GPT-5.6 Sol pela OpenAI — O novo modelo generacional dominou as discussões no HN com 600+ pontos. A política de liberação restrita a clientes aprovado pelo governo dos EUA gerou debate polarizado sobre &amp;quot;IA cont...</description>
+      <content:encoded><![CDATA[<h1>Relatório semanal do ecossistema de ferramentas de IA 2026-W27</h1>
+<blockquote>
+<p>Cobertura: 2026-06-23 ~ 2026-06-29 | Gerado em: 2026-06-29 21:19 UTC</p>
+</blockquote>
+<hr>
+<h1>Recapitulação Semanal do Ecossistema de Ferramentas de IA</h1>
+<p><strong>Período:</strong> 23–29 de junho de 2026 (Semana 27)</p>
+<hr>
+<h2>1. Principais Histórias da Semana</h2>
+<p><strong>🔴 Lançamento do GPT-5.6 Sol pela OpenAI</strong> — O novo modelo generacional dominou as discussões no HN com 600+ pontos. A política de liberação restrita a clientes aprovado pelo governo dos EUA gerou debate polarizado sobre &quot;IA controlada pelo Estado&quot;. O governo Trump supostamente pressionou a empresa a escalar o lançamento.</p>
+<p><strong>🟡 Claude Tag e estratégia agentic da Anthropic</strong> — A Anthropic posicionou o Claude Code como &quot;membro de equipe&quot; via integração Slack, com 65% do código interno já gerado pelo sistema. Parcerias estratégicas com DXC Technology e Tata Consultancy Services visam treinar dezenas de milhares de engenheiros certificados para setores regulados.</p>
+<p><strong>🟡 Classificador nuclear com 96% de precisão</strong> — Em parceria com o Departamento de Energia dos EUA e NNSA, a Anthropic lançou um sistema de categorização automática de conversas relacionadas a nuclear, estabelecendo precedente regulatório que outras empresas devem seguir.</p>
+<p><strong>🟢 DSpark: Speculative Decoding da DeepSeek</strong> — Paper técnico tornou-se o conteúdo de maior engajamento da semana (692 pts, 285 comentários), demonstrando técnica que acelera inferência de LLMs. A comunidade recibió com entusiasmo, debatendo implementações práticas.</p>
+<p><strong>🟡 Chip Jalapeño da OpenAI/Broadcom</strong> — Parceria para desenvolvimento de silício customizado de inferência, sinalizando verticalização além de dependência NVIDIA.</p>
+<hr>
+<h2>2. Progresso das Ferramentas CLI</h2>
+<table>
+<thead>
+<tr>
+<th>Ferramenta</th>
+<th>Destaque da Semana</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>NullClaw</strong></td>
+<td>PR #969 implementa fluxo de aprovação estruturado (<code>approval_request/approval_response</code>) para ferramentas de agente via channel SSE; PR #783 adiciona cron subagent com persistência em banco de dados e timezones por job</td>
+</tr>
+<tr>
+<td><strong>Codex (OpenAI)</strong></td>
+<td>Bug crítico reportado: logging excessivo pode gravar TBs em SSDs locais, causando degradação de hardware. Community highly engaged (438 pts, 242 comentários)</td>
+</tr>
+<tr>
+<td><strong>Claude Code</strong></td>
+<td>Análise crítica questionou autenticidade do output &quot;Extended Thinking&quot; — comunidade investiga se texto representa raciocínio genuíno ou pós-processamento</td>
+</tr>
+</tbody></table>
+<p><strong>Observações técnicas:</strong></p>
+<ul>
+<li>Ferramentas de roteamento inteligente entre modelos (como Smart Router para Claude/Codex/Cursor) ganharam tração com 105 pts no HN</li>
+<li>Tradução Pandas→Polars via LLMs avança conforme пост da Polars sobre padrões de prompts</li>
+</ul>
+<hr>
+<h2>3. Ecossistema de Agentes de IA</h2>
+<p><strong>Atividade por Projeto (semana):</strong></p>
+<table>
+<thead>
+<tr>
+<th>Projeto</th>
+<th>Perfil</th>
+<th>Destaques</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Hermes Agent</strong></td>
+<td>Muito ativo</td>
+<td>50 issues + 50 PRs/dia, 22 PRs merged — foco em estabilidade</td>
+</tr>
+<tr>
+<td><strong>ZeroClaw</strong></td>
+<td>Muito ativo</td>
+<td>Pipeline estruturado, preparação para release v0.8.x enterprise</td>
+</tr>
+<tr>
+<td><strong>CoPaw</strong></td>
+<td>Ativo</td>
+<td>Migração 2.0 em curso, 22 PRs merged</td>
+</tr>
+<tr>
+<td><strong>IronClaw</strong></td>
+<td>Forte</td>
+<td>Refactoring arquitetural, foco em UX</td>
+</tr>
+<tr>
+<td><strong>NanoBot</strong></td>
+<td>Atenção</td>
+<td>7 CVEs de segurança reportadas — risco crítico</td>
+</tr>
+<tr>
+<td><strong>PicoClaw</strong></td>
+<td>Moderado</td>
+<td>Foco em segurança, hooks de processo via stdio</td>
+</tr>
+<tr>
+<td><strong>NullClaw</strong></td>
+<td>Baixo</td>
+<td>Manutenção incremental, bug Android/Termux aberto há 65 dias</td>
+</tr>
+</tbody></table>
+<p><strong>Pattern emergente:</strong> Convergência para endurecimento de segurança em subsistemas MCP, expansão multi-plataforma e otimização de overhead de tokens.</p>
+<hr>
+<h2>4. Tendências Open Source</h2>
+<p><strong>🏆 Modelos em destaque:</strong></p>
+<ul>
+<li><strong>GLM-5.2</strong> (Zhipu AI) reivindicado como &quot;melhor modelo aberto&quot; por analistas independentes, competindo diretamente com Claude e GPT em benchmarks de cibersegurança</li>
+<li><strong>Ornith-1.0</strong>: Família de LLMs open-source especializada em codificação agentic</li>
+</ul>
+<p><strong>🛠️ Projetos notáveis:</strong></p>
+<ul>
+<li><strong>ccMarvin</strong>: Integração de IA via email</li>
+<li><strong>OpenKnowledge</strong>: Alternativa open-source a Obsidian/Notion com foco em IA-first</li>
+<li><strong>Selector Forge</strong>: Extensão de browser para seletores resilientes em interfaces de IA</li>
+<li><strong>cc-fleet</strong>: Execução de LLMs como workers do Claude Code</li>
+</ul>
+<p><strong>📊 Infraestrutura:</strong></p>
+<ul>
+<li>Discussões sobre data centers de IA no espaço (SpaceX) indicam demanda energética sem precedentes</li>
+<li>Cresce interesse em clusters RDMA com AMD Strix Halo para inferência local</li>
+</ul>
+<hr>
+<h2>5. Debates da Comunidade HN</h2>
+<p>**🔥 Maior polarização:**GPT-5.6 Sol e regulamentação governamental — 642 comentários no post da Washington Post sobre IA controlada pelo Estado.</p>
+<p><strong>⚠️ Preocupações técnicas:</strong></p>
+<ul>
+<li>Bug do Codex gerando writes massivos em SSDs (242 comentários)</li>
+<li>GLM-5.2 vs Claude em cibersegurança: ceticismo sobre metodologia de benchmarks</li>
+<li>Transparência do &quot;Extended Thinking&quot; no Claude Code</li>
+</ul>
+<p><strong>💡 Interesse emergente:</strong></p>
+<ul>
+<li>Speculative decoding (DSpark): técnica de otimização de inferência</li>
+<li>Ferramentas práticas de produtividade (TikZ Editor com 282 pts)</li>
+<li>Comportamento violento reduzido com GLP-1 (Ozempic/Wegovy)</li>
+</ul>
+<p><strong>🌏 Geopolítica:</strong></p>
+<ul>
+<li>China alcança capacidades equivalentes ao Mythos em cibersegurança (relatório WSJ)</li>
+<li>Anthropic accuses Alibaba de acesso ilícito a modelos Claude</li>
+<li>Five Eyes warning sobre capacidades de &quot;subversão governamental&quot; em meses</li>
+</ul>
+<hr>
+<h2>6. Atualizações Oficiais</h2>
+<h3>Anthropic</h3>
+<table>
+<thead>
+<tr>
+<th>Data</th>
+<th>Conteúdo</th>
+<th>Relevância</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>27/06</td>
+<td><strong>Claude Corps</strong> ($150M)</td>
+<td>Fellowship para 1.000 participantes em ONGs</td>
+</tr>
+<tr>
+<td>27/06</td>
+<td><strong>Economic Index Report</strong></td>
+<td>Transição para tarefas agentic; 81k respondentes em pesquisa</td>
+</tr>
+<tr>
+<td>27/06</td>
+<td><strong>Parceria DXC/TCS</strong></td>
+<td>Treinar &quot;dezenas de milhares&quot; de engenheiros certificados</td>
+</tr>
+<tr>
+<td>24/06</td>
+<td><strong>Claude Tag</strong></td>
+<td>Membro de equipe via Slack, 65% do código interno gerado</td>
+</tr>
+<tr>
+<td>23/06</td>
+<td><strong>Pesquisa Codificação Agentiva</strong></td>
+<td>Expertise amplifica produtividade do Claude em até 25%</td>
+</tr>
+</tbody></table>
+<h3>OpenAI</h3>
+<table>
+<thead>
+<tr>
+<th>Data</th>
+<th>Conteúdo</th>
+<th>Relevância</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>25/06</td>
+<td><strong>Jalapeño chip</strong></td>
+<td>Parceria Broadcom para silício de inferência</td>
+</tr>
+<tr>
+<td>24/06</td>
+<td><strong>DayBreak (GPT-5.5-Cyber)</strong></td>
+<td>Modelo focado em segurança</td>
+</tr>
+<tr>
+<td>22/06</td>
+<td><strong>Deploy ChatGPT Codex Samsung</strong></td>
+<td>Integração enterprise</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>7. Sinais para a Próxima Semana</h2>
+<p><strong>🔮 Alta probabilidade:</strong></p>
+<ul>
+<li>Continuação do debate regulatório sobre GPT-5.6 Sol e acesso governamental</li>
+<li>Novos reports de vulnerabilidades em NanoBot e Hermes Agent</li>
+<li>Preparação para releases v0.8.x do ZeroClaw</li>
+</ul>
+<p><strong>🔎 Monitorar:</strong></p>
+<ul>
+<li>Resposta da Alibaba à acusação da Anthropic</li>
+<li>Progresso da PR #969 (approval flow) no NullClaw</li>
+<li>Benchmarks comparativos entre GLM-5.2 e modelos ocidentais</li>
+</ul>
+<p><strong>📈 Tendência a observar:</strong></p>
+<ul>
+<li>Intensificação de parcerias enterprise (DXC, TCS, Samsung) sinaliza consolidação de mercado B2B para agentes de IA</li>
+<li>Críticas crescentes sobre autenticidade de outputs &quot;reasoning&quot; podem pressionar transparência de modelos</li>
+<li>Bug do Codex pode acelerar movimento para alternativas open-source de codificação</li>
+</ul>
+<hr>
+<p><em>Resumo gerado em 2026-06-29 com base em 7 dias de monitoramento multi-fonte.</em></p>
+<hr>
+<p><em>Este resumo é gerado automaticamente por <a href="https://github.com/manelsen/agents-radar">agents-radar</a>.</em></p>
+]]></content:encoded>
+    </item>
     <item>
       <title>Relatório diário do ecossistema de agentes de IA 2026-06-29</title>
       <link>https://manelsen.github.io/agents-radar/#2026-06-29/ai-agents</link>
@@ -11655,42 +11878,6 @@ Demonstra ataque prático e escalável em sistema de IA real com incentivos econ
 </ol>
 <hr>
 <p><em>Resumo preparado em 2026‑06‑27, com foco na interseção entre avanços em tecnologia quântica e a preparação da infraestrutura de segurança digital.</em></p>
-<hr>
-<p><em>Este resumo é gerado automaticamente por <a href="https://github.com/manelsen/agents-radar">agents-radar</a>.</em></p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>Memória e Neurociência no ScienceDaily 2026-06-27</title>
-      <link>https://manelsen.github.io/agents-radar/#2026-06-27/ai-memory</link>
-      <guid isPermaLink="true">https://manelsen.github.io/agents-radar/#2026-06-27/ai-memory</guid>
-      <pubDate>Sat, 27 Jun 2026 00:00:00 +0000</pubDate>
-      <description>Resumo diário de Neurociência no ScienceDaily 2026-06-27 Fonte: ScienceDaily | 2 histórias | Gerado em: 2026-06-26 21:14 UTC Resumo ScienceDaily — Memória e Neurociência Destaques do Dia Pesquisadores identificaram um pequeno grupo de neurônios em uma região cerebral ancestral que funcionam como filtros naturais de concentração, permitindo ao cérebro ignorar distrações. Quando esses neurônios foram temporariamente desativados em camundongos, os animais apresentaram comportamento semelhante ao TD...</description>
-      <content:encoded><![CDATA[<h1>Resumo diário de Neurociência no ScienceDaily 2026-06-27</h1>
-<blockquote>
-<p>Fonte: <a href="https://www.sciencedaily.com/news/mind_brain/memory/">ScienceDaily</a> | 2 histórias | Gerado em: 2026-06-26 21:14 UTC</p>
-</blockquote>
-<hr>
-<h1>Resumo ScienceDaily — Memória e Neurociência</h1>
-<h2>Destaques do Dia</h2>
-<p>Pesquisadores identificaram um pequeno grupo de neurônios em uma região cerebral ancestral que funcionam como filtros naturais de concentração, permitindo ao cérebro ignorar distrações. Quando esses neurônios foram temporariamente desativados em camundongos, os animais apresentaram comportamento semelhante ao TDAH, recuperando o foco ao serem reativados. Outro estudo revelou que a aprendizagem e memorização da fala dependem mais do processamento sensorial auditivo do que das áreas motoras responsáveis pelos movimentos faciais e bucais, sugerindo uma reorganização das abordagens terapêuticas para distúrbios de fala.</p>
-<h2>Principais Histórias</h2>
-<p><strong>Neurociência Cognitiva e Filtros de Atenção</strong></p>
-<ul>
-<li><em>Ancient brain cells that help block distractions</em> — Descoberta de neurônios que funcionam como &quot;filtros de foco&quot; em região cerebral ancestral, com implicações para a compreensão do TDAH e mecanismos atencionais.</li>
-</ul>
-<p><strong>Aprendizagem Sensório-Motora da Fala</strong></p>
-<ul>
-<li><em>New brain study reveals speech learning works differently than we thought</em> — Evidências de que o processamento auditivo e sensorial tem papel central na aprendizagem da fala, desafiando modelos tradicionais centrados na motricidade oral.</li>
-</ul>
-<h2>Sinal de Pesquisa</h2>
-<p>As descobertas atuais revelam uma convergência hacia modelos neurocientíficos que priorizam <strong>processos sensoriais e atencionais</strong> sobre mecanismos puramente motores. A identificação de filtros atencionais em estruturas cerebrais ancestrais sugere que a capacidade de suprimir distrações é uma função evolutivamente conservada, com relevância direta para transtornos como TDAH. Paralelamente, a reavaliação do papel do processamento auditivo na aprendizagem da fala indica que intervenções terapêuticas podem se beneficiar de abordagens centradas na percepção, não apenas na produção motora. Esses estudos apontam para uma mudança de paradigma: a memória e a aprendizagem são cada vez mais compreendidas como processos integrados entre sistemas sensoriais, atencionais e cognitivos, abandonando dicotomias simplistas entre &quot;percepção&quot; e &quot;ação&quot;.</p>
-<h2>Vale Ler</h2>
-<ol>
-<li><p><a href="https://www.sciencedaily.com/releases/2026/06/260624025426.htm"><strong>Scientists discover ancient brain cells that help block distractions</strong></a> — Relevância direta para neurociência clínica e compreensão dos mecanismos atencionais básicos, com potencial translacional para TDAH.</p>
-</li>
-<li><p><a href="https://www.sciencedaily.com/releases/2026/06/260619020514.htm"><strong>New brain study reveals speech learning works differently than we thought</strong></a> — Redefine o entendimento da aprendizagem da fala e oferece implicações práticas imediatas para fonoaudiologia e tecnologias de comunicação assistiva.</p>
-</li>
-</ol>
 <hr>
 <p><em>Este resumo é gerado automaticamente por <a href="https://github.com/manelsen/agents-radar">agents-radar</a>.</em></p>
 ]]></content:encoded>
