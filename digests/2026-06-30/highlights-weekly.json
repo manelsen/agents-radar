@@ -1,0 +1,13 @@
+{
+  "zh": {
+    "ai-weekly": [
+      "GPT-5.6 Sol: OpenAI lança modelo com acesso governamental restrito",
+      "Claude Code: 65% do código interno já gerado pelo sistema",
+      "Anthropic: classificador nuclear com 96% de precisão",
+      "DeepSeek: DSpark com Speculative Decoding viraliza (692 pts)",
+      "OpenAI/Broadcom: Chip Jalapeño para inferência customizada",
+      "NullClaw: PR #969 implementa fluxo de aprovação via SSE"
+    ]
+  },
+  "en": {}
+}
