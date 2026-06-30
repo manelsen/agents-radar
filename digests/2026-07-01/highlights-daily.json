@@ -1,0 +1,122 @@
+{
+  "ai-agents": [
+    "NullClaw: 4 PRs mergeados em 24h",
+    "PR#783: engine cron com histórico",
+    "PR#641: corrige loops ZhipuAI",
+    "7 projetos: NullClaw, NanoBot, Hermes...",
+    "2 issues: estabilidade Android/Termux",
+    "Foco em cron jobs e provedores IA"
+  ],
+  "ai-web": [
+    "Anthropic domina anúncios do dia",
+    "Claude Sonnet 5: entrada agentic",
+    "Custo inferior ao Opus 4.8",
+    "Claude Science: workbench científico",
+    "OpenAI: Genebench Pro sem detalhes",
+    "Contraste: profundidade vs presença"
+  ],
+  "ai-hn": [
+    "Claude Sonnet 5 domina ranking HN",
+    "Sonnie 5: 668 pts, 351 comentários",
+    "Claude Code: acusação de spyware",
+    "Cursor iOS modifica privacidade",
+    "TDAH em ratos por neurônios",
+    "ConSCIência IA gera debate filosófico"
+  ],
+  "ai-arxiv": [
+    "WorldEvolver: modelos de mundo",
+    "Agents-A1: 35B ≈ trilhão parâmetros",
+    "Segurança multi-agente em alta",
+    "Sonnet 5: interpretability advances",
+    "Transformers em atenção híbrida",
+    "IA para medir expansão cósmica"
+  ],
+  "ai-science": [
+    "Framework IA para distâncias cósmicas",
+    "Precisão quase espectroscópica",
+    "Supernovas Ia como velas padrão",
+    "Observatório Rubin: dados massivos",
+    "Energia escura: maior questão aberta",
+    "Fim da espectroscopia obrigatória?"
+  ],
+  "ai-robotics": [
+    "Automação de processos científicos",
+    "Framework IA para análise de supernovas",
+    "Precisão quase espectroscópica",
+    "Modelagem ambiental em alta fidelidade",
+    "Pipelines end-to-end com IA",
+    "Observatório Rubin: 2026"
+  ],
+  "ai-memory": [
+    "Neurônios filtro de atenção",
+    "Desativação causa TDAH em ratos",
+    "Reativação restaura foco",
+    "Região cerebral ancestral",
+    " neuromodulação para TDAH",
+    "Mecanismos subcorticais conservados"
+  ],
+  "ai-3dprinting": [
+    "Material sólido converte visível→UV",
+    "Luz solar natural para UV",
+    "Fotopolimerização sustentável",
+    "MRS reconhece marco em materiais",
+    "Eletrônica flexível com UV solar",
+    "Manufatura aditiva avançada"
+  ],
+  "ai-solar": [
+    "TES: detectores 1000x mais sensíveis",
+    "BESSY II: espectroscopia alta resolução",
+    "Materiais atomicamente finos",
+    "Células solares de película fina",
+    "Perovskitas: eficiência otimizada",
+    "Europa na vanguarda de detectores"
+  ],
+  "ai-livingwell": [
+    "Cannabis: risco 2x em adolescentes",
+    "Ômega-3 sem benefícios cognitivos",
+    "Creatina: eficaz só em mulheres",
+    "Frutose vs glicose no cérebro",
+    "Clorpirifos: dobro do risco Parkinson",
+    "Suplementos: resultados mistos"
+  ],
+  "ai-mentalhealth": [
+    "Cannabis: risco 2x psicose",
+    "463 mil adolescentes estudados",
+    "Uso precede diagnóstico por 2 anos",
+    "Neurodesenvolvimento em risco",
+    "Janela temporal exposta-doença",
+    "Políticas de prevenção em debate"
+  ],
+  "ai-agriculture": [
+    "Bactérias contra salinidade do solo",
+    "Lignina fortalece raízes",
+    "Tratamento bio-based",
+    "Leopardos: 20 mil anos isolados",
+    "Adaptação evolutiva genética",
+    "Agricultura sustentável"
+  ],
+  "ai-environmental": [
+    "Asteroide: tsunami de 100m",
+    "Cratera Silverpit: 43-46 Ma",
+    "Plásticos oceânicos viram asfalto",
+    "Pumas provocam cascata trófica",
+    "Goldfish devastam ecossistemas",
+    "Havaí: estradas de redes de pesca"
+  ],
+  "ai-archaeology": [
+    "Cratera Silverpit:asteroide 160m",
+    "Tsunami de 100m no Mar do Norte",
+    "Micróbios em rochas profundas",
+    "Sardis: Patrimônio Mundial UNESCO",
+    "Fogo na Caverna Wonderwerk: 1.79 Ma",
+    "Vida microbiana no Marocos"
+  ],
+  "ai-offbeat": [
+    "Cérebros processam linguagem na anestesia",
+    "Placebo melhora memória em idosos",
+    "Aranha ballista:caça formigas",
+    "Goldfish devastam água doce",
+    "Micróbios na Terra podem ter ido a Vênus",
+    "Consciência pode existir no universo"
+  ]
+}
