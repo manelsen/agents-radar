@@ -6,7 +6,7 @@
     <description>Resumo diário do ecossistema open source de IA · Daily AI ecosystem digest</description>
     <language>pt-BR</language>
     <atom:link href="https://manelsen.github.io/agents-radar/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Wed, 01 Jul 2026 21:30:48 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 01 Jul 2026 21:32:18 +0000</lastBuildDate>
     <item>
       <title>Relatório diário do ecossistema de agentes de IA 2026-07-02</title>
       <link>https://manelsen.github.io/agents-radar/#2026-07-02/ai-agents</link>
@@ -4556,6 +4556,364 @@ A elevação de Sardis a sítio do Patrimônio Mundial destaca a importância da
 ]]></content:encoded>
     </item>
     <item>
+      <title>Relatório mensal de ferramentas de IA 2026-07-02</title>
+      <link>https://manelsen.github.io/agents-radar/#2026-07-02/ai-monthly</link>
+      <guid isPermaLink="true">https://manelsen.github.io/agents-radar/#2026-07-02/ai-monthly</guid>
+      <pubDate>Thu, 02 Jul 2026 00:00:00 +0000</pubDate>
+      <description>Relatório mensal do ecossistema de ferramentas de IA 2026-06 Fonte: 5 relatórios semanais | Gerado em: 2026-07-01 21:31 UTC Relatório Mensal do Ecossistema de Ferramentas de IA — Junho 2026 Período de Cobertura: 02 a 29 de junho de 2026Relatórios Consolidados: W23, W24, W25, W26, W27Data de Geração: 30 de junho de 2026 1. Principais Histórias do Mês O mês de junho de 2026 foi marcado por uma convergência sem precedentes entre geopolítica, avanço técnico e maturação empresarial no ecossistema de ...</description>
+      <content:encoded><![CDATA[<h1>Relatório mensal do ecossistema de ferramentas de IA 2026-06</h1>
+<blockquote>
+<p>Fonte: 5 relatórios semanais | Gerado em: 2026-07-01 21:31 UTC</p>
+</blockquote>
+<hr>
+<h1>Relatório Mensal do Ecossistema de Ferramentas de IA — Junho 2026</h1>
+<p><strong>Período de Cobertura:</strong> 02 a 29 de junho de 2026<br><strong>Relatórios Consolidados:</strong> W23, W24, W25, W26, W27<br><strong>Data de Geração:</strong> 30 de junho de 2026</p>
+<hr>
+<h2>1. Principais Histórias do Mês</h2>
+<p>O mês de junho de 2026 foi marcado por uma convergência sem precedentes entre geopolítica, avanço técnico e maturação empresarial no ecossistema de IA. Identificamos cinco eventos estruturantes que redesenharam o panorama competitivo.</p>
+<h3>1.1 Anthropic Consolida Dominância Inédita</h3>
+<p>A Anthropic fechou junho como o player mais impactante do ecossistema. A captação de <strong>US$ 65 bilhões em Série H</strong>, avaliando a empresa em US$ 965 bilhões post-money, representa a maior rodada privada já registrada no setor de IA. Os indicadores de receita recorrente (US$ 47 bilhões/mês) confirmam que a adoção empresarial global deixou de ser projećão para se tornar realidade operacional.</p>
+<p>A chegada de <strong>John Jumper</strong>, Nobel de Química pelo AlphaFold, reforça a ambição científica da empresa. Paralelamente, o <strong>Claude Corps</strong> (US$ 150 milhões para 1.000 bolsistas anuais em ONGs) sinaliza uma estratégia deliberada de mitigação de disrupção econômica e construção de goodwill institucional.</p>
+<h3>1.2 Crise Geopolítica: Suspensão dos Modelos Claude</h3>
+<p>O evento de maior repercussão comunitária do mês foi a <strong>diretiva do governo dos EUA ordenando a suspensão do acesso internacional</strong> aos modelos Claude Fable 5 e Mythos 5 — menos de 48 horas após o lançamento. O thread no Hacker News acumulou <strong>3.031 pontos e 2.193 comentários</strong>, evidenciando a sensibilidade da comunidade a restrições de acesso.</p>
+<p>A Anthropic contestou a gravidade da medida, argumentando que técnicas de bypass similares não justificariam tratamento diferenciado. Este episódio estabeleceu precedente regulatório que outras empresas de IA provavelmente deberán considerar em seus planejamentos de lançamento.</p>
+<h3>1.3 Polêmica dos &quot;Invisible Guardrails&quot;</h3>
+<p>Em 12 de junho, seis dos dez primeiros puestos do Hacker News tratavam dos <strong>&quot;invisible guardrails&quot;</strong> do Claude — tecnologia de filtragem que supostamente reduzia capacidades sem transparência ao usuário. A comunidade reagiu com indignação, gerando pedidos de desculpas públicos da Anthropic e reversão parcial de política. Este incidente expôs a tensão fundamental entre segurança e autonomia em modelos de produção.</p>
+<h3>1.4 OpenAI Responde com GPT-5.6 Sol</h3>
+<p>A OpenAI contra-atacou com o lançamento do <strong>GPT-5.6 Sol</strong>, que dominou as discussões técnicas com 600+ pontos no HN. A política de liberação restrita a clientes aprovados pelo governo dos EUA reacendeu o debate sobre &quot;IA controlada pelo Estado&quot;, com rumores de pressão direta da administração Trump para escalonar o lançamento.</p>
+<h3>1.5 Avanços em Hardware e Infraestrutura</h3>
+<p>O mês trouxe desenvolvimentos significativos em silício customizado:</p>
+<ul>
+<li><strong>Chip Jalapeño (OpenAI/Broadcom):</strong> Parceria para silício de inferência customizado, sinalizando verticalização além da dependência NVIDIA.</li>
+<li><strong>DSpark da DeepSeek:</strong> Paper técnico de speculative decoding tornou-se o conteúdo de maior engajamento da semana W27 (692 pontos, 285 comentários), demonstrando técnica que acelera inferência de LLMs.</li>
+</ul>
+<hr>
+<h2>2. Progresso Mensal das Ferramentas CLI</h2>
+<h3>2.1 Panorama Consolidado de Projetos</h3>
+<table>
+<thead>
+<tr>
+<th>Projeto</th>
+<th>Saúde Geral</th>
+<th>Tendência</th>
+<th>Destaque Principal</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>NullClaw</strong></td>
+<td>🟡 Estável</td>
+<td>→ Estável</td>
+<td>v2026.5.29; fluxo de aprovação estruturado via SSE</td>
+</tr>
+<tr>
+<td><strong>Claude Code</strong></td>
+<td>🟢 Maduro</td>
+<td>↑ Crescente</td>
+<td>Auto Mode; 65% do código interno gerado por sistema</td>
+</tr>
+<tr>
+<td><strong>NanoBot</strong></td>
+<td>🟢 Robusto</td>
+<td>↑ Acelerando</td>
+<td>Líder em throughput (78 PRs/24h); foco em sandbox</td>
+</tr>
+<tr>
+<td><strong>Hermes Agent</strong></td>
+<td>🟡 Pressionado</td>
+<td>→ Estável</td>
+<td>50 PRs + 50 issues/dia; arquitetura multi-canal</td>
+</tr>
+<tr>
+<td><strong>PicoClaw</strong></td>
+<td>🟢 Eficiente</td>
+<td>↑ Crescente</td>
+<td>10 merges/dia; ciclo de releases nightly</td>
+</tr>
+<tr>
+<td><strong>IronClaw</strong></td>
+<td>🟡 Reborn</td>
+<td>↑ Emergente</td>
+<td>v2 com hardening multi-tenant</td>
+</tr>
+<tr>
+<td><strong>ZeroClaw</strong></td>
+<td>🟢 Robusto</td>
+<td>↑ Preparação</td>
+<td>Plugins WASM; preparação v0.8.x enterprise</td>
+</tr>
+<tr>
+<td><strong>CoPaw</strong></td>
+<td>🔴 Crítico</td>
+<td>↓ Regressão</td>
+<td>Falhas críticas em v1.1.9+; beta v1.1.11</td>
+</tr>
+</tbody></table>
+<h3>2.2 Análise por Projeto</h3>
+<p><strong>NullClaw</strong> manteve ritmo consistente de desenvolvimento ao longo do mês, com destaque para:</p>
+<ul>
+<li>Correção POSIX crítica: substituição de <code>std.Io.sleep()</code> cooperativo por <code>nanosleep</code> nativo</li>
+<li>Fix de DNS no Windows com testes de regressão</li>
+<li>Suporte a cron subagent com persistência em banco de dados</li>
+<li>Fluxo de aprovação estruturado (<code>approval_request/approval_response</code>) para ferramentas de agente via channel SSE</li>
+</ul>
+<p><strong>Claude Code</strong> consolidou-se como referência em tooling agentic:</p>
+<ul>
+<li>Publicação de dados de ~400.000 sessões demonstrando que expertise humana amplifica produtividade do agente</li>
+<li>Redução de ~50% no tempo de debugging em 7 meses</li>
+<li>Sistema Auto Mode que automatiza decisões de permissão usando classificadores treinados</li>
+<li>Preocupação comunitária sobre autenticidade do &quot;Extended Thinking&quot; — investigação em curso se output representa raciocínio genuíno ou pós-processamento</li>
+</ul>
+<p><strong>NanoBot</strong> emergiu como líder em eficiência de pipeline:</p>
+<ul>
+<li>Throughput absoluto máximo entre todos os projetos</li>
+<li>Correções de segurança SSRF em múltiplas instâncias</li>
+<li>Foco em isolamento via bwrap e sandboxing</li>
+</ul>
+<p><strong>CoPaw</strong> requer atenção imediata: regressões críticas em v1.1.9+ comprometeram funcionalidades de sessão, com beta v1.1.11 em desenvolvimento para correção.</p>
+<h3>2.3 Incidentes Críticos</h3>
+<p>O <strong>bug de logging excessivo no Codex</strong> (OpenAI) exemplifica os desafios de maturidade em tooling de produção: o sistema podia gravar terabytes em SSDs locais, causando degradação de hardware. O incidente gerou 438 pontos e 242 comentários no HN, evidenciando engajamento comunitário ativo em detecção de problemas.</p>
+<hr>
+<h2>3. Revisão Mensal do Ecossistema de Agentes</h2>
+<h3>3.1 Adoção Empresarial Acelerada</h3>
+<p>O mês demonstrou transição definitiva de agentes de IA de experimentação para produção crítica:</p>
+<p><strong>Parcerias enterprise de escala:</strong></p>
+<ul>
+<li><strong>DXC Technology e Tata Consultancy Services:</strong> Treinamento de dezenas de milhares de engenheiros certificados para setores regulados (bancos, companhias aéreas, seguradoras, governo)</li>
+<li><strong>Claude Tag via Slack:</strong> Posicionamento como &quot;membro de equipe&quot; com 65% do código interno já gerado pelo sistema</li>
+<li><strong>Project Fetch Fase 2:</strong> Claude Opus 4.7 executando tarefas robóticas 20x mais rápido que humanos especializados</li>
+</ul>
+<h3>3.2 Convergências Arquiteturais</h3>
+<p>Três padrões técnicos emergiram como consenso comunitário:</p>
+<ol>
+<li><strong>Segurança multi-tenant:</strong> Validação SSRF aparecendo em 3+ projetos (NanoBot, Hermes, ZeroClaw) — indica maturação de requisitos de produção</li>
+<li><strong>Provider plugáveis:</strong> Expansão de provedores OpenAI-like (Evolink adicionado ao NullClaw)</li>
+<li><strong>Multi-agência:</strong> IronClaw e Hermes lideram discussão sobre subagents, spawn lifecycle e tool invocation dinâmica</li>
+</ol>
+<h3>3.3 Mudança de Paradigma em Containment</h3>
+<p>O artigo <em>&quot;How we contain Claude across products&quot;</em> formalizou uma mudança conceitual: há 12 meses, acesso para derrubar serviços internos seria &quot;rejeitado categoricamente&quot;; hoje é &quot;rotineiro&quot;. A Anthropic está normalizando agentes de IA com acesso profundo em produção — mudança que reverberará em todo o ecossistema.</p>
+<hr>
+<h2>4. Resumo das Tendências Técnicas</h2>
+<h3>4.1 Hardware e Inferência</h3>
+<pre><code>┌─────────────────────────────────────────────────────────────────┐
+│                    TENDÊNCIA DOMINANTE                          │
+│         Verticalização de silício para inferência               │
+├─────────────────────────────────────────────────────────────────┤
+│ • OpenAI/Broadcom (Jalapeño) — silício customizado              │
+│ • DeepSeek (DSpark) — speculative decoding para aceleração     │
+│ • Computação fotônica (UPenn) — partículas híbrido luz-matéria │
+│ • SpaceX orbital — data centers alimentados por solar          │
+└─────────────────────────────────────────────────────────────────┘
+</code></pre>
+<h3>4.2 Segurança e Alinhamento</h3>
+<p>A publicação de <strong>14 artigos de pesquisa</strong> pela Anthropic cobrindo Constitutional Classifiers, alinhamento via reward hacking, interpretabilidade (Natural Language Autoencoders, Emotion concepts) e estudos de uso real demonstra investimento massivo em bases científicas para segurança.</p>
+<p><strong>Classificador nuclear com 96% de precisão</strong> (parceria com Departamento de Energia dos EUA) estabelece precedente regulatório que outras empresas devem seguir.</p>
+<h3>4.3 Tooling e Routing</h3>
+<p>Ferramentas de <strong>roteamento inteligente entre modelos</strong> (como Smart Router para Claude/Codex/Cursor) ganharam tração significativa (105 pontos no HN), respondendo à demanda por otimização de custos e performance em ambientes multi-modelo.</p>
+<p>Tradução Pandas→Polars via LLMs avança conforme padrões de prompts documentados pela Polars — indicador de maturação de casos de uso específicos.</p>
+<h3>4.4 Ecossistema Open Weights</h3>
+<p>O <strong>GLM-5.2</strong> posicionou-se como &quot;LLM de texto open weights mais poderoso&quot; — competição crescente no segmento que tradicionalmente era dominado por modelos fechados premium.</p>
+<hr>
+<h2>5. Saúde da Comunidade</h2>
+<h3>5.1 Engajamento por Semana</h3>
+<table>
+<thead>
+<tr>
+<th>Semana</th>
+<th>HN Points (principal)</th>
+<th>Comentários</th>
+<th>Temas Dominantes</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>W23</td>
+<td>1.020</td>
+<td>810</td>
+<td>Claude Opus 4.8, funding</td>
+</tr>
+<tr>
+<td>W24</td>
+<td>3.031</td>
+<td>2.193</td>
+<td>Suspensão Claude internacional</td>
+</tr>
+<tr>
+<td>W25</td>
+<td>~600 (6 puestos HN)</td>
+<td>~300</td>
+<td>Invisible guardrails</td>
+</tr>
+<tr>
+<td>W26</td>
+<td>—</td>
+<td>—</td>
+<td>-spaceX, quantum, talentos</td>
+</tr>
+<tr>
+<td>W27</td>
+<td>692</td>
+<td>285</td>
+<td>DSpark, GPT-5.6 Sol</td>
+</tr>
+</tbody></table>
+<h3>5.2 Dinâmicas de Talentos</h3>
+<p>O mês registrou concentração significativa de competências:</p>
+<ul>
+<li><strong>John Jumper</strong> (Nobel de Química) → Anthropic</li>
+<li><strong>Noam Shazeer</strong> (ex-co-líder Gemini) → OpenAI</li>
+<li><strong>Chris Olah</strong> (co-fundador Anthropic) → Vaticano (ética)</li>
+</ul>
+<p>Este movimento alimenta debates sobre <strong>concentração de talentos nas big techs</strong> e seus efeitos no ecossistema open source.</p>
+<h3>5.3 Restrições Geográficas</h3>
+<p>A <strong>restrição de JPMorgan ao acesso à Anthropic para funcionários em Hong Kong</strong> exemplifica como políticas corporativas começam a incorporar considerações geopolíticas — tendência que provavelmente se expandirá.</p>
+<h3>5.4 Sustentabilidade Econômica</h3>
+<p>Evidências circularam sugerindo que Anthropic e OpenAI gastam <strong>US$ 1.000 para cada US$ 100 recebido de usuários</strong> — indicador que coloca em xeque a sustentabilidade do modelo de negócio atual. A comunidade permanece dividida: alguns argumentam que subsidies de infraestrutura antecipam lucros futuros; outros questionam a viabilidade de longo prazo.</p>
+<hr>
+<h2>6. Revisão das Atualizações Oficiais</h2>
+<h3>6.1 Anthropic</h3>
+<table>
+<thead>
+<tr>
+<th>Data</th>
+<th>Atualização</th>
+<th>Impacto</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Início junho</td>
+<td>Claude Opus 4.8</td>
+<td>Modelo premium de referência</td>
+</tr>
+<tr>
+<td>09/06</td>
+<td>Claude Fable 5 + Mythos 5</td>
+<td>Classe Mythos para uso geral; suspenso internacionalmente</td>
+</tr>
+<tr>
+<td>Junho</td>
+<td>Claude Code Auto Mode</td>
+<td>Automação de decisões de permissão</td>
+</tr>
+<tr>
+<td>Junho</td>
+<td>Paper containment architecture</td>
+<td>Normalização de agentes em produção</td>
+</tr>
+<tr>
+<td>Junho</td>
+<td>14 artigos de alinhamento</td>
+<td>Base científica para segurança</td>
+</tr>
+<tr>
+<td>Junho</td>
+<td>Nuclear classifier</td>
+<td>Precedente regulatório setorial</td>
+</tr>
+</tbody></table>
+<h3>6.2 OpenAI</h3>
+<table>
+<thead>
+<tr>
+<th>Data</th>
+<th>Atualização</th>
+<th>Impacto</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Final junho</td>
+<td>GPT-5.6 Sol</td>
+<td>Modelo generacional com acesso restrito</td>
+</tr>
+<tr>
+<td>Junho</td>
+<td>Chip Jalapeño</td>
+<td>Verticalização de hardware</td>
+</tr>
+</tbody></table>
+<h3>6.3 Projetos Open Source</h3>
+<table>
+<thead>
+<tr>
+<th>Projeto</th>
+<th>Release</th>
+<th>Mudanças Principais</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>NullClaw</td>
+<td>v2026.5.29</td>
+<td>Estabilização; streaming fixes; REPL</td>
+</tr>
+<tr>
+<td>CoPaw</td>
+<td>v1.1.11 (beta)</td>
+<td>Correção de regressões críticas</td>
+</tr>
+<tr>
+<td>PicoClaw</td>
+<td>Nightly</td>
+<td>Ciclo acelerado; 10 merges/dia</td>
+</tr>
+<tr>
+<td>ZeroClaw</td>
+<td>Preparação v0.8.x</td>
+<td>Plugins WASM; enterprise features</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>7. Perspectiva para Julho de 2026</h2>
+<h3>7.1 Eventos Esperados</h3>
+<p><strong>Prováveis:</strong></p>
+<ul>
+<li>Decisão regulatória sobre acesso internacional de modelos de IA (resolução da crise Claude Fable/Mythos)</li>
+<li>Primeira demonstração pública do Chip Jalapeño (OpenAI/Broadcom)</li>
+<li>Release estável do CoPaw v1.1.11 com correção de regressões</li>
+<li>DeepSeek publicando implementações práticas do DSpark</li>
+</ul>
+<p><strong>Possíveis:</strong></p>
+<ul>
+<li>Anthropic submetendo S-1 para IPO (confirmação após Serie H massiva)</li>
+<li>GLM-5.2 alcançandoparidade em benchmarks com modelos fechados</li>
+<li>Primeiras implementações comerciais de computação fotônica</li>
+</ul>
+<h3>7.2 Tensões a Monitorar</h3>
+<ol>
+<li><strong>Geopolítica de IA:</strong> Restrições de acesso devem se intensificar conforme modelos atingem capacidades sensíveis</li>
+<li><strong>Sustentabilidade econômica:</strong> Pressão para monetização efetiva apósinvestimentos bilionários</li>
+<li><strong>Concentração:</strong> Movimentos de talentos e capital sugerem consolidação acelerada</li>
+<li><strong>Segurança:</strong> Normalização de agentes em produção eleva superfície de risco</li>
+</ol>
+<h3>7.3 Recomendações Estratégicas</h3>
+<table>
+<thead>
+<tr>
+<th>Stakeholder</th>
+<th>Recomendação</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Desenvolvedores</strong></td>
+<td>Adotar padrões de routing multi-modelo; monitorar health de CoPaw</td>
+</tr>
+<tr>
+<td><strong>Empresas</strong></td>
+<td>Avaliar partnerships enterprise (DXC/TCS) para setores regulados</td>
+</tr>
+<tr>
+<td><strong>Pesquisadores</strong></td>
+<td>Acompanhar publicações de alinhamento da Anthropic; oportunidades em interpretibilidade</td>
+</tr>
+<tr>
+<td><strong>Investidores</strong></td>
+<td>Considerar exposição a silício customizado (verticalização); monitorarunit economics</td>
+</tr>
+</tbody></table>
+<hr>
+<p><strong>Nota metodológica:</strong> Este relatório consolida cinco relatórios semanais (W23–W27) do ecossistema de ferramentas de IA. Dados de engajamento referem-se exclusivamente ao Hacker News. Classificações de saúde dos projetos são inferências baseadas em padrões de atividade de PRs e issues. Projeções para julho são especulativas e devem ser validadas com dados adicionais.</p>
+<hr>
+<p><em>Este resumo é gerado automaticamente por <a href="https://github.com/manelsen/agents-radar">agents-radar</a>.</em></p>
+]]></content:encoded>
+    </item>
+    <item>
       <title>Relatório diário do ecossistema de agentes de IA 2026-07-01</title>
       <link>https://manelsen.github.io/agents-radar/#2026-07-01/ai-agents</link>
       <guid isPermaLink="true">https://manelsen.github.io/agents-radar/#2026-07-01/ai-agents</guid>
@@ -8843,3072 +9201,6 @@ A elevação de Sardis a sítio do Patrimônio Mundial destaca a importância da
 <ol>
 <li><strong><a href="https://www.sciencedaily.com/releases/2026/06/260624025514.htm">Atividade cerebral sob anestesia desafia conceitos de consciência</a></strong> – Reverte a noção de que a anestesia geral silencia toda atividade cognitiva, oferecendo</li>
 </ol>
-<hr>
-<p><em>Este resumo é gerado automaticamente por <a href="https://github.com/manelsen/agents-radar">agents-radar</a>.</em></p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>Relatório diário do ecossistema de agentes de IA 2026-06-30</title>
-      <link>https://manelsen.github.io/agents-radar/#2026-06-30/ai-agents</link>
-      <guid isPermaLink="true">https://manelsen.github.io/agents-radar/#2026-06-30/ai-agents</guid>
-      <pubDate>Tue, 30 Jun 2026 00:00:00 +0000</pubDate>
-      <description>Resumo diário do ecossistema de agentes de IA 2026-06-30 Issues: 0 | PRs: 4 | Projetos cobertos: 7 | Gerado em: 2026-06-29 21:21 UTC NullClaw NanoBot Hermes Agent PicoClaw IronClaw CoPaw ZeroClaw Análise aprofundada do projeto principal Relatório do Projeto NullClaw — 2026-06-30 1. Panorama do Dia O projeto NullClaw apresenta atividade moderada nesta data, com foco principal em melhorias na experiência do terminal REPL e evolução da arquitetura de streaming. Foram registradas 4 atualizações em P...</description>
-      <content:encoded><![CDATA[<h1>Resumo diário do ecossistema de agentes de IA 2026-06-30</h1>
-<blockquote>
-<p>Issues: 0 | PRs: 4 | Projetos cobertos: 7 | Gerado em: 2026-06-29 21:21 UTC</p>
-</blockquote>
-<ul>
-<li><a href="https://github.com/nullclaw/nullclaw">NullClaw</a></li>
-<li><a href="https://github.com/HKUDS/nanobot">NanoBot</a></li>
-<li><a href="https://github.com/nousresearch/hermes-agent">Hermes Agent</a></li>
-<li><a href="https://github.com/sipeed/picoclaw">PicoClaw</a></li>
-<li><a href="https://github.com/nearai/ironclaw">IronClaw</a></li>
-<li><a href="https://github.com/agentscope-ai/CoPaw">CoPaw</a></li>
-<li><a href="https://github.com/zeroclaw-labs/zeroclaw">ZeroClaw</a></li>
-</ul>
-<hr>
-<h2>Análise aprofundada do projeto principal</h2>
-<h1>Relatório do Projeto NullClaw — 2026-06-30</h1>
-<h2>1. Panorama do Dia</h2>
-<p>O projeto NullClaw apresenta <strong>atividade moderada</strong> nesta data, com foco principal em melhorias na experiência do terminal REPL e evolução da arquitetura de streaming. Foram registradas <strong>4 atualizações em PRs</strong> nas últimas 24h, com <strong>3 PRs em aberto</strong> e <strong>1 PR fechado</strong>. Não houve atividade de issues nem releases. A equipe mantém desenvolvimento ativo em funcionalidades de CLI, com destaque para a introdução de suporte a tool calls nativos durante streaming SSE, representando uma evolução arquitetural significativa.</p>
-<hr>
-<h2>2. Lançamentos</h2>
-<p><strong>Nenhuma release registrada nas últimas 24h.</strong></p>
-<p>O último release pode ser verificado em: <a href="https://github.com/nullclaw/nullclaw/releases">nullclaw/nullclaw Releases</a></p>
-<hr>
-<h2>3. Progresso do Projeto</h2>
-<h3>PR Merged/Fechado Hoje</h3>
-<table>
-<thead>
-<tr>
-<th>PR</th>
-<th>Tipo</th>
-<th>Título</th>
-<th>Impacto</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a href="https://github.com/nullclaw/nullclaw/pull/960">#960</a></td>
-<td>fix</td>
-<td>handle arrow keys in agent REPL</td>
-<td>✅ <strong>Merged</strong></td>
-</tr>
-</tbody></table>
-<p><strong>Análise:</strong> O PR #960 foi fechado (provavelmente após merge ou supersessão pelo #970). Este PR implementa:</p>
-<ul>
-<li>Editor de linha allocation-free para o REPL interativo</li>
-<li>Suporte a raw-mode POSIX para sessões TTY</li>
-<li>Navegação por setas, histórico, Home/End, backspace/delete</li>
-<li>Sequências comuns word-left/right</li>
-</ul>
-<hr>
-<h3>PRs Abertos em Desenvolvimento</h3>
-<table>
-<thead>
-<tr>
-<th>PR</th>
-<th>Tipo</th>
-<th>Título</th>
-<th>Status</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a href="https://github.com/nullclaw/nullclaw/pull/971">#971</a></td>
-<td>feat</td>
-<td>native tool calls during SSE streaming</td>
-<td>🟡 Em revisão</td>
-</tr>
-<tr>
-<td><a href="https://github.com/nullclaw/nullclaw/pull/970">#970</a></td>
-<td>fix</td>
-<td>handle arrow keys in agent REPL</td>
-<td>🟡 Em revisão</td>
-</tr>
-<tr>
-<td><a href="https://github.com/nullclaw/nullclaw/pull/956">#956</a></td>
-<td>deps</td>
-<td>bump alpine 3.23 → 3.24</td>
-<td>🟡 Em revisão</td>
-</tr>
-</tbody></table>
-<hr>
-<h2>4. Temas Quentes da Comunidade</h2>
-<h3>PR em Destaque: Native Tool Calls during SSE Streaming</h3>
-<p><strong><a href="https://github.com/nullclaw/nullclaw/pull/971">#971</a></strong> — feat(streaming): native tool calls during SSE streaming<br><em>Autor: vernonstonebaker | Atualizado: 2026-06-29</em></p>
-<p><strong>Resumo:</strong> Esta feature <strong>desacopla o suporte a native tool-calls do caminho de streaming</strong>, permitindo que provedores que suportam tools nativas durante streaming as emitam corretamente. Antes, o loop do agente desabilitava native tools quando um stream callback era anexado, forçando tools a um formato de prompt-injection.</p>
-<p><strong>Impacto potencial:</strong> Melhoria significativa na compatibilidade com provedores LLM modernos e redução de latência em interações com tools.</p>
-<hr>
-<h3>PR: CLI REPL Improvements</h3>
-<p><strong><a href="https://github.com/nullclaw/nullclaw/pull/970">#970</a></strong> — fix(cli): handle arrow keys in agent REPL<br><em>Autor: vernonstinebaker | Atualizado: 2026-06-29</em></p>
-<p><strong>Resumo:</strong> Implementa editor de linha completo com suporte a:</p>
-<ul>
-<li>Raw-mode POSIX para terminais</li>
-<li>Navegação por setas e histórico</li>
-<li>Backspace, delete, Home/End</li>
-<li>Word-left/word-right (Ctrl+←/→)</li>
-</ul>
-<hr>
-<h2>5. Bugs e Estabilidade</h2>
-<h3>Registros de Bugs</h3>
-<p><strong>Nenhum bug reportado nas últimas 24h.</strong></p>
-<ul>
-<li>Issues abertas: 0</li>
-<li>Issues fechadas: 0</li>
-</ul>
-<p><strong>Métricas de estabilidade:</strong></p>
-<pre><code>Bugs críticos abertos: 0
-Regressões conhecidas: 0
-Crash reports: 0
-</code></pre>
-<p>O projeto demonstra <strong>saúde estável</strong> na dimensão de bugs. Histórico pode ser acompanhado em: <a href="https://github.com/nullclaw/nullclaw/issues">nullclaw/nullclaw Issues</a></p>
-<hr>
-<h2>6. Pedidos de Features e Sinais de Roadmap</h2>
-<h3>Features em Desenvolvimento</h3>
-<table>
-<thead>
-<tr>
-<th>Feature</th>
-<th>PR</th>
-<th>Prioridade</th>
-<th>Descrição</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Native Tool Calls em Streaming</td>
-<td><a href="https://github.com/nullclaw/nullclaw/pull/971">#971</a></td>
-<td>🔴 Alta</td>
-<td>Desacoplamento de native tools do streaming path</td>
-</tr>
-<tr>
-<td>REPL Avançado</td>
-<td><a href="https://github.com/nullclaw/nullclaw/pull/970">#970</a></td>
-<td>🟡 Média</td>
-<td>Editor de linha completo com raw-mode</td>
-</tr>
-</tbody></table>
-<h3>Sinais de Roadmap Inferidos</h3>
-<p>Baseado na atividade recente, o roadmap parece priorizar:</p>
-<ol>
-<li><strong>Melhoria de experiência CLI</strong> — Editor de linha completo indica foco em usabilidade</li>
-<li><strong>Evolução de streaming</strong> — Native tool calls durante SSE representa evolução arquitetural</li>
-<li><strong>Manutenção de dependências</strong> — Atualizações regulares de Docker images (PR #956)</li>
-</ol>
-<hr>
-<h2>7. Resumo de Feedback dos Usuários</h2>
-<h3>Dados Disponíveis</h3>
-<table>
-<thead>
-<tr>
-<th>Métrica</th>
-<th>Valor</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Comentários em PRs</td>
-<td>0 (undefined)</td>
-</tr>
-<tr>
-<td>Reações (👍)</td>
-<td>0</td>
-</tr>
-</tbody></table>
-<h3>Análise</h3>
-<p><strong>Ausência de feedback visível</strong> nas métricas de engajamento. Isso pode indicar:</p>
-<ul>
-<li>Projeto em fase inicial de adoção</li>
-<li>Usuários técnicos que contribuem via código diretamente</li>
-<li>Necessidade de canais adicionais de feedback (discord, forum)</li>
-</ul>
-<p><strong>Nota:</strong> O PR #971 representa uma mudança arquitetural significativa que pode impactar usuários existentes. Recomenda-se comunicar mudanças de forma clara quando próximo release estiver disponível.</p>
-<hr>
-<h2>8. Backlog que Merece Atenção</h2>
-<h3>Análise de PRs sem Resposta</h3>
-<table>
-<thead>
-<tr>
-<th>PR</th>
-<th>Idade</th>
-<th>Tipo</th>
-<th>Status</th>
-<th>Prioridade de Atenção</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a href="https://github.com/nullclaw/nullclaw/pull/956">#956</a></td>
-<td>15 dias</td>
-<td>dependências</td>
-<td>Em revisão</td>
-<td>⚠️ Baixa (Dependabot)</td>
-</tr>
-</tbody></table>
-<p><strong>Análise:</strong></p>
-<ul>
-<li><strong>PR #956 (Alpine update):</strong> Dependabot PR para atualização de imagem Docker. Com 15 dias de idade, está dentro de timeframe aceitável para dependências.</li>
-</ul>
-<h3>Recomendações</h3>
-<ol>
-<li><strong>Merge #956</strong> — Atualização de segurança Alpine 3.23 → 3.24 deve ser priorizada</li>
-<li><strong>Revisão de #970 e #971</strong> — Ambos PRs do mesmo autor (vernonstinebaker) sugerem trabalho coordenado; revisar em conjunto</li>
-<li><strong>Comunicação de Roadmap</strong> — Considerar abertura de discussão sobre a feature de native tool calls (#971) para coletar feedback da comunidade antes do merge</li>
-</ol>
-<hr>
-<h2>Métricas Consolidada do Dia</h2>
-<pre><code>┌─────────────────────────────────────────────────────────────┐
-│                    NULLCLAW — 2026-06-30                     │
-├─────────────────────────────────────────────────────────────┤
-│  📊 Atividade Geral                                          │
-│  ├─ PRs atualizados (24h):     4                             │
-│  ├─ PRs abertos:               3                             │
-│  ├─ PRs fechados/merged:       1                             │
-│  └─ Issues atualizadas (24h):   0                             │
-├─────────────────────────────────────────────────────────────┤
-│  🏥 Saúde do Projeto                                         │
-│  ├─ Bugs críticos abertos:      0                             │
-│  ├─ Releases (24h):             0                             │
-│  └─ Estabilidade:               ✅ Estável                    │
-├─────────────────────────────────────────────────────────────┤
-│  🎯 Foco do Desenvolvimento                                  │
-│  ├─ CLI/Terminal:               🔴 Alta                       │
-│  ├─ Streaming:                  🔴 Alta                       │
-│  └─ Dependências:               🟡 Média                       │
-└─────────────────────────────────────────────────────────────┘
-</code></pre>
-<hr>
-<p><strong>Links Úteis:</strong></p>
-<ul>
-<li>Repositório: <a href="https://github.com/nullclaw/nullclaw">github.com/nullclaw/nullclaw</a></li>
-<li>Issues: <a href="https://github.com/nullclaw/nullclaw/issues">github.com/nullclaw/nullclaw/issues</a></li>
-<li>Pull Requests: <a href="https://github.com/nullclaw/nullclaw/pulls">github.com/nullclaw/nullclaw/pulls</a></li>
-<li>Releases: <a href="https://github.com/nullclaw/nullclaw/releases">github.com/nullclaw/nullclaw/releases</a></li>
-</ul>
-<hr>
-<p><em>Relatório gerado automaticamente com base nos dados do GitHub de 2026-06-30.</em></p>
-<hr>
-<h2>Comparação entre projetos do ecossistema</h2>
-<h1>Relatório Comparativo — Ecossistema de Agentes de IA Open Source</h1>
-<p><strong>Data de Referência:</strong> 2026-06-30
-<strong>Projetos Analisados:</strong> NullClaw, NanoBot, Hermes Agent, PicoClaw, IronClaw, CoPaw, ZeroClaw</p>
-<hr>
-<h2>1. Visão Geral do Ecossistema</h2>
-<p>O ecossistema de agentes de IA open source apresenta <strong>dois padrões distintos de maturidade</strong>: projetos que priorizam <strong>estabilização e segurança</strong> (NullClaw, PicoClaw) e projetos em <strong>modo de alta iteração</strong> com pipeline robusto de contributions (NanoBot, Hermes Agent, IronClaw, CoPaw, ZeroClaw). Observa-se convergência técnica em três eixos — multi-agente orchestration, contexto de longa janela, e expansão de canais de comunicação — enquanto a diferenciação ocorre no posicionamento de deployment (CLI desktop vs. embedded vs. enterprise). A segurança emerge como tema transversal, com vulnerabilidades críticas reportadas em pelo menos 4 dos 7 projetos nas últimas 24h.</p>
-<hr>
-<h2>2. Comparação de Atividade</h2>
-<table>
-<thead>
-<tr>
-<th>Projeto</th>
-<th align="center">PRs (24h)</th>
-<th align="center">Issues (24h)</th>
-<th align="center">PRs Abertos</th>
-<th align="center">Releases</th>
-<th align="center">Saúde</th>
-<th align="center">P1/P-Critical</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>NullClaw</strong></td>
-<td align="center">4</td>
-<td align="center">0</td>
-<td align="center">3</td>
-<td align="center">0</td>
-<td align="center">✅ Estável</td>
-<td align="center">0</td>
-</tr>
-<tr>
-<td><strong>NanoBot</strong></td>
-<td align="center">31</td>
-<td align="center">5</td>
-<td align="center">~18+</td>
-<td align="center">0</td>
-<td align="center">⚠️ 2 bugs security</td>
-<td align="center">1</td>
-</tr>
-<tr>
-<td><strong>Hermes Agent</strong></td>
-<td align="center">50</td>
-<td align="center">50</td>
-<td align="center">~42</td>
-<td align="center">0</td>
-<td align="center">🟡 Moderada</td>
-<td align="center">2</td>
-</tr>
-<tr>
-<td><strong>PicoClaw</strong></td>
-<td align="center">2</td>
-<td align="center">3</td>
-<td align="center">2</td>
-<td align="center">0</td>
-<td align="center">⚠️ 1 bug médio</td>
-<td align="center">0</td>
-</tr>
-<tr>
-<td><strong>IronClaw</strong></td>
-<td align="center">50</td>
-<td align="center">13</td>
-<td align="center">29</td>
-<td align="center">0</td>
-<td align="center">✅ Boa (áreas atenção)</td>
-<td align="center">1</td>
-</tr>
-<tr>
-<td><strong>CoPaw</strong></td>
-<td align="center">50</td>
-<td align="center">29</td>
-<td align="center">31</td>
-<td align="center">Beta v2.0</td>
-<td align="center">✅ Saudável</td>
-<td align="center">3</td>
-</tr>
-<tr>
-<td><strong>ZeroClaw</strong></td>
-<td align="center">50</td>
-<td align="center">50</td>
-<td align="center">40</td>
-<td align="center">0</td>
-<td align="center">⚠️ 6 P1 abertos</td>
-<td align="center">6</td>
-</tr>
-</tbody></table>
-<p><strong>Observação:</strong> Os três projetos com maior volume (Hermes Agent, IronClaw, ZeroClaw) reportam 50 PRs atualizados, sugerindo ciclos de CI/CD sincronizados ou coleta de métricas por batch.</p>
-<hr>
-<h2>3. Posicionamento do Projeto Principal</h2>
-<p><em>Considerando NullClaw como referência principal:</em></p>
-<table>
-<thead>
-<tr>
-<th>Dimensão</th>
-<th>NullClaw</th>
-<th>Comparação</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>Volume de atividade</strong></td>
-<td>Moderado (4 PRs)</td>
-<td>7-12x menor que líderes</td>
-</tr>
-<tr>
-<td><strong>Maturidade</strong></td>
-<td>Inicial/fase adoção</td>
-<td>Equivalente a PicoClaw</td>
-</tr>
-<tr>
-<td><strong>Foco técnico</strong></td>
-<td>CLI REPL + Streaming SSE</td>
-<td>Nicho distinto (CLI-first)</td>
-</tr>
-<tr>
-<td><strong>Segurança</strong></td>
-<td>Nenhuma vulnerabilidade reportada</td>
-<td>Vantagem relativa</td>
-</tr>
-<tr>
-<td><strong>Comunidade</strong></td>
-<td>Baixa (0 reações/comentários)</td>
-<td>Desvantagem</td>
-</tr>
-</tbody></table>
-<p><strong>Vantagens Competitivas do NullClaw:</strong></p>
-<ul>
-<li>Arquitetura de streaming com native tool calls durante SSE (#971) — diferenciação técnica antecipada</li>
-<li>Editor de linha allocation-free para REPL — UX diferenciada para desenvolvedores</li>
-<li>Zero dependências de segurança no pipeline imediato</li>
-</ul>
-<p><strong>Pontos de Atenção:</strong></p>
-<ul>
-<li>Ausência de feedback de usuários nas métricas de engajamento</li>
-<li>Escala pequena limita cobertura de integrações multi-canal</li>
-<li>Necessidade de estratégia de crescimento de comunidade</li>
-</ul>
-<hr>
-<h2>4. Focos Técnicos Compartilhados</h2>
-<h3>4.1 Segurança de Canais e Gateways</h3>
-<table>
-<thead>
-<tr>
-<th>Projeto</th>
-<th>Issue/Bug</th>
-<th>Severidade</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>NanoBot</strong></td>
-<td>ExecTool path extraction bypass (#4592)</td>
-<td>🔴 Crítica</td>
-</tr>
-<tr>
-<td><strong>NanoBot</strong></td>
-<td>Credentials vazando em URLs MCP (#4584)</td>
-<td>🟡 Moderada</td>
-</tr>
-<tr>
-<td><strong>Hermes Agent</strong></td>
-<td>401 Unauthorized vazando em TUI/Discord/Telegram (#55199)</td>
-<td>🔴 Alta</td>
-</tr>
-<tr>
-<td><strong>Hermes Agent</strong></td>
-<td>Write-approval bypass em gateways (#55147)</td>
-<td>🔴 Alta</td>
-</tr>
-<tr>
-<td><strong>ZeroClaw</strong></td>
-<td>Telegram channel não configurável (#8505)</td>
-<td>🔴 Alta</td>
-</tr>
-<tr>
-<td><strong>IronClaw</strong></td>
-<td>OAuth refresh falha silenciosa (#5413)</td>
-<td>🟡 Média</td>
-</tr>
-</tbody></table>
-<p><strong>Padrão:</strong> A expansão de canais de comunicação (Telegram, Discord, Matrix, SimpleX) está gerando superfície de ataque em crescimento, com vulnerabilidades de credential handling e auth bypass emergindo em múltiplos projetos simultaneamente.</p>
-<h3>4.2 Gerenciamento de Contexto e Custo</h3>
-<table>
-<thead>
-<tr>
-<th>Projeto</th>
-<th>Feature/Bug</th>
-<th>Impacto</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>CoPaw</strong></td>
-<td>DeepSeek Prefix Cache sub-ótimo (#3891) — 95% vs 99%+ potencial</td>
-<td>Custo 2-4x</td>
-</tr>
-<tr>
-<td><strong>NanoBot</strong></td>
-<td>max_messages truncation invalida prefix/prompt caching (#4222)</td>
-<td>Performance</td>
-</tr>
-<tr>
-<td><strong>CoPaw</strong></td>
-<td>Cap em tool outputs para evitar explosão de contexto (#5510)</td>
-<td>Estabilidade</td>
-</tr>
-<tr>
-<td><strong>ZeroClaw</strong></td>
-<td>Catálogo de preços offline (#8380)</td>
-<td>Offline-first</td>
-</tr>
-<tr>
-<td><strong>NanoBot</strong></td>
-<td>PRs paralelos de context optimization (#4581, #4588)</td>
-<td>Custo Tokens</td>
-</tr>
-</tbody></table>
-<p><strong>Padrão:</strong> A guerra por eficiência de tokens é tema central — otimização de cache, truncation inteligente e cap de outputs aparecem em ao menos 4 projetos.</p>
-<h3>4.3 Multi-Agente e A2A</h3>
-<table>
-<thead>
-<tr>
-<th>Projeto</th>
-<th>Feature</th>
-<th>Progresso</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>NanoBot</strong></td>
-<td>Native A2A peer delegation (#4571)</td>
-<td>Review</td>
-</tr>
-<tr>
-<td><strong>ZeroClaw</strong></td>
-<td>RFC A2A agent discovery (#7218)</td>
-<td>RFC</td>
-</tr>
-<tr>
-<td><strong>CoPaw</strong></td>
-<td>DingTalk @mention para multi-agent (#5564)</td>
-<td>Feature request</td>
-</tr>
-<tr>
-<td><strong>CoPaw</strong></td>
-<td>Plugin system para middleware (#5221)</td>
-<td>Em revisão</td>
-</tr>
-<tr>
-<td><strong>ZeroClaw</strong></td>
-<td>Skills em multi-agent installs (#8334)</td>
-<td>Bug P1</td>
-</tr>
-</tbody></table>
-<p><strong>Padrão:</strong> Ecossistema se move para arquiteturas multi-agente com padrões de descoberta e delegação — ZeroClaw e NanoBot lideram em especificação.</p>
-<hr>
-<h2>5. Análise de Diferenciação</h2>
-<h3>5.1 Por Público-Alvo</h3>
-<pre><code>NullClaw ──────────────► Desenvolvedores/CLI enthusiasts
-NanoBot ──────────────► Enterprise (Webhook gateway, proxy por provider)
-Hermes Agent ─────────► Power users (Multi-provider, Desktop, SimpleX)
-PicoClaw ─────────────► Utilitários focados (DeltaChat, token metrics)
-IronClaw ─────────────► Enterprise Google Workspace
-CoPaw ────────────────► Mercado Chinês (Feishu, DingTalk, Qwen)
-ZeroClaw ─────────────► Enterprise extensível (WASM plugins, OCI)
-</code></pre>
-<h3>5.2 Por Arquitetura Técnica</h3>
-<table>
-<thead>
-<tr>
-<th>Tipo</th>
-<th>Projetos</th>
-<th>Características</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>CLI-first</strong></td>
-<td>NullClaw, PicoClaw</td>
-<td>Terminal REPL, raw-mode POSIX, foco em DX</td>
-</tr>
-<tr>
-<td><strong>Channel-agnostic</strong></td>
-<td>NanoBot, Hermes Agent</td>
-<td>Multi-gateway, multi-provider</td>
-</tr>
-<tr>
-<td><strong>Enterprise-integrated</strong></td>
-<td>IronClaw, CoPaw</td>
-<td>Google Workspace, Feishu/DingTalk, OAuth</td>
-</tr>
-<tr>
-<td><strong>Plugin-extensible</strong></td>
-<td>ZeroClaw</td>
-<td>WASM-first, OCI registries, SOP</td>
-</tr>
-</tbody></table>
-<h3>5.3 Por Estratégia de Crescimento</h3>
-<table>
-<thead>
-<tr>
-<th>Projeto</th>
-<th>Estratégia</th>
-<th>Evidência</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>NullClaw</strong></td>
-<td>Nicho técnico (streaming + CLI)</td>
-<td>PR #971 (SSE native tools)</td>
-</tr>
-<tr>
-<td><strong>NanoBot</strong></td>
-<td>Completude de features</td>
-<td>31 PRs, webhook gateway, subagent override</td>
-</tr>
-<tr>
-<td><strong>Hermes Agent</strong></td>
-<td>Provider diversity</td>
-<td>Google/Vertex, bypass OpenRouter</td>
-</tr>
-<tr>
-<td><strong>CoPaw</strong></td>
-<td>Localização de mercado</td>
-<td>Feishu, DingTalk, Qwen</td>
-</tr>
-<tr>
-<td><strong>ZeroClaw</strong></td>
-<td>Enterprise extensibility</td>
-<td>WASM runtime, A2A discovery, computer-use</td>
-</tr>
-</tbody></table>
-<hr>
-<h2>6. Tração e Maturidade da Comunidade</h2>
-<h3>6.1 Velocidade de Iteração</h3>
-<table>
-<thead>
-<tr>
-<th>Categoria</th>
-<th>Projetos</th>
-<th>Indicador</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>🚀 Alta iteração</strong></td>
-<td>Hermes Agent, IronClaw, CoPaw, ZeroClaw</td>
-<td>50 PRs/24h, ciclo de review &lt; 48h</td>
-</tr>
-<tr>
-<td><strong>📊 Média iteração</strong></td>
-<td>NanoBot</td>
-<td>31 PRs/24h, 2 PRs merged</td>
-</tr>
-<tr>
-<td><strong>🔰 Consolidando</strong></td>
-<td>NullClaw, PicoClaw</td>
-<td>&lt; 5 PRs/24h, foco em estabilidade</td>
-</tr>
-</tbody></table>
-<h3>6.2 Qualidade de Gestão de Issues</h3>
-<table>
-<thead>
-<tr>
-<th>Projeto</th>
-<th align="center">P1/P-Critical</th>
-<th align="center">Tempo Resposta</th>
-<th align="center">Tendência</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>NullClaw</strong></td>
-<td align="center">0</td>
-<td align="center">N/A (0 issues)</td>
-<td align="center">N/A</td>
-</tr>
-<tr>
-<td><strong>NanoBot</strong></td>
-<td align="center">1</td>
-<td align="center">&lt; 24h (PR #4594)</td>
-<td align="center">✅ Reativa</td>
-</tr>
-<tr>
-<td><strong>Hermes Agent</strong></td>
-<td align="center">2</td>
-<td align="center">Variável</td>
-<td align="center">⚠️ 2 issues &gt; 42 dias (#27933)</td>
-</tr>
-<tr>
-<td><strong>PicoClaw</strong></td>
-<td align="center">0</td>
-<td align="center">~20 dias (Safari)</td>
-<td align="center">🟡 Lenta</td>
-</tr>
-<tr>
-<td><strong>IronClaw</strong></td>
-<td align="center">1</td>
-<td align="center">&lt; 24h</td>
-<td align="center">✅ Reativa</td>
-</tr>
-<tr>
-<td><strong>CoPaw</strong></td>
-<td align="center">3</td>
-<td align="center">Variável</td>
-<td align="center">🟡 1 issue crítica (#5579)</td>
-</tr>
-<tr>
-<td><strong>ZeroClaw</strong></td>
-<td align="center">6</td>
-<td align="center">⚠️ Accumulated</td>
-<td align="center">🔴 Atenção</td>
-</tr>
-</tbody></table>
-<h3>6.3 Sinais de Maturidade</h3>
-<table>
-<thead>
-<tr>
-<th>Indicador</th>
-<th>Projetos que Demonstram</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>Testes de integração</strong></td>
-<td>IronClaw (#5392), CoPaw (426+ casos)</td>
-</tr>
-<tr>
-<td><strong>Release cycle estável</strong></td>
-<td>IronClaw (v0.29.1), CoPaw (beta v2.0)</td>
-</tr>
-<tr>
-<td><strong>Processos de segurança</strong></td>
-<td>NanoBot, Hermes Agent, ZeroClaw</td>
-</tr>
-<tr>
-<td><strong>RFC formal</strong></td>
-<td>ZeroClaw (7 RFCs pendentes)</td>
-</tr>
-<tr>
-<td><strong>Stale management</strong></td>
-<td>PicoClaw, CoPaw</td>
-</tr>
-</tbody></table>
-<hr>
-<h2>7. Sinais de Tendência</h2>
-<h3>7.1 Tendências de Mercado Extraídas</h3>
-<table>
-<thead>
-<tr>
-<th>Tendência</th>
-<th>Evidência Transversal</th>
-<th>Projetos</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>Descentralização de providers</strong></td>
-<td>Demanda por Google/Vertex nativo (#12639 Hermes), Kimi provider (#5600 ZeroClaw), bypass OpenRouter</td>
-<td>Hermes Agent, ZeroClaw</td>
-</tr>
-<tr>
-<td><strong>Privacidade e comunicação federada</strong></td>
-<td>SimpleX/Tox (#3093 PicoClaw), DeltaChat (#3063 PicoClaw), anonymous messaging</td>
-<td>PicoClaw, Hermes Agent</td>
-</tr>
-<tr>
-<td><strong>Eficiência de custo</strong></td>
-<td>Prefix cache optimization (CoPaw), context pruning (NanoBot), offline pricing (ZeroClaw)</td>
-<td>CoPaw, NanoBot, ZeroClaw</td>
-</tr>
-<tr>
-<td><strong>Desktop como cidadãos de primeira</strong></td>
-<td>i18n Desktop (#37897 Hermes), crash loops ~128K tokens, Electron stability</td>
-<td>Hermes Agent</td>
-</tr>
-<tr>
-<td><strong>Agent-to-Agent (A2A)</strong></td>
-<td>RFCs em ZeroClaw, native delegation em NanoBot, multi-agent collaboration</td>
-<td>ZeroClaw, NanoBot, CoPaw</td>
-</tr>
-<tr>
-<td><strong>Computer-use</strong></td>
-<td>RFC em ZeroClaw (#6909), screenshots + mouse/keyboard</td>
-<td>ZeroClaw</td>
-</tr>
-<tr>
-<td><strong>WASM como runtime de plugins</strong></td>
-<td>ZeroClaw RFC #8140, plugin system em CoPaw (#5221)</td>
-<td>ZeroClaw, CoPaw</td>
-</tr>
-</tbody></table>
-<h3>7.2 Contradições e Desalinhamentos</h3>
-<table>
-<thead>
-<tr>
-<th>Problema</th>
-<th>Projetos</th>
-<th>Impacto</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>Messaging &quot;ultra-lightweight&quot; vs. stack real</strong></td>
-<td>NanoBot — Python + Node.js contradiz claims</td>
-<td>15 comentários de usuários</td>
-</tr>
-<tr>
-<td><strong>Zero-config vs. setup real</strong></td>
-<td>IronClaw — web search força API key</td>
-<td>4 issues de autenticação</td>
-</tr>
-<tr>
-<td><strong>CLI vs. Desktop UX</strong></td>
-<td>Hermes Agent — locale files existem mas não são usados no Electron</td>
-<td>Baixa adoção internacional</td>
-</tr>
-</tbody></table>
-<h3>7.3 Recomendações para o Ecossistema</h3>
-<ol>
-<li><strong>Segurança de canais precisa de framework unificado</strong> — 4+ projetos com vulnerabilidades simultâneas sugere necessidade de shared security primitives</li>
-<li><strong>A2A standardization incipiente</strong> — múltiplos projetos implementando versões proprietárias; convergência beneficiaria comunidade</li>
-<li><strong>Eficiência de contexto como diferencial competitivo</strong> — projetos que resolverem cache/pruning primeiro terão vantagem em custo</li>
-<li><strong>Messaging de produto precisa de alinhamento técnico</strong> — contradições (NanoBot, IronClaw) geram frustração e diluem positioning</li>
-</ol>
-<hr>
-<p><strong>Fim do Relatório</strong></p>
-<p><em>Dados extraídos dos relatórios de comunidade de 2026-06-30. Métricas podem variar conforme fuso horário de coleta.</em></p>
-<hr>
-<h2>Relatórios detalhados dos projetos relacionados</h2>
-<details>
-<summary><strong>NanoBot</strong> — <a href="https://github.com/HKUDS/nanobot">HKUDS/nanobot</a></summary>
-
-<h1>Relatório do Projeto NanoBot — 2026-06-30</h1>
-<h2>1. Panorama do Dia</h2>
-<p>O NanoBot apresenta <strong>alta atividade comunitária</strong> em 30 de junho de 2026, com 31 PRs e 5 issues atualizadas nas últimas 24h. A atividade concentra-se em <strong>segurança, performance e experiência de usuário</strong>, com dois PRs já merged (#4502, #4570) e множество pull requests aguardando revisão. O projeto demonstra maturidade no gerenciamento de subagentes e expansão de canais, com lançamentos de features para A2A delegation, WeChat streaming e configurações de proxy por provider.</p>
-<hr>
-<h2>2. Lançamentos</h2>
-<p><strong>Nenhum release detectado nas últimas 24h.</strong></p>
-<p>O projeto mantém 0 releases no período, sugerindo foco em consolidação de PRs abertos antes de um próximo tagged release. A última atividade de merge foi em 2026-06-29, com os PRs #4502 (gateway webhooks) e #4570 (per-subagent model override) fechados.</p>
-<hr>
-<h2>3. Progresso do Projeto</h2>
-<h3>PRs Merged/Fechados Hoje</h3>
-<table>
-<thead>
-<tr>
-<th>#</th>
-<th>Título</th>
-<th>Tipo</th>
-<th>Destaque</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a href="https://github.com/HKUDS/nanobot/pull/4502">#4502</a></td>
-<td>Add gateway webhook triggers</td>
-<td>enhancement, feature</td>
-<td>Sistema unificado de webhooks com ingress HTTP compartilhado, limites de body e timeouts. Substitui listener health inline antigo por dispatch de rotas webhook.</td>
-</tr>
-<tr>
-<td><a href="https://github.com/HKUDS/nanobot/pull/4570">#4570</a></td>
-<td>feat(spawn): add per-subagent model override</td>
-<td>duplicate</td>
-<td>Implementa #4231 — permite override de modelo por subagente diretamente na tool <code>spawn</code>. Fechado como duplicado (recurso já coberto por #4291).</td>
-</tr>
-</tbody></table>
-<h3>Destaque de Avanços</h3>
-<ul>
-<li><strong>Webhook Gateway</strong>: Nova config top-level <code>webhooks</code> permite triggers inbound genéricos e GitHub-compatíveis via HTTP.</li>
-<li><strong>Subagent Model Presets</strong>: Funcionalidade de override de modelo por subagente em estágio avançado (PR #4291 aberto).</li>
-</ul>
-<hr>
-<h2>4. Temas Quentes da Comunidade</h2>
-<h3>Issues com Maior Engajamento</h3>
-<table>
-<thead>
-<tr>
-<th>#</th>
-<th>Título</th>
-<th align="center">Comentários</th>
-<th align="center">👍</th>
-<th align="center">Status</th>
-<th>Tema Principal</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a href="https://github.com/HKUDS/nanobot/issues/660">#660</a></td>
-<td>Project claims &#39;ultra-lightweight&#39; mas inclui Node.js</td>
-<td align="center"><strong>15</strong></td>
-<td align="center"><strong>5</strong></td>
-<td align="center">CLOSED</td>
-<td><strong>Imagem do Projeto / Dependências</strong></td>
-</tr>
-<tr>
-<td><a href="https://github.com/HKUDS/nanobot/issues/4419">#4419</a></td>
-<td>Automatic reasoning effort escalation</td>
-<td align="center">4</td>
-<td align="center">0</td>
-<td align="center">OPEN</td>
-<td><strong>Feature de Reasoning</strong></td>
-</tr>
-<tr>
-<td><a href="https://github.com/HKUDS/nanobot/issues/4222">#4222</a></td>
-<td>max_messages truncation invalida prefix/prompt caching</td>
-<td align="center">3</td>
-<td align="center">0</td>
-<td align="center">CLOSED</td>
-<td><strong>Performance / Cache</strong></td>
-</tr>
-</tbody></table>
-<h3>Análise dos Temas</h3>
-<p><strong>#660 — &quot;Ultra-lightweight&quot; vs Node.js (maior debate)</strong>
-Issue com 15 comentários e 5 👍 closed. Autor cuestiona a contradição entre a claim de &quot;ultra-lightweight&quot; e a dependência de Python + Node.js no Dockerfile. Este debate reflete <strong>expectativa de mercado</strong> — usuários esperam minimalistmo real de assistentes pessoais leves. O time respondeu, mas a issue foi closed sem resolução clara do messaging.</p>
-<p><strong>#4419 — Reasoning Effort Escalation</strong>
-Feature request para controlar profundidade de raciocínio do modelo via parâmetro <code>reasoningEffort</code>. Alinha-se com tendência de mercado de modelos que expõem &quot;think depth&quot;. 4 comentários indicam interesse em implementação.</p>
-<p><strong>#4222 — Prompt Caching Bug (closed)</strong>
-Bug de contexto governance pipeline que fazia o prefixo de mensagens shifting/mutating a cada turno, derrotando prompt caching. Fechado com 3 comentários — indica correção em progresso ou já merged.</p>
-<hr>
-<h2>5. Bugs e Estabilidade</h2>
-<h3>Issues Bug Reportadas</h3>
-<table>
-<thead>
-<tr>
-<th>#</th>
-<th>Título</th>
-<th align="center">Severidade</th>
-<th align="center">Status</th>
-<th>Detalhe</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a href="https://github.com/HKUDS/nanobot/issues/4592">#4592</a></td>
-<td>ExecTool path extraction misses absolute paths after <code>=</code></td>
-<td align="center"><strong>Security</strong></td>
-<td align="center">OPEN</td>
-<td>Regex não captura paths após <code>=</code> (ex: <code>curl --output=/etc/passwd</code>), bypassando workspace containment. PR #4594 associado.</td>
-</tr>
-<tr>
-<td><a href="https://github.com/HKUDS/nanobot/issues/4222">#4222</a></td>
-<td>max_messages truncation invalida prefix/prompt caching</td>
-<td align="center">Performance</td>
-<td align="center">CLOSED</td>
-<td>Slice de history causa drift do prefixo enviado ao LLM.</td>
-</tr>
-</tbody></table>
-<h3>PRs de Fix em Aberto</h3>
-<table>
-<thead>
-<tr>
-<th>#</th>
-<th>Título</th>
-<th>Tags</th>
-<th>Impacto</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a href="https://github.com/HKUDS/nanobot/pull/4594">#4594</a></td>
-<td>fix(exec): extract absolute paths after equals sign</td>
-<td><strong>fix, security</strong></td>
-<td><strong>Crítico</strong> — corrige bypass de sandbox via <code>=</code></td>
-</tr>
-<tr>
-<td><a href="https://github.com/HKUDS/nanobot/pull/4583">#4583</a></td>
-<td>fix(config): guard tool-key migration against null sections</td>
-<td>fix</td>
-<td>Config migration crash com sections null</td>
-</tr>
-<tr>
-<td><a href="https://github.com/HKUDS/nanobot/pull/4584">#4584</a></td>
-<td>fix(mcp): redact credentials from URLs before logging</td>
-<td><strong>fix, security</strong></td>
-<td><strong>Moderado</strong> — secrets em URLs de MCP podem vazar em logs</td>
-</tr>
-<tr>
-<td><a href="https://github.com/HKUDS/nanobot/pull/4567">#4567</a></td>
-<td>fix(weixin): stream LLM calls + buffer reply delivery</td>
-<td>channel, fix</td>
-<td>Corrige drop de tool_use em relays upstream</td>
-</tr>
-</tbody></table>
-<p><strong>Alerta de Segurança</strong>: Dois PRs de segurança (#4594, #4584) aguardam merge. O fix #4594 é especialmente crítico — corrige bypass de workspace containment.</p>
-<hr>
-<h2>6. Pedidos de Features e Sinais de Roadmap</h2>
-<h3>Novas Features Solicitadas</h3>
-<table>
-<thead>
-<tr>
-<th>#</th>
-<th>Título</th>
-<th align="center">Sinais de Roadmap</th>
-<th align="center">Relevância</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a href="https://github.com/HKUDS/nanobot/issues/4419">#4419</a></td>
-<td>Automatic reasoning effort escalation</td>
-<td align="center">Modelo de reasoning como cidadão de primeira classe</td>
-<td align="center"><strong>Alta</strong></td>
-</tr>
-<tr>
-<td><a href="https://github.com/HKUDS/nanobot/issues/4580">#4580</a></td>
-<td>Use conda environment for subprocesses</td>
-<td align="center">Suporte a virtual environments mais robusto</td>
-<td align="center"><strong>Média</strong></td>
-</tr>
-<tr>
-<td><a href="https://github.com/HKUDS/nanobot/pull/4571">#4571</a></td>
-<td>Native A2A peer delegation</td>
-<td align="center">Agentes colaborativos em equipe</td>
-<td align="center"><strong>Alta</strong></td>
-</tr>
-</tbody></table>
-<h3>PRs de Feature em Desenvolvimento</h3>
-<table>
-<thead>
-<tr>
-<th>#</th>
-<th>Título</th>
-<th>Escopo</th>
-<th align="center">Progresso</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a href="https://github.com/HKUDS/nanobot/pull/4291">#4291</a></td>
-<td>Subagents com configurable model presets</td>
-<td>Model override por subagente</td>
-<td align="center">Review</td>
-</tr>
-<tr>
-<td><a href="https://github.com/HKUDS/nanobot/pull/4578">#4578</a></td>
-<td>Provider-scoped proxy config</td>
-<td>Proxy por provider (OpenAI Codex incluso)</td>
-<td align="center">Review</td>
-</tr>
-<tr>
-<td><a href="https://github.com/HKUDS/nanobot/pull/4581">#4581</a></td>
-<td>Reducing context usage &amp; costs</td>
-<td>Performance de tokens</td>
-<td align="center">Review</td>
-</tr>
-<tr>
-<td><a href="https://github.com/HKUDS/nanobot/pull/4588">#4588</a></td>
-<td>Pruning/compression de tool outputs</td>
-<td>Performance de contexto</td>
-<td align="center">Review</td>
-</tr>
-<tr>
-<td><a href="https://github.com/HKUDS/nanobot/pull/4571">#4571</a></td>
-<td>Native A2A peer delegation</td>
-<td>Sistema multi-agente</td>
-<td align="center">Review</td>
-</tr>
-</tbody></table>
-<p><strong>Sinais de Roadmap Fortes</strong>:</p>
-<ol>
-<li><strong>Otimização de contexto</strong> — dois PRs parallelos (#4581, #4588) indicam prioridade em reduzir custos de tokens</li>
-<li><strong>A2A Collaboration</strong> — native agent-to-agent com registry, delegation e depth guard (#4571)</li>
-<li><strong>Provider Flexibility</strong> — proxy por provider, model presets por subagente</li>
-</ol>
-<hr>
-<h2>7. Resumo de Feedback dos Usuários</h2>
-<h3>Dores Reais Identificadas</h3>
-<table>
-<thead>
-<tr>
-<th>Dor</th>
-<th>Evidence</th>
-<th>Impacto</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>Complexidade de setup vs. messaging</strong></td>
-<td>Issue #660 (15 comments)</td>
-<td>Usuários esperam &quot;ultra-lightweight&quot; real; Python + Node.js contradiz messaging</td>
-</tr>
-<tr>
-<td><strong>Custo de tokens alto</strong></td>
-<td>PRs #4581, #4588 em paralelo</td>
-<td>Usuários com modelos de contexto limitado precisam de otimização</td>
-</tr>
-<tr>
-<td><strong>Gestão de subagentes limitada</strong></td>
-<td>#4291, #4571</td>
-<td>Padrões de spawn sem override de modelo bloqueiam arquiteturas flexíveis</td>
-</tr>
-<tr>
-<td><strong>Dificuldade com virtual environments</strong></td>
-<td>Issue #4580</td>
-<td>Usuários em cenários reais precisam de conda/venv para exec subprocessos</td>
-</tr>
-<tr>
-<td><strong>OAuth provider setup confuso</strong></td>
-<td>PR #4573</td>
-<td>Usuários não sabiam configurar oauth-only providers como main provider</td>
-</tr>
-</tbody></table>
-<h3>Cenários de Uso Emergentes</h3>
-<ul>
-<li><strong>Multi-agente teams</strong>: Supervisor → Researcher → Writer (A2A via #4571)</li>
-<li><strong>Long-running sessions</strong>: Necessidade de prompt caching funcional (#4222)</li>
-<li><strong>Enterprise deployments</strong>: Proxy por provider (#4578), segurança em MCP (#4584)</li>
-<li><strong>Cross-platform</strong>: WeChat streaming (#4567)</li>
-</ul>
-<h3>Satisfação/Insatisfação</h3>
-<p><strong>Positivo</strong>: Comunidade ativa com 31 PRs em 24h, muitos &quot;good first issues&quot;, e contributors diversos (chengyongru, hamb1y, boogieLing, findshan com múltiplos PRs).</p>
-<p><strong>Pontos de Atenção</strong>: Messaging de &quot;ultra-lightweight&quot; gera expectativas desalinhadas; Issues de segurança (#4592) precisam de atenção urgente.</p>
-<hr>
-<h2>8. Backlog que Merece Atenção</h2>
-<h3>Issues Sem Resposta ou Stale</h3>
-<table>
-<thead>
-<tr>
-<th>#</th>
-<th>Título</th>
-<th>Criado</th>
-<th align="center">Status</th>
-<th align="center">Urgência</th>
-<th>Notas</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a href="https://github.com/HKUDS/nanobot/issues/4419">#4419</a></td>
-<td>Automatic reasoning effort escalation</td>
-<td>2026-06-20</td>
-<td align="center">OPEN</td>
-<td align="center"><strong>Alta</strong></td>
-<td>10 dias sem resposta; feature alinhada com trend de mercado</td>
-</tr>
-<tr>
-<td><a href="https://github.com/HKUDS/nanobot/issues/4580">#4580</a></td>
-<td>conda environment for subprocesses</td>
-<td>2026-06-28</td>
-<td align="center">OPEN</td>
-<td align="center"><strong>Média</strong></td>
-<td>2 dias; 1 comentário; feature request concreta</td>
-</tr>
-<tr>
-<td><a href="https://github.com/HKUDS/nanobot/issues/4592">#4592</a></td>
-<td>ExecTool path extraction bug</td>
-<td>2026-06-29</td>
-<td align="center">OPEN</td>
-<td align="center"><strong>Crítica</strong></td>
-<td>Security; PR #4594 aberto; precisa de review</td>
-</tr>
-</tbody></table>
-<h3>PRs Antigos em Aberto</h3>
-<table>
-<thead>
-<tr>
-<th>#</th>
-<th>Título</th>
-<th>Criado</th>
-<th align="center">Dias Aberto</th>
-<th align="center">Prioridade</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a href="https://github.com/HKUDS/nanobot/pull/4293">#4293</a></td>
-<td>fix(agent): pending_queue para subagent result injection</td>
-<td>2026-06-11</td>
-<td align="center"><strong>19 dias</strong></td>
-<td align="center"><strong>Alta</strong></td>
-</tr>
-<tr>
-<td><a href="https://github.com/HKUDS/nanobot/pull/4291">#4291</a></td>
-<td>Subagents com configurable model presets</td>
-<td>2026-06-11</td>
-<td align="center"><strong>19 dias</strong></td>
-<td align="center"><strong>Alta</strong></td>
-</tr>
-<tr>
-<td><a href="https://github.com/HKUDS/nanobot/pull/4571">#4571</a></td>
-<td>Native A2A peer delegation</td>
-<td>2026-06-28</td>
-<td align="center">2 dias</td>
-<td align="center"><strong>Alta</strong></td>
-</tr>
-</tbody></table>
-<p><strong>Recomendações de Priorização</strong>:</p>
-<ol>
-<li><strong>Review urgente</strong>: #4594 (security fix) e #4584 (credential redaction)</li>
-<li><strong>Triagem de features</strong>: #4419 (reasoning effort) — feature competitiva</li>
-<li><strong>Revival de PRs</strong>: #4291 e #4293 com 19 dias — muitos PRs novos podem conflitar</li>
-</ol>
-<hr>
-<h2>Métricas Resumidas (2026-06-30)</h2>
-<table>
-<thead>
-<tr>
-<th>Métrica</th>
-<th>Valor</th>
-<th align="center">Tendência</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Issues ativas (24h)</td>
-<td>5</td>
-<td align="center">Neutra</td>
-</tr>
-<tr>
-<td>PRs atualizados (24h)</td>
-<td>31</td>
-<td align="center"><strong>Alta</strong></td>
-</tr>
-<tr>
-<td>PRs fechados/merged (24h)</td>
-<td>2</td>
-<td align="center">—</td>
-</tr>
-<tr>
-<td>Releases</td>
-<td>0</td>
-<td align="center">—</td>
-</tr>
-<tr>
-<td>Bugs security em aberto</td>
-<td>2 (#4592, #4584)</td>
-<td align="center"><strong>Atenção</strong></td>
-</tr>
-<tr>
-<td>Features em review</td>
-<td>18+</td>
-<td align="center"><strong>Muito Ativa</strong></td>
-</tr>
-</tbody></table>
-<hr>
-<p><em>Relatório gerado automaticamente com base em dados GitHub de 2026-06-30. Para mais detalhes, visite <a href="https://github.com/HKUDS/nanobot">github.com/HKUDS/nanobot</a>.</em></p>
-</details>
-
-<details>
-<summary><strong>Hermes Agent</strong> — <a href="https://github.com/nousresearch/hermes-agent">nousresearch/hermes-agent</a></summary>
-
-<h1>Relatório do Projeto Hermes Agent — 2026-06-30</h1>
-<h2>1. Panorama do Dia</h2>
-<p>O projeto Hermes Agent mantém <strong>alta atividade</strong> com 50 issues e 50 PRs atualizados nas últimas 24h. A taxa de resolução de PRs está moderada (8 de 50 merged/fechados), enquanto issues permanecem majoritariamente abertas (48 de 50 ativas). Observa-se foco em <strong>estabilidade de provedores</strong> (Gemini, Bedrock, Qwen), <strong>segurança de gateways</strong> e <strong>refatoração de módulos</strong> como text_sanitizer e cli_theme. Nenhum release foi publicado hoje, indicando fase de consolidação antes de próximo tag.</p>
-<hr>
-<h2>2. Lançamentos</h2>
-<p><strong>Nenhum release publicado nas últimas 24h.</strong></p>
-<p>O projeto encontra-se em período de maturação de contributions antes de novo tag. Usuários em produção devem acompanhar a branch <code>main</code> para próximas atualizações.</p>
-<hr>
-<h2>3. Progresso do Projeto</h2>
-<h3>PRs Fechados/Merged Hoje</h3>
-<table>
-<thead>
-<tr>
-<th>PR</th>
-<th>Título</th>
-<th>Impacto</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a href="https://github.com/NousResearch/hermes-agent/pull/55184">#55184</a></td>
-<td>fix(acp): stop draining queued prompts after cancel</td>
-<td><strong>Crítico</strong> — resolve loop de prompts após cancelamento ACP</td>
-</tr>
-<tr>
-<td><a href="https://github.com/NousResearch/hermes-agent/pull/55182">#55182</a></td>
-<td>fix: clarify pre-update backup disable hint</td>
-<td>Correção de documentação de backup</td>
-</tr>
-</tbody></table>
-<h3>PRs Abertos com Alta Prioridade</h3>
-<table>
-<thead>
-<tr>
-<th>PR</th>
-<th>Título</th>
-<th>Componentes</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a href="https://github.com/NousResearch/hermes-agent/pull/55199">#55199</a></td>
-<td>fix: sanitize &#39;unexpected status 401 Unauthorized&#39; in gateway chat output</td>
-<td><strong>Segurança</strong> — impede vazamento de credenciais em superfícies TUI/Discord/Telegram</td>
-</tr>
-<tr>
-<td><a href="https://github.com/NousResearch/hermes-agent/pull/55198">#55198</a></td>
-<td>fix(runtime): honor NOUS_INFERENCE_BASE_URL across pool/explicit/aux paths</td>
-<td>Runtime — garante variável de ambiente para endpoints auto-hospedados</td>
-</tr>
-<tr>
-<td><a href="https://github.com/NousResearch/hermes-agent/pull/55197">#55197</a></td>
-<td>fix(browser): bound provider session JSON reads</td>
-<td><strong>Segurança</strong> — limita reads de sessões browser sem byte cap</td>
-</tr>
-<tr>
-<td><a href="https://github.com/NousResearch/hermes-agent/pull/55190">#55190</a></td>
-<td>refactor: extract text sanitization from gateway/run.py</td>
-<td><strong>Manutenibilidade</strong> — reduz 280 linhas de <code>gateway/run.py</code> (18.844 linhas)</td>
-</tr>
-<tr>
-<td><a href="https://github.com/NousResearch/hermes-agent/pull/55189">#55189</a></td>
-<td>refactor: extract color/theme utilities from cli.py</td>
-<td><strong>Manutenibilidade</strong> — extrai ~300 linhas de <code>cli.py</code> (15.687 linhas)</td>
-</tr>
-<tr>
-<td><a href="https://github.com/NousResearch/hermes-agent/pull/55185">#55185</a></td>
-<td>fix(simplex): accept non-audio file transfers via /freceive</td>
-<td>SimpleX — suporte a imagens/PDFs em transfers</td>
-</tr>
-<tr>
-<td><a href="https://github.com/NousResearch/hermes-agent/pull/55193">#55193</a></td>
-<td>fix(moa): skip disabled presets in exact_moa_preset_name</td>
-<td>MoA — impede switch implícito para presets desabilitados</td>
-</tr>
-</tbody></table>
-<hr>
-<h2>4. Temas Quentes da Comunidade</h2>
-<h3>Issues com Maior Engajamento</h3>
-<table>
-<thead>
-<tr>
-<th>Issue</th>
-<th>Título</th>
-<th>Comentários</th>
-<th>👍</th>
-<th>Tema Principal</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a href="https://github.com/NousResearch/hermes-agent/issues/12639">#12639</a></td>
-<td>Support for Native Google / Vertex AI Provider</td>
-<td><strong>12</strong></td>
-<td><strong>10</strong></td>
-<td>Provedor alternativo ao OpenRouter</td>
-</tr>
-<tr>
-<td><a href="https://github.com/NousResearch/hermes-agent/issues/20866">#20866</a></td>
-<td>400 format_error on Qwen3.6-27B — System message must be at the beginning</td>
-<td><strong>6</strong></td>
-<td>0</td>
-<td>Compatibilidade com vLLM/Qwen</td>
-</tr>
-<tr>
-<td><a href="https://github.com/NousResearch/hermes-agent/issues/37897">#37897</a></td>
-<td>Add i18n / language selector support (Desktop)</td>
-<td><strong>4</strong></td>
-<td>1</td>
-<td>Localização de UI Desktop</td>
-</tr>
-<tr>
-<td><a href="https://github.com/NousResearch/hermes-agent/issues/53676">#53676</a></td>
-<td>MCP HTTP transport: wigai server fails to initialize</td>
-<td><strong>4</strong></td>
-<td>0</td>
-<td>Transporte MCP via HTTP</td>
-</tr>
-<tr>
-<td><a href="https://github.com/NousResearch/hermes-agent/issues/42405">#42405</a></td>
-<td>Memory at capacity → replace zero-match retry loop → silent hang</td>
-<td><strong>3</strong></td>
-<td>0</td>
-<td>Robustez de memória em limite</td>
-</tr>
-<tr>
-<td><a href="https://github.com/NousResearch/hermes-agent/issues/46142">#46142</a></td>
-<td>Matrix gateway — mautrix migration breaks inbound message dispatch</td>
-<td><strong>3</strong></td>
-<td>1</td>
-<td>Migração de cliente Matrix</td>
-</tr>
-</tbody></table>
-<h3>Análise de Demandas</h3>
-<p><strong>Provedores Alternativos (🔥)</strong>: A issue #12639 com 12 comentários e 10 👍 indica forte demanda por bypass do OpenRouter para Google/Vertex AI. Usuários enfrentam HTTP 402 (erros de billing) e rate limits, sugerindo necessidade urgente de suporte nativo.</p>
-<p><strong>Compatibilidade Qwen/vLLM</strong>: Issue #20866 demonstra fragilidade em auxiliary tasks com mensagens de sistema fora de posição — possível edge case em templates de chat.</p>
-<p><strong>Desktop i18n</strong>: Apesar de locale files existirem para CLI/TUI (#37897), a UI Electron não os utiliza. Demanda por localização indica adoção internacional crescendo.</p>
-<hr>
-<h2>5. Bugs e Estabilidade</h2>
-<h3>Por Severidade (P1 — Críticos)</h3>
-<table>
-<thead>
-<tr>
-<th>Issue</th>
-<th>Título</th>
-<th>Componente</th>
-<th>Status</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a href="https://github.com/NousResearch/hermes-agent/issues/42405">#42405</a></td>
-<td>Memory at capacity → replace zero-match retry loop → no response</td>
-<td>agent/memory</td>
-<td><strong>ABERTO</strong></td>
-</tr>
-<tr>
-<td><a href="https://github.com/NousResearch/hermes-agent/issues/46142">#46142</a></td>
-<td>Matrix gateway mautrix migration breaks inbound dispatch</td>
-<td>gateway/matrix</td>
-<td><strong>FECHADO</strong> (provavelmente após PR)</td>
-</tr>
-</tbody></table>
-<h3>Por Severidade (P2 — Altos)</h3>
-<table>
-<thead>
-<tr>
-<th>Issue</th>
-<th>Título</th>
-<th>Componente</th>
-<th>Status</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a href="https://github.com/NousResearch/hermes-agent/issues/55143">#55143</a></td>
-<td>Signal send crashes (UnicodeEncodeError) on lone surrogate</td>
-<td>gateway/signal</td>
-<td>ABERTO</td>
-</tr>
-<tr>
-<td><a href="https://github.com/NousResearch/hermes-agent/issues/55125">#55125</a></td>
-<td>Native Gemini: parallel tool calls emit consecutive same-role contents</td>
-<td>agent/gemini</td>
-<td>ABERTO</td>
-</tr>
-<tr>
-<td><a href="https://github.com/NousResearch/hermes-agent/issues/55113">#55113</a></td>
-<td>Telegram gateway force-enabled by TELEGRAM_BOT_TOKEN env</td>
-<td>gateway/telegram</td>
-<td>ABERTO</td>
-</tr>
-<tr>
-<td><a href="https://github.com/NousResearch/hermes-agent/issues/55147">#55147</a></td>
-<td>Gateway write-approval toggles bypass slash admin subcommand boundaries</td>
-<td>gateway/auth</td>
-<td>ABERTO</td>
-</tr>
-<tr>
-<td><a href="https://github.com/NousResearch/hermes-agent/issues/55183">#55183</a></td>
-<td>ACP cancellation drains queued prompts after interrupted turn</td>
-<td>acp</td>
-<td>ABERTO</td>
-</tr>
-</tbody></table>
-<h3>Observações de Estabilidade</h3>
-<ul>
-<li><strong>Desktop crash-loops</strong>: Issue #55191 reporta crash do renderer Electron em ~128K tokens no macOS — problema de contexto compaction afeta usabilidade.</li>
-<li><strong>Segurança em سطح gateway</strong>: Issues #55147 (write-approval bypass) e #55199 (401 sanitizer leak) indicam superfície de ataque em expansão com novos gateways.</li>
-<li><strong>MCP transporte HTTP</strong>: Issue #53676 demonstra incompatibilidade com handshake MCP — usuários de servers HTTP personalizados enfrentam 0 servidores ativos.</li>
-</ul>
-<hr>
-<h2>6. Pedidos de Features e Sinais de Roadmap</h2>
-<h3>Features Solicitadas com Maior Potencial</h3>
-<table>
-<thead>
-<tr>
-<th>Issue</th>
-<th>Título</th>
-<th>Componente</th>
-<th>👍</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a href="https://github.com/NousResearch/hermes-agent/issues/12639">#12639</a></td>
-<td>Support for Native Google / Vertex AI Provider</td>
-<td>provider/gemini</td>
-<td><strong>10</strong></td>
-</tr>
-<tr>
-<td><a href="https://github.com/NousResearch/hermes-agent/issues/37897">#37897</a></td>
-<td>Add i18n / language selector support</td>
-<td>desktop</td>
-<td>1</td>
-</tr>
-<tr>
-<td><a href="https://github.com/NousResearch/hermes-agent/issues/55164">#55164</a></td>
-<td>Feature: add inference gateway as a provider for models</td>
-<td>plugins</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://github.com/NousResearch/hermes-agent/issues/55127">#55127</a></td>
-<td>feat(tts): support Kokoro emphasis and pause cues</td>
-<td>tool/tts</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://github.com/NousResearch/hermes-agent/issues/55169">#55169</a></td>
-<td>Feature: File visibility (.gitignored/hidden files in sidebar)</td>
-<td>desktop</td>
-<td>0</td>
-</tr>
-</tbody></table>
-<h3>Sinais de Roadmap</h3>
-<ol>
-<li><strong>Multi-provedor nativo</strong>: Demanda clara por Google/Vertex AI (#12639) e Inference Gateway (#55164) indica tendência de diversificação além do OpenRouter.</li>
-<li><strong>Voice/TTS advanced</strong>: Suporte a cues de ênfase e pausa para Kokoro (#55127) sugere investimento em qualidade de voz.</li>
-<li><strong>Desktop como cidadão de primeira</strong>: Issues de i18n (#37897), notifications (#55179), e file visibility (#55169) mostram que Desktop app está em evolução ativa.</li>
-</ol>
-<hr>
-<h2>7. Resumo de Feedback dos Usuários</h2>
-<h3>Dores Reais Identificadas</h3>
-<table>
-<thead>
-<tr>
-<th>Dor</th>
-<th>Frequência</th>
-<th>Cenário</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Rate limits/billing do OpenRouter</td>
-<td><strong>Alta</strong></td>
-<td>Usuários power-user do Gemini-3.1-pro</td>
-</tr>
-<tr>
-<td>Falha silenciosa de memória</td>
-<td><strong>Alta</strong></td>
-<td>Usuários com MEMORY.md em limite de caracteres</td>
-</tr>
-<tr>
-<td>Desktop instável em sessões longas</td>
-<td><strong>Média</strong></td>
-<td>Desenvolvedores com conversas ~128K tokens</td>
-</tr>
-<tr>
-<td>SimpleX: attachments perdidos</td>
-<td><strong>Média</strong></td>
-<td>Usuários SimpleX trocando imagens/documentos</td>
-</tr>
-<tr>
-<td>iMessage Photon: zombie sessions</td>
-<td><strong>Média</strong></td>
-<td>Usuários iMessage após restart do gateway</td>
-</tr>
-</tbody></table>
-<h3>Cenários de Uso Observados</h3>
-<ul>
-<li><strong>Dual-gateway</strong>: Issue #27933 demonstra uso simultâneo de Telegram + WhatsApp com dual-agent — padrão de uso real.</li>
-<li><strong>Self-hosted inference</strong>: Issues indicam interesse em绕过 provedores comerciais com endpoints auto-hospedados.</li>
-<li><strong>Professional Desktops</strong>: Crash-loops em threshold de tokens sugere uso em ambiente de trabalho com conversas extensas.</li>
-</ul>
-<hr>
-<h2>8. Backlog que Merece Atenção</h2>
-<h3>Issues Sem Resposta ou Aguardando Triagem</h3>
-<table>
-<thead>
-<tr>
-<th>Issue</th>
-<th>Título</th>
-<th>Idade</th>
-<th>Prioridade</th>
-<th>Riscos</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a href="https://github.com/NousResearch/hermes-agent/issues/27933">#27933</a></td>
-<td>Multiple critical issues: custom name, memory overflow, dual agents, Google Drive, TTS config</td>
-<td>~42 dias</td>
-<td>Variada</td>
-<td>Múltiplas quebras de UX</td>
-</tr>
-<tr>
-<td><a href="https://github.com/NousResearch/hermes-agent/issues/55196">#55196</a></td>
-<td>Cloud browser providers read session-create responses without body cap</td>
-<td>1 dia</td>
-<td>Segurança</td>
-<td>Potencial DoS</td>
-</tr>
-<tr>
-<td><a href="https://github.com/NousResearch/hermes-agent/issues/55147">#55147</a></td>
-<td>Gateway write-approval toggles bypass slash admin subcommand boundaries</td>
-<td>1 dia</td>
-<td><strong>P2 Segurança</strong></td>
-<td>Escalação de privilégios</td>
-</tr>
-<tr>
-<td><a href="https://github.com/NousResearch/hermes-agent/issues/55171">#55171</a></td>
-<td>Built-in TTS providers buffer unbounded upstream responses</td>
-<td>1 dia</td>
-<td>Segurança</td>
-<td>Potencial memory exhaustion</td>
-</tr>
-</tbody></table>
-<h3>Recomendações para Maintainers</h3>
-<ol>
-<li><strong>Priorizar segurança de gateway</strong> — múltiplas issues de unbounded reads e auth bypass emergiram hoje.</li>
-<li><strong>Triage da issue #27933</strong> — 42 dias sem resposta com múltiplas quebras reportedas.</li>
-<li><strong>Revisar PR #55199</strong> — sanitizer leak de 401 é severidade alta para produção.</li>
-<li><strong>Desktop memory management</strong> — crash em ~128K tokens afeta usabilidade profissional.</li>
-</ol>
-<hr>
-<p><em>Relatório gerado automaticamente com base em dados do GitHub de 2026-06-30. Última atualização: 2026-06-30T23:59:59Z.</em></p>
-</details>
-
-<details>
-<summary><strong>PicoClaw</strong> — <a href="https://github.com/sipeed/picoclaw">sipeed/picoclaw</a></summary>
-
-<h1>Relatório do Projeto PicoClaw — 2026-06-30</h1>
-<h2>1. Panorama do dia</h2>
-<p>O projeto PicoClaw apresenta atividade moderada nas últimas 24h, com 3 issues e 2 PRs atualizados. A taxa de atividade está dentro dos padrões típicos do repositório, com duas issues de bugs em aberto que requerem atenção — uma relacionada a renderização no Safari/iOS e outra sobre vazamento de tool calls em integrações com o Volcengine. Nenhum novo release foi publicado no período, sugerindo foco em estabilidade e validação de contribuições pendentes.</p>
-<hr>
-<h2>2. Lançamentos</h2>
-<p><strong>Nenhuma release publicada nas últimas 24h.</strong></p>
-<p>O projeto não registrou novas versões no período analisado. Recomenda-se monitorar as contribuições pendentes (#3063, #3156) para possível inclusão no próximo ciclo de release.</p>
-<hr>
-<h2>3. Progresso do projeto</h2>
-<p>Dois PRs abertos foram atualizados nas últimas 24h:</p>
-<ul>
-<li><p><strong>#3156</strong> — <em>feat(pico): emit per-turn LLM token usage on finalized message</em> (<a href="https://github.com/sipeed/picoclaw/pull/3156">github.com/sipeed/picoclaw/pull/3156</a>)<br>Proposta de trufae para expor métricas detalhadas de consumo de tokens (input/output separados) por turno de conversa no canal Pico. Este PR representa uma melhoria significativa em observabilidade, permitindo que consumidores downstream implementem rastreamento de custos por conversa.</p>
-</li>
-<li><p><strong>#3063</strong> — <em>feat: add deltachat gateway</em> (<a href="https://github.com/sipeed/picoclaw/pull/3063">github.com/sipeed/picoclaw/pull/3063</a>)<br>Adição de suporte ao gateway DeltaChat, expandindo as opções de conectividade do projeto para o protocolo de mensageria federada. Este PR está em revisão há 22 dias e demonstra interesse contínuo da comunidade em diversificar integrações.</p>
-</li>
-</ul>
-<p>Nenhum PR foi merged ou fechado no período.</p>
-<hr>
-<h2>4. Temas quentes da comunidade</h2>
-<p><strong>Issue com maior engajamento: #3093</strong> (<a href="https://github.com/sipeed/picoclaw/issues/3093">github.com/sipeed/picoclaw/issues/3093</a>)</p>
-<ul>
-<li><strong>Título:</strong> [Feature] I need SimpleX or Tox</li>
-<li><strong>Autor:</strong> Damian-o2</li>
-<li><strong>Comentários:</strong> 4 | <strong>Reações:</strong> 1</li>
-<li><strong>Resumo:</strong> Solicitação para adicionar suporte a gateways SimpleX ou Tox como alternativas de comunicação anônima e federada.</li>
-<li><strong>Análise:</strong> A demanda indica interesse da base de usuários em opções de mensageria que priorizem privacidade e descentralização, alinhando-se com a tendência observada no PR #3063 (deltachat). Este é um indicativo de que a comunidade valoriza a expansão do ecossistema de gateways.</li>
-</ul>
-<hr>
-<h2>5. Bugs e estabilidade</h2>
-<p><strong>Bug crítico identificado: #3153</strong> (<a href="https://github.com/sipeed/picoclaw/issues/3153">github.com/sipeed/picoclaw/issues/3153</a>)</p>
-<ul>
-<li><strong>Severidade:</strong> Média-alta</li>
-<li><strong>Título:</strong> Volcengine Doubao Seed tool calls occasionally leak as <code>&lt;seed:tool_call&gt;</code> text</li>
-<li><strong>Autor:</strong> ms8great</li>
-<li><strong>Ambiente:</strong> PicoClaw v0.2.8, Volcengine Coding Plan, <code>doubao-seed-2.0-pro</code></li>
-<li><strong>Resumo:</strong> Tool calls são retornadas como texto raw em vez de executadas, vazando tags XML para o usuário final.</li>
-<li><strong>Impacto:</strong> Degrada a experiência do usuário e pode expor informações de implementação. Afeta especificamente integrações com provedores de IA chineses.</li>
-</ul>
-<p><strong>Bug relacionado a plataforma: #3090</strong> (<a href="https://github.com/sipeed/picoclaw/issues/3090">github.com/sipeed/picoclaw/issues/3090</a>)</p>
-<ul>
-<li><strong>Status:</strong> FECHADO (após 19 dias)</li>
-<li><strong>Título:</strong> Panel does not work on Safari on iOS versions below 16.4</li>
-<li><strong>Autor:</strong> 3m377</li>
-<li><strong>Severidade:</strong> Média</li>
-<li><strong>Resumo:</strong> Problema de compatibilidade com navegadores Safari em iOS anteriores à versão 16.4.</li>
-<li><strong>Observação:</strong> O fechamento desta issue indica resolução, mas os detalhes da correção não estão disponíveis neste snapshot.</li>
-</ul>
-<hr>
-<h2>6. Pedidos de features e sinais de roadmap</h2>
-<p>Três solicitações de feature identificadas no período:</p>
-<ol>
-<li><p><strong>#3156</strong> — Emissão de métricas de token usage por turno (<a href="https://github.com/sipeed/picoclaw/pull/3156">github.com/sipeed/picoclaw/pull/3156</a>)<br>Facilita implementação de dashboards de custos e otimização de uso de LLMs.</p>
-</li>
-<li><p><strong>#3063</strong> — Suporte a gateway DeltaChat (<a href="https://github.com/sipeed/picoclaw/pull/3063">github.com/sipeed/picoclaw/pull/3063</a>)<br>Integração com protocolo federado de mensageria.</p>
-</li>
-<li><p><strong>#3093</strong> — Suporte a SimpleX/Tox (<a href="https://github.com/sipeed/picoclaw/issues/3093">github.com/sipeed/picoclaw/issues/3093</a>)<br>Demanda por comunicação anônima e descentralizada.</p>
-</li>
-</ol>
-<p><strong>Sinal de tendência:</strong> A comunidade demonstra interesse consistente em expandir as opções de gateways de comunicação, tanto federados (#3063, #3093) quanto proprietários (Volcengine via #3153). Isso pode indicar direção estratégica para o roadmap.</p>
-<hr>
-<h2>7. Resumo de feedback dos usuários</h2>
-<table>
-<thead>
-<tr>
-<th>Categoria</th>
-<th>Observação</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>Usabilidade em mobile</strong></td>
-<td>Bug de renderização no Safari/iOS (&lt; 16.4) sugere necessidade de ampliar testes de compatibilidade com navegadores alternativos.</td>
-</tr>
-<tr>
-<td><strong>Integrações de IA</strong></td>
-<td>Problema com tool calls do Volcengine indica possíveis gaps em testes de integrações com LLMs asiáticos.</td>
-</tr>
-<tr>
-<td><strong>Privacidade</strong></td>
-<td>Usuários solicitam gateways que ofereçam comunicação anônima (SimpleX, Tox).</td>
-</tr>
-<tr>
-<td><strong>Observabilidade</strong></td>
-<td>Interesse em métricas granulares de token usage demonstra maturidade na operação do projeto em produção.</td>
-</tr>
-</tbody></table>
-<hr>
-<h2>8. Backlog que merece atenção</h2>
-<p><strong>Issues sem resolução há mais de 20 dias (stale):</strong></p>
-<table>
-<thead>
-<tr>
-<th>Issue</th>
-<th>Tipo</th>
-<th>Idade</th>
-<th>Prioridade de revisão</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>#3093 — SimpleX/Tox gateway</td>
-<td>Feature</td>
-<td>20 dias</td>
-<td>Alta (engajamento)</td>
-</tr>
-<tr>
-<td>#3090 — Safari iOS &lt; 16.4</td>
-<td>Bug</td>
-<td>20 dias</td>
-<td>Resolvida (fechada)</td>
-</tr>
-<tr>
-<td>#3153 — Volcengine tool leak</td>
-<td>Bug</td>
-<td>8 dias</td>
-<td>Crítica</td>
-</tr>
-<tr>
-<td>#3063 — DeltaChat gateway</td>
-<td>Feature</td>
-<td>22 dias</td>
-<td>Média-alta</td>
-</tr>
-<tr>
-<td>#3156 — Token usage metrics</td>
-<td>Feature</td>
-<td>8 dias</td>
-<td>Média-alta</td>
-</tr>
-</tbody></table>
-<p><strong>Recomendação:</strong> A issue #3093 (#3093) possui 4 comentários e 1 reação, indicando demanda ativa da comunidade. Dado que o PR #3063 (DeltaChat) está em revisão há 22 dias, considera-se que ambas as solicitações de gateway poderiam ser avaliadas em conjunto para definir prioridade estratégica.</p>
-<hr>
-<p><em>Relatório gerado em 2026-06-30 com base em dados do repositório sipeed/picoclaw.</em></p>
-</details>
-
-<details>
-<summary><strong>IronClaw</strong> — <a href="https://github.com/nearai/ironclaw">nearai/ironclaw</a></summary>
-
-
-<h1>Relatório do Projeto IronClaw — 2026-06-30</h1>
-<hr>
-<h2>1. Panorama do Dia</h2>
-<p>O projeto IronClaw apresenta <strong>alta atividade de desenvolvimento</strong> em 30 de junho de 2026, com 50 PRs atualizados e 13 issues processadas nas últimas 24 horas. O foco principal permanece na estabilização da plataforma Reborn e WebUI v2, com emphasis em qualidade de integração (Google Workspace) e experiência do usuário. Não foram registradas novas releases, porém uma release anterior (v0.29.1) está em uso com mudanças em múltiplos módulos. A saúde geral indica progresso consistente em múltiplas frentes técnicas, com regressões sendo tratadas proativamente.</p>
-<hr>
-<h2>2. Lançamentos</h2>
-<h3>Nenhuma nova release registrada hoje (2026-06-30)</h3>
-<p><strong>Release em produção: v0.29.1</strong> (lançada em 2026-06-26 via PR <a href="https://github.com/nearai/ironclaw/pull/5311">#5311</a>)</p>
-<table>
-<thead>
-<tr>
-<th>Módulo</th>
-<th>Versão Anterior</th>
-<th>Nova Versão</th>
-<th>Tipo de Mudança</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><code>ironclaw_common</code></td>
-<td>0.4.2</td>
-<td><strong>0.5.0</strong></td>
-<td>⚠️ Breaking changes</td>
-</tr>
-<tr>
-<td><code>ironclaw_skills</code></td>
-<td>0.3.0</td>
-<td><strong>0.4.0</strong></td>
-<td>⚠️ Breaking changes</td>
-</tr>
-<tr>
-<td><code>ironclaw</code></td>
-<td>0.24.0</td>
-<td><strong>0.29.1</strong></td>
-<td>—</td>
-</tr>
-<tr>
-<td><code>ironclaw_safety</code></td>
-<td>0.2.2</td>
-<td>0.2.3</td>
-<td>✓ Compatível</td>
-</tr>
-<tr>
-<td><code>ironclaw_skill_learning</code></td>
-<td>0.1.0</td>
-<td>0.1.1</td>
-<td>✓ Compatível</td>
-</tr>
-</tbody></table>
-<blockquote>
-<p>⚠️ <strong>Nota de migração:</strong> As versões 0.5.0 de <code>ironclaw_common</code> e 0.4.0 de <code>ironclaw_skills</code> contêm alterações na API. Desenvolvedores que dependem diretamente desses módulos devem revisar as notas de changelog antes de atualizar.</p>
-</blockquote>
-<hr>
-<h2>3. Progresso do Projeto</h2>
-<h3>PRs Mergeados/Fechados Hoje (6)</h3>
-<table>
-<thead>
-<tr>
-<th>PR</th>
-<th>Título</th>
-<th>Tamanho</th>
-<th>Risco</th>
-<th>Contribuidor</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a href="https://github.com/nearai/ironclaw/pull/5371">#5371</a></td>
-<td>Port Reborn WebUI chat history coverage</td>
-<td>XL</td>
-<td>Low</td>
-<td>core</td>
-</tr>
-<tr>
-<td><a href="https://github.com/nearai/ironclaw/pull/5422">#5422</a></td>
-<td>Fix /canary PR target validation</td>
-<td>M</td>
-<td>Medium</td>
-<td>core</td>
-</tr>
-<tr>
-<td><a href="https://github.com/nearai/ironclaw/pull/5406">#5406</a></td>
-<td>Use QA sheet prompts in Reborn live QA</td>
-<td>XL</td>
-<td>Medium</td>
-<td>core</td>
-</tr>
-<tr>
-<td><a href="https://github.com/nearai/ironclaw/pull/5414">#5414</a></td>
-<td>fix(webui-v2): make log entry text selectable/copyable</td>
-<td>M</td>
-<td>Low</td>
-<td>thisisjoshford</td>
-</tr>
-<tr>
-<td><a href="https://github.com/nearai/ironclaw/pull/5392">#5392</a></td>
-<td>feat(reborn): integration-test framework slices 3–9</td>
-<td>XL</td>
-<td>Medium</td>
-<td>core</td>
-</tr>
-<tr>
-<td><a href="https://github.com/nearai/ironclaw/issues/4776">#4776</a></td>
-<td>Add global Always Allow setting for eligible tools</td>
-<td>—</td>
-<td>—</td>
-<td>think-in-universe</td>
-</tr>
-</tbody></table>
-<p><strong>Destaques:</strong></p>
-<ul>
-<li><p><strong>PR #5414</strong>: Corrige UX do WebUI v2 — texto de logs agora pode ser selecionado/copiado, resolvendo issue <a href="https://github.com/nearai/ironclaw/issues/5412">#5412</a>.</p>
-</li>
-<li><p><strong>PR #5392</strong>: Framework de testes de integração para Reborn — cobre LibSQL matrix, egress/HTTP matcher, portas de processo inerte, MCP/OAuth/refresh. Avanço significativo na confiabilidade do stack.</p>
-</li>
-<li><p><strong>PR #5406</strong>: Integração de prompts da QA sheet no Reborn live QA runner, padronizando testes de chat/connect/routine.</p>
-</li>
-<li><p><strong>Issue #4776 fechada</strong>: Feature de &quot;Always Allow&quot; global para ferramentas elegíveis foi implementada para Reborn WebUI v2.</p>
-</li>
-</ul>
-<hr>
-<h2>4. Temas Quentes da Comunidade</h2>
-<h3>Issues com Maior Atenção</h3>
-<table>
-<thead>
-<tr>
-<th>Issue</th>
-<th>Título</th>
-<th>Prioridade</th>
-<th>Comentários</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a href="https://github.com/nearai/ironclaw/issues/5415">#5415</a></td>
-<td>Multi-tool Google Sheets workflow fails with protocol violation</td>
-<td><strong>P1</strong></td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://github.com/nearai/ironclaw/issues/5417">#5417</a></td>
-<td>Wrong skill activated for Hacker News search</td>
-<td>P2</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://github.com/nearai/ironclaw/issues/5416">#5416</a></td>
-<td>Incorrect Google connection state causes contradictory auth flow</td>
-<td>P2</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://github.com/nearai/ironclaw/issues/5421">#5421</a></td>
-<td>Web search not zero-config, NEAR AI auth re-prompts</td>
-<td>bug/channel/web</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://github.com/nearai/ironclaw/issues/5420">#5420</a></td>
-<td>Routine delivery target is global per-user, not per-routine</td>
-<td>bug/channel/web</td>
-<td>0</td>
-</tr>
-</tbody></table>
-<p><strong>Análise de Demandas:</strong></p>
-<p>O tema mais quente é claramente a <strong>integração Google Workspace</strong> — 4 das 8 issues abertas hoje mencionam problemas com Gmail, Calendar, Drive ou Sheets. Há um padrão de problemas de autenticação contraditória e falhas de workflow multi-ferramenta que indicam necessidade de endurecimento do estado de conexão.</p>
-<p>A issue <a href="https://github.com/nearai/ironclaw/issues/5411">#5411</a> (&quot;Daily ironclaw failure taxonomy&quot;) indica que a equipe mantém vigilância ativa sobre falhas, com análise de 161 tarefas no pinchbench revelando 111 não-pass.</p>
-<hr>
-<h2>5. Bugs e Estabilidade</h2>
-<h3>Bugs Reportados Hoje (por Severidade)</h3>
-<h4><strong>P1 — Crítico</strong></h4>
-<table>
-<thead>
-<tr>
-<th>Issue</th>
-<th>Descrição</th>
-<th>Link</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>#5415</td>
-<td>Multi-tool Google Sheets workflow falha com &quot;protocol violation&quot; em workflows de 18-25 tool calls</td>
-<td><a href="https://github.com/nearai/ironclaw/issues/5415">Issue #5415</a></td>
-</tr>
-</tbody></table>
-<h4><strong>P2 — Alto</strong></h4>
-<table>
-<thead>
-<tr>
-<th>Issue</th>
-<th>Descrição</th>
-<th>Link</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>#5417</td>
-<td>Skill errada ativada para Hacker News search (ativa &quot;tech-debt-tracker&quot; em vez de web search)</td>
-<td><a href="https://github.com/nearai/ironclaw/issues/5417">Issue #5417</a></td>
-</tr>
-<tr>
-<td>#5416</td>
-<td>Estado de conexão Google incorreto causa fluxo de autenticação contraditório</td>
-<td><a href="https://github.com/nearai/ironclaw/issues/5416">Issue #5416</a></td>
-</tr>
-</tbody></table>
-<h4><strong>P3 — Médio</strong></h4>
-<table>
-<thead>
-<tr>
-<th>Issue</th>
-<th>Descrição</th>
-<th>Link</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>#5419</td>
-<td>Sem opção para renomear automação</td>
-<td><a href="https://github.com/nearai/ironclaw/issues/5419">Issue #5419</a></td>
-</tr>
-<tr>
-<td>#5418</td>
-<td>Mensagens de conversa aparecem em ordem errada após atividade de ferramenta</td>
-<td><a href="https://github.com/nearai/ironclaw/issues/5418">Issue #5418</a></td>
-</tr>
-<tr>
-<td>#5420</td>
-<td>Rotina delivery target é global por usuário, não por rotina</td>
-<td><a href="https://github.com/nearai/ironclaw/issues/5420">Issue #5420</a></td>
-</tr>
-<tr>
-<td>#5421</td>
-<td>Web search não é zero-config por padrão e re-prompt para NEAR AI auth</td>
-<td><a href="https://github.com/nearai/ironclaw/issues/5421">Issue #5421</a></td>
-</tr>
-</tbody></table>
-<h3>Bugs Corrigidos/Closed Hoje</h3>
-<table>
-<thead>
-<tr>
-<th>Issue</th>
-<th>Descrição</th>
-<th>Link</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>#5412</td>
-<td>Texto de log no WebUI v2 não era selecionável/copiável — <strong>corrigido em</strong> <a href="https://github.com/nearai/ironclaw/pull/5414">#5414</a></td>
-<td><a href="https://github.com/nearai/ironclaw/issues/5412">Issue #5412</a></td>
-</tr>
-<tr>
-<td>#5413</td>
-<td>Reborn inline OAuth refresh falhava silenciosamente — agora falha explicitamente</td>
-<td><a href="https://github.com/nearai/ironclaw/issues/5413">Issue #5413</a></td>
-</tr>
-<tr>
-<td>#5196</td>
-<td>Tool permission &quot;Ask each time&quot; falhava com erro de autorização e disparava fluxo duplicado</td>
-<td><a href="https://github.com/nearai/ironclaw/issues/5196">Issue #5196</a></td>
-</tr>
-</tbody></table>
-<h3>Instabilidade de CI/CD</h3>
-<table>
-<thead>
-<tr>
-<th>Issue</th>
-<th>Descrição</th>
-<th>Link</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>#4108</td>
-<td>Nightly E2E falhou novamente (2026-06-29 04:47 UTC) — falha em Full E2E / E2E (features)</td>
-<td><a href="https://github.com/nearai/ironclaw/issues/4108">Issue #4108</a></td>
-</tr>
-</tbody></table>
-<blockquote>
-<p>⚠️ <strong>Alerta:</strong> A issue #4108 está aberta desde 2026-05-27, indicando problema recorrente de estabilidade no pipeline de E2E noturno.</p>
-</blockquote>
-<hr>
-<h2>6. Pedidos de Features e Sinais de Roadmap</h2>
-<h3>Features Solicitadas Hoje</h3>
-<table>
-<thead>
-<tr>
-<th>Issue</th>
-<th>Título</th>
-<th>Escopo</th>
-<th>Link</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>#5419</td>
-<td>Opção para renomear automação</td>
-<td>UX/QA</td>
-<td><a href="https://github.com/nearai/ironclaw/issues/5419">Issue #5419</a></td>
-</tr>
-<tr>
-<td>#4776 (closed)</td>
-<td>Global &quot;Always Allow&quot; para ferramentas elegíveis</td>
-<td>Reborn WebUI v2</td>
-<td><a href="https://github.com/nearai/ironclaw/issues/4776">Issue #4776</a></td>
-</tr>
-</tbody></table>
-<h3>PRs Indicativos de Direção Técnica</h3>
-<table>
-<thead>
-<tr>
-<th>PR</th>
-<th>Título</th>
-<th>Direção</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a href="https://github.com/nearai/ironclaw/pull/5353">#5353</a></td>
-<td>fix(http): raise http.save body limit para downloads grandes</td>
-<td>Estabilidade de agent loop</td>
-</tr>
-<tr>
-<td><a href="https://github.com/nearai/ironclaw/pull/5304">#5304</a></td>
-<td>feat(reborn): enable final-answer nudge para interactive runs</td>
-<td>UX de interação</td>
-</tr>
-<tr>
-<td><a href="https://github.com/nearai/ironclaw/pull/5403">#5403</a></td>
-<td>feat(reborn): send real failure detail to model</td>
-<td>Debuggabilidade</td>
-</tr>
-<tr>
-<td><a href="https://github.com/nearai/ironclaw/pull/5338">#5338</a></td>
-<td>fix(reborn): surface real failure detail instead of generic &quot;invalid_input&quot;</td>
-<td>UX de erros</td>
-</tr>
-</tbody></table>
-<p><strong>Sinais de Roadmap:</strong></p>
-<ul>
-<li><strong>Endurecimento de integrações externas</strong> (Slack, Google Workspace) é tema recorrente</li>
-<li><strong>Melhoria na experiência de erros</strong> — o time está investindo em mostrar detalhes reais de falha ao modelo/usuário</li>
-<li><strong>Testes de integração robustos</strong> — framework em slices demonstra foco em regressão prevention</li>
-<li><strong>WebUI v2 maturity</strong> — port de cobertura E2E legacy indica aproximação de parity</li>
-</ul>
-<hr>
-<h2>7. Resumo de Feedback dos Usuários</h2>
-<h3>Dores Reais Identificadas</h3>
-<ol>
-<li><p><strong>Workflows multi-ferramenta Google falham</strong> — usuários experimentam &quot;protocol violation&quot; ao combinar Gmail + Sheets em um único workflow (Issue #5415, P1)</p>
-</li>
-<li><p><strong>Fluxo de autenticação contraditório</strong> — ao conectar Gmail, o agente primeiro diz que já está conectado, depois muda para &quot;instalado mas não ativado&quot; — confusão que degrada confiança (Issue #5416)</p>
-</li>
-<li><p><strong>Logs não podem ser copiados</strong> — UX problem para debugging; texto de log resistia seleção (agora corrigido via #5414)</p>
-</li>
-<li><p><strong>Nomes de automação não são editáveis</strong> — quando o agente gera nomes automaticamente, podem ficar truncados ou confusos, e o usuário não consegue corrigir (Issue #5419)</p>
-</li>
-<li><p><strong>Web search não é zero-config</strong> — mesmo quando chat funciona, busca web força entrada de API key, quebrando promessa de experiência plug-and-play (Issue #5421)</p>
-</li>
-</ol>
-<h3>Cenários de Uso Problema</h3>
-<ul>
-<li><p><strong>Hacker News search</strong> — usuário pede busca e o agente ativa skill errada (&quot;tech-debt-tracker&quot;), demonstrando problema de routing de intents (Issue #5417)</p>
-</li>
-<li><p><strong>Rotinas com delivery targets</strong> — configurar uma rotina para Slack redireciona TODAS as rotinas para Slack, não apenas a configurada (Issue #5420)</p>
-</li>
-<li><p><strong>Ordem de mensagens</strong> — após atividade de ferramenta, resposta do agente aparece ACIMA dos blocos de atividade em vez de abaixo, violando expectativas cronológicas (Issue #5418)</p>
-</li>
-</ul>
-<hr>
-<h2>8. Backlog que Merece Atenção</h2>
-<h3>Issues Abertas há &gt; 7 dias sem resolução</h3>
-<table>
-<thead>
-<tr>
-<th>Issue</th>
-<th>Título</th>
-<th>Criado</th>
-<th>Idade</th>
-<th>Prioridade</th>
-<th>Link</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>#4108</td>
-<td>Nightly E2E failed</td>
-<td>2026-05-27</td>
-<td>~34 dias</td>
-<td>—</td>
-<td><a href="https://github.com/nearai/ironclaw/issues/4108">Issue #4108</a></td>
-</tr>
-</tbody></table>
-<h3>Issues com Alto Impacto Aguardando Processamento</h3>
-<table>
-<thead>
-<tr>
-<th>Issue</th>
-<th>Título</th>
-<th>Criado</th>
-<th>Comentários</th>
-<th>Link</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>#5415</td>
-<td>Multi-tool Google Sheets falha com protocol violation</td>
-<td>2026-06-29</td>
-<td>0</td>
-<td><a href="https://github.com/nearai/ironclaw/issues/5415">Issue #5415</a></td>
-</tr>
-<tr>
-<td>#5416</td>
-<td>Google connection state incorreto</td>
-<td>2026-06-29</td>
-<td>0</td>
-<td><a href="https://github.com/nearai/ironclaw/issues/5416">Issue #5416</a></td>
-</tr>
-<tr>
-<td>#5417</td>
-<td>Skill errada para Hacker News</td>
-<td>2026-06-29</td>
-<td>0</td>
-<td><a href="https://github.com/nearai/ironclaw/issues/5417">Issue #5417</a></td>
-</tr>
-<tr>
-<td>#5421</td>
-<td>Web search não zero-config</td>
-<td>2026-06-29</td>
-<td>0</td>
-<td><a href="https://github.com/nearai/ironclaw/issues/5421">Issue #5421</a></td>
-</tr>
-</tbody></table>
-<blockquote>
-<p><strong>Recomendação:</strong> A issue #4108 (E2E nightly failure) está aberta há mais de um mês e representa instabilidade crônica no CI. Priorizar resolução para garantir qualidade de releases. Adicionalmente, as 4 issues P1-P2 relacionadas a Google Workspace merecem triagem urgente dado o padrão de problemas similares.</p>
-</blockquote>
-<hr>
-<h2>Métricas Resumidas do Dia</h2>
-<table>
-<thead>
-<tr>
-<th>Indicador</th>
-<th>Valor</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Issues abertas/ativas</td>
-<td>9</td>
-</tr>
-<tr>
-<td>Issues fechadas</td>
-<td>4</td>
-</tr>
-<tr>
-<td>PRs abertos</td>
-<td>29</td>
-</tr>
-<tr>
-<td>PRs mergeados/fechados</td>
-<td>21</td>
-</tr>
-<tr>
-<td>Novas releases</td>
-<td>0</td>
-</tr>
-<tr>
-<td>Bugs P1</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Bugs P2</td>
-<td>2</td>
-</tr>
-<tr>
-<td>Bugs P3</td>
-<td>4</td>
-</tr>
-<tr>
-<td>Atividade total</td>
-<td><strong>63 items</strong> (13 issues + 50 PRs)</td>
-</tr>
-</tbody></table>
-<p><strong>Veredicto de Saúde:</strong> O projeto IronClaw demonstra <strong>saúde boa com áreas de atenção</strong>. A atividade de desenvolvimento é alta e estável, com foco consistente em estabilização do Reborn e WebUI v2. A taxa de resolução de bugs é positiva (4 fechados hoje vs. 9 abertos). O principal risco identificado é a integração Google Workspace, que apresenta múltiplas falhas interconectadas, e a instabilidade recorrente do pipeline E2E.</p>
-</details>
-
-<details>
-<summary><strong>CoPaw</strong> — <a href="https://github.com/agentscope-ai/CoPaw">agentscope-ai/CoPaw</a></summary>
-
-<h1>Relatório do Projeto CoPaw (QwenPaw) — 2026-06-30</h1>
-<h2>1. Panorama do Dia</h2>
-<p>O projeto <strong>CoPaw</strong> apresenta <strong>alta atividade</strong> nas últimas 24 horas, com 29 issues e 50 PRs atualizados. O ambiente de desenvolvimento está focado na preparação para a versão <strong>v2.0.0-beta.1</strong>, com múltiplas correções de bugs e testes unitários sendo integrados. A comunidade demonstra engajamento significativo com issues de bugs (especialmente relacionados a canais como Feishu e DingTalk) e pedidos de features para melhoria da experiência multi-agente. A base de código encontra-se em transição para a arquitetura Runtime v2, com várias integrações sendo refatoradas.</p>
-<hr>
-<h2>2. Lançamentos</h2>
-<h3>Nenhuma release oficial publicada nas últimas 24h</h3>
-<p>⚠️ <strong>Nota</strong>: Há menção do <strong>v2.0.0-beta.1</strong> em andamento (Issue #5571), com installation verification em progresso. Este é um marco importante aguardando conclusão.</p>
-<blockquote>
-<p>Referência: <a href="https://github.com/agentscope-ai/QwenPaw/issues/5571">agentscope-ai/QwenPaw #5571</a></p>
-</blockquote>
-<hr>
-<h2>3. Progresso do Projeto</h2>
-<h3>PRs Merged/Closed Hoje</h3>
-<table>
-<thead>
-<tr>
-<th>PR</th>
-<th>Descrição</th>
-<th>Impacto</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a href="https://github.com/agentscope-ai/QwenPaw/pull/5614">#5614</a></td>
-<td><strong>docs(context)</strong>: Atualização da documentação de gerenciamento de contexto</td>
-<td>Melhora DX com novos docs de scroll strategy</td>
-</tr>
-<tr>
-<td><a href="https://github.com/agentscope-ai/QwenPaw/pull/5601">#5601</a></td>
-<td><strong>fix(channel)</strong>: Notificações de aprovação Tool Guard para canais IM</td>
-<td>Restaura funcionalidade de aprovação para Feishu, WeCom, Telegram</td>
-</tr>
-<tr>
-<td><a href="https://github.com/agentscope-ai/QwenPaw/pull/5511">#5511</a></td>
-<td><strong>fix(observability)</strong>: Restaura grouping de traces Langfuse via Runtime 2.0</td>
-<td>Melhora observabilidade em produção</td>
-</tr>
-<tr>
-<td><a href="https://github.com/agentscope-ai/QwenPaw/pull/5628">#5628</a></td>
-<td><strong>fix(console)</strong>: Contagem normalizada de resultados em cards de ferramentas</td>
-<td>Corrige badge mostrando &quot;1 arquivo&quot; em vez de contagem real</td>
-</tr>
-</tbody></table>
-<h3>PRs em Review Significativos</h3>
-<table>
-<thead>
-<tr>
-<th>PR</th>
-<th>Descrição</th>
-<th>Impacto</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a href="https://github.com/agentscope-ai/QwenPaw/pull/5629">#5629</a></td>
-<td><strong>fix(memory)</strong>: Corrige prompt de memória para evitar escrita excessiva</td>
-<td>Melhora eficiência de contexto</td>
-</tr>
-<tr>
-<td><a href="https://github.com/agentscope-ai/QwenPaw/pull/5296">#5296</a></td>
-<td><strong>feat(memory)</strong>: ADBPG REST-only com auto search</td>
-<td>Alinha memória de longo prazo à nova arquitetura</td>
-</tr>
-<tr>
-<td><a href="https://github.com/agentscope-ai/QwenPaw/pull/5510">#5510</a></td>
-<td><strong>fix(tool-calls)</strong>: Cap em respostas de ferramentas antes da inserção no contexto</td>
-<td>Defense-in-depth contra explosão de contexto</td>
-</tr>
-<tr>
-<td><a href="https://github.com/agentscope-ai/QwenPaw/pull/5221">#5221</a></td>
-<td><strong>feat(plugins)</strong>: Sistema de registro de middleware via plugins</td>
-<td>Extensibilidade para comunidade</td>
-</tr>
-<tr>
-<td><a href="https://github.com/agentscope-ai/QwenPaw/pull/5442">#5442</a></td>
-<td><strong>fix(mission)</strong>: Integração do Mission Mode com Runtime v2</td>
-<td>Restaura funcionalidade de missões</td>
-</tr>
-</tbody></table>
-<hr>
-<h2>4. Temas Quentes da Comunidade</h2>
-<h3>Issues com Maior Engajamento</h3>
-<ol>
-<li><p><strong><a href="https://github.com/agentscope-ai/QwenPaw/issues/3891">#3891</a></strong> — DeepSeek Prefix Cache ~95%: Sugestão para otimizar cache de prefixo da DeepSeek (5 comentários, 1 reação)</p>
-<ul>
-<li><strong>Análise</strong>: Impacto financeiro significativo — 95% hit rate = 5% miss = custo 2x-4x maior</li>
-<li><strong>Tags</strong>: enhancement, performance, cost optimization</li>
-</ul>
-</li>
-<li><p><strong><a href="https://github.com/agentscope-ai/QwenPaw/issues/5624">#5624</a></strong> / <strong><a href="https://github.com/agentscope-ai/QwenPaw/issues/5626">#5626</a></strong> — Cards de ferramentas mostrando contagem errada: Bug afeta <code>glob_search</code>, <code>read_file</code> (3+3 comentários)</p>
-<ul>
-<li><strong>Análise</strong>: UI bug visual que afeta experiência do usuário</li>
-<li><strong>Status</strong>: Já com PR #5628 resolvendo</li>
-</ul>
-</li>
-<li><p><strong><a href="https://github.com/agentscope-ai/QwenPaw/issues/5579">#5579</a></strong> — Perda de conversation records: Falta de checkpoint persistence em interrupções anormais (1 comentário)</p>
-<ul>
-<li><strong>Análise</strong>: Problema crítico de resiliência — dados de usuário podem ser perdidos</li>
-</ul>
-</li>
-<li><p><strong><a href="https://github.com/agentscope-ai/QwenPaw/issues/5564">#5564</a></strong> — Suporte a @mention DingTalk: Feature request para multi-agent collaboration (2 comentários)</p>
-<ul>
-<li><strong>Análise</strong>: Caso de uso empresarial para notificar agentes entre si</li>
-</ul>
-</li>
-<li><p><strong><a href="https://github.com/agentscope-ai/QwenPaw/issues/5588">#5588</a></strong> — Reranker para memory search: Two-stage retrieval (1 comentário)</p>
-<ul>
-<li><strong>Análise</strong>: Melhora precisão de recall em memória de longo prazo</li>
-</ul>
-</li>
-</ol>
-<hr>
-<h2>5. Bugs e Estabilidade</h2>
-<h3>Bugs Críticos 🔴</h3>
-<table>
-<thead>
-<tr>
-<th>Issue</th>
-<th>Descrição</th>
-<th>Severidade</th>
-<th>Link</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>#5573</td>
-<td>DeepSeek V4 thinking mode: 400 errors em streaming reasoning_content e null schema types</td>
-<td>Alta</td>
-<td><a href="https://github.com/agentscope-ai/QwenPaw/issues/5573">Link</a></td>
-</tr>
-<tr>
-<td>#5505</td>
-<td>MiniMax-M3: Erro de safety cache incorretamente aprendido como <code>rejects_media=True</code></td>
-<td>Alta</td>
-<td><a href="https://github.com/agentscope-ai/QwenPaw/issues/5505">Link</a></td>
-</tr>
-<tr>
-<td>#5561</td>
-<td>Feishu: Mensagens longas falham, apenas arquivos funcionam</td>
-<td>Alta</td>
-<td><a href="https://github.com/agentscope-ai/QwenPaw/issues/5561">Link</a></td>
-</tr>
-</tbody></table>
-<h3>Bugs Médios 🟡</h3>
-<table>
-<thead>
-<tr>
-<th>Issue</th>
-<th>Descrição</th>
-<th>Severidade</th>
-<th>Link</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>#5624/#5626</td>
-<td>Contagem de arquivos nos cards sempre mostra &quot;1&quot;</td>
-<td>Média</td>
-<td><a href="https://github.com/agentscope-ai/QwenPaw/issues/5624">Link</a></td>
-</tr>
-<tr>
-<td>#5543</td>
-<td>Schema com <code>&quot;type&quot;:&quot;null&quot;</code> quebra第三方中转</td>
-<td>Média</td>
-<td><a href="https://github.com/agentscope-ai/QwenPaw/issues/5543">Link</a></td>
-</tr>
-<tr>
-<td>#4873</td>
-<td>Subagents simultâneos causam polling infinito no Feishu</td>
-<td>Média</td>
-<td><a href="https://github.com/agentscope-ai/QwenPaw/issues/4873">Link</a></td>
-</tr>
-<tr>
-<td>#5342</td>
-<td>Ferramentas sem cap causam explosão de contexto quando LLM falha</td>
-<td>Média</td>
-<td><a href="https://github.com/agentscope-ai/QwenPaw/issues/5342">Link</a></td>
-</tr>
-<tr>
-<td>#5587</td>
-<td>Qwen-Image Tool install error</td>
-<td>Média</td>
-<td><a href="https://github.com/agentscope-ai/QwenPaw/issues/5587">Link</a></td>
-</tr>
-</tbody></table>
-<h3>Bugs Menores 🟢</h3>
-<table>
-<thead>
-<tr>
-<th>Issue</th>
-<th>Descrição</th>
-<th>Link</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>#5583</td>
-<td>UI: Background do chat popup pouco visível</td>
-<td><a href="https://github.com/agentscope-ai/QwenPaw/issues/5583">Link</a></td>
-</tr>
-<tr>
-<td>#5591</td>
-<td>Log spam: GET /api/console/inbox/events excessivo</td>
-<td><a href="https://github.com/agentscope-ai/QwenPaw/issues/5591">Link</a></td>
-</tr>
-</tbody></table>
-<hr>
-<h2>6. Pedidos de Features e Sinais de Roadmap</h2>
-<h3>Features Solicitadas com Maior Prioridade</h3>
-<table>
-<thead>
-<tr>
-<th>Issue</th>
-<th>Feature</th>
-<th>Componentes</th>
-<th>Link</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>#5572</td>
-<td><strong>Auto model fallback</strong>: Troca automática quando quota esgotada/falha/timeout</td>
-<td>Core/Backend</td>
-<td><a href="https://github.com/agentscope-ai/QwenPaw/issues/5572">Link</a></td>
-</tr>
-<tr>
-<td>#5588</td>
-<td><strong>Reranker para memory search</strong>: Two-stage retrieval com modelo dedicado</td>
-<td>Memory</td>
-<td><a href="https://github.com/agentscope-ai/QwenPaw/issues/5588">Link</a></td>
-</tr>
-<tr>
-<td>#5609</td>
-<td><strong>Custom model protocol</strong>: Suporte a endpoints não-OpenAI (ex: /images/generations)</td>
-<td>Core/Backend</td>
-<td><a href="https://github.com/agentscope-ai/QwenPaw/issues/5609">Link</a></td>
-</tr>
-<tr>
-<td>#5615</td>
-<td><strong>Vision fallback</strong>: Auto-descrição de imagens para modelos texto-only</td>
-<td>Core/Backend</td>
-<td><a href="https://github.com/agentscope-ai/QwenPaw/issues/5615">Link</a></td>
-</tr>
-<tr>
-<td>#5564</td>
-<td><strong>DingTalk @mention</strong>: Suporte a atUserIds em CLI e API</td>
-<td>Channels</td>
-<td><a href="https://github.com/agentscope-ai/QwenPaw/issues/5564">Link</a></td>
-</tr>
-<tr>
-<td>#4939</td>
-<td><strong>Cron update command</strong>: Update direto em vez de delete+create</td>
-<td>CLI</td>
-<td><a href="https://github.com/agentscope-ai/QwenPaw/issues/4939">Link</a></td>
-</tr>
-<tr>
-<td>#5622</td>
-<td><strong>Windows tray icon</strong>: Background running sem ocupar taskbar</td>
-<td>Console</td>
-<td><a href="https://github.com/agentscope-ai/QwenPaw/issues/5622">Link</a></td>
-</tr>
-<tr>
-<td>#5603</td>
-<td><strong>DingTalk streaming speed</strong>: Card streaming otimizado</td>
-<td>Channels</td>
-<td><a href="https://github.com/agentscope-ai/QwenPaw/issues/5603">Link</a></td>
-</tr>
-<tr>
-<td>#5593</td>
-<td><strong>DingTalk image upload</strong>: Previewable images via media_id</td>
-<td>Channels</td>
-<td><a href="https://github.com/agentscope-ai/QwenPaw/issues/5593">Link</a></td>
-</tr>
-</tbody></table>
-<h3>Análise de Tendências</h3>
-<ol>
-<li><strong>Multi-agent orchestration</strong>: Vários pedidos relacionados a colaboração entre agentes (mention, cron, etc.)</li>
-<li><strong>Resiliência</strong>: Foco em recoverability e fault tolerance (model fallback, checkpoint)</li>
-<li><strong>UX de canais</strong>: Melhorias significativas em Feishu e DingTalk</li>
-<li><strong>Context management</strong>: Scroll strategy, reranker, vision fallback indicam direção de longo contexto</li>
-</ol>
-<hr>
-<h2>7. Resumo de Feedback dos Usuários</h2>
-<h3>Dores Principais</h3>
-<table>
-<thead>
-<tr>
-<th>Categoria</th>
-<th>Problema</th>
-<th>Impacto</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>Estabilidade de Canais</strong></td>
-<td>Feishu quebra com mensagens longas, DingTalk streaming lento</td>
-<td>Produtividade diária</td>
-</tr>
-<tr>
-<td><strong>Custo</strong></td>
-<td>DeepSeek prefix cache sub-ótimo (95% vs potencial 99%+)</td>
-<td>Custo operacional</td>
-</tr>
-<tr>
-<td><strong>Confiabilidade</strong></td>
-<td>Perda de conversation records em crashes</td>
-<td>Dados de usuário</td>
-</tr>
-<tr>
-<td><strong>Performance</strong></td>
-<td>&quot;最新版本越来越卡顿了&quot; (mais lento a cada versão)</td>
-<td>Satisfação geral</td>
-</tr>
-<tr>
-<td><strong>Conectividade</strong></td>
-<td>Ascend-vllm parou de funcionar em versões recentes</td>
-<td>Bloqueio de uso</td>
-</tr>
-</tbody></table>
-<h3>Cenários de Uso Reportados</h3>
-<ol>
-<li><strong>Agentes em produção</strong>: Múltiplos subagents rodando simultaneamente</li>
-<li><strong>Integração corporativa</strong>: Feishu, DingTalk, cron jobs para automação</li>
-<li><strong>Modelos customizados</strong>: Conexão com vLLM, DeepSeek, MiniMax</li>
-<li><strong>Long-term memory</strong>: Busca em conversas passadas</li>
-</ol>
-<h3>Indicadores de Satisfação</h3>
-<ul>
-<li><strong>Issues fechadas</strong>: 9/29 (31%) indicam ciclo de resolução ativo</li>
-<li><strong>PR activity</strong>: 50 PRs atualizados mostra desenvolvimento intenso</li>
-<li><strong>Beta v2.0</strong>: Preparação de release demonstra maturidade do roadmap</li>
-</ul>
-<hr>
-<h2>8. Backlog que Merece Atenção</h2>
-<h3>Issues Sem Resposta / Em Espera</h3>
-<table>
-<thead>
-<tr>
-<th>Issue</th>
-<th>Tempo em Aberto</th>
-<th>Prioridade</th>
-<th>Link</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>#3891</td>
-<td>~2 meses (2026-04-27)</td>
-<td>Alta (custo)</td>
-<td><a href="https://github.com/agentscope-ai/QwenPaw/issues/3891">Link</a></td>
-</tr>
-<tr>
-<td>#2495</td>
-<td>~3 meses (2026-03-29)</td>
-<td>Média</td>
-<td><a href="https://github.com/agentscope-ai/QwenPaw/issues/2495">Link</a></td>
-</tr>
-<tr>
-<td>#4873</td>
-<td>~1 mês (2026-06-01)</td>
-<td>Alta</td>
-<td><a href="https://github.com/agentscope-ai/QwenPaw/issues/4873">Link</a></td>
-</tr>
-<tr>
-<td>#4939</td>
-<td>~1 mês (2026-06-03)</td>
-<td>Média</td>
-<td><a href="https://github.com/agentscope-ai/QwenPaw/issues/4939">Link</a></td>
-</tr>
-<tr>
-<td>#5527</td>
-<td>~5 dias</td>
-<td>Média</td>
-<td><a href="https://github.com/agentscope-ai/QwenPaw/issues/5527">Link</a></td>
-</tr>
-<tr>
-<td>#5579</td>
-<td>~3 dias</td>
-<td>Crítica</td>
-<td><a href="https://github.com/agentscope-ai/QwenPaw/issues/5579">Link</a></td>
-</tr>
-</tbody></table>
-<h3>PRs Pendentes de Review</h3>
-<table>
-<thead>
-<tr>
-<th>PR</th>
-<th>Tempo</th>
-<th>Importância</th>
-<th>Link</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>#5221</td>
-<td>14 dias</td>
-<td>Plugin system</td>
-<td><a href="https://github.com/agentscope-ai/QwenPaw/pull/5221">Link</a></td>
-</tr>
-<tr>
-<td>#5296</td>
-<td>12 dias</td>
-<td>ADBPG memory</td>
-<td><a href="https://github.com/agentscope-ai/QwenPaw/pull/5296">Link</a></td>
-</tr>
-<tr>
-<td>#5510</td>
-<td>5 dias</td>
-<td>Context safety</td>
-<td><a href="https://github.com/agentscope-ai/QwenPaw/pull/5510">Link</a></td>
-</tr>
-<tr>
-<td>#5629</td>
-<td>1 dia</td>
-<td>Memory optimization</td>
-<td><a href="https://github.com/agentscope-ai/QwenPaw/pull/5629">Link</a></td>
-</tr>
-</tbody></table>
-<hr>
-<h2>Métricas Consolidada</h2>
-<table>
-<thead>
-<tr>
-<th>Indicador</th>
-<th>Valor</th>
-<th>Status</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Issues ativas</td>
-<td>20</td>
-<td>🟢</td>
-</tr>
-<tr>
-<td>Issues fechadas (24h)</td>
-<td>9</td>
-<td>🟢</td>
-</tr>
-<tr>
-<td>PRs abertos</td>
-<td>31</td>
-<td>🟡</td>
-</tr>
-<tr>
-<td>PRs merged/closed</td>
-<td>19</td>
-<td>🟢</td>
-</tr>
-<tr>
-<td>Bugs críticos</td>
-<td>3</td>
-<td>🔴</td>
-</tr>
-<tr>
-<td>Release em beta</td>
-<td>v2.0.0-beta.1</td>
-<td>🟡</td>
-</tr>
-<tr>
-<td>Test coverage (novos PRs)</td>
-<td>426+ casos</td>
-<td>🟢</td>
-</tr>
-</tbody></table>
-<hr>
-<h2>Conclusão</h2>
-<p>O projeto <strong>CoPaw/QwenPaw</strong> demonstra <strong>saúde saudável</strong> com atividade intensa de desenvolvimento. A transição para Runtime v2 está em andamento, com foco em estabilidade (bug fixes para canais IM) e performance (context management, memory search). Recomenda-se atenção especial aos bugs de Feishu e ao custo de DeepSeek prefix cache, além de priorização do v2.0.0-beta.1 release para validar as mudanças de arquitetura.</p>
-</details>
-
-<details>
-<summary><strong>ZeroClaw</strong> — <a href="https://github.com/zeroclaw-labs/zeroclaw">zeroclaw-labs/zeroclaw</a></summary>
-
-<h1>Relatório do Projeto ZeroClaw</h1>
-<p><strong>Data:</strong> 2026-06-30 | <strong>Fonte:</strong> github.com/zeroclaw-labs/zeroclaw</p>
-<hr>
-<h2>1. Panorama do Dia</h2>
-<p>O projeto ZeroClaw apresenta <strong>alta atividade</strong> em 2026-06-30, com 50 issues e 50 PRs atualizados nas últimas 24h. A equipe de desenvolvimento está focada em <strong>correções críticas de segurança e estabilidade</strong> para a versão v0.8.3, com destaque para 5 issues P1 em aberto. Não há lançamentos recentes, indicando que o ciclo de desenvolvimento está em fase de estabilização antes do próximo release. A comunidade demonstra engajamento significativo em topics como WASM plugins, SOP (Structured Output Protocol), e múltiplos canais de comunicação. Três PRs foram fechados/merged hoje, enquanto 40 permanecem abertos aguardando revisão.</p>
-<hr>
-<h2>2. Lançamentos</h2>
-<h3>Nenhuma release registrada nas últimas 24h</h3>
-<p>O projeto não publicou novas versões hoje. O último ciclo de desenvolvimento parece estar direcionado à estabilização de funcionalidades para v0.8.3, conforme indicado pelos trackers:</p>
-<ul>
-<li><a href="https://github.com/zeroclaw-labs/zeroclaw/issues/7314">#7314</a> - v0.8.3 WASM plugin program</li>
-<li><a href="https://github.com/zeroclaw-labs/zeroclaw/issues/8071">#8071</a> - v0.8.3 runtime execution, agent loop, tools, and skills</li>
-<li><a href="https://github.com/zeroclaw-labs/zeroclaw/issues/8360">#8360</a> - v0.8.3 provider and native-tool message serialization</li>
-</ul>
-<p><strong>Recomenda-se</strong> monitorar os trackers de release para announcements iminentes.</p>
-<hr>
-<h2>3. Progresso do Projeto</h2>
-<h3>PRs Merged/Closed em 2026-06-29</h3>
-<table>
-<thead>
-<tr>
-<th>PR</th>
-<th>Descrição</th>
-<th>Impacto</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a href="https://github.com/zeroclaw-labs/zeroclaw/pull/8502">#8502</a></td>
-<td><code>feat(sop): complete payload safety ingress</code></td>
-<td>Adiciona helpers de segurança para conteúdo externo em SOP, incluindo capping, normalization, e prompt-guard screening</td>
-</tr>
-<tr>
-<td><a href="https://github.com/zeroclaw-labs/zeroclaw/pull/8493">#8493</a></td>
-<td><code>feat(sop): enforce step scope and mode events</code></td>
-<td>Reforça escopo de ferramentas em execuções SOP, rejeitando chamadas fora do escopo no dispatch</td>
-</tr>
-<tr>
-<td><a href="https://github.com/zeroclaw-labs/zeroclaw/pull/8468">#8468</a></td>
-<td><code>fix(channels): preserve image bytes for vision_model_provider</code></td>
-<td>Corrige stripping de bytes de imagem quando provider de visão dedicado está configurado</td>
-</tr>
-<tr>
-<td><a href="https://github.com/zeroclaw-labs/zeroclaw/pull/8380">#8380</a></td>
-<td><code>feat(cost): offline pricing catalog</code></td>
-<td>Adiciona catálogo de preços offline como fallback para modelos sem entrada de pricing</td>
-</tr>
-</tbody></table>
-<h3>Avanços Notáveis</h3>
-<ol>
-<li><strong>SOP (Structured Output Protocol):</strong> Progresso significativo em segurança e enforcement de escopo</li>
-<li><strong>Pipeline de Multimodal:</strong> Correção crítica preservando bytes de imagem para provedores de visão dedicados</li>
-<li><strong>Sistema de Custos:</strong> Catálogo offline implementado para ambientes sem conectividade</li>
-</ol>
-<hr>
-<h2>4. Temas Quentes da Comunidade</h2>
-<h3>Issues com Maior Engajamento (comentários + reações)</h3>
-<table>
-<thead>
-<tr>
-<th>Issue</th>
-<th>Título</th>
-<th>Comentários</th>
-<th>👍</th>
-<th>Tema</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a href="https://github.com/zeroclaw-labs/zeroclaw/issues/5600">#5600</a></td>
-<td>Kimi provider streaming error</td>
-<td>11</td>
-<td>1</td>
-<td>Provider/API</td>
-</tr>
-<tr>
-<td><a href="https://github.com/zeroclaw-labs/zeroclaw/issues/8054">#8054</a></td>
-<td>System prompt tool-availability mismatch</td>
-<td>9</td>
-<td>0</td>
-<td>Segurança/Runtime</td>
-</tr>
-<tr>
-<td><a href="https://github.com/zeroclaw-labs/zeroclaw/issues/6909">#6909</a></td>
-<td>RFC: Computer-use support</td>
-<td>6</td>
-<td>0</td>
-<td>Desktop/GUI</td>
-</tr>
-<tr>
-<td><a href="https://github.com/zeroclaw-labs/zeroclaw/issues/7800">#7800</a></td>
-<td>Code help/keybindings misleading on macOS</td>
-<td>5</td>
-<td>0</td>
-<td>UX/Zerocode</td>
-</tr>
-<tr>
-<td><a href="https://github.com/zeroclaw-labs/zeroclaw/issues/7218">#7218</a></td>
-<td>RFC: A2A agent discovery</td>
-<td>5</td>
-<td>0</td>
-<td>Arquitetura/Multi-agent</td>
-</tr>
-</tbody></table>
-<h3>Análise de Demandas</h3>
-<p><strong>1. Provider Kimi (#5600):</strong> Usuários reportam erro 400 Bad Request quando usando <code>kimi-code</code> provider em streaming. Este é o issue com maior engajamento (11 comentários), indicando impacto significativo em workflows bloqueados.</p>
-<p><strong>2. Security/Runtime (#8054):</strong> Alinhamento de tool-availability entre pontos de entrada (channels, gateway, WebSocket, multimodal, /think). Community reconhece a complexidade ao seguir-up de PR #8053.</p>
-<p><strong>3. Computer-use Desktop (#6909):</strong> RFC para interação com desktop GUI (screenshots, mouse/keyboard) demonstra demanda por automação local, competindo com OpenAI Codex.</p>
-<p><strong>4. A2A Discovery (#7218):</strong> Interesse em interoperabilidade multi-agent via <code>.well-known/agent-card.json</code>, sugerindo ecossistema expandido.</p>
-<hr>
-<h2>5. Bugs e Estabilidade</h2>
-<h3>Issues P1 (S1 - Workflow Blocked / Alta Severidade)</h3>
-<table>
-<thead>
-<tr>
-<th>Issue</th>
-<th>Título</th>
-<th>Status</th>
-<th>Risco</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a href="https://github.com/zeroclaw-labs/zeroclaw/issues/5600">#5600</a></td>
-<td>Kimi provider streaming error</td>
-<td>OPEN</td>
-<td>HIGH</td>
-</tr>
-<tr>
-<td><a href="https://github.com/zeroclaw-labs/zeroclaw/issues/8054">#8054</a></td>
-<td>System prompt tool-availability mismatch</td>
-<td>OPEN</td>
-<td>HIGH</td>
-</tr>
-<tr>
-<td><a href="https://github.com/zeroclaw-labs/zeroclaw/issues/7756">#7756</a></td>
-<td>Native/MCP tools unavailable on OpenAI/Anthropic</td>
-<td>OPEN</td>
-<td>HIGH</td>
-</tr>
-<tr>
-<td><a href="https://github.com/zeroclaw-labs/zeroclaw/issues/8505">#8505</a></td>
-<td>Telegram channel cannot be configured</td>
-<td>OPEN</td>
-<td>HIGH</td>
-</tr>
-<tr>
-<td><a href="https://github.com/zeroclaw-labs/zeroclaw/issues/8312">#8312</a></td>
-<td>fill-translations leak-repair stale entries</td>
-<td>OPEN</td>
-<td>HIGH</td>
-</tr>
-<tr>
-<td><a href="https://github.com/zeroclaw-labs/zeroclaw/issues/8334">#8334</a></td>
-<td>skills install/list/remove target data_dir</td>
-<td>OPEN</td>
-<td>HIGH</td>
-</tr>
-</tbody></table>
-<h3>Issues P2 (S2 - Degraded Behavior)</h3>
-<table>
-<thead>
-<tr>
-<th>Issue</th>
-<th>Título</th>
-<th>Status</th>
-<th>Canal</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a href="https://github.com/zeroclaw-labs/zeroclaw/issues/8410">#8410</a></td>
-<td>Channel tasks need no-reply outcome</td>
-<td>OPEN</td>
-<td>Runtime</td>
-</tr>
-<tr>
-<td><a href="https://github.com/zeroclaw-labs/zeroclaw/issues/6841">#6841</a></td>
-<td>vision_provider silently ignored (multimodal)</td>
-<td>CLOSED</td>
-<td>Telegram</td>
-</tr>
-<tr>
-<td><a href="https://github.com/zeroclaw-labs/zeroclaw/issues/6157">#6157</a></td>
-<td>Nextcloud Talk wrong bot message API</td>
-<td>OPEN</td>
-<td>Nextcloud</td>
-</tr>
-<tr>
-<td><a href="https://github.com/zeroclaw-labs/zeroclaw/issues/2128">#2128</a></td>
-<td>Cron/heartbeat sends NO_REPLY sentinel</td>
-<td>CLOSED</td>
-<td>-</td>
-</tr>
-</tbody></table>
-<h3>Análise de Bugs</h3>
-<p><strong>Críticos em Aberto:</strong></p>
-<ul>
-<li><strong>Telegram (#8505):</strong> Usuário reportando configuração quebrada após quickstart, bot não responde</li>
-<li><strong>Skills (#8334):</strong> Fluxo &quot;pull a skill and use it&quot; quebrado em multi-agent installs</li>
-<li><strong>Translations (#8312):</strong> Data-loss silencioso em leak-repair</li>
-</ul>
-<p><strong>Resolvidos Hoje:</strong></p>
-<ul>
-<li>Cron/heartbeat NO_REPLY (#2128) - CLOSED</li>
-<li>Vision provider fallback (#6841) - CLOSED</li>
-<li>Image bytes preservation (#8468) - MERGED</li>
-</ul>
-<hr>
-<h2>6. Pedidos de Features e Sinais de Roadmap</h2>
-<h3>RFCs e Enhancements em Andamento</h3>
-<table>
-<thead>
-<tr>
-<th>Issue</th>
-<th>Título</th>
-<th>Tipo</th>
-<th>Prioridade</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a href="https://github.com/zeroclaw-labs/zeroclaw/issues/6909">#6909</a></td>
-<td>RFC: Computer-use desktop interaction</td>
-<td>RFC</td>
-<td>P2</td>
-</tr>
-<tr>
-<td><a href="https://github.com/zeroclaw-labs/zeroclaw/issues/7218">#7218</a></td>
-<td>RFC: A2A agent discovery</td>
-<td>RFC</td>
-<td>P2</td>
-</tr>
-<tr>
-<td><a href="https://github.com/zeroclaw-labs/zeroclaw/issues/8170">#8170</a></td>
-<td>RFC: In-app upgrade with supervised restart</td>
-<td>RFC</td>
-<td>P2</td>
-</tr>
-<tr>
-<td><a href="https://github.com/zeroclaw-labs/zeroclaw/issues/8140">#8140</a></td>
-<td>RFC: Wasm-first plugin runtime</td>
-<td>RFC</td>
-<td>P2</td>
-</tr>
-<tr>
-<td><a href="https://github.com/zeroclaw-labs/zeroclaw/issues/7497">#7497</a></td>
-<td>RFC: OCI container registries for plugins</td>
-<td>RFC</td>
-<td>P3</td>
-</tr>
-<tr>
-<td><a href="https://github.com/zeroclaw-labs/zeroclaw/issues/8462">#8462</a></td>
-<td>RFC: Runtime Policy for OTel LLM Content</td>
-<td>RFC</td>
-<td>P2</td>
-</tr>
-</tbody></table>
-<h3>PRs de Feature em Progresso</h3>
-<table>
-<thead>
-<tr>
-<th>PR</th>
-<th>Título</th>
-<th>Tamanho</th>
-<th>Risco</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a href="https://github.com/zeroclaw-labs/zeroclaw/pull/8384">#8384</a></td>
-<td>Native Inkbox channel (email + SMS + voice + iMessage)</td>
-<td>XL</td>
-<td>HIGH</td>
-</tr>
-<tr>
-<td><a href="https://github.com/zeroclaw-labs/zeroclaw/pull/8504">#8504</a></td>
-<td>GitHub channel with SOP ingress</td>
-<td>XL</td>
-<td>HIGH</td>
-</tr>
-<tr>
-<td><a href="https://github.com/zeroclaw-labs/zeroclaw/pull/8427">#8427</a></td>
-<td>WhatsApp native location pin support</td>
-<td>M</td>
-<td>HIGH</td>
-</tr>
-<tr>
-<td><a href="https://github.com/zeroclaw-labs/zeroclaw/pull/8483">#8483</a></td>
-<td>ZeroCode Cost tab by-period + org billed</td>
-<td>M</td>
-<td>MEDIUM</td>
-</tr>
-</tbody></table>
-<h3>Sinais de Roadmap v0.8.3</h3>
-<ol>
-<li><strong>WASM-first Plugins:</strong> Transformação para runtime padrão com capability enforcement e signed distribution</li>
-<li><strong>Expansão de Canais:</strong> GitHub, Inkbox, e enhancements em WhatsApp</li>
-<li><strong>Computer-use Desktop:</strong> Suporte para automação GUI local</li>
-<li><strong>Multi-agent Architecture:</strong> A2A discovery para interoperabilidade</li>
-<li><strong>Observabilidade:</strong> OTel policies para LLM e tool content</li>
-</ol>
-<hr>
-<h2>7. Resumo de Feedback dos Usuários</h2>
-<h3>Dores Reportadas</h3>
-<table>
-<thead>
-<tr>
-<th>Categoria</th>
-<th>Descrição</th>
-<th>Frequência</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>Provider Issues</strong></td>
-<td>Erros em provedores (Kimi, OpenAI, Anthropic) afetando streaming e tool calling</td>
-<td>Alta</td>
-</tr>
-<tr>
-<td><strong>Configuração de Canais</strong></td>
-<td>Problemas com setup inicial (Telegram, Nextcloud)</td>
-<td>Média</td>
-</tr>
-<tr>
-<td><strong>UX/Keybindings</strong></td>
-<td>Keybindings confusos ou inacessíveis, especialmente macOS</td>
-<td>Média</td>
-</tr>
-<tr>
-<td><strong>Multi-agent</strong></td>
-<td>Skills não funcionam em installations multi-agent</td>
-<td>Média</td>
-</tr>
-<tr>
-<td><strong>Computer-use</strong></td>
-<td>Demanda por interação desktop GUI</td>
-<td>Emergente</td>
-</tr>
-</tbody></table>
-<h3>Cenários de Uso Identificados</h3>
-<ol>
-<li><strong>Automação Desktop:</strong> Usuários querem screenshots + controle de mouse/keyboard</li>
-<li>**Multi-canal:**Email, SMS, voice, iMessage via Inkbox; GitHub integration</li>
-<li><strong>Multi-agent:</strong> Host múltiplos agentes com discovery via A2A</li>
-<li><strong>Offline-first:</strong> Pricing catalog offline para ambientes desconectados</li>
-</ol>
-<h3>Satisfação/Insatisfação</h3>
-<p><strong>Positivo:</strong></p>
-<ul>
-<li>Sistema SOP em evolução com foco em segurança</li>
-<li>Correções de multimodal pipeline sendo priorizadas</li>
-<li>Community engajada em RFCs estruturados</li>
-</ul>
-<p><strong>Pontos de Atenção:</strong></p>
-<ul>
-<li>5 issues P1 simultâneos indica pressão sobre estabilidade</li>
-<li>Commits perdidos em bulk revert (#6074) - 153 commits em recovery</li>
-<li>Bugs silenciosos (data-loss em translations) preocupantes</li>
-</ul>
-<hr>
-<h2>8. Backlog que Merece Atenção</h2>
-<h3>Issues Sem Atividade Recente (requer review)</h3>
-<table>
-<thead>
-<tr>
-<th>Issue</th>
-<th>Título</th>
-<th>Criado</th>
-<th>Última Atualização</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a href="https://github.com/zeroclaw-labs/zeroclaw/issues/6074">#6074</a></td>
-<td>Audit: track 153 commits lost in bulk revert</td>
-<td>2026-04-24</td>
-<td>2026-06-29</td>
-</tr>
-<tr>
-<td><a href="https://github.com/zeroclaw-labs/zeroclaw/issues/6140">#6140</a></td>
-<td>plugins: hybrid skills + WASM tools</td>
-<td>2026-04-26</td>
-<td>2026-06-29</td>
-</tr>
-<tr>
-<td><a href="https://github.com/zeroclaw-labs/zeroclaw/issues/7497">#7497</a></td>
-<td>OCI container registries for plugins</td>
-<td>2026-06-11</td>
-<td>2026-06-29</td>
-</tr>
-<tr>
-<td><a href="https://github.com/zeroclaw-labs/zeroclaw/issues/6297">#6297</a></td>
-<td>Signal/WhatsApp poll-vote / interactive-reply</td>
-<td>2026-05-03</td>
-<td>2026-06-29</td>
-</tr>
-</tbody></table>
-<h3>PRs Blocked / Needs Maintainer Review</h3>
-<table>
-<thead>
-<tr>
-<th>PR</th>
-<th>Título</th>
-<th>Size</th>
-<th>Bloqueio</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a href="https://github.com/zeroclaw-labs/zeroclaw/issues/8170">#8170</a></td>
-<td>In-app upgrade RFC</td>
-<td>-</td>
-<td>Needs maintainer-review</td>
-</tr>
-<tr>
-<td><a href="https://github.com/zeroclaw-labs/zeroclaw/issues/8462">#8462</a></td>
-<td>OTel Runtime Policy RFC</td>
-<td>-</td>
-<td>Needs maintainer-review</td>
-</tr>
-<tr>
-<td><a href="https://github.com/zeroclaw-labs/zeroclaw/pull/8149">#8149</a></td>
-<td>fix(plugins): mutex lock poison</td>
-<td>XS</td>
-<td>Needs author action</td>
-</tr>
-<tr>
-<td><a href="https://github.com/zeroclaw-labs/zeroclaw/pull/8496">#8496</a></td>
-<td>fix(tools/mcp): MCP access policy</td>
-<td>L</td>
-<td>Needs author action</td>
-</tr>
-</tbody></table>
-<h3>Recomendações para Maintainers</h3>
-<ol>
-<li><strong>Priorize P1s:</strong> 5 issues S1-workspace blocked simultâneos requerem atenção imediata</li>
-<li><strong>Recovery #6074:</strong> 153 commits perdidos precisam de processo de recovery documentado</li>
-<li><strong>RFC Decisões:</strong> 7 RFCs pendentes de feedback (especialmente #8140 WASM-first)</li>
-<li><strong>Channel Quality:</strong> Issues com Nextcloud, Telegram e WhatsApp indicam necessidade de QA mais robusto</li>
-</ol>
-<hr>
-<h2>Indicadores de Saúde do Projeto</h2>
-<table>
-<thead>
-<tr>
-<th>Métrica</th>
-<th>Valor</th>
-<th>Status</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Issues P1 abertas</td>
-<td>6</td>
-<td>⚠️ Alta pressão</td>
-</tr>
-<tr>
-<td>PRs em aberto</td>
-<td>40</td>
-<td>✅ Normal</td>
-</tr>
-<tr>
-<td>PRs merged hoje</td>
-<td>4</td>
-<td>✅ Bom</td>
-</tr>
-<tr>
-<td>Releases (24h)</td>
-<td>0</td>
-<td>⚠️ Monitorar</td>
-</tr>
-<tr>
-<td>Engagement (comentários)</td>
-<td>50+</td>
-<td>✅ Ativo</td>
-</tr>
-</tbody></table>
-<hr>
-<p><em>Relatório gerado em 2026-06-30 com dados do GitHub ZeroClaw. Para atualizações em tempo real, consulte <a href="https://github.com/zeroclaw-labs/zeroclaw">github.com/zeroclaw-labs/zeroclaw</a>.</em></p>
-</details>
-
 <hr>
 <p><em>Este resumo é gerado automaticamente por <a href="https://github.com/manelsen/agents-radar">agents-radar</a>.</em></p>
 ]]></content:encoded>
