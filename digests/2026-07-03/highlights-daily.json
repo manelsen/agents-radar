@@ -1,0 +1,90 @@
+{
+  "ai-agents": [
+    "ZeroClaw: 50 PRs e 3 bugs S1 em 24h",
+    "NanoBot: 64 PRs e 5+ bugs de segurança",
+    "Hermes Agent e PicoClaw em consolidação",
+    "IronClaw adota nova stack Reborn",
+    "ZeroClaw v0.8.1 com alta atividade",
+    "CoPa w investe em Runtime 2.0"
+  ],
+  "ai-hn": [
+    "OpenAI propõe 5% ao governo dos EUA",
+    "LLM dependencies geram debate em HN",
+    "Claude Sonnet 5: nicho mas útil",
+    "Comparação LangGraph god node",
+    "Zero-knowledge para age assurance",
+    "Comunidade HN questiona código LLM"
+  ],
+  "ai-arxiv": [
+    "QuasiMoTTo: scaling teste-tempo via QMC",
+    "Hipótese separação estado-predição",
+    "Lignina: bactérias fortalecem raízes",
+    "Verificação de raciocínio via Theoria",
+    "Robótica bimanual avança",
+    "Criança: 300k+ estrelas em 24h"
+  ],
+  "ai-science": [
+    "IA mede distâncias cósmicas precisas",
+    "Supernovas Tipo Ia revelam energia escura",
+    "Framework para Observatório Vera C. Rubin",
+    "Precisão quase espectroscópica",
+    "Análise de imagens estelares com ML",
+    "Dados massivos exigem IA autônoma"
+  ],
+  "ai-3dprinting": [
+    "Material converte luz solar em UV",
+    "Cura solar para resinas 3D",
+    "Impressão 3D off-grid viável",
+    "Energia renovável na manufatura",
+    "Sustentabilidade em fotopolimerização",
+    "Materiais fotônicos avançam"
+  ],
+  "ai-livingwell": [
+    "Creatina pode ajudar depressão em mulheres",
+    "Vitamina C baixa linked a menor massa cinzenta",
+    "Cannabis na adolescência dobra risco psicose",
+    "Ômega-3 sem benefícios para Alzheimer",
+    "Injeção reverte osteoartrite em animais",
+    "2.000 idosos em estudo japonês"
+  ],
+  "ai-mentalhealth": [
+    "Cannabis dobra risco de psicose em teens",
+    "463 mil adolescentes estudados",
+    "Uso precede diagnóstico por 2 anos",
+    "Risco para transtornos bipolares",
+    "Alertas crescentes sobre cannabis",
+    "Políticas de prevenção necessárias"
+  ],
+  "ai-agriculture": [
+    "Bactérias do solo auxiliam plantas salinas",
+    "Lignina fortalece raízes contra sal",
+    "Rendimentos superiores em terras salinas",
+    "Bio-tratamentos para solos degradados",
+    "Microrganismos vs insumos químicos",
+    "Agricultura regenerativa em alta"
+  ],
+  "ai-environmental": [
+    "Asteroide atingiu Mar do Norte há 45 Ma",
+    "Tsunami de 100m formou Cratera Silverpit",
+    "Havaí transforma plásticos em estradas",
+    "Pumas restauram ecossistema suburbano",
+    "Peixes dourados devastam água doce",
+    "Economia circular nos oceanos"
+  ],
+  "ai-archaeology": [
+    "Asteroide de 160m no Mar do Norte",
+    "Tsunami de 330 pés confirmado",
+    "Vida microbiana em profundidades",
+    "Quimiossíntese em abissais do Marrocos",
+    "Cratera Silverpit finalmente confirmada",
+    "Registro sedimentar oceânico revelado"
+  ],
+  "ai-social": [
+    "49% nunca iniciam avaliação renal",
+    "Apenas 19% chegam à lista de espera",
+    "Renda e localização determinam acesso",
+    "Desigualdade no transplante renal EUA",
+    "Barreiras sociais e estruturais",
+    "Interseccionalidade na saúde"
+  ]
+}

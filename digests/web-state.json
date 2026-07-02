@@ -1,6 +1,6 @@
 {
   "anthropic": {
-    "lastChecked": "2026-07-01T21:23:12.111Z",
+    "lastChecked": "2026-07-02T20:59:16.523Z",
     "seenUrls": {
       "https://www.anthropic.com/news/responsible-scaling-policy-v3": "2026-02-25T23:57:06.000Z",
       "https://www.anthropic.com/research/deprecation-updates-opus-3": "2026-02-25T20:58:11.000Z",
@@ -412,7 +412,7 @@
     }
   },
   "openai": {
-    "lastChecked": "2026-07-01T21:23:00.191Z",
+    "lastChecked": "2026-07-02T20:59:17.655Z",
     "seenUrls": {
       "https://openai.com/index/arvind-kc-chief-people-officer/": "2026-05-29T00:25:33.242Z",
       "https://openai.com/index/put-ai-to-work-for-your-product-team/": "2026-06-12T04:05:36.713Z",
@@ -1130,12 +1130,12 @@
       "https://openai.com/index/chatgpt-enterprise-spend-controls/": "2026-06-29T20:50:32.610Z",
       "https://openai.com/index/daybreak-securing-the-world/": "2026-06-25T10:12:01.877Z",
       "https://openai.com/index/samsung-electronics-chatgpt-codex-deployment/": "2026-07-01T04:14:31.163Z",
-      "https://openai.com/index/openai-broadcom-jalapeno-inference-chip/": "2026-07-01T08:21:03.908Z",
-      "https://openai.com/index/how-agents-are-transforming-work/": "2026-07-01T04:50:26.019Z",
-      "https://openai.com/index/previewing-gpt-5-6-sol/": "2026-07-01T19:43:30.055Z",
-      "https://openai.com/index/hp-frontier-partnership/": "2026-07-01T19:08:41.096Z",
-      "https://openai.com/index/core-dump-epidemiology-data-infrastructure-bug/": "2026-07-01T20:15:16.404Z",
-      "https://openai.com/index/introducing-genebench-pro/": "2026-07-01T21:21:15.479Z"
+      "https://openai.com/index/openai-broadcom-jalapeno-inference-chip/": "2026-07-02T06:28:47.433Z",
+      "https://openai.com/index/how-agents-are-transforming-work/": "2026-07-01T22:45:29.203Z",
+      "https://openai.com/index/previewing-gpt-5-6-sol/": "2026-07-01T23:15:29.963Z",
+      "https://openai.com/index/hp-frontier-partnership/": "2026-07-01T23:23:03.958Z",
+      "https://openai.com/index/core-dump-epidemiology-data-infrastructure-bug/": "2026-07-02T20:49:05.588Z",
+      "https://openai.com/index/introducing-genebench-pro/": "2026-07-02T20:59:07.751Z"
     }
   }
 }
