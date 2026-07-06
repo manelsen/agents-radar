@@ -6,7 +6,245 @@
     <description>Resumo diário do ecossistema open source de IA · Daily AI ecosystem digest</description>
     <language>pt-BR</language>
     <atom:link href="https://manelsen.github.io/agents-radar/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Sun, 05 Jul 2026 20:58:31 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 06 Jul 2026 21:25:19 +0000</lastBuildDate>
+    <item>
+      <title>Relatório semanal de ferramentas de IA 2026-07-07</title>
+      <link>https://manelsen.github.io/agents-radar/#2026-07-07/ai-weekly</link>
+      <guid isPermaLink="true">https://manelsen.github.io/agents-radar/#2026-07-07/ai-weekly</guid>
+      <pubDate>Tue, 07 Jul 2026 00:00:00 +0000</pubDate>
+      <description>Relatório semanal do ecossistema de ferramentas de IA 2026-W28 Cobertura: 2026-06-30 ~ 2026-07-06 | Gerado em: 2026-07-06 21:23 UTC Relatório Semanal — Ecossistema de Ferramentas de IA (2026-W28) Período: 30 de junho a 6 de julho de 2026 1. Principais Histórias da Semana 🏆 Lançamentos de Impacto Claude Sonnet 5 redefine benchmark de entrada — A Anthropic posicionou o novo modelo como &amp;quot;o Sonnet mais agentic já criado&amp;quot;, oferecendo performance comparável ao Opus 4.8 a custos significativ...</description>
+      <content:encoded><![CDATA[<h1>Relatório semanal do ecossistema de ferramentas de IA 2026-W28</h1>
+<blockquote>
+<p>Cobertura: 2026-06-30 ~ 2026-07-06 | Gerado em: 2026-07-06 21:23 UTC</p>
+</blockquote>
+<hr>
+<h1>Relatório Semanal — Ecossistema de Ferramentas de IA (2026-W28)</h1>
+<p><strong>Período:</strong> 30 de junho a 6 de julho de 2026</p>
+<hr>
+<h2>1. Principais Histórias da Semana</h2>
+<h3>🏆 Lançamentos de Impacto</h3>
+<p><strong>Claude Sonnet 5 redefine benchmark de entrada</strong> — A Anthropic posicionou o novo modelo como &quot;o Sonnet mais agentic já criado&quot;, oferecendo performance comparável ao Opus 4.8 a custos significativamente menores. Improvements incluem planejamento multi-step, uso de ferramentas (browsers/terminais) e execução autônoma. Perfil de segurança aprimorado, com restrições em cybersecurity.</p>
+<p><strong>Claude Fable 5 retorna ao mercado global</strong> — Após 19 dias de suspensão por controles de exportação dos EUA, os modelos Fable 5 e Mythos 5 foram restabelecidos em 1º de julho. A Anthropic publicou framework detalhado de safeguards e planos para disponibilidade em cloud providers (AWS, Google Cloud, Microsoft Foundry).</p>
+<p><strong>Claude Science lançado</strong> — Plataforma verticalizada para pesquisa científica que integra ferramentas fragmentadas em ambiente unificado e auditável.</p>
+<h3>🔬 Pesquisa de Destaque</h3>
+<p><strong>Framework de IA para energia escura</strong> — Universidade internacional apresentou sistema de deep learning para análise de supernovas Tipo Ia com precisão quase espectroscópica, projetado para processar petabytes do Vera C. Rubin Observatory.</p>
+<p><strong>Cannabis e saúde mental em adolescentes</strong> — Estudo com 463.000 jovens demonstrou risco ~2x maior de transtornos psicóticos e bipolares associado ao uso de cannabis na adolescência, com temporalidade sugestiva de causalidade.</p>
+<hr>
+<h2>2. Progresso das Ferramentas CLI</h2>
+<table>
+<thead>
+<tr>
+<th>Projeto</th>
+<th>Atividade (semana)</th>
+<th>Status</th>
+<th>Tendência</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Hermes Agent</strong></td>
+<td>50 issues + 50 PRs/dia</td>
+<td>🟢 Liderança em volume</td>
+<td>Alta variância, foco em estabilidade</td>
+</tr>
+<tr>
+<td><strong>ZeroClaw</strong></td>
+<td>50 PRs/dia</td>
+<td>🟢 Alta atividade</td>
+<td>Feature momentum</td>
+</tr>
+<tr>
+<td><strong>NanoBot</strong></td>
+<td>64 PRs (pico), 5+ bugs críticos</td>
+<td>🟢 Muito ativo</td>
+<td>Auditoria de segurança em andamento</td>
+</tr>
+<tr>
+<td><strong>IronClaw</strong></td>
+<td>50 PRs/dia</td>
+<td>🟡 Reborn em desenvolvimento</td>
+<td>Migração arquitetural</td>
+</tr>
+<tr>
+<td><strong>CoPaw</strong></td>
+<td>25-50 PRs/dia</td>
+<td>🟡 Beta v2.0</td>
+<td>Leak P1 corrigido</td>
+</tr>
+<tr>
+<td><strong>PicoClaw</strong></td>
+<td>23 PRs, 2 bugs</td>
+<td>🟢 Manutenção ativa</td>
+<td>Consolidação criptográfica</td>
+</tr>
+<tr>
+<td><strong>NullClaw</strong></td>
+<td>0-4 PRs/semana</td>
+<td>⚫ Inativo</td>
+<td>Estagnado</td>
+</tr>
+</tbody></table>
+<p><strong>Destaque técnico:</strong> NullClaw implementou suporte a native tool calls durante streaming SSE (#971), evoluindo arquitetura de REPL interativo com navigation por setas e raw-mode POSIX.</p>
+<hr>
+<h2>3. Ecossistema de Agentes de IA</h2>
+<h3>Convergências Arquiteturais</h3>
+<p>A semana evidenciou <strong>demandas universais</strong> entre os 7 projetos monitorados:</p>
+<ul>
+<li><strong>MCP (Model Context Protocol)</strong> — Torna-se padrão de facto para integração de ferramentas</li>
+<li><strong>Memory durável</strong> — Todas as comunidades discutem separações de contexto persistente</li>
+<li><strong>OAuth e autenticação multi-tenant</strong> — Requisito crescente para adoção enterprise</li>
+<li><strong>Extensibilidade via plugins</strong> — Arquitetura modular como diferencial competitivo</li>
+</ul>
+<h3>Dinâmicas de Mercado</h3>
+<ul>
+<li><strong>NullClaw</strong> permanece em estado de stand-by, possivelmente descontinuado</li>
+<li><strong>CoPaw</strong> demonstra fase instável (69% de issues com bugs reportados)</li>
+<li><strong>ZeroClaw</strong> lidera em engajamento comunitário com 14+ comentários por issue</li>
+</ul>
+<h3>Matriz de Saúde do Ecossistema</h3>
+<pre><code>Atividade Alta: Hermes Agent, ZeroClaw, NanoBot, IronClaw
+Estável: PicoClaw, CoPaw  
+Inativo: NullClaw
+Releases formais: 0% (todos em ciclo de consolidação pré-lançamento)
+</code></pre>
+<hr>
+<h2>4. Tendências Open Source</h2>
+<h3>📈 Sinais Fortes</h3>
+<p><strong>Execução local de LLMs</strong> — Guias práticos para rodar modelos SOTA localmente (ex: Jamesob&#39;s guide) dominaram HN com 198 pontos e 94 comentários, refletindo demanda por privacidade e redução de custos.</p>
+<p><strong>Code agents open source</strong> — Projetos como 143.dev buscam democratizar infraestrutura para coding-agents, indicando maturação do segmento.</p>
+<p><strong>Benchmark pragmáticos</strong> — Comunidade valoriza comparações concretas (ex: &quot;Claude Sonnet 5 Is Not Frontier but Has Its Uses&quot;) sobre lançamentos vazios.</p>
+<h3>📉 Sinais Fracos</h3>
+<p><strong>Dependências de código LLM</strong> — Artigo provocativo de Joey Hughes (Debian) questionando inclusão de código LLM em dependências de software, gerando debate sobre licenciamento e sustentabilidade.</p>
+<p><strong>Controvérsias geopolíticas</strong> — Alibaba baniu Claude Code de ambientes corporativos citando riscos de backdoor, evidenciando tensões de soberania tecnológica.</p>
+<hr>
+<h2>5. Debates da Comunidade HN</h2>
+<h3>🔥 Mais Engajados (por volume de comentários)</h3>
+<ol>
+<li><p><strong>&quot;Claude Sonnet 5&quot;</strong> — 351 comentários (668 pontos)</p>
+<ul>
+<li>Comunidade celebra democratização de capacidades agentic</li>
+<li>Debate sobre limites de benchmarking e casos de uso práticos</li>
+</ul>
+</li>
+<li><p><strong>&quot;Alibaba bans Claude Code&quot;</strong> — 260 comentários (302 pontos)</p>
+<ul>
+<li>Críticas a práticas de isolamento em SaaS</li>
+<li>Discussão sobre confiança em ferramentas ocidentais</li>
+</ul>
+</li>
+<li><p><strong>&quot;Spyware in Claude Code&quot;</strong> — 116 comentários (241 pontos)</p>
+<ul>
+<li>Vazamento de sessão entre instâncias workspace</li>
+<li>Preocupações com privacidade em ferramentas de coding</li>
+</ul>
+</li>
+<li><p><strong>&quot;Custo por performance caindo&quot;</strong> — 132 comentários (337 pontos)</p>
+<ul>
+<li>Celebração da commoditização de LLMs</li>
+<li>Debate: beneficia ou prejudica inovação?</li>
+</ul>
+</li>
+<li><p><strong>&quot;No LLM code in dependencies&quot;</strong> — 65 comentários (91 pontos)</p>
+<ul>
+<li>Questões de licenciamento, confiança e sustentabilidade</li>
+<li>División entre pragmatismo e purismo</li>
+</ul>
+</li>
+</ol>
+<h3>🎭 Sentimento Geral</h3>
+<p><strong>Misturado com inclinação crítica.</strong> A comunidade demonstra:</p>
+<ul>
+<li>Entusiasmo com avanços técnicos concretos</li>
+<li>Ceticismo crescente sobre ROI de IA em produtividade (estudo: economia de apenas 3% das horas)</li>
+<li>Frustração com relançamentos被认为是 &quot;deliberadamente ruins&quot; (Claude Fable)</li>
+</ul>
+<hr>
+<h2>6. Atualizações Oficiais</h2>
+<h3>Anthropic (3-6 novos artigos)</h3>
+<table>
+<thead>
+<tr>
+<th>Data</th>
+<th>Conteúdo</th>
+<th>Relevância</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>06/30</td>
+<td>Introdução ao Claude Sonnet 5</td>
+<td>⭐⭐⭐</td>
+</tr>
+<tr>
+<td>06/30</td>
+<td>Claude Science</td>
+<td>⭐⭐⭐</td>
+</tr>
+<tr>
+<td>06/30</td>
+<td>Frontier Red Team (atualização)</td>
+<td>⭐⭐</td>
+</tr>
+<tr>
+<td>07/01</td>
+<td>Redeployment do Fable 5</td>
+<td>⭐⭐⭐</td>
+</tr>
+<tr>
+<td>07/01</td>
+<td>Framework de segurança Fable 5</td>
+<td>⭐⭐</td>
+</tr>
+<tr>
+<td>07/02</td>
+<td>HP Frontier Partnership</td>
+<td>⭐⭐</td>
+</tr>
+</tbody></table>
+<h3>OpenAI (1 artigo)</h3>
+<table>
+<thead>
+<tr>
+<th>Data</th>
+<th>Conteúdo</th>
+<th>Relevância</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>06/29</td>
+<td>HP Frontier Partnership</td>
+<td>⭐⭐</td>
+</tr>
+</tbody></table>
+<p><strong>Observação:</strong> OpenAI com volume textual reduzido; Anthropic dominou comunicação com profundidade técnica.</p>
+<hr>
+<h2>7. Sinais para a Próxima Semana</h2>
+<h3>🔮 Alta Probabilidade</h3>
+<ol>
+<li><p><strong>Vera C. Rubin Observatory</strong> — Fluxo massivo de dados astronômicos iminente; framework de IA para supernovas será testado em produção</p>
+</li>
+<li><p><strong>Computação quântica prática</strong> — Extensão de vida de magnons (18µs) acelera timeline para processadores do tamanho de moeda; pressão sobre criptografia pós-quântica intensifica</p>
+</li>
+<li><p><strong>Consolidação de código LLM</strong> — Debate sobre dependências pode gerar movimento por políticas de licenciamento mais explícitas em projetos open source</p>
+</li>
+</ol>
+<h3>🎯 Monitoramento Prioritário</h3>
+<ul>
+<li><strong>Releases formais</strong> — Ecossistema em ciclo pré-lançamento há 7+ dias; expectativa de primeira release formal (provavelmente IronClaw ou CoPaw)</li>
+<li><strong>Evolução do Claude Sonnet 5</strong> — Adoption rate e casos de uso emergentes na comunidade</li>
+<li><strong>Regulação de exportação</strong> — Impacto de controles EUA em distribuição de modelos frontier</li>
+<li><strong>Segurança de code agents</strong> — Novos reports de vulnerabilidades em ferramentas de coding</li>
+</ul>
+<h3>⚠️ Riscos Identificados</h3>
+<ul>
+<li><strong>Bubble de expectativas</strong> — Estudo de 3% de economia de horas pode corroer narrativas de produtividade</li>
+<li><strong>Fragmentação de plugins</strong> — Ecossistema sem padrão maduro para extensibilidade pode limitar adoção enterprise</li>
+<li><strong>Saturamento de lançamentos</strong> — Modelo Leanstral 1.5 recebeu atenção limitada (4 pontos), indicando fadiga de mercado</li>
+</ul>
+<hr>
+<p><strong>Gerado em:</strong> 2026-07-06<br><strong>Fontes:</strong> agents-radar, Hacker News, ScienceDaily, Anthropic, OpenAI</p>
+<hr>
+<p><em>Este resumo é gerado automaticamente por <a href="https://github.com/manelsen/agents-radar">agents-radar</a>.</em></p>
+]]></content:encoded>
+    </item>
     <item>
       <title>Relatório diário do ecossistema de agentes de IA 2026-07-06</title>
       <link>https://manelsen.github.io/agents-radar/#2026-07-06/ai-agents</link>
@@ -10197,33 +10435,6 @@ Discussão: <a href="https://news.ycombinator.com/item?id=48778312">https://news
 <p><strong>2. Distributed Attacks in Persistent-State AI Control (<a href="http://arxiv.org/abs/2607.02514v1">http://arxiv.org/abs/2607.02514v1</a>)</strong> — Artigo pioneiro em identificar ataques cross-session em code agents. À medida que IDEs e CI/CD pipelines integrorem LLMs, este trabalho antecipa uma classe de vulnerabilidades ainda não amplamente discutida.</p>
 <p><strong>3. EvoPolicyGym (<a href="http://arxiv.org/abs/2607.02440v1">http://arxiv.org/abs/2607.02440v1</a>)</strong> — Oferece framework conceitual e experimental para avaliar autonomia em agentes — uma necessidade à medida que sistemas de IA assumem mais controle sobre sua própria otimização.</p>
 <hr>
-<hr>
-<p><em>Este resumo é gerado automaticamente por <a href="https://github.com/manelsen/agents-radar">agents-radar</a>.</em></p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>IA no ScienceDaily 2026-07-04</title>
-      <link>https://manelsen.github.io/agents-radar/#2026-07-04/ai-science</link>
-      <guid isPermaLink="true">https://manelsen.github.io/agents-radar/#2026-07-04/ai-science</guid>
-      <pubDate>Sat, 04 Jul 2026 00:00:00 +0000</pubDate>
-      <description>Resumo diário de IA no ScienceDaily 2026-07-04 Fonte: ScienceDaily | 1 histórias | Gerado em: 2026-07-03 20:58 UTC Resumo ScienceDaily — IA e Astronomia Destaques do dia Um novo framework alimentado por inteligência artificial promete transformar a forma como os astrônomos medem a expansão do Universo. A tecnologia analisa imagens de supernovas Tipo Ia e modela seus ambientes com precisão quase espectroscópica. O sistema foi projetado especificamente para processar a enorme quantidade de dados e...</description>
-      <content:encoded><![CDATA[<h1>Resumo diário de IA no ScienceDaily 2026-07-04</h1>
-<blockquote>
-<p>Fonte: <a href="https://www.sciencedaily.com/news/computers_math/artificial_intelligence/">ScienceDaily</a> | 1 histórias | Gerado em: 2026-07-03 20:58 UTC</p>
-</blockquote>
-<hr>
-<h1>Resumo ScienceDaily — IA e Astronomia</h1>
-<h2>Destaques do dia</h2>
-<p>Um novo framework alimentado por inteligência artificial promete transformar a forma como os astrônomos medem a expansão do Universo. A tecnologia analisa imagens de supernovas Tipo Ia e modela seus ambientes com precisão quase espectroscópica. O sistema foi projetado especificamente para processar a enorme quantidade de dados esperados do Observatório Vera C. Rubin, podendo acelerar significativamente nossa compreensão da energia escura.</p>
-<h2>Principais histórias</h2>
-<p><strong>IA para Cosmologia Observacional</strong></p>
-<p>O destaque da semana é o framework de IA para análise de supernovas, que representa um avanço significativo na astronomia observacional baseada em machine learning. A capacidade de estimar distâncias cósmicas com alta precisão a partir de imagens diretas pode democratizar análises que antes exigiam equipamentos spectroscópicos de alto custo.</p>
-<h2>Sinal de pesquisa</h2>
-<p>As tecnologias de IA voltadas para astrofísica estão se tornando cada vez mais especializadas em resolver problemas de escala. O caso das supernovas Tipo Ia ilustra uma tendência clara: modelos de visão computacional sendo adaptados para extrair informações astrofísicas de grandes volumes de dados imagéticos. A ênfase na preparação para infraestrutura futura (Rubin Observatory) indica que a comunidade científica está priorizando soluções de IA que escalem com o aumento exponencial de dados observacionais. Isso sugere uma mudança de paradigma onde a IA não apenas acelera análises, mas viabiliza medições antes impraticáveis em larga escala.</p>
-<h2>Vale ler</h2>
-<ol>
-<li><strong>Millions of exploding stars could soon reveal dark energy&#39;s secrets</strong> — <a href="https://www.sciencedaily.com/releases/2026/06/260621060315.htm">https://www.sciencedaily.com/releases/2026/06/260621060315.htm</a> — Este artigo demonstra concretamente como técnicas de deep learning estão sendo aplicadas a problemas fundamentais da cosmologia, sendo um exemplo concreto da integração entre IA e ciência básica.</li>
-</ol>
 <hr>
 <p><em>Este resumo é gerado automaticamente por <a href="https://github.com/manelsen/agents-radar">agents-radar</a>.</em></p>
 ]]></content:encoded>
