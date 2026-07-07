@@ -1,0 +1,114 @@
+{
+  "ai-agents": [
+    "NullClaw, NanoBot, Hermes Agent em destaque",
+    "ZeroClaw corrige vulnerabilidade de SSRF",
+    "CoPaw v2.0.0-beta.3: beta estabilizado",
+    "IronClaw v0.29.1: release de manutenção",
+    "NanoBot com 4 security advisories ativas",
+    "Hermes Agent integra Mem0 para memória"
+  ],
+  "ai-web": [
+    "Claude Sonnet 5: alta agenticidade, custo reduzido",
+    "Pesquisa sobre J-space: interpretabilidade avançada",
+    "Anthropic publica 4 novos artigos hoje",
+    "OpenAI sem novos artigos nesta atualização",
+    "Sonnet 5 fecha lacuna com Opus 4.8",
+    "Estudo sobre LLMs para orientação pessoal"
+  ],
+  "ai-hn": [
+    "Rowboat: alternativa open-source ao Claude Desktop",
+    "Shellular: execute Claude Code pelo celular",
+    "The Making of Claude Code: detalhes internos",
+    "Claude Sonnet 5: modelo agentic acessível",
+    "Regulamentação de câmeras em veículos na UE",
+    "LLMs causing dysfunction em empresas divide"
+  ],
+  "ai-arxiv": [
+    "Distilação on-policy: scaling RLVR eficiente",
+    "LLM-as-Verifier: terceiro eixo de scaling",
+    "LLMs codificam comprimento restante linearmente",
+    "Agentes embodied: planejamento hierárquico",
+    "Verificação de modelos para alinhamento",
+    "Defesa contra prompt injection em foco"
+  ],
+  "ai-science": [
+    "Mecânica quântica impulsiona IA e computação",
+    "Supercondutores descobertos via simulação quântica",
+    "Magnons: vida útil aumentada 100x",
+    "Hardware quântico do tamanho de uma moeda",
+    "Convergência quântica-IA em aceleração",
+    "Processadores quânticos mais estáveis próximos"
+  ],
+  "ai-hacking": [
+    "IA descobre 2 supercondutores em tempo recorde",
+    "Magnons viabilizam qubits ultra-compactos",
+    "Mecânica quântica em escala industrial",
+    "Segurança em processadores quânticos urgente",
+    "Criptografia ameaçada por hardware quântico",
+    "Descoberta de materiais quânticos acelerada por ML"
+  ],
+  "ai-livingwell": [
+    "Exercício reverte envelhecimento muscular",
+    "Centenários têm padrão único de ácidos biliares",
+    "Teste apoB supera LDL para prevenir infartos",
+    "Vitamina C baixa reduz massa cinzenta em idosos",
+    "Proteína Mitch queima gordura e bloqueia adipócitos",
+    "Mecanismo molecular do envelhecimento identificado"
+  ],
+  "ai-mentalhealth": [
+    "Circuito do sono profundo identificado",
+    "Sonolink: hormona de crescimento e reparo muscular",
+    "Fragmentação do sono linked a Alzheimer e Parkinson",
+    "Loop feedback sono-metabolismo revelado",
+    "Terapias direcionadas ao sono em desenvolvimento",
+    "Neurobiologia do sono para prevenção de doenças"
+  ],
+  "ai-engineering": [
+    "Mecânica quântica: de teoria a tecnologias",
+    "Células solares de alta eficiência quânticas",
+    "Sensores biomédicos ultra-sensíveis",
+    "Computação quântica resolve problemas intratáveis",
+    "Energia limpa impulsionada por física quântica",
+    "Inovação interdisciplinar quântica-enggenharia"
+  ],
+  "ai-agriculture": [
+    "Abelhas usavam ossos como ninhos há 20 mil anos",
+    "Mamangavas resolvem testes de inteligência",
+    "Estratégia adaptativa de nidificação descoberta",
+    "Comportamento surpreendente de polinizadores",
+    "Cognição animal além das expectativas",
+    "Agricultura e segurança alimentar impactadas"
+  ],
+  "ai-environmental": [
+    "Fogos de artifício: poluentes invisíveis",
+    "Geoengenharia pode enfraquecer El Niño",
+    "Nuvens marinhas: impacto climático inesperado",
+    "Cientista Santer questiona relatório dos EUA",
+    "Dados satellite confirmam ação humana no clima",
+    "Forçamento climático: intervenções de risco"
+  ],
+  "ai-archaeology": [
+    "Lobos de 5.000 anos em ilha do Báltico",
+    "Domesticação mais antiga que se pensava",
+    "Abelhas pré-históricas em alvéolos dentários",
+    "Interações humano-animal há milênios",
+    "Cuidados e manejo animal ancestral",
+    "Genética e paleoecologia revelam passado"
+  ],
+  "ai-social": [
+    "49% não iniciam avaliação para transplante",
+    "Apenas 19% chegam à lista de espera renal",
+    "Geografia e renda determinam acesso",
+    "Barreiras sistemáticas no sistema de saúde EUA",
+    "Desigualdades em transplante renal",
+    "Fatores socioeconômicos limitam cuidados"
+  ],
+  "ai-offbeat": [
+    "Quarentena lunar para amostras de Marte",
+    "Microrganismo alienígena: risco para ecossistemas",
+    "Mecânica quântica muda o mundo",
+    "Abelhas resolvem testes de inteligência",
+    "Riso de primatas: raiz da fala humana",
+    "Neurociência reinterpretando Freud"
+  ]
+}
