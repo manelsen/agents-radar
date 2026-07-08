@@ -1,0 +1,127 @@
+{
+  "ai-cli": [
+    "Anthropic: 7 artigos sobre interpretabilidade",
+    "OpenAI: 4 artigos, GPT Live em destaque",
+    "Total: 11 artigos oficiais de IA"
+  ],
+  "ai-agents": [
+    "NanoBot: 29 PRs, 87,5% taxa fechamento",
+    "Segurança WebUI domina projetos em alta",
+    "WASM plugins em ZeroClaw e IronClaw",
+    "CoPaw e PicoClaw: estabilidade multi-canal",
+    "NullClaw inativo: viabilidade questionada",
+    "7 projetos monitorados no ecossistema"
+  ],
+  "ai-web": [
+    "Anthropic: arcabouço 'eixo do assistente'",
+    "Personas em LLMs: controle de comportamento",
+    "OpenAI: possível lançamento GPT-Live",
+    "Projeto Vend fase 2: capacidades reais",
+    "7 novos artigos da Anthropic (sitemap: 408)",
+    "4 artigos da OpenAI (sitemap: 862)"
+  ],
+  "ai-hn": [
+    "GPT-Live: 474 pts e 327 comentários",
+    "GPT-5.6 Sol/Luna/Terra: expectativa alta",
+    "Trump remove restrições: debate acalorado",
+    "Claude Code: vulnerabilidades allegedas",
+    "Ask HN: 'Menos IA, mais hacking humano' 71pts",
+    "OpenAI domina noticiário do dia"
+  ],
+  "ai-arxiv": [
+    "DepthWeave-KV: compressão cache adaptativo",
+    "FreqDepthKV: profundidade de frequência",
+    "ELSA3D: modelo 3D unificado texto-geração",
+    "50 artigos em cs.AI, cs.CL, cs.LG",
+    "Danus e RuBench: frameworks agentic",
+    "IoT, medicina e robótica em alta"
+  ],
+  "ai-science": [
+    "Mecânica quântica: base tecnológica",
+    "Computação quântica em aceleração",
+    "Medicina e energia em transformação",
+    "ML + física quântica: interseção crescente",
+    "Exploração cósmica impulsionada",
+    "Revolução quântica amadurecendo"
+  ],
+  "ai-robotics": [
+    "IA acelera simulação de fusão estelar",
+    "Redes neurais modelam dinâmicas complexas",
+    "Sim-to-Real: ciclos de treinamento menores",
+    "Modelagem não-linear para controle",
+    "Aplicações terrestres em destaque",
+    "Robótica beneficiada por IA acelerada"
+  ],
+  "ai-hacking": [
+    "Supercondutores via ML + quântico",
+    "Magnons:info quântica 100x mais tempo",
+    "Criptografia vulnerável a quantum",
+    "Hardware quântico compacto emerge",
+    "Computação quântica em revolução",
+    "Segurança cibernética em transformação"
+  ],
+  "ai-livingwell": [
+    "Orforglipron supera Ozempic oral",
+    "Proteína Mitch: queima gordura aumentada",
+    "Fingerprint de centenários no sangue",
+    "Cérebro resiste ao Alzheimer naturalmente",
+    "Colesterol apoB: superior ao LDL",
+    "Sono profundo ligado ao crescimento"
+  ],
+  "ai-mentalhealth": [
+    "Sono profundo libera hormônio do crescimento",
+    "Circuito cerebral descubierto",
+    "Retroalimentação sono-metabolismo",
+    "Alzheimer e Parkinson conectados",
+    "Distúrbios do sono: fator etiológico",
+    "Terapias para sono em perspectiva"
+  ],
+  "ai-engineering": [
+    "Sensor quântico com cancelamento de ruído",
+    "Detectar matéria escura: possível",
+    "Ondas gravitacionais primordiais",
+    "Nuvens de átomos ultra-frios",
+    "Engenharia quântica: laboratório para aplicação",
+    "Sensores altíssima sensibilidade"
+  ],
+  "ai-agriculture": [
+    "Mamangavas resolvem teste de inteligência",
+    "Abelhas nidificavam em dentes há 20 mil anos",
+    "Mamangavas acumulam 7x mais metais tóxicos",
+    "Polinizadores: cognição surpreendente",
+    "Estratégias de nidificação adaptativas",
+    "Ecossistemas sob risco de poluição"
+  ],
+  "ai-environmental": [
+    "Fogos de artifício: poluição invisível",
+    "Geoengenharia pode enfraquecer El Niño",
+    "Clarificação de nuvens: impacto drástico",
+    "Aerossóis estratosféricos: sem efeito",
+    "Benjamin Santer contesta relatório dos EUA",
+    "Dados de satélite confirmam aquecimento"
+  ],
+  "ai-archaeology": [
+    "Colapso megalítico: substituição genética",
+    "DNA revela migração em larga escala",
+    "Neanderthal: mobilidade feminina complexa",
+    "Lobos domesticados há 5.000 anos",
+    "Enzima de 3,2 bilhões de anos reconstruída",
+    "DNA antigo questiona narrativas"
+  ],
+  "ai-social": [
+    "DNA megalítico: substituição populacional",
+    "Neanderthal: 'romance' não se sustenta",
+    "Migração feminina entre grupos",
+    "Crise devastadora: deslocamento em massa",
+    "Novas tradições sociais emergiram",
+    "Dados genômicos reformulam história"
+  ],
+  "ai-offbeat": [
+    "Entrelaçamento quântico em cristal",
+    "Enzima de 3,2 bi de anos ressuscitada",
+    "Riso de grandes primatas: origem da fala",
+    "Abelhas resolvem teste de inteligência",
+    "Quarentena para vida alienígena?",
+    "Objeto macroscópico mostra comportamento quântico"
+  ]
+}
