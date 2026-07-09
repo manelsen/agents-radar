@@ -1,0 +1,122 @@
+{
+  "ai-agents": [
+    "NullClaw inativa em 24h",
+    "NanoBot: 2 bugs P1 críticos",
+    "IronClaw e Hermes lideram",
+    "ZeroClaw e CoPaw crescem",
+    "223 issues e 250+ PRs",
+    "Foco em segurança e custos"
+  ],
+  "ai-web": [
+    "Anthropic: 33 novos artigos",
+    "Ben Bernanke no LTBT",
+    "Misalignment agêntico",
+    "Off switch para dual-use",
+    "OpenAI: 5 artigos",
+    "Governança corporativa"
+  ],
+  "ai-hn": [
+    "GPT-5.6: 786 pts",
+    "54% mais eficiente",
+    "GLM 5.2 contabilidade",
+    "NYT vs OpenAI",
+    "Off switch: 5 pts",
+    "ARC-AGI em debate"
+  ],
+  "ai-arxiv": [
+    "Co-LMLM: memória limitada",
+    "PALS: podagem consciente",
+    "DiaLLM: dialetos",
+    "Confiança em LLMs",
+    "50 artigos cs.AI/CL/LG",
+    "Governança de agentes"
+  ],
+  "ai-science": [
+    "Mecânica quântica",
+    "Tecnologias avançadas",
+    "Energia e medicina",
+    "Computação quântica",
+    "Revolução tecnológica",
+    "Convergência com IA"
+  ],
+  "ai-robotics": [
+    "DNA em chip Harvard",
+    "IA para água",
+    "Fusões estelares",
+    "Nanorobótica médica",
+    "Bioengenharia",
+    "Astrofísica"
+  ],
+  "ai-hacking": [
+    "Supercondutores IA",
+    "Mecânica quântica",
+    "Criptografia pós-quântica",
+    "Hardware quântico",
+    "Segurança quântica",
+    "Descoberta de materiais"
+  ],
+  "ai-livingwell": [
+    "Orforglipron vs Ozempic",
+    "Proteína Mitch",
+    "Centenários: assinatura",
+    "Exame apoB",
+    "Jejum intermitente",
+    "Metabolismo"
+  ],
+  "ai-mentalhealth": [
+    "Sono profundo",
+    "Hormônio do crescimento",
+    "Circuito cerebral",
+    "Músculo e gordura",
+    "Alzheimer e Parkinson",
+    "Neurociência"
+  ],
+  "ai-engineering": [
+    "Mistério do gálio",
+    "IA para água",
+    "Sensores quânticos",
+    "Semicondutores",
+    "Física fundamental",
+    "Quântica"
+  ],
+  "ai-agriculture": [
+    "Bumblebees: 7× metais",
+    "Abelhas em dentes",
+    "Teste de inteligência",
+    "Poluição",
+    "Nidação",
+    "Cognição"
+  ],
+  "ai-environmental": [
+    "Carvalhos: CO2",
+    "Oceano contra secas",
+    "El Niño",
+    "Geoengenharia",
+    "Poluição",
+    "Ciclos"
+  ],
+  "ai-archaeology": [
+    "Construtores megalíticos",
+    "DNA: substituição",
+    "Neandertais",
+    "Lobos na ilha",
+    "Abelhas",
+    "5.000 anos"
+  ],
+  "ai-social": [
+    "DNA megalítico",
+    "Neandertal",
+    "Migração",
+    "Substituição",
+    "Genética",
+    "Sociedade"
+  ],
+  "ai-offbeat": [
+    "DNA em chip",
+    "Entrelaçamento",
+    "Tubarão-duende",
+    "Enzima 3.2 bi anos",
+    "Quântica macroscópica",
+    "Armazenamento DNA"
+  ]
+}
