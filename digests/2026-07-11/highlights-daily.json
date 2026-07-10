@@ -1,0 +1,90 @@
+{
+  "ai-agents": [
+    "NullClaw: bug crítico no Telegram (idle timeout)",
+    "NullClaw: vulnerabilidade em autenticação A2A",
+    "7 projetos ativos no ecossistema de agentes IA",
+    "Zero PRs mergeados nas últimas 24h",
+    "2 issues abertas em monitoramento reativo",
+    "Zero releases publicados no período"
+  ],
+  "ai-web": [
+    "Anthropic + UST: 20.000 engenheiros para Physical AI",
+    "Parceria foca em verificação de chips e automóveis",
+    "Claude expande para manufatura e semicondutores",
+    "Domínios: IoT, telecom, embarcados, automotivo",
+    "OpenAI sem novos artigos nesta atualização",
+    "Expansão industrial do ecossistema Claude"
+  ],
+  "ai-hn": [
+    "GPT-5.6 Sol Ultra prova Cycle Double Cover Conjecture",
+    "Apple processa OpenAI por roubo de segredos comerciais",
+    "Sol 5.6 supera ClaudeCode em 2.2x em tarefas de código",
+    "Comunidade debate validade de provas matemáticas por IA",
+    "180 pontos e 166 comentários sobre a demonstração",
+    "Sentimento: otimismo cauteloso com preocupação ética"
+  ],
+  "ai-arxiv": [
+    "BiSCo-LLM: compressão binária extrema 1-2 bits",
+    "Super Weights: poda baseada em importância falha",
+    "50 artigos publicados no cs.AI, cs.CL, cs.LG",
+    "Memória proativa em agentes autônomos",
+    "Orquestração multiagente em avanço significativo",
+    "Avaliação поведінкова sob quantização emerge"
+  ],
+  "ai-science": [
+    "Mecânica quântica acelera treinamento de IA",
+    "Otimização combinatória com processadores quânticos",
+    "Simulação molecular em novos patamares",
+    "Superposição e entrelaçamento para espaços de busca",
+    "Convergência quântica-IA em energia e medicina",
+    "Problemas antes intratáveis agora resolvíveis"
+  ],
+  "ai-livingwell": [
+    "Orforglipron supera Ozempic oral em perda de peso",
+    "Pílula não requer refrigeração nem timing",
+    "Jejum intermitente tão eficaz quanto restrição calórica",
+    "Teste apoB mais preciso que LDL para doenças cardíacas",
+    "Maior adesão a longo prazo sem contar calorias",
+    "Estudos de grande escala confirmam resultados"
+  ],
+  "ai-mentalhealth": [
+    "Descoberto circuito cerebral do sono profundo",
+    "Conexão sono profundo ↔ hormônio do crescimento",
+    "Impacto em crescimento, músculos e funções cerebrais",
+    "Novas terapias para Alzheimer e Parkinson",
+    "Retroalimentação sono-metabolismo mapeada",
+    "Pilar fundamental para saúde física e mental"
+  ],
+  "ai-engineering": [
+    "Mistério de 150 anos do gálio resolvido com IA",
+    "Sensor quântico detecta matéria escura e ondas gravitacionais",
+    "Átomos ultrafrios recuperam sinais ocultos",
+    "IA desvenda estados da água super-resfriada",
+    "Aplicações quânticas em energia e medicina",
+    "Frameworks de cancelamento de ruído demonstrados"
+  ],
+  "ai-environmental": [
+    "Carvalhos absorvem CO₂ após parar de crescer",
+    "Oceanos modulam secas como 'freio natural' global",
+    "Fogos de artifício deixam poluentes ocultos",
+    "Descoberta questiona modelos de estoque de carbono",
+    "Variabilidade térmica oceânica protege agricultura",
+    "Monitoramento integrado biosfera-clima-poluição"
+  ],
+  "ai-archaeology": [
+    "DNA: construtores megalíticos substituídos por novos povos",
+    "Colapso populacional há 5.000 anos na Europa",
+    "Lobos de 5.000 anos indicam domesticação mais antiga",
+    "Neandertal x Homo sapiens: revisão crítica de 'romances'",
+    "Migração em massa após crise devastadora",
+    "Genética revela dinâmicas populacionais complexas"
+  ],
+  "ai-offbeat": [
+    "Bactéria intestinal elimina tumores colorretais em ratos",
+    "Tubarão-duende filmado vivo pela 1ª vez aos 125M anos",
+    "Cristal centimétrico mostra entrelaçamento quântico",
+    "Enzima extinta há 3,2 bilhões de anos reconstruída",
+    "Anãs brancas como candidatas a esferas de Dyson",
+    "Instalação lunar para análise de amostras extraterrestres"
+  ]
+}
