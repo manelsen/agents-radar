@@ -1,0 +1,98 @@
+{
+  "ai-agents": [
+    "Hermes Agent v0.18.2 released",
+    "ZeroClaw hits v0.8.3 milestone",
+    "CoPaw regressões na v2.0.0",
+    "IronClaw: gargalo no CI 0.29.1",
+    "NanoBot: 3 issues, 11 PRs em 24h",
+    "Fragmentação no ecossistema open source"
+  ],
+  "ai-hn": [
+    "Claude Code: 33k tokens vs 7k OpenCode",
+    "George Hotz: I love LLMs, hate hype",
+    "Apple avança integração com OpenAI",
+    "Microsoft investe em Go para IA",
+    "Anthropic descobre espaço oculto no Claude",
+    "Rich Sutton: One-Step Trap na pesquisa"
+  ],
+  "ai-robotics": [
+    "Harvard: chip de silício escreve DNA",
+    "Osaka: IA modela estados da água",
+    "Simulador de IA acelera fusão estelar",
+    "Robótica bio-sintética avança",
+    "Escrita genética com eletricidade",
+    "DNA chip revoluciona laboratório"
+  ],
+  "ai-hacking": [
+    "Material quântico 2D confirmado",
+    "Estados de borda controláveis por tensão",
+    "IA descobre dois novos supercondutores",
+    "Criptografia quântica em temperatura ambiente",
+    "Supercondutores sem dissipação de energia",
+    "QKD mais robusto com materiais 2D"
+  ],
+  "ai-memory": [
+    "Proteína tau essencial para memória",
+    "Tau converte experiências em memórias",
+    "Forma anormal de tau prejudica memória",
+    "Duplo papel da tau no Alzheimer",
+    "Alvo farmacológico: modular tau",
+    "Tau organiza células de memória"
+  ],
+  "ai-livingwell": [
+    "Orforglipron supera semaglutida oral",
+    "Teste apoB mais preciso que LDL",
+    "ISRS acelera doença valvar cardíaca",
+    "Fibra mantém vermes anti-inflamatórios",
+    "Maconha ligada a risco de câncer",
+    "Jejum intermitente: mesma perda de peso"
+  ],
+  "ai-engineering": [
+    "Energia extraída de buraco negro em lab",
+    "Campo elétrico triplica condução de calor",
+    "Gálio: mistério de 150 anos resolvido",
+    "IA distingue estados da água super-resfriada",
+    "Sensor quântico detecta matéria escura",
+    "Chips de gálio para semicondutores"
+  ],
+  "ai-agriculture": [
+    "Sulfoxaflor altera genes reprodutivos de abelhas",
+    "Abelhas acumulam 7x mais metais pesados",
+    "Pesticida ameaça populações de abelhas-zangão",
+    "Polinizadores em risco por pesticidas",
+    "Metais pesados afetam abelhas nativas",
+    "Agricultura moderna ameaça polinizadores"
+  ],
+  "ai-environmental": [
+    "Maior extinção: oceanos perderam oxigênio",
+    "Louva-a-deus asiáticas invasoras na Europa",
+    "Carvalhos absorvem CO2 após crescimento",
+    "Temperatura oceânica freia secas globais",
+    "Metabolismo flexível venceu extinção",
+    "Expansão asiática ameaça biodiversidade"
+  ],
+  "ai-archaeology": [
+    "DNA revela substituição populacional total",
+    "Neandertais: DNA não é romance pré-histórico",
+    "Enzima de 3,2 bilhões de anos ressuscitada",
+    "Ganso fóssil desafia teorias de aves gigantes",
+    "Lobos antigos mostram início da domesticação",
+    "DNA megalítico: crise demográfica na França"
+  ],
+  "ai-social": [
+    "DNA megalítico: migração após crise",
+    "Neandertais: herança uneven explicada",
+    "Tradições sociais explicam DNA neandertal",
+    "Substituição populacional completa na Europa",
+    "Genética desmente narrativas simplistas",
+    "Matrilocalidade explica padrões genômicos"
+  ],
+  "ai-offbeat": [
+    "Pressão oceânica extrai nutrientes de sinking",
+    "Louva-a-deus asiáticas invadem Europa",
+    "Anãs vermelhas: candidatas a esferas Dyson",
+    "Bactéria de anfíbio elimina tumor colorretal",
+    "Defeitos corporais: legado evolutivo",
+    "Cristal centimétrico demonstra entrelaçamento"
+  ]
+}
