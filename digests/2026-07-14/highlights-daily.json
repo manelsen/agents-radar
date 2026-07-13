@@ -1,0 +1,114 @@
+{
+  "ai-agents": [
+    "NullClaw: 17 PRs, 4 merged",
+    "NullClaw: 13 PRs abertos",
+    "Hermes Agent: novo projeto",
+    "ZeroClaw: novo projeto",
+    "CoPaw: novo projeto",
+    "IronClaw: novo projeto"
+  ],
+  "ai-web": [
+    "7 artigos novos da Anthropic",
+    "Pesquisa: agentic misalignment",
+    "Claude Design: criação visual",
+    "Global workspace: interpretabilidade",
+    "Anthropic abre escritório em Sydney",
+    "OpenAI: 0 artigos novos"
+  ],
+  "ai-hn": [
+    "Zig vs Anthropic: 668 comentários",
+    "Grok 4.5 e GPT5.6: segurança PRs",
+    "Apple processa OpenAI",
+    "Microsoft alerta sobre labs de IA",
+    "Claude Fable resolve problema físico",
+    "xAI supera Claude em benchmark"
+  ],
+  "ai-science": [
+    "Cérebro decide antes do esperado",
+    "Feedback rápido no cérebro",
+    "Processamento cerebral bidirecional",
+    "Inspiração para IA eficiente",
+    "Loop de feedback取代hierárquico",
+    "Arquitetura inspirada no cérebro"
+  ],
+  "ai-robotics": [
+    "Nenhuma notícia direta de robótica",
+    "Neurociência inspira design de IA",
+    "IA biologicamente inspirada",
+    "Modelagem de processos complexos",
+    "Redução de consumo energético",
+    "Arquiteturas dinâmicas"
+  ],
+  "ai-hacking": [
+    "Mecânica quântica com reais",
+    "Material quântico 2D criado",
+    "IA descobre supercondutores",
+    "Risco para criptografia atual",
+    "Hardware quântico prático",
+    "Computação quântica acessível"
+  ],
+  "ai-memory": [
+    "Tau essencial para memória",
+    "Tau organiza células de memória",
+    "Formas anormais prejudicam memória",
+    "Mecanismo duplo de disfunção",
+    "Terapias para preservar tau",
+    "Relembrando memórias afetadas"
+  ],
+  "ai-livingwell": [
+    "80 min sem sono = ganho de peso",
+    "Bactéria gengival: risco cardíaco",
+    "Serotonina acelera doença valvar",
+    "Orforglipron supera semaglutida",
+    "Segunda gravidez muda o cérebro",
+    "Parasitas: nutrient essencial"
+  ],
+  "ai-engineering": [
+    "Extraem energia de buracos negros",
+    "Calor em cerâmicas: +300%",
+    "Gálio: mistério de 150 anos",
+    "Sensor quântico: matéria escura",
+    "Refrigeração mais eficiente",
+    "Comunicações sem fio quânticas"
+  ],
+  "ai-agriculture": [
+    "Sulfoxaflor afeta reprodução",
+    "Abelhas: 7x mais metais pesados",
+    "Pesticidas impactam polinizadores",
+    "Mamangabas vs abelhas-melíferas",
+    "Seis vezes mais contaminantes",
+    "Risco para produção global"
+  ],
+  "ai-environmental": [
+    "Extinção em massa: 250 milhões",
+    "Louva-a-deus invasor na Europa",
+    "Árvores absorvem carbono contínuo",
+    "Oceanos protegem de seca",
+    "Aquecimento e oxigênio baixo",
+    "Invasores favorecidos pelo clima"
+  ],
+  "ai-archaeology": [
+    "DNA megalítico: 5.000 anos",
+    "Substituição populacional na Europa",
+    "Neandertais: migração feminina",
+    "Ganso fóssil: Nova Zelândia",
+    "Colapso demográfico na Europa",
+    "DNA revela dinâmicas complexas"
+  ],
+  "ai-social": [
+    "DNA de 5.000 anos na Europa",
+    "Substituição completa após crise",
+    "Neandertais: além da história de amor",
+    "Migração feminina entre grupos",
+    "Genética reescreve narrativas",
+    "Colapso populacional megalítico"
+  ],
+  "ai-offbeat": [
+    "Quântica sem números imaginários",
+    "Entrelaçamento em cristal macroscópico",
+    "Bactéria elimina tumor colorretal",
+    "Aranha happy-face no Himalaia",
+    "Espécie nova desafia evolução",
+    "Quântica em escala centimétrica"
+  ]
+}
