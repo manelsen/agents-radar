@@ -1,0 +1,122 @@
+{
+  "ai-agents": [
+    "ZeroClaw v0.8.3: progresso no milestone",
+    "CoPaw v2.0.0.post2 corrige regressões",
+    "IronClaw lidera em runtime unificado",
+    "6 projetos ativos em estabilidade multi-canal",
+    "Gestão de memória: session bounds",
+    "Segurança em sandbox: isolamento de tenants"
+  ],
+  "ai-web": [
+    "Anthropic lança Claude for Teachers K-12",
+    "Parceria Anthropic Canadá: $10M",
+    "OpenAI: 0 novos artigos no sitemap",
+    "Concorrência com Google e Microsoft EdTech",
+    "Soft power acadêmico no Canadá",
+    "Foco em alinhamento de valores"
+  ],
+  "ai-hn": [
+    "Codex criptografa prompts de sub-agentes (397 pts)",
+    "Como impedir Claude de usar clichês (331 pts)",
+    "Frustração com projeções OpenAI Ads",
+    "Debate sobre compensação Anthropic/OpenAI",
+    "Zero: linguagem para agentes de IA",
+    "Comunidade foca em implementação prática"
+  ],
+  "ai-arxiv": [
+    "Metacognition in LLMs: gaps e oportunidades",
+    "Vieses de LLMs em estados ocultos internos",
+    "LoRA adaptativo para compressão de modelos",
+    "Red-teaming em sistemas multiagentes",
+    "Raciocínio matemático avançado em foco",
+    "Benchmarks culturais multilíngues avançam"
+  ],
+  "ai-science": [
+    "Denning: IA de nível humano inalcançável",
+    "Cérebro inicia decisões antes do previsto",
+    "Retroalimentação rápida sensorial-cerebral",
+    "Insights para IA com menor consumo",
+    "Senso comum e intuição não programáveis",
+    "Convergência neurociência e IA"
+  ],
+  "ai-robotics": [
+    "DNA sintese com chip de silício Harvard",
+    "IA modela fusões de estrelas de nêutrons",
+    "Água super-resfriada: 16 descritores analisados",
+    "Chip DNA para armazenamento em larga escala",
+    "Simulação de nucleossíntese元素 pesados",
+    "Interdisciplinaridade em robotics"
+  ],
+  "ai-hacking": [
+    "Mecânica quântica com apenas números reais",
+    "Material 2D: estados de borda condutores",
+    "Impacto na criptografia pós-quântica",
+    "Física quântica para criptoanálise",
+    "Eletrônica quântica de temperatura ambiente",
+    "Pesquisa fundamental com implicações em segurança"
+  ],
+  "ai-memory": [
+    "Tau normal é essencial para memórias",
+    "Tau anormal prejudica formação e evocação",
+    "Papel protetor da tau no Alzheimer",
+    "Descoberta abre perspectiva para Alzheimer",
+    "Organização celular de armazenamento",
+    "Plasticidade sináptica e consolidação"
+  ],
+  "ai-livingwell": [
+    "Semaglutida retarda envelhecimento biológico",
+    "Exercício rewires nerves do coração",
+    "80 min de sono a menos: ganho de peso",
+    "Ozempic/Wegovy: efeito antiaging",
+    "ISRS e válvula cardíaca: link serotonina",
+    "Jejum intermitente vs contar calorias"
+  ],
+  "ai-engineering": [
+    "Buraco negro: extração de energia em lab",
+    "Calor controlável por campo elétrico (+300%)",
+    "Gálio: ligações atômicas reescritas",
+    "IA identifica estados da água super-resfriada",
+    "Conversão de energia via óptica quântica",
+    "150 anos de teoria sobre gálio revistos"
+  ],
+  "ai-agriculture": [
+    "37 anos: aquecimento libera carbono do solo",
+    "Sulfoxaflor altera genes de abelhas-bumble",
+    "Abelhas-bumble: 7x mais metais pesados",
+    "Pesticida compromete reprodução de polinizadores",
+    "CO2 adicional via microrganismos do solo",
+    "Estresse múltiplo em polinizadores"
+  ],
+  "ai-environmental": [
+    "Oceanos: aquecimento e hipóxia no Permiano",
+    "Louva-a-deus invasor expande na Europa",
+    "Carvalhos absorvem CO2 após fim do crescimento",
+    "Padrões oceânicos travam propagação de secas",
+    "Retroalimentação climática do carbono do solo",
+    "Extinção Permiano-Triássica resolvida"
+  ],
+  "ai-archaeology": [
+    "Extinção Permiano-Triássica: 2.5 bilhões anos",
+    "DNA de 5000 anos: substituição populacional",
+    "Fóssil de ganso reescreve evolução neozelandesa",
+    "Enzima de 3.2 bilhões de anos ressuscitada",
+    "Megálitos franceses: colapso e migração",
+    "Metabolismo primitivo revelado"
+  ],
+  "ai-social": [
+    "DNA megalítico: substituição genética completa",
+    "Migração após crise devastadora na Europa",
+    "Tradições sociais substituídas",
+    "Desafio à continuidade cultural europeia",
+    "Choques podem redefinir demografia",
+    "Interdisciplinaridade genética e arqueologia"
+  ],
+  "ai-offbeat": [
+    "Pimentas chili: risco de câncer esofágico",
+    "Ozempic retarda marcadores de envelhecimento",
+    "T. rex: dente em crânio de Edmontosaurus",
+    "Mecânica quântica sem números imaginários",
+    "Cristal centimétrico: entrelaçamento macroscópico",
+    "Bactéria de anfíbio elimina tumores colorretais"
+  ]
+}
