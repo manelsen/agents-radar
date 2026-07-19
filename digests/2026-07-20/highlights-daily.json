@@ -1,0 +1,98 @@
+{
+  "ai-agents": [
+    "IronClaw e ZeroClaw lideram com 50 PRs",
+    "NanoBot: 9 merges em 24h, saúde excelente",
+    "Hermes Agent com 50 issues críticas",
+    "NullClaw sem atividade nas últimas 24h",
+    "7 projetos de agentes open source cobertos",
+    "Nenhum release publicado, foco em estabilização"
+  ],
+  "ai-hn": [
+    "Claude Code agora usa Bun em Rust",
+    "OpenAI corta context do Codex 372k→272k",
+    "Kimi K3 da Moonshot suspende assinaturas",
+    "Paper: fingerprinting de LLMs em 1 saída",
+    "Debate: OpenAI quebrando regras do Vale?",
+    "260 pontos na discussão do Codex"
+  ],
+  "ai-science": [
+    "Livro questiona IA de nível humano",
+    "Decisões cerebrais começam antes do pensado",
+    "Bom senso não pode ser codificado",
+    "Loop de feedback cerebral redescoberto",
+    "Peter Denning: limites da IA de Turing",
+    "Arquiteturas dinâmicas inspiradas no cérebro"
+  ],
+  "ai-robotics": [
+    "Teste de sangue IA preverá 6 doenças cardíacas",
+    "IA pode prever ataques cardíacos 15 anos antes",
+    "Livro questiona premissa de Alan Turing",
+    "Cérebro processa decisões com feedback rápido",
+    "CardioOmicScore: análise de proteínas e metabólitos",
+    "Estudo cerebral inspira arquiteturas de IA"
+  ],
+  "ai-hacking": [
+    "Luz controla estados magnéticos em escala atômica",
+    "Mecânica quântica reformulada com números reais",
+    "Materiais quânticos 2D com controle óptico",
+    "Avanço abre portas para criptografia quântica",
+    "Simulações de sistemas quânticos simplificadas",
+    "Impacto direto em proteção de dados"
+  ],
+  "ai-solar": [
+    "PLATON: detector substitui milhões de peças",
+    "Câmera 3D rastreia partículas invisíveis",
+    "IA reconstruindo trajetórias em tempo real",
+    "Tecnologia promete melhorar exames PET",
+    "Sensores fotônicos de alta sensibilidade",
+    "Escalabilidade e redução de custos"
+  ],
+  "ai-livingwell": [
+    "Café ativa receptor protetor contra envelhecimento",
+    "Adoçantes aceleram envelhecimento cerebral",
+    "Jejum 8h mantém perda de peso por 1 ano",
+    "KCL-286 repara DNA em camundongos com Alzheimer",
+    "Exercício repara circuitos nervosos cardíacos",
+    "Idosos em museus têm corpo 3 anos mais jovem"
+  ],
+  "ai-engineering": [
+    "PLATON: detector com bloco fotoluminescente único",
+    "Reconstrução 3D de partículas em tempo real",
+    "IA processa dados de fótons com alta fidelidade",
+    "Diagnósticos PET mais nítidos e rápidos",
+    "Escalabilidade para experimentos de grande escala",
+    "Custos reduzidos em equipamentos clínicos"
+  ],
+  "ai-agriculture": [
+    "Coalas quase desapareceram há 100 mil anos",
+    "DNA revela resiliência genética dos coalas",
+    "30 anos: humanos reagem diferente de turistas",
+    "Aquecimento do solo libera carbono estável",
+    "Microrganismos degradam matéria orgânica",
+    "Impacto no manejo de fauna em propriedades rurais"
+  ],
+  "ai-environmental": [
+    "Nível do mar afeta ciclo do fósforo",
+    "Termostato natural da Terra descubierto",
+    "Aquecimento libera CO2 do solo estável",
+    "Nanopartículas plásticas fortalecem biofilmes",
+    "Genoma dos coalas reescreve história evolutiva",
+    "Meteorito dos dinossauros identificado"
+  ],
+  "ai-archaeology": [
+    "Nova ordem de marsupiais na Austrália",
+    "Fragmento da Ilíada em múmia egípcia",
+    "Texto grego em processo de embalsamamento",
+    "Campamentos de 800 mil anos perto de lagos",
+    "Literatura grega nos rituais funerários egípcios",
+    "Evolução dos marsupiais australianos reescrita"
+  ],
+  "ai-offbeat": [
+    "Cientistas criaram poeira cósmica em laboratório",
+    "Estrela similar ao Sol devorou seu planeta",
+    "Café ativa proteção celular contra estresse",
+    "Remédio para prisão de ventre contra névoa mental",
+    "Mistério do aspersor de Feynman resolvido",
+    "Mecânica quântica sem números imaginários"
+  ]
+}
