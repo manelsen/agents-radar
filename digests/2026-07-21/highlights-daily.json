@@ -1,0 +1,114 @@
+{
+  "ai-agents": [
+    "ZeroClaw Labs: novo player",
+    "IronClaw: near AI em foco",
+    "Hermes Agent: nousresearch",
+    "PR #956: Alpine 3.24 pendente",
+    "CoPaw: agentscope-ai",
+    "PicoClaw: hardware Sipeed"
+  ],
+  "ai-web": [
+    "Anthropic: grants até US$ 50k",
+    "AI for Science: doenças raras",
+    "OpenAI: alinhamento de IA",
+    "Programa: 2 faixas de cientistas",
+    "6 meses de créditos API",
+    "Grants: biotechs inicial"
+  ],
+  "ai-hn": [
+    "Claude Fable: contraexemplo",
+    "Conjectura Jacobiana: 641 pts",
+    "Kimi K3 vs Qwen 3.8",
+    "Desafio economia de LLMs",
+    "Sebastian: esforço de raciocínio",
+    "Renúncia: chief AI safety"
+  ],
+  "ai-science": [
+    "Tese Turing: equivocada?",
+    "Denning: senso comum humano",
+    "IA escala: limite fundamental",
+    "Cultura não é codificável",
+    "Intuição escapa a máquinas",
+    "Crítica: novo paradigma?"
+  ],
+  "ai-robotics": [
+    "Teste cardíaco: IA preditiva",
+    "HKU: 15 anos antecipação",
+    "CardiOmicScore: proteínas",
+    "Peter Denning: IA humana?",
+    "Senso comum: limitação IA",
+    "Robôs: desafio autonomia"
+  ],
+  "ai-hacking": [
+    "Qubit: problema no laptop",
+    "Redes tensoriais: compressão",
+    "Materiais 2D: luz+magnetismo",
+    "Controle óptico magnético",
+    "Pós-quântico: impacto risco",
+    "QKD: distribuição quântica"
+  ],
+  "ai-solar": [
+    "PLATON: detector 3D",
+    "Material fotoluminescente",
+    "Câmera light-field + IA",
+    "Escalabilidade simplificada",
+    "PET médico: imagens nítidas",
+    "Física de partículas"
+  ],
+  "ai-livingwell": [
+    "Alzheimer: sono restaurado",
+    "KCL-286: repara DNA",
+    "Adoçantes: aging cognitivo",
+    "Café: interruptor NR4A1",
+    "Atividades: rejuvenescimento",
+    "Ozempic: retarda aging"
+  ],
+  "ai-engineering": [
+    "PLATON: innovação óptica",
+    "3D: trajetória partículas",
+    "Miniaturização: sensores",
+    "Fotoluminescência: integração",
+    "Light-field: reconstrução IA",
+    "PET: resolução aumentada"
+  ],
+  "ai-agriculture": [
+    "Coalas: quase extinção",
+    "100k anos: clima causador",
+    "Superpredador: humanos",
+    "Caçadores: ameaça real",
+    "Solo: carbono instável",
+    "37 anos: experimento longo"
+  ],
+  "ai-environmental": [
+    "Oceanos: perda de oxigênio",
+    "Termostato natural Terra",
+    "37 anos: carbono do solo",
+    "Microplásticos: biofilmes",
+    "Retroalimentação climática",
+    "Fosfato: regulação climática"
+  ],
+  "ai-archaeology": [
+    "Ordem marsupial nova",
+    "Ilíada: mumificação egípcia",
+    "800 mil anos: acampamentos",
+    "Madeira flutuante: combustível",
+    "Evolução marsupiais",
+    "Grego em múmias"
+  ],
+  "ai-social": [
+    "Oceanos: desoxigenação",
+    "Segurança alimentar",
+    "Comunidades pesqueiras",
+    "Migrações climáticas",
+    "Políticas integradas",
+    "Qualidade da água"
+  ],
+  "ai-offbeat": [
+    "Café: proteção celular",
+    "Ozempic: aging biológico",
+    "Estrela devorou planeta",
+    "Lítio: assinatura cósmica",
+    "Prucalopride: névoa cerebral",
+    "Verme: mandíbulas biometal"
+  ]
+}
