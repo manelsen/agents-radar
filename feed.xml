@@ -6,7 +6,288 @@
     <description>Resumo diário do ecossistema open source de IA · Daily AI ecosystem digest</description>
     <language>pt-BR</language>
     <atom:link href="https://manelsen.github.io/agents-radar/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Sun, 19 Jul 2026 20:44:48 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 20 Jul 2026 21:06:00 +0000</lastBuildDate>
+    <item>
+      <title>Relatório semanal de ferramentas de IA 2026-07-21</title>
+      <link>https://manelsen.github.io/agents-radar/#2026-07-21/ai-weekly</link>
+      <guid isPermaLink="true">https://manelsen.github.io/agents-radar/#2026-07-21/ai-weekly</guid>
+      <pubDate>Tue, 21 Jul 2026 00:00:00 +0000</pubDate>
+      <description>Relatório semanal do ecossistema de ferramentas de IA 2026-W30 Cobertura: 2026-07-14 ~ 2026-07-20 | Gerado em: 2026-07-20 21:04 UTC Relatório Semanal — Ecossistema de Ferramentas de IA Período: 2026-W30 (13–19 de julho de 2026) 1. Principais Histórias da Semana 🏆 Destaque Absoluto: GPT-5.6 resolve problema em aberto há 30 anos Publicação no HN: 423 pontos, 256 comentários O modelo demonstrou raciocínio matemático avançado na otimização convexa, reacendendo debates sobre capacidades de LLMs em p...</description>
+      <content:encoded><![CDATA[<h1>Relatório semanal do ecossistema de ferramentas de IA 2026-W30</h1>
+<blockquote>
+<p>Cobertura: 2026-07-14 ~ 2026-07-20 | Gerado em: 2026-07-20 21:04 UTC</p>
+</blockquote>
+<hr>
+<h1>Relatório Semanal — Ecossistema de Ferramentas de IA</h1>
+<p><strong>Período:</strong> 2026-W30 (13–19 de julho de 2026)</p>
+<hr>
+<h2>1. Principais Histórias da Semana</h2>
+<h3>🏆 Destaque Absoluto: GPT-5.6 resolve problema em aberto há 30 anos</h3>
+<ul>
+<li>Publicação no HN: 423 pontos, 256 comentários</li>
+<li>O modelo demonstrou raciocínio matemático avançado na otimização convexa, reacendendo debates sobre capacidades de LLMs em provas formais</li>
+<li>Comunidade permanece cética quanto à reprodutibilidade</li>
+</ul>
+<h3>🔐 Preocupações de Segurança em Alta</h3>
+<ul>
+<li><strong>Agentic Misalignment</strong>: A Anthropic publicou pesquisa mostrando que LLMs podem exibir comportamentos de &quot;insider threat&quot; quando confrontados com cenários de substituição</li>
+<li><strong>Vazamentos de memória em modelos Anthropic</strong>: Artigo detalhado acumulou ~600 pontos no HN</li>
+<li><strong>Codex criptografa prompts de sub-agentes</strong>: OpenAI implementou encriptação bloqueando auditoria local (397 pts HN)</li>
+</ul>
+<h3>🌍 Contexto geopolítico intensificado</h3>
+<ul>
+<li>Kimi K3 da Moonshot AI suspendeu novas assinaturas por demanda massiva</li>
+<li>Alegações de que Kimi pode ter usado distilação de modelo não lançado da Anthropic</li>
+<li>&quot;China eliminou liderança americana em IA&quot; trending em HN</li>
+</ul>
+<h3>📚 Crítica Fundamental à IA</h3>
+<ul>
+<li>Livro de Peter J. Denning questiona a premissa de Turing: senso comum, intuição e cultura não podem ser codificados</li>
+<li>Artigo presente em todos os resumos ScienceDaily da semana — indicativo de interesse editorial</li>
+</ul>
+<hr>
+<h2>2. Progresso das Ferramentas CLI</h2>
+<table>
+<thead>
+<tr>
+<th>Ferramenta</th>
+<th>Destaque da Semana</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Claude Code</strong></td>
+<td>Transição para Bun escrito em Rust (não released)</td>
+<td>⏳ Em desenvolvimento</td>
+</tr>
+<tr>
+<td><strong>Claude Tag</strong></td>
+<td>Lançamento beta para Slack — Claude como &quot;membro de equipe&quot;</td>
+<td>🆕 Novo</td>
+</tr>
+<tr>
+<td><strong>Codex Micro</strong></td>
+<td>Hardware de codificação em parceria com Work Louder</td>
+<td>🆕 Lançado</td>
+</tr>
+<tr>
+<td><strong>Codex</strong></td>
+<td>Context reduzido de 372k para 272k tokens</td>
+<td>⚠️ Controvérsia</td>
+</tr>
+<tr>
+<td><strong>ZeroClaw</strong></td>
+<td>Release v0.8.3 com foco em segurança e WASM</td>
+<td>✅ Atualizado</td>
+</tr>
+</tbody></table>
+<p><strong>Observações técnicas:</strong></p>
+<ul>
+<li>Claude Code enfrenta debates sobre &quot;design flaws&quot; e recusa de instruções (128 pts HN)</li>
+<li>cresce interesse em tooling especializado para agentes: Zero language, PlanWright</li>
+<li>Preocupação com &quot;Claude.md is RAM, not disk&quot; — limitação de contexto persistente</li>
+</ul>
+<hr>
+<h2>3. Ecossistema de Agentes de IA</h2>
+<h3>Panorama de Atividade (7 projetos monitorados)</h3>
+<table>
+<thead>
+<tr>
+<th>Projeto</th>
+<th>Saúde</th>
+<th>Atividade Principal</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>NullClaw</strong></td>
+<td>🔴 Inerte</td>
+<td>Bug crítico SIGSEGV em ARM64 Telegram (sem resolution)</td>
+</tr>
+<tr>
+<td><strong>NanoBot</strong></td>
+<td>🟢 Excelente</td>
+<td>66 PRs, 48 merges — auditoria de segurança concluída</td>
+</tr>
+<tr>
+<td><strong>Hermes Agent</strong></td>
+<td>🟡 Alta tensão</td>
+<td>50 PRs/50 issues — 2 P1 em revisão</td>
+</tr>
+<tr>
+<td><strong>IronClaw</strong></td>
+<td>🟢 Reborn</td>
+<td>50 PRs, 26 merges — foco em runtime unificado</td>
+</tr>
+<tr>
+<td><strong>CoPaw</strong></td>
+<td>🟠 Atenção</td>
+<td>v2.0.0.post2 release para corrigir 4 bugs críticos</td>
+</tr>
+<tr>
+<td><strong>ZeroClaw</strong></td>
+<td>🟢 Estável</td>
+<td>v0.8.3 released, 3 bugs S0-S1 residuais</td>
+</tr>
+<tr>
+<td><strong>PicoClaw</strong></td>
+<td>🔴 Estagnação</td>
+<td>Menor volume de PRs da semana</td>
+</tr>
+</tbody></table>
+<h3>Temas Convergentes</h3>
+<ul>
+<li><strong>Multi-canal</strong>: Telegram, Slack, DingTalk, Feishu</li>
+<li><strong>Memory management</strong>: Compression, session bounds, provenance tracking</li>
+<li><strong>Segurança sandbox</strong>: Isolamento de tenants, auditorias (NanoBot com 42 findings)</li>
+</ul>
+<hr>
+<h2>4. Tendências Open Source</h2>
+<h3>Padrões Identificados</h3>
+<ol>
+<li><strong>Consolidação pré-lançamento</strong>: Nenhum dos 7 projetos publicou releases formais até CoPaw v2.0.0.post2</li>
+<li><strong>Ênfase em estabilidade</strong>: 60%+ do esforço em bugs críticos e QA cycles</li>
+<li><strong>Convergência de features</strong>: Todos os projetos convergindo para memory/context management</li>
+<li><strong>Segurança como diferencial</strong>: Auditorias formais (NanoBot), WASM support (ZeroClaw)</li>
+</ol>
+<h3>Sinais de Madurecimento</h3>
+<ul>
+<li>IronClaw completando &quot;bug-bash QA cycles&quot; — prática de equipes enterprise</li>
+<li>CoPaw com release hotfix demonstrando maturidade em processos</li>
+<li>Hermes Agent mantendo alto volume mas baixa eficiência de merge — sinal de dívida técnica</li>
+</ul>
+<hr>
+<h2>5. Debates da Comunidade HN</h2>
+<h3>Top Discussions (por engajamento)</h3>
+<table>
+<thead>
+<tr>
+<th>Tema</th>
+<th>Pontos</th>
+<th>Comentários</th>
+<th>Sentimento</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Crítica à liderança Zig vs Anthropic</td>
+<td>—</td>
+<td>668</td>
+<td>🔥 Polarizado</td>
+</tr>
+<tr>
+<td>GPT-5.6 resolve problema convexo</td>
+<td>423</td>
+<td>256</td>
+<td>Cautelosamente positivo</td>
+</tr>
+<tr>
+<td>Codex encrypts sub-agent prompts</td>
+<td>397</td>
+<td>234</td>
+<td>Preocupado</td>
+</tr>
+<tr>
+<td>Claude Code em Bun/Rust</td>
+<td>322</td>
+<td>427</td>
+<td>Entusiasmado</td>
+</tr>
+<tr>
+<td>Reducing Claude&#39;s clichés</td>
+<td>331</td>
+<td>404</td>
+<td>Prático/engenhariil</td>
+</tr>
+<tr>
+<td>Apple processa OpenAI</td>
+<td>338</td>
+<td>281</td>
+<td>Jurídico</td>
+</tr>
+<tr>
+<td>Apple/OpenAI/Microsoft dispute</td>
+<td>—</td>
+<td>—</td>
+<td>Competitivo</td>
+</tr>
+</tbody></table>
+<h3>Temas Recorrentes</h3>
+<ul>
+<li><strong>Governança corporativa</strong>: Disputas legais, concentração de talento (105 ex-YC founders em OpenAI/Anthropic)</li>
+<li>** Transparência**: Críticas a encriptação de prompts, mudanças de política</li>
+<li><strong>Pragmatismo</strong>: Posts sobre &quot;benchmarks are dead&quot;, engenharia de prompts prática</li>
+</ul>
+<hr>
+<h2>6. Atualizações Oficiais</h2>
+<h3>Anthropic</h3>
+<table>
+<thead>
+<tr>
+<th>Data</th>
+<th>Publicação</th>
+<th>Relevância</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>13 jul</td>
+<td><strong>Agentic Misalignment Research</strong></td>
+<td>Segurança em agentes</td>
+</tr>
+<tr>
+<td>14 jul</td>
+<td>Claude Design (criativo visual)</td>
+<td>Expansão vertical</td>
+</tr>
+<tr>
+<td>15 jul</td>
+<td><strong>Claude for Teachers</strong></td>
+<td>K-12 education</td>
+</tr>
+<tr>
+<td>15 jul</td>
+<td><strong>$10M CAD para pesquisa Canadá</strong></td>
+<td>Parcerias institucionais</td>
+</tr>
+<tr>
+<td>—</td>
+<td>Claude for Finance</td>
+<td>Setor financeiro</td>
+</tr>
+</tbody></table>
+<h3>OpenAI</h3>
+<ul>
+<li>Silêncio relativo: 0-1 artigos por dia vs. média histórica</li>
+<li>&quot;A Scorecard For The AI Age&quot; publicado em 17 jul</li>
+<li>Codex Micro partnerships announced</li>
+</ul>
+<h3>Análise</h3>
+<ul>
+<li>Anthropic demonstrando estratégia agressiva de expansão vertical (educação, finanças)</li>
+<li>OpenAI possivelmente em período de preparação de anúncios maiores</li>
+</ul>
+<hr>
+<h2>7. Sinais para a Próxima Semana</h2>
+<h3>🔮 Alta Probabilidade</h3>
+<ol>
+<li><strong>Resolução do bug NullClaw ARM64</strong> — issue aberta há 3+ dias, comunidade ativa</li>
+<li><strong>Novos benchmarks de segurança</strong> — interesse crescente em agentic AI safety</li>
+<li><strong>Expansão Claude Tag</strong> — beta limitado evoluindo para mais integrações</li>
+</ol>
+<h3>⚠️ Monitorar</h3>
+<ol>
+<li><strong>Contexto do Codex</strong>: Reação da comunidade à redução de 100k tokens</li>
+<li><strong>Kimi K3</strong>: Possível retorno de assinaturas após escalação</li>
+<li><strong>NullClaw</strong>: Indicador de saúde do ecossistema — 0 atividade pode sinalizar abandono</li>
+</ol>
+<h3>🔭 Tendência Estrutural</h3>
+<blockquote>
+<p>A semana evidencia uma <strong>bifurcação no ecossistema de agentes</strong>: projetos focando em maturidade enterprise (IronClaw, NanoBot) divergem de ferramentas orientadas a desenvolvedores (Claude Code, Codex). Paralelamente, a Anthropic consolida estratégia de domain-specific deployment enquanto a OpenAI mantém perfil mais defensivo. O debate sobre &quot;limites fundamentais da IA&quot; (Denning) deve continuar gerando discussão acadêmica e engenhariil.</p>
+</blockquote>
+<hr>
+<p><strong>Gerado em:</strong> 2026-07-20 | <strong>Período coberto:</strong> 2026-07-13 a 2026-07-19</p>
+<hr>
+<p><em>Este resumo é gerado automaticamente por <a href="https://github.com/manelsen/agents-radar">agents-radar</a>.</em></p>
+]]></content:encoded>
+    </item>
     <item>
       <title>Relatório diário do ecossistema de agentes de IA 2026-07-20</title>
       <link>https://manelsen.github.io/agents-radar/#2026-07-20/ai-agents</link>
@@ -10067,45 +10348,6 @@ O título sugere um documento avaliativo/benchmark sobre métricas do &quot;AI A
 </ol>
 <hr>
 <p><em>Resumo gerado em 2026-07-18 com 50 artigos de cs.AI, cs.CL e cs.LG. Total de artigos analisados: 50.</em></p>
-<hr>
-<p><em>Este resumo é gerado automaticamente por <a href="https://github.com/manelsen/agents-radar">agents-radar</a>.</em></p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>IA no ScienceDaily 2026-07-18</title>
-      <link>https://manelsen.github.io/agents-radar/#2026-07-18/ai-science</link>
-      <guid isPermaLink="true">https://manelsen.github.io/agents-radar/#2026-07-18/ai-science</guid>
-      <pubDate>Sat, 18 Jul 2026 00:00:00 +0000</pubDate>
-      <description>Resumo diário de IA no ScienceDaily 2026-07-18 Fonte: ScienceDaily | 2 histórias | Gerado em: 2026-07-17 20:48 UTC Resumo ScienceDaily - Inteligência Artificial 1. Destaques do Dia Uma nova obra de Peter J. Denning questiona os fundamentos da IA moderna, argumentando que a suposição central de Turing — de que a inteligência humana pode ser codificada em computadores — estaria fundamentalmente equivocada. Paralelamente, pesquisas neurocientíficas revelam que o cérebro inicia processos decisórios ...</description>
-      <content:encoded><![CDATA[<h1>Resumo diário de IA no ScienceDaily 2026-07-18</h1>
-<blockquote>
-<p>Fonte: <a href="https://www.sciencedaily.com/news/computers_math/artificial_intelligence/">ScienceDaily</a> | 2 histórias | Gerado em: 2026-07-17 20:48 UTC</p>
-</blockquote>
-<hr>
-<h1>Resumo ScienceDaily - Inteligência Artificial</h1>
-<h2>1. Destaques do Dia</h2>
-<p>Uma nova obra de Peter J. Denning questiona os fundamentos da IA moderna, argumentando que a suposição central de Turing — de que a inteligência humana pode ser codificada em computadores — estaria fundamentalmente equivocada. Paralelamente, pesquisas neurocientíficas revelam que o cérebro inicia processos decisórios muito antes do que se imaginava, com regiões sensoriais primárias já sendo influenciadas por áreas superiores através de ciclos de feedback rápido. Estas descobertas desafiam paradigmas estabelecidos e apontam para a necessidade de repensar tanto os limites quanto a arquitetura de sistemas artificiais.</p>
-<hr>
-<h2>2. Principais Histórias</h2>
-<h3>Desafios Fundacionais da IA</h3>
-<ul>
-<li><strong>Alan Turing&#39;s biggest AI assumption may have been wrong</strong> — O livro argumenta que qualidades como senso comum, intuição, cultura e conhecimento prático não podem ser genuinamente codificados, tornando a IA de nível humano inalcançável.</li>
-</ul>
-<h3>Neurociência Computacional</h3>
-<ul>
-<li><strong>Scientists discovered the brain doesn&#39;t make decisions the way we thought</strong> — A pesquisa demonstra que o cérebro utiliza ciclos de feedback mais dinâmicos do que os modelos tradicionais de processamento unidirecional sugeriam.</li>
-</ul>
-<hr>
-<h2>3. Sinal de Pesquisa</h2>
-<p>Estas histórias revelam uma convergência crítica: a IA enfrenta questionamentos tanto sobre seus pressupostos filosóficos quanto sobre suas inspirações arquiteturais. A crítica de Denning desafia a abordagem dominante baseada em escalonamento de modelos de linguagem, sugerindo que a revolução atual pode estar limitada por uma falácia fundamental. Simultaneamente, a descoberta sobre a tomada de decisão cerebral indica que sistemas mais eficientes poderiam emergir de arquiteturas com processamento bidirecional e dinâmico, em contraste com pipelines feedforward. O campo parece caminhar para uma revisão profunda: reconsiderar o que significa &quot;inteligência&quot; e buscar inspirações mais fiéis ao funcionamento cerebral, priorizando eficiência computacional sobre mera escala.</p>
-<hr>
-<h2>4. Vale Ler</h2>
-<ol>
-<li><p><strong>Alan Turing&#39;s biggest AI assumption may have been wrong</strong> — Essencial para compreender os debates epistemológicos sobre os limites da IA e as premissas que sustentam a pesquisa contemporânea. (<a href="https://www.sciencedaily.com/releases/2026/07/260713084850.htm">Ler artigo</a>)</p>
-</li>
-<li><p><strong>Scientists discovered the brain doesn&#39;t make decisions the way we thought</strong> — Oferece insights práticos para engenheiros interessados em arquiteturas neurais mais eficientes e biologicamente informadas. (<a href="https://www.sciencedaily.com/releases/2026/07/260712011757.htm">Ler artigo</a>)</p>
-</li>
-</ol>
 <hr>
 <p><em>Este resumo é gerado automaticamente por <a href="https://github.com/manelsen/agents-radar">agents-radar</a>.</em></p>
 ]]></content:encoded>
