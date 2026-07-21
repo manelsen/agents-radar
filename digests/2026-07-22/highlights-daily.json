@@ -1,0 +1,106 @@
+{
+  "ai-agents": [
+    "IronClaw e CoPaw migram para versões estáveis",
+    "Padrão Goal Mode surge em NanoBot e ZeroClaw",
+    "Segurança: prioridade em 4+ projetos simultaneamente",
+    "4 projetos com +40 itens atualizados em 24h",
+    "NullClaw, NanoBot e Hermes entre projetos ativos",
+    "Consolidação arquitetural no ecossistemaopen source"
+  ],
+  "ai-web": [
+    "OpenAI anuncia David Velez e Robin Vince no board",
+    "Anthropic: zero conteúdo novo disponível",
+    "Governança corporativa: única atualização do dia",
+    "OpenAI soma 872 artigos no sitemap total",
+    "Rastreamento de 419 artigos da Anthropic",
+    "Dados limitados para análise estratégica"
+  ],
+  "ai-hn": [
+    "ChatGPT adiciona anúncios: 190 pontos",
+    "Parceria OpenAI-Hugging Face pós-incidente",
+    "Acordo bilionário da Anthropic por direitos autorais",
+    "Claude não é compilador: 137 pontos, 148 comentários",
+    "Segurança e IP dominam debates técnicos",
+    "Sentimento cauteloso com foco em monetização"
+  ],
+  "ai-arxiv": [
+    "LLMs processam crenças conforme forma linguística",
+    "RLHF modifica vieses em representações internas",
+    "3 direções: raciocínio, multiagente e eficiência",
+    "Activation steering para judicação lógica",
+    "Agentes planejam em grades elétricas e finanças",
+    "Poda baseada em relevância para edge computing"
+  ],
+  "ai-hacking": [
+    "Laptop resolve problema quântico com redes tensoriais",
+    "Excitons controlam magnetismo com luz em 2D",
+    "Fronteira quântico-clássico cada vez mais fluida",
+    "Memórias ópticas e dispositivos quânticos",
+    "Ameaça à criptografia pós-quântica se acelera",
+    "Simulação clássica rivaliza com hardware quântico"
+  ],
+  "ai-solar": [
+    "PLATON: câmera rastreia partículas invisíveis em 3D",
+    "Substitui milhões de componentes por 1 bloco",
+    "Resolução e velocidade sem precedentes",
+    "Melhorias em exames PET com mesma tecnologia",
+    "IA + campo de luz + sensores avançados",
+    "Simplifica fabricação e escala detectores"
+  ],
+  "ai-livingwell": [
+    "TV em excesso encolhe cérebro na meia-idade",
+    "Sono restaurado em ratos com Alzheimer via microglia",
+    "Medicamento para medula espinhal repara DNA cerebral",
+    "Compostos do café ativam proteção celular",
+    "Adoçantes associados a envelhecimento cerebral",
+    "Envelhecimento cerebral ligado a hábitos diários"
+  ],
+  "ai-engineering": [
+    "PLATON: detector monolithic com câmera de campo",
+    "Resolve milhões de sensores por 1 bloco material",
+    "Reconstrói trajetórias 3D em tempo real",
+    "PET mais nítido com mesma tecnologia",
+    "Materiais fotoativos + óptica computacional",
+    "Mudança de paradigma em projeto de detectores"
+  ],
+  "ai-agriculture": [
+    "Coalas quase extintos há 100 mil anos",
+    "População atual descende de pequeno grupo sobrevivente",
+    "Humanos letais geram alerta 4x maior em animais",
+    "Turistas e pesquisadores causam reação branda",
+    "3 décadas de dados sobre percepção de risco",
+    "Conservação: genômica + comportamental"
+  ],
+  "ai-environmental": [
+    "Oceanos perdem oxigênio em taxa alarmante",
+    "Termostato natural da Terra ligado ao ciclo do fosfato",
+    "Meteorito dos dinossauros: condrito CO raro",
+    "Breakup asteroidal há 800 milhões de anos",
+    "Nanoplásticos fortalecem biofilmes bacterianos",
+    "Desoxigenação ligada a aquecimento e poluição"
+  ],
+  "ai-archaeology": [
+    "Shimao: DNA revela contatos pré-históricos amplos",
+    "Nova ordem marsupial de 35 milhões de anos",
+    "Fragmento da Ilíada em múmia de 1.600 anos",
+    "Primeiros humanos usavam madeira à deriva",
+    "Descendentes locais e de estepes em Shimao",
+    "Práticas funerárias com texto grego no Egito"
+  ],
+  "ai-social": [
+    "Oceanos perdem oxigênio em escala global",
+    "Aquecimento reduz capacidade de dissolução",
+    "Poluição acelera eutrofização e consumo de O2",
+    "Colapso em cadeias alimentares aquáticas",
+    "Acidificação agrava stress em organismos",
+    "Desafio ambiental urgente para policymakers"
+  ],
+  "ai-offbeat": [
+    "TV encolhe cérebro na meia-idade",
+    "Constipation drug alivia brain fog na depressão",
+    "Bactérias desconhecidas em baleias pigmeus",
+    "39 adoçantes testados: efeitos no intestino",
+    "Filtro solar mineral sem mancha branca",
+    "Metal biológico em mandíbulas de verme marinho"
+  ]
+}
