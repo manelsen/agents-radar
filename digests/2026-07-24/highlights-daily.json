@@ -1,0 +1,98 @@
+{
+  "ai-agents": [
+    "270+ PRs e 220+ issues em 24h no ecossistema",
+    "NanoBot: 30 PRs merged com foco em segurança",
+    "Hermes Agent: 50 issues e 50 PRs abertos",
+    "ZeroClaw, IronClaw e CoPaw em alta atividade",
+    "NullClaw permanece completamente inativo",
+    "Sem releases formais — ecossistema em preparação"
+  ],
+  "ai-web": [
+    "Claude Opus 4.7 com cibersegurança em produção",
+    "Conectores Claude: Ableton, Adobe, Affinity, Autodesk",
+    "Opus 4.5 a $5/$25 por milhão de tokens",
+    "Anthropic expande para trabalho criativo",
+    "OpenAI: apenas metadado de saúde no ChatGPT",
+    "Expansão vertical em setores específicos"
+  ],
+  "ai-hn": [
+    "OpenAI: IA fez ataque real ao Hugging Face",
+    "OpenAI e Anthropic contra modelos open-weight",
+    "Echo: resultados open-weight a 1/3 do custo",
+    "OneCLI: gateway OSS para credenciais de IA",
+    "Crianças desenvolvem antropomorfização com chatbots",
+    "Ask HN: OpenAI hackeou HuggingFace — 263 comentários"
+  ],
+  "ai-arxiv": [
+    "LKValues: alinhamento cultural de LLMs no Sri Lanka",
+    "LLMs podem distillationar experiências em abstrações",
+    "KANs aplicados a equações diferenciais parciais",
+    "Benchmark para detecção de alucinações em árabe",
+    "Teleoperação humanoide com RL avança",
+    "Bases neurosimbólicas como alternativas custo-eficientes"
+  ],
+  "ai-science": [
+    "MIT: chip lidar sem peças móveis para veículos",
+    "Chip fotônico programável controla velocidade da luz",
+    "Photonics para eficiência energética em data centers",
+    "Detecção em 3D substitui sistemas mecânicos",
+    "Sensoriamento compacto para miniaturização autônoma",
+    "Controle óptico para comunicações de alta velocidade"
+  ],
+  "ai-hacking": [
+    "Laptop comum resolve problema quântico complexo",
+    "Redes tensoriais comprimem funções de onda de qubits",
+    "Simulações quânticas em hardware acessível",
+    "Acesso democratizado à pesquisa quântica",
+    "Implicações para criptografia pós-quântica",
+    "Barreiras de custo quântico em queda"
+  ],
+  "ai-solar": [
+    "PLATON: câmera 3D para rastrear partículas com IA",
+    "Detector substitui milhões de componentes miniaturas",
+    "Imagem de campo luminoso para caracterização solar",
+    "IA reduz custos de instrumentação científica",
+    "Aplicação em exames PET mais nítidos",
+    "Análise não-destrutiva de materiais fotovoltaicos"
+  ],
+  "ai-livingwell": [
+    "Compostos do café protegem contra envelhecimento",
+    "Psilocibina: alterações cerebrais duram até 1 mês",
+    "Adoçantes artificiais aceleram envelhecimento cognitivo",
+    "KCL-286: fármaco repara DNA danificado no cérebro",
+    "TV excessiva reduz regiões cerebrais em décadas",
+    "Restauradas 2h de sono em modelos com Alzheimer"
+  ],
+  "ai-environmental": [
+    "Dietas saudáveis cortariam emissões em 85% até 2050",
+    "Perda de gelo antártico prevista para meados do século",
+    "Oxigênio diminuindo rapidamente em oceanos e rios",
+    "Nanoplásticos fortalecem biofilmes bacterianos",
+    "Condrito CO identificado como extintor dos dinossauros",
+    "Impacto asteroidal há 800 milhões de anos descoberto"
+  ],
+  "ai-archaeology": [
+    "Fetos alimentaram incêndios no Triássico europeu",
+    "DNA antigo revela estrutura social de Shimao, China",
+    "Nova ordem de marsupiais Australianos descoberta",
+    "Genômica para reconstruir redes de migração",
+    "Radiação marsupial mais diversificada que o esperado",
+    "Paleobotânica e paleoecologia em convergência"
+  ],
+  "ai-social": [
+    "Oceanos perdendo oxigênio em ritmo acelerado",
+    "Desoxigenação ameaça biodiversidade aquática",
+    "Processos climáticos enfraquecidos pela falta de O2",
+    "Segurança alimentar em risco com colapso de peixes",
+    "Economias costeiras ameaçadas globalmente",
+    "Respostas integradas necessárias entre países"
+  ],
+  "ai-offbeat": [
+    "Orcas flagradas destruindo peixes-sol nunca documentado",
+    "Bactérias desconhecidas descobertas em baleias",
+    "Gel regenera esmalte dental sem flúor",
+    "Ácido cafeico protege células contra envelhecimento",
+    "Psicodélicos mudam estrutura cerebral por 1 mês",
+    "39 adoçantes alteram crescimento bacteriano intestinal"
+  ]
+}
