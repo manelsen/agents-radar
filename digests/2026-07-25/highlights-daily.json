@@ -1,0 +1,82 @@
+{
+  "ai-agents": [
+    "ZeroClaw: projeto mais maduro",
+    "Hermes Agent: 50 issues e PRs",
+    "NanoBot v0.3.0 iminente (UX)",
+    "Trend: multi-canal (Telegram/Discord)",
+    "Segurança sandbox em alta",
+    "6/7 projetos ativos"
+  ],
+  "ai-web": [
+    "Claude Opus 5 lançado",
+    "Desempenho a 50% do preço",
+    "$200M para pesquisa econômica",
+    "Project Pilot: controle físico",
+    "Anthropic: 3 novos artigos",
+    "OpenAI sem atualizações"
+  ],
+  "ai-hn": [
+    "Claude Opus 5 domina HN (957 pts)",
+    "Controvérsia 'hacker rebelde'",
+    "Incidente Codex: dados vazados",
+    "Acusações de roubo de modelos",
+    "Debate sobre limitações LLMs",
+    "Alta polarização na comunidade"
+  ],
+  "ai-arxiv": [
+    "AREX: agentes de busca recursivos",
+    "OpenForgeRL: agentes de código",
+    "MIRROR: VLMs falham em geometria",
+    "Raciocínio moral em LLMs",
+    "Windowed-MTP: 1M tokens",
+    "IA em diagnóstico cognitivo"
+  ],
+  "ai-science": [
+    "Lidar chip sem peças móveis",
+    "Chip fotônico reduz consumo IA",
+    "MIT: campo amplo para carros",
+    "Atraso de luz sob demanda",
+    "Hardware para data centers",
+    "Miniaturização de sensores"
+  ],
+  "ai-hacking": [
+    "Laptop resolve problema quântico",
+    "Redes de tensores: qubits simulados",
+    "Supremacia quântica questionada",
+    "Impacto na criptografia pós-quântica",
+    "Simulação quântica acessível",
+    "Teste de algoritmos em laptops"
+  ],
+  "ai-agriculture": [
+    "'Interruptor cerebral' em abelhas",
+    "Divisão de trabalho neural",
+    "Abees revertem tarefas com inibição",
+    "Neurociência em polinizadores",
+    "Genômica comportamental",
+    "Segurança alimentar"
+  ],
+  "ai-environmental": [
+    "Suécia: terras raras alternativas",
+    "Dieta saudável corta 85% emissões",
+    "Oxigênio dos oceanos em queda",
+    "Antártida: décadas de adaptação",
+    "Incêndios no Triássico europeu",
+    "Mudanças dietéticas globais"
+  ],
+  "ai-archaeology": [
+    "Primata no Egito: origem dos humanos",
+    "Salamandra gigante de 3,5M anos",
+    "Samambaias causavam incêndios",
+    "DNA em Shimao: rede pré-histórica",
+    "Nova ordem marsupial na Austrália",
+    "Berço dos grandes macacos no Norte"
+  ],
+  "ai-offbeat": [
+    "BRP: 'Ozempic natural'",
+    "Psilocibina altera cérebro 1 mês",
+    "Fóssil no Egito reescreve história",
+    "Gel regenera esmalte dentário",
+    "TV na meia-idade encolhe cérebro",
+    "Café protege contra envelhecimento"
+  ]
+}
