@@ -1,0 +1,90 @@
+{
+  "ai-agents": [
+    "NanoBot v0.3.0: 260 PRs merged",
+    "Hermes Agent: 50 issues e 50 PRs em 24h",
+    "IronClaw: 45 itens de atividade em 24h",
+    "7 projetos open source analisados",
+    "Hermes Agent instável com 8 bugs P1/P2",
+    "CoPaw alerta para segurança multi-agente"
+  ],
+  "ai-web": [
+    "Anthropic lança Claude Opus 5",
+    "Opus 5 custa metade do Fable 5",
+    "Novo state-of-the-art no Frontier-Bench v0.1",
+    "OpenAI sem novos artigos hoje",
+    "CursorBench 3.2: Opus 5 a 0,5% do Fable",
+    "Posicionamento custo-benefício para engenharia"
+  ],
+  "ai-hn": [
+    "Hugging Face invadida por modelos OpenAI",
+    "ChatGPT e Codex caíram simultaneamente",
+    "Remoção de 80% do system prompt do Claude Code",
+    "Discussão: LLMs não dão ganho de 10x em código",
+    "Debate sobre transparência de modelos AI",
+    "Técnica para evitar que AI finja ser humana"
+  ],
+  "ai-science": [
+    "MIT cria chip lidar sem peças móveis",
+    "Chip fotónico programável controla luz",
+    "Lidar chip elimina componentes tradicionais",
+    "Avanço em hardware para veículos autónomos",
+    "Computação óptica em centros de dados",
+    "Sensores mais fiáveis e económicos"
+  ],
+  "ai-hacking": [
+    "Laptop resolve problemas quânticos",
+    "Redes tensoriais em qubits entrelaçados",
+    "Democratização do poder computacional",
+    "Implicações para criptografia pós-quântica",
+    "Fronteira clássico-quântico se dissolve",
+    "Urgência na migração para PQC"
+  ],
+  "ai-livingwell": [
+    "Rapamicina reverte sintomas de autismo",
+    "BRP: molécula similar ao Ozempic sem efeitos",
+    "Café protege fígado e coração",
+    "Psilocibina altera cérebro por um mês",
+    "SuperAgers mantêm memória excepcional",
+    "Ozempic associado a risco de alopecia"
+  ],
+  "ai-agriculture": [
+    "Interruptor neural define tarefas das abelhas",
+    "Abelhas mais velhas revertem comportamento",
+    "Descoberta abre gestão de colónias",
+    "Neurociência aplicada à entomologia",
+    "Otimização de polinização possível",
+    "Plasticidade comportamental confirmada"
+  ],
+  "ai-environmental": [
+    "Oceanos perdendo oxigênio rapidamente",
+    "Depósitos suecos de terras raras descobertos",
+    "Dieta saudável pode cortar 85% das emissões",
+    "Gelo antártico: décadas extras de preparação",
+    "Integração dieta-ambiente em destaque",
+    "Ações individuais não distraem do ativismo"
+  ],
+  "ai-archaeology": [
+    "Fóssil no Egito muda história dos primatas",
+    "DNA de Shimao revela contactos pré-históricos",
+    "Nova salamandra gigante no Japão",
+    "Nova ordem de marsupiais na Austrália",
+    "Berço dos grandes macacos pode ser norte de África",
+    "Samambaias do Triássico como combustível"
+  ],
+  "ai-social": [
+    "Oceanos perdendo oxigênio em ritmo acelerado",
+    "Água sem oxigênio ameaça vida aquática",
+    "Despoluição ligada a aquecimento global",
+    "Comunidades costeiras serão mais afetadas",
+    "Crises ecológicas ampliam desigualdades",
+    "Migração climática em crescimento"
+  ],
+  "ai-offbeat": [
+    "BRP suprime apetite sem efeitos colaterais",
+    "Gel regenera esmalte dental",
+    "Psilocibina muda cérebro por um mês",
+    "TV em excesso encolhe cérebro",
+    "Cientistas criam poeira cósmica em laboratório",
+    "Ozempic oral silencia circuitos de recompensa"
+  ]
+}
