@@ -1,0 +1,90 @@
+{
+  "ai-cli": [
+    "OpenAI: modelo evade contenção",
+    "Hugging Face: CEO exige transparência",
+    "Coinbase corta 50% com modelos chineses",
+    "Kimi K3 custos mais altos que esperado",
+    "Claude Opus 5 com falhas críticas",
+    "HN: ceticismo sobre bolha de IA"
+  ],
+  "ai-agents": [
+    "NullClaw: SIGSEGV no Telegram ARM64",
+    "Issue #976 - crash em produção",
+    "7 projetos cobertos hoje",
+    "Baixa atividade em 27/07/2026",
+    "v2025.5.29 contém regressão",
+    "Zero PRs merged nas últimas 24h"
+  ],
+  "ai-hn": [
+    "OpenAI: modelo evade contenção",
+    "Hugging Face hack: CEO exige transparência",
+    "Coinbase corta 50% com modelos chineses",
+    "Kimi K3 custos operacionais altos",
+    "Claude Opus 5 com falhas críticas",
+    "HN: ceticismo sobre bolha de IA"
+  ],
+  "ai-science": [
+    "MIT: chip lidar sem peças móveis",
+    "Chip fotônico controla velocidade da luz",
+    "Reduz consumo em data centers",
+    "Visão ampla para veículos autônomos",
+    "Múltiplas funções num único chip",
+    "Menos interferência de sinais"
+  ],
+  "ai-hacking": [
+    "Laptop resolve problema quântico",
+    "Redes tensoriais simulam qubits",
+    "Resultados iguais a quantum real",
+    "Impacto na criptografia pós-quântica",
+    "Fronteira clássico-quântico difusa",
+    "Segurança: simulação com recursos modestos"
+  ],
+  "ai-livingwell": [
+    "Alzheimer: ponto de inflexão identificado",
+    "APOE2 protege neurônios do DNA",
+    "Molécula natural suprime apetite",
+    "Psilocibina remodela cérebro",
+    "Protetor solar mineral avançado",
+    "Gel regenera esmalte dentário"
+  ],
+  "ai-agriculture": [
+    "Abelhas: interruptor neural identificado",
+    "Circuito cerebral controla divisão de tarefas",
+    "Abelhas mais velhas revertem comportamento",
+    "Descoberta abre manejo de colônias",
+    "Comportamento programado neuralmente",
+    "Neurociência + biologia integradas"
+  ],
+  "ai-environmental": [
+    "Queimadas: sequoias 4x mais sobrevida",
+    "19.000 diferenças genéticas em cobras",
+    "Dieta saudável corta emissões 85%",
+    "Oxigênio dos oceanos em declínio",
+    "Previsões de gelo antártico até 2050",
+    "Recuo instável pós-2050 incerto"
+  ],
+  "ai-archaeology": [
+    "Fóssil no Egito desafia teorias",
+    "Salamandra gigante classificada",
+    "Fetos criaram incêndios no Triássico",
+    "DNA antigo revela sociedade complexa",
+    "Berço dos grandes macacos na África",
+    "Biodiversidade aquática de 3,5 mi anos"
+  ],
+  "ai-social": [
+    "Backrooms: turismo digital em massa",
+    "Comunidades constroem espaços afetivos",
+    "Deoxigenação aquática avança",
+    "Zonas mortas ameaçam biodiversidade",
+    "Histórias geradas por utilizadores",
+    "Fronteira entre consumo e participação"
+  ],
+  "ai-offbeat": [
+    "Ozempic natural sem efeitos colaterais",
+    "600mi anos: ancestral dos olhos",
+    "Gel regenera esmalte dentário",
+    "Abelhas revertem tarefa com chip",
+    "Sequoias 4x mais chances com fogo",
+    "Psilocibina remodela cérebro por semanas"
+  ]
+}
