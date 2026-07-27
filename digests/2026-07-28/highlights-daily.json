@@ -1,0 +1,82 @@
+{
+  "ai-agents": [
+    "NullClaw: baixa atividade, 1 PR aberto",
+    "NanoBot, Hermes, CoPaw e mais 4 projetos",
+    "PR Dependabot: Alpine 3.24 para NullClaw",
+    "ZeroClaw e IronClaw em destaque hoje",
+    "CoPaw: projeto Agentscope em evidência",
+    "NullClaw: estabilidade sem issues abertas"
+  ],
+  "ai-web": [
+    "Anthropic eleva Cognizant a Premier Partner",
+    "30.000 profissionais treinados em Claude",
+    "OpenAI: artigo sobre IA e trabalho publicado",
+    "Parceria Anthropic-Cognizant em três setores",
+    "Anthropic: expansão enterprise em massa",
+    "OpenAI: comunicação focada em produtividade"
+  ],
+  "ai-hn": [
+    "Erros prolongados no Claude Opus 5: 91 pts",
+    "Debate sobre viés político dos LLMs",
+    "Nvidia, SpaceX, Microsoft em segurança IA",
+    "Financiamento bilionário para datacenters",
+    "LLMs identificados como lib-left: polêmica",
+    "Comunidade HN cobra transparência da Anthropic"
+  ],
+  "ai-science": [
+    "Chip lidar sem partes móveis do MIT",
+    "Campo de visão ampliado para veículos autônomos",
+    "Chip fotônico programável para IA",
+    "Luz controlável: atraso e sincronização",
+    "Redução de energia em data centers",
+    "Miniaturização: condução autônoma escalável"
+  ],
+  "ai-livingwell": [
+    "Ponto de inflexão identificado no Alzheimer",
+    "Psilocibina causa mudanças duradouras no cérebro",
+    "BRP: molécula natural tipo Ozempic",
+    "Apps de calorias com IA erram até 345 kcal",
+    "Gel regenera esmalte dentário",
+    "Gene APOE2 protege células cerebrais"
+  ],
+  "ai-agriculture": [
+    "Interruptor cerebral descoberto em abelhas",
+    "Circuitos neurais controlam tarefas das operárias",
+    "Descoberta desafia visão hormonal tradicional",
+    "Abelhas mais velhas voltam a cuidar da rainha",
+    "Pesquisa abre portas para conservação",
+    "Plasticidade neural em insetos sociais"
+  ],
+  "ai-environmental": [
+    "Queimas controladas salvam sequoias gigantes",
+    "Sobrevivência das árvores quadruplicada",
+    "Serpente marrom: diversidade genética oculta",
+    "Rare earth deposits discovered na Suécia",
+    "Dietas saudáveis reduzem emissões em 85%",
+    "Sustentabilidade individual não atrapalha política"
+  ],
+  "ai-archaeology": [
+    "Martelo de osso de 500.000 anos na Inglaterra",
+    "Ferramentas avançadas em humanos antigos",
+    "Fóssil de primata redefine história humana",
+    "Salamandra gigante de 3,5 milhões de anos",
+    "Evidências de samambaias no Triássico",
+    "DNA antigo revela sociedade complexa em Shimao"
+  ],
+  "ai-social": [
+    "Backrooms: turismo digital em expansão",
+    "Mundo ficcional imersivo criado coletivamente",
+    "Fronteiras entre criador e consumidor dissolvidas",
+    "Experiências emocionais em espaços imaginários",
+    "Milhões exploram universo Backrooms",
+    "Reconfiguração fundamental da relação audience-ficção"
+  ],
+  "ai-offbeat": [
+    "Sonhos são reconstrução ativa da realidade",
+    "Suplemento de fibra reduz dor de osteoartrite",
+    "BRP de Stanford: Ozempic natural sem efeitos",
+    "Origem dos olhos: ancestral ciclope de 600 mi",
+    "Glândula pineal descendente do olho único",
+    "Larvas de mosca mergulham 200m para fugir"
+  ]
+}
