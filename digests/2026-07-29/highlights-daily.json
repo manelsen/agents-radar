@@ -1,0 +1,90 @@
+{
+  "ai-agents": [
+    "IronClaw lidera em volume de eventos 24h",
+    "ZeroClaw e Hermes Agent com atividade intensa",
+    "NanoBot: 39 PRs abertos e 7 bugs P1",
+    "PicoClaw: 6 PRs e 6 issues stale",
+    "7 projetos open source no ecossistema",
+    "NullClaw permanece inativo"
+  ],
+  "ai-web": [
+    "Claude Mythos descobre falhas em HAWK",
+    "Anthropic: 2 artigos sobre criptografia",
+    "OpenAI lança 7 artigos B2B hoje",
+    "Modelos identificam falhas matemáticas",
+    "Ataque enfraquece assinatura HAWK",
+    "Anthropic: 428 artigos no sitemap"
+  ],
+  "ai-hn": [
+    "Posição Anthropic: 1.164 pontos HN",
+    "Open-weights: 1.664 comentários",
+    "OpenAI agents afetaram infraestrutura HF",
+    "HuggingFace reconstruiu 1/3 da infra",
+    "Kimi K3 via Telnyx: 129 pontos",
+    "Carta de governança IA nos EUA"
+  ],
+  "ai-arxiv": [
+    "Kimi K3: MoE 2.8T parâmetros",
+    "ELMOD: LLM alemão 2.7B eficiente",
+    "KANEx para explicações médicas",
+    "Contextos de 1M tokens via cache",
+    "ClinFusion para imagens médicas",
+    "Multiagente em alerta climático"
+  ],
+  "ai-science": [
+    "MIT: chip lidar sem peças móveis",
+    "Chip fotônico programável para IA",
+    "Computação óptica reduz energia",
+    "Cobertura angular ampla e alta resolução",
+    "Photonics em condução autônoma",
+    "Miniaturização de componentes ópticos"
+  ],
+  "ai-livingwell": [
+    "8% peso não freia diabetes tipo 2",
+    "Sauna + banho frio eleva leucócitos",
+    "Alimentação 8-9h/dia preserva cognição",
+    "Apps IA subestimam 345 calorias",
+    "APOE2 protege neurônios contra dano",
+    "Café reduz cirrose e risco hepático"
+  ],
+  "ai-agriculture": [
+    "Abelhas têm interruptor cerebral",
+    "Circuitos neurais dividem tarefas",
+    "Descoberta abre manejo de polinizadores",
+    "Plasticidade comportamental em colônias",
+    "Impacto na otimização de polinização",
+    "Neurobiologia de insectos sociais"
+  ],
+  "ai-environmental": [
+    "Corrente atlântica enfraquece",
+    "Rios atmosféricos intensificam na Califórnia",
+    "Queimadas quadruplicam sobrevivência de sequoias",
+    "Dietas cortam emissões em 85%",
+    "Previsões de gelo antártico melhoram",
+    "Terras raras descobertas na Suécia"
+  ],
+  "ai-archaeology": [
+    "Bisão de 13.000 anos em Font-de-Gaume",
+    "Martelo de osso de 500.000 anos",
+    "Fóssil do Egito redefine origem dos macacos",
+    "Salamandra gigante do Japão",
+    "Savanas de samambaia no Triássico",
+    "Ecologia antiga revela biodiversidade"
+  ],
+  "ai-social": [
+    "Backrooms: meme vira universo ficcional",
+    "Turismo digital com participação ativa",
+    "Horror e nostalgia em espaços imaginários",
+    "Comunidades co-criam realidades",
+    "Narrativas colaborativas em gaming",
+    "Backrooms como atração turística"
+  ],
+  "ai-offbeat": [
+    "Pinturas rupestres datadas por carvão",
+    "Sonhos reconstroem realidade",
+    "Ancestral de 600M anos moldou olhos",
+    "Fogo prescrito quadruplica sequoias",
+    "Molécula natural estilo Ozempic",
+    "3.700 relatos de sonhos analisados"
+  ]
+}
