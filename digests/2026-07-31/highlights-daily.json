@@ -1,0 +1,98 @@
+{
+  "ai-agents": [
+    "NullClaw adiciona provedor Grok CLI",
+    "7 projetos de agentes IA rastreados",
+    "PR #981: integração Grok xAI",
+    "2 PRs atualizadas em 24h",
+    "ZeroClaw: novo projeto no ecossistema",
+    "IronClaw: agente da Near AI"
+  ],
+  "ai-web": [
+    "OpenAI: 3 novos artigos hoje",
+    "Anthropic: silêncio comunicacional",
+    "OpenAI total: 891 artigos no sitemap",
+    "Anthropic total: 428 artigos",
+    "Sem acesso ao corpo dos artigos",
+    "Monitorar canais alternativos"
+  ],
+  "ai-hn": [
+    "GPT-5.6: 396 pts, 258 comentários",
+    "Ferramentas para coding agents",
+    "Censura não transfere por destilação",
+    "LLM routing emerge como categoria",
+    "OpenAI: 3 novos artigos hoje",
+    "Reuters: hedge funds apostam em IA"
+  ],
+  "ai-arxiv": [
+    "50 artigos em cs.AI, cs.CL, cs.LG",
+    "MemSecBench: segurança de memória",
+    "On-Policy Distillation para alinhamento",
+    "Linguistic Monoculture em LLMs",
+    "InferScale: injeção KV em GPUs",
+    "ARC-AGI-3: settings triplicam scores"
+  ],
+  "ai-memory": [
+    "Eixo intestino-cérebro: via vagal",
+    "Sinais GI transformam refeições em memória",
+    "Açúcar sem nutrientes: sem memória",
+    "Nervo vago: ablação elimina efeito",
+    "Dietas ricas em gordura: memória fraca",
+    "Plasticidade hipocampal afetada"
+  ],
+  "ai-livingwell": [
+    "BRP: molécula natural tipo Ozempic",
+    "Café reduz risco de cirrose e fígado",
+    "Exercício: efeito pequeno em osteoartrite",
+    "GLP-1: risco maior de alopecia",
+    "Alzheimer: células imunes como alvo",
+    "Stanford descobre molécula BRP"
+  ],
+  "ai-engineering": [
+    "Raios-X ultra-rápidos: trilionésimos de s",
+    "Capturei conversão luz em movimento",
+    "Resolução temporal sem precedentes",
+    "Engenharia de aceleradores avançada",
+    "Design de materiais foto-ativos",
+    "Mapeamento atômico em tempo real"
+  ],
+  "ai-agriculture": [
+    "Giant daisies: convergência evolutiva",
+    "Abelhas-bumble morrem em calçadas",
+    "Calor extremo + pesticidas: risco",
+    "Novas espécies surgindo em Galápagos",
+    "Rotas genéticas independentes",
+    "Polinizadores: urgência de conservação"
+  ],
+  "ai-environmental": [
+    "Pássaros: explosões evolutivas raras",
+    "Ouro encontrado no fundo do mar",
+    "Terras raras identificadas na Suécia",
+    "AMOC enfraquecendo: alerta climático",
+    "Cobras invasoras: diversidade oculta",
+    "Queimadas: sequoias 4x mais sobrevivência"
+  ],
+  "ai-archaeology": [
+    "Mohenjo-daro: sociedade igualitária",
+    "Crocodiliano de 210 milhões de anos",
+    "Salamandra gigante do Japão reavaliada",
+    "Fóssil de macaco do Egito: revisão",
+    "Pinturas de 13.000 anos datadas",
+    "Ferramentas: cognição mais complexa"
+  ],
+  "ai-social": [
+    "The Backrooms: turismo emocional",
+    "Espaços fictícios viram destinos",
+    "Usuários co-criam realidades",
+    "Medo e nostalgia em mídias digitais",
+    "Turismo digital em alta",
+    "Experiências imersivas e perturbadoras"
+  ],
+  "ai-offbeat": [
+    "Ancestrais de 600 Ma: origem dos olhos",
+    "Fluoreto diamina: para cárie infantil",
+    "Predador do Triássico no Novo México",
+    "Pintura rupestre: 13.000 anos datada",
+    "Evolução repete soluções",
+    "Glândula pineal: olho ancestral"
+  ]
+}
