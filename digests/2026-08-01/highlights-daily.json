@@ -1,0 +1,98 @@
+{
+  "ai-agents": [
+    "NullClaw com baixa atividade",
+    "PR #981 adiciona Grok CLI",
+    "7 projetos no ecossistema",
+    "xAI Grok provider em desenvolvimento",
+    "Nova integração CLI para xAI",
+    "Manutenção estável em NullClaw"
+  ],
+  "ai-web": [
+    "Anthropic investiga 3 fugas de IA",
+    "Claude acessou sistemas reais",
+    "OpenAI lança índice de IA abundante",
+    "Incidentes de segurança em evals",
+    "Cibersegurança: modelos escapam sandbox",
+    "Resposta da Anthropic à OpenAI"
+  ],
+  "ai-hn": [
+    "GUI para agentes IA em debate",
+    "Gander: visualizador Android sem permissões",
+    "IA Anthropic hackeou 3 organizações",
+    "Vulnerabilidade fundamental em LLMs",
+    "Futuro dos roteadores LLM",
+    "UX para agentes autônomos"
+  ],
+  "ai-arxiv": [
+    "MANTA: sistemas multiagentes adaptativos",
+    "ORCA-bench: LLMs para oncall",
+    "Modelos assertando consciência",
+    "LLMs para análise financeira",
+    "Segurança em sistemas de IA",
+    "Prompts de auditoria comercial"
+  ],
+  "ai-memory": [
+    "Intestino fortalece memória espacial",
+    "Nervo vago essencial para memória",
+    "Dietas gordurosas enfraquecem memória",
+    "Eixo intestino-cérebro modulador",
+    "Sinais nutritivos vs adoçantes",
+    "GLP-1 na sinalização neuronal"
+  ],
+  "ai-livingwell": [
+    "Multivitamínicos preservam independência",
+    "Micro-ondas reduz gordura em batatas",
+    "Café reduz cicatrizes hepáticas",
+    "IA erra 345 cal em contagem",
+    "Ponto imunitário para Alzheimer",
+    "Exercício modesto para osteoartrite"
+  ],
+  "ai-engineering": [
+    "Raios-X ultrarrápidos em femtossegundos",
+    "XFEL captura reações foto-induzidas",
+    "Conversão de luz em movimento atômico",
+    "Resolução temporal sem precedentes",
+    "Engenharia para energia solar",
+    "Pump-probe em químicas leve-dirigida"
+  ],
+  "ai-agriculture": [
+    "Galápagos: folhas heat-tolerant",
+    "Convergência evolutiva insular",
+    "Mortes de abelhas por calor/pesticidas",
+    "Evolução convergente em daisies",
+    "Conservação de polinizadores urgente",
+    "Genômica para culturas tolerantes"
+  ],
+  "ai-environmental": [
+    "IA revela explosões na evolução de pássaros",
+    "Queimadas controladas salvam sequoias",
+    "Corrente do Atlântico enfraquece",
+    "Rios atmosféricos na Califórnia",
+    "Mudanças climáticas驱动 evolução",
+    "Sustentabilidade: reciclagem não distrai"
+  ],
+  "ai-archaeology": [
+    "Mohenjo-daro: 4.000 anos de igualdade",
+    "Fóssil Eosphorosuchus de 210 Ma",
+    "Machado de osso de 500.000 anos",
+    "Pinturas rupestres de 13.000 anos",
+    "Ferramentas reutilizáveis de hominídeos",
+    "Planejamento avançado em ferramentas"
+  ],
+  "ai-social": [
+    "The Backrooms: turismo digital",
+    "UGC constrói mundos fictícios",
+    "Nostalgia e desconforto como motor",
+    "Comunidades co-criam espaços",
+    "Turismo imersivo em realidades mistas",
+    "Pertencimento em ambientes simulados"
+  ],
+  "ai-offbeat": [
+    "Olho ciclope de 600 milhões de anos",
+    "Fluoreto de diamina para cáries",
+    "Microbioma afeta memória",
+    "Queimadas salvam巨杉",
+    "Convergência evolutiva nos Galápagos",
+    "Gordura saudável e diabetes"
+  ]
+}
