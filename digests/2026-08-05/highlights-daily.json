@@ -1,0 +1,98 @@
+{
+  "ai-agents": [
+    "NullClaw PR #981: grok-cli provider",
+    "7 projetos cobertos em 24h",
+    "NanoBot, Hermes Agent listados",
+    "Atividade moderada no NullClaw",
+    "Integração grok-cli em revisão",
+    "ZeroClaw e CoPaw em destaque"
+  ],
+  "ai-web": [
+    "Tino Cuéllar assume Global Affairs",
+    "Anthropic: 1 novo artigo",
+    "OpenAI: 2 novos artigos",
+    "Hiring estratégico pós-regulação",
+    "430 artigos no blog Anthropic",
+    "897 artigos no site OpenAI"
+  ],
+  "ai-hn": [
+    "Controvérsia Apple/OpenAI domina",
+    "Tikalk padroniza código com IA",
+    "EdotEnv: RL para trading quant",
+    "Maple-Preview: MoE 20B a 120",
+    "Preocupação com IP em contratações",
+    "Reguladores pedem evidências"
+  ],
+  "ai-arxiv": [
+    "AURORA-LM: linguagem latente",
+    "UEmbed: embeddings multimodais",
+    "LiveMem: memória contínua em LLM",
+    "Benchmarks: MedPRESS, SWE-Touch",
+    "Viés cultural em LLMs quantificado",
+    "Agentes autônomos multiagentes"
+  ],
+  "ai-memory": [
+    "Intestino transforma refeições em memórias",
+    "Nervo vago media consolidação",
+    "Dieta gordurosa enfraquece memória",
+    "Sinal nutricional viaja ao cérebro",
+    "Eixo intestino-cérebro em ratos",
+    "Plasticidade sináptica modulada"
+  ],
+  "ai-solar": [
+    "Cristal temporal fotônico criado",
+    "Controle de luz terahertz",
+    "Revolução em computação rápida",
+    "Potencial para energia solar",
+    "Primeiro cristal totalmente óptico",
+    "Lasers sintonizáveis de nova geração"
+  ],
+  "ai-livingwell": [
+    "Chiclete anticancerígeno: HPV -93%",
+    "Abacate diário reduz LDL em 4%",
+    "75min/semana eliminam gordura",
+    "EPS8 ligada a Alzheimer e Huntington",
+    "Potássio reduz pressão arterial",
+    "Genes de limpeza modulam sono"
+  ],
+  "ai-engineering": [
+    "Oxide \"twisted\" em escala industrial",
+    "Liga Co-Al 10x mais forte que aço",
+    "Cristal temporal fotônico criado",
+    "Raios-X revelam molécula em fs",
+    "Twistrónica viabilizada em larga escala",
+    "Deformação plástica mantida"
+  ],
+  "ai-agriculture": [
+    "Carbono ártico chega aos oceanos",
+    "Flores tóxicas inspiram fármacos",
+    "Formigas: fome virando parental",
+    "Galápagos: especiação ativa",
+    "Abelhas em risco de extinção",
+    "Sedimentos capturam carbono marinho"
+  ],
+  "ai-environmental": [
+    "Aquecimento: 0,35°C/década",
+    "Cidades costeiras afundando rápido",
+    "Carbono ártico capturado no fundo",
+    "98% de certeza no aquecimento",
+    "Expansão global de algas",
+    "Plásticos convertidos em hidrogênio"
+  ],
+  "ai-archaeology": [
+    "Fóssil de 518 Ma: origem das presas",
+    "Novo predador do Triássico",
+    "Linhagens fantasmas no DNA",
+    "Mohenjo-daro: igualdade social",
+    "Quelicerados: evolução revelada",
+    "Introgressão com hominídeos arcaicos"
+  ],
+  "ai-offbeat": [
+    "Chiclete reduz HPV em 93%",
+    "Árvore mais alta do Leste Asiático",
+    "DNA do Sudário de Turim analisado",
+    "Fótons com \"tempo negativo\" medido",
+    "Matéria escura: força secreta",
+    "Margaridas gigantes em Galápagos"
+  ]
+}
