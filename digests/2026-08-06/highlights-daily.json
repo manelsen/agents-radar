@@ -1,0 +1,90 @@
+{
+  "ai-agents": [
+    "NullClaw: 2 PRs de bugs críticos abertas",
+    "IronClaw, CoPaw e ZeroClaw em destaque",
+    "PR #985: stack de 16 MiB para runtime",
+    "PR #984: timeout em canais Telegram/Matrix",
+    "NanoBot e PicoClaw em atualização",
+    "ZeroClaw Labs abre repo público"
+  ],
+  "ai-web": [
+    "OpenAI lança plataforma de pesquisa econômica",
+    "Anthropic sem publicações hoje",
+    "Economic Research Exchange aberto a parceiros",
+    "Baixo volume de conteúdo oficial hoje",
+    "Expansão estratégica da OpenAI para pesquisa",
+    "Monitoramento duplo: Anthropic + OpenAI"
+  ],
+  "ai-hn": [
+    "Meta Muse Code compete com Claude e Copilot",
+    "Iowa exige regulação de bots da OpenAI",
+    "OpenAI: US$ 3,2M por discriminação",
+    "Anthropic e OpenAI: modelos falharam testes UK",
+    "Celeris-1 alcança 2.082 tokens/s",
+    "Escândalo CSAM em anúncios da Meta"
+  ],
+  "ai-arxiv": [
+    "ParVL: scaling paralelo para MLLMs",
+    "Pré-treinamento formal melhora habilidades",
+    "ALiBi: falha em encodings posicionais",
+    "Copa 2026 como teste de forecasting",
+    "Radiologia e triage com VLMs",
+    "50 novos artigos em cs.AI, cs.CL, cs.LG"
+  ],
+  "ai-solar": [
+    "Cristal temporal fotônico 100% óptico",
+    "Modulação terahertz em picossegundos",
+    "Potencial para computação ultrar Rápida",
+    "Ajuste dinâmico de absorção solar",
+    "Lasers altamente ajustáveis",
+    "Novo marco em photonics"
+  ],
+  "ai-livingwell": [
+    "Abacate diário reduz LDL em obesos",
+    "Caminhada de 75 min/semana queima gordura",
+    "Frutose tumoral facilita metastase",
+    "EPS8 no envelhecimento causa agregados",
+    "Potássio + corte de sódio: controle pressórico",
+    "11 histórias de bem-estar hoje"
+  ],
+  "ai-engineering": [
+    "Liga cobalto-alumínio 6x mais forte que aço",
+    "Cristal temporal fotônico todo-óptico",
+    "Twistrônica em escala prática",
+    "Raios-X capturam reação em trilionésimos",
+    "4 avanços em engenharia hoje",
+    "Nanoescala transforma material frágil em forte"
+  ],
+  "ai-agriculture": [
+    "Carbono do permafrost preso em sedimentos",
+    "Tabaco produz composto medicinal atisinium",
+    "Formigas clônais: fome = cuidado parental",
+    "Giant daisies tolerantes ao calor nos Galápagos",
+    "Rotas enzimáticas de plantas venenosas",
+    "4 estudos de agricultura hoje"
+  ],
+  "ai-environmental": [
+    "Aquecimento: 0,35°C/década (quase o dobro)",
+    "Incêndios na Europa geraram suas próprias tempestades",
+    "Cidades costeiras afundam 6mm/ano",
+    "IA identifica blooms de algas massivos",
+    "Plásticos viram hidrogênio com captura de carbono",
+    "10 histórias ambientais hoje"
+  ],
+  "ai-archaeology": [
+    "Cérebro de cobra de 80 Ma revela nichos diversos",
+    "Deinosuchus: 1° esqueleto scientificamente preciso",
+    "Fóssil de 518 Ma: origem de presas de aranha",
+    "2 linhagens fantasmas no DNA humano",
+    "Mohenjo-daro: riqueza mais equitativa",
+    "6 descobertas arqueológicas hoje"
+  ],
+  "ai-offbeat": [
+    "Fótons com tempo de permanência negativo",
+    "Chiclete anticancerígeno: -93% em HPV",
+    "Células imunológicas explodem como bombas",
+    "Crocodilo gigante que caçava dinossauros",
+    "Fóssil de serpente de 80 milhões de anos",
+    "20 curiosidades científicas hoje"
+  ]
+}
