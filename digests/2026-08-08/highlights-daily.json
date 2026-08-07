@@ -1,0 +1,90 @@
+{
+  "ai-agents": [
+    "NullClaw inativo — 0 PRs, 0 issues",
+    "NanoBot saudável com 21 PRs atualizados",
+    "Hermes Agent instável com ~50 issues",
+    "IronClaw: 20 PRs merged, RC1 pendente",
+    "7 projetos cobrem ecossistema de agentes",
+    "CoPaw beta.2 lançado com regressões"
+  ],
+  "ai-web": [
+    "Anthropic: melhorias em safeguards biológicos",
+    "Fable 5 reduz 85% dos fallbacks em biologia",
+    "OpenAI sem publicações novas no período",
+    "anthropic.com: 1 novo artigo publicado",
+    "431 artigos no sitemap da Anthropic",
+    "OpenAI: 900 artigos no sitemap total"
+  ],
+  "ai-hn": [
+    "Oracle bane código gerado por IA no OpenJDK",
+    "Oracle ban: 254 pontos, 173 comentários",
+    "OpenAI: acusação de má conduta científica",
+    "ByteDance desenvolve modelo rival da Anthropic",
+    "Anthropic: safeguards biológicos do Fable 5",
+    "HN: semana negativa para OpenAI"
+  ],
+  "ai-arxiv": [
+    "Novos frameworks para debugging de agentes",
+    "Auto-distilação sem supervisão externa avança",
+    "Abordagens neuro-simbólicas com RAG",
+    "Modelos quânticos para predição cardíaca",
+    "Taxonomia multidimensional em pós-treinamento",
+    "50 artigos em cs.AI, cs.CL, cs.LG"
+  ],
+  "ai-robotics": [
+    "Claude Fable 5 descobre contraexemplo matemático",
+    "Conjectura de Jacobian refutada em ≥3 dimensões",
+    "Problema aberto há 87 anos resolvido por IA",
+    "Fable 5: raciocínio simbólico de alto nível",
+    "IA generativa supera limitações em provas",
+    "Fronteira cognitivo-simbólica em robótica"
+  ],
+  "ai-livingwell": [
+    "Mudança neuro-imune no cérebro aos 50 anos",
+    "49% dos casos de demência são evitáveis",
+    "THC elimina pesadelos em +1/3 de PTSD",
+    "75 min de caminhada semanal melhoram saúde",
+    "Abacate reduz partículas LDL e risco cardiovascular",
+    "Glifosato reduz forrageamento de abelhas em 13%"
+  ],
+  "ai-mentalhealth": [
+    "Patch ultrassônico: 43 min menos para sono REM",
+    "Sonor REM aumentado em 16 min sem fármacos",
+    "+1/3 de pacientes PTSD sem pesadelos com THC",
+    "Tecnologia vestível não invasiva para sono",
+    "Abordagens minimamente invasivas em mente",
+    "Regulação emocional via sono melhorado"
+  ],
+  "ai-engineering": [
+    "Nanorreator imita células para produzir H2O2",
+    "Luz visível substitui processos térmicos",
+    "Óxidos torcidos em escala industrial",
+    "Twistrónica avança para eletrónica prática",
+    "Fotossíntese artificial com menor energia",
+    "Controlo atômico em camadas de óxidos"
+  ],
+  "ai-agriculture": [
+    "Glifosato reduz forrageamento de abelhas 13%",
+    "Descongelamento do permafrost: 90% do carbono fica retido",
+    "Compostos medicinais replicados em tabaco",
+    "Formigas: mesmo circuito para fome e parental",
+    "Agrotóxico afeta cérebro das abelhas",
+    "Biofábrica sustentável para plantas venenosas"
+  ],
+  "ai-environmental": [
+    "Núcleo terrestre reverteu rotação sob Pacífico",
+    "AMOC resistiu mesmo com entrada de água reduzida",
+    "Incêndios na Europa criaram próprias tempestades",
+    "Cidades costeiras afundam 3x mais que média global",
+    "Aquecimento acelera: 0,35°C/década",
+    "Retorno de carbono marinho reduz impacto imediato"
+  ],
+  "ai-archaeology": [
+    "Microrganismos de Ötzi preservados 5.300 anos",
+    "2 ancestrais fantasmas identificados no DNA",
+    "Fósseis de 567 milhões de anos antecipam animais",
+    "Deinosuchus reconstruído com 9,5 metros",
+    "Cérebro de cobra de 80 milhões de anos",
+    "Primeiras presas de aranha 518 milhões de anos"
+  ]
+}
