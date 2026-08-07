@@ -1,0 +1,114 @@
+{
+  "ai-cli": [
+    "NullClaw, NanoBot, Hermes Agent, PicoClaw, IronClaw, CoPaw, ZeroClaw",
+    "ZeroClaw com correção de vazamento de chaves API #1",
+    "NanoBot corrige vazamento de chaves #5270 e #5269",
+    "Hermes Agent: 3 PRs de segurança em 24h",
+    "Arquitetura modular multi-provider domina agentes",
+    "Agentes com cronjobs e subagentes em alta"
+  ],
+  "ai-agents": [
+    "7 projetos monitorados sem atividade em 24h",
+    "NullClaw completamente estagnado — possível abandono",
+    "IronClaw com 50+ PRs ativos — maturidade em produção",
+    "Priorização de segurança: correções de API em massa",
+    "Paradigma shift para agentes modulares e automatizados",
+    "ZeroClaw lidera correções de vulnerabilidades críticas"
+  ],
+  "ai-web": [
+    "OpenAI publica 3 novos artigos no sitemap",
+    "Parceria OpenAI-APA em saúde mental",
+    "Anthropic sem novos conteúdos — possível pausa",
+    "900 artigos no sitemap da OpenAI",
+    "430 artigos no sitemap da Anthropic",
+    "Títulos inferidos de URLs sem acesso ao corpo"
+  ],
+  "ai-hn": [
+    "GPT-5.6 Sol expandido para usuários gratuitos",
+    "Especialistas acusam breakthroughs matemáticos da OpenAI",
+    "SQD/QSCI: auditoria de benchmarks quânticos",
+    "OpenAI usa fóruns secretos para coordenar agentes",
+    "Speculação sobre dispositivo físico da OpenAI",
+    "Microsoft: 70% da receita de IA vem do ecossistema OpenAI"
+  ],
+  "ai-arxiv": [
+    "Reasoning Core: 50 geradores para fine-tuning",
+    "Skill Entropy para raciocínio de longo horizonte",
+    "Argus: runtime agentic persistente",
+    "Gradient Immunity contra fine-tuning malicioso",
+    "Modelos multimodais unificados em destaque",
+    "Item Response Theory para benchmarks de segurança"
+  ],
+  "ai-robotics": [
+    "Claude Fable 5 refuta Conjectura de Jacobian",
+    "Contraexemplo simples em dimensões ≥3",
+    "Conjectura de 87 anos finalmente caída",
+    "Verificação automatizada de teoremas em alta",
+    "Raciocínio simbólico em LLMs evolui",
+    "Capacidades matemáticas além de expectativas"
+  ],
+  "ai-solar": [
+    "Primeiro cristal temporal fotônico demonstrado",
+    "Controle de luz terahertz em velocidade recorde",
+    "Benefícios para conversão e absorção solar",
+    "Lasers ajustáveis na faixa terahertz",
+    "Manipulação ultrafina do espectro de radiação",
+    "Metamateriais avançam gestão espectral em células"
+  ],
+  "ai-livingwell": [
+    "75 min/semana reduz gordura abdominal",
+    "Metade dos casos de demência é evitável",
+    "Obesidade pode causar Alzheimer via gorduras cerebrais",
+    "Abacate diário reduz risco cardiovascular em 4%",
+    "EPS8: proteína oculta do envelhecimento cerebral",
+    "THC eficaz contra pesadelos de PTSD"
+  ],
+  "ai-mentalhealth": [
+    "THC: +35% dos pacientes sem pesadelos de PTSD",
+    "Ensaio clínico de 10 semanas com resultados positivos",
+    "Sistema endocanabinoide como alvo terapêutico",
+    "Modulação de memória traumática pelo THC",
+    "Mais investigação de segurança necessária",
+    "Terapia canabinoide supera intervenções convencionais"
+  ],
+  "ai-engineering": [
+    "Ligas 10x mais resistentes que o aço",
+    "Nanorreator produz H2O2 com luz visível",
+    "Twistrónica em escalas macroscópicas",
+    "Cristal temporal fotônico all-optical",
+    "Computação ultrarrápida com terahertz",
+    "Fotossíntese artificial dá passo sólido"
+  ],
+  "ai-agriculture": [
+    "Glifosato reduz forrageio de abelhas em 13%",
+    "Abelhas afetadas após 3 dias de exposição",
+    "Rotas biossintéticas de Aconitum e Delphinium",
+    "Compostos medicinais de plantas venenosas",
+    "Formigas clonais: parentalidade e químicos cerebrais",
+    "Carbono do permafrost retido no fundo marinho"
+  ],
+  "ai-environmental": [
+    "Aquecimento acelera: 0,35°C/década",
+    "Quase o dobro da taxa de 1970-2015",
+    "Incêndios europeus criam suas próprias tempestades",
+    "90% do carbono ártico retido em sedimentos",
+    "Nível do mar sobe 6mm/ano em zonas costeiras",
+    "98% de certeza estatística entre 5 bancos de dados"
+  ],
+  "ai-archaeology": [
+    "Fósseis de 567 milhões de anos no Canadá",
+    "Serpente de 80 milhões de anos revela diversidade",
+    "Deinosuchus: primeiro esqueleto montado",
+    "Presas de aranha: microfóssil de 518 milhões de anos",
+    "Duas linhagens humanas 'fantasma' descobertas",
+    "Evolução animal empurrada 10 milhões de anos"
+  ],
+  "ai-offbeat": [
+    "Fótons podem passar 'tempo negativo'",
+    "Chiclete anticancerígeno reduz HPV em 93%",
+    "Células imunes explodem como bombas contra bactérias",
+    "Árvore mais alta do Leste Asiático: 84,1m",
+    "Espermatozoides cooperam em vez de competir",
+    "Força atrativa torna matéria escura 'mais leve'"
+  ]
+}
