@@ -1,6 +1,23 @@
 {
-  "generated": "2026-08-07T20:41:18.425Z",
+  "generated": "2026-08-08T20:27:25.135Z",
   "dates": [
+    {
+      "date": "2026-08-09",
+      "reports": [
+        "ai-agents",
+        "ai-hn",
+        "ai-robotics",
+        "ai-hacking",
+        "ai-solar",
+        "ai-livingwell",
+        "ai-mentalhealth",
+        "ai-engineering",
+        "ai-agriculture",
+        "ai-environmental",
+        "ai-archaeology",
+        "ai-offbeat"
+      ]
+    },
     {
       "date": "2026-08-08",
       "reports": [
