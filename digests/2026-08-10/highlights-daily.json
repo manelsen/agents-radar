@@ -1,0 +1,90 @@
+{
+  "ai-hn": [
+    "LLMs para aprendizado pessoal lideram com 96 pontos",
+    "OpenAI+Anthropic dominam 70% da receita de IA",
+    "Vazamento de startup israelense atinge OpenAI e Meta",
+    "Claude Code: modo automático vira padrão pago",
+    "Qwen 3.8 vs Opus 5: benchmarks não preveem conta",
+    "ByteDance treina modelo de 10 trilhões de parâmetros"
+  ],
+  "ai-agents": [
+    "Hermes Agent e CoPaw lideram com 100 atualizações/dia",
+    "3 projetos com vulnerabilidades SSRF ou autenticação",
+    "Interoperabilidade Telegram, WeChat, Slack e Matrix",
+    "ZeroClaw, IronClaw e PicoClaw em hardening ativo",
+    "NullClaw permanece inativo: referência de estagnação",
+    "Segurança e estabilização em foco no ecossistema"
+  ],
+  "ai-robotics": [
+    "Claude Fable 5 derruba Conjectura Jacobian em 3D+",
+    "Contra-exemplo simples a problema de 87 anos",
+    "IA produz provas matemáticas automatizadas",
+    "Conjectura em 2D ainda sem solução",
+    "Descoberta mostra potencial de LLMs em matemática pura",
+    "Convergência IA e ciências exatas avança"
+  ],
+  "ai-hacking": [
+    "Entrelaçamento quântico gerado pela luz solar",
+    "Fidelidade de 94% alcança estado ideal",
+    "Satélites quânticos simplificados com luz natural",
+    "QKD viabiliza comunicação segura em larga escala",
+    "Metodologia de baixo consumo energético",
+    "Criptografia quântica mais acessível e verde"
+  ],
+  "ai-solar": [
+    "Entrelaçamento quântico direto da luz solar",
+    "94% de fidelidade em experimento ao ar livre",
+    "Satélites quânticos movidos a painéis solares",
+    "Reduz consumo energético de computadores quânticos",
+    "Fotônica quântica com fonte renovável",
+    "Comunicações seguras com energia solar"
+  ],
+  "ai-livingwell": [
+    "Cannabis eleva cortisol matinal em usuários frequentes",
+    "3 porções diárias de laticínios integrais não engordam",
+    "Vinho reduz risco de morte cardiovascular em 21%",
+    "7 dias de meditação mudam cérebro como psicodélicos",
+    "560-610 min/semana de exercício: proteção cardíaca",
+    "THC elimina pesadelos de TEPT em 1/3 dos pacientes"
+  ],
+  "ai-mentalhealth": [
+    "Cannabis perturba ritmos circadianos de cortisol",
+    "Estresse danifica 'GPS interno' do cérebro",
+    "Adesivo ultrassom adiciona 43 min ao sono REM",
+    "THC elimina pesadelos de trauma em 1/3 dos casos",
+    "Células-grid afetadas por níveis elevados de cortisol",
+    "Regulação do estresse sem drogas ou cirurgia"
+  ],
+  "ai-engineering": [
+    "Platina mínima em células a combustível com nano-C",
+    "Meta-cristal de ouro opera qubits à temperatura ambiente",
+    "Nanorreator produz H2O2 com luz visível",
+    "Twistrônica escalável com materiais 'torcidos'",
+    "Data centers alimentados a hidrogênio mais viáveis",
+    "Computação quântica democratizada sem criogenia"
+  ],
+  "ai-agriculture": [
+    "Glifosato reduz forrageio de abelhas em 13%",
+    "Carbono do permafrost vai para sedimentos marinhos",
+    "10% do carbono ártico vira gás de efeito estufa",
+    "6 enzimas de plantas venenosas produzem fármacos",
+    "Glifosato altera neurotransmissores em abelhas",
+    "Biossíntese de compostos medicinais em tabaco"
+  ],
+  "ai-environmental": [
+    "Bactérias imobilizam urânio tóxico em forma estável",
+    "Reversão inesperada na direção do núcleo terrestre",
+    "Cidades costeiras afundam 3x mais rápido que mar sobe",
+    "AMOC permanece robusto em teste de 3,4 milhões de anos",
+    "Expansão massiva de florações de algas por IA",
+    "Carbono do degelo compensado por sedimentos marinhos"
+  ],
+  "ai-archaeology": [
+    "Dinos não ficaram mini por competição com mamíferos",
+    "Cérebro de serpente de 80 Ma revela adaptações",
+    "Deinosuchus de 9,5 m comia dinossauros",
+    "Ötzi preservou bactérias e leveduras por 5.300 anos",
+    "Vida animal móvel 10 Ma mais antiga que pensado",
+    "Fóssil de 518 Ma explica origem de ferrões"
+  ]
+}
