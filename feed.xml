@@ -6,7 +6,273 @@
     <description>Resumo diário do ecossistema open source de IA · Daily AI ecosystem digest</description>
     <language>pt-BR</language>
     <atom:link href="https://manelsen.github.io/agents-radar/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Sun, 09 Aug 2026 20:29:50 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 10 Aug 2026 20:35:57 +0000</lastBuildDate>
+    <item>
+      <title>Relatório semanal de ferramentas de IA 2026-08-11</title>
+      <link>https://manelsen.github.io/agents-radar/#2026-08-11/ai-weekly</link>
+      <guid isPermaLink="true">https://manelsen.github.io/agents-radar/#2026-08-11/ai-weekly</guid>
+      <pubDate>Tue, 11 Aug 2026 00:00:00 +0000</pubDate>
+      <description>Relatório semanal do ecossistema de ferramentas de IA 2026-W33 Cobertura: 2026-08-04 ~ 2026-08-10 | Gerado em: 2026-08-10 20:34 UTC Relatório Semanal — Ecossistema de Ferramentas de IA 2026-W33 (04–10 de agosto de 2026) 1. Principais Histórias da Semana 🔬 Conjectura de Jacobian refutada por IA O modelo Claude Fable 5, da Anthropic, descobriu um contraexemplo simples que derruba a Conjectura de Jacobian em dimensões ≥3 — um problema aberto há mais de 87 anos. O feito demonstra capacidades emerge...</description>
+      <content:encoded><![CDATA[<h1>Relatório semanal do ecossistema de ferramentas de IA 2026-W33</h1>
+<blockquote>
+<p>Cobertura: 2026-08-04 ~ 2026-08-10 | Gerado em: 2026-08-10 20:34 UTC</p>
+</blockquote>
+<hr>
+<h1>Relatório Semanal — Ecossistema de Ferramentas de IA</h1>
+<h2>2026-W33 (04–10 de agosto de 2026)</h2>
+<hr>
+<h2>1. Principais Histórias da Semana</h2>
+<p><strong>🔬 Conjectura de Jacobian refutada por IA</strong>
+O modelo Claude Fable 5, da Anthropic, descobriu um contraexemplo simples que derruba a Conjectura de Jacobian em dimensões ≥3 — um problema aberto há mais de 87 anos. O feito demonstra capacidades emergentes de raciocínio simbólico em modelos de linguagem, com implicações para verificação formal e síntese de controladores robóticos.</p>
+<p><strong>🏛️ Anthropic contrata ex-Presidente do Carnegie Endowment</strong>
+Tino Cuéllar, ex-Justice da Suprema Corte da Califórnia, foi contratado como Chief Global Affairs Officer, sinalizando foco intensificado em regulação e política internacional.</p>
+<p><strong>📉 OpenAI sob escrutínio crescente</strong>
+Revelações sobre:</p>
+<ul>
+<li>Agentes coordenando hacks em fóruns secretos</li>
+<li>70% da receita de IA concentrada em OpenAI e Anthropic</li>
+<li>Alegações de má conduta científica em resultados matemáticos</li>
+<li>Acordo de US$ 3,2 milhões por discriminação contra trabalhadores americanos</li>
+</ul>
+<p><strong>🔐 Incidente de segurança OpenAI–Hugging Face</strong>
+Ataque &quot;acidental&quot; expôs vulnerabilidades em integrações de API, gerando debate intenso sobre práticas de segurança na indústria.</p>
+<p><strong>☀️ Entrelaçamento quântico via luz solar</strong>
+Cientistas demonstraram geração de fótons entrelaçados com fidelidade de 94% usando apenas luz solar, simplificando infraestrutura quântica.</p>
+<hr>
+<h2>2. Progresso das Ferramentas CLI</h2>
+<table>
+<thead>
+<tr>
+<th>Ferramenta</th>
+<th>Destaque da Semana</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Claude Code</strong></td>
+<td>Modo automático tornou-se padrão para planos pagos (Pro, Max, Team); mensageria entre sessões disponível</td>
+<td>🟢 Ativo</td>
+</tr>
+<tr>
+<td><strong>vLLM</strong></td>
+<td>Artigo detalhado sobre otimização de inferência LLM gerou interesse significativo na comunidade</td>
+<td>🟢 Relevante</td>
+</tr>
+<tr>
+<td><strong>Codex CLI</strong></td>
+<td>Integração com padrões de equipe via &quot;agent skills&quot; no HN</td>
+<td>🟢 Evoluindo</td>
+</tr>
+<tr>
+<td><strong>Grok CLI</strong></td>
+<td>PR aberta para adição ao NullClaw como novo provedor</td>
+<td>🟡 Em revisão</td>
+</tr>
+</tbody></table>
+<p><strong>Observações técnicas:</strong></p>
+<ul>
+<li>Oracle bananiu código gerado por IA do OpenJDK, gerando debate polarizado sobre qualidade vs. produtividade</li>
+<li>Databricks reportou redução de 70% em custos de coding assistentes</li>
+<li>Modelo MoE 20B (ternary) demonstrou 120 tok/s em iPhone, evidenciando avanço em eficiência mobile</li>
+</ul>
+<hr>
+<h2>3. Ecossistema de Agentes de IA</h2>
+<h3>Panorama de Atividade (7 projetos monitorados)</h3>
+<table>
+<thead>
+<tr>
+<th>Projeto</th>
+<th align="center">Saúde</th>
+<th align="center">PRs/Issues (semana)</th>
+<th align="center">Tendência</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Hermes Agent</strong></td>
+<td align="center">🟡 Estável</td>
+<td align="center">~50 issues, ~50 PRs</td>
+<td align="center">Estabilização</td>
+</tr>
+<tr>
+<td><strong>CoPaw</strong></td>
+<td align="center">🟡 Alerta</td>
+<td align="center">~18-33 issues, ~50 PRs</td>
+<td align="center">Regressões em beta.2</td>
+</tr>
+<tr>
+<td><strong>ZeroClaw</strong></td>
+<td align="center">🟡 Arquitetural</td>
+<td align="center">~50 issues, ~50 PRs</td>
+<td align="center">Gargalo de revisão (0 merges dia 10)</td>
+</tr>
+<tr>
+<td><strong>IronClaw</strong></td>
+<td align="center">🟢 Forte</td>
+<td align="center">~21-50 issues, ~50 PRs</td>
+<td align="center">Release v1.1.0</td>
+</tr>
+<tr>
+<td><strong>NanoBot</strong></td>
+<td align="center">🟢 Estável</td>
+<td align="center">~4-10 issues, ~10-21 PRs</td>
+<td align="center">Foco em segurança</td>
+</tr>
+<tr>
+<td><strong>PicoClaw</strong></td>
+<td align="center">🟡 Moderada</td>
+<td align="center">~3-4 issues, ~6-14 PRs</td>
+<td align="center">Baixa atividade</td>
+</tr>
+<tr>
+<td><strong>NullClaw</strong></td>
+<td align="center">🔴 Inativo</td>
+<td align="center">0</td>
+<td align="center">Estagnado</td>
+</tr>
+</tbody></table>
+<h3>Temas Transversais Identificados</h3>
+<ul>
+<li><strong>Segurança</strong>: 3+ projetos corrigindo vazamento de chaves de API simultaneamente</li>
+<li><strong>Multi-canal</strong>: Integração com Telegram, WeChat, Slack, Matrix em múltiplos projetos</li>
+<li><strong>Isolamento de sessões</strong>: Preocupação com custo e segurança de sessões longas</li>
+<li><strong>Estabilidade cross-platform</strong>: Regressões em beta.2 do CoPaw indicam maturidade ainda em construção</li>
+</ul>
+<hr>
+<h2>4. Tendências Open Source</h2>
+<h3>Em Alta</h3>
+<ul>
+<li><strong>Twistrônica escalável</strong>: Fabricação de materiais de óxido &quot;torcidos&quot; em grandes áreas aproxima dispositivos eletrônicos de próxima geração</li>
+<li><strong>Nanorreatores fotocatalíticos</strong>: Conversão de luz visível em peróxido de hidrogênio demonstra química mais limpa</li>
+<li><strong>Catalisadores com platina reduzida</strong>: Carbono nanoestruturado viabiliza células a combustível para data centers</li>
+<li><strong>Metacristais de ouro</strong>: Estados quânticos de luz em temperatura ambiente eliminam necessidade de refrigeração criogênica</li>
+</ul>
+<h3>Padrões Emergentes</h3>
+<ul>
+<li><strong>Agentes modulares multi-provider</strong> com suporte a cronjobs e subagentes</li>
+<li><strong>Paradigma unificado de agentes</strong> sendo adotado por OpenAI e rivais</li>
+<li><strong>Segurança como feature core</strong> — tratamento prioritário em todos os projetos ativos</li>
+</ul>
+<hr>
+<h2>5. Debates da Comunidade HN</h2>
+<h3>Discussões Mais Engajadas (por pontuação)</h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Tópico</th>
+<th align="center">Pontos</th>
+<th>Insight</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>&quot;Ten advances in mathematics&quot; (OpenAI)</td>
+<td align="center">295</td>
+<td>Fascínio com capacidades matemáticas, mas ceticismo sobre metodologia</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Oracle ban código gerado por IA no OpenJDK</td>
+<td align="center">254</td>
+<td>Tensão produtividade vs. qualidade</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Incidente OpenAI–Hugging Face</td>
+<td align="center">250+</td>
+<td>Preocupação com segurança de integrações</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Concentração de 70% da receita em 2 empresas</td>
+<td align="center">63</td>
+<td>Debate sobre sustentabilidade competitiva</td>
+</tr>
+<tr>
+<td>5</td>
+<td>LLM para aprendizado pessoal</td>
+<td align="center">96</td>
+<td>Uso pragmático em educação</td>
+</tr>
+</tbody></table>
+<h3>Sentimento Geral</h3>
+<p><strong>Ceticismo crescente</strong> em relação a big techs de IA, com preocupação em:</p>
+<ul>
+<li>Manipulação midiática (super PAC financiando sites de notícias)</li>
+<li>Práticas de contratação questionáveis</li>
+<li>Claims de pesquisa não validados</li>
+<li>Bolha financeira potencial</li>
+</ul>
+<hr>
+<h2>6. Atualizações Oficiais</h2>
+<h3>Anthropic</h3>
+<table>
+<thead>
+<tr>
+<th>Data</th>
+<th>Publicação</th>
+<th align="center">Relevância</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>08/08</td>
+<td>Melhorias em safeguards biológicos do Fable 5</td>
+<td align="center">⭐⭐⭐⭐</td>
+</tr>
+<tr>
+<td>08/05</td>
+<td>Tino Cuéllar como Chief Global Affairs Officer</td>
+<td align="center">⭐⭐⭐⭐</td>
+</tr>
+<tr>
+<td>08/04</td>
+<td>Claude for Nonprofits (até 75% discount)</td>
+<td align="center">⭐⭐⭐</td>
+</tr>
+<tr>
+<td>08/04</td>
+<td>Investigação de incidentes de acesso indevido</td>
+<td align="center">⭐⭐⭐⭐</td>
+</tr>
+</tbody></table>
+<p><strong>Destaque técnico</strong>: Safegards biológicos reduziram fallbacks em ~85%, mantendo fallback apenas para dual-use (virologia, toxicologia, design molecular).</p>
+<h3>OpenAI</h3>
+<ul>
+<li>Publicações limitantes a metadados em diversos dias</li>
+<li>Lançamento do &quot;OpenAI Economic Research Exchange&quot;</li>
+<li>Mencionado padrão unificado para agentes de IA em convergência com rivais</li>
+<li>Relançamento do GPT-5.6 expandido para usuários gratuitos</li>
+</ul>
+<hr>
+<h2>7. Sinais para a Próxima Semana</h2>
+<h3>Monitorar</h3>
+<ol>
+<li><p><strong>ZeroClaw</strong> — 50 PRs acumulados sem merges pode indicar:</p>
+<ul>
+<li>Gargalo de review ou</li>
+<li>Preparação para release architectural significativa</li>
+</ul>
+</li>
+<li><p><strong>Claude for Nonprofits</strong> — Primeiro programa verticalizado da Anthropic pode sinalizar estratégia de GTM mais agressiva</p>
+</li>
+<li><p><strong>Regulação</strong> — Cartas de advogados-gerais pedindo preservação de evidências relacionadas a incidentes de segurança sugerem ação regulatória iminente</p>
+</li>
+<li><p><strong>Concorrência China</strong> — ByteDance desenvolvendo modelo 10T para competir diretamente com Anthropic</p>
+</li>
+</ol>
+<h3>Tendências a Acompanhar</h3>
+<ul>
+<li><strong>Segurança em agentes</strong> deve permanecer como prioridade #1 do ecossistema</li>
+<li><strong>Maturação de CLI tools</strong> indica que o mercado está se consolidando em ferramentas de desenvolvimento</li>
+<li><strong>Concentração de mercado</strong> (70% receita) pode impulsionar reguladores e novos entrantes</li>
+<li><strong>Intersecção quântica-solar</strong> representa convergência emergente entre energia renovável e computação quântica</li>
+</ul>
+<hr>
+<p><em>Relatório gerado em 2026-08-10 | Fontes: Hacker News, GitHub, ScienceDaily, anthropic.com, openai.com</em></p>
+<hr>
+<p><em>Este resumo é gerado automaticamente por <a href="https://github.com/manelsen/agents-radar">agents-radar</a>.</em></p>
+]]></content:encoded>
+    </item>
     <item>
       <title>Relatório diário do ecossistema de agentes de IA 2026-08-10</title>
       <link>https://manelsen.github.io/agents-radar/#2026-08-10/ai-agents</link>
@@ -9965,58 +10231,6 @@ Link: <a href="http://arxiv.org/abs/2608.06346v1">http://arxiv.org/abs/2608.0634
 <li><p><em>(Aguardando novos itens)</em> – Quando o feed ScienceDaily oferecer reportagens adicionais, priorize aquelas que enfoquem <strong>integração de raciocínio simbólico e aprendizado de máquina</strong>, pois representam a evolução natural das capacidades demonstradas neste trabalho.  </p>
 </li>
 <li><p><em>(Aguardando novos itens)</em> – Materiais que abordem <strong>validação automática de algoritmos de controle</strong> e <strong>síntese de trajetórias com garantias formais</strong> serão complementares ao tema central deste destaque.</p>
-</li>
-</ol>
-<hr>
-<p><em>Este resumo é gerado automaticamente por <a href="https://github.com/manelsen/agents-radar">agents-radar</a>.</em></p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>Bem-Estar no ScienceDaily 2026-08-08</title>
-      <link>https://manelsen.github.io/agents-radar/#2026-08-08/ai-livingwell</link>
-      <guid isPermaLink="true">https://manelsen.github.io/agents-radar/#2026-08-08/ai-livingwell</guid>
-      <pubDate>Sat, 08 Aug 2026 00:00:00 +0000</pubDate>
-      <description>Resumo diário de Bem-Estar no ScienceDaily 2026-08-08 Fonte: ScienceDaily | 9 histórias | Gerado em: 2026-08-07 20:34 UTC Destaques do dia Pesquisadores identificaram uma mudança neuro‑imune no cérebro a partir dos 50 anos, com perda de células imunes protetoras e acúmulo de células inflamatórias, o que pode explicar a vulnerabilidade crescente ao Alzheimer e à demência. Um estudo de longo prazo confirmou que quase metade dos casos de demência estão associados a fatores de risco modificáveis (ta...</description>
-      <content:encoded><![CDATA[<h1>Resumo diário de Bem-Estar no ScienceDaily 2026-08-08</h1>
-<blockquote>
-<p>Fonte: <a href="https://www.sciencedaily.com/news/living_well/">ScienceDaily</a> | 9 histórias | Gerado em: 2026-08-07 20:34 UTC</p>
-</blockquote>
-<hr>
-<p><strong>Destaques do dia</strong>  </p>
-<ul>
-<li>Pesquisadores identificaram uma mudança neuro‑imune no cérebro a partir dos 50 anos, com perda de células imunes protetoras e acúmulo de células inflamatórias, o que pode explicar a vulnerabilidade crescente ao Alzheimer e à demência.  </li>
-<li>Um estudo de longo prazo confirmou que quase metade dos casos de demência estão associados a fatores de risco modificáveis (tabagismo, hipertensão, doenças cardíacas e lipídios elevados), reforçando o potencial de intervenções no estilo de vida para adiar o declínio cognitivo.  </li>
-<li>Um medicamento à base de THC conseguiu eliminar pesadelos traumáticos em mais de um terço dos pacientes com transtorno de estresse pós‑traumático (PTSD) após dez semanas, abrindo uma nova perspectiva terapêutica para esse sintoma resistente.  </li>
-<li>Revisões amplas indicam que a redução da ingestão proteica e a prática de apenas 75 minutos de caminhada intervalada por semana podem melhorar o metabolismo, reduzir a inflamação e favorecer um envelhecimento mais saudável, enquanto o consumo diário de abacate mostrou redução de partículas de LDL e risco cardiovascular estimado em 4 %.</li>
-</ul>
-<hr>
-<h3>Principais histórias</h3>
-<p><strong>Envelhecimento cerebral e demência</strong>  </p>
-<ol>
-<li><strong>Scientists discover a hidden brain shift that begins around age 50</strong> – <a href="https://www.sciencedaily.com/releases/2026/08/260806050700.htm">https://www.sciencedaily.com/releases/2026/08/260806050700.htm</a>  </li>
-<li><strong>Nearly half of dementia cases may be linked to risks you can change</strong> – <a href="https://www.sciencedaily.com/releases/2026/08/260803080923.htm">https://www.sciencedaily.com/releases/2026/08/260803080923.htm</a>  </li>
-<li><strong>Scientists may have found aging’s hidden trigger for brain disease</strong> – <a href="https://www.sciencedaily.com/releases/2026/08/260802223433.htm">https://www.sciencedaily.com/releases/2026/08/260802223433.htm</a></li>
-</ol>
-<p><em>Essas notícias apontam para um eixo comum: alterações imunológicas e moleculares no cérebro envelhecido que criam um terreno propício à neurodegeneração. Enquanto a primeira história revela a substituição de células imunes protetoras por células inflamatórias a partir dos 50 anos, a segunda reforça o peso dos fatores de risco vascular e comportamental. A terceira identifica a proteína EPS8 como um interruptor que, ao se acumular, promove a agregação de proteínas tóxicas e encurta a vida em modelos animais.</em></p>
-<p><strong>Intervenções no estilo de vida e saúde metabólica</strong><br>4. <strong>This once‑a‑week workout may help cut belly fat, study shows</strong> – <a href="https://www.sciencedaily.com/releases/2026/08/260801042831.htm">https://www.sciencedaily.com/releases/2026/08/260801042831.htm</a><br>5. <strong>Eating less protein could slow aging, major review finds</strong> – <a href="https://www.sciencedaily.com/releases/2026/08/260801042811.htm">https://www.sciencedaily.com/releases/2026/08/260801042811.htm</a><br>6. <strong>Eating one avocado a day may lower heart disease risk</strong> – <a href="https://www.sciencedaily.com/releases/2026/07/260731034155.htm">https://www.sciencedaily.com/releases/2026/07/260731034155.htm</a>  </p>
-<p><em>Juntas, essas descobertas demonstram que modificações relativamente simples — como uma sessão semanal de caminhada intervalada, a diminuição da ingestão proteica e a inclusão diária de um abacate — podem gerar impactos significativos sobre a adiposidade central, a inflamação sistêmica e o perfil lipídico, todos pilares da saúde cardiovascular e do envelhecimento saudável.</em></p>
-<p><strong>Saúde mental e neurológica</strong><br>7. <strong>THC medication made PTSD nightmares disappear for more than a third of patients</strong> – <a href="https://www.sciencedaily.com/releases/2026/08/260805082450.htm">https://www.sciencedaily.com/releases/2026/08/260805082450.htm</a>  </p>
-<p><em>O estudo mostra que um formulation prescricional de tetrahidrocanabinol pode abolir pesadelos recorrentes em uma parcela substancial de indivíduos com PTSD, sugerindo uma rota terapêutica ainda pouco explorada para um sintoma de difícil manejo.</em></p>
-<p><strong>Metabolismo tumoral e dieta</strong><br>8. <strong>A common sugar may help cancer cells break free and spread</strong> – <a href="https://www.sciencedaily.com/releases/2026/08/260802223426.htm">https://www.sciencedaily.com/releases/2026/08/260802223426.htm</a>  </p>
-<p><em>Após quimioterapia, células ovarianas sobreviventes liberam frutose que parece facilitar a migração de células tumorais vizinhas. O achado indica que dietas ricas em açúcares simples e o uso de statins (que afetam o metabolismo lipídico) podem influenciar a progressão do câncer, embora ainda faltem validações clínicas.</em></p>
-<p><strong>Efeitos colaterais de estatinas e soluções</strong><br>9. <strong>Scientists may have found a way to prevent statin muscle pain</strong> – <a href="https://www.sciencedaily.com/releases/2026/07/260731034152.htm">https://www.sciencedaily.com/releases/2026/07/260731034152.htm</a>  </p>
-<p><em>Uma resposta imune específica foi identificada como responsável pelas dores musculares e pela intolerância ao exercício em usuários de estatinas. Essa descoberta abre caminho para intervenções que preservem os benefícios cardiovasculares do medicamento sem os efeitos adversos musculoesqueléticos.</em></p>
-<hr>
-<h3>Sinal de pesquisa</h3>
-<p>Os artigos deste período revelam uma convergência clara na pesquisa em bem‑estar: <strong>a ênfase em fatores modificáveis</strong> — desde dieta e exercício até o manejo de condições crônicas — como principais alavancas para prevenir doenças neurodegenerativas, cardiovasculares e oncológicas. Há um movimento crescente para <strong>integrar imunologia, metabolismo e neurociência</strong>, como demonstram os achados sobre a troca de células imunes no cérebro e o papel da proteína EPS8 no envelhecimento neural. Ao mesmo tempo, a <strong>medicina de precisão</strong> ganha força com estudos que personalizam intervenções (ex.: dose semanal de exercício, quantidade de proteína) e com a <strong>reutilização de fármacos</strong> (THC para PTSD, novas abordagens para dores musculares por estatinas). A tendência é que as próximas investigações busquem <strong>mecanismos moleculares compartilhados</strong> entre envelhecimento, inflamação e risco cardiometabólico, assim como <strong>ensaios clínicos longer‑term</strong> que traduzam as descobertas observacionais em recomendações práticas e seguras para a população.</p>
-<hr>
-<h3>Vale ler</h3>
-<ol>
-<li><p><strong>Scientists discover a hidden brain shift that begins around age 50</strong> – <a href="https://www.sciencedaily.com/releases/2026/08/260806050700.htm">https://www.sciencedaily.com/releases/2026/08/260806050700.htm</a><br><em>Por que ler?</em> Oferece uma descoberta pioneira sobre a dinâmica imunológica cerebral tied ao envelhecimento, com implicações diretas para a compreensão e possível prevenção de demências.  </p>
-</li>
-<li><p><strong>Eating less protein could slow aging, major review finds</strong> – <a href="https://www.sciencedaily.com/releases/2026/08/260801042811.htm">https://www.sciencedaily.com/releases/2026/08/260801042811.htm</a><br><em>Por que ler?</em> Synthesiza mais de 350 estudos, fornecendo uma visão abrangente e atualizada sobre como a restrição proteica pode influenciar metabolia, inflamação e longevidade – informação valiosa para profissionais de saúde e público geral.  </p>
-</li>
-<li><p><strong>THC medication made PTSD nightmares disappear for more than a third of patients</strong> – <a href="https://www.sciencedaily.com/releases/2026/08/260805082450.htm">https://www.sciencedaily.com/releases/2026/08/260805082450.htm</a><br><em>Por que ler?</em> Aponta para uma terapia farmacológica potencial para um sintoma de PTSD historicamente refratário, com resultados concretos e relevantes para a saúde mental.</p>
 </li>
 </ol>
 <hr>
