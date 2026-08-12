@@ -1,0 +1,114 @@
+{
+  "ai-agents": [
+    "NanoBot lidera com 50 PRs em 24h",
+    "ZeroClaw e IronClaw: hardening de segurança",
+    "Hermes Agent corrige P0 de injeção de tags",
+    "PicoClaw com issues stales há +24 dias",
+    "NullClaw: projeto em hiatus total",
+    "CoPaw acelera features com ciclo P1 <24h"
+  ],
+  "ai-web": [
+    "Anthropic: pesquisa sobre requalificação profissional",
+    "OpenAI: 2 novos artigos no sitemap",
+    "OpenAI sem conteúdo textual disponível hoje",
+    "Moderação de conteúdo em ritmo reduzido",
+    "Anthropic mantém 433 artigos no sitemap",
+    "OpenAI soma 906 artigos total"
+  ],
+  "ai-hn": [
+    "Vazamento de CoT em modelos deep_think",
+    "Anthropic implementa watermarks invisíveis",
+    "Carta do Congresso à OpenAI por transparência",
+    "Demissão do COO da OpenAI",
+    "Anthropic: parcerias de infraestrutura",
+    "Ataques disfarçados de bots de IA"
+  ],
+  "ai-arxiv": [
+    "Estudo: vulnerabilidades em idiomas de baixo recurso",
+    "Neuro-symbolic integration avança",
+    "Interpretabilidade: de post-hoc para controle",
+    "ArXiv: 50 novos artigos em cs.AI/CL/LG",
+    "6 anos de TrustNLP: evoluindo interpretabilidade",
+    "'Catastrophic Remembering' em agentes de codificação"
+  ],
+  "ai-robotics": [
+    "Claude Fable 5 refuta Conjectura Jacobiana",
+    "Conjectura falsa em 3+ dimensões",
+    "Marco: IA resolve problema matemático de 87 anos",
+    "IA avança em raciocínio abstrato",
+    "Implicações para controle e planejamento robótico",
+    "Verificação formal de sistemas robóticos"
+  ],
+  "ai-hacking": [
+    "Entrelaçamento quântico com luz solar",
+    "94% de similaridade com estados ideais",
+    "Rota de menor consumo para tecnologias quânticas",
+    "Satélites quânticos simplificados",
+    "QKD mais acessível sem lasers",
+    "Rede quântica distribuída: futuro da segurança"
+  ],
+  "ai-solar": [
+    "Entrelaçamento quântico via luz solar natural",
+    "94% similaridade com estado ideal",
+    "Queda de barreira energética para tecnologia quântica",
+    "Satélites quânticos simplificados",
+    "Computação quântica mais eficiente",
+    "Redes de comunicação quântica sustentáveis"
+  ],
+  "ai-livingwell": [
+    "Ozempic: 12% de perda de peso em 36 semanas",
+    "GLP-1: centro de desejo no cérebro",
+    "Exercício melhora limpeza glinfática cerebral",
+    "1 semana de meditação reorganiza redes neurais",
+    "Laticínios integrais: mais benéficos que pensado",
+    "Vinho moderado: benefícios reavaliados"
+  ],
+  "ai-mentalhealth": [
+    "Cannabis eleva cortisol matinal",
+    "Cortisol prejudica 'GPS interno' do cérebro",
+    "Adesivo de ultrassom: +43 min de sono REM",
+    "Medicamento THC elimina pesadelos de PTSD",
+    "THC: terapia para 1/3 dos pacientes",
+    "Cannabis recreativa desregula estresse"
+  ],
+  "ai-engineering": [
+    "Novo aço super-resistente: 40x mais barato",
+    "Aço substitui titânio em hidrogênio verde",
+    "Catalisador nanostruturado: platina mínima",
+    "Células a combustível para data centers",
+    "Metacristal de ouro: estados quânticos à temperatura",
+    "Nanorreator converte luz em H2O2"
+  ],
+  "ai-agriculture": [
+    "Glifosato reduz forrageamento de abelhas em 13%",
+    "Exposição de 3 dias afeta neurotransmissores",
+    "Herbicida mais usado causa déficit cognitivo em abelhas",
+    "Impacto em polinizadores questiona segurança",
+    "Produção de mel e polinização ameaçadas",
+    "Efeitos subletais de pesticidas"
+  ],
+  "ai-environmental": [
+    "Aço super-resistente barateia H2 verde 40x",
+    "Bactérias imobilizam urânio tóxico",
+    "Reversão inesperada na direção do núcleo terrestre",
+    "Ondas de calor marinhas ameaçam saúde",
+    "Circulação atlântica: estabilidade surpreendente",
+    "Conexões oceano-clima-saúde"
+  ],
+  "ai-archaeology": [
+    "Sífilis: esqueletos de 3.500 anos questionam origem",
+    "DNA de pergaminhos sem dano: nova fronteira",
+    "Fósseis de 567 milhões de anos no Canadá",
+    "Réptil brasileiro de 240 milhões de anos",
+    "Primeiros animais sexuais: 10 milhões de anos mais velhos",
+    "Ötzi: microorganismos originais ainda presentes"
+  ],
+  "ai-offbeat": [
+    "Ozempic atua no centro de compulsão cerebral",
+    "Cérebro adulto se repara melhor que o esperado",
+    "Buracos negros antes do Big Bang: hipótese revisada",
+    "IA refuta conjectura de 87 anos",
+    "Meditação intensiva reorganiza cérebro",
+    "Materiais regenerativos derivados de lã"
+  ]
+}
