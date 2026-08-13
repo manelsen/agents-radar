@@ -1,0 +1,106 @@
+{
+  "ai-cli": [
+    "GPT-5.6 Sol: 14x mais rápido",
+    "Anthropic IPO avaliado em US$ 2 tri",
+    "Claude: watermarks geram polêmica",
+    "Decart adquirida por US$ 6 bi",
+    "Anthropic: benchmark de raciocínio conceitual",
+    "Codex no ChatGPT Desktop Linux"
+  ],
+  "ai-agents": [
+    "ZeroClaw: arquitetura modular via plugins",
+    "CoPaw: 2 releases em 24h + OS Shell",
+    "NanoBot: correção de security bypass",
+    "IronClaw: permissões e superfície extensível",
+    "Hermes Agent: bugs de consistência",
+    "NullClaw: estabilidade para produção"
+  ],
+  "ai-web": [
+    "Anthropic: padrões de falha multiagente",
+    "OpenAI: novo CRO confirmado",
+    "Anthropic: 434 artigos no sitemap",
+    "OpenAI: 908 artigos no sitemap",
+    "Anthropic: sistemas multiagente em análise",
+    "OpenAI sinaliza produto ultrafast"
+  ],
+  "ai-hn": [
+    "GPT-5.6 Sol: modo ultrafast 14x",
+    "Anthropic IPO avaliado em US$ 2 tri",
+    "Aquisição Decart por US$ 6 bi",
+    "Claude: watermarks irritam usuários",
+    "Anthropic: Conceptual Reasoning Index",
+    "Codex no ChatGPT Desktop Linux"
+  ],
+  "ai-arxiv": [
+    "Long-context training degrada conhecimento",
+    "Transferência strong-to-weak na inferência",
+    "RAG domina publicações em NLP",
+    "Finanças e healthcare: apps verticais",
+    "Equity linguística em destaque",
+    "Vision + planejamento em modelos"
+  ],
+  "ai-hacking": [
+    "Entrelaçamento quântico com luz solar",
+    "94% de fidelidade quântica",
+    "QKD via satélite mais viável",
+    "Democratização da tecnologia quântica",
+    "Redes de criptografia pós-quântica",
+    "Computação quântica de baixo custo"
+  ],
+  "ai-solar": [
+    "Entrelaçamento quântico com luz solar",
+    "94% de fidelidade quântica",
+    "Satélites quânticos simplificados",
+    "Criptografia quântica democratizada",
+    "QKD sem lasers de alta potência",
+    "Energia renovável + física quântica"
+  ],
+  "ai-livingwell": [
+    "Ozempic: centro de desejo no cérebro",
+    "12% perda de peso em 36 semanas",
+    "90-120 min/semana: treino ideal",
+    "7 dias de meditação alteram cérebro",
+    "Gordura do leite: estrutura > teor",
+    "Cravings reduzidos via GLP-1"
+  ],
+  "ai-mentalhealth": [
+    "Cortisol desregula células-grelha",
+    "Cannabis eleva cortisol ao acordar",
+    "Ultrassom: 43 min menos para REM",
+    "Dispositivo wearable para sono REM",
+    "Estresse perturba bússola cerebral",
+    "43 min menos para adormecer"
+  ],
+  "ai-engineering": [
+    "Aço super-resistente: 40x mais barato",
+    "Célula a combustível para data centers",
+    "Cristal de ouro: quantum à temperatura ambiente",
+    "Platina reduzida com catalisador de carbono",
+    "Hidrogênio verde da água do mar",
+    "Tecnologia quântica sem criogenia"
+  ],
+  "ai-environmental": [
+    "Aço 40x mais barato para hidrogênio",
+    "Ondas de calor marinhas: ameaça crescente",
+    "Recifes de coral em risco",
+    "Florescências de algas nocivas",
+    "Impacto na saúde沿海 comunidades",
+    "Produção de hidrogênio mais econômica"
+  ],
+  "ai-archaeology": [
+    "Sífilis: origem vietnamita de 3.500 anos",
+    "DNA recuperado de pergaminhos",
+    "Ötzi: leveduras de 5.300 anos",
+    "Carta papal revela conquista normanda",
+    "Rotas comerciais via DNA",
+    "Transmissão mãe-filho há milênios"
+  ],
+  "ai-offbeat": [
+    "Ozempic: centro de desejo no cérebro",
+    "Cérebro se repara com astrocytes",
+    "Buracos negros: mais antigos que Big Bang",
+    "WiFi identifica pessoas com 100% precisão",
+    "Lógica e linguagem em sistemas separados",
+    "Neuroplasticidade em 7 dias"
+  ]
+}
