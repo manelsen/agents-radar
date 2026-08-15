@@ -1,0 +1,98 @@
+{
+  "ai-agents": [
+    "PR #987 NullClaw: loop hygiene para agents",
+    "7 projetos no ecossistema NullClaw, NanoBot, mais",
+    "NullClaw: sem releases, 2 itens de trabalho abertos",
+    "Segmentação de system prompt no PR #987",
+    "Compression techniques em desenvolvimento no NullClaw",
+    "Comunidade NullClaw em fase de revisão de código"
+  ],
+  "ai-web": [
+    "Anthropic: pesquisa profunda em sistemas multiagentes",
+    "Claude terá watermarking textual (EU AI Act)",
+    "Anthropic com 2 artigos novos em 16/08/2026",
+    "Desafios de agentes IA interagindo em escala",
+    "OpenAI sem novos conteúdos no período",
+    "Estudo Frontier Red Team sobre multiagentes"
+  ],
+  "ai-hn": [
+    "IA não pensa matematicamente, apenas memoriza",
+    "IA pode projetar vírus funcionais – risco?",
+    "Netflix GenRec: recomendação nativa com LLM",
+    "IPOs de OpenAI e Anthropic movimentam setor",
+    "Debian vota sobre contribuições de IA/LLM",
+    "EUA x China: tensão geopolítica na corrida de IA"
+  ],
+  "ai-science": [
+    "Primeiro motor térmico quântico supercondutor",
+    "Converte calor próximo ao zero absoluto em trabalho",
+    "Pode operar dentro de processadores quânticos",
+    "Elimina cabos de micro-ondas e ruído eletrônico",
+    "Avanço para escalabilidade quântica",
+    "Integração criogênica com hardware de IA"
+  ],
+  "ai-hacking": [
+    "Motor quântico: risco para criptografia atual",
+    "Urgência em defesas pós-quânticas",
+    "Processadores quânticos mais próximos da realidade",
+    "Criptografia de chaves públicas em risco",
+    "Acelera padronização de algoritmos resistentes",
+    "Implicações diretas para segurança da informação"
+  ],
+  "ai-livingwell": [
+    "Fibra insuficiente: microbiota degrada intestino",
+    "Proteínas vegetais restauram mucosa protetora",
+    "Receptor GIP: ativação e bloqueio causam perda de peso",
+    "Subir escadas reduz 39% risco de morte cardíaca",
+    "Estrogênio isolado: 39% menos diagnósticos de demência",
+    "Vitamina D + obesidade: 123% mais risco de morte"
+  ],
+  "ai-mentalhealth": [
+    "Cannabis eleva cortisol matinal em usuários",
+    "Cortisol perturbado afeta ritmo circadiano",
+    "Estresse prejudica navegação cerebral",
+    "Células-grade do cérebro desreguladas",
+    "Eixo HPA afetado por substâncias",
+    "GPS interno comprometido pelo cortisol alto"
+  ],
+  "ai-engineering": [
+    "Novo aço inoxidável supera titânio",
+    "Reduz custos de hidrogênio verde em 40 vezes",
+    "Viabiliza eletrólise com água do mar",
+    "Resistência à corrosão excepcional",
+    "Publicado em 11/08/2026",
+    "Democratiza tecnologias de energia limpa"
+  ],
+  "ai-agriculture": [
+    "Teoria de 60 anos sobre formigas questionada",
+    "Genética sozinha não explica evolução social",
+    "Himenópteros: fatores não genéticos更重要",
+    "Impacto no controle de pragas agrícolas",
+    "Polinizadores: estratégias mais sofisticadas",
+    "Genômica e ecologia comportamental convergindo"
+  ],
+  "ai-environmental": [
+    "CO₂ subiu 7% no sangue desde 1999",
+    "AMOC sensível à velocidade do aquecimento",
+    "Ponto de inflexão com taxas atuais",
+    "Aço super-resistente viabiliza H₂ verde",
+    "Ondas de calor afetam saúde coastal",
+    "Bactérias imobilizam 95% do urânio em 130 dias"
+  ],
+  "ai-archaeology": [
+    "Moléculas orgânicas em dinossauro de 66 Ma",
+    "Carta papal revela apoio de Harold aos normandos",
+    "ADN extraído de pergaminhos sem dano",
+    "Réptil de 240 Ma do Brasil antes dos dinossauros",
+    "Coevolução cão-humano em 15 mil anos",
+    "Formas minúsculas de dinossauros: competição"
+  ],
+  "ai-offbeat": [
+    "Moléculas orgânicas preservadas em osso de dinossauro",
+    "Cérebro adulto se repara mais do que se pensava",
+    "Buracos negros mais antigos que o Big Bang",
+    "WiFi comum identifica pessoas com 100% precisão",
+    "Ozempic revela centro de desejo no cérebro",
+    "7 dias de meditação reparam o cérebro"
+  ]
+}
