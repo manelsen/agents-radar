@@ -6,7 +6,211 @@
     <description>Resumo diário do ecossistema open source de IA · Daily AI ecosystem digest</description>
     <language>pt-BR</language>
     <atom:link href="https://manelsen.github.io/agents-radar/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Sun, 16 Aug 2026 20:18:32 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 17 Aug 2026 20:19:42 +0000</lastBuildDate>
+    <item>
+      <title>Relatório semanal de ferramentas de IA 2026-08-18</title>
+      <link>https://manelsen.github.io/agents-radar/#2026-08-18/ai-weekly</link>
+      <guid isPermaLink="true">https://manelsen.github.io/agents-radar/#2026-08-18/ai-weekly</guid>
+      <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
+      <description>Relatório semanal do ecossistema de ferramentas de IA 2026-W34 Cobertura: 2026-08-11 ~ 2026-08-17 | Gerado em: 2026-08-17 20:18 UTC Relatório Semanal — Ecossistema de Ferramentas de IA Período: 2026-08-11 a 2026-08-17 (Semana 34) 1. Principais Histórias da Semana 🤖 IA e Descoberta Matemática A história mais impactante do ponto de vista técnico foi a demonstração de que o modelo Claude Fable 5 encontrou um contraexemplo que refuta a Conjectura Jacobiana em três ou mais dimensões — um problema ab...</description>
+      <content:encoded><![CDATA[<h1>Relatório semanal do ecossistema de ferramentas de IA 2026-W34</h1>
+<blockquote>
+<p>Cobertura: 2026-08-11 ~ 2026-08-17 | Gerado em: 2026-08-17 20:18 UTC</p>
+</blockquote>
+<hr>
+<h1>Relatório Semanal — Ecossistema de Ferramentas de IA</h1>
+<p><strong>Período:</strong> 2026-08-11 a 2026-08-17 (Semana 34)</p>
+<hr>
+<h2>1. Principais Histórias da Semana</h2>
+<h3>🤖 IA e Descoberta Matemática</h3>
+<p>A história mais impactante do ponto de vista técnico foi a demonstração de que o modelo <strong>Claude Fable 5</strong> encontrou um contraexemplo que refuta a <strong>Conjectura Jacobiana</strong> em três ou mais dimensões — um problema aberto há 87 anos. Este feito valida a capacidade de LLMs em raciocínio matemático formal e tem implicações indiretas para robótica e controle de sistemas dinâmicos.</p>
+<h3>🏢 Valuation e Movimentações Corporativas</h3>
+<p>A <strong>Anthropic</strong> gerou manchetes com inúmersos reportes sobre:</p>
+<ul>
+<li>Receita de US$ 11,5 bilhões no Q2</li>
+<li>Possível IPO avaliado em US$ 2 trilhões</li>
+<li>Aquisição da Decart por US$ 6 bilhões</li>
+</ul>
+<p>A <strong>OpenAI</strong> manteve ritmo acelerado com o lançamento do <strong>GPT-5.6 Sol</strong> em modo ultrafast (até 14x mais rápido), e expansões corporativas incluindo novos executivos e programas de defesa cibernética.</p>
+<h3>🔒 Controvérsia de Watermarking</h3>
+<p>A implementação de watermarks invisíveis em textos do Claude pela Anthropic — em conformidade com o EU AI Act — gerou debate significativo na comunidade sobre eficácia, transparência e impacto na qualidade das respostas. Usuários抱怨aram degradação perceptível em alguns casos.</p>
+<h3>🧬 Saúde e Neurociência</h3>
+<p>Destaques incluem:</p>
+<ul>
+<li><strong>GLP-1 oral</strong>: perda de peso de até 12% em 36 semanas</li>
+<li><strong>Ozempic e o &quot;centro de craving&quot;</strong>: identificação do septo lateral como alvo cerebral</li>
+<li><strong>Glifosato e abelhas</strong>: redução de 13% no forrageamento após exposição</li>
+</ul>
+<hr>
+<h2>2. Progresso das Ferramentas CLI</h2>
+<h3>Claude Code — Modo Automático como Padrão</h3>
+<p>A Anthropic tornou o <strong>auto mode padrão</strong> no Claude Code, gerando intenso debate (296 comentários no HN). A funcionalidade permite execução autônoma de tarefas de codificação sem confirmação explícita, levantando questões sobre controle do desenvolvedor versus produtividade.</p>
+<h3>ChatGPT Desktop com Codex (Linux)</h3>
+<p>A OpenAI lançou o aplicativo ChatGPT para <strong>Linux desktop</strong> com integração do Codex, consolidando a convergência entre chat conversacional e execução de código. O post no HN alcançou 423 pontos e 289 comentários.</p>
+<h3>Bug Crítico: Vazamento de E-mail no Claude Code</h3>
+<p>Uma issue crítica revelou que o Claude Code <strong>vazava endereços de e-mail reais</strong> como User-Agent em comandos curl. O bug foi corrigido rapidamente, mas evidenciou riscos de privacidade em ferramentas de IA.</p>
+<h3>Inferência Local em Apple Silicon</h3>
+<p>Guia detalhado sobre execução de LLMs via <strong>llama.cpp com GPU passthrough</strong> em Macs Apple Silicon dominou as discussões técnicas (261 pontos, 39 comentários), demonstrando demanda por inferência local otimizada.</p>
+<hr>
+<h2>3. Ecossistema de Agentes de IA</h2>
+<h3>Visão Geral da Atividade</h3>
+<table>
+<thead>
+<tr>
+<th>Projeto</th>
+<th>Status</th>
+<th>Destaque</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>NanoBot</strong></td>
+<td>🟢 Muito Ativo</td>
+<td>500+ PRs, correção de shell bypass</td>
+</tr>
+<tr>
+<td><strong>Hermes Agent</strong></td>
+<td>🟢 Estável</td>
+<td>Release v0.20.2, foco em P0/P1 bugs</td>
+</tr>
+<tr>
+<td><strong>IronClaw</strong></td>
+<td>🟢 Saudável</td>
+<td>Release RC.3, taxa de resolução 54%</td>
+</tr>
+<tr>
+<td><strong>CoPaw</strong></td>
+<td>🟡 Acelerado</td>
+<td>2 releases em 24h, vulnerabilidade crítica #6992</td>
+</tr>
+<tr>
+<td><strong>ZeroClaw</strong></td>
+<td>🟢 Estável</td>
+<td>RFC-driven, segurança como prioridade</td>
+</tr>
+<tr>
+<td><strong>PicoClaw</strong></td>
+<td>🟡 Estagnando</td>
+<td>Issues stale, dependência de terceiros</td>
+</tr>
+<tr>
+<td><strong>NullClaw</strong></td>
+<td>🔴 Inativo</td>
+<td>Sem atividade significativa</td>
+</tr>
+</tbody></table>
+<h3>Temas Transversais</h3>
+<p><strong>Segurança:</strong> Múltiplos projetos emitiram correções P1 para vulnerabilidades de credenciais e shell bypass. A segurança em agentes de IA emergiu como preocupação primária.</p>
+<p><strong>Contexto e Janela de Tokens:</strong> Desafios de gerenciamento de contexto persistem como gargalo técnico principal, com projetos investindo em soluções de compressão e evicting.</p>
+<p><strong>Interoperabilidade:</strong> O NullClaw implementou suporte ao protocolo A2A 0.3.0 (<code>a2a_call</code>), avanzando a comunicação entre agentes distribuídos.</p>
+<h3>Releases Notáveis</h3>
+<ul>
+<li><strong>CoPaw v2.1.0-beta.4</strong> — UI inovadora (OS Shell)</li>
+<li><strong>IronClaw v1.2.0-rc.2/3</strong> — Estabilização e hardening</li>
+<li><strong>Hermes Agent v0.20.2</strong> — Correções estruturais</li>
+</ul>
+<hr>
+<h2>4. Tendências Open Source</h2>
+<h3>Convergência para Sistemas Multiagente</h3>
+<p>A Anthropic publicou pesquisa significativa sobre <strong>padrões e problemas em sistemas multiagente</strong>, antecipando que interações agente-agente podem superar interações humano-humano em escala. Vulnerabilidades identificadas incluem:</p>
+<ul>
+<li><strong>Confabulação</strong> — informação plausível mas incorreta</li>
+<li><strong>Reward hacking</strong> — otimização de métricas em detríito do objetivo real</li>
+<li><strong>Compostos comportamentais</strong> — comportamentos benignos individuais compounding em falhas sistêmicas</li>
+</ul>
+<h3>Hardware e Aceleração</h3>
+<ul>
+<li><strong>FPGA a $250</strong>: demonstração de LLM a 21.000 tok/s</li>
+<li><strong>Apple Silicon</strong>: otimizações via GPU passthrough</li>
+<li><strong>Motores térmicos quânticos</strong>: avanços em refrigeração para computação quântica</li>
+</ul>
+<h3>Materiais para Energia</h3>
+<p>O aço inoxidável super-resistente à corrosão (40x mais barato que titânio) pode baratear significativamente a produção de <strong>hidrogênio verde</strong>, impactando infraestrutura de energia para data centers e IA.</p>
+<hr>
+<h2>5. Debates da Comunidade HN</h2>
+<h3>Tópicos Mais Engajados</h3>
+<table>
+<thead>
+<tr>
+<th>Post</th>
+<th>Pontos</th>
+<th>Tema</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Codex no ChatGPT Desktop Linux</td>
+<td>423</td>
+<td>Ferramentas de codificação</td>
+</tr>
+<tr>
+<td>Apple Silicon + LLMs (llama.cpp)</td>
+<td>261</td>
+<td>Inferência local</td>
+</tr>
+<tr>
+<td>Auto mode no Claude Code</td>
+<td>272</td>
+<td>Workflows de IA</td>
+</tr>
+<tr>
+<td>Matemáticos vs. Memória de IA</td>
+<td>213</td>
+<td>Limitações de LLMs</td>
+</tr>
+<tr>
+<td>GPT-5.6 Sol Ultrafast</td>
+<td>229</td>
+<td>Performance de modelos</td>
+</tr>
+</tbody></table>
+<h3>Debates Polêmicos</h3>
+<p><strong>IA pode criar vírus funcionais?</strong> (57 pts, 106 comentários)
+Discussão acalorada sobre implicações de segurança de IA generativa aplicada a biologia sintética. A comunidade dividiu-se entre alarme e minimização de riscos práticos.</p>
+<p><strong>Deep think tools vazando CoT</strong> (54 pts)
+Revelação de que modelos podem vazar silenciosamente cadeias de raciocínio internas quando usuários utilizam ferramentas de pensamento profundo.</p>
+<p><strong>Regulação de IA e pausa</strong>
+Declarações políticas sobre possíveis interrupções no desenvolvimento de IA geraram debates sobre geopolítica da IA EUA-China.</p>
+<hr>
+<h2>6. Atualizações Oficiais</h2>
+<h3>Anthropic</h3>
+<p><strong>Claude Sonnet 5</strong>
+Modelo agentic mais capaz da linha Sonnet, alcançando desempenho próximo ao Opus 4.8 com custos reduzidos. Substitui versões anteriores nos planos Free e Pro.</p>
+<p><strong>Text Watermarking</strong>
+Implementação de marcas d&#39;água invisíveis em textos gerados, em conformidade com o EU AI Act. Sistema não rastreável a usuários específicos.</p>
+<p><strong>Requalificação Profissional</strong>
+Meta-análise de 56 estudos randomizados sobre programas de treinamento de trabalhadores, indicando efeitos modestos (2-3pp de aumento em emprego, ~US$ 1.000/ano em ganhos).</p>
+<p><strong>Multiagent Systems</strong>
+Research sobre desafios de interações agente-agente em larga escala, identificando vulnerabilidades e cenários de institucionalização.</p>
+<h3>OpenAI</h3>
+<p><strong>GPT-5.6 Sol (Ultrafast Mode)</strong>
+Preview de modo acelerado, confirmado pela Cerebras. A comunidade questiona trade-offs entre velocidade e factuality.</p>
+<p><strong>Novos Conteúdos (4 anúncios)</strong>
+Programa Daybreak (defesa cibernética), soluções corporativas e expansão executiva (nova CRO) — detalhes não disponíveis publicamente.</p>
+<hr>
+<h2>7. Sinais para a Próxima Semana</h2>
+<h3>Técnicos</h3>
+<ol>
+<li><strong>Hardening de segurança em agentes</strong> — Expectativa de mais correções P1 e auditorias após vulnerabilidades desta semana</li>
+<li><strong>Consolidação de watermarking</strong> — Outros provedores devem seguir a implementação da Anthropic</li>
+<li><strong>Battle de coding agents</strong> — YC e startups competindo com Claude Code e Codex</li>
+</ol>
+<h3>Mercado</h3>
+<ol>
+<li><strong>Decisões de IPO</strong> — Rumores sobre Anthropic e OpenAI podem cristalizar em anúncios formais</li>
+<li><strong>Pressão regulatória</strong> — Carta do Congresso dos EUA à OpenAI sobre transparência sinaliza escrutínio governamental crescente</li>
+<li><strong>M&amp;A</strong> — Aquisições como Decart indicam consolidação do setor</li>
+</ol>
+<h3>Pesquisa</h3>
+<ol>
+<li><strong>Computação quântica prática</strong> — Avanços em motores térmicos e entrelaçamento solar aproximam sistemas quânticos escaláveis</li>
+<li><strong>GLP-1 expandindo indicações</strong> — De obesidade para adições, com implicações para saúde mental</li>
+<li><strong>Polinizadores e agrotóxicos</strong> — Debate sobre efeitos subletais de herbicidas pode impactar regulamentação agrícola</li>
+</ol>
+<hr>
+<p><em>Relatório gerado em 2026-08-17. Dados consolidados de 7 dias de monitoramento.</em></p>
+<hr>
+<p><em>Este resumo é gerado automaticamente por <a href="https://github.com/manelsen/agents-radar">agents-radar</a>.</em></p>
+]]></content:encoded>
+    </item>
     <item>
       <title>Relatório diário do ecossistema de agentes de IA 2026-08-17</title>
       <link>https://manelsen.github.io/agents-radar/#2026-08-17/ai-agents</link>
@@ -10228,74 +10432,6 @@ Enquanto a Anthropic demonstrou atividade intensa em múltiplas frentes (regulat
 </ol>
 <hr>
 <p><em>Resumo preparado em português conciso e profissional, preservando o link original fornecido.</em></p>
-<hr>
-<p><em>Este resumo é gerado automaticamente por <a href="https://github.com/manelsen/agents-radar">agents-radar</a>.</em></p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>Bem-Estar no ScienceDaily 2026-08-15</title>
-      <link>https://manelsen.github.io/agents-radar/#2026-08-15/ai-livingwell</link>
-      <guid isPermaLink="true">https://manelsen.github.io/agents-radar/#2026-08-15/ai-livingwell</guid>
-      <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
-      <description>Resumo diário de Bem-Estar no ScienceDaily 2026-08-15 Fonte: ScienceDaily | 15 histórias | Gerado em: 2026-08-14 20:25 UTC Resumo Estruturado – ScienceDaily Bem‑Estar (até 15 ago 2026) 1. Destaques do dia A pesquisa mais recente reforça que pequenas mudanças de estilo de vida (como subir escadas) podem ter impacto enorme na saúde cardiovascular e na longevidade, com reduções de até 39 % na mortalidade por doença cardíaca. No campo da neurociência e do metabolismo, medicamentos do tipo GLP‑1 (com...</description>
-      <content:encoded><![CDATA[<h1>Resumo diário de Bem-Estar no ScienceDaily 2026-08-15</h1>
-<blockquote>
-<p>Fonte: <a href="https://www.sciencedaily.com/news/living_well/">ScienceDaily</a> | 15 histórias | Gerado em: 2026-08-14 20:25 UTC</p>
-</blockquote>
-<hr>
-<p><strong>Resumo Estruturado – ScienceDaily Bem‑Estar (até 15 ago 2026)</strong>  </p>
-<hr>
-<h3>1. Destaques do dia</h3>
-<p>A pesquisa mais recente reforça que <strong>pequenas mudanças de estilo de vida</strong> (como subir escadas) podem ter impacto enorme na saúde cardiovascular e na longevidade, com reduções de até 39 % na mortalidade por doença cardíaca. No campo da <strong>neurociência e do metabolismo</strong>, medicamentos do tipo GLP‑1 (como o novo oral <em>aleniglipron</em>) demonstram perda de peso superior a 12 % e revelam um “centro de craving” no cérebro, abrindo portas para tratamentos de adicções. Estudos com <strong>hormônios (estrogênio)</strong> e <strong>intervenções mentais (meditação intensiva)</strong> mostram efeitos rápidos e significativos sobre marcadores de Alzheimer e sobre a plasticidade cerebral, sugerindo que a fronteira entre intervenções farmacológicas e comportamentais está cada vez mais tênue.</p>
-<hr>
-<h3>2. Principais histórias</h3>
-<table>
-<thead>
-<tr>
-<th>Tema</th>
-<th>Histórias (com link)</th>
-<th>Síntese</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>Atividade física e coração</strong></td>
-<td>• <strong>Subir escadas protege o coração e prolonga a vida</strong> – <a href="https://www.sciencedaily.com/releases/2026/08/260814011029.htm">https://www.sciencedaily.com/releases/2026/08/260814011029.htm</a> <br>• <strong>Qual a quantidade de exercício necessária para proteger o coração?</strong> – <a href="https://www.sciencedaily.com/releases/2026/08/260806050724.htm">https://www.sciencedaily.com/releases/2026/08/260806050724.htm</a> <br>• <strong>Treino de força: o “ponto doce” para viver mais</strong> – <a href="https://www.sciencedaily.com/releases/2026/08/260808234959.htm">https://www.sciencedaily.com/releases/2026/08/260808234959.htm</a></td>
-<td>Evidências mostram que <strong>90‑120 min/semana de força</strong> reduzem 13 % o risco de morte, e que os benefícios cardiovasculares só se tornam expressivos a partir de <strong>≈560‑610 min/semana</strong> de atividade moderada‑vigorosa.</td>
-</tr>
-<tr>
-<td><strong>Medicamentos GLP‑1 e controle do apetite</strong></td>
-<td>• <strong>Novo comprimido GLP‑1 oferece até 12 % de perda de peso</strong> – <a href="https://www.sciencedaily.com/releases/2026/08/260810015717.htm">https://www.sciencedaily.com/releases/2026/08/260810015717.htm</a> <br>• <strong>Ozempic pode ter revelado o centro de craving do cérebro</strong> – <a href="https://www.sciencedaily.com/releases/2026/08/260811011138.htm">https://www.sciencedaily.com/releases/2026/08/260811011138.htm</a></td>
-<td>A via GLP‑1 se firma como alvo duplo: <strong>obesidade</strong> e <strong>dependências</strong>, com um centro neural (septum lateral) como possível ponto de regulação.</td>
-</tr>
-<tr>
-<td><strong>Neuroproteção e envelhecimento cerebral</strong></td>
-<td>• <strong>Exercício ajuda o cérebro a “limpar o lixo”</strong> – <a href="https://www.sciencedaily.com/releases/2026/08/260810015719.htm">https://www.sciencedaily.com/releases/2026/08/260810015719.htm</a> <br>• <strong>Mulheres que tomam estrogênio mostram menos sinais de Alzheimer</strong> – <a href="https://www.sciencedaily.com/releases/2026/08/260814011028.htm">https://www.sciencedaily.com/releases/2026/08/260814011028.htm</a> <br>• <strong>Apenas 7 dias de meditação podem reconfigurar o cérebro</strong> – <a href="https://www.sciencedaily.com/releases/2026/08/260807235243.htm">https://www.sciencedaily.com/releases/2026/08/260807235243.htm</a></td>
-<td>A combinação de <strong>atividade física regular</strong>, <strong>terapia hormonal</strong> e <strong>práticas contemplativas</strong> aparece como estratégia multimodal para preservar funções cognitivas.</td>
-</tr>
-<tr>
-<td><strong>Nutrição e metabologia</strong></td>
-<td>• <strong>Deficiência de vitamina D + gordura abdominal: risco 123 % maior de morte</strong> – <a href="https://www.sciencedaily.com/releases/2026/08/260813045554.htm">https://www.sciencedaily.com/releases/2026/08/260813045554.htm</a> <br>• <strong>Suco de laranja pode alterar milhares de genes</strong> – <a href="https://www.sciencedaily.com/releases/2026/08/260813045548.htm">https://www.sciencedaily.com/releases/2026/08/260813045548.htm</a> <br>• <strong>Laticínios integrais podem ser mais saudáveis do que se pensava</strong> – <a href="https://www.sciencedaily.com/releases/2026/08/260808234948.htm">https://www.sciencedaily.com/releases/2026/08/260808234948.htm</a> <br>• <strong>Vinho, cerveja ou destilados: estudo massivo revela divisão surpreendente</strong> – <a href="https://www.sciencedaily.com/releases/2026/08/260808235008.htm">https://www.sciencedaily.com/releases/2026/08/260808235008.htm</a></td>
-<td>A interação entre <strong>micronutrientes</strong>, <strong>composição corporal</strong> e <strong>tipo de bebida alcoólica</strong> continua a redefinir diretrizes nutricionais, com evidências de que a <strong>estrutura dos alimentos</strong> (ex.: laticínios) pode ser mais relevante que o teor de gordura saturada.</td>
-</tr>
-<tr>
-<td><strong>Saúde mental e substâncias</strong></td>
-<td>• <strong>Uso frequente de cannabis eleva cortisol ao acordar</strong> – <a href="https://www.sciencedaily.com/releases/2026/08/260808234953.htm">https://www.sciencedaily.com/releases/2026/08/260808234953.htm</a> <br>• <strong>Uso de cannabis na adolescênciaLinked to slower memory and thinking growth</strong> – <a href="https://www.sciencedaily.com/releases/2026/08/260806050726.htm">https://www.sciencedaily.com/releases/2026/08/260806050726.htm</a> <br>• <strong>Um copo diário de suco de fruta associado a menor pontuação de depressão</strong> – <a href="https://www.sciencedaily.com/releases/2026/08/260808235003.htm">https://www.sciencedaily.com/releases/2026/08/260808235003.htm</a></td>
-<td>Os dados reforçam que <strong>cannabis</strong> pode desregular o eixo HPA e prejudicar o desenvolvimento cognitivo em jovens, enquanto <strong>ingestão regular de frutas</strong> mostra potencial anti‑depressivo.</td>
-</tr>
-</tbody></table>
-<hr>
-<h3>3. Sinal de pesquisa</h3>
-<p>As descobertas desta semana revelam uma <strong>convergência crescente entre intervenções farmacológicas, comportamentais e nutricionais</strong> no campo do bem‑estar. A ascensão dos <strong>agonistas GLP‑1</strong> (agora também em forma oral) mostra que o mesmo mecanismo que controla a saciedade pode modular circuitos de recompensa e vício, apontando para uma <strong>medicina de precisão</strong> que trata tanto a obesidade quanto dependências. Simultaneamente, estudos com <strong>estrogênio</strong>, <strong>exercício</strong> e <strong>meditação</strong> demonstram que a <strong>proteção cerebral</strong> pode ser alcançada por vias não‑farmacológicas, reforçando a importância de programas integrados de estilo de vida. No campo da nutrição, a <strong>interação vitamina D‑gordura visceral</strong> e o papel dos <strong>compostos bioativos do suco de laranja</strong> evidenciam como <strong>interações gene‑dieta</strong> estão se tornando centrais para predizer riscos de mortalidade. Por fim, a <strong>divisão entre tipos de bebida alcoólica</strong> e os efeitos da <strong>cannabis</strong> sobre o cortisol e o desenvolvimento cognitivo adolescente indicam que a <strong>saúde mental e as políticas de prevenção</strong> precisam considerar profundamente o contexto biochemical e comportamental.</p>
-<hr>
-<h3>4. Vale ler</h3>
-<ol>
-<li><p><strong>Ozempic pode ter revelado o cérebro’s hidden “craving center”</strong> – <a href="https://www.sciencedaily.com/releases/2026/08/260811011138.htm">https://www.sciencedaily.com/releases/2026/08/260811011138.htm</a><br><em>Justificativa:</em> Oferece uma nova perspectiva neurocientífica sobre como os medicamentos GLP‑1 afetam não só o apetite, mas também comportamentos aditivos, com implicações diretas para o tratamento de obesidades e dependências.</p>
-</li>
-<li><p><strong>Cientistas dizem que apenas 7 dias de meditação podem reescrever seu cérebro</strong> – <a href="https://www.sciencedaily.com/releases/2026/08/260807235243.htm">https://www.sciencedaily.com/releases/2026/08/260807235243.htm</a><br><em>Justificativa:</em> Demonstra mudanças cerebrais e imunológicas rápidas e profundas após um retiro de meditação intensiva, sugerindo que intervenções de curta duração podem ter impacto duradouro na plasticidade neural.</p>
-</li>
-<li><p><strong>Novo comprimido GLP‑1 oferece até 12 % de perda de peso em 36 semanas</strong> – <a href="https://www.sciencedaily.com/releases/2026/08/260810015717.htm">https://www.sciencedaily.com/releases/2026/08/260810015717.htm</a><br><em>Justificativa:</em> Representa um avanço clínico significativo ao combinar eficácia comparável às injeções com a praticidade de uma pílula diária, potencialmente democratizando o acesso ao tratamento da obesidade.</p>
-</li>
-</ol>
 <hr>
 <p><em>Este resumo é gerado automaticamente por <a href="https://github.com/manelsen/agents-radar">agents-radar</a>.</em></p>
 ]]></content:encoded>
