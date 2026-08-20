@@ -1,0 +1,106 @@
+{
+  "ai-agents": [
+    "ZeroClaw, Hermes Agent, IronClaw investem em segurança",
+    "NanoBot: 4 issues e 29 PRs nas últimas 24h",
+    "4 de 6 projetos sem releases formais",
+    "IronClaw e CoPaw transitam para fase de estabilização",
+    "NullClaw permanece inativo desde o último relatório",
+    "Fragmentação de funcionalidades: memory, MCP, streaming"
+  ],
+  "ai-web": [
+    "Anthropic: Opus 5 analisa NMR e LC-MS em 30 min",
+    "Mythos Preview: 22-35% sucesso em design de proteínas",
+    "Claude supera benchmark de 10-15% da indústria",
+    "OpenAI sem conteúdo novo nesta atualização",
+    "436 artigos no sitemap da Anthropic",
+    "Pesquisa em ciências da vida com capacidades avançadas"
+  ],
+  "ai-hn": [
+    "AGENTS.md acumula 200+ comentários em 48h",
+    "Discussão sobre proliferation de arquivos .md",
+    "Score 343 para feature request AGENTS.md",
+    "Ferramentas de programação assistida dominam HN",
+    "Desenvolvedores questionam 'vibe-coding'",
+    "Debates sobre alinhamento e misuse de agentes"
+  ],
+  "ai-arxiv": [
+    "SPADE: auto-jogo adaptativo para agentes de linguagem",
+    "Calibração grupal para contexto longo",
+    "Ludic AI e coordenação latente em destaque",
+    "Codecs neurais melhoram qualidade de resíntese",
+    "Agentes adaptativos com memória persistente",
+    "Interpretabilidade em modelos de visão e linguagem"
+  ],
+  "ai-science": [
+    "Microrrobôs fotoativados coletam bactérias",
+    "DNA sintético com semicondutor: 100x menos energia",
+    "Crianças com mais telas: melhor processamento cognitivo",
+    "Motor térmico quântico supercondutor demonstrado",
+    "Computadores quânticos: refrigeração autônoma",
+    "Eficiência energética em IA e computação"
+  ],
+  "ai-robotics": [
+    "Microrrobôs navegam líquidos e coletam bactérias",
+    "Memória bio-híbrida DNA-semicondutor",
+    "Manipulação precisa de células e microrganismos",
+    "Escala microscópica em aplicações médicas",
+    "Consumo energético drasticamente reduzido",
+    "Convergência entre robótica e biotecnologia"
+  ],
+  "ai-hacking": [
+    "DNA sintético com semicondutor: 100x menos energia",
+    "Motor térmico quântico supercondutor demonstrado",
+    "Armazenamento simultâneo e processamento",
+    "Refrigeração interna para processadores quânticos",
+    "Dispositivos IoT e edge mais seguros",
+    "Computação quântica de alta escala viabilizada"
+  ],
+  "ai-livingwell": [
+    "Subir escadas reduz mortalidade cardiovascular 39%",
+    "Vitamina D + obesidade abdominal: 123% mais risco",
+    "Terapia reescreve memórias infantis de medo",
+    "Exercício reduz dor em osteoartrite do joelho",
+    "Café associado a menor adiposidade",
+    "Aumento de 6.500% em intoxicações por Kratom"
+  ],
+  "ai-engineering": [
+    "Diamante sob pressões de Netuno e Urano",
+    "Birrefringência do vácuo pode ser comprovada",
+    "Fibre óptica em chips de silício no Caltech",
+    "Fusão nuclear: conflito teórico de 20 anos resolvido",
+    "Laser mais potente e sensores atômicos miniaturizados",
+    "Centros de dados energeticamente eficientes"
+  ],
+  "ai-agriculture": [
+    "Abelhas regulam ingestão de pólen",
+    "Abelhas ajustam dieta para 'papa' larval balanceada",
+    "Teoria genética de 60 anos sobre formigas cuestionada",
+    "Fatores não-genéticos na evolução social",
+    "Manejo de polinizadores com novas perspectivas",
+    "Determinantes comportamentais na socialidade"
+  ],
+  "ai-environmental": [
+    "Eclipse na Espanha revelou coroa dourada",
+    "Ártico multiplica 50x partículas formadoras de nuvens",
+    "Processo ausente nos modelos climáticos atuais",
+    "Níveis de bicarbonato alterados pelo CO2",
+    "AMOC pode atingir pontos de inflexão mais cedo",
+    "Aquecimento ártico pode ser subestimado"
+  ],
+  "ai-archaeology": [
+    "Purussaurus neivensis: 7m dominava Mioceno",
+    "Necrópole de Tebas: 16 múmias e cão mumificado",
+    "Microfósseis de 1,7 bilhões de anos estudados",
+    "Nova espécie Spea labreae em La Brea",
+    "Evolução de práticas funerárias no Egito Antigo",
+    "Vida microbiana: origem de organismos complexos"
+  ],
+  "ai-offbeat": [
+    "SpaceX cria cratera lunar de 18 metros",
+    "Buraco negro destrói estrela em 'Whippet'",
+    "Ondas cerebrais: possível motor computacional",
+    "Birrefringência do vácuo observada",
+    "Micróbios intestinais comem parede do próprio intestino",
+    "Dezenas de animais degradam bioplásticos há milhões de anos"
+  ]
+}
