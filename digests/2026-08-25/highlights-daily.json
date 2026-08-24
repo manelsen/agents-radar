@@ -1,0 +1,98 @@
+{
+  "ai-agents": [
+    "NullClaw: 2 issues, 1 PR aberta",
+    "PR#956: atualização Docker alpine",
+    "7 projetos de agentes cobertos",
+    "Zero releases em 24h",
+    "Issue: endpoints Firecrawl auto-hospedado",
+    "Issue: ocultação do código pareamento"
+  ],
+  "ai-web": [
+    "Anthropic: 4 novos artigos",
+    "OpenAI: 1 novo artigo",
+    "Fable 5: menos falsos positivos",
+    "Watermarking: conformidade EU",
+    "Anthropic Economic Index 5º relatório",
+    "OpenAI: metadados de GPT-5/6"
+  ],
+  "ai-hn": [
+    "Xiaomi CPU rivaliza com Apple",
+    "Backdoor temporal em modelos open source",
+    "GPT-5.6: OpenAI reduz preço",
+    "Nvidia: reajuste acima de 15%",
+    "Paul Graham: aprenda LLMs do zero",
+    "460 pts: construir LLMs é essencial"
+  ],
+  "ai-science": [
+    "Microrrobôs luminosa coletam bactérias",
+    "Navegação por ambientes líquidos",
+    "Manipulação precisa de células",
+    "Aplicações em diagnóstico biomédico",
+    "Energia luminosa para movimento",
+    "Limpeza microscópica automatizada"
+  ],
+  "ai-robotics": [
+    "IA decodifica interruptor genético",
+    "60% dos genes analisados",
+    "Microrrobôs luminosos caçam bactérias",
+    "Precisão na manipulação celular",
+    "Convergência IA e biologia molecular",
+    "Sistemas miniaturizados autônomos"
+  ],
+  "ai-hacking": [
+    "Chip fotônico para redes 6G",
+    "Estado eletrônico em 30 femtossegundos",
+    "Arco-íris de luz para telecomunicações",
+    "Criptografia quântica avançada",
+    "Controle ultrrápido de materiais",
+    "Fotônica e segurança convergentes"
+  ],
+  "ai-livingwell": [
+    "Microbioma alterado por anos",
+    "Butirato: memória anti-inflamatória",
+    "TOFA: +18% gasto energético",
+    "Vitamina D melhora cognition",
+    "Cérebro 13 anos mais jovem",
+    "Teste caseiro reduz morte por câncer"
+  ],
+  "ai-engineering": [
+    "CERN recria Big Bang microscópico",
+    "Diamante comprimido além de Netunos",
+    "Birrefringência do vácuo comprovada",
+    "Plasma quarks-gluons gerado",
+    "Mistério de 20 anos resolvido",
+    "Física do vácuo quântico confirmada"
+  ],
+  "ai-agriculture": [
+    "H5N1 se espalha na Austrália",
+    "Comedouros de quintal: risco",
+    "Orelhas: 10.000 orquídeas surgiram",
+    "Rainhas transferem pesticidas",
+    "Abelhas fazem baby-food de pólen",
+    "Estratégia nutricional sofisticada"
+  ],
+  "ai-environmental": [
+    "Eclipse revela coroa dourada",
+    "Fumaça intensifica tom dourado",
+    "Ártico: produção de nuvens 50x",
+    "Nucleação no gelo marinho",
+    "Modelo climático impreciso",
+    "Aquecimento polar subestimado"
+  ],
+  "ai-archaeology": [
+    "Naufrágio romano de 2.200 anos",
+    "Alcatrão e cera impermeabilizante",
+    "Crinoide preserva tecido mole",
+    "Purussaurus: predador do Mioceno",
+    "Tumba egípcia com 16 múmias",
+    "Pote indígena de 400 anos"
+  ],
+  "ai-offbeat": [
+    "Medicamentos mudam intestino por anos",
+    "Novo dragão Acanthosaura syrax",
+    "CERN: Big Bang microscópico",
+    "Estrelas sobrevivem a buracos negros",
+    "Birrefringência do vácuo provada",
+    "Dentes preveem sobrevida no câncer"
+  ]
+}
