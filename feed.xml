@@ -6,7 +6,284 @@
     <description>Resumo diário do ecossistema open source de IA · Daily AI ecosystem digest</description>
     <language>pt-BR</language>
     <atom:link href="https://manelsen.github.io/agents-radar/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Sun, 23 Aug 2026 20:19:58 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 24 Aug 2026 20:23:01 +0000</lastBuildDate>
+    <item>
+      <title>Relatório semanal de ferramentas de IA 2026-08-25</title>
+      <link>https://manelsen.github.io/agents-radar/#2026-08-25/ai-weekly</link>
+      <guid isPermaLink="true">https://manelsen.github.io/agents-radar/#2026-08-25/ai-weekly</guid>
+      <pubDate>Tue, 25 Aug 2026 00:00:00 +0000</pubDate>
+      <description>Relatório semanal do ecossistema de ferramentas de IA 2026-W35 Cobertura: 2026-08-18 ~ 2026-08-24 | Gerado em: 2026-08-24 20:22 UTC Relatório Semanal — Ecossistema de Ferramentas de IA Semana 2026-W35 (18–24 de agosto de 2026) 1. Principais Histórias da Semana 🧬 Hardware de IA: Memória DNA-Semicondutor A história tecnológica mais impactante da semana foi o dispositivo de memória bio-híbrido que combina DNA sintético com semicondutores, consumindo 100x menos energia que tecnologias convencionais...</description>
+      <content:encoded><![CDATA[<h1>Relatório semanal do ecossistema de ferramentas de IA 2026-W35</h1>
+<blockquote>
+<p>Cobertura: 2026-08-18 ~ 2026-08-24 | Gerado em: 2026-08-24 20:22 UTC</p>
+</blockquote>
+<hr>
+<h1>Relatório Semanal — Ecossistema de Ferramentas de IA</h1>
+<h2>Semana 2026-W35 (18–24 de agosto de 2026)</h2>
+<hr>
+<h2>1. Principais Histórias da Semana</h2>
+<h3>🧬 Hardware de IA: Memória DNA-Semicondutor</h3>
+<p>A história tecnológica mais impactante da semana foi o dispositivo de memória <strong>bio-híbrido</strong> que combina DNA sintético com semicondutores, consumindo <strong>100x menos energia</strong> que tecnologias convencionais. A capacidade de armazenar e processar informação no mesmo substrato representa um avanço direto para eficiência de sistemas de IA e computação de próxima geração. Pesquisadores demonstraram que esta abordagem pode viabilizar arquiteturas <em>in-memory computing</em> essenciais para robôs autônomos e dispositivos edge.</p>
+<h3>🔬 Claude no Design de Proteínas</h3>
+<p>A Anthropic publicou resultados mostrando que Claude (modelos Mythos Preview e Opus 4.8) alcança <strong>22-35% de sucesso</strong> em design de proteína binders contra 10-15% da indústria. Em análise química, Opus 5 demonstrou 96.4% de precisão em dados NMR/LC-MS, completando tarefas laboratoriais em ~20 minutos. Esta é a evidência mais concreta de LLMs superando benchmarks em ciências da vida.</p>
+<h3>⚡ Birrefringência do Vácuo Confirmada</h3>
+<p>Observações do campo magnético de uma <strong>magnetar</strong> forneceram a primeira evidência direta de que o espaço &quot;vazio&quot; possui estrutura quântica mensurável — efeito previsto por Heisenberg há 90 anos. Implicações incluem novas fronteiras para criptografia e sensoriamento quântico.</p>
+<hr>
+<h2>2. Progresso das Ferramentas CLI</h2>
+<h3>Tendências Observadas</h3>
+<table>
+<thead>
+<tr>
+<th>Categoria</th>
+<th>Destaques</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Codex alternativos</strong></td>
+<td>Proliferate (open-source, self-hostable) ganhou tração como alternativa ao Codex da AWS</td>
+</tr>
+<tr>
+<td><strong>Otimização de outputs</strong></td>
+<td>Claudette acumulou 117 pts no HN — ferramenta para &quot;limpar&quot; token vomit de LLMs</td>
+</tr>
+<tr>
+<td><strong>Debugging assistido</strong></td>
+<td>Relato documentado de Linus Torvalds usando Claude para debugging de driver Intel</td>
+</tr>
+<tr>
+<td><strong>Infraestrutura</strong></td>
+<td>machine0 (Y Combinator S26) oferece VMs persistentes via CLI</td>
+</tr>
+</tbody></table>
+<h3>Sinais de Mercado</h3>
+<ul>
+<li>Demanda crescente por <strong>soluções self-hosted</strong> para coding agents</li>
+<li>Crescimento de ferramentas para <strong>otimização de custos</strong> (redução de 20%+ no GPT-5.6 Sol via OpenRouter)</li>
+<li>Preocupação com <strong>instabilidade de APIs</strong> — relatos de degradação do Claude geraram múltiplos posts correlatos</li>
+</ul>
+<hr>
+<h2>3. Ecossistema de Agentes de IA</h2>
+<h3>Comparativo de Saúde (semana)</h3>
+<table>
+<thead>
+<tr>
+<th>Projeto</th>
+<th align="center">Atividade</th>
+<th align="center">Releases</th>
+<th align="center">Bugs Críticos</th>
+<th align="center">Tendência</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>NullClaw</strong></td>
+<td align="center">🔴 Inativo</td>
+<td align="center">0</td>
+<td align="center">—</td>
+<td align="center">Estagnado</td>
+</tr>
+<tr>
+<td><strong>NanoBot</strong></td>
+<td align="center">🟢 Alta (17-29 PRs/dia)</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">Crescendo</td>
+</tr>
+<tr>
+<td><strong>Hermes Agent</strong></td>
+<td align="center">🟡 Muito alta (50/50)</td>
+<td align="center">1 (v0.20.4)</td>
+<td align="center">2 P1</td>
+<td align="center">Estável</td>
+</tr>
+<tr>
+<td><strong>IronClaw</strong></td>
+<td align="center">🟢 Saudável</td>
+<td align="center">1 (v1.3.0) + 2 RCs</td>
+<td align="center">1</td>
+<td align="center">Consolidando</td>
+</tr>
+<tr>
+<td><strong>CoPaw</strong></td>
+<td align="center">🔴 Volume alto + críticos</td>
+<td align="center">0</td>
+<td align="center">5 (19/ago)</td>
+<td align="center">Crítico</td>
+</tr>
+<tr>
+<td><strong>ZeroClaw</strong></td>
+<td align="center">🟡 Muito alta (50/50)</td>
+<td align="center">0</td>
+<td align="center">6 P1</td>
+<td align="center">Sob pressão</td>
+</tr>
+</tbody></table>
+<h3>Issues Relevantes</h3>
+<ul>
+<li><strong>NullClaw #991</strong>: Deadlock em chamadas MCP stdio atrás do Proxmox launcher — problema de produção</li>
+<li><strong>NullClaw #990</strong>: Suporte a Eden AI como gateway OpenAI-compatible (conformidade EU)</li>
+<li><strong>ZeroClaw</strong>: 6 P1s simultâneos indicam transição arquitetural intensa</li>
+</ul>
+<h3>Convergências Técnicas</h3>
+<p>A semana revelou três temas transversais:</p>
+<ol>
+<li><strong>Segurança de subprocessos/shell</strong> — investimento em sandboxing (ZeroClaw, Hermes Agent)</li>
+<li><strong>Suporte Windows</strong> — pain point universal identificado</li>
+<li><strong>Observabilidade</strong> — necessidade de recoverability em produção</li>
+</ol>
+<hr>
+<h2>4. Tendências Open Source</h2>
+<h3>Arquiteturais</h3>
+<ul>
+<li><strong>AGENTS.md</strong> como proposta de padronização para configurações de agentes em repositórios (213 comentários no HN)</li>
+<li>Fragmentação de funcionalidades (memory, MCP, streaming) indica que o mercado <strong>não convergiu para padrões consolidados</strong></li>
+<li>Ausência de releases formais em 4/6 projetos ativos — fase pré-release predominante</li>
+</ul>
+<h3>Tecnológica</h3>
+<ul>
+<li>Llama.cpp v0.1.0 lançado — referência para inferência eficiente em GGUF</li>
+<li><strong>Eficiência energética</strong> como vetor primário de inovação (memória DNA, motores quânticos)</li>
+<li>Microrrobôs fotoguiados demonstram convergência IA-robotérica-biologia</li>
+</ul>
+<h3>Comercial</h3>
+<ul>
+<li>Anthropic com revenue annualized &gt;$65B antes de IPO</li>
+<li>Nvidia reduzindo garantias de financiamento para OpenAI</li>
+<li>&quot;Ports Pike Project&quot; — nova initiative da OpenAI (detalhes não disponíveis)</li>
+</ul>
+<hr>
+<h2>5. Debates da Comunidade HN</h2>
+<h3>🔥 Mais Engajados (semana)</h3>
+<table>
+<thead>
+<tr>
+<th>Discussão</th>
+<th align="center">Pontos</th>
+<th align="center">Comentários</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Watermarking de texto da Anthropic (crítica de Gruber)</td>
+<td align="center">737</td>
+<td align="center">641</td>
+</tr>
+<tr>
+<td>GPT-5.6 Sol price drop (OpenRouter)</td>
+<td align="center">609</td>
+<td align="center">430</td>
+</tr>
+<tr>
+<td>AGENTS.md proposal</td>
+<td align="center">343</td>
+<td align="center">213</td>
+</tr>
+<tr>
+<td>Claude Code &quot;reduced effort levels&quot;</td>
+<td align="center">89</td>
+<td align="center">90</td>
+</tr>
+<tr>
+<td>Codex bug causing 10x billing</td>
+<td align="center">—</td>
+<td align="center">—</td>
+</tr>
+</tbody></table>
+<h3>Temas Centrais</h3>
+<ol>
+<li><strong>Sustentabilidade das big techs de IA</strong> — preocupações sobre解散 de equipes de segurança durante preparação para IPO</li>
+<li><strong>Qualidade de outputs</strong> — fadiga com textos &quot;estilo BuzzFeed&quot;, proliferam ferramentas de &quot;limpeza&quot;</li>
+<li><strong>Dependência de APIs externas</strong> — instabilidade do Claude gera ondas de posts</li>
+<li><strong>Preços e acessibilidade</strong> — guerra de preços em modelos frontier (GPT-5.6 Sol -20%)</li>
+<li><strong>Self-hosting</strong> — interesse crescente por alternativas open-source e self-hosted</li>
+</ol>
+<h3>Sentimento Geral</h3>
+<p>Ceticismo crescente em relação a grandes laboratórios, combinado com pragmatismo sobre ganhos de produtividade. A comunidade reconhece valor prático (caso Asana/Codex) mas questiona práticas de produto e sustentabilidade.</p>
+<hr>
+<h2>6. Atualizações Oficiais</h2>
+<h3>Anthropic</h3>
+<ul>
+<li><strong>Research paper</strong>: &quot;How Claude is accelerating protein design and analytical chemistry&quot; (18/ago)</li>
+<li>Publicação demonstrando capacidades científicas do Claude em design de proteínas e análise NMR/LC-MS</li>
+<li>Sem conteúdo novo entre 19-24/ago — possível janela de preparação para anúncios</li>
+</ul>
+<h3>OpenAI</h3>
+<ul>
+<li><strong>ChatGPT para adolescentes</strong> — lançamento de seção dedicada (18/ago)</li>
+<li><strong>&quot;Pacing model development in an era of cyber-critical capabilities&quot;</strong> — artigo sobre ritmo de desenvolvimento de capacidades cibernéticas</li>
+<li>Descontinuação do team de riscos catastróficos reportada por fontes externas</li>
+<li><strong>Ports Pike Project</strong> — participação confirmada, detalhes não disponíveis</li>
+</ul>
+<h3>Observação</h3>
+<p>Volume comunicacional reduzido em ambas as empresas. Silêncio da Anthropic (19-24/ago) pode indicar preparação para anúncio significativo.</p>
+<hr>
+<h2>7. Sinais para a Próxima Semana</h2>
+<h3>🔮 Alta Probabilidade</h3>
+<table>
+<thead>
+<tr>
+<th>Sinal</th>
+<th>Fonte</th>
+<th>Implicação</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Announcement da Anthropic</strong></td>
+<td>Período de silêncio prolongado</td>
+<td>Possível lançamento de produto ou atualização de modelo</td>
+</tr>
+<tr>
+<td><strong>Consolidação do CoPaw</strong></td>
+<td>5 bugs críticos na semana anterior</td>
+<td>Decisão de freeze ou release de emergência</td>
+</tr>
+<tr>
+<td><strong>Expansão do AGENTS.md</strong></td>
+<td>Engajamento de 213+ comentários</td>
+<td>Padronização iminente pode afetar workflows de agentes</td>
+</tr>
+<tr>
+<td><strong>Guerra de preços contínua</strong></td>
+<td>GPT-5.6 Sol -20% seguido de movimentos anteriores</td>
+<td>Pressão competitiva intensificando</td>
+</tr>
+</tbody></table>
+<h3>🔄 Monitorar</h3>
+<table>
+<thead>
+<tr>
+<th>Sinal</th>
+<th>Detalhamento</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Estabilidade do Claude</strong></td>
+<td>Múltiplos relatos de degradação — verificar se issue é sistêmica</td>
+</tr>
+<tr>
+<td><strong>IronClaw v1.3.0</strong></td>
+<td>RC em estabilização — release final esperado</td>
+</tr>
+<tr>
+<td><strong>ZeroClaw P1s</strong></td>
+<td>6 bugs prioritários simultâneos — pode indicar release emergency</td>
+</tr>
+<tr>
+<td><strong>OpenAI &quot;Ports Pike Project&quot;</strong></td>
+<td>Natureza indefinida — acessar conteúdo completo</td>
+</tr>
+</tbody></table>
+<h3>⚠️ Atenção</h3>
+<ul>
+<li><strong>NullClaw em modo manutenção reativa</strong> — sem roadmap visível, risco de atrito comunitário</li>
+<li><strong>Dependência de APIs externas</strong> — instabilidades recorrentes do Claude afetam ecossistema de ferramentas</li>
+<li><strong>IPO Anthropic</strong> — proximidade pode afetar práticas de produto (cf. debate &quot;reduced effort levels&quot;)</li>
+</ul>
+<hr>
+<h2>Síntese Executiva</h2>
+<p>A semana W35 de 2026 revelou um ecossistema de ferramentas de IA em <strong>fase de maturação heterogênea</strong>. Enquanto projetos como NanoBot e IronClaw demonstram saúde técnica, outros (NullClaw, CoPaw) enfrentam desafios de estabilidade. No front científico, avanços em hardware bio-híbrido e demonstrações de capacidades científicas de LLMs (Claude em proteínas) expandem o horizonte de aplicações. A comunidade HN permanece crítica mas pragmática, com crescente interesse em alternativas self-hosted. O silêncio comunicacional das big techs na segunda metade da semana sugere anúncios iminentes.</p>
+<hr>
+<p><em>Este resumo é gerado automaticamente por <a href="https://github.com/manelsen/agents-radar">agents-radar</a>.</em></p>
+]]></content:encoded>
+    </item>
     <item>
       <title>Relatório diário do ecossistema de agentes de IA 2026-08-24</title>
       <link>https://manelsen.github.io/agents-radar/#2026-08-24/ai-agents</link>
@@ -10093,46 +10370,6 @@ O estudo finlandês sobre telas, embora não seja diretamente sobre IA, oferece 
 <li><p><strong><a href="https://www.sciencedaily.com/releases/2026/08/260820002439.htm">Scientists discover how gut bacteria &quot;train&quot; the intestine to fight inflammation</a></strong> — A descoberta de que o butirato deixa uma &quot;memória&quot; protetora duradoura no intestino representa um avanço conceitual importante para o tratamento de doenças inflamatórias crônicas.</p>
 </li>
 </ol>
-<hr>
-<p><em>Este resumo é gerado automaticamente por <a href="https://github.com/manelsen/agents-radar">agents-radar</a>.</em></p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>Engenharia no ScienceDaily 2026-08-22</title>
-      <link>https://manelsen.github.io/agents-radar/#2026-08-22/ai-engineering</link>
-      <guid isPermaLink="true">https://manelsen.github.io/agents-radar/#2026-08-22/ai-engineering</guid>
-      <pubDate>Sat, 22 Aug 2026 00:00:00 +0000</pubDate>
-      <description>Resumo diário de Engenharia no ScienceDaily 2026-08-22 Fonte: ScienceDaily | 3 histórias | Gerado em: 2026-08-21 20:19 UTC Resumo ScienceDaily — Engenharia 1. Destaques do Dia Três avanços notáveis emergem da semana: pesquisadores conseguiu comprimir diamante além das pressões internas de Netuno e Urano, resolvendo um conflito teórico de décadas e abrindo caminhos para aprimorar a fusão nuclear; evidências de um magnetar apontam para o efeito de birrefringência do vácuo, sugerindo que o espaço &amp;...</description>
-      <content:encoded><![CDATA[<h1>Resumo diário de Engenharia no ScienceDaily 2026-08-22</h1>
-<blockquote>
-<p>Fonte: <a href="https://www.sciencedaily.com/news/matter_energy/engineering/">ScienceDaily</a> | 3 histórias | Gerado em: 2026-08-21 20:19 UTC</p>
-</blockquote>
-<hr>
-<h1>Resumo ScienceDaily — Engenharia</h1>
-<hr>
-<h2>1. Destaques do Dia</h2>
-<p>Três avanços notáveis emergem da semana: pesquisadores conseguiu comprimir diamante além das pressões internas de Netuno e Urano, resolvendo um conflito teórico de décadas e abrindo caminhos para aprimorar a fusão nuclear; evidências de um magnetar apontam para o efeito de birrefringência do vácuo, sugerindo que o espaço &quot;vazio&quot; possui estrutura mensurável; e engenheiros do Caltech desenvolveram guias ópticos em chips de silício com eficiência próxima à fibra óptica convencional, transformando a photonics integrada.</p>
-<hr>
-<h2>2. Principais Histórias</h2>
-<h3>Materiais Extremos e Física Fundamental</h3>
-<p>A pesquisa com diamante comprimido demonstra como materiais se comportam sob condições que simulam interiores de planetas gelados. Esta investigação conecta astrofísica, ciência de materiais e energia de fusão, evidenciando interdisciplinaridade crescente na engenharia.</p>
-<h3>Tecnologias Fotônicas Integradas</h3>
-<p>O avanço do Caltech em guias ópticos de ultra-baixa perda representa um salto para sistemas quânticos, sensores atômicos e centros de dados mais eficientes. A convergência entre fotônica e eletrônica em silício acelera a miniaturização de tecnologias de alta precisão.</p>
-<h3>Estrutura Quântica do Vácuo</h3>
-<p>A detecção potencial de birrefringência do vácuo via magnetar abre precedentes para engenharia de sensores que exploram propriedades fundamentais do espaço-tempo, com implicações para metrologia e comunicações quânticas.</p>
-<hr>
-<h2>3. Sinal de Pesquisa</h2>
-<p>As três publicações sinalizam uma convergência entre extremos — seja de pressão, campo magnético ou escala miniaturizada — como novos territórios para engenharia. A busca por compreender comportamento de materiais em condições planetárias sugere aplicação direta em fusão por confinamento inercial, onde a compressão extrema é central. Simultaneamente, a photonics em silício avança para preencher a lacuna entre fibra óptica e circuitos integrados, respondendo à demanda por menor consumo energético em processamento de dados. A possível confirmação da birrefringência do vácuo representa uma fronteira menos explorada, onde instrumentação de alta sensibilidade poderia ser desenvolvida para explorar efeitos quânticos do espaço vazio. Juntas, estas pesquisas indicam que a engenharia contemporânea avança tanto pela manipulação de condições extremas quanto pela integração de múltiplas físicas — da astrofísica à informação quântica.</p>
-<hr>
-<h2>4. Vale Ler</h2>
-<ul>
-<li><p><strong>&quot;Scientists crushed diamond beyond Neptune-like pressures—and solved a 20-year mystery&quot;</strong> — Requer leitura pela conexão entre astrofísica e aplicações práticas em energia de fusão. Link: <a href="https://www.sciencedaily.com/releases/2026/08/260820002424.htm">https://www.sciencedaily.com/releases/2026/08/260820002424.htm</a></p>
-</li>
-<li><p><strong>&quot;Caltech breakthrough brings fiber-optic performance to silicon chips&quot;</strong> — Essencial para profissionais de photonics integrada e quienes trabalham com eficiência energética em sistemas de comunicação óptica. Link: <a href="https://www.sciencedaily.com/releases/2026/08/260814235905.htm">https://www.sciencedaily.com/releases/2026/08/260814235905.htm</a></p>
-</li>
-<li><p><strong>&quot;Scientists may have finally proved that &#39;empty&#39; space isn&#39;t really empty&quot;</strong> — Recomenda-se pela importância fundamental: verificar se o vácuo quântico possui estrutura mensurável transforma nossa compreensão básica e abre caminhos para nova instrumentação. Link: <a href="https://www.sciencedaily.com/releases/2026/08/260815065007.htm">https://www.sciencedaily.com/releases/2026/08/260815065007.htm</a></p>
-</li>
-</ul>
 <hr>
 <p><em>Este resumo é gerado automaticamente por <a href="https://github.com/manelsen/agents-radar">agents-radar</a>.</em></p>
 ]]></content:encoded>
