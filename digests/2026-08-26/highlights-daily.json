@@ -1,0 +1,106 @@
+{
+  "ai-agents": [
+    "NullClaw #994: household edge mesh",
+    "Hermes Agent: nousresearch tool",
+    "NanoBot: HKUDS multi-agent",
+    "CoPaw: agentscope-ai platform",
+    "IronClaw: nearai framework",
+    "PicoClaw: sipeed embedded"
+  ],
+  "ai-web": [
+    "Anthropic: 23 novos artigos",
+    "OpenAI: 3 publicações indexadas",
+    "$5M em Wellbeing Research Grants",
+    "Economic Index: novos dados",
+    "Anthropic: 436 artigos total",
+    "OpenAI: 922 artigos total"
+  ],
+  "ai-hn": [
+    "OpenAI Jalapeño supera Blackwell",
+    "Discussão: 155 pontos no HN",
+    "Anthropic: paralisação suposta",
+    "Projeções bilionárias receita",
+    "Headlong: agentes persistentes",
+    "LLMs impactam mantenedores"
+  ],
+  "ai-arxiv": [
+    "Como treinar críticos estáveis",
+    "ConvergeFlow: difusão para LLM",
+    "World models interativos",
+    "Memória persistente em agentes",
+    "Ataques injeção em memória",
+    "Segurança em sistemas agents"
+  ],
+  "ai-robotics": [
+    "Microrrobôs movidos por luz",
+    "Coletam bactérias em líquidos",
+    "IA decodifica interruptor genético",
+    "Precisão micrométrica",
+    "Navegação adaptativa líquida",
+    "Implantes médicos autônomos"
+  ],
+  "ai-hacking": [
+    "Chip fotônico para 6G",
+    "\"Arco-íris\" miniatura no chip",
+    "Estado eletrônico 30 femtossegundos",
+    "Criptografia quântica",
+    "Redes 6G: novos paradigmas",
+    "Segurança fotônica"
+  ],
+  "ai-memory": [
+    "Depressão bloqueia neurogênese",
+    "Hipocampo: novos neurônios",
+    "Memórias dolorosas e novas",
+    "Alterações moleculares",
+    "Tratamentos personalizados",
+    "Plasticidade cerebral"
+  ],
+  "ai-livingwell": [
+    "Shingrix: -24% risco demência",
+    "Cannabis: +37% risco AVC",
+    "TOFA: queima gordura muscular",
+    "Triagem reduz mortalidade 43%",
+    "Gut bacteria força muscular",
+    "Gut treina intestino anti-inflamação"
+  ],
+  "ai-engineering": [
+    "CERN: mini-Big Bang",
+    "Plasma quarks-glúons",
+    "Compressão diamante extrema",
+    "\"Chuva de diamante\" Netuno",
+    "Fusão nuclear: saída energia",
+    "20 anos mistério resolvido"
+  ],
+  "ai-agriculture": [
+    "H5N1 na Austrália",
+    "Comedouros: risco transmissão",
+    "Campos abandonados viram prados",
+    "Abelhas: pesticidas nos ovos",
+    "Operárias ajustam nutrição",
+    "Biodiversidade sem intervenção"
+  ],
+  "ai-environmental": [
+    "Catalisador atômico lignina",
+    "Resíduos vegetais em produtos",
+    "Eclipse dourado na Espanha",
+    "Fumaça filtra luz azul",
+    "Economia circular",
+    "Incêndios alteram atmosfera"
+  ],
+  "ai-archaeology": [
+    "Pote indígena 400 anos Flórida",
+    "Naufrágio romano 2.200 anos",
+    "Crinóide 450 milhões anos",
+    "Tecido mole preservado",
+    "Purussaurus Mioceno",
+    "16 múmias Tebas"
+  ],
+  "ai-offbeat": [
+    "CERN recria Big Bang",
+    "Dentes preveem sobrevida",
+    "Depressão bloqueia neurogênese",
+    "Microrrobôs caçam bactérias",
+    "Evolução cromossômica 600M anos",
+    "Microbioma alterado por anos"
+  ]
+}
