@@ -1,0 +1,106 @@
+{
+  "ai-cli": [
+    "GLM-5.3-Flash domina com 930 pts",
+    "Hugging Face: protocolos de segurança",
+    "Anthropic: 31 novos artigos",
+    "OpenAI adiciona apenas 5 conteúdos",
+    "Constitutional Classifiers: defesa jailbreak",
+    "Persona vectors: controle comportamental"
+  ],
+  "ai-agents": [
+    "NullClaw: issue symlinks #995",
+    "ZeroClaw, IronClaw, NanoBot novos",
+    "7 projetos de agentes cobertos",
+    "NullClaw em baixa atividade",
+    "Sem PRs ou releases em 24h",
+    "CoPaw e Hermes Agent no radar"
+  ],
+  "ai-hn": [
+    "GLM-5.3-Flash: 795 pts, 391 comments",
+    "GLM-5.3-Flash análise: 130 pts",
+    "Hugging Face: 114 pts, 106 comments",
+    "Zhipu AI: modelo open-source",
+    "Debate sobre AGI no TIME",
+    "Comunidade cética sobre hype"
+  ],
+  "ai-arxiv": [
+    "FID esconde desvios distributivos",
+    "RAG com modelos Bayesianos",
+    "Finetuning EEG sob restrições",
+    "Agentes de longa janela temporal",
+    "Interpretabilidade via neurônios",
+    "Arquiteturas de memória recursiva"
+  ],
+  "ai-robotics": [
+    "IA decodifica 'on switch' genético",
+    "60% dos genes humanos mapeados",
+    "500 mil sequências de DNA",
+    "Padrões em grandes volumes",
+    "Bio-inspiração para robôs",
+    "Previsão de mutações nocivas"
+  ],
+  "ai-hacking": [
+    "Chip 'arco-íris' para 6G",
+    "Sinais THz múltiplos estáveis",
+    "Estado eletrônico em 30 fs",
+    "Manipulação ultra-rápida da matéria",
+    "Cronometragem quântica",
+    "Aplicações em radar e segurança"
+  ],
+  "ai-memory": [
+    "Depressão bloqueia neurogênese",
+    "Hipocampo: novos neurônios afetados",
+    "Plasticidade cerebral reduzida",
+    "Separação de memórias impactada",
+    "Alvos terapêuticos identificados",
+    "Perfis biológicos da depressão"
+  ],
+  "ai-livingwell": [
+    "Restrição calórica reduz C3",
+    "Shingrix: 24% menos demência",
+    "TOFA queima gordura sem perda",
+    "3 min de sprint > 90 min moderado",
+    "APOE4 afeta cérebro antes dos sintomas",
+    "Probiótico: 29% mais força muscular"
+  ],
+  "ai-engineering": [
+    "CERN recria universo primordial",
+    "Plasma quark-gluon em colisões",
+    "Diamante sob pressões de Netuno",
+    "'Chuva de diamante' explicada",
+    "Fusão nuclear beneficiada",
+    "Geometria nuclear mapeada"
+  ],
+  "ai-agriculture": [
+    "H5N1 na Austrália em alerta",
+    "Comedouros: risco de transmissão",
+    "Campos abandonados viram prados",
+    "2.000 orquídeas ressurgem",
+    "Abelhas transferem pesticidas",
+    "Polinizadores em risco"
+  ],
+  "ai-environmental": [
+    "Antártida erguida por forças geológicas",
+    "Catalisador atômico para lignina",
+    "Eclipse dourado na Espanha",
+    "Resíduos vegetais em blocos renováveis",
+    "Glaciação pré-Ártico",
+    "Fumaça e atmosfera no eclipse"
+  ],
+  "ai-archaeology": [
+    "Vaso indígena de 400 anos na Flórida",
+    "Navio romano: alcatrão e cera",
+    "Crinoide de 450 milhões de anos",
+    "Tecidos moles conservados",
+    "Naufrágio de 2.200 anos",
+    "Padrões de abandono revelados"
+  ],
+  "ai-offbeat": [
+    "Ação nos mil primeiros dias",
+    "Cérebro decide ou percebe?",
+    "Estrelas sobrevivem buracos negros",
+    "Cratera SpaceX na Lua confirmada",
+    "Rodovias evolutivas de 600 mi anos",
+    "Pequeno dragão amarelo na Tailândia"
+  ]
+}
