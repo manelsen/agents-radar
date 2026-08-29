@@ -1,0 +1,122 @@
+{
+  "ai-agents": [
+    "ZeroClaw lidera com ~50 atualizações em 24h",
+    "Hermes Agent com backlog elevado de 47 issues",
+    "NanoBot e IronClaw em trajetória saudável",
+    "PicoClaw se destaca em bug fixes críticos",
+    "NullClaw silêncio sugere projeto dormente",
+    "Convergência multi-provider no ecossistema"
+  ],
+  "ai-web": [
+    "Anthropic lança Model Hardware Standard (MHS)",
+    "Preview com HHMI Janelia Research Campus",
+    "MHS: IA operando instrumentos de laboratório",
+    "Expansão da Anthropic para automação física",
+    "OpenAI sem novos artigos nesta atualização",
+    "Colaboração acadêmica para validação inicial"
+  ],
+  "ai-hn": [
+    "vLLM v0.28.0: nova versão do framework",
+    "Cursor adquirida pela SpaceX: controvérsia",
+    "OpenAI encerra parceria com Cursor",
+    "80% de sucesso em prompt injection no Claude",
+    "Warp constrói agentes auto-melhorativos",
+    "Pesquisador driblou IA para executar malware"
+  ],
+  "ai-science": [
+    "NASA testa FALCON: navegação sem GPS",
+    "Detritos espaciais como referências visuais",
+    "200+ objetos orbitais corrigidos em 3 dias",
+    "Navegação orbital totalmente autônoma",
+    "Sistema dispensa infraestrutura terrestre",
+    "Marco em navegação espacial"
+  ],
+  "ai-robotics": [
+    "IA otimiza impressão 3D da liga GRCop-42",
+    "100 milhões de configurações analisadas",
+    "6 configurações viáveis encontradas",
+    "500W: recorde de baixa potência",
+    "Democratização da manufatura aeroespacial",
+    "IA decodifica 'interruptor' no DNA humano"
+  ],
+  "ai-hacking": [
+    "Altermagnetismo em RuO₂ para segurança",
+    "Estados magnéticos difíceis de clonar",
+    "Chip 'arco-íris' para redes 6G",
+    "Frequências de terahertz em comunicação",
+    "Potencial para criptografia à prova de adulteração",
+    "QKD e autenticação de canal físico"
+  ],
+  "ai-memory": [
+    "Depressão interrompe neurogênese hipocampal",
+    "Adultos com depressão: neurônios afetados",
+    "Memórias dolorosas não distinguidas de novas",
+    "Alterações moleculares amplas identificadas",
+    "Tratamentos personalizados conforme tipo",
+    "Neurogênese e processamento emocional"
+  ],
+  "ai-3dprinting": [
+    "100 milhões de configurações testadas",
+    "40 experimentos para solução viável",
+    "500W: recorde para liga GRCop-42",
+    "Democratização da manufatura aditiva",
+    "Aeroespacial acessível com IA",
+    "Custos drasticamente reduzidos"
+  ],
+  "ai-livingwell": [
+    "Dieta cetogênica: 67% menos gordura hepática",
+    "Melatonina: 90% mais risco de insuficiência cardíaca",
+    "Fragmentação do sono: alerta precoce de Alzheimer",
+    "Shingrix reduz demência em 24%",
+    "Sono curto ou longo acelera envelhecimento",
+    "Dog Aging Project revela biomarcadores"
+  ],
+  "ai-education": [
+    "20 anos: 400 mil crianças acompanhadas",
+    "Pré-escola pública: melhor desempenho a longo prazo",
+    "Formação de professores é fator-chave",
+    "Exposição precoce a ambientes estruturados",
+    "Vantagem acadêmica persiste no ensino médio",
+    "Investimento em educação infantil"
+  ],
+  "ai-engineering": [
+    "Altermagnetismo induzido em filme ultrafino",
+    "Magnetar: sinais de birrefringência do vácuo",
+    "Estrelas escuras: origem de buracos negros",
+    "CERN: plasma de quarks em núcleos迷你",
+    "Conversão de PVC em lubrificantes",
+    "Catalisador transforma lignina em químicos"
+  ],
+  "ai-agriculture": [
+    "Relutância humana em insetos: 9 mil anos",
+    "Fóssil de 324M anos revela transição aquática",
+    "H5N1 se espalha via comedouros na Austrália",
+    "Campo abandonado dobra biodiversidade em 10 anos",
+    "Regeneração natural demonstrada",
+    "Adaptações genéticas para digestão"
+  ],
+  "ai-environmental": [
+    "PVC transformado em lubrificante de alto desempenho",
+    "1.000 voluntários enterram cuecas na Suíça",
+    "Antártida congelou antes do Ártico por forças geológicas",
+    "Catalisador transforma lignina em produtos químicos",
+    "Economia circular: resíduos em materiais de valor",
+    "Ciência cidadã revela atividade do solo"
+  ],
+  "ai-archaeology": [
+    "Fóssil de 324M anos: transição aquática",
+    "Insetos conquistaram terra por fase aquática",
+    "Membros abdominais em forma de remo",
+    "Evolução gradual vs. transição abrupta",
+    "Preservação excepcional de tecidos moles",
+    "Artrópodes modernos têm ancestral aquático"
+  ],
+  "ai-offbeat": [
+    "Chimpanzés atiram pedras há 10+ anos",
+    "Tubarão-da-Groenlândia: olhos por 400 anos",
+    "Açúcar nos primeiros 1.000 dias: menos câncer",
+    "Medicamentos remodelam microbioma por anos",
+    "Estrelas sobrevivem a encontros com buracos negros",
+    "Nova espécie de dragão descoberta na Tailândia"
+  ]
+}
