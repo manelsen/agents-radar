@@ -1,0 +1,122 @@
+{
+  "ai-agents": [
+    "Hermes Agent: 4 bugs P0 críticos",
+    "CoPaw lança v2.2.0-beta.6",
+    "NanoBot, IronClaw e PicoClaw em alta",
+    "ZeroClaw: 4 bugs S0/S1 arsite",
+    "Indústria prioriza estabilidade",
+    "NullClaw permanece inativo"
+  ],
+  "ai-web": [
+    "Anthropic: Enterprise Frontier Safeguards",
+    "OpenAI adiciona 4 novos artigos",
+    "Anthropic adiciona 3 novos artigos",
+    "ZDR + safeguards para dados corporativos",
+    "Clientes elegíveis em transição gradual",
+    "Avanços em segurança e alinhamento"
+  ],
+  "ai-hn": [
+    "Claude Fable 5.1: 753 pts em HN",
+    "Claude Mythos 5.1 domina ranking",
+    "Apple x OpenAI: acusação em tribunal",
+    "Criador de Dwarf Fortress critica IA",
+    "Anthropic admite alinhamento imperfeito",
+    "Path to Astra: documento da OpenAI"
+  ],
+  "ai-arxiv": [
+    "Aspire: LLMs auto-evoluem de metas vagas",
+    "13 modelos testados para ontologias",
+    "Avanços em avaliação responsável",
+    "LoRA normalizado para adaptação",
+    "Raciocínio chain-of-thought comprimido",
+    "Sistemas multi-agente para triagem"
+  ],
+  "ai-science": [
+    "IBM resolve problema quântico em 15 min",
+    "Banho quântico automatiza entrelaçamento",
+    "NASA navega satélites sem GPS",
+    "Supremacia quântica prática confirmada",
+    "70 qubits lógicos em operação",
+    "Entrelaçamento sem medições constantes"
+  ],
+  "ai-robotics": [
+    "IA otimiza impressão 3D da GRCop-42",
+    "500W: recorde para liga da NASA",
+    "40 experimentos vs 100M combinações",
+    "Manufatura aditiva mais acessível",
+    "Componentes aeroespaciais democratizados",
+    "Ciclo de inovação acelerado"
+  ],
+  "ai-hacking": [
+    "IBM quântico ameaça criptografia",
+    "70+ qubits lógicos: urgência pós-quântica",
+    "Banho quântico facilita sistemas modulares",
+    "Altermagnetismo em RuO2 para spintrônica",
+    "Dispositivos spintrônicos emergem",
+    "Migração para criptografia pós-quântica"
+  ],
+  "ai-3dprinting": [
+    "IA encontra config. da NASA com 500W",
+    "100M de opções exploradas em 40 testes",
+    "Nanocristais de nitretos metálicos obtidos",
+    "LEDs flexíveis e implantes biomédicos",
+    "Supercondutores em formato impresso",
+    "Democratização da manufatura aditiva"
+  ],
+  "ai-livingwell": [
+    "Mindfulness reduz pressão arterial",
+    "AD109: 44% menos eventos respiratórios",
+    "Cetogênica corta gordura hepática em 67%",
+    "Melatonina: risco 90% maior de ICC",
+    "UPFs elevam risco de câncer prostático",
+    "Purificadores HEPA melhoram função executiva"
+  ],
+  "ai-education": [
+    "Estudo: 400mil crianças por 20 anos",
+    "Pré-escola pública: melhores notas",
+    "Formação docente: fator decisivo",
+    "Exposição estruturada aos 5 anos",
+    "Impacto dura décadas no ensino médio",
+    "Políticas de capacitação docente"
+  ],
+  "ai-engineering": [
+    "GRCop-42 impressa com apenas 500W",
+    "Altermagnetismo em filmes de RuO2",
+    "Birrefringência do vácuo detectada",
+    "Efeito quântico de 90 anos confirmado",
+    "Ondas gravitacionais e estrelas escuras",
+    "Sensoriamento astrofísico revolucionado"
+  ],
+  "ai-agriculture": [
+    "Aversão a insetos: 9 mil anos",
+    "Neandertais comiam insectos regularmente",
+    "Genes para digestão de insectos no trópico",
+    "Fóssil de 324Ma revela transição aquática",
+    "Insetos: fase aquática antes do terrestre",
+    "Evolução da entomofagia redescoberta"
+  ],
+  "ai-environmental": [
+    "Tempestades raras no Deserto de Atacama",
+    "800 sismos sob Glaciar Thwaites",
+    "Spirulina com vitamina B12 ativa",
+    "Reciclagem de PVC em lubrificantes",
+    "El Niño fortalece eventos extremos",
+    "Ciência cidadã no solo suíço"
+  ],
+  "ai-archaeology": [
+    "Pegadas de 1,4Ma no Quênia: 8 indivíduos",
+    "Paranthropus boisei: grupo surpreendente",
+    "Princesas egípcias treinavam arco",
+    "Lesões de arquearia em múmias reais",
+    "Mulheres em papéis cinegéticos/militares",
+    "Estruturas sociais complexas confirmadas"
+  ],
+  "ai-offbeat": [
+    "Mindfulness reduz pressão em 8 sem.",
+    "Açúcar nos 1.000 dias afeta aos 70 anos",
+    "Mito do cérebro de lagarto contestado",
+    "Snake embryos: espiral direita explicada",
+    "Anomalia térmica massiva em Marte",
+    "Cristal espaço-tempo em dimensões infinitas"
+  ]
+}
