@@ -1,0 +1,122 @@
+{
+  "ai-cli": [
+    "GPT-6 Astra lançado pela OpenAI",
+    "Apagão simultâneo de ChatGPT/Claude/Grok",
+    "ARC-AGI-3: avaliação técnica do GPT-6 Astra",
+    "Especialistas em segurança alertam sobre GPT-6",
+    "Anthropic: briefing sobre mercado indiano",
+    "OpenAI: 937 artigos no sitemap total"
+  ],
+  "ai-agents": [
+    "ZeroClaw: 50 PRs em 24h — pico de atividade",
+    "Hermes Agent: 1 bug P0 de cache crítico",
+    "IronClaw: ciclo acelerado de engenharia",
+    "PicoClaw: backlog de bugs crônicos",
+    "NanoBot: estabilização pós-release saudável",
+    "NullClaw: projeto em hibernação"
+  ],
+  "ai-web": [
+    "Anthropic publica India Country Brief",
+    "OpenAI lança GPT-6 Astra — claims de AGI",
+    "Índia: 5,8% do uso global (2º lugar)",
+    "Per capita Índia: 101ª posição",
+    "Anthropic Economic Index: 1M conversas",
+    "OpenAI: metadata de segurança sobre GPT-6"
+  ],
+  "ai-hn": [
+    "GPT-6 Astra: 966 pontos, 694 comentários",
+    "OpenAI claim de AGI gera ceticismo",
+    "Apagão simultâneo: teorias DDoS vs sistêmico",
+    "ARC-AGI-3: análise técnica do GPT-6",
+    "Especialistas alertam sobre técnicas de raciocínio",
+    "OpenAI: modelo de raciocínio interno questionado"
+  ],
+  "ai-arxiv": [
+    "FP4: quantização de baixa precisão para LMs",
+    "LLMs podem controlar própria atenção",
+    "Agentes: predição precoce de resultados",
+    "Multiagentes: fundamentamento jogo-teórico",
+    "RL com recompensas de processo",
+    "Alucinações em modelos visão-linguagem"
+  ],
+  "ai-science": [
+    "IBM: 70 qubits lógicos resolvem problema real",
+    "Computação quântica em 15 minutos",
+    "Banho quântico mantém qubits entrelaçados",
+    "Entrelaçamento automático sem medições",
+    "IBM: evidência estatística de confiabilidade",
+    "Quântico: da demonstração ao problema real"
+  ],
+  "ai-hacking": [
+    "IBM quântico resolve problema clássico",
+    "Pós-quântico: urgência de preparação",
+    "Banho quântico para redes distribuídas",
+    "Sensores magnéticos de nova geração",
+    "Criptografia em risco com 70 qubits",
+    "Hardware quântico avança rapidamente"
+  ],
+  "ai-3dprinting": [
+    "Nanocristais de nitretos metálicos sintetizados",
+    "LEDs de alta eficiência viabilizados",
+    "Implantes médicos com novos materiais",
+    "Supercondutores de próxima geração",
+    "Eletrônica flexível com nitretos",
+    "Impressão 3D de componentes funcionais"
+  ],
+  "ai-livingwell": [
+    "Bloquear receptor rejuvenesce órgãos",
+    "Apneia do sono: pílula reduz 44% eventos",
+    "Dieta cetogênica reduz gordura hepática 67%",
+    "Envelhecimento cerebral: dificuldades financeiras",
+    "Obesidade deixa memória molecular imune",
+    "Sedentarismo: 9% mais risco de morte por cáncer"
+  ],
+  "ai-education": [
+    "Pré-escolar público: vantagem até ensino médio",
+    "Estudo de 20 anos com 400.000 crianças",
+    "Qualidade docente como fator central",
+    "Intervenções precoces com impacto duradouro",
+    "Políticas de educação infantil em debate",
+    "Estrutura pedagógica determina sucesso"
+  ],
+  "ai-engineering": [
+    "Velas solares: arrasto a 75% da luz",
+    "Fótons criam arrasto imprevisto",
+    "Viagem interestelar tem limite relativístico",
+    "Propulsão espacial enfrenta física fundamental",
+    "Modelagem relativística necessária",
+    "Colaboração física-engenharia para interstellar"
+  ],
+  "ai-environmental": [
+    "Sismos ocultos sob Glaciar Thwaites",
+    "Glaciar do Juízo Final mais vulnerável",
+    "Tempestades cobrem Deserto do Atacama",
+    "El Niño causa neve no Atacama paradoxal",
+    "PVC reciclado em lubrificante",
+    "Biodiversidade subterrânea em estudo"
+  ],
+  "ai-archaeology": [
+    "Escorpião de 1m, 415 milhões de anos",
+    "Gigantismo em artrópodes mais antigo",
+    "8 Paranthropus boisei caminharam juntos",
+    "Pegadas revelam estrutura social complexa",
+    "Princesas egípcias: arqueiras e guerreiras",
+    "Mulheres reais praticavam tiro com arco"
+  ],
+  "ai-social": [
+    "Vizinhança aos 20s afeta coração aos 50",
+    "Calcificação arterial: risco de bairro",
+    "Desigualdade espacial gera morbidade",
+    "Políticas de urbanismo como prevenção",
+    "Determinantes sociais consolidados",
+    "Rastreamento de vida para saúde"
+  ],
+  "ai-offbeat": [
+    "Asgard arqueon conectado a bactéria",
+    "Primeira imagem de simbiose primal",
+    "Saturno: padrão de dez lados no polo sul",
+    "Hexágono sul rivaliza com norte",
+    "10 mil mulheres: café enfraquece ossos",
+    "Mindfulness reduz pressão arterial"
+  ]
+}
