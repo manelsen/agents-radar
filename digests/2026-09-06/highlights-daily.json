@@ -1,0 +1,98 @@
+{
+  "ai-agents": [
+    "ZeroClaw v0.8.5 released",
+    "Hermes Agent: 50 PRs em 24h",
+    "NanoBot: 7 PRs mescladas",
+    "CoPaw migra APIs",
+    "NullClaw permanece inativo",
+    "ZeroClaw: hardening de segurança"
+  ],
+  "ai-hn": [
+    "Spotify: 90% menos tokens",
+    "Claude bloqueia letras de músicas",
+    "LLMs como vírus cognitivo",
+    "OpenAI: agentes burlam sandbox",
+    "Spotify post: 239 pontos HN",
+    "86 comentários sobresystem prompts"
+  ],
+  "ai-science": [
+    "Entrelaçamento quântico automático",
+    "IBM resolve problema intratável",
+    "70 qubits lógicos em 15 min",
+    "Banho quântico de fótons",
+    "Pré-quântico: criptografia em risco",
+    "IBM+UChicago: vantagem quântica"
+  ],
+  "ai-hacking": [
+    "IBM: qubits ameaçam criptografia",
+    "Banho quântico: entrelaçamento fácil",
+    "Nova forma do efeito Hall",
+    "Física quântica amadurece",
+    "Preparação pós-quântica urgente",
+    "Segurança cibernética em risco"
+  ],
+  "ai-3dprinting": [
+    "Nanocristais impossíveis criados",
+    "Nitretos metálicos em escala",
+    "Eletrónica flexível impressa",
+    "LEDs e implantes com novos materiais",
+    "Manufatura aditiva avançada",
+    "Supercondutores via impressão 3D"
+  ],
+  "ai-livingwell": [
+    "Composto de ascídia reverte aging",
+    "AD109: 44% menos eventos",
+    "CAR T-cell: artrite em remissão",
+    "Purificadores HEPA: +12% cognição",
+    "Envelhecimento: marcas 7 anos antes",
+    "Café: risco para densidade óssea"
+  ],
+  "ai-engineering": [
+    "Velas solares: barreira a 75% da luz",
+    "Arrasto fotônico a velocidades relativísticas",
+    "Missões interestelares repensadas",
+    "Física relativística antecipada",
+    "Design de velas solares repensado",
+    "Mecanismos de frenagem necessários"
+  ],
+  "ai-agriculture": [
+    "Morning Glories: 96% menos adaptação",
+    "Escassez de polinizadores",
+    "Conflito evolutivo no clima",
+    "Diversidade genética não basta",
+    "Gargalo evolutivo detectado",
+    "Polinizadores limitam adaptação"
+  ],
+  "ai-environmental": [
+    "Atacama: neve no deserto",
+    "Glaciar Thwaites: sismos ocultos",
+    "96% queda em adaptação",
+    "El Niño fortalece eventos",
+    "Spirulina produz B12 ativa",
+    "Mudanças climáticas extremas"
+  ],
+  "ai-archaeology": [
+    "Escorpião gigante de 1m na GB",
+    "Pegadas de P. boisei no Quênia",
+    "Princesas egípcias: guerreiras?",
+    "Gigantismo em artrópodes",
+    "Estruturas sociais complexas",
+    "Armas em túmulos femininos"
+  ],
+  "ai-social": [
+    "Bairro aos 20 anos: coração",
+    "Calcificação arterial aos 50",
+    "Desigualdade Socioeconômica",
+    "Políticas públicas necessárias",
+    "Urbanismo e saúde conectadas",
+    "Epidemiologia social em foco"
+  ],
+  "ai-offbeat": [
+    "DNA de 8 letras criado",
+    "Bactérias viram transístores",
+    "Hexágono em Saturno",
+    "Ascídia reverte envelhecimento",
+    "Expiração longa: decisões ousadas",
+    "Iceberg de 76km² monitorado"
+  ]
+}
