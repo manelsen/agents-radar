@@ -1,0 +1,114 @@
+{
+  "ai-cli": [
+    "Anthropic denuncia DeepSeek por distillation attacks",
+    "Acusação contra Moonshot e MiniMax por roubo de IP",
+    "Primeiro ataque cibernético por IA: grupo chinês",
+    "Navier-Stokes: OpenAI claim gera controvérsia em peso",
+    "Fermat provado por IA em 11 dias (Nature)",
+    "ChatGPT Images 2.5 lançado com alta repercussão"
+  ],
+  "ai-agents": [
+    "CoPaw v2.2.1-beta.1: único release do dia",
+    "ZeroClaw com 50+ eventos/dia",
+    "NanoBot demonstra alta atividade",
+    "Hermes Agent em destaque",
+    "NullClaw inativo há 24h",
+    "PicoClaw foca em estabilização"
+  ],
+  "ai-web": [
+    "Anthropic denuncia DeepSeek por ataques de distillation",
+    "16M de exchanges em ataques a Claude",
+    "Moonshot e MiniMax acusadas formalmente",
+    "DeepSeek liderou extração de dados em escala industrial",
+    "Ataque cibernético por IA: grupo chinês estatal",
+    "OpenAI lança 6 artigos sem análise substancial"
+  ],
+  "ai-hn": [
+    "OpenAI claim Navier-Stokes: 963 pontos, 782 comentários",
+    "Controvérsia: pesquisa privada usada sem consentimento",
+    "Anthropic formaliza prova de Fermat em 11 dias",
+    "ChatGPT Images 2.5 mantém interesse em geração",
+    "Mercury 2.5: novo modelo focado em eficiência",
+    "Comunidade dividida sobre ética da OpenAI"
+  ],
+  "ai-robotics": [
+    "Memória magnética corta consumo energético em ordens",
+    "IA controla plasma de fusão em milissegundos",
+    "Previsão de instabilidades 200ms antes",
+    "Comutação de bits magnéticos com pulsos otimizados",
+    "Robôs autônomos com menor consumo",
+    "Fusão nuclear e robótica convergem"
+  ],
+  "ai-hacking": [
+    "Fractons detectados para armazenamento quântico",
+    "Memória magnética de ultra-baixo consumo",
+    "Novo efeito Hall inesperado desafia paradigma",
+    "Criptografia pós-quântica avança com fractons",
+    "Sensores magnéticos mais simples",
+    "Hardware energeticamente eficiente"
+  ],
+  "ai-livingwell": [
+    "Semaglutida reduz 21% hospitalização psiquiátrica",
+    "Estatinas reduzem demência em 15% pós-diabetes",
+    "Câncer crescerá 67% até 2050: 21→34M/ano",
+    "Microbioma intestinal mais transmissível que pensado",
+    "Tirosina alta = vida mais curta em homens",
+    "Pterostilbene melhora queima de gordura muscular"
+  ],
+  "ai-mentalhealth": [
+    "Semaglutida reduz 21% risco de hospitalização",
+    "Estudo sueco: 15.000 bipolares analisados",
+    "Anti-inflamatório pode estabilizar humor",
+    "Outros GLP-1 sem mesmo efeito",
+    "Mecanismos únicos da semaglutida",
+    "Inflamação sistêmica na fisiopatologia"
+  ],
+  "ai-engineering": [
+    "Velas solares limitadas a 75% da velocidade da luz",
+    "Freio fotônico surge a velocidades relativísticas",
+    "Arraste reduz eficiência de propulsão",
+    "Simulação com óptica relativística e plasma",
+    "Nanotecnologia para refletividade ultra-alta",
+    "Metamateriais para geometrias adaptativas"
+  ],
+  "ai-agriculture": [
+    "Morning glories: adaptação cai 96% em 9 anos",
+    "Plantas em conflito evolutivo: clima vs polinizadores",
+    "Pressão seletiva dupla reduz resiliência",
+    "Diversidade genética não garante adaptação",
+    "Estratégias integradas de conservação",
+    "Segurança alimentar em risco"
+  ],
+  "ai-environmental": [
+    "Antártida ganha 695 bilhões de toneladas de gelo",
+    "Incêndios de turfa na Indonésia antecipados",
+    "El Niño agrava temporada de incêndios",
+    "Perda do escudo solar há milhões de anos",
+    "Teleconexões climáticas confirmadas",
+    "Mars tem sistemas magmáticos subterrâneos"
+  ],
+  "ai-archaeology": [
+    "Dinossauro gigante de 20m descoberto no Brasil",
+    "Conexão evolutiva com dinossauros espanhóis",
+    "Escorpião de 1m viveu há 415 milhões de anos",
+    "80.000 anos: pontas de flecha no Uzbequistão",
+    "Tecnologia sofisticada na Ásia Central",
+    "Corredores terrestres Europa-África-América do Sul"
+  ],
+  "ai-social": [
+    "Amor segue regras matemáticas ocultas",
+    "Arrowheads de 80.000 anos reescrevem história",
+    "Vizinhança na vida adulta molda coração",
+    "Padrões de atração modelados estatisticamente",
+    "Migração humana mais antiga que imaginado",
+    "Determinantes sociais da saúde"
+  ],
+  "ai-offbeat": [
+    "Antiveneno 10x mais potente de cascavel",
+    "Microbioma ancestral em estromatólitos",
+    "Alfabeto genético expandido para 8 letras",
+    "Sinal misterioso pode indicar matéria escura",
+    "Saturno: padrão decagonal no polo sul",
+    "Bactérias transformadas em transistores vivos"
+  ]
+}
