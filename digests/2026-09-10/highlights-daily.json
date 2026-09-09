@@ -1,0 +1,122 @@
+{
+  "ai-cli": [
+    "GPT-5.6 revoluciona computação quântica",
+    "Proc. Graphs: agentes auto-evolutivos",
+    "900+ pontos sobre risco existencial",
+    "OtoDock: OS corporativo auto-hospedado",
+    "Desalentos em série na Anthropic",
+    "Zero-days e exploits em debate"
+  ],
+  "ai-agents": [
+    "ZeroClaw lidera com 50+ eventos/24h",
+    "NanoBot: alta produção e saúde estável",
+    "7 projetos open source monitorados",
+    "NullClaw: projeto em standby",
+    "Focus: sandboxing e memória persistente",
+    "Sem releases formais detectados"
+  ],
+  "ai-web": [
+    "Anthropic lança 162 novos artigos",
+    "Series H: $65B a valuation $965B",
+    "Opus 4.6 encontra 22 vulns no Firefox",
+    "500+ zero-days identificados",
+    "Escritórios: Bengaluru, Sydney, Milão",
+    "Parcerias: UK, Austrália, Ruanda, Índia"
+  ],
+  "ai-hn": [
+    "GPT-5.6 para computação quântica",
+    "Procedural Graphs para agentes LLM",
+    "Alerta: risco existencial da IA",
+    "OtoDock: OS corporativo c/ Claude",
+    "OpenAI: agentes autônomos expostos",
+    "Demissões na Anthropic dominam HN"
+  ],
+  "ai-arxiv": [
+    "ReCite: citações agentivas precisas",
+    "Attention Sinks: não é RoPE",
+    "Viés demográfico depende da auditoria",
+    "Agentes LLM cooperando em escala",
+    "Otimização de gradiente redes profundas",
+    "LLMs em dinâmica de fluidos"
+  ],
+  "ai-robotics": [
+    "IA controla plasma de fusão (ms)",
+    "Comutação magnética ultra-eficiente",
+    "Princeton: controlo ultra-rápido plasma",
+    "Hardware de baixo consumo para robôs",
+    "Edge robotics com longa autonomia",
+    "Milissegundos para reação crítica"
+  ],
+  "ai-hacking": [
+    "Fractons: memórias quânticas robustas",
+    "Chaveamento magnético de baixo gasto",
+    "Novo efeito Hall paralelamente",
+    "Sistemas magnéticos mais simples",
+    "Proteção contra decoerência quântica",
+    "Sensores integrados reduzem ataque"
+  ],
+  "ai-livingwell": [
+    "Ozempic: 40% menos crises de asma",
+    "Bipolar: 21% menos hospitalizações",
+    "AP503 ativa receptor ósseo GPR133",
+    "Cafeína ativa sistema energético celular",
+    "67% mais casos de câncer até 2050",
+    "Exercício + nutrição = +55% cognição"
+  ],
+  "ai-mentalhealth": [
+    "Semaglutida reduz hospitalização 21%",
+    "Mecanismo além da regulação glicêmica",
+    "Alvo: inflamação e vias cerebrais",
+    "Estudo: 15.000 bipolares suecos",
+    "Reposicionamento de medicamentos",
+    "Vias neurobiológicas distintas"
+  ],
+  "ai-engineering": [
+    "Estrutura oculta em óxidos de níquel",
+    "Catalisador 10x mais eficiente",
+    "Descoberta desafia décadas de catálise",
+    "Design de materiais em escala atômica",
+    "Conversão otimizada de metano",
+    "Processamento de gás natural"
+  ],
+  "ai-agriculture": [
+    "Morning glories: -96% adaptação",
+    "Polinizadores cada vez mais escassos",
+    "9 anos de estudo evolutivo",
+    "Diversidade genética não basta",
+    "Mudança climática vs polinização",
+    "Seleção inadequada ao ambiente"
+  ],
+  "ai-environmental": [
+    "Antártida: +695Bi toneladas de gelo",
+    "Indonésia: incêndios de turfa",
+    "El Niño agrava seca na Ásia",
+    "Corrigindo cronologia de 80.000 anos",
+    "Sistema magmático sob Marte",
+    "Evolução estagnada das plantas"
+  ],
+  "ai-archaeology": [
+    "Devil's Arrows: pedras de 25 toneladas",
+    "Transporte de 18 km há 4.000 anos",
+    "Dinossauro gigante de 20m no Brasil",
+    "Conexões com espécies espanholas",
+    "Projéteis de 80.000 anos no Uzbequistão",
+    "Dispersão humana reescrita"
+  ],
+  "ai-social": [
+    "Amor segue regras matemáticas ocultas",
+    "Sistemas dinâmicos modelam atração",
+    "Projéteis de 80.000 anos no Uzbequistão",
+    "Evolução tecnológica humana reescrita",
+    "Dinâmica afetiva quantificável",
+    "Migração e tecnologia integradas"
+  ],
+  "ai-offbeat": [
+    "Apenas 6,6% creem em vida extraterrestre",
+    "DNA de 8 letras lido por enzima",
+    "Padrão decagonal na atmosfera de Saturno",
+    "Bactérias podem virar transistores",
+    "Matéria escura no campo magnético?",
+    "Alfabeto genético sintético dobrado"
+  ]
+}
