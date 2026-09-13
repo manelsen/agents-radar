@@ -1,0 +1,114 @@
+{
+  "ai-cli": [
+    "Claude Fable resolve cifra de 370 anos",
+    "PyO3: Rust executa dentro de Python",
+    "Debate: IA deve desacelerar desenvolvimento?",
+    "Houthis usaram Claude Code para mísseis",
+    "Auto-melhoria recursiva mais lenta que esperado",
+    "D. Sacks: 'Não precisamos regular IA'"
+  ],
+  "ai-agents": [
+    "ZeroClaw: 36 issues e 50 PRs",
+    "Hermes Agent: 50 issues e 50 PRs",
+    "NanoBot foca em UX mobile",
+    "ZeroClaw: 9 bugs críticos P0-P1",
+    "Nenhum release em 24h (freeze geral)",
+    "3 projetos com bugs de perda de dados"
+  ],
+  "ai-hn": [
+    "Claude Fable resolve cifra de 370 anos",
+    "PyO3: Rust executa dentro de Python",
+    "Debate: IA deve desacelerar desenvolvimento?",
+    "Houthis usaram Claude Code para mísseis",
+    "Auto-melhoria recursiva mais lenta que esperado",
+    "D. Sacks: 'Não precisamos regular IA'"
+  ],
+  "ai-science": [
+    "Ozempic: IA revela efeitos ocultos",
+    "Nanolaser pode cortar energia em 50%",
+    "Op. quânticas 1.000x mais rápidas",
+    "Ozempic pode retardar envelhecimento",
+    "400k posts revelam efeitos colaterais",
+    "CLP-1 reduz 40% crises de asma"
+  ],
+  "ai-robotics": [
+    "Computação quântica 1.000x mais rápida",
+    "Memória magnética economiza energia",
+    "NLP extrai dados de saúde do Reddit",
+    "Robôs com menor consumo energético",
+    "Avanços em planejamento quântico",
+    "Futuro da robótica com IA e quantum"
+  ],
+  "ai-hacking": [
+    "Op. quânticas 1.000x mais rápidas",
+    "Transição para criptografia pós-quântica",
+    "Qubits protegidos por ondas sonoras",
+    "Fractons para armazenamento seguro",
+    "Avanços em infraestrutura quântica",
+    "Segurança pós-quântica se aproxima"
+  ],
+  "ai-livingwell": [
+    "Ozempic pode retardar envelhecimento",
+    "GLP-1 reduz 40% crises de asma",
+    "DNA sintético corta LDL em 50%",
+    "Bebidas açucaradas dobram risco de cáncer",
+    "Supercentenária de 117 anos estudada",
+    "Ozempic: benefícios além da perda de peso"
+  ],
+  "ai-mentalhealth": [
+    "Ozempic reduz hospitalização bipolar 21%",
+    "TDAH ligado a problemas intestinais",
+    "Eixo intestino-cérebro no TDAH",
+    "Estudo: 1,9 milhão de pessoas",
+    "GLP-1: vias anti-inflamatórias",
+    "Mecanismos inflamatórios no humor"
+  ],
+  "ai-engineering": [
+    "Microscopia quântica no CERN",
+    "ALICE: resolução sem precedentes",
+    "Tempo tem incerteza fundamental?",
+    "Nano-estrutura em níquel para metano",
+    "Combinação: microscopia + computação quântica",
+    "Catálise mais eficiente com menos metal"
+  ],
+  "ai-agriculture": [
+    "Vespas desaparecem no Reino Unido",
+    "Calor extremo reduz tamanho das vespas",
+    "Clima ameaça controle biológico de pragas",
+    "Monitoramento de invertebrados urgente",
+    "Impacto das mudanças climáticas na agricultura",
+    "Serviços ecossistêmicos em risco"
+  ],
+  "ai-environmental": [
+    "Oceanos Índico-Pacífico desconectados",
+    "Antártica ganhou 695bi toneladas de gelo",
+    "UNESCO alerta: tsunami no Mediterrâneo",
+    "Água alcançava vulcões há 3bi anos",
+    "Tsunami em menos de 10 minutos",
+    "Alteração oceânica sem precedentes"
+  ],
+  "ai-archaeology": [
+    "Pena de 66mi anos em fezes de dinossauro",
+    "Novo dinossauro gigante no Brasil",
+    "Túmulo egípcio de 3.000 anos achado",
+    "Betel cultivado há 25.000 anos",
+    "Dentes ligam Homo erectus a Denisovanos",
+    "Pedras de 25 toneladas transportadas 18km"
+  ],
+  "ai-social": [
+    "Leveduras transformam plástico em biscoitos",
+    "NASA: biscoitos 3D do espaço",
+    "Amor segue regras matemáticas?",
+    "Segurança alimentar com biotecnologia",
+    "Relacionamentos explicados por modelos",
+    "Ciência aplicada a problemas sociais"
+  ],
+  "ai-offbeat": [
+    "Wordle resolvido em 99% por matemática",
+    "Betel consumido há 25.000 anos",
+    "DNA de morcegos revela segredo da longevidade",
+    "Supercentenária de 117 anos",
+    "Dinosaur brasileiro gigante achado",
+    "Antivenom do sangue de cobras"
+  ]
+}
