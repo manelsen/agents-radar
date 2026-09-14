@@ -1,0 +1,106 @@
+{
+  "ai-agents": [
+    "NullClaw: 4 issues sobre provedores prepaid",
+    "OpenAI detecta vulnerabilidade no RubyGems",
+    "Apple integra LLMs externos no Siri",
+    "Anthropic lucrativa pelo 2º trimestre",
+    "7 projetos de IA agents cobertos",
+    "ZeroClaw lidera emissues abertos"
+  ],
+  "ai-hn": [
+    "OpenArch unifica Llama, Mistral e Gemma",
+    "OpenAI bots descobrem falha no RubyGems",
+    "LLM judges: concordância é confiável?",
+    "Siri integra LLMs externos da Apple",
+    "Anthropic lucrativa 2º trim. seguido",
+    "Debate sobre vendor lock-in em IA"
+  ],
+  "ai-science": [
+    "IA detecta efeitos colaterais do Ozempic",
+    "Nanolaser pode cortar energia pela metade",
+    "Operações quânticas 1000x mais rápidas",
+    "400 mil posts do Reddit analisados",
+    "Redução de erros em computação quântica",
+    "Hardware quântico avança em eficiência"
+  ],
+  "ai-robotics": [
+    "IA detecta efeitos colaterais do Ozempic",
+    "Operações quânticas 1000x mais rápidas",
+    "Processadores quânticos mais estáveis",
+    "Redução drástica de ciclos de controle",
+    "Convergência IA e computação quântica",
+    "Aplicações robóticas em alta escala"
+  ],
+  "ai-hacking": [
+    "Microscópio quântico revela mais informação",
+    "Ondas sonoras protegem qubits 3x mais",
+    "Operações quânticas 1000x mais rápidas",
+    "Estratégia Wordle ganha 99% das vezes",
+    "Entropia de Shannon aplicada a jogos",
+    "Ciclos de controle eliminados em qubits"
+  ],
+  "ai-livingwell": [
+    "Ozempic pode retardar envelhecimento",
+    "Envelhecimento biológico acelerado causa cáncer",
+    "Terapia genética reduz LDL em 50%",
+    "Exposição noturna à luz altera coração",
+    "Restrição alimentar ajuda diabéticos tipo 1",
+    "Bebidas açucaradas elevam risco de cáncer"
+  ],
+  "ai-mentalhealth": [
+    "TDAH associado a problemas digestivos",
+    "Ozempic reduz hospitalização psiquiátrica 21%",
+    "1,9 milhão de pessoas no estudo TDAH",
+    "Conexão intestino-cérebro no TDAH",
+    "Eixo intestino-cérebro no manejo",
+    "Benefícios mentais além da perda de peso"
+  ],
+  "ai-engineering": [
+    "Microscopia quântica protege amostras frágeis",
+    "ALICE revela comportamento inesperado dos glúons",
+    "Tempo pode ter incerteza fundamental",
+    "Catalisador de níquel rivaliza com platina",
+    "Estrutura atômica oculta em óxido de níquel",
+    "Resolução espacial sem precedentes no LHC"
+  ],
+  "ai-agriculture": [
+    "Vespas diminuem no Reino Unido 2026",
+    "Ondas de calor afetam insetos benéficos",
+    "Tamanho reduzido das vespas observado",
+    "Encolhimento por estresse térmico",
+    "Controle biológico em risco agrícola",
+    "Indicador biológico das condições climáticas"
+  ],
+  "ai-environmental": [
+    "Submarino WWI vaza TNT há 109 anos",
+    "Tempestades duplicam perda de gelo ártico",
+    "Ciclo oceânico Índico-Pacífico se desfaz",
+    "Vulcão Etna: gases aceleram erupções",
+    "UNESCO alerta para tsunamis no Mediterrâneo",
+    "Água em vulcões há 3 bilhões de anos"
+  ],
+  "ai-archaeology": [
+    "Pena de 66 milhões de anos em fezes",
+    "Tumba egípcia de 3.000 anos descoberta",
+    "Uso de noz de bétele há 25.000 anos",
+    "Homo erectus conectou-se aos Denisovanos",
+    "Pedras de 25 toneladas transportadas",
+    "Dinossauro gigante de 120 milhões de anos"
+  ],
+  "ai-social": [
+    "NASA transforma plástico em biscoitos 3D",
+    "Leveduras geneticamente modificadas usadas",
+    "Ingredientes ricos em proteínas dos µBites",
+    "Solução dupla: plástico e insegurança",
+    "Tecnologia para missões espaciais",
+    "Biotecnologia na segurança alimentar"
+  ],
+  "ai-offbeat": [
+    "Lua pode ter se formado em 5 horas",
+    "Estratégia Wordle vence com 99% de sucesso",
+    "Entropia de Shannon resolve Wordle",
+    "Supercentenária: envelhecimento e proteção",
+    "Morcegos sem cáncer por defesas únicas",
+    "Cafeína ativa sistema energético celular"
+  ]
+}
