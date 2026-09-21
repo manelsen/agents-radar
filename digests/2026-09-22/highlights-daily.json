@@ -1,0 +1,106 @@
+{
+  "ai-agents": [
+    "Hermes Agent v0.21.4 lançado com 50 PRs",
+    "ZeroClaw foca em segurança com OIDC",
+    "CoPaw enfrenta prompt injection em alta",
+    "NanoBot desacelera em pré-release",
+    "PicoClaw integra OAuth com ritmo moderado",
+    "IronClaw RC pendente com saúde forte"
+  ],
+  "ai-web": [
+    "OpenAI lança 3 artigos sobre educação",
+    "OpenAI forma grupo de IA e matemática",
+    "Caminhos de aprendizagem corporativa",
+    "Anthropic sem novos artigos hoje",
+    "Foco em adoção empresarial e guias",
+    "Expansão do ecossistema de aprendizado"
+  ],
+  "ai-hn": [
+    "Mini-AGI treina em apenas 8GB VRAM",
+    "Halo: pós-treinamento 3x mais rápido",
+    "Foremerge resolve conflitos de agentes",
+    "Processo antitruste contra big techs de IA",
+    "Ceticismo crescente com big techs",
+    "247 pts para Mini-AGI na comunidade"
+  ],
+  "ai-science": [
+    "Monotile de Einstein torce luz em chiral",
+    "Descoberta abre caminho para fotônica",
+    "Geometria aperiódica em dispositivos ópt",
+    "Controle de polarização inovador",
+    "Aplicações em redes neurais ópticas",
+    "Intersecção de matemática e fotônica"
+  ],
+  "ai-robotics": [
+    "Organismo unicelular encolhe em ms",
+    "Rede proteica ativada por cálcio",
+    "Atuadores mais rápidos que piezoelétricos",
+    "Músculos artificiais inspirados em biologia",
+    "Aplicações em robótica macia",
+    "Densidade de força sem precedentes"
+  ],
+  "ai-solar": [
+    "Nanopartículas brilham para detectar químicos",
+    "Dessalinização solar sem salmoura",
+    "Recuperação de lítio de rejeitos",
+    "Sensores solares portáteis com lasers",
+    "Auto-limpeza em sistema sustentável",
+    "Nanomateriais para vigilância ambiental"
+  ],
+  "ai-livingwell": [
+    "Cálcio e vitamina D questioned for fractures",
+    "Ozempic: 22% mais risco cardíaco",
+    "8 aditivos associados a hipertensão",
+    "Exercício supera suplementos para ossos",
+    "Grãos integrais melhoram saúde metabolic",
+    "Anti-inflamatório reduz risco cardíaco 43%"
+  ],
+  "ai-engineering": [
+    "Entrelaçamento quântico no Higgs",
+    "Enzima marinha fixa nitrogênio a 100°C",
+    "Nanopartículas detectam traços químicos",
+    "Desordem estabiliza redes complexas",
+    "Terras raras recuperadas de cinzas",
+    "Bioinspiração em extração mineral"
+  ],
+  "ai-agriculture": [
+    "Químico elimina 95% das térmitas",
+    "Sem risco para humanos, alternativa segura",
+    "Enzima marinha para biocombustíveis",
+    "Cravo-do-novomundo retorna aos EUA",
+    "Rastreamento de pragas com IA",
+    "Biopesticidas em destaque"
+  ],
+  "ai-environmental": [
+    "Preservar florestas é mais eficaz",
+    "Irrigação: 363 anos de benefício climático",
+    "Erupção Tonga destruiu metano",
+    "Dessalinização solar com lítio",
+    "Fixação de nitrogênio extrema",
+    "Evitar desmatamento é prioritário"
+  ],
+  "ai-archaeology": [
+    "T.rex tinha 36°C, era endotérmico",
+    "Diplodoco achado na Espanha",
+    "Fóssil de 240 Ma reescreve história",
+    "Conexão Tanzânia-América do Sul",
+    "Rituais de 25 mil anos na Austrália",
+    "DNA revela peste por 400 anos"
+  ],
+  "ai-social": [
+    "Peste voltou por 400 anos na Europa",
+    "DNA antigo traça linhagens genéticas",
+    "Rotas comerciais espalharam doenças",
+    "Genomas permitem datar surtos",
+    "Pandemias moldaram sociedade medieval",
+    "Método inovador de datação genômica"
+  ],
+  "ai-offbeat": [
+    "Buracos negros seguem regra universal",
+    "Ventos 100x mais potentes que pensado",
+    "Cérebro tem dois sistemas celulares",
+    "Experimento não detecta gravidade",
+    "Órgão imune no crânio contra tumores",
+    "Screwworm retorna aos EUA"
+  ]
+}
