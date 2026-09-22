@@ -1,0 +1,122 @@
+{
+  "ai-agents": [
+    "NanoBot: 29 PRs/24h - atividade intensa",
+    "Hermes Agent: 50 issues e PRs em 24h",
+    "ZeroClaw: 3 bugs S0 simultâneos",
+    "Multi-canalidade: Telegram, WhatsApp, WeChat",
+    "CoPaw: 37 issues, 50 PRs em 24h",
+    "IronClaw: 3 PRs, saúde baixa"
+  ],
+  "ai-web": [
+    "Claude: 4x faster em biomodelagem",
+    "OpenAI: 5 artigos pendentes + GPT-6",
+    "Anthropic: artigo sobre biomoléculas",
+    "GPT-6 Sol e Luna confirmado",
+    "Prompt Caching: melhorias no GPT-6",
+    "1.476 artigos nos sitemaps combined"
+  ],
+  "ai-hn": [
+    "Claude Opus 5.5: 1.017 pontos",
+    "GPT-6 Sol/Luna: 974 pontos",
+    "GPT-6 Astra quebra Enigma de 2005",
+    "1.900+ pontos combinados nos top 2",
+    "737+528 comentários nos top 2",
+    "Debates sobre viés, privacidade e ética"
+  ],
+  "ai-arxiv": [
+    "onPanda: alinhamento eficiente por token",
+    "LoRA hypernetworks para LLMs mobile",
+    "Agentes autorrecurriculares em alta",
+    "Memória 3D implícita em modelagem",
+    "Colusão emergente em sistemas multiagente",
+    "Incerteza quantificada em LLMs"
+  ],
+  "ai-science": [
+    "Micro-drone MIT: 450% mais rápido",
+    "10 cambalhotas em apenas 11 segundos",
+    "Agilidade comparável a insetos",
+    "Busca em escombros após terremotos",
+    "Biomimética: insetos como modelo",
+    "IA embarcada em micro-robôs"
+  ],
+  "ai-robotics": [
+    "Robô MIT: 450% velocidade máxima",
+    "10 cambalhotas em 11 segundos",
+    "Organismo contrai 25% em milissegundos",
+    "Músculos artificiais ultra-rápidos",
+    "Redes de proteínas alimentadas por cálcio",
+    "Biomimética de alto desempenho"
+  ],
+  "ai-hacking": [
+    "Stanford: saltos quânticos de som",
+    "Fónons observados em tempo real",
+    "Computação quântica mais estável",
+    "Correção de erros quânticos melhor",
+    "Segurança biológica quântica",
+    "Futuro pós-quântico se aproxima"
+  ],
+  "ai-solar": [
+    "Nanopartículas ultra-brilhantes",
+    "Dessalinização solar sem salmoura",
+    "Recuperação de lítio e minerais",
+    "Detecção de traços químicos",
+    "Monitoramento de poluentes",
+    "Energia renovável prática"
+  ],
+  "ai-livingwell": [
+    "Suplementos cálcio: ineficazes para fraturas",
+    "Ozempic: 22% mais risco cardíaco",
+    "Estresse crônico: 43% mais risco",
+    "Long COVID danifica neurônios",
+    "Menin revertida em camundongos",
+    "Dieta reverte marcadores de idade"
+  ],
+  "ai-engineering": [
+    "CERN: entrelaçamento em bósons Z",
+    "Nanopartículas para detecção molecular",
+    "Enzima marinha fixa nitrogênio",
+    "Desordem controlada: mais estabilidade",
+    "Redes elétricas mais resilientes",
+    "Física quântica no LHC"
+  ],
+  "ai-agriculture": [
+    "Composto elimina 95% dos cupins",
+    "Enzima marinha fixa nitrogênio",
+    "Fumigantes mais seguros",
+    "Fertilizantes mais limpos",
+    "Biotecnologia verde em alta",
+    "Controle de pragas sustentável"
+  ],
+  "ai-environmental": [
+    "CO₂ absorbing concrete developed",
+    "Amazon: proteção mais eficaz que restauração",
+    "Novo pinguim gentoo descoberto",
+    "Recuperação de terras raras",
+    "Dessalinização solar sem salmoura",
+    "Intensificação de furacões prevista"
+  ],
+  "ai-archaeology": [
+    "T. rex: temperatura 97°F confirmada",
+    "Homeotermia provada por dentes",
+    "Diplodocus na Espanha: 1º fora NA",
+    "Migração jurássica intercontinental",
+    "Dinodontosaurus na Tanzânia",
+    "Geoquímica em paleontologia"
+  ],
+  "ai-social": [
+    "Yellowstone: sinais semanas antes",
+    "Erupção VEI 8 devastaria EUA",
+    "Peste voltou por 400+ anos",
+    "DNA antigo data surtos",
+    "Redes comerciais espalhavam doenças",
+    "Planos de contingência urgentes"
+  ],
+  "ai-offbeat": [
+    "Planeta mais jovem já registrado",
+    "Vênus pode ter engolido sua lua",
+    "Cratera de 390 milhões de anos",
+    "Cérebro: dois sistemas celulares",
+    "Vídeos de atividade cerebral",
+    "Constante gravitacional: puzzle de 225 anos"
+  ]
+}
