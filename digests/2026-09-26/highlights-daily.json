@@ -1,0 +1,114 @@
+{
+  "ai-agents": [
+    "NullClaw: PR #1009 corrige falha crítica de aprovação",
+    "ZeroClaw lançado com automação inteligente",
+    "NanoBot: IA colaborativa para assistentes",
+    "CoPaw: novos recursos de monitoramento",
+    "IronClaw: integração com Near AI",
+    "Hermes Agent: melhorias em reasoning"
+  ],
+  "ai-web": [
+    "Anthropic: Claude calcula amplitude de 9 loops",
+    "Anthropic: resultados do Projeto Swap",
+    "OpenAI: MentalHealthBench lançado",
+    "2 novos artigos da Anthropic em 24h",
+    "Pesquisa em física teórica com IA",
+    "Agentes de IA em dinâmica de mercado"
+  ],
+  "ai-hn": [
+    "Anthropic mantémdesignação de risco nos EUA",
+    "FTC planeja imputar responsabilidade a devs",
+    "Meta Muse usa modelo OpenAI secreto",
+    "Claude pode fazer nove loops (101 pts)",
+    "MentalHealthBench: benchmark de saúde mental",
+    "Discussão sobre autonomia de agentes IA"
+  ],
+  "ai-arxiv": [
+    "LLM Agents podem adulterar traces",
+    "MISVO: direção mínima de LLMs",
+    "Alinhamento em MLLMs é ilusório",
+    "SAGE: raciocínio de longo horizonte",
+    "GridSFM: modelos de mundo em energia",
+    "Verificação formal de redes neurais"
+  ],
+  "ai-robotics": [
+    "MIT: micro-drone 450% mais rápido",
+    "10 cambalhotas em 11 segundos",
+    "Organismo unicelular contrai em ms",
+    "Inspiração biológica para robótica",
+    "Sistemas de controle com IA",
+    "Atuação ultra-rápida biomimética"
+  ],
+  "ai-hacking": [
+    "Anyons não-Abelianos: quantum universal",
+    "Qubits H2: 54 para universalidade",
+    "Fonons quânticos observados em tempo real",
+    "Transição para criptografia pós-quântica",
+    "CRYSTALS-Kyber e Dilithium urgent",
+    "Risco iminente para RSA e ECC"
+  ],
+  "ai-solar": [
+    "Nanopartículas detectam impurezas mínimas",
+    "Lasers de baixo custo para diagnóstico",
+    "Qualidade de células fotovoltaicas",
+    "Nanofluídica acessível",
+    "Identificar contaminantes em fármacos",
+    "Monitoramento de poluentes trace-gas"
+  ],
+  "ai-livingwell": [
+    "Sono REM reduz risco de 83 doenças",
+    "GLP-1: 1 em 6 crianças com deficiências",
+    "COVID longo danifica neurônios de dopamina",
+    "Estresse eleva risco cardíaco em 43%",
+    "Ozempic: parar aumenta risco de infarto",
+    "Vitamina D comumente deficiente"
+  ],
+  "ai-engineering": [
+    "Cristais temporais sincronizam a 40µm",
+    "Entrelaçamento de bósons Z no LHC",
+    "Enzima extremófila fixa nitrogênio",
+    "Diatomáceas inspiram extração de terras raras",
+    "Desordem melhora estabilidade de redes",
+    "Spintrônica: conexões de longo alcance"
+  ],
+  "ai-agriculture": [
+    "Árvores tropicais: fotossíntese CAM noturna",
+    "95% dos cupins eliminados sem risco",
+    "Enzima abissal fixa nitrogênio a altas T°",
+    "Duplicações genômicas em Clusia",
+    "Estratégias vegetais para seca",
+    "Biotecnologia limpa para fertilizantes"
+  ],
+  "ai-environmental": [
+    "AMOC enfraquece há 17 anos",
+    "Lake Powell: mínima histórica",
+    "40 milhões afetados por crise hídrica",
+    "4ª espécie de pinguim-gentoo identificada",
+    "Florestas existentes superam restauração",
+    "Aquecimento ameaça pinguins até 2050"
+  ],
+  "ai-archaeology": [
+    "Scotty: T. rex tinha rede vascular",
+    "T. rex: sangue quente a 36°C",
+    "Diplodocus na Europa: rota migratória",
+    "Altar Stone veio da Escócia",
+    "Dinosaur biology: imageamento 3D",
+    "Engenharia pré-histórica desafia modelos"
+  ],
+  "ai-social": [
+    "Peste voltou à Europa por 400 anos",
+    "Yellowstone: cenários de colapso",
+    "Redes de comércio espalharam doenças",
+    "Falhas em cascata nos EUA",
+    "Genômica de doenças históricas",
+    "Vulnerabilidades sistémicas expostas"
+  ],
+  "ai-offbeat": [
+    "Anã branca produz onda de choque milenar",
+    "Buracos negros: regra universal de jatos",
+    "Cérebro humano: dois sistemas fundidos",
+    "Constante gravitacional: puzzle de 225 anos",
+    "Cratera de 390 milhões de anos no Canadá",
+    "Diatomáceas inspiram extração de terras raras"
+  ]
+}
