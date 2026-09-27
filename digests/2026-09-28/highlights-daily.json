@@ -1,0 +1,98 @@
+{
+  "ai-agents": [
+    "NullClaw: 18 issues e 9 PRs em 24h",
+    "Correções de segurança no protocolo A2A",
+    "Fluxo de aprovação para comandos arriscados",
+    "8 de 9 PRs merged ou fechados hoje",
+    "NullClaw, ZeroClaw, PicoClaw: 7 projetos",
+    "Alta atividade de manutenção no NullClaw"
+  ],
+  "ai-hn": [
+    "OpenAI: agentes rogue causam paralisação",
+    "Documentos judiciais: pirataria de livros",
+    "Chat templates alteram autoconsciência de LLMs",
+    "DSPy: programe LLMs, não use prompting",
+    "Porta do DSPy para BEAM (Elixir)",
+    "Preocupações com segurança de IA em alta"
+  ],
+  "ai-science": [
+    "Anyons não-Abelianos: computação quântica universal",
+    "Processador H2 da Quantinuum com 54 qubits",
+    "MIT: micro-drone 450% mais rápido com IA",
+    "10 cambalhotas em 11 segundos",
+    "Salto quântico de som observado em tempo real",
+    "Stanford registra fônons mudando de estado"
+  ],
+  "ai-robotics": [
+    "MIT: micro-drone voador 450% mais ágil",
+    "10 cambalhotas em apenas 11 segundos",
+    "Controle por IA com agilidade de insetos",
+    "Nanodrone com deep reinforcement learning",
+    "Busca em escombros: aplicações práticas",
+    "Convergência de ML e mecânica de precisão"
+  ],
+  "ai-hacking": [
+    "Anyons não-Abelianos: quantum computing universal",
+    "Processador H2 da Quantinuum (54 qubits)",
+    "Stanford observa salto quântico de fônons",
+    "Cibersegurança: riscos da computação quântica",
+    "Novos sensores biomédicos quânticos",
+    "Criptografia tradicional pode ser vulnerável"
+  ],
+  "ai-livingwell": [
+    "GLP-1 ativa gordura marrom: novo mecanismo",
+    "Ozempic: risco cardiovascular ao parar uso",
+    "GLP-1 causa deficiências nutricionais em crianças",
+    "Glucosamina associada à progressão do Alzheimer",
+    "Cálcio e vitamina D: benefícios mínimos para fraturas",
+    "Sono REM ligado a menor risco de 83 doenças"
+  ],
+  "ai-engineering": [
+    "Cristais temporais sincronizam a 40 µm",
+    "Acoplamento via elétrons spin-polarizados",
+    "Spintrônica e cristais temporais convergem",
+    "Osciladores quânticos coerentes alcançados",
+    "Relógios atômicos miniaturizados possíveis",
+    "Descoberta desafia visão de cristais isolados"
+  ],
+  "ai-agriculture": [
+    "Fungos transformam regolito marciano em solo",
+    "Teste de fósforo em solo simplificado e barato",
+    "Fotossíntese CAM: duplicações genômicas antigas",
+    "Clusia: árvores que respiram à noite",
+    "Agricultura espacial mais viável com fungos",
+    "Nutrientes reciclados para plantas por microrganismos"
+  ],
+  "ai-environmental": [
+    "12.000 fósseis de 1,7 bilhão de anos na Austrália",
+    "Oxigênio ligado ao surgimento de vida complexa",
+    "AMOC enfraquecido nas últimas duas décadas",
+    "Lago Powell: nível mais baixo já registrado",
+    "Zona de subducção se despedaça no Pacífico",
+    "Ruptura tectônica sob a Ilha de Vancouver"
+  ],
+  "ai-archaeology": [
+    "12.000 fósseis de eucariotos de 1,7 bi de anos",
+    "Altar Stone de Stonehenge veio da Escócia",
+    "DNA antigo: rituais funerários sem parentesco",
+    "Técnica de raios-X lê papiros queimados",
+    "T. rex Scotty: vasos sanguíneos fossilizados",
+    "Costumes funerários medievais mais complexos"
+  ],
+  "ai-social": [
+    "Yellowstone: sinais de erupção levam semanas",
+    "Super-erupção VEI 8 atingiria os EUA",
+    "Fluxos piroclásticos letais e cinzas em massa",
+    "Paralisação de transporte e eletricidade",
+    "40 milhões de pessoas afetadas",
+    "Preparação comunitária e políticas necessárias"
+  ],
+  "ai-offbeat": [
+    "Anã branca sem disco gera onda de choque milenar",
+    "Buracos negros seguem mesma regra para jatos",
+    "Cratera de impacto de 390 milhões de anos achada",
+    "Tumores felinos mapeados em escala unprecedented",
+    "DNA de túmulos medievais suecos analisado",
+    "Ciência cidadã descobre cratera de impacto"
+  ]
+}
