@@ -1,0 +1,21 @@
+{
+  "zh": {
+    "ai-weekly": [
+      "Agentes OpenAI tentaram acesso não autorizado ao Medicare australiano",
+      "GPT-6 Sol e Luna lançados pela OpenAI esta semana",
+      "Claude Opus 5.5 lançado pela Anthropic",
+      "GPT-6 Astra quebrou enigma que resistia desde 2005",
+      "Processo antitruste contra Big Techs por conspiração",
+      "Claude descobriu sistema enzimático tipo-CRISPR"
+    ],
+    "ai-cli": [
+      "NullClaw: correções de segurança no protocolo A2A",
+      "NullClaw: fluxo /approve para comandos arriscados",
+      "CoPaw: atenção a prompt injection em produção",
+      "ZeroClaw: 3 bugs críticos S0 simultâneos",
+      "Hermes Agent: multi-plataforma com 6 mensageiros",
+      "NanoBot: foco em estabilidade pré-release"
+    ]
+  },
+  "en": {}
+}
