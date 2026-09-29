@@ -1,0 +1,92 @@
+{
+  "ai-agents": [
+    "NullClaw v20260929 em release",
+    "PR #1014 integra Eden AI",
+    "7 projetos de agentes ativos",
+    "17 issues e 7 PRs hoje",
+    "Gateway OpenAI-compatible",
+    "Markdown strip em respostas"
+  ],
+  "ai-web": [
+    "Project Swap: agentes negociam",
+    "Parceria Anthropic-Infosys",
+    "Anthropic: 2 novos artigos",
+    "OpenAI: 1 novo artigo"
+  ],
+  "ai-hn": [
+    "Sonnet 5.5: 535 pts, 360评论",
+    "Docs Prompting Claude Opus",
+    "MicroLLM Lab: 7 LLMs online",
+    "2026 in LLMs: retrospectiva",
+    "OpenAI pausa treinamento?",
+    "IPO Anthropic gera debate"
+  ],
+  "ai-science": [
+    "Anyons universais: 54 qubits H2",
+    "Robô voador MIT: 450% mais rápido",
+    "10 cambalhotas em 11 segundos",
+    "Quantum computing topológica"
+  ],
+  "ai-robotics": [
+    "MIT: robô voador 450% mais ágil",
+    "10 saltos mortal em 11 segundos",
+    "Controle por IA bio-inspirado",
+    "Robôs miniaturizados para resgate"
+  ],
+  "ai-hacking": [
+    "Anyons: quantum computing universal",
+    "Saltos quânticos de fônons filmados",
+    "54 qubits no processador H2",
+    "Criptografia pós-quântica avança"
+  ],
+  "ai-livingwell": [
+    "Sono REM protege de 83 doenças",
+    "Café modifica microbiota intestinal",
+    "GLP-1: 1 em 6 com deficiências",
+    "Artrite: dor persiste sem inflamação",
+    "Glucosamina acelera Alzheimer?",
+    "Nanopartículas de produtos de limpeza"
+  ],
+  "ai-engineering": [
+    "Cristais temporais sincronizados",
+    "Acoplamento em 40 micrômetros",
+    "Spintrônica avança em escala",
+    "Coerência quântica a distância"
+  ],
+  "ai-agriculture": [
+    "Novo teste: fósforo-DNA no solo",
+    "Fungos cultivam em regolito",
+    "Árvores tropicais fazem CAM à noite",
+    "Agricultura extraterrestre viável?"
+  ],
+  "ai-environmental": [
+    "12.000 fósseis de 1,7 bi de anos",
+    "AMOC enfraquece há 17 anos",
+    "Eucariotos em ambientes oxigenados",
+    "Pinguins-gentoo: 4 espécies distintas",
+    "Zona Vancouver: fragmentação tectônica",
+    "Vulcões alteraram assinatura química"
+  ],
+  "ai-archaeology": [
+    "Fóssil mongol reescreve mamífero cretáceo",
+    "T. rex Scotty: tecido mole preservado",
+    "DNA revela túmulos medievais sociais",
+    "Raios-X decifram textos vulcânicos",
+    "Vikings: mito do guerreiro revisado",
+    "Oxigênio-chave para vida complexa"
+  ],
+  "ai-social": [
+    "Yellowstone: sinais de erupção",
+    "Fluxos piroclásticos mortais",
+    "Colapso de infraestrutura nos EUA",
+    "Planos de evacuação necessários"
+  ],
+  "ai-offbeat": [
+    "Café melhora memória e humor",
+    "Romã: 80% melhoria cardíaca",
+    "Astronautas com constipação",
+    "Antibióticos de 2,6 mi de anos",
+    "White dwarf: onda de choque milenar",
+    "LHC não acha buracos negros"
+  ]
+}
