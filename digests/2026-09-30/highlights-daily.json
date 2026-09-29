@@ -1,0 +1,98 @@
+{
+  "ai-agents": [
+    "NullClaw PR #1014 fechada - v20260929",
+    "7 projetos de agentes de IA monitorados",
+    "Issue propõe integração MemCode no NullClaw",
+    "Correção Exa headers duplicados no NullClaw",
+    "PicoClaw da Sipeed em destaque",
+    "ZeroClaw Labs entra no ecossistema"
+  ],
+  "ai-web": [
+    "Anthropic analisa capacidades cyber do GLM-5.3",
+    "OpenAI lança Gpt-6-1-Sol e Dots",
+    "Anthropic propõe pesquisa sobre expectativas de IA",
+    "OpenAI Devday Recap publicado",
+    "OpenAI lança 8 novos artigos hoje",
+    "Anthropic: 451 artigos no sitemap total"
+  ],
+  "ai-hn": [
+    "GLM-5.3: Anthropic alerta sobre cyber",
+    "176 pts no debate GLM-5.3 (172 comentários)",
+    "Claude Sonnet 5.5: 2x mais catches em código",
+    "AMD adquire World Labs por valor bilionário",
+    "Liquid AI apresenta D1 Decision Model",
+    "IPO da Anthropic com avisos sobre riscos"
+  ],
+  "ai-arxiv": [
+    "TLM: 1 modelo para múltiplos compute budgets",
+    "Inicialização Linear ViT reduz custo 50%+",
+    "Anyons não-Abelianos: computing universal",
+    "Telescopic Language Models (arXiv:2609.35769)",
+    "PDMD: distillação eficiente para vídeo",
+    "FurE: reconstrução 3D de pelagens sem dataset"
+  ],
+  "ai-science": [
+    "Anyons não-Abelianos: computing universal",
+    "Braiding + fusão = operações quânticas completas",
+    "54 qubits no processador Quantinuum H2",
+    "Q-Day se aproxima com universalidade quântica",
+    "Topological protection contra decoerência",
+    "Simulações quânticas de IA mais viáveis"
+  ],
+  "ai-hacking": [
+    "Q-Day: brevking criptografia RSA-2048",
+    "Anyons não-Abelianos: risco para RSA/ECC",
+    "Migração pós-quântica urgente (Kyber/Dilithium)",
+    "QKD emerge como defesa contra Q-Day",
+    "74 qubits no Quantinuum H2 demonstram risco",
+    "Q-Day acelera com demonstração de Shor"
+  ],
+  "ai-livingwell": [
+    "Sonho REM reduz risco de 83 doenças",
+    "GLP-1 ativa gordura marrom (Mounjaro/Zepbound)",
+    "Café altera microbiota e reduz estresse",
+    "Glucosamina ligada a 25% mais demência",
+    "Glicemia estável melhora qualidade de vida",
+    "Quase 1 em 6 crianças com carências em GLP-1"
+  ],
+  "ai-engineering": [
+    "Cristais temporais sincronizam a 40 µm",
+    "Acoplamento spin-polarizado entre cristais",
+    "Spintrônica avança com coerência micrométrica",
+    "Relações de longo alcance em sistemas de spin",
+    "Pendulum-like synchronization em cristais temporais",
+    "Descoberta desafia modelos de fase sólida"
+  ],
+  "ai-agriculture": [
+    "Fungos transformam regolito marciano",
+    "Microrganismos reciclam fósforo no solo",
+    "1,7 bi anos: microfósseis revelam raízes",
+    "Árvores tropicais fazem fotossíntese noturna",
+    "DNA no solo: método simplificado",
+    "Agricultura espacial: fungos como aliados"
+  ],
+  "ai-environmental": [
+    "AMOC enfraquecendo há quase 20 anos",
+    "Lake Powell e Mead em mínimas históricas",
+    "Terra pode estar se 'rasgando' no Pacífico",
+    "Fósseis de 1,7 bi anos confirmam papel do O2",
+    "Ciclo do oxigênio: 1,7 bi anos atrás",
+    "Duplicações genômicas explicam CAM em árvores"
+  ],
+  "ai-archaeology": [
+    "Zhelestídeos: linhagem mamífera separada",
+    "T. rex Scotty: vasos sanguíneos fossilizados",
+    "1,7 bi anos: eucariotos dependiam de oxigênio",
+    "Pergaminhos do Vesúvio revelam traços de chumbo",
+    "Tamirkhan balcarceli: fóssil do Gobi resuelto",
+    "Técnicas de neutrões em ossos de dinossauros"
+  ],
+  "ai-offbeat": [
+    "Núcleo terrestre influencia duração dos dias",
+    "Composto de romã melhora coração em 80%",
+    "Proteínas de 160 mi de anos contra bactérias",
+    "Ondas de choque sem explicação de estrela morta",
+    "Espécies de aranhas-do-mar na Costa Oeste",
+    "Árvores 'respiram' à noite para economizar água"
+  ]
+}
