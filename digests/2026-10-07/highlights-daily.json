@@ -1,0 +1,114 @@
+{
+  "ai-agents": [
+    "NullClaw: 3 critical PRs mergeados (#1044-#1046)",
+    "7 projetos cobertos no ecossistema de agentes",
+    "16 PRs atualizados em 24h no NullClaw",
+    "Corrigido local_loop.enabled gating no NullClaw",
+    "NullClaw em fase de estabilização pré-release",
+    "12 PRs ainda abertos no NullClaw"
+  ],
+  "ai-web": [
+    "Anthropic expande Cyber Verification em 3 níveis",
+    "Acesso a Claude Opus 5.5 e Sonnet 5.5 no CVP",
+    "OpenAI publicou 11 artigos (só metadados)",
+    "Programa de verificação.cyber com safeguards reduzidas",
+    "Impacto da robótica no mercado de trabalho (Anthropic)",
+    "Competição intensificada em segurança cibernética"
+  ],
+  "ai-hn": [
+    "OpenAI: avanço em matemática (179 pts, 123评论)",
+    "Repositório GitHub: manuscritos matemáticos OpenAI",
+    "Rivalidade Anthropic vs OpenAI polariza HN",
+    "Claude Code e Decisions API para desenvolvedores",
+    "Controvérsia: OpenAI e comunidade matemática",
+    "Privacidade de agentes de IA (Meta Muse)"
+  ],
+  "ai-arxiv": [
+    "Base models reasoning from training data cues",
+    "TasteVal: benchmark para gosto experimental de IA",
+    "Agentes autônomos com memória multimodal",
+    "Diffusion transformers com atenção esparsa",
+    "IA médica: tomografia quântica e EEG",
+    "Eficiência: caching, mixture-of-experts"
+  ],
+  "ai-science": [
+    "Qubit de hélio superfluido: erros -100x",
+    "IA fotônica da UCLA: deepfakes 98% precisao",
+    "Helio superfluido: memória quântica de alta fidelidade",
+    "Processamento fotônico: alternativa a GPUs",
+    "Sistema leve analisa dezenas de vídeos simultaneamente",
+    "Resistência a ataques adversários em deepfakes"
+  ],
+  "ai-robotics": [
+    "UCLA: IA fotônica detecta deepfakes a 98%",
+    "Processamento luminoso para análise simultânea",
+    "Velocidade e baixa energia vs métodos GPU",
+    "Robótica de percepção com aceleradores fotônicos",
+    "Triagem em larga escala de conteúdo gerado por IA",
+    "Integração em veículos autônomos e vigilância"
+  ],
+  "ai-hacking": [
+    "Altermagnetismo demonstrado em materiais ajustáveis",
+    "Qubit de hélio superfluido: 100x menos erros",
+    "Supercondutores sondados com pulsos ultracurtos",
+    "Fe5GeTe2: estado quântico coerente e lento",
+    "Spin do elétron sem interferência magnética",
+    "Computação quântica tolerante a falhas"
+  ],
+  "ai-livingwell": [
+    "Bloquear proteína reverte envelhecimento articular",
+    "Bebidas dietéticas: tão boas quanto água para perda",
+    "6 em cada 10 hipertensos desconhecem condição",
+    "Placa arterial em 1 em cada 13 adultos jovens",
+    "Bactérias intestinais afetam envelhecimento cerebral",
+    "UPFs pioram sintomas depressivos"
+  ],
+  "ai-education": [
+    "VNS após prática melhora consolidação motora",
+    "Estimulação vagal: janela temporal pós-treino",
+    "Mudanças vasculares cerebrais na memória",
+    "Neurofisiologia como adjuvante educacional",
+    "Plasticidade cerebral via comunicação corpo-cérebro",
+    "Habilidades motoras duradouras com VNS"
+  ],
+  "ai-engineering": [
+    "Raios-X ultra-rápidos capturam reação química",
+    "Flutuações quânticas aumentam Tc em 5,4%",
+    "Vácuo quântico fortalece supercondutor",
+    "Energia natural com eficiência impressionante",
+    "Catalisadores e células a combustível otimizados",
+    "Controle de materiais sem contato direto"
+  ],
+  "ai-agriculture": [
+    "Florestas manejadas sequestram tanto carbono quanto intocadas",
+    "Plant Armor triplica produtividade de morangos",
+    "Eucalipto: madeira de alto valor e carbono",
+    "Pesticidas e água reduzidos com Plant Armor",
+    "Intensificação sustentável em 30 anos de experimento",
+    "Manejo silvicultural equilibra produção e ecossistema"
+  ],
+  "ai-environmental": [
+    "Ondas de calor oceânicas subestimadas em 150%",
+    "Hidrogênio de água sem catalisadores metálicos",
+    "Manejo florestal: carbono igual a áreas virgens",
+    "Material ativado por luz baseado em enxofre",
+    "Estresse térmico em ecossistemas marinhos maior",
+    "Energia solar mais acessível e econômica"
+  ],
+  "ai-archaeology": [
+    "Oleiros migrantes do Mississipi em Tampa Bay",
+    "Fósseis magnéticos de 97 Ma: GPS natural",
+    "Morcegos evoluíram na Europa há 65-60 Ma",
+    "Cerâmica ancestral incorporada em novos vasos",
+    "Navegação magnética em animais pré-históricos",
+    "Troca cultural transgeracional na América do Norte"
+  ],
+  "ai-offbeat": [
+    "7 dias de jejum: mudanças após 3 dias",
+    "RNA vs DNA: diferença química mínima da vida",
+    "Fósseis magnéticos: GPS natural de 97 Ma",
+    "Voo e ecolocalização surgiram juntos nos morcegos",
+    "VNS consolida habilidades motoras",
+    "Neurociência e plasticidade cerebral"
+  ]
+}
