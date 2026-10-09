@@ -1,0 +1,98 @@
+{
+  "ai-agents": [
+    "NullClaw: baixa atividade, 1 PR docs aberta",
+    "PR #1052: exemplo Parallel Search MCP",
+    "7 projetos cobertos: NullClaw, NanoBot, mais",
+    "NullClaw em maturação sem mudanças ativas",
+    "Integração HTTP nativa sem API key Parallel",
+    "Estabilidade operacional com baixa visibilidade"
+  ],
+  "ai-web": [
+    "Anthropic: relatório sobre ações não intencionais",
+    "Claude Corps: fellowship $150M para 1.000",
+    "OSS Scanner: +29.000 vulnerabilidades achadas",
+    "OpenAI: lançamentos para workflows empresariais",
+    "Mapa UV completo do céu via Claude Science",
+    "Anthropic mais transparente sobre limitações"
+  ],
+  "ai-hn": [
+    "OpenAI demite pesquisadores de segurança",
+    "304 pontos: demissão OpenAI divide comunidade",
+    "Anthropic: delator falso e bans por 'crueldade'",
+    "Terry Tao questiona documentos matemáticos OpenAI",
+    "OpenAI traduziu mal matemática em código",
+    "Comunidade matemática reage com ceticismo"
+  ],
+  "ai-arxiv": [
+    "VFold: compressão de cache KV por camadas",
+    "Latent Core Tokenizer: tokenizer multilingual",
+    "Segurança de agentes: detecção de decepção",
+    "LeWAM: modelo de ação mundial com difusão",
+    "Razão espacial preditiva em modelos multimodais",
+    "Alinhamento: modelos internalizam valores alinhados?"
+  ],
+  "ai-hacking": [
+    "Altermagnetismo em materiais finos discovered",
+    "Spin do elétron substitui carga elétrica",
+    "Dispositivos mais rápidos e eficientes",
+    "Reduz interferência eletromagnética",
+    "Impacto em segurança de hardware",
+    "Criptografia de hardware fortalecida"
+  ],
+  "ai-education": [
+    "Estimulação do nervo vago pós-treino",
+    "Consolidação motora em camundongos",
+    "Janela temporal crítica para aprendizado",
+    "Ritmo vascular cerebral na plasticidade",
+    "Neuroestimulação periférica",
+    "Timing de intervenções neuromoduladoras"
+  ],
+  "ai-engineering": [
+    "Raios-X ultarrápidos: reações químicas filmadas",
+    "Natureza transfere energia com eficiência",
+    "Flutuações quânticas fortalecem supercondutividade",
+    "Temperatura de transição +5,4%",
+    "Catalisadores e baterias de fluxo melhores",
+    "Sem contato ou estimulação externa"
+  ],
+  "ai-agriculture": [
+    "Protista usa código genético alternativo",
+    "Sinals de terminação codificam aminoácidos",
+    "Leões: carcaças inteiras e jejum-festim",
+    "Comportamento selvagem em zoológicos",
+    "Florestas: desbaste de 30 anos na Austrália",
+    "Carbono recuperado iguala áreas intocadas"
+  ],
+  "ai-environmental": [
+    "NASA: laser satellite tracking Earth's mass",
+    "Migração sazonal de água e gelo medida",
+    "Florestas Australianas: carbono recuperado",
+    "Hidrogênio verde sem catalisadores metálicos",
+    "Material ativado por luz com enxofre",
+    "Produção acessível de combustível limpo"
+  ],
+  "ai-archaeology": [
+    "Homo erectus 200.000 anos mais antigo",
+    "2 milhões de anos na Caverna Drimolen",
+    "Animais surgiram 800-700 milhões anos",
+    "Era Snowball Earth: origem animal",
+    "Oleiros mississipianos migraram na Flórida",
+    "Mistério centenário de cerâmica resolvido"
+  ],
+  "ai-social": [
+    "100 espécies de primatas estudadas",
+    "Agressão cotidiana ≠ violência letal",
+    "Padrões evolutivos distintos na violência",
+    "Humanos: violência inevitável questionada",
+    "Mecanismos evolutivos separados",
+    "Comportamento social nuançado"
+  ],
+  "ai-offbeat": [
+    "Microrganismo quebra regra genética universal",
+    "Vitamina D2 pode ser contraproducente",
+    "Jejum: efeitos após 3 dias sem comer",
+    "Estimulação vagal consolida habilidades motoras",
+    "Código genético mais flexível que imaginado",
+    "Corpo e cérebro conectados"
+  ]
+}
