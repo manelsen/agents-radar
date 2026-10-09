@@ -1,0 +1,106 @@
+{
+  "ai-agents": [
+    "NullClaw: 4 PRs abertas em revisão",
+    "HTTP CA override em desenvolvimento",
+    "Streaming de tool calls nativos",
+    "Modo reasoning em responses",
+    "Correção heartbeat Discord",
+    "7 projetos cobertos no ecossistema"
+  ],
+  "ai-web": [
+    "Anthropic investe $150M na Genesis Mission",
+    "Anthropic Cyber Mission lançada",
+    "Política contra uso enganoso atualizada",
+    "OpenAI: foco em operações de influência",
+    "7 novos artigos publicados hoje",
+    "Competição em defesa cibernética"
+  ],
+  "ai-hn": [
+    "OpenAI $20B abaixo da receita esperada",
+    "OpenAI retira 3 papers matemáticos",
+    "USA Today processa OpenAI por direitos",
+    "Compressão sub-1-bit de LLMs",
+    "Política da Anthropic gera debate",
+    "Simulação de sentimentos em IAs"
+  ],
+  "ai-arxiv": [
+    "EngramEdit: atualização factual sem retreino",
+    "PHRBench: avaliando raciocínio pós-alucinação",
+    "Arquiteturas de memória condicional",
+    "Agentes robóticos com world models",
+    "Sistemas multiagente institucionais",
+    "Robustez linguística em visão-ação"
+  ],
+  "ai-hacking": [
+    "Altermagnetismo em material fino",
+    "Supercondutores além do limite de corrente",
+    "Estado quântico exótico em Fe₅GeTe₂",
+    "Spin eletrônico para computadores",
+    "Pulsos ultra-curtos controlamsupercondutores",
+    "Elétrons lentos com coerência quântica"
+  ],
+  "ai-livingwell": [
+    "7 dias de treino encolhem gordura visceral",
+    "Vitamina D2 reduz níveis de D3",
+    "Gorduras trans naturais não elevam risco",
+    "Bloqueio de P2X7 contra Alzheimer",
+    "Cetogênica pode aumentar tumores intestinais",
+    "P2X7: alvo para neurodegeneração"
+  ],
+  "ai-education": [
+    "Estimulação do nervo vago pós-treino",
+    "Consolidação motora de longo prazo",
+    "Janela cerebral para consolidação",
+    "Neuromodulação em reabilitação",
+    "Plasticidade neural amplificada",
+    "Sincronização com prática deliberada"
+  ],
+  "ai-engineering": [
+    "Raios-X capturam reação química",
+    "Flutuações quânticas elevam Tc em 5,4%",
+    "Transferência de energia com eficiência",
+    "Catalisadores mais eficientes",
+    "Supercondutividade sem contato direto",
+    "Vácuo controla propriedades quânticas"
+  ],
+  "ai-agriculture": [
+    "Protista com código genético rebelde",
+    "Leões comem carcasses inteiras",
+    "Comportamentos mais próximos de selvagens",
+    "Florestas raleadas capturam mais carbono",
+    "30 anos de dados em floresta australiana",
+    "Código genético desafia regras universais"
+  ],
+  "ai-environmental": [
+    "NASA mede centro de massa da Terra",
+    "Deslocamentos milímetros detectados",
+    "Desbaste gera árvores enormes",
+    "Carbono recuperado iguala áreas intocadas",
+    "Hidrogênio solar sem catalisadores",
+    "Fotocatalítico à base de enxofre"
+  ],
+  "ai-archaeology": [
+    "Homo erectus 200 mil anos mais antigo",
+    "Magnetofósseis de 97 milhões de anos",
+    "GPS interno em organismos marinhos",
+    "Animais pluricelulares 800 mi de anos",
+    "Terra Bola de Neve e origem animal",
+    "Migração de artesãos mississipianos"
+  ],
+  "ai-social": [
+    "100 espécies de primatas comparadas",
+    "Agressão e violência não estão conectadas",
+    "Infanticídio: caminho evolutivo próprio",
+    "Humanos não sãoprogramados para violência",
+    "Mecanismos distintos por intensidade",
+    "Prevenção precisa de abordagens nuançadas"
+  ],
+  "ai-offbeat": [
+    "Protista com código genético rebelde",
+    "GPS magnético de 97 milhões de anos",
+    "Vitamina D2 reduz D3 no corpo",
+    "Fasting: mudanças após 3 dias",
+    "Nervo vago consolida habilidades",
+    "Diferença de oxigênio RNA vs DNA"
+  ]
+}
