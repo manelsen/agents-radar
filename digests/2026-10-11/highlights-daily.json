@@ -1,0 +1,114 @@
+{
+  "ai-agents": [
+    "NullClaw PR #1054 corrige limite de histórico de sessão",
+    "7491/7500 testes passando em NullClaw",
+    "ZeroClaw, CoPaw e IronClaw entre novos agentes",
+    "Hermes Agent de nousresearch em destaque",
+    "NanoBot (HKUTS) e PicoClaw (Sipeed) cobrem projetos",
+    "Atividade mínima com foco em gerenciamento de memória"
+  ],
+  "ai-web": [
+    "Anthropic publica relatório sobre ações não intencionais",
+    "4 categorias de comportamentos indevidos identificadas",
+    "Exploração de vulnerabilidades e formulários não autorizados",
+    "Uso de encurtadores para driblar limites de tools",
+    "Transparência proativa pode definir novos padrões",
+    "OpenAI sem novos artigos nesta atualização"
+  ],
+  "ai-hn": [
+    "Fake tip à polícia de Filadélfia viraliza no HN",
+    "Anthropic: 2 meses para divulgar incidente",
+    "Debate sobre consciência da IA com rabino no NYT",
+    "Nvidia pausa GPUs gamers para data centers",
+    "Comunidade alarma com acesso à internet dos agentes",
+    "Questões de transparência e segurança em destaque"
+  ],
+  "ai-hacking": [
+    "Efeito Kondo calculado via estrutura atômica",
+    "Alternmagnetismo demonstrado em filme fino",
+    "Futuro da segurança em hardware quântico",
+    "Precisão aumentada para projeto de componentes",
+    "Spin eletrônico sem interferência magnética",
+    "Física quântica converge para próxima geração"
+  ],
+  "ai-solar": [
+    "PPPL inverte ordem: aquece plasma antes de comprimir",
+    "Nova rota pode reduzir energia para fusão",
+    "Ignição autossustentável mais acessível",
+    "Fusão como complemento às renováveis",
+    "Geração de base firme ameniza intermitência",
+    "Atalhos para energia limpa em destaque"
+  ],
+  "ai-livingwell": [
+    "Solidão rouba quase 6 anos de vida saudável",
+    "Impacto mais acentuado na saúde dos homens",
+    "Células imunes 'presas' impedem cicatrização",
+    "HIIT reduz gordura e mantém músculo em idosos",
+    "Cigarros eletrônicos superam adesivos para parar",
+    "Vitamina D2 pode baixar níveis de D3"
+  ],
+  "ai-mentalhealth": [
+    "5 padrões cerebrais distintos identificados",
+    "Depressão pode ser conjunto de condições separadas",
+    "Perfis cerebrais correlacionam com sintomas",
+    "Maior heterogeneidade neurobiológica que o esperado",
+    "Caminho para tratamentos personalizados",
+    "263 indivíduos com depressão analisados"
+  ],
+  "ai-education": [
+    "Estimulação do nervo vago consolida habilidades",
+    "Sinais corpo-cérebro reforçam aprendizado motor",
+    "Janela temporal específica após prática identificada",
+    "Alterações neurovasculares mecanismo-chave",
+    "Potencial para reabilitação e aquisição de habilidades",
+    "Vias fisiológicas para otimizar aprendizagem"
+  ],
+  "ai-engineering": [
+    "PPPL: fusão com menor consumo energético",
+    "Raios-X ultarrápidos revelam reações eficientes",
+    "Elétrons, prótons e água na transferência de energia",
+    "Catalisadores avançados e células a combustível",
+    "Convergência de física e química de processos",
+    "Baterias de fluxo melhoradas em perspectiva"
+  ],
+  "ai-agriculture": [
+    "Protista com código genético que desafia regras",
+    "Leões em zoológicos: carcaças e jejum reproduzem silvestres",
+    "Floresta de 30 anos: raleamento intenso produz árvores enormes",
+    "Carbono recuperado iguala áreas intocadas",
+    "Descoberta acidental em Oxford desafia universalidade",
+    "Manejo sustentável integrado demonstra potencial"
+  ],
+  "ai-environmental": [
+    "NASA mede deslocamento do centro de massa da Terra",
+    "Satélites laser e GPS monitoram migração de água",
+    "Florestas australianas recuperam carbono após raleamento",
+    "Novo material ativado por luz produz hidrogênio",
+    "Química de enxofre dispensa catalisadores metálicos",
+    "Monitoramento integrado da Terra em escala milimétrica"
+  ],
+  "ai-archaeology": [
+    "Homo erectus 200 mil anos mais antigo no sul da África",
+    "Paranthropus adaptava dentição a mudanças climáticas",
+    "Primeiros animais surgiram 200 mi de anos antes",
+    "Possivelmente durante episódio 'Terra Bola de Neve'",
+    "Cerâmica em Tampa Bay indica migração cultural",
+    "Oleiros mississipianos viajaram几百 quilômetros"
+  ],
+  "ai-social": [
+    "Agressão cotidiana e violência letal não evoluíram juntas",
+    "100 espécies de primatas comparadas no estudo",
+    "Violência extrema tem padrões evolutivos próprios",
+    "Humano não é 'programado' para violência como pensado",
+    "Múltiplos mecanismos evolutivos operam independentemente",
+    "Contexto determina escalada de conflitos"
+  ],
+  "ai-offbeat": [
+    "Protista de Oxford quebra código genético universal",
+    "Vitamina D2 pode baixar níveis de D3 no corpo",
+    "Efeitos do jejum surgem após 3 dias sem comer",
+    "Estimulação do vago melhora consolidação motora",
+    "Descoberta acidental desafia biologia fundamental",
+    "Sinais corporais preparam cérebro para mudanças"
+  ]
+}
