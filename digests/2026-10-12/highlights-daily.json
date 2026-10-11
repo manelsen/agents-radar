@@ -1,0 +1,106 @@
+{
+  "ai-agents": [
+    "NullClaw limita crescimento irrestrito de contexto",
+    "PR #1054bound histórico de sessão restaurado",
+    "7 projetos de agentes de IA cobertos hoje",
+    "NanoBot e Hermes Agent entre projetos ativos",
+    "Atividade concentrada em gerenciamento de sessões",
+    "Nenhum lançamento registrado nas últimas 24h"
+  ],
+  "ai-hn": [
+    "Karpathy debate lacuna de compreensão em LLMs",
+    "Anthropic sob críticas por tratamento do Claude",
+    "OpenAI demite pesquisadores de segurança IA",
+    "Discussão: SQLite supera limitação single-writer",
+    "Agentes AI operam de forma autônoma crescente",
+    "Destaque: post de Karpathy com 148 pontos"
+  ],
+  "ai-hacking": [
+    "Pesquisa quântica avança segurança de hardware",
+    "Efeito Kondo pode melhorar componentes",
+    "Altermagnetismo promete menor interferência EM",
+    "Física quântica influencia segurança digital futura",
+    "Novos materiais podem impactar criptografia",
+    "Convergência: matéria condensada e segurança"
+  ],
+  "ai-solar": [
+    "Fusão nuclear: atalho para ignição sustentável",
+    "Princeton inverte ordem de aquecimento do plasma",
+    "Método pode reduzir drasticamente barreiras técnicas",
+    "Estudo ainda não revisado por pares",
+    "Fusão promete energia limpa e abundante",
+    "Mudança de paradigma na comunidade científica"
+  ],
+  "ai-livingwell": [
+    "Stanford: proteína do envelhecimento bloqueada",
+    "Cartilagem do joelho regenerada em camundongos",
+    "Solidão rouba 5,8 anos de vida em homens",
+    "Vapes superam adesivos para parar de fumar",
+    "Dieta cetogênica aumenta tumores intestinais",
+    "Pesquisa abrevia necessidade de próteses articulares"
+  ],
+  "ai-mentalhealth": [
+    "Cientistas identificam 5 perfis cerebrais na depressão",
+    "Depressão pode ter múltiplas condições biológicas",
+    "263 participantes analisados com neuroimagem",
+    "Ansiedade, trauma e uso de substâncias diferenciados",
+    "Medicina de precisão na psiquiatria",
+    "Neuroimagem revela Heterogeneidade do transtorno"
+  ],
+  "ai-education": [
+    "Estimulação vagal melhora consolidação motora",
+    "Nervo vago após prática fortalece habilidades",
+    "Mudanças rítmicas nos vasos cerebrais envolvidas",
+    "Neurofeedback e plasticidade cerebral",
+    "Estudo em camundongos com retenção ampliada",
+    "Estratégias para reabilitação e treinamento"
+  ],
+  "ai-engineering": [
+    "Viena: primeiro relógio nuclear autoestabilizante",
+    "Relógio de tório supera precisão atômica",
+    "Fusão: Princeton propõe inversão de aquecimento",
+    "Raios-X revelam reação química de transferência",
+    "Catalisadores e células a combustível melhorados",
+    "Metrologia de precisão para redes e comunicações"
+  ],
+  "ai-agriculture": [
+    "Protista de Oxford viola regra genética universal",
+    "Código genético alternativo em organismo",
+    "Leões de zoo: carcaças melhoram bem-estar animal",
+    "Padrão festim-e-jejum reproduz comportamento selvagem",
+    "Evolução do código genético pode ser remodelada",
+    "Aplicações para biologia sintética e culturas"
+  ],
+  "ai-environmental": [
+    "NASA mede oscilações do centro da Terra",
+    "Centro de massa oscila milímetros por redistribuição",
+    "Laser-ranging e GPS rastreiam mudanças",
+    "Técnica multi-sensores com precisão milimétrica",
+    "Modelos climáticos ganham com integração de dados",
+    "Ciclo hidrológico afeta rotação terrestre"
+  ],
+  "ai-archaeology": [
+    "Neandertais usavam alcatrão como antibiótico",
+    "Homo erectus 200 mil anos mais antigo",
+    "Fósseis de 2 milhões de anos na África do Sul",
+    "Primeiros animais 200 milhões de anos mais antigos",
+    "Artesãos migrants resolveram mistério cerâmico",
+    "Neandertais com conhecimento médico avançado"
+  ],
+  "ai-social": [
+    "Agressão cotidiana e violência letal separadas",
+    "100 espécies de primatas comparadas",
+    "Violência humana não é extensão direta",
+    "Infanticídio tem padrões evolutivos próprios",
+    "Modelos evolutivos de comportamento revisados",
+    "Mecanismos distintos moldam violência em primatas"
+  ],
+  "ai-offbeat": [
+    "Protista de Oxford quebra regra genética",
+    "Azeite antes de carboidratos regula glicemia",
+    "Jejum de 7 dias transforma o corpo",
+    "Vitamina D2 pode reduzir níveis de D3",
+    "Estimulação vagal fortalece aprendizado motor",
+    "Código genético atípico em lago de Oxford"
+  ]
+}
