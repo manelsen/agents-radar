@@ -1,0 +1,122 @@
+{
+  "ai-agents": [
+    "Hermes Agent: 3 bugs P1 simultâneos",
+    "CoPaw: plugin marketplace personalizável",
+    "ZeroClaw: hardening de segurança",
+    "NanoBot: 28 PRs atualizados em 24h",
+    "NullClaw e IronClaw em modo estagnado",
+    "Integração com Google Workspace e Slack"
+  ],
+  "ai-web": [
+    "Anthropic migra p/ Scion em 5 meses",
+    "Código mesclado: 2.500 → 30.000/dia",
+    "Modelos Claude como agentes autônomos",
+    "Redução de 90-99% em ataques de destilação",
+    "Anthropic acusa Zhipu AI de蒸馏攻击",
+    "OpenAI sem novos conteúdos públicos"
+  ],
+  "ai-hn": [
+    "OpenAI: engenheiro preso por escuta",
+    "Anthropic redesign do controle de fontes",
+    "Debate sobre claims de Fourier da OpenAI",
+    "Apple: projeto GPU cloud distribuída",
+    "Alerta de autoreplicação de modelos AI",
+    "Benchmark FrontierML para ML de ponta"
+  ],
+  "ai-science": [
+    "Oxford:量子效应冻结粒子",
+    "Luz desenvolve padrões rotacionais no vácuo",
+    "Computação quântica híbrida amadurece",
+    "Propriedade 'assustadora' da luz descoberta",
+    "Simulação de campos magnéticos quânticos",
+    "Processamento óptico de informaçãoavança"
+  ],
+  "ai-hacking": [
+    "QKD: impacto no controle quântico",
+    "Fótons entrelaçados para criptografia",
+    "Codificação fotônica de informação",
+    "Efeito Kondo em materiais magnéticos",
+    "Segurança de protocolos quânticos",
+    "Proteção de informações em qubits"
+  ],
+  "ai-memory": [
+    "Menin: driver oculto do envelhecimento",
+    "D-serina melhora memória em camundongos",
+    "Reversão de perdas cognitivas em 30 dias",
+    "Alvo molecular para declínio cognitivo",
+    "Neurobiologia do envelhecimento",
+    "Intervenção no mecanismo fundamental"
+  ],
+  "ai-solar": [
+    "Princeton inverte ordem de fusão",
+    "Densidade antes do aquecimento",
+    "Fusão autossustentável com menos energia",
+    "Método mais eficiente para ignição",
+    "Problemas ocultos da ignição resolvidos",
+    "Rota que evita armadilhas tradicionais"
+  ],
+  "ai-livingwell": [
+    "Bactérias intestinais: 116 kcal menos absorvidas",
+    "Azeite antes de carboidratos",
+    "Loneliness: até 5,8 anos de vida perdidos",
+    "Injeção destrói células de gordura",
+    "D-serina contra perda de memória",
+    "Metabolismo e composição corporal"
+  ],
+  "ai-mentalhealth": [
+    "5 padrões cerebrais na depressão",
+    "Diagnóstico biológico personalizado",
+    "Heterogeneidade cerebral confirmada",
+    "Perfis com sintomas específicos",
+    "Medicina de precisão em Psiquiatria",
+    "Comorbidades: ansiedade, trauma, substâncias"
+  ],
+  "ai-engineering": [
+    "Relógio nuclear de tório-229",
+    "Viena: precisão superior a átomos",
+    "Fusão: densidade antes do calor",
+    "PPPL propõe rota mais eficiente",
+    "Ignição auto-sustentada facilitada",
+    "Instrumentação de precisão máxima"
+  ],
+  "ai-agriculture": [
+    "DNA recording: linhagem celular mapeada",
+    "17 espécies de bactérias em cogumelos",
+    "Protista viola código genético universal",
+    "Leões comem carcaças inteiras",
+    "Melhoramento genético animal",
+    "Biologia sintética de alimentos"
+  ],
+  "ai-environmental": [
+    "Sentinel-3C: imagens da Terra",
+    "Satélite europeu em operação",
+    "Mistério de 2,3 bilhões de anos resolvido",
+    "Outback Australiano floresce",
+    "Centro de massa da Terra rastreado",
+    "Monitoramento climático orbital"
+  ],
+  "ai-archaeology": [
+    "Homo erectus: 2 milhões de anos",
+    "Paranthropus robustus coexistiu",
+    "Neandertais usavam antibiótico natural",
+    "Piche de bétula em feridas",
+    "Megacauda sungei: origem da lactação",
+    "Primeiros animais: 800-700 milhões anos"
+  ],
+  "ai-social": [
+    "100 espécies de primatas estudadas",
+    "Agressão e violência: mecanismos distintos",
+    "Violência letal não é contínua",
+    "Infanticídio: trajetória própria",
+    "Biologia vs comportamento humano",
+    "Políticas públicas questionadas"
+  ],
+  "ai-offbeat": [
+    "Predador jurássico: cérebro humano",
+    "Efeito quântico congela partícula",
+    "GLP-1: unha e cabelo caem",
+    "Código genético viola regras",
+    "Vitamina D2 reduz D3",
+    "Cobre e zinco no Alzheimer"
+  ]
+}
