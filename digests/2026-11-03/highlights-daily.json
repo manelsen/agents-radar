@@ -1,0 +1,90 @@
+{
+  "ai-agents": [
+    "NullClaw abre 3 PRs de confiabilidade",
+    "PR #1090 protege memória sob falha",
+    "Suporte real a proxies SOCKS5 em discussão",
+    "PRs evitam loops de reinício de canais",
+    "3 PRs sem comentários ou reações",
+    "Nenhuma release ou merge hoje"
+  ],
+  "ai-web": [
+    "492 posts da Anthropic; 36 da OpenAI",
+    "Claude ganha destaque em pesquisa científica",
+    "Anthropic prepara IPO no Nasdaq",
+    "Form S-1 antecipa fase de capitalização",
+    "Claude amplia presença no governo americano",
+    "OpenAI sinaliza monetização via Ads"
+  ],
+  "ai-hn": [
+    "Claude Opus 5.5 desenha projetos arquitetônicos",
+    "GPT-Rosalind-6 divulga card de segurança",
+    "Claude domina quase metade das 30_PI",
+    "S-1: receita trimestral de US$ 17 bi",
+    "Despesas próximas de US$ 900 bi",
+    "LLMs não são super-humanos em pesos"
+  ],
+  "ai-robotics": [
+    "Algoritmo estima distâncias em redes extensas",
+    "Amostragem em múltiplas escalas melhora precisão",
+    "Problema aberto desde 1996 ganha avanço",
+    "Pode ajudar robôs e sensores distribuídos",
+    "Técnica preserva a velocidade computacional",
+    "Feed de robótica teve apenas uma publicação"
+  ],
+  "ai-hacking": [
+    "Laser ultrafino grava dados magneticamente",
+    "Memória promete ser 1.000 vezes mais rápida",
+    "Pesquisa é da UC San Diego",
+    "Feixe altera estados magnéticos de material",
+    "Técnica combina óptica, magnetismo e luz",
+    "Impacto em segurança ainda é indireto"
+  ],
+  "ai-livingwell": [
+    "Sangue prevê declínio cognitivo anos antes",
+    "Excesso de peso acelera envelhecimento cerebral",
+    "Luz diurna ligada a menor risco de demência",
+    "Dieta e exercício dão 54% de remissão",
+    "Implante converte glicose e reduz glicemia",
+    "Fibras, amendoins, chá e microbioma em foco"
+  ],
+  "ai-engineering": [
+    "Colisões recriam matéria do Big Bang",
+    "Laser viabiliza memória 1.000 vezes mais rápida",
+    "Núcleos de oxigênio colidem quase à velocidade da luz",
+    "Feixe moldado controla estados magnéticos",
+    "Matéria exótica surge em condições menos extremas",
+    "Técnica promete armazenamento mais eficiente"
+  ],
+  "ai-agriculture": [
+    "Estrelas-do-mar podem proteger recifes",
+    "75% das alimentações deixaram coral vivo",
+    "Predadores abrem espaço para corais lentos",
+    "Árvores detectam forma e ajustam o tronco",
+    "Tecidos lenhosos funcionam como músculos opostos",
+    "Descoberta pode inspire madeira mais resistente"
+  ],
+  "ai-environmental": [
+    "Aquecimento acelera a 0,35 °C por década",
+    "Taxa quase dobra a média de 1970–2015",
+    "Confiança estatística supera 98%",
+    "Thwaites pode elevar mares até 30 mm até 2100",
+    "Gelo tibetano de 128 mil anos registra clima",
+    "Refúgios tropicais explicam sobrevivência de crocodilos"
+  ],
+  "ai-archaeology": [
+    "Fóssil de primata de 17–18 mi anos no Egito",
+    "Oriente Médio pode ter Waxo dos grandes primatas",
+    "Vale do Jordão foi ocupado há 1,9 milhão de anos",
+    "Dente de elefante de 700 mil anos em Israel",
+    "DNA revela Europeans mais conectados na Era do Gelo",
+    "Instrumentos líticos revelam ambiente dos primeiros humanos"
+  ],
+  "ai-offbeat": [
+    "Fóssil no Egito pode mudar origem dos grandes primatas",
+    "Colisões recriam matéria primordial",
+    "Mordidas de serpentes: até 513 mil mortes/ano",
+    "James Webb acha planeta de lava com atmosfera resistente",
+    "Impacto dos dinossauros pode ter impulsionado formigas",
+    "Nuvens minerais e atividade geológica no planeta de lava"
+  ]
+}
