@@ -1,0 +1,98 @@
+{
+  "ai-agents": [
+    "NullClaw abre PR para busca web via Keenable",
+    "PR #1091 adiciona Keenable sem exigir API key",
+    "Nenhuma release nova no NullClaw em 24 horas",
+    "Atividade baixa: 1 PR aberto e 0 issues",
+    "7 projetos de agentes monitorados no relatório",
+    "Hermes Agent, CoPaw e NanoBot entre osaccompanied"
+  ],
+  "ai-web": [
+    "Anthropic apresenta FlashProve para inferência verificável",
+    "FlashProve prova qual modelo gerou a resposta",
+    "Anthropic重大的 pesquisa tem texto substancial",
+    "OpenAI publica 4 novos itens no sitemap",
+    "OpenAI: observações baseadas apenas em títulos",
+    "Fontes oficiais: Anthropic e OpenAI"
+  ],
+  "ai-hn": [
+    "Suspeita de retreinamento do OpenAI com conversas Codex",
+    "Agentes de código destroem sistemas, segundo relatos",
+    "Revolut economiza até 90% usando modelos open-weight",
+    "Exigência de documento de identidade na Anthropic",
+    "Anthropic alerta proximity to RSI capability",
+    "FlashProve gera interesse em inferência verificável"
+  ],
+  "ai-arxiv": [
+    "Agentes autônomos combinam memória, planejamento e RL",
+    "Estudo isola circuito de aprendizado in-context",
+    "Intervenções duráveis suprimem desalinhamento",
+    "Robótica usa ações latentes a partir de vídeo",
+    "Avaliações cobrem segurança médica e decision-making",
+    "KV cache quantizado em nível sub-bit"
+  ],
+  "ai-robotics": [
+    "Novo algoritmo estima distâncias em redes de grande escala",
+    "Amostragem em múltiplas escalas mantém a velocidade",
+    "Problema de 1996 recebe solução computacional mais precisa",
+    "Método pode ajudar navegação e coordenação robótica",
+    "Estudo é principalmente teórico, sem experimentos robóticos",
+    "Cálculo de distâncias ganha estimativas mais confiáveis"
+  ],
+  "ai-livingwell": [
+    "Exame de sangue sinaliza Alzheimer 10 anos antes",
+    "Drogaexperimental repara DNA e reduz inflamação cerebral",
+    "Fármaco rejuvenesce células do fígado em ratos",
+    "Dieta com menos sódio e mais potássio protege a saúde",
+    "Álcool moderado não foi mostrado como seguro",
+    "Implante elétrico para diabetes ainda é experimental"
+  ],
+  "ai-mentalhealth": [
+    "Cérebros de camundongos sobrepõem medo e segurança",
+    "Realce em AR revela generalização do medo",
+    "Sobreposição pode explicar hipervigilância e TEPT",
+    "Estudo aponta mecanismo para ansiedade",
+    "Resultados são pré-clínicos e não causais",
+    "Circuitos neurais processam perigo e segurança"
+  ],
+  "ai-engineering": [
+    "LHC cria plasma de quarks em colisões pequenas",
+    "Núcleos de oxigênio recriam matéria do Big Bang",
+    "Plasma primordial surge com energia menor",
+    "Duas notícias cobrem o mesmo avanço científico",
+    "Resultados ampliam condições experimentais",
+    "Colisões revelam estado exótico da matéria"
+  ],
+  "ai-agriculture": [
+    "Estrela-do-mar pode favorecer biodiversidade nos recifes",
+    "Controle preserva tecido coralino vivo em 75% dos casos",
+    "Árvores percebem sua forma e endireitam troncos",
+    "Madeira especializada funciona como músculos opostos",
+    "Pesquisa pode orientar manejo florestal",
+    "Mecanismos biológicos prometem cultivares resilientes"
+  ],
+  "ai-environmental": [
+    "Crocodilianos sobreviveram ao asteroide em refúgios tropicais",
+    "Aquecimento acelera para 0,35 °C por década desde 2015",
+    "Gelo de 128 mil anos pode reescrever história climática",
+    "Magma profundo pode armazenar oxigênio",
+    "Fósseis e climas explicam sobrevivência pós-impacto",
+    "Tendência atual quase dobra média de 1970–2015"
+  ],
+  "ai-archaeology": [
+    "DNA de 30 mil anos revela conexões na Europa",
+    "Dente de elefante de 700 mil anos ilumina Israel",
+    "Fóssil de primata pode reposicionar origens dos humanos",
+    "Fortificações sofisticadas são estudadas no Marrocos",
+    "Caça neandertalense sugere arma e cuidado",
+    "Crocodilianos sobreviveram ao impacto Chicxulub"
+  ],
+  "ai-offbeat": [
+    "Siwarha pode deformar Betelgeuse, diz observação de rádio",
+    "Ryugu contém as cinco bases nitrogenadas do DNA e RNA",
+    "Brecha na física permitiria buracos negros se dividirem",
+    "Fóssil de 17–18 milhões de anos pode reescrever origens",
+    "Mortes por cobra venenosa podem chegar a 513 mil/ano",
+    "Plasma primordial recriado em colisão de núcleos"
+  ]
+}
