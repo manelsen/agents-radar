@@ -1,9 +1,6 @@
 name: Weekly Agents Radar
 
 on:
-  schedule:
-# 每周一 20:00 UTC = 04:00 CST (次日)
-    - cron: "0 20 * * 1"
   workflow_dispatch:
 
 concurrency:
